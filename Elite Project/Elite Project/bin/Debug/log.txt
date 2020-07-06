@@ -1,0 +1,4581 @@
+2016-09-29 17:18:00 Elite Login
+2016-09-29 17:18:14 1600587 L.Makalintal 1 INJECTION
+2016-09-29 17:18:16 Injection Station Loaded
+2016-09-29 17:18:16 Login Successful
+2016-09-29 17:20:00 Injection Station Logout
+2016-09-29 17:20:10 1600587 L.Makalintal 1 AOI
+2016-09-29 17:20:12 AOI Station Loaded
+2016-09-29 17:20:12 Login Successful
+2016-09-29 17:20:42 Model Select: MW1500KSXP105-S
+2016-09-29 17:20:44 PETname Select: FKN92B
+2016-09-29 17:20:46 PCB type Select: A5A003448270
+2016-09-29 17:20:50 Scan: wnm02
+2016-09-29 17:20:52 Scan: wnm03
+2016-09-29 17:20:55 AOI Station Logout
+2016-09-29 17:21:02 1600587 L.Makalintal 1 FT
+2016-09-29 17:21:03 Login Successful
+2016-09-29 17:21:50 1600587 L.Makalintal FA FAILURE ANALYSIS
+2016-09-29 17:21:52 Login Successful
+2016-09-29 17:26:28 Elite Login
+2016-09-29 17:26:35 1600587 L.Makalintal FA FAILURE ANALYSIS
+2016-09-29 17:26:37 Login Successful
+2016-09-29 17:53:19 Elite Login
+2016-09-29 17:53:25 1600587 L.Makalintal 1 FT
+2016-09-29 17:53:27 FT Station Loaded
+2016-09-29 17:53:27 Login Successful
+2016-09-29 17:53:30 Model Select: MW1500KSXP105-S
+2016-09-29 17:53:32 PETname Select: FKN92B
+2016-09-29 17:53:33 PCB Type: System.Data.DataRowView
+2016-09-29 17:53:33 PCB Type: A5A003448270
+2016-09-29 17:53:33 PCB type Select: A5A003448270
+2016-09-29 17:53:34 PCB Type: A5A003448270
+2016-09-29 17:53:34 PCB Type: A5A003235050
+2016-09-29 17:53:35 Sampling mode selected
+2016-09-29 17:53:41 Scan: AF168N004 A5A003235050
+2016-09-29 17:53:43 PCB was declared NG / Did not pass AOI
+2016-09-29 17:53:46 Scan: AF168N005 A5A003235050
+2016-09-29 17:53:48 PCB was declared NG / Did not pass AOI
+2016-09-29 17:53:51 Scan: AF168N006 A5A003235050
+2016-09-29 17:53:52 Scan: AF168N007 A5A003235050
+2016-09-29 17:53:53 Scan: AF168N008 A5A003235050
+2016-09-29 17:53:54 Scan: AF168N009 A5A003235050
+2016-09-29 17:53:55 Scan: AF168N010 A5A003235050
+2016-09-29 17:53:56 Scan: AF168N011 A5A003235050
+2016-09-29 17:54:00 NG Mode Selected
+2016-09-29 17:54:04 Defect Name: No White Light
+2016-09-29 17:54:07 Jig Number: 2
+2016-09-29 17:54:15 Remarks: IC1
+2016-09-29 17:54:19 Scan: AF168N011 A5A003235050
+2016-09-29 17:54:24 Good Mode Selected
+2016-09-29 17:54:27 Scan: AF168N010 A5A003235050
+2016-09-29 17:54:29 Scan: AF168N011 A5A003235050
+2016-09-29 17:54:31 PCB was declared NG / Did not pass AOI
+2016-09-30 08:39:54 Elite Login
+2016-09-30 08:54:32 Elite Login
+2016-09-30 08:55:02 1600587 L.Makalintal 1 FVI
+2016-09-30 08:55:04 FT Station Loaded
+2016-09-30 08:55:04 FVI Station Login Loaded
+2016-09-30 08:55:04 Login Successful
+2016-09-30 08:55:11 Duplicate Login VI1: 1600587
+2016-09-30 08:56:17 Login VI1: 1600586
+2016-09-30 08:56:28 Login VI2: 1600637
+2016-09-30 08:56:31 Login VI3: 1111111
+2016-09-30 08:56:34 Duplicate Login VI4: 00000
+2016-09-30 08:56:37 VI Station Login Successful
+2016-09-30 09:17:30 Elite Login
+2016-09-30 09:18:44 1600587 L.Makalintal 1 FVI
+2016-09-30 09:18:46 FT Station Loaded
+2016-09-30 09:18:46 FVI Station Login Loaded
+2016-09-30 09:18:47 Login Successful
+2016-09-30 09:18:51 Login VI1: 1600586
+2016-09-30 09:18:57 Login VI2: 1600637
+2016-09-30 09:19:00 Login VI3: 1111111
+2016-09-30 09:19:02 VI Station Login Successful
+2016-09-30 09:19:04 Model Select: MW1500KSXP105-S
+2016-09-30 09:19:07 PETname Select: FKN92B
+2016-09-30 09:19:08 PCB type Select: A5A003448270
+2016-09-30 09:19:10 New Lot Number
+2016-09-30 09:19:12 Lot number generated: A5A003235050-20160930-1-1
+2016-09-30 09:19:16 Scan: AF168N000 A5A003235050
+2016-09-30 09:19:20 Scan: AF168N001 A5A003235050
+2016-09-30 09:19:22 Scan: AF168N002 A5A003235050
+2016-09-30 09:19:24 Scan: AF168N003 A5A003235050
+2016-09-30 09:19:26 Scan: AF168N004 A5A003235050
+2016-09-30 09:19:27 PCB was declared NG
+2016-09-30 09:19:29 Scan: AF168N005 A5A003235050
+2016-09-30 09:19:31 PCB was declared NG
+2016-09-30 09:19:33 Scan: AF168N006 A5A003235050
+2016-09-30 09:19:34 Scan: AF168N007 A5A003235050
+2016-09-30 09:19:36 Scan: AF168N008 A5A003235050
+2016-09-30 09:19:38 Scan: AF168N009 A5A003235050
+2016-09-30 09:19:40 Scan: AF168N010 A5A003235050
+2016-09-30 09:19:41 Scan: AF168N011 A5A003235050
+2016-09-30 09:19:43 PCB was declared NG
+2016-09-30 09:19:46 NG Mode Selected
+2016-09-30 09:19:56 Remarks: C12
+2016-09-30 09:20:03 Inspector: VI 1
+2016-09-30 09:20:23 Scan: AF168N010 A5A003235050
+2016-09-30 09:20:27 FVI Station Logout
+2016-09-30 09:29:07 FVI Station Closed
+2016-09-30 11:11:16 Elite Login
+2016-09-30 11:11:22 1600587 L.Makalintal 1 AOI
+2016-09-30 11:11:23 AOI Station Loaded
+2016-09-30 11:11:23 Login Successful
+2016-09-30 11:11:27 Model Select: MW1500KSXP105-S
+2016-09-30 11:11:29 PETname Select: FKN92B
+2016-09-30 11:11:30 PCB type Select: A5A003448270
+2016-09-30 11:11:35 NG Mode Selected
+2016-09-30 11:11:44 AOI Station Logout
+2016-09-30 11:11:46 AOI Station Closed
+2016-09-30 11:12:09 Elite Login
+2016-09-30 11:12:15 1600587 L.Makalintal 1 AOI
+2016-09-30 11:12:17 AOI Station Loaded
+2016-09-30 11:12:17 Login Successful
+2016-09-30 11:12:19 NG Mode Selected
+2016-09-30 11:14:21 Elite Login
+2016-09-30 11:14:25 1600587 L.Makalintal 1 AOI
+2016-09-30 11:14:26 AOI Station Loaded
+2016-09-30 11:14:27 Login Successful
+2016-09-30 11:14:29 NG Mode Selected
+2016-09-30 11:16:43 Elite Login
+2016-09-30 11:16:55 1600587 L.Makalintal 1 AOI
+2016-09-30 11:16:57 AOI Station Loaded
+2016-09-30 11:16:57 Login Successful
+2016-09-30 11:16:59 NG Mode Selected
+2016-09-30 11:17:08 AOI Station Closed
+2016-09-30 11:17:15 Elite Login
+2016-09-30 11:17:57 Elite Login
+2016-09-30 11:18:04 1600587 L.Makalintal 1 AOI
+2016-09-30 11:18:05 AOI Station Loaded
+2016-09-30 11:18:05 Login Successful
+2016-09-30 11:18:07 NG Mode Selected
+2016-09-30 11:18:24 AOI Station Closed
+2016-09-30 11:18:31 Elite Login
+2016-09-30 11:18:37 1600587 L.Makalintal 1 AOI
+2016-09-30 11:18:38 AOI Station Loaded
+2016-09-30 11:18:38 Login Successful
+2016-09-30 11:18:40 NG Mode Selected
+2016-09-30 11:18:50 AOI Station Closed
+2016-09-30 11:20:29 Elite Login
+2016-09-30 11:20:34 1600587 L.Makalintal 1 AOI
+2016-09-30 11:20:36 AOI Station Loaded
+2016-09-30 11:20:36 Login Successful
+2016-09-30 11:20:38 NG Mode Selected
+2016-09-30 11:20:52 AOI Station Closed
+2016-09-30 11:23:14 Elite Login
+2016-09-30 11:23:22 1600587 L.Makalintal 1 AOI
+2016-09-30 11:23:24 AOI Station Loaded
+2016-09-30 11:23:24 Login Successful
+2016-09-30 11:23:26 NG Mode Selected
+2016-09-30 11:23:45 Good Mode Selected
+2016-09-30 11:23:47 Good Mode Selected
+2016-09-30 11:23:55 NG Mode Selected
+2016-09-30 11:23:56 AOI Station Closed
+2016-09-30 11:25:50 Elite Login
+2016-09-30 11:26:17 Elite Login
+2016-09-30 11:26:23 1600587 L.Makalintal 1 AOI
+2016-09-30 11:26:24 AOI Station Loaded
+2016-09-30 11:26:24 Login Successful
+2016-09-30 11:26:27 NG Mode Selected
+2016-09-30 11:27:29 AOI Station Logout
+2016-09-30 11:27:31 AOI Station Closed
+2016-09-30 11:28:07 Elite Login
+2016-09-30 11:28:11 1600587 L.Makalintal 1 AOI
+2016-09-30 11:28:13 AOI Station Loaded
+2016-09-30 11:28:13 Login Successful
+2016-09-30 11:28:15 NG Mode Selected
+2016-09-30 11:28:42 Remarks: c12
+2016-09-30 11:29:16 Good Mode Selected
+2016-09-30 11:29:17 Good Mode Selected
+2016-09-30 11:29:18 Good Mode Selected
+2016-09-30 11:29:18 Good Mode Selected
+2016-09-30 11:29:20 NG Mode Selected
+2016-09-30 11:29:21 Good Mode Selected
+2016-09-30 11:29:28 NG Mode Selected
+2016-09-30 11:29:28 NG Mode Selected
+2016-09-30 11:29:31 NG Mode Selected
+2016-09-30 11:29:32 Good Mode Selected
+2016-09-30 11:29:36 NG Mode Selected
+2016-09-30 11:29:41 Good Mode Selected
+2016-09-30 11:29:46 AOI Station Logout
+2016-09-30 11:29:48 AOI Station Closed
+2016-09-30 11:32:11 Elite Login
+2016-09-30 11:32:18 1600587 L.Makalintal 1 AOI
+2016-09-30 11:32:19 AOI Station Loaded
+2016-09-30 11:32:19 Login Successful
+2016-09-30 11:32:22 NG Mode Selected
+2016-09-30 11:32:34 Good Mode Selected
+2016-09-30 11:32:36 NG Mode Selected
+2016-09-30 11:33:30 Good Mode Selected
+2016-09-30 11:33:32 AOI Station Closed
+2016-09-30 11:39:02 Elite Login
+2016-09-30 11:39:07 1600587 L.Makalintal 1 AOI
+2016-09-30 11:39:09 AOI Station Loaded
+2016-09-30 11:39:09 Login Successful
+2016-09-30 11:39:11 NG Mode Selected
+2016-09-30 11:39:21 AOI Station Closed
+2016-09-30 11:39:36 Elite Login
+2016-09-30 11:39:43 1600587 L.Makalintal 1 AOI
+2016-09-30 11:39:44 AOI Station Loaded
+2016-09-30 11:39:44 Login Successful
+2016-09-30 11:39:46 NG Mode Selected
+2016-09-30 11:41:23 AOI Station Closed
+2016-09-30 11:42:02 Elite Login
+2016-09-30 11:42:08 1600587 L.Makalintal 1 AOI
+2016-09-30 11:42:10 AOI Station Loaded
+2016-09-30 11:42:10 Login Successful
+2016-09-30 11:42:11 NG Mode Selected
+2016-09-30 11:43:34 Elite Login
+2016-09-30 11:43:48 Login Denied
+2016-09-30 11:43:52 1600587 L.Makalintal 1 AOI
+2016-09-30 11:43:54 Login Denied
+2016-09-30 11:43:57 AOI Station Loaded
+2016-09-30 11:43:58 Login Successful
+2016-09-30 11:44:00 NG Mode Selected
+2016-09-30 11:46:22 Elite Login
+2016-09-30 11:46:30 1600587 L.Makalintal 1 AOI
+2016-09-30 11:46:33 AOI Station Loaded
+2016-09-30 11:46:33 Login Successful
+2016-09-30 11:46:37 NG Mode Selected
+2016-09-30 11:46:55 Good Mode Selected
+2016-09-30 11:46:59 Good Mode Selected
+2016-09-30 11:47:10 AOI Station Closed
+2016-09-30 11:48:40 Elite Login
+2016-09-30 11:48:47 1600587 L.Makalintal 1 AOI
+2016-09-30 11:48:49 AOI Station Loaded
+2016-09-30 11:48:49 Good Mode Selected
+2016-09-30 11:48:49 Login Successful
+2016-09-30 11:48:53 NG Mode Selected
+2016-09-30 11:49:04 AOI Station Closed
+2016-09-30 13:17:00 Elite Login
+2016-09-30 13:17:10 1600587 L.Makalintal 1 AOI
+2016-09-30 13:17:12 AOI Station Loaded
+2016-09-30 13:17:12 Good Mode Selected
+2016-09-30 13:17:12 Login Successful
+2016-09-30 13:17:15 Model Select: MW1500KSXP105-S
+2016-09-30 13:17:17 PETname Select: FKN92B
+2016-09-30 13:17:19 PCB type Select: A5A003448270
+2016-09-30 13:17:22 NG Mode Selected
+2016-09-30 13:17:39 Remarks: test
+2016-09-30 13:17:52 Remarks: test
+2016-09-30 13:18:02 Remarks: test
+2016-09-30 13:18:06 AOI Station Closed
+2016-09-30 13:18:58 Elite Login
+2016-09-30 13:19:02 1600587 L.Makalintal 1 AOI
+2016-09-30 13:19:03 Login Denied
+2016-09-30 13:19:05 Login Denied
+2016-09-30 13:19:07 AOI Station Loaded
+2016-09-30 13:19:07 Good Mode Selected
+2016-09-30 13:19:07 Login Successful
+2016-09-30 13:19:09 Model Select: MW1500KSXP105-S
+2016-09-30 13:19:12 PETname Select: FKN92B
+2016-09-30 13:19:13 PCB type Select: A5A003448270
+2016-09-30 13:19:16 NG Mode Selected
+2016-09-30 13:19:22 Remarks: test
+2016-09-30 13:19:25 Scan: AF168N004 A5A003235050
+2016-09-30 13:19:29 Either the Pallet was not scanned or PCB already passed the next process
+2016-09-30 13:19:35 Scan: AF168N017 A5A003235050
+2016-09-30 13:19:48 Scan: AF168N017 A5A003235050
+2016-09-30 13:21:46 AOI Station Logout
+2016-09-30 13:25:40 Elite Login
+2016-09-30 13:25:45 1600587 L.Makalintal 1 AOI
+2016-09-30 13:25:47 AOI Station Loaded
+2016-09-30 13:25:47 Good Mode Selected
+2016-09-30 13:25:47 Login Successful
+2016-09-30 13:25:49 NG Mode Selected
+2016-09-30 13:26:09 Remarks: test2
+2016-09-30 13:26:14 Scan: AF168N017 A5A003235050
+2016-09-30 13:27:10 Good Mode Selected
+2016-09-30 13:27:29 AOI Station Closed
+2016-09-30 13:49:59 Elite Login
+2016-09-30 13:50:08 1600587 L.Makalintal 1 FVI
+2016-09-30 13:50:09 FVI Station Loaded
+2016-09-30 13:50:09 Good Mode Selected
+2016-09-30 13:50:10 FVI Station Login Loaded
+2016-09-30 13:50:10 Login Successful
+2016-09-30 13:50:14 Login VI1: 1600586
+2016-09-30 13:50:22 Login VI2: 1600637
+2016-09-30 13:50:24 Login VI3: 1111111
+2016-09-30 13:50:27 VI Station Login Successful
+2016-09-30 13:50:31 NG Mode Selected
+2016-09-30 13:50:46 FVI Station Logout
+2016-09-30 13:50:50 FVI Station Closed
+2016-09-30 13:52:24 Elite Login
+2016-09-30 13:52:33 1600587 L.Makalintal 1 FVI
+2016-09-30 13:52:35 FVI Station Loaded
+2016-09-30 13:52:35 Good Mode Selected
+2016-09-30 13:52:35 FVI Station Login Loaded
+2016-09-30 13:52:35 Login Successful
+2016-09-30 13:52:39 Login VI1: 1600586
+2016-09-30 13:52:43 Login VI2: 1600637
+2016-09-30 13:52:45 Login VI3: 0000000
+2016-09-30 13:52:47 VI Station Login Successful
+2016-09-30 13:52:51 NG Mode Selected
+2016-09-30 13:53:08 Inspector: VI 1
+2016-09-30 13:53:16 Scan: AF168N015 A5A003235050
+2016-09-30 13:53:20 Model Select: MW1500KSXP105-S
+2016-09-30 13:53:22 PETname Select: FKN92B
+2016-09-30 13:53:23 PCB type Select: A5A003448270
+2016-09-30 13:53:39 Scan: AF168N015 A5A003235050
+2016-09-30 13:54:06 FVI Station Closed
+2016-10-03 09:53:12 Elite Login
+2016-10-03 09:53:18 1600587 L.Makalintal 1 FVI
+2016-10-03 09:53:21 FVI Station Loaded
+2016-10-03 09:53:21 Good Mode Selected
+2016-10-03 09:53:21 FVI Station Login Loaded
+2016-10-03 09:53:21 Login Successful
+2016-10-03 09:53:24 Login VI1: 1600586
+2016-10-03 09:53:29 Login VI2: 1600637
+2016-10-03 09:53:31 Login VI3: 1111111
+2016-10-03 09:53:33 VI Station Login Successful
+2016-10-03 09:53:35 NG Mode Selected
+2016-10-03 09:53:41 NG Mode Selected
+2016-10-03 09:54:04 FVI Station Logout
+2016-10-03 09:54:06 FVI Station Closed
+2016-10-03 17:22:20 Elite Login
+2016-10-03 17:22:27 1600587 L.Makalintal 1 PWB WASH
+2016-10-03 17:22:28 Login Successful
+2016-10-03 17:25:09 Elite Login
+2016-10-03 17:25:16 1600587 L.Makalintal 1 PWB WASH
+2016-10-03 17:25:17 Login Successful
+2016-10-03 17:27:10 Elite Login
+2016-10-03 17:27:15 1600587 L.Makalintal 1 PWB WASH
+2016-10-03 17:27:16 Login Successful
+2016-10-03 17:29:05 Elite Login
+2016-10-03 17:29:11 1600587 L.Makalintal 1 PWB WASH
+2016-10-03 17:29:13 Login Successful
+2016-10-03 17:32:02 Elite Login
+2016-10-03 17:32:08 1600587 L.Makalintal 1 PWB WASH
+2016-10-03 17:32:10 Login Denied
+2016-10-03 17:32:12 Login Successful
+2016-10-03 17:34:13 Elite Login
+2016-10-03 17:34:17 1600587 L.Makalintal 1 PWB WASH
+2016-10-03 17:34:18 Login Successful
+2016-10-03 17:35:02 Elite Login
+2016-10-03 17:35:12 1600587 L.Makalintal 1 PWB WASH
+2016-10-03 17:35:14 Login Successful
+2016-10-03 17:40:09 Elite Login
+2016-10-03 17:43:02 1600587 L.Makalintal 1 PWB WASH
+2016-10-03 17:43:03 Login Successful
+2016-10-03 17:46:33 Elite Login
+2016-10-03 17:47:20 1600587 L.Makalintal 1 AOI
+2016-10-03 17:47:22 AOI Station Loaded
+2016-10-03 17:47:22 Good Mode Selected
+2016-10-03 17:47:22 Login Successful
+2016-10-03 17:47:25 Model Select: MW1500KSXP105-S
+2016-10-03 17:47:27 PETname Select: FKN92B
+2016-10-03 17:47:28 PCB type Select: A5A003448270
+2016-10-03 17:47:35 NG Mode Selected
+2016-10-03 17:48:11 Remarks: IC1
+2016-10-03 17:48:41 Scan: AF168N013 A5A003235050
+2016-10-03 17:52:31 AOI Station Closed
+2016-10-03 17:53:59 Elite Login
+2016-10-03 17:54:04 1600587 L.Makalintal OFFLINE X-RAY
+2016-10-03 17:54:06 Login Successful
+2016-10-03 17:56:47 Elite Login
+2016-10-03 17:56:52 1600587 L.Makalintal OFFLINE X-RAY
+2016-10-03 17:56:54 Login Successful
+2016-10-04 09:55:05 Elite Login
+2016-10-04 10:53:36 Elite Login
+2016-10-04 10:57:47 1600587 L.Makalintal 1 AOI
+2016-10-04 10:57:50 AOI Station Loaded
+2016-10-04 10:57:50 Good Mode Selected
+2016-10-04 10:57:51 Login Successful
+2016-10-04 10:57:53 NG Mode Selected
+2016-10-04 10:57:56 Model Select: MW1500KSXP105-S
+2016-10-04 10:57:58 PETname Select: FKN92B
+2016-10-04 10:57:59 PCB type Select: A5A003448270
+2016-10-04 10:58:16 Remarks: IC1
+2016-10-04 10:58:35 Scan: AF168N012 A5A003235050
+2016-10-04 11:24:16 AOI Station Logout
+2016-10-04 11:24:17 AOI Station Closed
+2016-10-04 11:31:50 Elite Login
+2016-10-04 11:32:03 1600587 L.Makalintal 1 AOI
+2016-10-04 11:32:05 AOI Station Loaded
+2016-10-04 11:32:05 Good Mode Selected
+2016-10-04 11:32:06 Login Successful
+2016-10-04 11:32:37 AOI Station Closed
+2016-10-04 11:33:26 Elite Login
+2016-10-04 11:33:31 1600587 L.Makalintal 1 AOI
+2016-10-04 11:33:33 AOI Station Loaded
+2016-10-04 11:33:33 Good Mode Selected
+2016-10-04 11:33:33 Login Successful
+2016-10-04 11:33:35 Model Select: MW1500KSXP105-S
+2016-10-04 11:33:38 PETname Select: FKN92B
+2016-10-04 11:33:39 PCB type Select: A5A003448270
+2016-10-04 11:33:53 AOI Station Closed
+2016-10-04 11:34:29 Elite Login
+2016-10-04 11:34:48 1600587 L.Makalintal 1 AOI
+2016-10-04 11:34:49 AOI Station Loaded
+2016-10-04 11:34:50 Good Mode Selected
+2016-10-04 11:34:50 Login Successful
+2016-10-04 11:34:54 Model Select: MW1500KSXP105-S
+2016-10-04 11:34:56 PETname Select: FKN92B
+2016-10-04 11:34:58 PCB type Select: A5A003448270
+2016-10-04 11:35:05 AOI Station Closed
+2016-10-04 11:45:02 Elite Login
+2016-10-04 11:45:49 1600587 L.Makalintal 1 AOI
+2016-10-04 11:45:51 AOI Station Loaded
+2016-10-04 11:45:51 Good Mode Selected
+2016-10-04 11:45:51 Login Successful
+2016-10-04 11:45:56 Model Select: MW1500KSXP105-S
+2016-10-04 11:45:58 PETname Select: FKN92B
+2016-10-04 11:45:59 PCB type Select: A5A003448270
+2016-10-04 11:46:05 New Lot Number
+2016-10-04 11:49:43 AOI Station Closed
+2016-10-04 11:54:44 Elite Login
+2016-10-04 11:54:51 1600587 L.Makalintal 1 AOI
+2016-10-04 11:54:53 AOI Station Loaded
+2016-10-04 11:54:53 Good Mode Selected
+2016-10-04 11:54:53 Login Successful
+2016-10-04 11:54:55 New Lot Number
+2016-10-04 11:54:57 Model Select: MW1500KSXP105-S
+2016-10-04 11:54:59 PETname Select: FKN92B
+2016-10-04 11:55:01 PCB type Select: A5A003448270
+2016-10-04 11:55:04 New Lot Number
+2016-10-04 11:55:17 AOI Station Closed
+2016-10-04 11:57:38 Elite Login
+2016-10-04 11:57:43 1600587 L.Makalintal 1 AOI
+2016-10-04 11:57:44 AOI Station Loaded
+2016-10-04 11:57:44 Good Mode Selected
+2016-10-04 11:57:45 Login Successful
+2016-10-04 11:57:47 Model Select: MW1500KSXP105-S
+2016-10-04 11:57:49 PETname Select: FKN92B
+2016-10-04 11:57:51 PCB type Select: A5A003448270
+2016-10-04 11:57:55 New Lot Number
+2016-10-04 11:58:07 AOI Station Closed
+2016-10-04 13:34:50 Elite Login
+2016-10-04 13:34:58 1600587 L.Makalintal 1 AOI
+2016-10-04 13:34:59 AOI Station Loaded
+2016-10-04 13:34:59 Good Mode Selected
+2016-10-04 13:34:59 Login Successful
+2016-10-04 13:35:06 Model Select: MW1500KSXP105-S
+2016-10-04 13:35:08 PETname Select: FKN92B
+2016-10-04 13:35:09 PCB type Select: A5A003448270
+2016-10-04 13:35:37 AOI Station Closed
+2016-10-04 13:37:34 Elite Login
+2016-10-04 13:37:39 1600587 L.Makalintal 1 AOI
+2016-10-04 13:37:41 AOI Station Loaded
+2016-10-04 13:37:41 Good Mode Selected
+2016-10-04 13:37:41 Login Successful
+2016-10-04 13:37:46 New Lot Number
+2016-10-04 13:37:56 Lot number generated: -1-1
+2016-10-04 13:38:00 Model Select: MW1500KSXP105-S
+2016-10-04 13:38:02 PETname Select: FKN92B
+2016-10-04 13:38:03 PCB type Select: A5A003448270
+2016-10-04 13:38:18 AOI Station Closed
+2016-10-04 13:55:36 Elite Login
+2016-10-04 13:55:44 1600587 L.Makalintal 1 INJECTION
+2016-10-04 13:55:49 Injection Station Loaded
+2016-10-04 13:55:49 Login Successful
+2016-10-04 13:55:54 Scan: wnm01
+2016-10-04 13:55:56 Scan: AF168N000 A5A003235050
+2016-10-04 13:55:59 Scan: AF168N001 A5A003235050
+2016-10-04 13:56:01 Scan: AF168N002 A5A003235050
+2016-10-04 13:56:02 Scan: AF168N003 A5A003235050
+2016-10-04 13:56:03 Scan: AF168N004 A5A003235050
+2016-10-04 13:56:04 Scan: AF168N005 A5A003235050
+2016-10-04 13:56:07 Scan: wnm02
+2016-10-04 13:56:09 Scan: AF168N006 A5A003235050
+2016-10-04 13:56:10 Scan: AF168N007 A5A003235050
+2016-10-04 13:56:11 Scan: AF168N008 A5A003235050
+2016-10-04 13:56:13 Scan: AF168N009 A5A003235050
+2016-10-04 13:56:13 Scan: AF168N010 A5A003235050
+2016-10-04 13:56:14 Scan: AF168N011 A5A003235050
+2016-10-04 13:56:16 Scan: wnm03
+2016-10-04 13:56:18 Scan: AF168N012 A5A003235050
+2016-10-04 13:56:20 Scan: AF168N013 A5A003235050
+2016-10-04 13:56:22 Scan: AF168N014 A5A003235050
+2016-10-04 13:56:23 Scan: AF168N015 A5A003235050
+2016-10-04 13:56:25 Scan: AF168N015 A5A003235050
+2016-10-04 13:56:27 Scan: AF168N017 A5A003235050
+2016-10-04 13:57:29 Scan: AF168N016 A5A003235050
+2016-10-04 13:57:35 Injection Station Logout
+2016-10-04 13:57:56 1600587 L.Makalintal 1 MOUNTER PANASONIC
+2016-10-04 13:57:57 Login Denied
+2016-10-04 13:58:00 Mounter Station Loaded
+2016-10-04 13:58:00 Login Successful
+2016-10-04 13:58:07 Scan: wnm01
+2016-10-04 13:58:10 Scan: wnm02
+2016-10-04 13:58:11 Scan: wnm03
+2016-10-04 13:58:16 Mounter Station Logout
+2016-10-04 13:58:45 1600587 L.Makalintal 1 AOI
+2016-10-04 13:58:48 AOI Station Loaded
+2016-10-04 13:58:48 Good Mode Selected
+2016-10-04 13:58:48 Login Successful
+2016-10-04 13:58:53 Model Select: MW1500KSXP105-S
+2016-10-04 13:58:57 PETname Select: FKN92B
+2016-10-04 13:58:59 PCB type Select: A5A003448270
+2016-10-04 13:59:07 AOI Station Closed
+2016-10-04 13:59:07 Injection Station Closed
+2016-10-04 13:59:07 Mounter Station Closed
+2016-10-04 14:00:06 Elite Login
+2016-10-04 14:00:12 1600587 L.Makalintal 1 AOI
+2016-10-04 14:00:14 AOI Station Loaded
+2016-10-04 14:00:14 Good Mode Selected
+2016-10-04 14:00:14 Login Successful
+2016-10-04 14:00:28 Notification System
+2016-10-04 14:02:52 AOI Station Logout
+2016-10-04 14:03:02 1600587 L.Makalintal 1 AOI
+2016-10-04 14:03:04 Login Successful
+2016-10-04 14:03:06 AOI Station Logout
+2016-10-04 14:03:07 AOI Station Closed
+2016-10-04 14:03:53 Elite Login
+2016-10-04 14:03:59 1600587 L.Makalintal 1 AOI
+2016-10-04 14:04:00 AOI Station Loaded
+2016-10-04 14:04:00 Good Mode Selected
+2016-10-04 14:04:01 Login Successful
+2016-10-04 14:04:09 AOI Station Closed
+2016-10-04 14:06:22 Elite Login
+2016-10-04 14:06:29 1600587 L.Makalintal 1 AOI
+2016-10-04 14:06:30 AOI Station Loaded
+2016-10-04 14:06:30 Good Mode Selected
+2016-10-04 14:06:31 Login Successful
+2016-10-04 14:06:35 Scan: wnm01
+2016-10-04 14:06:37 Model Mismatch
+2016-10-04 14:06:40 AOI Station Closed
+2016-10-04 14:07:10 Elite Login
+2016-10-04 14:07:15 1600587 L.Makalintal 1 AOI
+2016-10-04 14:07:16 AOI Station Loaded
+2016-10-04 14:07:16 Good Mode Selected
+2016-10-04 14:07:17 Login Successful
+2016-10-04 14:07:19 Scan: wnm01
+2016-10-04 14:07:21 Model Mismatch
+2016-10-04 14:07:24 Model Select: MW1500KSXP105-S
+2016-10-04 14:07:26 PETname Select: FKN92B
+2016-10-04 14:07:28 PCB type Select: A5A003448270
+2016-10-04 14:07:40 New Lot Number
+2016-10-04 14:07:50 New Lot Number
+2016-10-04 14:07:51 Model Select: MW1500KSXP105-S
+2016-10-04 14:07:54 PETname Select: FKN92B
+2016-10-04 14:07:55 PCB type Select: A5A003448270
+2016-10-04 14:08:04 Scan: wnm01
+2016-10-04 14:08:31 AOI Station Logout
+2016-10-04 14:08:33 AOI Station Closed
+2016-10-04 14:10:23 Elite Login
+2016-10-04 14:10:30 1600587 L.Makalintal 1 AOI
+2016-10-04 14:10:31 AOI Station Loaded
+2016-10-04 14:10:31 Good Mode Selected
+2016-10-04 14:10:31 Login Successful
+2016-10-04 14:10:34 Model Select: MW1500KSXP105-S
+2016-10-04 14:10:37 PETname Select: FKN92B
+2016-10-04 14:10:38 PCB type Select: A5A003448270
+2016-10-04 14:10:44 Scan: wnm02
+2016-10-04 14:10:53 Scan: wnm03
+2016-10-04 14:11:10 NG Mode Selected
+2016-10-04 14:11:39 Remarks: IC1
+2016-10-04 14:11:44 Scan: AF168N000 A5A003235050
+2016-10-04 14:12:21 Good Mode Selected
+2016-10-04 14:15:00 AOI Station Logout
+2016-10-04 14:15:03 AOI Station Closed
+2016-10-04 14:43:45 Elite Login
+2016-10-04 14:44:14 1600587 L.Makalintal OFFLINE X-RAY
+2016-10-04 14:44:16 Login Successful
+2016-10-04 14:48:09 Elite Login
+2016-10-04 14:48:14 1600587 L.Makalintal OFFLINE X-RAY
+2016-10-04 14:48:16 Login Successful
+2016-10-04 15:18:25 Elite Login
+2016-10-04 15:18:32 1600587 L.Makalintal OFFLINE X-RAY
+2016-10-04 15:18:34 Login Successful
+2016-10-04 15:19:16 Elite Login
+2016-10-04 15:19:21 1600587 L.Makalintal OFFLINE X-RAY
+2016-10-04 15:19:23 Login Successful
+2016-10-04 15:22:03 Elite Login
+2016-10-04 15:22:09 1600587 L.Makalintal OFFLINE X-RAY
+2016-10-04 15:22:11 Login Successful
+2016-10-04 15:36:31 Elite Login
+2016-10-04 15:36:37 1600587 L.Makalintal OFFLINE X-RAY
+2016-10-04 15:36:39 Login Successful
+2016-10-04 16:47:36 Elite Login
+2016-10-04 16:47:46 1600587 L.Makalintal 1 FT
+2016-10-04 16:47:47 FT Station Loaded
+2016-10-04 16:47:48 Login Successful
+2016-10-04 16:47:50 Model Select: MW1500KSXP105-S
+2016-10-04 16:47:52 PETname Select: FKN92B
+2016-10-04 16:47:53 PCB type Select: A5A003448270
+2016-10-04 16:47:56 Sampling mode selected
+2016-10-04 16:48:00 Scan: AF168N016 A5A003235050
+2016-10-04 16:48:02 X-RAY HOLD
+2016-10-04 16:48:04 FT Station Closed
+2016-10-04 16:52:42 Elite Login
+2016-10-04 16:52:51 1600587 L.Makalintal 1 FT
+2016-10-04 16:52:53 FT Station Loaded
+2016-10-04 16:52:53 Login Successful
+2016-10-04 16:52:55 Model Select: MW1500KSXP105-S
+2016-10-04 16:52:57 PETname Select: FKN92B
+2016-10-04 16:52:58 PCB type Select: A5A003448270
+2016-10-04 16:53:03 Scan: AF168N016 A5A003235050
+2016-10-04 16:53:08 X-RAY HOLD
+2016-10-04 16:53:14 FT Station Closed
+2016-10-05 11:43:50 Elite Login
+2016-10-05 11:43:55 1600587 L.Makalintal 1 INJECTION
+2016-10-05 11:43:57 Injection Station Loaded
+2016-10-05 11:43:58 Login Successful
+2016-10-05 11:45:45 Injection Station Closed
+2016-10-05 11:48:07 Elite Login
+2016-10-05 11:48:13 1600587 L.Makalintal 1 INJECTION
+2016-10-05 11:48:15 Injection Station Loaded
+2016-10-05 11:48:16 Login Successful
+2016-10-05 11:50:56 Elite Login
+2016-10-05 11:51:03 1600587 L.Makalintal 1 INJECTION
+2016-10-05 11:51:04 Injection Station Loaded
+2016-10-05 11:51:05 Login Successful
+2016-10-05 11:51:10 Injection Station Closed
+2016-10-05 11:51:33 Elite Login
+2016-10-05 11:51:37 1600587 L.Makalintal 1 INJECTION
+2016-10-05 11:51:38 Injection Station Loaded
+2016-10-05 11:51:39 Login Successful
+2016-10-05 11:51:57 Injection Station Closed
+2016-10-05 12:00:13 Elite Login
+2016-10-05 12:00:17 1600587 L.Makalintal 1 INJECTION
+2016-10-05 12:00:26 Injection Station Loaded
+2016-10-05 12:00:26 Login Successful
+2016-10-05 12:03:00 Injection Station Closed
+2016-10-05 12:03:50 Elite Login
+2016-10-05 12:03:54 1600587 L.Makalintal 1 INJECTION
+2016-10-05 12:03:56 Injection Station Loaded
+2016-10-05 12:03:56 Login Successful
+2016-10-05 12:06:29 Injection Station Closed
+2016-10-05 13:20:39 Elite Login
+2016-10-05 13:21:03 1600587 L.Makalintal 1 INJECTION
+2016-10-05 13:21:06 Injection Station Loaded
+2016-10-05 13:21:06 Login Successful
+2016-10-05 13:21:58 Elite Login
+2016-10-05 13:22:02 1600587 L.Makalintal 1 INJECTION
+2016-10-05 13:22:03 Injection Station Loaded
+2016-10-05 13:22:03 Login Successful
+2016-10-05 13:22:27 Injection Station Closed
+2016-10-05 13:23:18 Elite Login
+2016-10-05 13:23:24 1600587 L.Makalintal 1 INJECTION
+2016-10-05 13:23:26 Injection Station Loaded
+2016-10-05 13:23:26 Login Successful
+2016-10-05 13:23:42 Injection Station Closed
+2016-10-05 13:24:10 Elite Login
+2016-10-05 13:24:17 1600587 L.Makalintal 1 INJECTION
+2016-10-05 13:24:18 Injection Station Loaded
+2016-10-05 13:24:18 Login Successful
+2016-10-05 13:24:36 Injection Station Closed
+2016-10-05 13:25:28 Elite Login
+2016-10-05 13:25:32 1600587 L.Makalintal 1 INJECTION
+2016-10-05 13:25:33 Injection Station Loaded
+2016-10-05 13:25:33 Login Successful
+2016-10-05 14:18:01 Injection Station Closed
+2016-10-05 14:32:20 Elite Login
+2016-10-05 14:32:59 1600587 L.Makalintal 1 INJECTION
+2016-10-05 14:33:01 Injection Station Loaded
+2016-10-05 14:33:01 Login Successful
+2016-10-05 14:33:13 Injection Station Closed
+2016-10-05 14:34:00 Elite Login
+2016-10-05 14:34:05 1600587 L.Makalintal 1 INJECTION
+2016-10-05 14:34:08 Injection Station Loaded
+2016-10-05 14:34:08 Login Successful
+2016-10-05 14:35:49 Injection Station Closed
+2016-10-05 14:36:37 Elite Login
+2016-10-05 14:36:41 1600587 L.Makalintal 1 INJECTION
+2016-10-05 14:36:42 Injection Station Loaded
+2016-10-05 14:36:43 Login Successful
+2016-10-05 14:37:25 Injection Station Closed
+2016-10-05 15:44:27 Elite Login
+2016-10-05 15:44:37 1600587 L.Makalintal 1 INJECTION
+2016-10-05 15:44:38 Injection Station Loaded
+2016-10-05 15:44:39 Login Successful
+2016-10-05 15:44:50 Injection Station Closed
+2016-10-05 15:45:30 Elite Login
+2016-10-05 15:45:34 1600587 L.Makalintal 1 INJECTION
+2016-10-05 15:45:36 Injection Station Loaded
+2016-10-05 15:45:36 Login Successful
+2016-10-05 15:46:04 Injection Station Closed
+2016-10-05 15:46:46 Elite Login
+2016-10-05 15:46:50 1600587 L.Makalintal 1 INJECTION
+2016-10-05 15:46:52 Injection Station Loaded
+2016-10-05 15:46:52 Login Successful
+2016-10-05 15:47:35 Injection Station Closed
+2016-10-05 15:48:04 Elite Login
+2016-10-05 15:48:47 Elite Login
+2016-10-05 15:48:51 1600587 L.Makalintal 1 INJECTION
+2016-10-05 15:48:54 Injection Station Loaded
+2016-10-05 15:48:54 Login Successful
+2016-10-05 15:49:23 Stencil Selection
+2016-10-05 15:52:24 Injection Station Closed
+2016-10-05 15:54:54 Elite Login
+2016-10-05 15:54:58 1600587 L.Makalintal 1 INJECTION
+2016-10-05 15:55:00 Injection Station Loaded
+2016-10-05 15:55:00 Login Successful
+2016-10-05 15:55:02 Stencil Selection
+2016-10-05 15:55:32 Elite Login
+2016-10-05 15:55:35 1600587 L.Makalintal 1 INJECTION
+2016-10-05 15:56:34 Elite Login
+2016-10-05 15:56:37 1600587 L.Makalintal 1 INJECTION
+2016-10-05 15:58:07 Elite Login
+2016-10-05 15:58:13 1600587 L.Makalintal 1 INJECTION
+2016-10-05 15:59:19 Elite Login
+2016-10-05 15:59:22 1600587 L.Makalintal 1 INJECTION
+2016-10-05 16:00:59 Elite Login
+2016-10-05 16:01:02 1600587 L.Makalintal 1 INJECTION
+2016-10-05 16:02:38 Elite Login
+2016-10-05 16:02:55 1600587 L.Makalintal 1 INJECTION
+2016-10-05 16:04:49 Elite Login
+2016-10-05 16:04:52 1600587 L.Makalintal 1 INJECTION
+2016-10-05 16:04:54 Injection Station Loaded
+2016-10-05 16:04:55 Login Successful
+2016-10-05 16:05:19 Injection Station Logout
+2016-10-05 16:05:20 Injection Station Closed
+2016-10-05 16:08:26 Elite Login
+2016-10-05 16:08:29 1600587 L.Makalintal 1 INJECTION
+2016-10-05 16:08:31 Injection Station Loaded
+2016-10-05 16:08:31 Login Successful
+2016-10-05 16:08:34 Stencil Selection
+2016-10-05 16:09:28 Elite Login
+2016-10-05 16:09:31 1600587 L.Makalintal 1 INJECTION
+2016-10-05 16:12:52 Elite Login
+2016-10-05 16:12:57 1600587 L.Makalintal 1 INJECTION
+2016-10-05 16:12:59 Login Denied
+2016-10-05 16:13:03 Injection Station Loaded
+2016-10-05 16:13:03 Login Successful
+2016-10-05 16:14:12 Elite Login
+2016-10-05 16:14:16 1600587 L.Makalintal 1 INJECTION
+2016-10-05 16:16:03 Elite Login
+2016-10-05 16:18:35 Elite Login
+2016-10-05 16:22:56 Elite Login
+2016-10-05 16:25:21 Elite Login
+2016-10-05 16:25:33 Injection Station Loaded
+2016-10-05 16:25:33 Login Successful
+2016-10-05 16:25:36 Injection Station Closed
+2016-10-05 16:25:44 Elite Login
+2016-10-05 16:25:49 1600587 L.Makalintal 1 INJECTION
+2016-10-05 16:25:59 Injection Station Loaded
+2016-10-05 16:26:01 Login Successful
+2016-10-05 16:26:37 Elite Login
+2016-10-05 16:26:42 1600587 L.Makalintal 1 INJECTION
+2016-10-05 16:27:02 Elite Login
+2016-10-05 16:27:17 Injection Station Loaded
+2016-10-05 16:27:17 Login Successful
+2016-10-05 16:27:50 Elite Login
+2016-10-05 16:28:01 1600587 L.Makalintal 1 INJECTION
+2016-10-05 16:28:05 Injection Station Loaded
+2016-10-05 16:28:06 Login Successful
+2016-10-05 16:31:04 Elite Login
+2016-10-05 16:31:11 Injection Station Loaded
+2016-10-05 16:31:11 Login Successful
+2016-10-05 16:31:15 Injection Station Logout
+2016-10-05 16:31:19 Injection Station Closed
+2016-10-05 16:35:00 Elite Login
+2016-10-05 16:35:09 Injection Station Loaded
+2016-10-05 16:35:09 Login Successful
+2016-10-05 16:35:13 Injection Station Closed
+2016-10-05 16:35:23 Elite Login
+2016-10-05 16:35:26 1600587 L.Makalintal 1 INJECTION
+2016-10-05 16:35:39 Elite Login
+2016-10-05 16:35:46 Injection Station Loaded
+2016-10-05 16:35:47 Login Successful
+2016-10-05 16:35:49 Injection Station Closed
+2016-10-05 16:40:49 Elite Login
+2016-10-05 16:40:58 Injection Station Loaded
+2016-10-05 16:40:58 Login Successful
+2016-10-05 16:41:08 Injection Station Logout
+2016-10-05 16:41:14 Injection Station Closed
+2016-10-05 16:42:34 Elite Login
+2016-10-05 16:42:37 1600587 L.Makalintal 1 INJECTION
+2016-10-05 16:42:40 Injection Station Loaded
+2016-10-05 16:42:40 Login Successful
+2016-10-05 16:42:47 Stencil Selection
+2016-10-05 16:43:31 Injection Station Closed
+2016-10-05 16:45:05 Elite Login
+2016-10-05 16:45:08 1600587 L.Makalintal 1 INJECTION
+2016-10-05 16:45:09 Injection Station Loaded
+2016-10-05 16:45:09 Login Successful
+2016-10-05 16:45:12 Stencil Selection
+2016-10-05 16:45:30 Stencil Selection
+2016-10-05 16:45:43 Injection Station Closed
+2016-10-05 16:46:24 Elite Login
+2016-10-05 16:46:26 1600587 L.Makalintal 1 INJECTION
+2016-10-05 16:46:28 Injection Station Loaded
+2016-10-05 16:46:28 Login Successful
+2016-10-05 16:46:30 Stencil Selection
+2016-10-05 16:46:51 Stencil Selection
+2016-10-05 16:47:35 Injection Station Closed
+2016-10-05 16:48:54 Elite Login
+2016-10-05 16:49:01 1600587 L.Makalintal 1 MATERIAL REG
+2016-10-05 16:49:03 Login Successful
+2016-10-05 16:49:06 Login Successful
+2016-10-05 16:49:07 Login Successful
+2016-10-05 16:49:11 Login Successful
+2016-10-05 16:49:12 Login Successful
+2016-10-05 16:49:13 Login Successful
+2016-10-05 16:49:13 Login Successful
+2016-10-05 16:49:14 Login Successful
+2016-10-05 16:49:14 Login Successful
+2016-10-05 16:49:17 Login Successful
+2016-10-05 16:49:17 Login Successful
+2016-10-05 16:49:17 Login Successful
+2016-10-05 16:49:17 Login Successful
+2016-10-05 16:49:17 Login Successful
+2016-10-05 16:49:22 Login Successful
+2016-10-05 16:49:22 Login Successful
+2016-10-05 16:49:22 Login Successful
+2016-10-05 16:49:22 Login Successful
+2016-10-05 16:49:22 Login Successful
+2016-10-05 16:49:26 Login Successful
+2016-10-05 16:49:27 Login Successful
+2016-10-05 16:49:27 Login Successful
+2016-10-05 16:49:27 Login Successful
+2016-10-05 16:49:28 Login Successful
+2016-10-05 16:49:28 Login Successful
+2016-10-05 16:49:35 1600587 L.Makalintal 1 INJECTION
+2016-10-05 16:49:36 Login Denied
+2016-10-05 16:49:39 Injection Station Loaded
+2016-10-05 16:49:40 Login Successful
+2016-10-05 16:49:43 Stencil Selection
+2016-10-05 16:50:31 Stencil Selection
+2016-10-05 16:50:58 Scan: A5A003235050A016MJ108
+2016-10-05 16:50:58 Invalid entry. Incomplete details
+2016-10-05 16:51:06 Stencil Selection
+2016-10-05 16:54:45 Injection Station Closed
+2016-10-05 17:09:35 Elite Login
+2016-10-05 17:09:38 1600587 L.Makalintal 1 INJECTION
+2016-10-05 17:09:40 Injection Station Loaded
+2016-10-05 17:09:40 Login Successful
+2016-10-05 17:10:35 Stencil Selection
+2016-10-05 17:11:21 Stencil Selection
+2016-10-05 17:11:39 Stencil Selection
+2016-10-05 17:11:56 Scan: A5A003235050A016MJ110
+2016-10-05 17:11:56 Invalid entry. Incomplete details
+2016-10-05 17:14:48 Injection Station Logout
+2016-10-05 17:14:49 Injection Station Closed
+2016-10-05 17:36:28 Elite Login
+2016-10-05 17:38:09 1600587 L.Makalintal 1 INJECTION
+2016-10-05 17:38:10 Injection Station Loaded
+2016-10-05 17:38:10 Login Successful
+2016-10-05 17:47:54 Injection Station Logout
+2016-10-05 17:47:55 Injection Station Closed
+2016-10-06 08:12:59 Elite Login
+2016-10-06 08:13:06 1600587 L.Makalintal 1 INJECTION
+2016-10-06 08:13:07 Login Denied
+2016-10-06 08:13:10 Injection Station Loaded
+2016-10-06 08:13:10 Login Successful
+2016-10-06 08:13:48 Injection Station Closed
+2016-10-06 08:14:16 Elite Login
+2016-10-06 08:14:19 1600587 L.Makalintal 1 INJECTION
+2016-10-06 08:14:21 Injection Station Loaded
+2016-10-06 08:14:21 Login Successful
+2016-10-06 08:14:57 Injection Station Closed
+2016-10-06 08:21:39 Elite Login
+2016-10-06 08:21:42 1600587 L.Makalintal 1 INJECTION
+2016-10-06 08:21:45 Injection Station Loaded
+2016-10-06 08:21:45 Login Successful
+2016-10-06 08:22:43 Injection Station Logout
+2016-10-06 08:22:45 Injection Station Closed
+2016-10-06 08:24:32 Elite Login
+2016-10-06 08:24:35 1600587 L.Makalintal 1 INJECTION
+2016-10-06 08:24:36 Injection Station Loaded
+2016-10-06 08:24:36 Login Successful
+2016-10-06 08:24:59 Injection Station Closed
+2016-10-06 08:25:45 Elite Login
+2016-10-06 08:25:48 1600587 L.Makalintal 1 INJECTION
+2016-10-06 08:25:50 Injection Station Loaded
+2016-10-06 08:25:50 Login Successful
+2016-10-06 08:26:57 Injection Station Logout
+2016-10-06 08:26:58 Injection Station Closed
+2016-10-06 08:29:10 Elite Login
+2016-10-06 08:29:13 1600587 L.Makalintal 1 INJECTION
+2016-10-06 08:29:15 Injection Station Loaded
+2016-10-06 08:29:15 Login Successful
+2016-10-06 08:30:03 Injection Station Logout
+2016-10-06 08:30:05 Injection Station Closed
+2016-10-06 08:44:57 Elite Login
+2016-10-06 08:44:59 1600587 L.Makalintal 1 INJECTION
+2016-10-06 08:45:01 Injection Station Loaded
+2016-10-06 08:45:01 Login Successful
+2016-10-06 08:46:37 Elite Login
+2016-10-06 08:46:40 1600587 L.Makalintal 1 INJECTION
+2016-10-06 08:46:42 Login Denied
+2016-10-06 08:46:44 Injection Station Loaded
+2016-10-06 08:46:45 Login Successful
+2016-10-06 08:47:36 Injection Station Logout
+2016-10-06 08:47:37 Injection Station Closed
+2016-10-06 08:48:35 Elite Login
+2016-10-06 08:48:38 1600587 L.Makalintal 1 INJECTION
+2016-10-06 08:48:40 Injection Station Loaded
+2016-10-06 08:48:40 Login Successful
+2016-10-06 08:49:36 Injection Station Closed
+2016-10-06 08:53:31 Elite Login
+2016-10-06 08:53:34 1600587 L.Makalintal 1 INJECTION
+2016-10-06 08:53:35 Injection Station Loaded
+2016-10-06 08:53:36 Login Successful
+2016-10-06 08:53:56 Injection Station Logout
+2016-10-06 08:53:57 Injection Station Closed
+2016-10-06 08:58:10 Elite Login
+2016-10-06 08:58:13 1600587 L.Makalintal 1 INJECTION
+2016-10-06 08:58:15 Injection Station Loaded
+2016-10-06 08:58:15 Login Successful
+2016-10-06 08:59:52 Injection Station Logout
+2016-10-06 09:00:02 1600587 L.Makalintal 1 INJECTION
+2016-10-06 09:00:03 Login Successful
+2016-10-06 09:00:07 Scan: wnm02
+2016-10-06 09:00:07 Invalid entry. Incomplete details
+2016-10-06 09:00:11 Stencil Selection
+2016-10-06 09:01:06 Stencil Selection
+2016-10-06 09:01:43 Scan: WNM02
+2016-10-06 09:01:48 Injection Station Logout
+2016-10-06 09:01:51 Injection Station Closed
+2016-10-06 09:01:58 Elite Login
+2016-10-06 09:02:00 1600587 L.Makalintal 1 INJECTION
+2016-10-06 09:02:02 Injection Station Loaded
+2016-10-06 09:02:02 Login Successful
+2016-10-06 09:03:25 Injection Station Logout
+2016-10-06 09:03:27 Injection Station Closed
+2016-10-06 09:12:38 Elite Login
+2016-10-06 09:12:43 1600587 L.Makalintal 1 INJECTION
+2016-10-06 09:12:44 Injection Station Loaded
+2016-10-06 09:12:44 Login Successful
+2016-10-06 09:12:47 Injection Station Loaded
+2016-10-06 09:12:50 Injection Station Loaded
+2016-10-06 09:13:00 Injection Station Closed
+2016-10-06 09:14:19 Elite Login
+2016-10-06 09:14:22 1600587 L.Makalintal 1 INJECTION
+2016-10-06 09:14:23 Injection Station Loaded
+2016-10-06 09:14:23 Login Successful
+2016-10-06 09:14:27 Scan: wnm02
+2016-10-06 09:14:33 Injection Station Logout
+2016-10-06 09:14:34 Injection Station Closed
+2016-10-06 09:14:41 Elite Login
+2016-10-06 09:14:44 1600587 L.Makalintal 1 INJECTION
+2016-10-06 09:14:45 Injection Station Loaded
+2016-10-06 09:14:45 Login Successful
+2016-10-06 09:15:07 Injection Station Logout
+2016-10-06 09:15:08 Injection Station Closed
+2016-10-06 09:16:23 Elite Login
+2016-10-06 09:16:26 1600587 L.Makalintal 1 INJECTION
+2016-10-06 09:16:27 Login Denied
+2016-10-06 09:16:30 Injection Station Loaded
+2016-10-06 09:16:30 Login Successful
+2016-10-06 09:16:58 Injection Station Loaded
+2016-10-06 09:17:06 Injection Station Loaded
+2016-10-06 09:17:11 Scan: wnm01
+2016-10-06 09:17:14 Scan: AF168N000 A5A003235050
+2016-10-06 09:17:15 Scan: AF168N001 A5A003235050
+2016-10-06 09:17:15 Scan: AF168N002 A5A003235050
+2016-10-06 09:17:20 Injection Station Loaded
+2016-10-06 09:17:25 Injection Station Loaded
+2016-10-06 09:17:31 Scan: wnm01
+2016-10-06 09:17:34 Scan: AF168N000 A5A003235050
+2016-10-06 09:17:37 Scan: AF168N005 A5A003235050
+2016-10-06 09:18:19 Injection Station Loaded
+2016-10-06 09:18:29 Injection Station Logout
+2016-10-06 09:18:31 Injection Station Closed
+2016-10-06 09:18:39 Elite Login
+2016-10-06 09:18:42 1600587 L.Makalintal 1 INJECTION
+2016-10-06 09:18:43 Injection Station Loaded
+2016-10-06 09:18:43 Login Successful
+2016-10-06 09:19:45 Injection Station Logout
+2016-10-06 09:19:46 Injection Station Closed
+2016-10-06 09:21:42 Elite Login
+2016-10-06 09:21:45 1600587 L.Makalintal 1 INJECTION
+2016-10-06 09:21:46 Injection Station Loaded
+2016-10-06 09:21:47 Login Successful
+2016-10-06 09:21:50 Scan: wnm01
+2016-10-06 09:21:54 Scan: AF168N000 A5A003235050
+2016-10-06 09:21:54 Scan: AF168N001 A5A003235050
+2016-10-06 09:21:55 Scan: AF168N002 A5A003235050
+2016-10-06 09:21:59 Injection Station Loaded
+2016-10-06 09:22:41 Elite Login
+2016-10-06 09:22:53 1600587 L.Makalintal 1 INJECTION
+2016-10-06 09:22:55 Injection Station Loaded
+2016-10-06 09:22:55 Login Successful
+2016-10-06 09:23:00 Injection Station Closed
+2016-10-06 10:21:26 Elite Login
+2016-10-06 10:21:31 1600587 L.Makalintal 1 AOI
+2016-10-06 10:21:33 AOI Station Loaded
+2016-10-06 10:21:33 Good Mode Selected
+2016-10-06 10:21:33 Login Successful
+2016-10-06 10:21:38 Scan: AF168N011 A5A003235050
+2016-10-06 10:21:41 Invalid Pallet/PCB ID
+2016-10-06 10:21:42 Model Select: MW1500KSXP105-S
+2016-10-06 10:21:45 PETname Select: FKN92B
+2016-10-06 10:21:46 PCB type Select: A5A003448270
+2016-10-06 10:21:49 AOI Station Logout
+2016-10-06 10:22:00 1600587 L.Makalintal 1 FT
+2016-10-06 10:22:02 FT Station Loaded
+2016-10-06 10:22:02 Login Successful
+2016-10-06 10:22:06 Scan: AF168N010 A5A003235050
+2016-10-06 10:22:07 Model Mismatch
+2016-10-06 10:22:09 Model Select: MW1500KSXP105-S
+2016-10-06 10:22:11 PETname Select: FKN92B
+2016-10-06 10:22:12 PCB type Select: A5A003448270
+2016-10-06 10:22:14 Sampling mode selected
+2016-10-06 10:22:15 Scan: AF168N010 A5A003235050
+2016-10-06 10:22:17 PCB was declared NG / Did not pass AOI
+2016-10-06 10:22:20 Scan: AF168N000 A5A003235050
+2016-10-06 10:22:22 PCB was declared NG / Did not pass AOI
+2016-10-06 10:22:23 Scan: AF168N001 A5A003235050
+2016-10-06 10:22:24 PCB was declared NG / Did not pass AOI
+2016-10-06 10:22:25 Scan: AF168N006 A5A003235050
+2016-10-06 10:22:26 PCB was declared NG / Did not pass AOI
+2016-10-06 10:22:27 Scan: AF168N012 A5A003235050
+2016-10-06 10:22:28 X-RAY HOLD
+2016-10-06 10:22:29 Scan: AF168N013 A5A003235050
+2016-10-06 10:22:30 X-RAY HOLD
+2016-10-06 10:22:40 FT Station Logout
+2016-10-06 10:22:46 1600587 L.Makalintal OFFLINE X-RAY
+2016-10-06 10:22:48 Login Successful
+2016-10-06 10:24:09 1600587 L.Makalintal 1 FT
+2016-10-06 10:24:10 Login Successful
+2016-10-06 10:24:17 Scan: AF168N012 A5A003235050
+2016-10-06 10:24:19 Scan: AF168N013 A5A003235050
+2016-10-06 10:24:22 Scan: AF168N015 A5A003235050
+2016-10-06 10:24:25 Scan: AF168N014 A5A003235050
+2016-10-06 10:24:31 Scan: AF168N016 A5A003235050
+2016-10-06 10:24:35 Scan: AF168N017 A5A003235050
+2016-10-06 10:25:37 FT Station Logout
+2016-10-06 10:25:38 AOI Station Closed
+2016-10-06 10:25:38 FT Station Closed
+2016-10-06 11:58:51 Elite Login
+2016-10-06 11:58:56 1600587 L.Makalintal 1 INJECTION
+2016-10-06 11:58:59 Wrong Stencil Assigned
+2016-10-06 11:58:59 Injection Station Loaded
+2016-10-06 12:00:39 Elite Login
+2016-10-06 12:00:43 1600587 L.Makalintal 1 INJECTION
+2016-10-06 12:00:46 Wrong Stencil Assigned
+2016-10-06 12:00:46 Injection Station Loaded
+2016-10-06 12:00:47 Login Successful
+2016-10-06 12:01:07 Stencil Selection
+2016-10-06 12:01:27 Injection Station Closed
+2016-10-06 12:01:47 Elite Login
+2016-10-06 12:01:51 1600587 L.Makalintal 1 INJECTION
+2016-10-06 12:01:52 Injection Station Loaded
+2016-10-06 12:01:53 Login Successful
+2016-10-06 12:02:38 Injection Station Logout
+2016-10-06 12:02:40 Injection Station Closed
+2016-10-06 13:03:13 Elite Login
+2016-10-06 13:03:23 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-06 13:03:27 Login Successful
+2016-10-06 13:11:24 Elite Login
+2016-10-06 13:11:43 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-06 13:11:46 Login Successful
+2016-10-06 13:21:52 Elite Login
+2016-10-06 13:21:59 100587  1 CREAM SOLDER
+2016-10-06 13:21:59 User is not Registered
+2016-10-06 13:22:02 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-06 13:22:04 Login Successful
+2016-10-06 13:22:56 Elite Login
+2016-10-06 13:23:02 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-06 13:23:05 Login Successful
+2016-10-06 13:32:33 Elite Login
+2016-10-06 13:32:41 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-06 13:32:43 Login Successful
+2016-10-06 13:43:25 Elite Login
+2016-10-06 13:43:28 1600587 L.Makalintal 1 INJECTION
+2016-10-06 13:43:30 Injection Station Loaded
+2016-10-06 13:43:31 Login Successful
+2016-10-06 13:44:56 Scan: wnm01
+2016-10-06 13:44:56 Invalid entry. Incomplete details
+2016-10-06 13:45:05 PCB details menu
+2016-10-06 13:45:24 Cream Solder Menu
+2016-10-06 13:45:50 Stencil Selection
+2016-10-06 13:46:37 Scan: wnm01
+2016-10-06 13:46:43 Scan: AF168N000 A5A003235050
+2016-10-06 13:46:44 Scan: AF168N001 A5A003235050
+2016-10-06 13:46:45 Scan: AF168N002 A5A003235050
+2016-10-06 13:46:46 Scan: AF168N003 A5A003235050
+2016-10-06 13:46:47 Scan: AF168N004 A5A003235050
+2016-10-06 13:46:48 Scan: AF168N005 A5A003235050
+2016-10-06 13:46:52 Scan: wnm02
+2016-10-06 13:46:55 Scan: AF168N006 A5A003235050
+2016-10-06 13:46:56 Scan: AF168N007 A5A003235050
+2016-10-06 13:46:57 Scan: AF168N008 A5A003235050
+2016-10-06 13:46:58 Scan: AF168N009 A5A003235050
+2016-10-06 13:46:59 Scan: AF168N010 A5A003235050
+2016-10-06 13:47:00 Scan: AF168N011 A5A003235050
+2016-10-06 13:47:04 Scan: wnm03
+2016-10-06 13:47:07 Scan: AF168N012 A5A003235050
+2016-10-06 13:47:08 Scan: AF168N013 A5A003235050
+2016-10-06 13:47:09 Scan: AF168N014 A5A003235050
+2016-10-06 13:47:10 Scan: AF168N015 A5A003235050
+2016-10-06 13:47:11 Scan: AF168N016 A5A003235050
+2016-10-06 13:47:12 Scan: AF168N017 A5A003235050
+2016-10-06 13:47:18 Scan: wnm04
+2016-10-06 13:47:22 Scan: AF168N018 A5A003235050
+2016-10-06 13:47:23 Scan: AF168N019 A5A003235050
+2016-10-06 13:47:24 Scan: AF168N020 A5A003235050
+2016-10-06 13:47:24 Scan: AF168N021 A5A003235050
+2016-10-06 13:47:25 Scan: AF168N022 A5A003235050
+2016-10-06 13:47:26 Scan: AF168N023 A5A003235050
+2016-10-06 13:47:33 PCB Wash
+2016-10-06 13:47:39 Scan: wnm04
+2016-10-06 13:49:29 Elite Login
+2016-10-06 13:49:33 1600587 L.Makalintal 1 INJECTION
+2016-10-06 13:49:36 Wrong Stencil Assigned
+2016-10-06 13:49:36 Injection Station Loaded
+2016-10-06 13:49:36 Login Successful
+2016-10-06 13:49:38 Stencil Selection
+2016-10-06 13:50:25 PCB details menu
+2016-10-06 13:50:46 Cream Solder Menu
+2016-10-06 13:51:11 Stencil Selection
+2016-10-06 13:51:43 Scan: wnm01
+2016-10-06 13:51:46 Scan: AF168N000 A5A003235050
+2016-10-06 13:51:47 Scan: AF168N001 A5A003235050
+2016-10-06 13:51:48 Scan: AF168N002 A5A003235050
+2016-10-06 13:51:49 Scan: AF168N003 A5A003235050
+2016-10-06 13:51:50 Scan: AF168N004 A5A003235050
+2016-10-06 13:51:51 Scan: AF168N005 A5A003235050
+2016-10-06 13:51:55 Scan: wnm02
+2016-10-06 13:51:56 Scan: AF168N006 A5A003235050
+2016-10-06 13:51:57 Scan: AF168N007 A5A003235050
+2016-10-06 13:51:58 Scan: AF168N008 A5A003235050
+2016-10-06 13:51:59 Scan: AF168N009 A5A003235050
+2016-10-06 13:52:00 Scan: AF168N010 A5A003235050
+2016-10-06 13:52:01 Scan: AF168N011 A5A003235050
+2016-10-06 13:52:02 Scan: wnm03
+2016-10-06 13:52:04 Scan: AF168N012 A5A003235050
+2016-10-06 13:52:05 Scan: AF168N013 A5A003235050
+2016-10-06 13:52:06 Scan: AF168N014 A5A003235050
+2016-10-06 13:52:07 Scan: AF168N015 A5A003235050
+2016-10-06 13:52:09 Scan: AF168N016 A5A003235050
+2016-10-06 13:52:10 Scan: AF168N017 A5A003235050
+2016-10-06 13:52:14 Scan: wnm04
+2016-10-06 13:52:17 Scan: AF168N018 A5A003235050
+2016-10-06 13:52:18 Scan: AF168N019 A5A003235050
+2016-10-06 13:52:19 Scan: AF168N020 A5A003235050
+2016-10-06 13:52:20 Scan: AF168N021 A5A003235050
+2016-10-06 13:52:21 Scan: AF168N022 A5A003235050
+2016-10-06 13:52:22 Scan: AF168N023 A5A003235050
+2016-10-06 13:52:27 PCB Wash
+2016-10-06 13:52:32 Scan: wnm04
+2016-10-06 13:52:38 Message: PCB history was deleted successfully. Proceed in washing
+2016-10-06 13:56:03 Injection Station Logout
+2016-10-06 13:56:19 1600587 L.Makalintal 1 MOUNTER PANASONIC
+2016-10-06 13:56:21 Mounter Station Loaded
+2016-10-06 13:56:21 Login Successful
+2016-10-06 13:56:28 Scan: wnm04
+2016-10-06 13:56:28 Invalid Action. Pallet Error
+2016-10-06 13:58:00 Scan: wnm01
+2016-10-06 13:58:03 Scan: wnm02
+2016-10-06 13:58:06 Scan: wnm03
+2016-10-06 13:58:08 Scan: wnm04
+2016-10-06 13:58:08 Invalid Action. Pallet Error
+2016-10-06 13:58:45 Mounter Station Logout
+2016-10-06 13:58:55 1600587 L.Makalintal 1 AOI
+2016-10-06 13:58:58 AOI Station Loaded
+2016-10-06 13:58:59 Good Mode Selected
+2016-10-06 13:58:59 Login Successful
+2016-10-06 13:59:37 Model Select: MW1500KSXP105-S
+2016-10-06 13:59:39 PETname Select: FKN92B
+2016-10-06 13:59:40 PCB type Select: A5A003448270
+2016-10-06 13:59:53 AOI Station Logout
+2016-10-06 13:59:54 Injection Station Closed
+2016-10-06 13:59:54 Mounter Station Closed
+2016-10-06 13:59:54 AOI Station Closed
+2016-10-06 14:03:37 Elite Login
+2016-10-06 14:03:47 1600587 L.Makalintal 1 AOI
+2016-10-06 14:03:49 AOI Station Loaded
+2016-10-06 14:03:49 Good Mode Selected
+2016-10-06 14:03:49 Login Successful
+2016-10-06 14:04:49 Model Select: MW1500KSXP105-S
+2016-10-06 14:04:51 PETname Select: FKN92B
+2016-10-06 14:04:53 PCB type Select: A5A003448270
+2016-10-06 14:04:59 Scan: wnm01
+2016-10-06 14:05:00 Scan: wnm02
+2016-10-06 14:05:01 Scan: wnm03
+2016-10-06 14:05:05 NG Mode Selected
+2016-10-06 14:05:23 Scan: AF168N011 A5A003235050
+2016-10-06 14:09:47 AOI Station Logout
+2016-10-06 14:09:49 AOI Station Closed
+2016-10-06 14:15:48 Elite Login
+2016-10-06 14:37:29 Elite Login
+2016-10-06 14:37:35 1600587 L.Makalintal 1 AOI
+2016-10-06 14:37:38 AOI Station Loaded
+2016-10-06 14:37:38 Good Mode Selected
+2016-10-06 14:37:39 Login Successful
+2016-10-06 14:41:00 Model Select: MW1500KSXP105-S
+2016-10-06 14:41:02 PETname Select: FKN92B
+2016-10-06 14:41:04 PCB type Select: A5A003448270
+2016-10-06 14:41:09 Scan: wnm01
+2016-10-06 14:41:13 Invalid Action. Pallet did not pass previous process
+2016-10-06 14:41:15 Scan: wnm02
+2016-10-06 14:41:17 Invalid Action. Pallet did not pass previous process
+2016-10-06 14:43:43 AOI Station Logout
+2016-10-06 14:43:45 AOI Station Closed
+2016-10-06 14:43:53 Elite Login
+2016-10-06 14:44:02 1600587 L.Makalintal 1 AOI
+2016-10-06 14:44:03 AOI Station Loaded
+2016-10-06 14:44:03 Good Mode Selected
+2016-10-06 14:44:04 Login Successful
+2016-10-06 14:44:36 Model Select: MW1500KSXP105-S
+2016-10-06 14:44:38 PETname Select: FKN92B
+2016-10-06 14:44:40 PCB type Select: A5A003448270
+2016-10-06 14:44:45 Scan: wnm01
+2016-10-06 14:44:47 Scan: wnm02
+2016-10-06 14:44:49 Scan: wnm03
+2016-10-06 14:44:53 NG Mode Selected
+2016-10-06 14:45:08 Remarks: IC12
+2016-10-06 14:45:14 Scan: AF168N006 A5A003235050
+2016-10-06 14:46:09 Good Mode Selected
+2016-10-06 14:51:29 AOI Station Logout
+2016-10-06 14:51:30 AOI Station Closed
+2016-10-06 14:55:44 Elite Login
+2016-10-06 14:55:49 1600587 L.Makalintal 1 AOI
+2016-10-06 14:55:50 AOI Station Loaded
+2016-10-06 14:55:50 Good Mode Selected
+2016-10-06 14:55:51 Login Successful
+2016-10-06 14:55:56 AOI Station Logout
+2016-10-06 14:55:57 AOI Station Closed
+2016-10-06 15:00:48 Elite Login
+2016-10-06 15:00:52 1600587 L.Makalintal 1 AOI
+2016-10-06 15:00:53 AOI Station Loaded
+2016-10-06 15:00:53 Good Mode Selected
+2016-10-06 15:00:54 Login Successful
+2016-10-06 23:43:36 Elite Login
+2016-10-06 23:44:52 1600587 L.Makalintal 1 AOI
+2016-10-06 23:44:55 AOI Station Loaded
+2016-10-06 23:44:55 Good Mode Selected
+2016-10-06 23:44:55 Login Successful
+2016-10-06 23:44:59 Model Select: MW1500KSXP105-S
+2016-10-06 23:46:00 Model Select: MW1500KSXP105-S
+2016-10-06 23:46:05 PETname Select: FKN92B
+2016-10-06 23:46:08 PCB type Select: A5A003448270
+2016-10-06 23:46:15 Scan: wnm01
+2016-10-06 23:46:17 Scan: wnm02
+2016-10-06 23:46:20 Scan: wnm03
+2016-10-06 23:46:22 Scan: wnm05
+2016-10-06 23:46:25 Invalid Pallet/PCB ID
+2016-10-06 23:46:27 NG Mode Selected
+2016-10-06 23:46:57 AOI Station Logout
+2016-10-06 23:46:59 AOI Station Closed
+2016-10-06 23:50:44 Elite Login
+2016-10-06 23:50:53 1600587 L.Makalintal 1 AOI
+2016-10-06 23:50:55 AOI Station Loaded
+2016-10-06 23:50:55 Good Mode Selected
+2016-10-06 23:50:55 Login Successful
+2016-10-06 23:51:55 Model Select: MW1500KSXP105-S
+2016-10-06 23:51:59 PETname Select: FKN92B
+2016-10-06 23:52:01 PCB type Select: A5A003448270
+2016-10-06 23:52:13 Scan: wnm01
+2016-10-06 23:52:18 Invalid Action. Pallet did not pass previous process
+2016-10-06 23:53:06 AOI Station Logout
+2016-10-06 23:53:08 AOI Station Closed
+2016-10-06 23:54:27 Elite Login
+2016-10-06 23:54:35 1600587 L.Makalintal 1 AOI
+2016-10-06 23:54:36 AOI Station Loaded
+2016-10-06 23:54:36 Good Mode Selected
+2016-10-06 23:54:37 Login Successful
+2016-10-06 23:55:26 NG Mode Selected
+2016-10-06 23:55:29 NG Mode Selected
+2016-10-06 23:55:42 Good Mode Selected
+2016-10-06 23:56:40 Model Select: MW1500KSXP105-S
+2016-10-06 23:56:44 PETname Select: FKN92B
+2016-10-06 23:56:47 PCB type Select: A5A003448270
+2016-10-06 23:56:56 Scan: wnm01
+2016-10-06 23:56:58 Scan: wnm02
+2016-10-06 23:57:00 Scan: wnm04
+2016-10-06 23:57:03 Invalid Action. Pallet did not pass previous process
+2016-10-06 23:57:07 Scan: wnm03
+2016-10-06 23:57:11 NG Mode Selected
+2016-10-06 23:57:28 Remarks: IC12
+2016-10-06 23:57:33 Scan: AF168N006 A5A003235050
+2016-10-07 00:00:09 AOI Station Closed
+2016-10-07 00:02:49 Elite Login
+2016-10-07 00:02:59 1600587 L.Makalintal 1 AOI
+2016-10-07 00:03:01 AOI Station Loaded
+2016-10-07 00:03:01 Good Mode Selected
+2016-10-07 00:03:01 Login Successful
+2016-10-07 00:03:31 Model Select: MW1500KSXP105-S
+2016-10-07 00:03:34 PETname Select: FKN92B
+2016-10-07 00:03:38 PCB type Select: A5A003448270
+2016-10-07 00:03:45 Scan: wnm01
+2016-10-07 00:03:48 Scan: wnm02
+2016-10-07 00:03:50 Scan: wnm03
+2016-10-07 00:03:51 Scan: wnm04
+2016-10-07 00:03:54 Invalid Action. Pallet did not pass previous process
+2016-10-07 00:03:56 NG Mode Selected
+2016-10-07 00:04:10 Remarks: IC12
+2016-10-07 00:04:14 Scan: AF168N006 A5A003235050
+2016-10-07 00:07:31 AOI Station Logout
+2016-10-07 00:07:44 1600587 L.Makalintal 1 FT
+2016-10-07 00:07:45 FT Station Loaded
+2016-10-07 00:07:46 Login Successful
+2016-10-07 00:08:15 Model Select: MW1500KSXP105-S
+2016-10-07 00:08:19 PETname Select: FKN92B
+2016-10-07 00:08:22 PCB type Select: A5A003448270
+2016-10-07 00:08:26 Sampling mode selected
+2016-10-07 00:08:35 Scan: AF168N000 A5A003235050
+2016-10-07 00:08:36 Scan: AF168N001 A5A003235050
+2016-10-07 00:08:37 Scan: AF168N002 A5A003235050
+2016-10-07 00:08:38 Scan: AF168N003 A5A003235050
+2016-10-07 00:08:39 Scan: AF168N004 A5A003235050
+2016-10-07 00:08:40 Scan: AF168N005 A5A003235050
+2016-10-07 00:08:45 NG Mode Selected
+2016-10-07 00:08:52 Defect Name: Steady White Light
+2016-10-07 00:09:06 Remarks: ic1
+2016-10-07 00:09:10 Scan: AF168N007 A5A003235050
+2016-10-07 00:09:15 Defect Name: Steady Blue Light
+2016-10-07 00:09:21 Remarks: ic1
+2016-10-07 00:09:25 Scan: AF168N008 A5A003235050
+2016-10-07 00:09:30 Defect Name: No White Light
+2016-10-07 00:09:35 Remarks: ic1
+2016-10-07 00:09:39 Scan: AF168N009 A5A003235050
+2016-10-07 00:16:02 Elite Login
+2016-10-07 00:16:10 1600587 L.Makalintal 1 FT
+2016-10-07 00:16:11 FT Station Loaded
+2016-10-07 00:16:11 Login Successful
+2016-10-07 00:16:18 FT Station Logout
+2016-10-07 00:16:19 FT Station Closed
+2016-10-07 00:18:56 Elite Login
+2016-10-07 00:19:04 1600587 L.Makalintal 1 FT
+2016-10-07 00:19:06 Login Denied
+2016-10-07 00:19:08 FT Station Loaded
+2016-10-07 00:19:08 Login Successful
+2016-10-07 00:19:22 Model Select: MW1500KSXP105-S
+2016-10-07 00:20:08 Model Select: MW1500KSXP105-S
+2016-10-07 00:20:47 Model Select: MW1500KSXP105-S
+2016-10-07 00:20:50 PETname Select: FKN92B
+2016-10-07 00:20:53 PCB type Select: A5A003448270
+2016-10-07 00:20:56 Sampling mode selected
+2016-10-07 00:21:02 Scan: AF168N000 A5A003235050
+2016-10-07 00:21:04 Scan: AF168N001 A5A003235050
+2016-10-07 00:21:05 Scan: AF168N002 A5A003235050
+2016-10-07 00:21:06 Scan: AF168N003 A5A003235050
+2016-10-07 00:21:08 Scan: AF168N004 A5A003235050
+2016-10-07 00:21:09 Scan: AF168N005 A5A003235050
+2016-10-07 00:21:13 NG Mode Selected
+2016-10-07 00:21:18 Defect Name: Steady White Light
+2016-10-07 00:21:29 Remarks: IC1
+2016-10-07 00:21:34 Scan: AF168N007 A5A003235050
+2016-10-07 00:21:37 Scan: AF168N008 A5A003235050
+2016-10-07 00:21:40 Scan: AF168N009 A5A003235050
+2016-10-07 00:22:10 FT Station Logout
+2016-10-07 00:22:12 FT Station Closed
+2016-10-07 07:46:05 Elite Login
+2016-10-07 07:47:17 Elite Login
+2016-10-07 07:47:27 1600587 L.Makalintal 1 FT
+2016-10-07 07:47:30 FT Station Loaded
+2016-10-07 07:47:30 Login Successful
+2016-10-07 07:48:10 Model Select: MW1500KSXP105-S
+2016-10-07 07:48:13 PETname Select: FKN92B
+2016-10-07 07:48:16 PCB type Select: A5A003448270
+2016-10-07 07:48:20 Sampling mode selected
+2016-10-07 07:48:25 Scan: AF168N000 A5A003235050
+2016-10-07 07:48:27 Scan: AF168N001 A5A003235050
+2016-10-07 07:48:29 Scan: AF168N002 A5A003235050
+2016-10-07 07:48:31 Scan: AF168N003 A5A003235050
+2016-10-07 07:48:32 Scan: AF168N004 A5A003235050
+2016-10-07 07:48:34 Scan: AF168N005 A5A003235050
+2016-10-07 07:48:41 NG Mode Selected
+2016-10-07 07:48:48 Defect Name: Steady White Light
+2016-10-07 07:48:56 Remarks: IC1
+2016-10-07 07:49:02 Scan: AF168N008 A5A003235050
+2016-10-07 07:49:09 Defect Name: Steady Blue Light
+2016-10-07 07:49:14 Remarks: IC2
+2016-10-07 07:49:19 Scan: AF168N008 A5A003235050
+2016-10-07 07:49:26 Defect Name: No Blue Light
+2016-10-07 07:49:31 Scan: AF168N010 A5A003235050
+2016-10-07 07:49:34 Scan: AF168N011 A5A003235050
+2016-10-07 07:49:35 Alarm triggered
+2016-10-07 07:50:27 Good Mode Selected
+2016-10-07 07:51:12 Scan: AF168N006 A5A003235050
+2016-10-07 07:51:15 PCB was declared NG / Did not pass AOI
+2016-10-07 07:51:17 Scan: AF168N008 A5A003235050
+2016-10-07 07:51:17 PCB was declared NG / Did not pass AOI
+2016-10-07 07:51:18 Scan: AF168N007 A5A003235050
+2016-10-07 07:51:19 Alarm triggered
+2016-10-07 07:51:21 Scan: AF168N009 A5A003235050
+2016-10-07 07:51:21 Alarm triggered
+2016-10-07 07:51:23 Scan: AF168N010 A5A003235050
+2016-10-07 07:51:38 PCB was declared NG / Did not pass AOI
+2016-10-07 07:51:45 Scan: AF168N012 A5A003235050
+2016-10-07 07:51:45 Alarm triggered
+2016-10-07 07:51:46 Scan: AF168N013 A5A003235050
+2016-10-07 07:51:46 Alarm triggered
+2016-10-07 07:55:58 FT Station Logout
+2016-10-07 07:57:05 FT Station Closed
+2016-10-07 08:02:11 Elite Login
+2016-10-07 08:02:31 1600587 L.Makalintal 1 FT
+2016-10-07 08:02:33 FT Station Loaded
+2016-10-07 08:02:33 Login Successful
+2016-10-07 08:02:36 Model Select: MW1500KSXP105-S
+2016-10-07 08:02:38 PETname Select: FKN92B
+2016-10-07 08:02:40 PCB type Select: A5A003448270
+2016-10-07 08:02:45 Scan: AF168N017 A5A003235050
+2016-10-07 08:02:49 Scan: AF168N016 A5A003235050
+2016-10-07 08:03:01 FT Station Closed
+2016-10-07 08:11:29 Elite Login
+2016-10-07 08:11:33 1600587 L.Makalintal 1 FT
+2016-10-07 08:11:35 FT Station Loaded
+2016-10-07 08:11:35 Login Successful
+2016-10-07 08:11:38 Model Select: MW1500KSXP105-S
+2016-10-07 08:11:41 PETname Select: FKN92B
+2016-10-07 08:11:42 PCB type Select: A5A003448270
+2016-10-07 08:11:45 Sampling mode selected
+2016-10-07 08:11:54 NG Mode Selected
+2016-10-07 08:11:59 Defect Name: NG13
+2016-10-07 08:12:02 Remarks: 1
+2016-10-07 08:12:06 Scan: AF168N000 A5A003235050
+2016-10-07 08:12:08 Scan: AF168N001 A5A003235050
+2016-10-07 08:12:10 Scan: AF168N002 A5A003235050
+2016-10-07 08:12:11 Alarm triggered
+2016-10-07 08:12:26 Good Mode Selected
+2016-10-07 08:12:29 Scan: AF168N003 A5A003235050
+2016-10-07 08:12:31 Scan: AF168N004 A5A003235050
+2016-10-07 08:12:32 Scan: AF168N005 A5A003235050
+2016-10-07 08:12:33 Scan: AF168N006 A5A003235050
+2016-10-07 08:12:34 PCB was declared NG / Did not pass AOI
+2016-10-07 08:12:34 Scan: A5A003235050
+2016-10-07 08:12:34 PCB did not pass AOI Process
+2016-10-07 08:12:35 Scan: A5A003235050
+2016-10-07 08:12:37 PCB did not pass AOI Process
+2016-10-07 08:12:39 Scan: AF168N006 A5A003235050
+2016-10-07 08:12:40 PCB was declared NG / Did not pass AOI
+2016-10-07 08:12:41 Scan: AF168N007 A5A003235050
+2016-10-07 08:12:43 Scan: AF168N008 A5A003235050
+2016-10-07 08:12:44 Scan: AF168N009 A5A003235050
+2016-10-07 08:12:45 Scan: AF168N010 A5A003235050
+2016-10-07 08:12:47 Scan: AF168N011 A5A003235050
+2016-10-07 08:12:48 Scan: AF168N012 A5A003235050
+2016-10-07 08:12:49 Scan: AF168N013 A5A003235050
+2016-10-07 08:12:50 Scan: AF168N014 A5A003235050
+2016-10-07 08:13:03 FT Station Logout
+2016-10-07 08:13:04 FT Station Closed
+2016-10-07 08:13:57 Elite Login
+2016-10-07 08:14:09 1600587 L.Makalintal 1 FT
+2016-10-07 08:14:11 Alarm triggered
+2016-10-07 08:14:11 FT Station Loaded
+2016-10-07 08:14:11 Login Successful
+2016-10-07 08:15:45 Scan: AF168N013 A5A003235050
+2016-10-07 08:15:46 Model Mismatch
+2016-10-07 08:15:49 Model Select: MW1500KSXP105-S
+2016-10-07 08:15:53 PETname Select: FKN92B
+2016-10-07 08:15:54 PCB type Select: A5A003448270
+2016-10-07 08:15:57 Scan: AF168N013 A5A003235050
+2016-10-07 08:16:00 Scan: AF168N012 A5A003235050
+2016-10-07 08:16:01 Scan: AF168N013 A5A003235050
+2016-10-07 08:16:02 Scan: AF168N014 A5A003235050
+2016-10-07 08:16:03 Scan: AF168N015 A5A003235050
+2016-10-07 08:16:05 Scan: AF168N016 A5A003235050
+2016-10-07 08:16:06 Scan: AF168N017 A5A003235050
+2016-10-07 08:16:19 FT Station Logout
+2016-10-07 08:17:00 1600587 L.Makalintal 1 FVI
+2016-10-07 08:17:02 FVI Station Loaded
+2016-10-07 08:17:02 Good Mode Selected
+2016-10-07 08:17:02 FVI Station Login Loaded
+2016-10-07 08:17:03 Login Successful
+2016-10-07 08:18:18 Login VI1: 1600586
+2016-10-07 08:18:22 Duplicate Login VI2: 1600587
+2016-10-07 08:18:31 Login VI2: 1600637
+2016-10-07 08:18:35 Login VI3: 1111111
+2016-10-07 08:18:39 VI Station Login Successful
+2016-10-07 08:18:44 Model Select: MW1500KSXP105-S
+2016-10-07 08:18:46 PETname Select: FKN92B
+2016-10-07 08:18:48 PCB type Select: A5A003448270
+2016-10-07 08:18:53 New Lot Number
+2016-10-07 08:18:57 Lot number generated: A5A003235050-20161007-1-1
+2016-10-07 08:19:07 Scan: AF168N000 A5A003235050
+2016-10-07 08:19:11 PCB was declared NG
+2016-10-07 08:19:16 Scan: AF168N003 A5A003235050
+2016-10-07 08:19:18 Scan: AF168N004 A5A003235050
+2016-10-07 08:19:19 Scan: AF168N005 A5A003235050
+2016-10-07 08:19:24 Scan: AF168N007 A5A003235050
+2016-10-07 08:19:25 Scan: AF168N008 A5A003235050
+2016-10-07 08:19:26 Scan: AF168N009 A5A003235050
+2016-10-07 08:19:27 Scan: AF168N010 A5A003235050
+2016-10-07 08:19:33 NG Mode Selected
+2016-10-07 08:19:51 Remarks: IC2
+2016-10-07 08:19:56 Inspector: VI 4
+2016-10-07 08:20:01 Scan: AF168N011 A5A003235050
+2016-10-07 08:20:37 Scan: AF168N011 A5A003235050
+2016-10-07 08:20:50 Good Mode Selected
+2016-10-07 08:21:47 Scan: AF168N006 A5A003235050
+2016-10-07 08:21:48 PCB was declared NG
+2016-10-07 08:21:50 Scan: AF168N007 A5A003235050
+2016-10-07 08:21:52 Scan: AF168N008 A5A003235050
+2016-10-07 08:21:54 Scan: AF168N009 A5A003235050
+2016-10-07 08:21:54 Scan: AF168N010 A5A003235050
+2016-10-07 08:21:56 Scan: AF168N012 A5A003235050
+2016-10-07 08:21:57 Scan: AF168N014 A5A003235050
+2016-10-07 08:21:58 Scan: AF168N014 A5A003235050
+2016-10-07 08:21:59 Scan: AF168N015 A5A003235050
+2016-10-07 08:22:00 Scan: AF168N016 A5A003235050
+2016-10-07 08:22:00 Scan: AF168N017 A5A003235050
+2016-10-07 08:23:03 Scan: AF168N012 A5A003235050
+2016-10-07 08:23:04 Scan: AF168N013 A5A003235050
+2016-10-07 08:23:05 Scan: AF168N014 A5A003235050
+2016-10-07 08:23:05 Scan: AF168N015 A5A003235050
+2016-10-07 08:23:06 Scan: AF168N016 A5A003235050
+2016-10-07 08:23:06 Scan: AF168N017 A5A003235050
+2016-10-07 08:23:08 Scan: AF168N011 A5A003235050
+2016-10-07 08:23:09 PCB was declared NG
+2016-10-07 08:23:11 Scan: AF168N010 A5A003235050
+2016-10-07 08:23:12 Scan: AF168N009 A5A003235050
+2016-10-07 08:23:13 Scan: AF168N008 A5A003235050
+2016-10-07 08:23:13 Scan: AF168N007 A5A003235050
+2016-10-07 08:23:14 Scan: AF168N006 A5A003235050
+2016-10-07 08:23:15 PCB was declared NG
+2016-10-07 08:23:17 Scan: AF168N005 A5A003235050
+2016-10-07 08:23:18 Scan: AF168N004 A5A003235050
+2016-10-07 08:23:18 Scan: AF168N003 A5A003235050
+2016-10-07 08:23:19 Scan: AF168N002 A5A003235050
+2016-10-07 08:23:20 PCB was declared NG
+2016-10-07 08:23:22 Scan: AF168N001 A5A003235050
+2016-10-07 08:23:23 PCB was declared NG
+2016-10-07 08:23:24 Scan: AF168N000 A5A003235050
+2016-10-07 08:23:25 PCB was declared NG
+2016-10-07 08:23:28 FVI Station Logout
+2016-10-07 08:23:34 FT Station Closed
+2016-10-07 08:23:34 FVI Station Closed
+2016-10-07 08:26:39 Elite Login
+2016-10-07 08:26:49 1600587 L.Makalintal REPAIR REPAIR_STATION
+2016-10-07 08:27:02 Login Successful
+2016-10-07 08:28:10 Repair Station Logout
+2016-10-07 08:28:18 1600587 L.Makalintal FA FAILURE ANALYSIS
+2016-10-07 08:28:20 Login Successful
+2016-10-07 08:32:42 1600587 L.Makalintal OFFLINE X-RAY
+2016-10-07 08:32:43 Login Successful
+2016-10-07 08:35:03 Repair Station Closed
+2016-10-07 08:38:21 Elite Login
+2016-10-07 08:38:31 1600587 L.Makalintal REPAIR REPAIR_STATION
+2016-10-07 08:38:32 Login Successful
+2016-10-07 08:39:02 Scan: AF168N000 A5A003235050
+2016-10-07 08:40:27 Repair Station Closed
+2016-10-07 08:51:47 Elite Login
+2016-10-07 08:57:42 Elite Login
+2016-10-07 08:58:30 1600587 L.Makalintal REPAIR REPAIR_STATION
+2016-10-07 08:58:31 Login Successful
+2016-10-07 08:59:19 Scan: AF168N000 A5A003235050
+2016-10-07 09:03:42 Scan: AF168N001 A5A003235050
+2016-10-07 09:03:45 Scan: AF168N002 A5A003235050
+2016-10-07 09:03:47 Message: PCB did not undergo Failure Analysis
+2016-10-07 09:03:50 Scan: AF168N001 A5A003235050
+2016-10-07 09:04:46 Repair Station Logout
+2016-10-07 09:04:48 Repair Station Closed
+2016-10-07 09:04:55 Elite Login
+2016-10-07 09:05:05 1600587 L.Makalintal REPAIR REPAIR_STATION
+2016-10-07 09:05:07 Login Successful
+2016-10-07 09:06:17 Scan: AF168N001 A5A003235050
+2016-10-07 09:07:01 IC repair record saved
+2016-10-07 09:07:35 Repair Station Closed
+2016-10-10 09:10:25 Elite Login
+2016-10-10 09:11:22 Elite Login
+2016-10-10 09:11:29 160058  1 SPARE PARTS
+2016-10-10 09:11:29 User is not Registered
+2016-10-10 09:11:32 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 09:11:35 Login Successful
+2016-10-10 09:12:25 Elite Login
+2016-10-10 09:12:30 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 09:12:32 Login Successful
+2016-10-10 09:13:18 Elite Login
+2016-10-10 09:13:23 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 09:13:25 Login Successful
+2016-10-10 11:05:42 Elite Login
+2016-10-10 11:05:54 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 11:05:57 Login Successful
+2016-10-10 11:07:22 Elite Login
+2016-10-10 11:07:27 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 11:07:29 Login Successful
+2016-10-10 11:10:32 Elite Login
+2016-10-10 11:11:01 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 11:11:02 Login Successful
+2016-10-10 11:36:43 Elite Login
+2016-10-10 11:37:32 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 11:37:38 Login Successful
+2016-10-10 11:45:45 Elite Login
+2016-10-10 11:45:51 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 11:45:55 Login Successful
+2016-10-10 11:46:33 Elite Login
+2016-10-10 11:46:39 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 11:46:41 Login Successful
+2016-10-10 11:48:43 Elite Login
+2016-10-10 11:48:50 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 11:48:51 Login Successful
+2016-10-10 11:51:09 Elite Login
+2016-10-10 11:51:15 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 11:51:16 Login Successful
+2016-10-10 12:54:15 Elite Login
+2016-10-10 12:54:20 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 12:54:22 Login Successful
+2016-10-10 12:59:07 Elite Login
+2016-10-10 12:59:15 160057  1 SPARE PARTS
+2016-10-10 12:59:15 User is not Registered
+2016-10-10 12:59:18 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 12:59:20 Login Successful
+2016-10-10 13:08:55 Elite Login
+2016-10-10 13:08:59 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 13:09:01 Login Successful
+2016-10-10 13:12:56 Elite Login
+2016-10-10 13:13:02 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 13:13:04 Login Successful
+2016-10-10 13:14:31 Elite Login
+2016-10-10 13:14:40 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 13:14:42 Login Successful
+2016-10-10 13:15:05 Elite Login
+2016-10-10 13:15:09 1600587 L.Makalintal 1 INJECTION
+2016-10-10 13:15:10 Login Denied
+2016-10-10 13:15:15 Injection Station Loaded
+2016-10-10 13:15:18 Login Successful
+2016-10-10 13:15:25 Injection Station Logout
+2016-10-10 13:15:37 1600587 L.Makalintal  SPARE PARTS
+2016-10-10 13:15:44 Login Denied
+2016-10-10 13:15:47 Login Denied
+2016-10-10 13:15:50 Login Successful
+2016-10-10 13:16:26 Injection Station Closed
+2016-10-10 13:19:15 Elite Login
+2016-10-10 13:19:20 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 13:19:21 Login Denied
+2016-10-10 13:19:23 Login Successful
+2016-10-10 13:22:16 Elite Login
+2016-10-10 13:22:21 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 13:22:24 Login Successful
+2016-10-10 13:23:53 Elite Login
+2016-10-10 13:24:16 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 13:24:17 Login Successful
+2016-10-10 13:25:41 Elite Login
+2016-10-10 13:25:46 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 13:25:48 Login Successful
+2016-10-10 13:27:32 Elite Login
+2016-10-10 13:27:40 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 13:27:42 Login Successful
+2016-10-10 13:34:26 Elite Login
+2016-10-10 13:34:32 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 13:34:33 Login Successful
+2016-10-10 16:42:18 Elite Login
+2016-10-10 16:42:23 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 16:42:24 Login Successful
+2016-10-10 16:43:33 Elite Login
+2016-10-10 16:43:42 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 16:43:43 Login Successful
+2016-10-10 16:48:07 Elite Login
+2016-10-10 16:48:12 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 16:48:14 Login Successful
+2016-10-10 16:49:39 Elite Login
+2016-10-10 16:49:44 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 16:49:46 Login Successful
+2016-10-10 16:52:04 Elite Login
+2016-10-10 16:52:09 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 16:52:11 Login Successful
+2016-10-10 16:52:44 Elite Login
+2016-10-10 16:52:49 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 16:52:50 Login Successful
+2016-10-10 16:53:45 Elite Login
+2016-10-10 16:53:55 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 16:53:56 Login Successful
+2016-10-10 16:55:23 Elite Login
+2016-10-10 16:55:28 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 16:55:30 Login Successful
+2016-10-10 16:57:00 Elite Login
+2016-10-10 16:57:05 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 16:57:07 Login Denied
+2016-10-10 16:57:10 Login Successful
+2016-10-10 16:58:56 Elite Login
+2016-10-10 16:59:01 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 16:59:03 Login Successful
+2016-10-10 17:00:26 Elite Login
+2016-10-10 17:00:31 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 17:00:33 Login Successful
+2016-10-10 17:02:27 Elite Login
+2016-10-10 17:02:32 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 17:02:34 Login Successful
+2016-10-10 17:04:43 Elite Login
+2016-10-10 17:04:48 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 17:04:49 Login Successful
+2016-10-10 17:05:54 Elite Login
+2016-10-10 17:06:00 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 17:06:02 Login Successful
+2016-10-10 17:11:31 Elite Login
+2016-10-10 17:11:37 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 17:11:39 Login Successful
+2016-10-10 17:25:01 Elite Login
+2016-10-10 17:25:10 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 17:25:12 Login Denied
+2016-10-10 17:25:16 Login Successful
+2016-10-10 17:26:42 Elite Login
+2016-10-10 17:26:46 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 17:26:47 Login Successful
+2016-10-10 17:29:33 Elite Login
+2016-10-10 17:29:39 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 17:29:41 Login Successful
+2016-10-10 17:32:07 Elite Login
+2016-10-10 17:32:12 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 17:32:14 Login Successful
+2016-10-10 17:33:24 Elite Login
+2016-10-10 17:33:29 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 17:33:31 Login Successful
+2016-10-10 17:36:06 Elite Login
+2016-10-10 17:36:11 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 17:36:13 Login Successful
+2016-10-10 17:36:48 Elite Login
+2016-10-10 17:36:53 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 17:36:55 Login Successful
+2016-10-10 17:40:30 Elite Login
+2016-10-10 17:40:35 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 17:40:37 Login Successful
+2016-10-10 17:41:23 Elite Login
+2016-10-10 17:41:38 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 17:41:40 Login Successful
+2016-10-10 17:44:19 Elite Login
+2016-10-10 17:44:25 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 17:44:26 Login Successful
+2016-10-10 17:45:57 Elite Login
+2016-10-10 17:46:04 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-10 17:46:06 Login Successful
+2016-10-11 07:56:13 Elite Login
+2016-10-11 07:56:37 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 07:56:39 Login Successful
+2016-10-11 08:00:36 Elite Login
+2016-10-11 08:00:47 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 08:00:49 Login Successful
+2016-10-11 08:13:31 Elite Login
+2016-10-11 08:13:39 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 08:13:41 Login Successful
+2016-10-11 08:26:52 Elite Login
+2016-10-11 08:27:00 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 08:27:01 Login Successful
+2016-10-11 09:07:30 Elite Login
+2016-10-11 09:09:56 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 09:09:58 Login Successful
+2016-10-11 09:40:07 Elite Login
+2016-10-11 09:42:00 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 09:42:01 Login Successful
+2016-10-11 10:19:21 Elite Login
+2016-10-11 10:19:28 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 10:19:30 Login Successful
+2016-10-11 10:26:35 Elite Login
+2016-10-11 10:26:41 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 10:26:42 Login Successful
+2016-10-11 10:35:22 Elite Login
+2016-10-11 10:35:29 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 10:35:35 Login Successful
+2016-10-11 10:39:22 Elite Login
+2016-10-11 10:39:27 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 10:39:29 Login Successful
+2016-10-11 10:41:27 Elite Login
+2016-10-11 10:41:31 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 10:41:32 Login Denied
+2016-10-11 10:41:35 Login Successful
+2016-10-11 10:45:14 Elite Login
+2016-10-11 10:45:22 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 10:45:24 Login Successful
+2016-10-11 11:03:12 Elite Login
+2016-10-11 11:03:18 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 11:03:20 Login Successful
+2016-10-11 11:03:43 Elite Login
+2016-10-11 11:03:48 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 11:03:50 Login Successful
+2016-10-11 11:12:13 Elite Login
+2016-10-11 11:12:17 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 11:12:19 Login Successful
+2016-10-11 11:14:51 Elite Login
+2016-10-11 11:14:57 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 11:14:59 Login Successful
+2016-10-11 11:16:11 Elite Login
+2016-10-11 11:16:16 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 11:16:18 Login Successful
+2016-10-11 11:18:24 Elite Login
+2016-10-11 11:18:30 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 11:18:32 Login Successful
+2016-10-11 13:07:14 Elite Login
+2016-10-11 13:07:19 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 13:07:22 Login Successful
+2016-10-11 13:08:42 Elite Login
+2016-10-11 13:08:47 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 13:08:49 Login Successful
+2016-10-11 14:40:04 Elite Login
+2016-10-11 14:40:12 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 14:40:15 Login Successful
+2016-10-11 15:46:09 Elite Login
+2016-10-11 15:46:15 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 15:46:17 Login Successful
+2016-10-11 15:47:37 Elite Login
+2016-10-11 15:47:42 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 15:47:44 Login Successful
+2016-10-11 15:52:48 Elite Login
+2016-10-11 15:52:53 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 15:52:55 Login Successful
+2016-10-11 15:53:58 Elite Login
+2016-10-11 15:54:05 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 15:54:07 Login Successful
+2016-10-11 15:55:43 Elite Login
+2016-10-11 15:55:50 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 15:55:52 Login Successful
+2016-10-11 16:07:11 Elite Login
+2016-10-11 16:08:11 Elite Login
+2016-10-11 16:08:17 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 16:08:18 Login Denied
+2016-10-11 16:08:21 Login Successful
+2016-10-11 16:10:45 Elite Login
+2016-10-11 16:11:30 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 16:11:33 Login Successful
+2016-10-11 16:14:39 Elite Login
+2016-10-11 16:14:44 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 16:14:46 Login Successful
+2016-10-11 16:16:16 Elite Login
+2016-10-11 16:16:24 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 16:16:26 Login Successful
+2016-10-11 16:18:25 Elite Login
+2016-10-11 16:18:37 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 16:18:39 Login Successful
+2016-10-11 16:19:26 Elite Login
+2016-10-11 16:21:10 1600587 L.Makalintal REPAIR SPARE PARTS
+2016-10-11 16:21:12 Login Successful
+2016-10-11 16:23:29 Elite Login
+2016-10-11 16:23:34 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 16:23:36 Login Successful
+2016-10-11 16:47:28 Elite Login
+2016-10-11 16:47:33 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 16:47:35 Login Successful
+2016-10-11 16:51:19 Elite Login
+2016-10-11 16:51:24 1600587 L.Makalintal 1 INJECTION
+2016-10-11 16:51:26 Injection Station Loaded
+2016-10-11 16:51:29 Login Successful
+2016-10-11 16:52:51 Injection Station Closed
+2016-10-11 16:53:03 Elite Login
+2016-10-11 16:53:13 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 16:53:15 Login Successful
+2016-10-11 17:35:38 Elite Login
+2016-10-11 17:36:04 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 17:36:07 Login Successful
+2016-10-11 17:39:54 Elite Login
+2016-10-11 17:40:00 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 17:40:02 Login Successful
+2016-10-11 17:43:36 Elite Login
+2016-10-11 17:43:41 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 17:43:46 Login Successful
+2016-10-11 17:49:34 Elite Login
+2016-10-11 17:49:40 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 17:49:43 Login Successful
+2016-10-11 17:51:59 Elite Login
+2016-10-11 17:52:04 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-11 17:52:06 Login Successful
+2016-10-12 07:33:39 Elite Login
+2016-10-12 07:33:50 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-12 07:33:55 Login Successful
+2016-10-12 13:30:04 Elite Login
+2016-10-12 13:30:11 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-12 13:30:15 Login Successful
+2016-10-12 14:48:43 Elite Login
+2016-10-12 15:28:21 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-12 15:28:24 Login Successful
+2016-10-12 15:30:25 Elite Login
+2016-10-12 15:30:35 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-12 15:30:37 Login Successful
+2016-10-12 15:33:00 Elite Login
+2016-10-12 15:33:04 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-12 15:33:06 Login Successful
+2016-10-12 17:18:11 Elite Login
+2016-10-12 17:18:16 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-12 17:18:18 Login Successful
+2016-10-12 17:18:59 Elite Login
+2016-10-12 17:19:03 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-12 17:19:05 Login Successful
+2016-10-12 17:37:59 Elite Login
+2016-10-12 17:38:07 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-12 17:38:09 Login Successful
+2016-10-13 15:32:10 Elite Login
+2016-10-13 15:32:15 1600587 L.Makalintal 1 BARCODE_REPLACE
+2016-10-13 15:32:17 Login Successful
+2016-10-13 15:59:35 Elite Login
+2016-10-13 15:59:43 1111111 Rabbids 1 BARCODE_REPLACE
+2016-10-13 15:59:46 Login Denied
+2016-10-13 15:59:49 Login Successful
+2016-10-13 16:00:01 1111111 Rabbids OFFLINE BARCODE_REPLACE
+2016-10-13 16:00:07 Login Successful
+2016-10-13 16:00:17 1600587 L.Makalintal OFFLINE BARCODE_REPLACE
+2016-10-13 16:00:19 Login Successful
+2016-10-13 16:25:19 Elite Login
+2016-10-13 16:25:27 1600587 L.Makalintal 1 BARCODE_REPLACE
+2016-10-13 16:25:28 Login Successful
+2016-10-13 16:27:13 Elite Login
+2016-10-13 16:27:20 1600587 L.Makalintal 1 BARCODE_REPLACE
+2016-10-13 16:27:21 Login Successful
+2016-10-13 16:28:16 Elite Login
+2016-10-13 16:28:19 1600587 L.Makalintal 1 INJECTION
+2016-10-13 16:28:22 Wrong Stencil Assigned
+2016-10-13 16:28:22 Injection Station Loaded
+2016-10-13 16:28:23 Login Successful
+2016-10-13 16:28:31 Stencil Selection
+2016-10-13 16:28:45 Injection Station Logout
+2016-10-13 16:28:52 1600587 L.Makalintal  BARCODE_REPLACE
+2016-10-13 16:28:57 Login Successful
+2016-10-13 16:30:24 Elite Login
+2016-10-13 16:30:31 1600587 L.Makalintal 1 BARCODE_REPLACE
+2016-10-13 16:30:33 Login Successful
+2016-10-13 16:31:41 Elite Login
+2016-10-13 16:31:45 1600587 L.Makalintal 1 INJECTION
+2016-10-13 16:31:47 Injection Station Loaded
+2016-10-13 16:31:47 Login Successful
+2016-10-13 16:31:50 Injection Station Logout
+2016-10-13 16:31:50 Injection Station Closed
+2016-10-13 16:32:11 Elite Login
+2016-10-13 16:32:16 1600587 L.Makalintal 1 INJECTION
+2016-10-13 16:32:17 Injection Station Loaded
+2016-10-13 16:32:17 Login Successful
+2016-10-13 16:32:19 Injection Station Logout
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:32:20 Injection Station Closed
+2016-10-13 16:33:08 Elite Login
+2016-10-13 16:33:17 1600587 L.Makalintal 1 INJECTION
+2016-10-13 16:33:18 Injection Station Loaded
+2016-10-13 16:33:18 Login Successful
+2016-10-13 16:33:20 Injection Station Logout
+2016-10-13 16:33:26 1600587 L.Makalintal  INJECTION
+2016-10-13 16:33:31 Login Successful
+2016-10-13 16:33:35 Injection Station Logout
+2016-10-13 16:33:42 Injection Station Closed
+2016-10-13 16:33:57 Elite Login
+2016-10-13 16:34:04 1600587 L.Makalintal 1 BARCODE_REPLACE
+2016-10-13 16:34:05 Login Successful
+2016-10-13 16:34:14 1600587 L.Makalintal  BARCODE_REPLACE
+2016-10-13 16:34:19 Login Successful
+2016-10-13 16:44:17 Elite Login
+2016-10-13 16:44:31 1600587 L.Makalintal 1 BARCODE_REPLACE
+2016-10-13 16:44:32 Login Successful
+2016-10-13 17:04:52 Elite Login
+2016-10-13 17:04:58 1600587 L.Makalintal 1 BARCODE_REPLACE
+2016-10-13 17:04:59 Login Successful
+2016-10-13 17:16:28 Elite Login
+2016-10-13 17:16:38 1600587 L.Makalintal 1 BARCODE_REPLACE
+2016-10-13 17:16:39 Login Successful
+2016-10-13 17:17:31 Elite Login
+2016-10-13 17:17:37 1600587 L.Makalintal 1 BARCODE_REPLACE
+2016-10-13 17:17:38 Login Successful
+2016-10-13 17:18:41 Elite Login
+2016-10-13 17:18:47 1600587 L.Makalintal 1 BARCODE_REPLACE
+2016-10-13 17:18:48 Login Successful
+2016-10-13 17:23:01 Elite Login
+2016-10-13 17:23:05 1600587 L.Makalintal 1 INJECTION
+2016-10-13 17:23:06 Injection Station Loaded
+2016-10-13 17:23:06 Login Successful
+2016-10-13 17:23:09 Injection Station Logout
+2016-10-13 17:23:19 1600587 L.Makalintal OFFLINE BARCODE_REPLACE
+2016-10-13 17:23:20 Login Denied
+2016-10-13 17:23:23 Login Successful
+2016-10-13 17:23:46 Injection Station Closed
+2016-10-13 17:26:21 Elite Login
+2016-10-13 17:26:44 1600587 L.Makalintal 1 BARCODE_REPLACE
+2016-10-13 17:26:46 Login Successful
+2016-10-13 17:35:11 Elite Login
+2016-10-13 17:35:17 1600587 L.Makalintal 1 BARCODE_REPLACE
+2016-10-13 17:35:18 Login Successful
+2016-10-14 14:19:26 Elite Login
+2016-10-14 14:19:31 1600587 L.Makalintal 1 BARCODE_REPLACE
+2016-10-14 14:19:32 Login Successful
+2016-10-14 14:20:10 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-10-14 14:20:12 Login Successful
+2016-10-14 14:57:07 Elite Login
+2016-10-14 14:57:13 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-14 14:57:15 Login Successful
+2016-10-14 14:59:43 Elite Login
+2016-10-14 14:59:50 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-14 14:59:52 Login Successful
+2016-10-14 15:01:37 Elite Login
+2016-10-14 15:01:44 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-14 15:01:46 Login Successful
+2016-10-14 15:04:29 Elite Login
+2016-10-14 15:04:40 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-14 15:04:42 Login Successful
+2016-10-14 15:05:54 Elite Login
+2016-10-14 15:06:04 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-14 15:06:06 Login Successful
+2016-10-14 15:06:55 Elite Login
+2016-10-14 15:07:20 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-14 15:07:22 Login Successful
+2016-10-14 15:11:58 Elite Login
+2016-10-14 15:12:03 1600587 L.Makalintal 1 SPARE PARTS
+2016-10-14 15:12:06 Login Successful
+2016-10-17 10:47:37 Elite Login
+2016-10-17 15:42:50 Elite Login
+2016-10-17 15:57:25 Elite Login
+2016-10-17 15:57:35 1600587 L.Makalintal 1 INJECTION
+2016-10-17 15:57:50 Injection Station Loaded
+2016-10-17 15:57:51 Login Successful
+2016-10-17 15:58:37 Injection Station Closed
+2016-10-17 16:01:54 Elite Login
+2016-10-17 16:01:58 1600587 L.Makalintal 1 INJECTION
+2016-10-17 16:02:04 Injection Station Loaded
+2016-10-17 16:02:04 Login Successful
+2016-10-17 16:02:31 Scan: wnm01
+2016-10-17 16:02:31 Invalid entry. Incomplete details
+2016-10-17 16:02:36 PCB details menu
+2016-10-17 16:03:48 Scan: wnm01
+2016-10-17 16:03:48 Invalid entry. Incomplete details
+2016-10-17 16:03:56 Cream Solder Menu
+2016-10-17 16:16:48 Elite Login
+2016-10-17 16:16:54 1600587 L.Makalintal 1 INJECTION
+2016-10-17 16:16:56 Injection Station Loaded
+2016-10-17 16:16:56 Login Successful
+2016-10-17 16:17:08 PCB details menu
+2016-10-17 16:17:27 Injection Station Logout
+2016-10-17 16:17:37 1600587 L.Makalintal OFFLINE CREAM SOLDER
+2016-10-17 16:17:40 Login Successful
+2016-10-17 16:20:26 Injection Station Closed
+2016-10-17 16:22:19 Elite Login
+2016-10-17 16:22:26 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-17 16:22:28 Login Successful
+2016-10-17 16:23:44 Elite Login
+2016-10-17 16:23:48 1600587 L.Makalintal 1 INJECTION
+2016-10-17 16:23:50 Injection Station Loaded
+2016-10-17 16:23:50 Login Successful
+2016-10-17 16:23:53 Cream Solder Menu
+2016-10-17 16:24:06 Stencil Selection
+2016-10-17 16:26:51 Squeegee Blade Menu
+2016-10-17 16:27:15 Squeegee Blade Menu
+2016-10-17 16:28:09 Injection Station Closed
+2016-10-17 16:28:56 Elite Login
+2016-10-17 16:28:59 1600587 L.Makalintal 1 INJECTION
+2016-10-17 16:29:01 Injection Station Loaded
+2016-10-17 16:29:01 Login Successful
+2016-10-17 16:29:12 Injection Station Closed
+2016-10-17 16:29:55 Elite Login
+2016-10-17 16:29:58 1600587 L.Makalintal 1 INJECTION
+2016-10-17 16:30:00 Injection Station Loaded
+2016-10-17 16:30:00 Login Successful
+2016-10-17 16:30:13 Injection Station Logout
+2016-10-17 16:30:15 Injection Station Closed
+2016-10-17 16:32:09 Elite Login
+2016-10-17 16:32:12 1600587 L.Makalintal 1 INJECTION
+2016-10-17 16:32:14 Injection Station Loaded
+2016-10-17 16:32:14 Login Successful
+2016-10-17 16:33:18 Injection Station Logout
+2016-10-17 16:33:19 Injection Station Closed
+2016-10-17 16:34:26 Elite Login
+2016-10-17 16:34:30 1600587 L.Makalintal 1 INJECTION
+2016-10-17 16:34:31 Injection Station Loaded
+2016-10-17 16:34:31 Login Successful
+2016-10-17 16:34:37 Injection Station Logout
+2016-10-17 16:35:13 1600587 L.Makalintal 1 INJECTION
+2016-10-17 16:35:14 Login Successful
+2016-10-17 16:35:16 Squeegee Blade Menu
+2016-10-17 16:35:44 Squeegee Blade Menu
+2016-10-17 16:36:16 Squeegee Blade Menu
+2016-10-17 16:37:11 Injection Station Closed
+2016-10-17 16:40:55 Elite Login
+2016-10-17 16:41:02 1600587 L.Makalintal 1 INJECTION
+2016-10-17 16:41:03 Injection Station Loaded
+2016-10-17 16:41:03 Login Successful
+2016-10-17 16:41:07 Squeegee Blade Menu
+2016-10-17 16:41:34 Squeegee Blade Menu
+2016-10-17 16:42:19 Injection Station Closed
+2016-10-17 16:43:37 Elite Login
+2016-10-17 16:43:44 1600587 L.Makalintal 1 INJECTION
+2016-10-17 16:43:47 Injection Station Loaded
+2016-10-17 16:43:48 Login Successful
+2016-10-17 16:43:50 Squeegee Blade Menu
+2016-10-17 16:45:23 Scan: wnm01
+2016-10-17 16:45:27 Scan: AF168N000 A5A003235050
+2016-10-17 16:45:27 Scan: AF168N001 A5A003235050
+2016-10-17 16:45:28 Scan: AF168N002 A5A003235050
+2016-10-17 16:45:29 Scan: AF168N003 A5A003235050
+2016-10-17 16:45:29 Scan: AF168N004 A5A003235050
+2016-10-17 16:45:30 Scan: AF168N005 A5A003235050
+2016-10-17 16:46:29 Scan: wnm02
+2016-10-17 16:46:34 Scan: AF168N006 A5A003235050
+2016-10-17 16:46:35 Scan: AF168N007 A5A003235050
+2016-10-17 16:46:36 Scan: AF168N008 A5A003235050
+2016-10-17 16:46:36 Scan: AF168N009 A5A003235050
+2016-10-17 16:46:37 Scan: AF168N010 A5A003235050
+2016-10-17 16:46:40 Scan: AF168N011 A5A003235050
+2016-10-17 16:46:40 PCB3 badmarked
+2016-10-17 16:47:21 Injection Station Logout
+2016-10-17 16:47:29 1600587 L.Makalintal 1 MOUNTER PANASONIC
+2016-10-17 16:47:30 Mounter Station Loaded
+2016-10-17 16:47:30 Login Successful
+2016-10-17 16:47:35 Scan: wnm01
+2016-10-17 16:47:37 Scan: wnm02
+2016-10-17 16:47:44 Mounter Station Logout
+2016-10-17 16:47:53 1600587 L.Makalintal 1 AOI
+2016-10-17 16:47:55 AOI Station Loaded
+2016-10-17 16:47:55 Good Mode Selected
+2016-10-17 16:47:56 Login Successful
+2016-10-17 16:47:58 Model Select: MW1500KSXP105-S
+2016-10-17 16:48:00 PETname Select: FKN92B
+2016-10-17 16:48:02 PCB type Select: A5A003448270
+2016-10-17 16:48:08 Scan: wnm01
+2016-10-17 16:48:10 Scan: wnm02
+2016-10-17 16:48:57 AOI Station Logout
+2016-10-17 16:49:09 1600587 L.Makalintal OFFLINE X-RAY
+2016-10-17 16:49:15 Login Successful
+2016-10-17 16:51:34 1600587 L.Makalintal 1 FT
+2016-10-17 16:51:35 FT Station Loaded
+2016-10-17 16:51:36 Login Successful
+2016-10-17 16:51:38 Model Select: MW1500KSXP105-S
+2016-10-17 16:51:40 PETname Select: FKN92B
+2016-10-17 16:51:41 PCB type Select: A5A003448270
+2016-10-17 16:51:44 Sampling mode selected
+2016-10-17 16:51:48 Scan: AF168N000 A5A003235050
+2016-10-17 16:51:50 X-RAY HOLD
+2016-10-17 16:51:52 Scan: AF168N001 A5A003235050
+2016-10-17 16:51:53 X-RAY HOLD
+2016-10-17 16:51:55 Scan: AF168N002 A5A003235050
+2016-10-17 16:51:56 X-RAY HOLD
+2016-10-17 16:52:00 Scan: AF168N002 A5A003235050
+2016-10-17 16:52:02 X-RAY HOLD
+2016-10-17 16:52:05 Scan: AF168N011 A5A003235050
+2016-10-17 16:52:06 X-RAY HOLD
+2016-10-18 08:28:04 Elite Login
+2016-10-18 08:28:12 1600587 L.Makalintal 1 INJECTION
+2016-10-18 08:28:14 Injection Station Loaded
+2016-10-18 08:28:14 Login Successful
+2016-10-18 08:28:27 PCB Wash
+2016-10-18 08:33:28 Stencil Selection
+2016-10-18 08:34:54 Injection Station Logout
+2016-10-18 08:34:58 Injection Station Closed
+2016-10-18 09:18:19 Elite Login
+2016-10-18 09:18:30 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-18 09:18:32 Login Successful
+2016-10-18 09:21:37 Elite Login
+2016-10-18 09:46:35 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-18 09:46:37 Login Successful
+2016-10-18 09:52:34 Elite Login
+2016-10-18 09:52:53 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-18 09:52:54 Login Successful
+2016-10-18 09:54:38 Elite Login
+2016-10-18 09:54:47 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-18 09:54:49 Login Successful
+2016-10-18 09:58:13 Elite Login
+2016-10-18 09:58:32 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-18 09:58:34 Login Successful
+2016-10-18 09:59:33 Elite Login
+2016-10-18 09:59:41 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-18 09:59:43 Login Successful
+2016-10-18 10:01:56 Elite Login
+2016-10-18 10:02:05 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-18 10:02:10 Login Successful
+2016-10-18 10:14:42 Elite Login
+2016-10-18 10:15:18 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-18 10:15:20 Login Successful
+2016-10-18 12:07:59 Elite Login
+2016-10-18 12:08:09 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-18 12:08:11 Login Successful
+2016-10-18 12:10:26 Elite Login
+2016-10-18 12:10:32 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-18 12:10:34 Login Successful
+2016-10-18 12:12:30 Elite Login
+2016-10-18 12:12:40 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-18 12:12:42 Login Successful
+2016-10-18 12:13:56 Elite Login
+2016-10-18 12:14:01 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-18 12:14:03 Login Successful
+2016-10-18 12:15:50 Elite Login
+2016-10-18 12:15:57 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-18 12:15:58 Login Successful
+2016-10-18 13:12:26 Elite Login
+2016-10-18 13:13:04 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-18 13:13:06 Login Successful
+2016-10-18 13:46:42 Elite Login
+2016-10-18 13:48:46 1600587 L.Makalintal REPAIR REPAIR_OQC
+2016-10-18 13:48:47 Repair OQC Station Loaded
+2016-10-18 13:48:47 Login Successful
+2016-10-18 13:48:55 Repair OQC Station Closed
+2016-10-18 17:11:18 Elite Login
+2016-10-18 17:11:23 1600587 L.Makalintal 1 INJECTION
+2016-10-18 17:11:29 Injection Station Loaded
+2016-10-18 17:11:30 Login Successful
+2016-10-18 17:12:08 Stencil Selection
+2016-10-18 17:14:33 Injection Station Closed
+2016-10-20 08:26:48 Elite Login
+2016-10-20 08:26:54 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-20 08:26:57 Login Successful
+2016-10-20 08:27:37 Elite Login
+2016-10-20 08:27:41 1600587 L.Makalintal 1 INJECTION
+2016-10-20 08:27:43 Injection Station Loaded
+2016-10-20 08:27:43 Login Successful
+2016-10-20 08:27:46 PCB details menu
+2016-10-20 08:28:25 Cream Solder Menu
+2016-10-20 08:28:43 Cream Solder Menu
+2016-10-20 08:32:29 Cream Solder Menu
+2016-10-20 08:32:33 Injection Station Logout
+2016-10-20 08:32:41 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-20 08:32:43 Login Successful
+2016-10-20 08:45:47 Injection Station Closed
+2016-10-20 08:51:33 Elite Login
+2016-10-20 08:51:41 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-20 08:51:43 Login Successful
+2016-10-20 08:53:43 Elite Login
+2016-10-20 08:53:51 1600587 L.Makalintal 1 INJECTION
+2016-10-20 08:53:53 Injection Station Loaded
+2016-10-20 08:53:53 Login Successful
+2016-10-20 08:53:57 Stencil Selection
+2016-10-20 08:57:12 Elite Login
+2016-10-20 08:57:16 1600587 L.Makalintal 1 INJECTION
+2016-10-20 08:57:18 Injection Station Loaded
+2016-10-20 08:57:18 Login Successful
+2016-10-20 08:57:21 Stencil Selection
+2016-10-20 08:57:56 Squeegee Blade Menu
+2016-10-20 08:58:41 Scan: wnm01
+2016-10-20 08:58:44 Scan: AF168N000 A5A003235050
+2016-10-20 08:58:45 Scan: AF168N001 A5A003235050
+2016-10-20 08:58:46 Scan: AF168N002 A5A003235050
+2016-10-20 08:58:47 Scan: AF168N003 A5A003235050
+2016-10-20 08:58:47 Scan: AF168N004 A5A003235050
+2016-10-20 08:58:48 Scan: AF168N005 A5A003235050
+2016-10-20 08:58:52 Injection Station Logout
+2016-10-20 08:59:11 1600587 L.Makalintal 1 MOUNTER PANASONIC
+2016-10-20 08:59:12 Mounter Station Loaded
+2016-10-20 08:59:12 Login Successful
+2016-10-20 08:59:16 Scan: wnm01
+2016-10-20 08:59:20 Mounter Station Logout
+2016-10-20 08:59:27 1600587 L.Makalintal 2 AOI
+2016-10-20 08:59:29 AOI Station Loaded
+2016-10-20 08:59:29 Good Mode Selected
+2016-10-20 08:59:29 Login Successful
+2016-10-20 08:59:32 Model Select: MW1500KSXP105-S
+2016-10-20 08:59:34 PETname Select: FKN92B
+2016-10-20 08:59:35 PCB type Select: A5A003448270
+2016-10-20 08:59:42 Scan: wnm01
+2016-10-20 08:59:45 Message: Invalid line
+2016-10-20 08:59:48 AOI Station Logout
+2016-10-20 08:59:55 1600587 L.Makalintal 1 AOI
+2016-10-20 08:59:57 Login Successful
+2016-10-20 09:00:07 New Lot Number
+2016-10-20 09:00:16 New Lot Number
+2016-10-20 09:00:29 Scan: wnm01
+2016-10-20 09:00:36 AOI Station Logout
+2016-10-20 09:00:37 Injection Station Closed
+2016-10-20 09:00:37 Mounter Station Closed
+2016-10-20 09:00:37 AOI Station Closed
+2016-10-20 09:27:32 Elite Login
+2016-10-20 09:27:43 1600587 L.Makalintal 2 FT
+2016-10-20 09:27:45 FT Station Loaded
+2016-10-20 09:27:45 Login Successful
+2016-10-20 09:27:47 Model Select: MW1500KSXP105-S
+2016-10-20 09:27:49 PETname Select: FKN92B
+2016-10-20 09:27:50 PCB type Select: A5A003448270
+2016-10-20 09:27:53 Sampling mode selected
+2016-10-20 09:27:58 Scan: AF168N000 A5A003235050
+2016-10-20 09:28:01 Message: Invalid line
+2016-10-20 09:28:04 FT Station Logout
+2016-10-20 09:28:12 1600587 L.Makalintal 1 FT
+2016-10-20 09:28:13 Login Successful
+2016-10-20 09:28:18 Scan: AF168N000 A5A003235050
+2016-10-20 09:28:22 FT Station Logout
+2016-10-20 09:29:00 Elite Login
+2016-10-20 09:29:18 1600587 L.Makalintal 1 FT
+2016-10-20 09:29:20 FT Station Loaded
+2016-10-20 09:29:20 Login Successful
+2016-10-20 09:29:23 Model Select: MW1500KSXP105-S
+2016-10-20 09:29:25 PETname Select: FKN92B
+2016-10-20 09:29:26 PCB type Select: A5A003448270
+2016-10-20 09:29:28 Sampling mode selected
+2016-10-20 09:29:31 Scan: AF168N001 A5A003235050
+2016-10-20 09:29:32 Scan: AF168N002 A5A003235050
+2016-10-20 09:29:33 Scan: AF168N003 A5A003235050
+2016-10-20 09:29:34 Scan: AF168N004 A5A003235050
+2016-10-20 09:29:34 Scan: AF168N005 A5A003235050
+2016-10-20 09:30:03 FT Station Logout
+2016-10-20 09:30:05 FT Station Closed
+2016-10-20 09:33:21 Elite Login
+2016-10-20 09:33:35 1600587 L.Makalintal 2 FVI
+2016-10-20 09:33:38 FVI Station Loaded
+2016-10-20 09:33:38 Good Mode Selected
+2016-10-20 09:33:38 FVI Station Login Loaded
+2016-10-20 09:33:38 Login Successful
+2016-10-20 09:33:42 Login VI1: 1600586
+2016-10-20 09:34:01 Login VI2: 1600637
+2016-10-20 09:34:03 Unregistered VI3: 000000
+2016-10-20 09:34:06 Login VI3: 0000000
+2016-10-20 09:34:10 VI Station Login Successful
+2016-10-20 09:34:13 Model Select: MW1500KSXP105-S
+2016-10-20 09:34:15 PETname Select: FKN92B
+2016-10-20 09:34:16 PCB type Select: A5A003448270
+2016-10-20 09:34:23 Scan: AF168N000 A5A003235050
+2016-10-20 09:34:24 Message: Invalid line
+2016-10-20 09:34:28 FVI Station Logout
+2016-10-20 09:34:38 1600587 L.Makalintal 1 FVI
+2016-10-20 09:34:40 FVI Station Login Loaded
+2016-10-20 09:34:40 Login Successful
+2016-10-20 09:34:43 Login VI1: 1600586
+2016-10-20 09:34:47 Login VI2: 1600637
+2016-10-20 09:34:49 Login VI3: 0000000
+2016-10-20 09:34:51 VI Station Login Successful
+2016-10-20 09:34:54 Scan: AF168N000 A5A003235050
+2016-10-20 09:34:55 Scan: AF168N001 A5A003235050
+2016-10-20 09:34:57 Scan: AF168N003 A5A003235050
+2016-10-20 09:34:58 Scan: AF168N004 A5A003235050
+2016-10-20 09:34:58 Scan: AF168N004 A5A003235050
+2016-10-20 09:35:00 Scan: AF168N005 A5A003235050
+2016-10-20 09:35:12 Scan: AF168N001 A5A003235050
+2016-10-20 09:35:15 Scan: AF168N002 A5A003235050
+2016-10-20 09:35:27 New Lot Number
+2016-10-20 09:35:30 FVI Station Logout
+2016-10-20 09:35:31 FVI Station Closed
+2016-10-20 09:38:54 Elite Login
+2016-10-20 09:39:00 1600587 L.Makalintal 1 FVI
+2016-10-20 09:39:02 FVI Station Loaded
+2016-10-20 09:39:02 Good Mode Selected
+2016-10-20 09:39:02 FVI Station Login Loaded
+2016-10-20 09:39:02 Login Successful
+2016-10-20 09:39:07 FVI Station Logout
+2016-10-20 09:39:29 1600587 L.Makalintal 2 FVI
+2016-10-20 09:39:31 FVI Station Login Loaded
+2016-10-20 09:39:31 Login Successful
+2016-10-20 09:39:41 Model Select: MW1500KSXP105-S
+2016-10-20 09:39:49 PETname Select: FKN92B
+2016-10-20 09:39:50 PCB type Select: A5A003448270
+2016-10-20 09:41:05 FVI Station Logout
+2016-10-20 09:41:08 FVI Station Closed
+2016-10-20 09:42:42 Elite Login
+2016-10-20 09:42:48 1600587 L.Makalintal 1 FVI
+2016-10-20 09:42:49 FVI Station Loaded
+2016-10-20 09:42:49 Good Mode Selected
+2016-10-20 09:42:49 FVI Station Login Loaded
+2016-10-20 09:42:49 Login Successful
+2016-10-20 09:42:53 Login VI1: 1600586
+2016-10-20 09:42:57 Login VI2: 1600637
+2016-10-20 09:42:59 Unregistered VI3: 111111
+2016-10-20 09:43:02 Login VI3: 1111111
+2016-10-20 09:43:03 Unregistered VI4: 000000
+2016-10-20 09:43:06 VI Station Login Successful
+2016-10-20 09:43:12 Model Select: MW1500KSXP105-S
+2016-10-20 09:43:14 PETname Select: FKN92B
+2016-10-20 09:43:15 PCB type Select: A5A003448270
+2016-10-20 09:43:20 New Lot Number
+2016-10-20 09:43:24 FVI Station Logout
+2016-10-20 09:43:32 1600587 L.Makalintal 2 FVI
+2016-10-20 09:43:35 Login Denied
+2016-10-20 09:43:38 FVI Station Login Loaded
+2016-10-20 09:43:38 Login Successful
+2016-10-20 09:43:44 Duplicate Login VI1: 1600587
+2016-10-20 09:43:46 Login VI1: 1600586
+2016-10-20 09:43:50 Login VI2: 1600637
+2016-10-20 09:43:52 Login VI3: 1111111
+2016-10-20 09:43:54 VI Station Login Successful
+2016-10-20 09:44:03 New Lot Number
+2016-10-20 09:44:25 FVI Station Logout
+2016-10-20 09:44:32 1600587 L.Makalintal 2 FVI
+2016-10-20 09:44:34 FVI Station Login Loaded
+2016-10-20 09:44:34 Login Successful
+2016-10-20 09:44:45 Login VI1: 1600586
+2016-10-20 09:44:48 Login VI2: 1600637
+2016-10-20 09:44:51 Login VI3: 1111111
+2016-10-20 09:44:54 VI Station Login Successful
+2016-10-20 09:45:06 New Lot Number
+2016-10-20 09:45:13 FVI Station Logout
+2016-10-20 09:45:16 FVI Station Closed
+2016-10-20 10:19:04 Elite Login
+2016-10-20 10:19:08 1600587 L.Makalintal 2 INJECTION
+2016-10-20 10:19:10 Injection Station Loaded
+2016-10-20 10:19:10 Login Successful
+2016-10-20 10:19:13 Injection Station Logout
+2016-10-20 10:19:19 1600587 L.Makalintal 1 INJECTION
+2016-10-20 10:19:20 Login Successful
+2016-10-20 10:20:02 PCB details menu
+2016-10-20 10:20:37 Scan: wnm03
+2016-10-20 10:20:37 Invalid entry. Incomplete details
+2016-10-20 10:21:35 Injection Station Closed
+2016-10-20 10:22:27 Elite Login
+2016-10-20 10:22:31 1600587 L.Makalintal 2 INJECTION
+2016-10-20 10:22:33 Injection Station Loaded
+2016-10-20 10:22:33 Login Successful
+2016-10-20 10:22:36 PCB details menu
+2016-10-20 10:22:53 Injection Station Logout
+2016-10-20 10:22:58 1600587 L.Makalintal 1 INJECTION
+2016-10-20 10:22:59 Login Successful
+2016-10-20 10:23:16 Injection Station Logout
+2016-10-20 10:23:18 Injection Station Closed
+2016-10-20 10:24:14 Elite Login
+2016-10-20 10:24:18 1600587 L.Makalintal 1 INJECTION
+2016-10-20 10:24:19 Injection Station Loaded
+2016-10-20 10:24:19 Login Successful
+2016-10-20 10:24:31 Injection Station Logout
+2016-10-20 10:24:31 Injection Station Closed
+2016-10-20 10:24:35 Elite Login
+2016-10-20 10:24:43 1600587 L.Makalintal 2 INJECTION
+2016-10-20 10:24:44 Injection Station Loaded
+2016-10-20 10:24:44 Login Successful
+2016-10-20 10:24:48 Injection Station Logout
+2016-10-20 10:24:48 Injection Station Closed
+2016-10-20 10:24:52 Elite Login
+2016-10-20 10:26:50 Elite Login
+2016-10-20 10:26:56 1600587 L.Makalintal 1 INJECTION
+2016-10-20 10:26:58 Injection Station Loaded
+2016-10-20 10:26:58 Login Successful
+2016-10-20 10:27:17 Injection Station Logout
+2016-10-20 10:27:17 Injection Station Closed
+2016-10-20 10:27:21 Elite Login
+2016-10-20 10:31:31 Elite Login
+2016-10-20 10:31:34 1600587 L.Makalintal 1 INJECTION
+2016-10-20 10:31:37 Wrong Stencil Assigned
+2016-10-20 10:31:37 Injection Station Loaded
+2016-10-20 10:31:37 Login Successful
+2016-10-20 10:31:39 PCB details menu
+2016-10-20 10:31:54 Cream Solder Menu
+2016-10-20 10:32:10 Scan: wnm01
+2016-10-20 10:32:13 Scan: AF168N000 A5A003235050
+2016-10-20 10:32:14 Scan: AF168N001 A5A003235050
+2016-10-20 10:32:15 Scan: AF168N003 A5A003235050
+2016-10-20 10:32:15 Scan: AF168N003 A5A003235050
+2016-10-20 10:32:16 Scan: AF168N004 A5A003235050
+2016-10-20 10:32:16 Scan: AF168N005 A5A003235050
+2016-10-20 10:32:22 Scan: AF168N002 A5A003235050
+2016-10-20 10:32:28 Injection Station Logout
+2016-10-20 10:32:28 Injection Station Closed
+2016-10-20 10:32:32 Elite Login
+2016-10-20 10:32:37 1600587 L.Makalintal 1 MOUNTER PANASONIC
+2016-10-20 10:32:38 Mounter Station Loaded
+2016-10-20 10:32:38 Login Successful
+2016-10-20 10:32:42 Scan: wnm01
+2016-10-20 10:32:44 Mounter Station Logout
+2016-10-20 10:33:05 1600587 L.Makalintal 2 AOI
+2016-10-20 10:33:06 Login Denied
+2016-10-20 10:33:08 AOI Station Loaded
+2016-10-20 10:33:08 Good Mode Selected
+2016-10-20 10:33:08 Login Successful
+2016-10-20 10:33:11 Model Select: MW1500KSXP105-S
+2016-10-20 10:33:13 PETname Select: FKN92B
+2016-10-20 10:33:15 PCB type Select: A5A003448270
+2016-10-20 10:33:21 Scan: wnm01
+2016-10-20 10:33:23 Message: Invalid line
+2016-10-20 10:33:25 AOI Station Logout
+2016-10-20 10:33:30 1600587 L.Makalintal 1 AOI
+2016-10-20 10:33:32 Login Successful
+2016-10-20 10:33:36 Scan: wnm01
+2016-10-20 10:33:38 Message: Please generate new lot number
+2016-10-20 10:33:40 New Lot Number
+2016-10-20 10:33:44 Scan: wnm01
+2016-10-20 10:33:52 AOI Station Logout
+2016-10-20 10:34:01 1600587 L.Makalintal 2 FT
+2016-10-20 10:34:02 FT Station Loaded
+2016-10-20 10:34:03 Login Successful
+2016-10-20 10:34:05 Model Select: MW1500KSXP105-S
+2016-10-20 10:34:06 PETname Select: FKN92B
+2016-10-20 10:34:07 PCB type Select: A5A003448270
+2016-10-20 10:34:12 Scan: AF168N000 A5A003235050
+2016-10-20 10:34:14 Message: Invalid line
+2016-10-20 10:34:16 FT Station Logout
+2016-10-20 10:34:22 1600587 L.Makalintal 1 FT
+2016-10-20 10:34:23 Login Successful
+2016-10-20 10:34:29 Scan: AF168N000 A5A003235050
+2016-10-20 10:34:30 Scan: AF168N001 A5A003235050
+2016-10-20 10:34:31 Scan: AF168N002 A5A003235050
+2016-10-20 10:34:31 Scan: AF168N003 A5A003235050
+2016-10-20 10:34:32 Scan: AF168N004 A5A003235050
+2016-10-20 10:34:32 Scan: AF168N005 A5A003235050
+2016-10-20 10:34:35 FT Station Logout
+2016-10-20 10:34:44 1600587 L.Makalintal 2 FVI
+2016-10-20 10:34:45 FVI Station Loaded
+2016-10-20 10:34:45 Good Mode Selected
+2016-10-20 10:34:45 FVI Station Login Loaded
+2016-10-20 10:34:45 Login Successful
+2016-10-20 10:34:50 Login VI1: 1600586
+2016-10-20 10:34:52 Login VI2: 1600637
+2016-10-20 10:34:55 Login VI3: 1111111
+2016-10-20 10:34:57 VI Station Login Successful
+2016-10-20 10:35:00 Model Select: MW1500KSXP105-S
+2016-10-20 10:35:02 PETname Select: FKN92B
+2016-10-20 10:35:03 PCB type Select: A5A003448270
+2016-10-20 10:35:32 FVI Station Closed
+2016-10-20 10:35:32 Mounter Station Closed
+2016-10-20 10:35:32 AOI Station Closed
+2016-10-20 10:35:32 FT Station Closed
+2016-10-20 10:37:00 Elite Login
+2016-10-20 10:37:07 1600587 L.Makalintal 1 FVI
+2016-10-20 10:37:08 FVI Station Loaded
+2016-10-20 10:37:08 Good Mode Selected
+2016-10-20 10:37:08 FVI Station Login Loaded
+2016-10-20 10:37:08 Login Successful
+2016-10-20 10:37:11 Login VI1: 1600586
+2016-10-20 10:37:13 Login VI2: 1600637
+2016-10-20 10:37:15 Login VI3: 0000000
+2016-10-20 10:37:17 VI Station Login Successful
+2016-10-20 10:37:23 Scan: AF168N000 A5A003235050
+2016-10-20 10:37:26 Model Select: MW1500KSXP105-S
+2016-10-20 10:37:28 PETname Select: FKN92B
+2016-10-20 10:37:29 PCB type Select: A5A003448270
+2016-10-20 10:37:36 New Lot Number
+2016-10-20 10:37:38 Lot number generated: A5A003235050-20161020-1-1
+2016-10-20 10:37:43 Scan: AF168N000 A5A003235050
+2016-10-20 10:37:46 FVI Station Logout
+2016-10-20 10:37:52 1600587 L.Makalintal 2 FVI
+2016-10-20 10:37:54 FVI Station Login Loaded
+2016-10-20 10:37:54 Login Successful
+2016-10-20 10:37:58 Login VI1: 1600586
+2016-10-20 10:38:03 Login VI2: 1600637
+2016-10-20 10:38:07 Unregistered VI3: 11111111
+2016-10-20 10:38:09 Login VI3: 0000000
+2016-10-20 10:38:11 VI Station Login Successful
+2016-10-20 10:38:25 Scan: AF168N001 A5A003235050
+2016-10-20 10:38:27 Message: Invalid line
+2016-10-20 10:38:40 FVI Station Logout
+2016-10-20 10:38:48 1600587 L.Makalintal 3 FVI
+2016-10-20 10:38:50 FVI Station Login Loaded
+2016-10-20 10:38:50 Login Successful
+2016-10-20 10:38:53 FVI Station Closed
+2016-10-20 10:39:29 Elite Login
+2016-10-20 10:39:33 1600587 L.Makalintal 1 FVI
+2016-10-20 10:39:34 FVI Station Loaded
+2016-10-20 10:39:34 Good Mode Selected
+2016-10-20 10:39:35 FVI Station Login Loaded
+2016-10-20 10:39:35 Login Successful
+2016-10-20 10:39:39 Login VI1: 1600586
+2016-10-20 10:39:42 Login VI2: 1600637
+2016-10-20 10:39:43 Login VI3: 0000000
+2016-10-20 10:39:45 Unregistered VI4: 111111
+2016-10-20 10:39:48 VI Station Login Successful
+2016-10-20 10:39:50 Model Select: MW1500KSXP105-S
+2016-10-20 10:39:52 PETname Select: FKN92B
+2016-10-20 10:39:54 PCB type Select: A5A003448270
+2016-10-20 10:40:04 Scan: AF168N001 A5A003235050
+2016-10-20 10:40:05 Scan: AF168N002 A5A003235050
+2016-10-20 10:40:07 Scan: AF168N003 A5A003235050
+2016-10-20 10:40:11 FVI Station Logout
+2016-10-20 10:40:14 FVI Station Closed
+2016-10-20 10:40:21 Elite Login
+2016-10-20 10:40:26 1600587 L.Makalintal 1 FVI
+2016-10-20 10:40:27 FVI Station Loaded
+2016-10-20 10:40:27 Good Mode Selected
+2016-10-20 10:40:27 FVI Station Login Loaded
+2016-10-20 10:40:28 Login Successful
+2016-10-20 10:41:05 FVI Station Logout
+2016-10-20 10:41:13 1600587 L.Makalintal 1 FVI
+2016-10-20 10:41:14 FVI Station Login Loaded
+2016-10-20 10:41:14 Login Successful
+2016-10-20 10:41:25 FVI Station Closed
+2016-10-20 10:42:30 Elite Login
+2016-10-20 10:43:45 Elite Login
+2016-10-20 10:43:50 1600587 L.Makalintal 1 FVI
+2016-10-20 10:43:54 FVI Station Loaded
+2016-10-20 10:43:54 Good Mode Selected
+2016-10-20 10:43:54 FVI Station Login Loaded
+2016-10-20 10:43:54 Login Successful
+2016-10-20 10:44:00 Login VI1: 1600586
+2016-10-20 10:44:03 Login VI2: 1600637
+2016-10-20 10:44:05 Login VI3: 1111111
+2016-10-20 10:44:07 VI Station Login Successful
+2016-10-20 10:44:11 Model Select: MW1500KSXP105-S
+2016-10-20 10:44:13 PETname Select: FKN92B
+2016-10-20 10:44:14 PCB type Select: A5A003448270
+2016-10-20 10:44:21 NG Mode Selected
+2016-10-20 10:44:36 Inspector: VI 4
+2016-10-20 10:44:40 Scan: AF168N005 A5A003235050
+2016-10-20 10:45:02 Good Mode Selected
+2016-10-20 10:45:12 FVI Station Logout
+2016-10-20 10:45:14 FVI Station Closed
+2016-10-20 10:55:27 Elite Login
+2016-10-20 10:55:36 1600587 L.Makalintal 1 STENCIL
+2016-10-20 10:55:41 Login Successful
+2016-10-20 10:56:12 Elite Login
+2016-10-20 10:56:15 1600587 L.Makalintal 1 INJECTION
+2016-10-20 10:56:17 Injection Station Loaded
+2016-10-20 10:56:17 Login Successful
+2016-10-20 10:56:19 Squeegee Blade Menu
+2016-10-20 10:56:42 Injection Station Logout
+2016-10-20 10:56:43 Injection Station Closed
+2016-10-20 10:56:53 Elite Login
+2016-10-20 11:04:49 Elite Login
+2016-10-20 11:06:30 1600587 L.Makalintal 1 INJECTION
+2016-10-20 11:06:32 Login Denied
+2016-10-20 11:06:34 Injection Station Loaded
+2016-10-20 11:06:34 Login Successful
+2016-10-20 11:06:48 Stencil Selection
+2016-10-20 11:08:35 Stencil Selection
+2016-10-20 11:08:56 Wrong Stencil Assigned
+2016-10-20 11:09:08 Stencil Selection
+2016-10-20 11:09:20 Injection Station Logout
+2016-10-20 11:09:20 Injection Station Closed
+2016-10-20 11:09:24 Elite Login
+2016-10-20 11:44:03 Elite Login
+2016-10-20 11:52:27 Elite Login
+2016-10-20 11:52:44 Elite Login
+2016-10-20 11:52:50 1600586 N.Gagala 1 INJECTION
+2016-10-20 11:52:54 Injection Station Loaded
+2016-10-20 11:52:56 Login Successful
+2016-10-20 11:53:12 Cream Solder Menu
+2016-10-20 11:53:15 Injection Station Logout
+2016-10-20 11:53:15 Injection Station Closed
+2016-10-20 11:53:20 Elite Login
+2016-10-20 11:53:25 1600587  1 CREAM SOLDER
+2016-10-20 11:53:25 User is not Registered
+2016-10-20 11:53:30 1600587  1 CREAM SOLDER
+2016-10-20 11:53:30 User is not Registered
+2016-10-20 11:58:54 Elite Login
+2016-10-20 12:01:50 Elite Login
+2016-10-20 12:05:04 Elite Login
+2016-10-20 12:05:11 1600587 L.Makalintal 1 INJECTION
+2016-10-20 12:05:14 Injection Station Loaded
+2016-10-20 12:05:14 Login Successful
+2016-10-20 12:05:16 Injection Station Logout
+2016-10-20 12:05:16 Injection Station Closed
+2016-10-20 12:05:22 Elite Login
+2016-10-20 12:06:02 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-20 12:06:04 Login Successful
+2016-10-21 07:57:50 Elite Login
+2016-10-21 08:01:27 Elite Login
+2016-10-21 08:01:30 1600587 L.Makalintal 1 INJECTION
+2016-10-21 08:01:40 Injection Station Loaded
+2016-10-21 08:01:41 Login Successful
+2016-10-21 08:01:47 PCB details menu
+2016-10-21 08:02:08 Cream Solder Menu
+2016-10-21 08:02:15 Injection Station Logout
+2016-10-21 08:02:15 Injection Station Closed
+2016-10-21 08:02:20 Elite Login
+2016-10-21 08:02:50 Elite Login
+2016-10-21 08:34:18 Elite Login
+2016-10-21 08:34:27 1600587 L.Makalintal 1 OQC
+2016-10-21 08:34:33 OQC Station Loaded
+2016-10-21 08:34:34 Login Successful
+2016-10-21 08:34:34 NG Mode Selected
+2016-10-21 08:34:42 Good Mode Selected
+2016-10-21 08:34:44 NG Mode Selected
+2016-10-21 08:34:45 OQC Station Closed
+2016-10-21 08:34:53 Elite Login
+2016-10-21 08:34:58 1600587 L.Makalintal 1 OQC
+2016-10-21 08:35:00 OQC Station Loaded
+2016-10-21 08:35:00 Login Successful
+2016-10-21 08:35:06 Model Select: MW1500KSXP105-S
+2016-10-21 08:35:09 PETname Select: FKN92B
+2016-10-21 08:35:11 PCB type Select: A5A003448270
+2016-10-21 08:35:22 Message: Please complete all fields
+2016-10-21 08:35:32 OQC Station Logout
+2016-10-21 08:35:34 OQC Station Closed
+2016-10-21 14:19:13 Elite Login
+2016-10-21 14:19:40 1600587 L.Makalintal 1 PACKING
+2016-10-21 14:19:48 Login Successful
+2016-10-21 14:20:54 Elite Login
+2016-10-21 14:23:00 1600587 L.Makalintal 1 PACKING
+2016-10-21 14:23:02 Login Successful
+2016-10-21 14:29:27 Elite Login
+2016-10-21 14:29:33 1600587 L.Makalintal 1 PACKING
+2016-10-21 14:29:34 Login Successful
+2016-10-21 15:26:19 Elite Login
+2016-10-21 15:26:27 1600587 L.Makalintal 1 PACKING
+2016-10-21 15:26:31 Login Successful
+2016-10-21 15:52:10 Elite Login
+2016-10-21 15:52:24 1600587 L.Makalintal 1 PACKING
+2016-10-21 15:52:26 Login Successful
+2016-10-21 15:54:05 Elite Login
+2016-10-21 15:54:12 1600587 L.Makalintal 1 PACKING
+2016-10-21 15:54:15 Login Successful
+2016-10-21 15:56:47 Elite Login
+2016-10-21 15:56:53 1600587 L.Makalintal 1 PACKING
+2016-10-21 15:56:55 Login Successful
+2016-10-24 08:05:13 Elite Login
+2016-10-24 08:07:00 1600587 L.Makalintal 1 INJECTION
+2016-10-24 08:07:10 Injection Station Loaded
+2016-10-24 08:07:10 Login Successful
+2016-10-24 08:08:07 Injection Station Logout
+2016-10-24 08:08:07 Injection Station Closed
+2016-10-24 08:08:35 Elite Login
+2016-10-24 08:08:46 Elite Login
+2016-10-24 08:11:04 160058  OFFLINE PACKING
+2016-10-24 08:11:04 User is not Registered
+2016-10-24 08:11:08 1600587 L.Makalintal OFFLINE PACKING
+2016-10-24 08:11:10 Login Successful
+2016-10-24 08:38:23 Elite Login
+2016-10-24 08:39:21 1600587 L.Makalintal 1 INJECTION
+2016-10-24 08:39:24 Injection Station Loaded
+2016-10-24 08:39:25 Login Successful
+2016-10-24 08:40:45 Scan: wnm01
+2016-10-24 08:40:45 Invalid entry. Incomplete details
+2016-10-24 08:40:50 Cream Solder Menu
+2016-10-24 08:41:08 Injection Station Logout
+2016-10-24 08:41:08 Injection Station Closed
+2016-10-24 08:41:13 Elite Login
+2016-10-24 08:44:26 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-24 08:44:28 Login Successful
+2016-10-24 08:48:21 Elite Login
+2016-10-24 08:49:05 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-24 08:49:08 Login Successful
+2016-10-24 08:50:16 Elite Login
+2016-10-24 08:53:03 1600587 L.Makalintal 1 INJECTION
+2016-10-24 08:53:06 Injection Station Loaded
+2016-10-24 08:53:06 Login Successful
+2016-10-24 08:53:09 Cream Solder Menu
+2016-10-24 08:53:23 Stencil Selection
+2016-10-24 08:58:09 Squeegee Blade Menu
+2016-10-24 08:59:47 Scan: wnm01
+2016-10-24 08:59:49 Scan: AF168N000 A5A003235050
+2016-10-24 08:59:50 Scan: AF168N001 A5A003235050
+2016-10-24 08:59:50 Scan: AF168N002 A5A003235050
+2016-10-24 08:59:51 Scan: AF168N003 A5A003235050
+2016-10-24 08:59:51 Scan: AF168N004 A5A003235050
+2016-10-24 08:59:52 Scan: AF168N005 A5A003235050
+2016-10-24 08:59:58 Scan: wnm02
+2016-10-24 09:00:00 Scan: AF168N006 A5A003235050
+2016-10-24 09:00:00 Scan: AF168N007 A5A003235050
+2016-10-24 09:00:01 Scan: AF168N008 A5A003235050
+2016-10-24 09:00:01 Scan: AF168N009 A5A003235050
+2016-10-24 09:00:02 Scan: AF168N010 A5A003235050
+2016-10-24 09:00:02 Scan: AF168N011 A5A003235050
+2016-10-24 09:00:07 Injection Station Logout
+2016-10-24 09:00:07 Injection Station Closed
+2016-10-24 09:00:11 Elite Login
+2016-10-24 09:00:17 1600587 L.Makalintal 1 MOUNTER PANASONIC
+2016-10-24 09:00:18 Mounter Station Loaded
+2016-10-24 09:00:18 Login Successful
+2016-10-24 09:00:24 Scan: wnm01
+2016-10-24 09:00:26 Scan: wnm02
+2016-10-24 09:00:30 Mounter Station Logout
+2016-10-24 09:00:41 1600587 L.Makalintal 1 AOI
+2016-10-24 09:00:44 Login Denied
+2016-10-24 09:00:47 Login Denied
+2016-10-24 09:00:50 Login Denied
+2016-10-24 09:00:52 AOI Station Loaded
+2016-10-24 09:00:52 Good Mode Selected
+2016-10-24 09:00:53 Login Successful
+2016-10-24 09:00:57 Model Select: MW1500KSXP105-S
+2016-10-24 09:01:00 PETname Select: FKN92B
+2016-10-24 09:01:01 PCB type Select: A5A003448270
+2016-10-24 09:01:07 AOI Station Logout
+2016-10-24 09:01:09 Mounter Station Closed
+2016-10-24 09:01:09 AOI Station Closed
+2016-10-24 09:01:49 Elite Login
+2016-10-24 09:33:29 1600587 L.Makalintal 1 INJECTION
+2016-10-24 09:33:38 Injection Station Loaded
+2016-10-24 09:33:39 Login Successful
+2016-10-24 09:33:43 Injection Station Logout
+2016-10-24 09:33:44 Injection Station Closed
+2016-10-24 09:33:55 Elite Login
+2016-10-24 09:36:04 Elite Login
+2016-10-24 09:36:13 1600587 L.Makalintal 1 AOI
+2016-10-24 09:36:14 AOI Station Loaded
+2016-10-24 09:36:15 Good Mode Selected
+2016-10-24 09:36:15 Login Successful
+2016-10-24 09:36:18 Model Select: MW1500KSXP105-S
+2016-10-24 09:36:21 PETname Select: FKN92B
+2016-10-24 09:36:22 PCB type Select: A5A003448270
+2016-10-24 09:36:30 Scan: wnm01
+2016-10-24 09:36:32 Scan: wnm03
+2016-10-24 09:36:34 Invalid Pallet/PCB ID
+2016-10-24 09:36:36 Scan: wnm02
+2016-10-24 09:37:36 AOI Station Logout
+2016-10-24 09:37:44 1600587 L.Makalintal 1 FT
+2016-10-24 09:37:46 FT Station Loaded
+2016-10-24 09:37:47 Login Successful
+2016-10-24 09:37:49 Model Select: MW1500KSXP105-S
+2016-10-24 09:37:51 PETname Select: FKN92B
+2016-10-24 09:37:52 PCB type Select: A5A003448270
+2016-10-24 09:37:59 Scan: AF168N000 A5A003235050
+2016-10-24 09:38:00 Scan: AF168N001 A5A003235050
+2016-10-24 09:38:00 Scan: AF168N002 A5A003235050
+2016-10-24 09:38:01 Scan: AF168N003 A5A003235050
+2016-10-24 09:38:02 Scan: AF168N004 A5A003235050
+2016-10-24 09:38:03 Scan: AF168N005 A5A003235050
+2016-10-24 09:38:05 Scan: AF168N006 A5A003235050
+2016-10-24 09:38:05 Scan: AF168N007 A5A003235050
+2016-10-24 09:38:06 Scan: AF168N008 A5A003235050
+2016-10-24 09:38:06 Scan: AF168N009 A5A003235050
+2016-10-24 09:38:07 Scan: AF168N010 A5A003235050
+2016-10-24 09:38:08 Scan: AF168N011 A5A003235050
+2016-10-24 09:38:10 FT Station Logout
+2016-10-24 09:38:18 1600587 L.Makalintal 1 FVI
+2016-10-24 09:38:20 FVI Station Loaded
+2016-10-24 09:38:20 Good Mode Selected
+2016-10-24 09:38:20 FVI Station Login Loaded
+2016-10-24 09:38:20 Login Successful
+2016-10-24 09:38:25 Login VI1: 1600586
+2016-10-24 09:38:30 Login VI2: 1600637
+2016-10-24 09:38:33 Login VI3: 0000000
+2016-10-24 09:38:37 VI Station Login Successful
+2016-10-24 09:38:40 Model Select: MW1500KSXP105-S
+2016-10-24 09:38:41 PETname Select: FKN92B
+2016-10-24 09:38:43 PCB type Select: A5A003448270
+2016-10-24 09:38:45 New Lot Number
+2016-10-24 09:38:46 Lot number generated: A5A003235050-20161024-1-1
+2016-10-24 09:38:50 Scan: AF168N000 A5A003235050
+2016-10-24 09:38:51 Scan: AF168N001 A5A003235050
+2016-10-24 09:38:52 Scan: AF168N002 A5A003235050
+2016-10-24 09:38:53 Scan: AF168N003 A5A003235050
+2016-10-24 09:38:53 Scan: AF168N004 A5A003235050
+2016-10-24 09:38:54 Scan: AF168N005 A5A003235050
+2016-10-24 09:38:56 Scan: AF168N006 A5A003235050
+2016-10-24 09:38:56 Scan: AF168N007 A5A003235050
+2016-10-24 09:38:57 Scan: AF168N008 A5A003235050
+2016-10-24 09:38:58 Scan: AF168N009 A5A003235050
+2016-10-24 09:38:59 Scan: AF168N010 A5A003235050
+2016-10-24 09:39:00 Scan: AF168N011 A5A003235050
+2016-10-24 09:39:03 FVI Station Logout
+2016-10-24 09:41:22 1600587 L.Makalintal 1 OQC
+2016-10-24 09:41:24 OQC Station Loaded
+2016-10-24 09:41:24 Login Successful
+2016-10-24 09:41:27 Model Select: MW1500KSXP105-S
+2016-10-24 09:41:29 PETname Select: FKN92B
+2016-10-24 09:41:31 PCB type Select: A5A003448270
+2016-10-24 09:41:33 New Lot Number Generated: A5A003235050-20161024-1-1
+2016-10-24 09:41:36 Message: Please complete all fields
+2016-10-24 09:41:36 Lot Number Set: A5A003235050-20161024-1-1
+2016-10-24 09:43:24 Scan: AF168N006 A5A003235050
+2016-10-24 09:43:25 Scan: AF168N007 A5A003235050
+2016-10-24 09:43:25 Scan: AF168N008 A5A003235050
+2016-10-24 09:43:26 Scan: AF168N009 A5A003235050
+2016-10-24 09:43:26 Scan: AF168N010 A5A003235050
+2016-10-24 09:43:27 Scan: AF168N011 A5A003235050
+2016-10-24 09:43:31 OQC Station Logout
+2016-10-24 09:43:40 1600587 L.Makalintal 1 PACKING
+2016-10-24 09:43:42 Login Successful
+2016-10-24 10:11:32 Elite Login
+2016-10-24 10:11:37 1600587 L.Makalintal 1 PACKING
+2016-10-24 10:11:39 Login Successful
+2016-10-24 10:22:23 Elite Login
+2016-10-24 10:22:29 160587  1 PACKING
+2016-10-24 10:22:29 User is not Registered
+2016-10-24 10:22:33 1600587 L.Makalintal 1 PACKING
+2016-10-24 10:22:35 Login Successful
+2016-10-24 10:25:47 Elite Login
+2016-10-24 10:25:53 1600587 L.Makalintal 1 PACKING
+2016-10-24 10:25:55 Login Successful
+2016-10-24 10:52:52 Elite Login
+2016-10-24 10:52:57 1600587 L.Makalintal 1 PACKING
+2016-10-24 10:53:03 Login Successful
+2016-10-24 10:57:00 Elite Login
+2016-10-24 10:57:07 1600587 L.Makalintal 1 PACKING
+2016-10-24 10:59:30 Elite Login
+2016-10-24 10:59:42 1600587 L.Makalintal 1 PACKING
+2016-10-24 10:59:44 Login Successful
+2016-10-24 11:05:09 Elite Login
+2016-10-24 11:05:48 1600587 L.Makalintal 1 PACKING
+2016-10-24 11:05:50 Login Successful
+2016-10-24 11:06:52 Elite Login
+2016-10-24 11:07:04 1600587 L.Makalintal 1 PACKING
+2016-10-24 11:07:06 Login Successful
+2016-10-24 11:08:41 Elite Login
+2016-10-24 11:12:32 1600587 L.Makalintal 1 PACKING
+2016-10-24 11:12:35 Login Successful
+2016-10-24 11:20:00 Elite Login
+2016-10-24 11:20:09 1600587 L.Makalintal 1 PACKING
+2016-10-24 11:20:11 Login Successful
+2016-10-24 11:21:10 Elite Login
+2016-10-24 11:21:15 1600587 L.Makalintal 1 PACKING
+2016-10-24 11:21:16 Login Successful
+2016-10-24 11:21:54 Elite Login
+2016-10-24 11:21:57 1600587 L.Makalintal 1 INJECTION
+2016-10-24 11:22:00 Injection Station Loaded
+2016-10-24 11:22:00 Login Successful
+2016-10-24 11:22:03 Injection Station Logout
+2016-10-24 11:22:03 Injection Station Closed
+2016-10-24 11:22:11 Elite Login
+2016-10-24 11:22:28 Elite Login
+2016-10-24 11:22:35 1600587 L.Makalintal 1 PACKING
+2016-10-24 11:22:37 Login Successful
+2016-10-24 11:29:09 Elite Login
+2016-10-24 11:29:12 1600587 L.Makalintal 1 INJECTION
+2016-10-24 11:29:18 1600587 L.Makalintal 1 PACKING
+2016-10-24 11:29:20 Login Successful
+2016-10-24 11:30:01 Elite Login
+2016-10-24 11:31:00 Elite Login
+2016-10-24 11:31:06 1600587 L.Makalintal 1 PACKING
+2016-10-24 11:31:08 Login Successful
+2016-10-24 11:34:36 Elite Login
+2016-10-24 11:34:43 1600587 L.Makalintal 1 PACKING
+2016-10-24 11:34:46 Login Successful
+2016-10-24 11:35:44 Elite Login
+2016-10-24 11:35:54 1600587 L.Makalintal 1 PACKING
+2016-10-24 11:36:12 Login Successful
+2016-10-24 11:36:33 Elite Login
+2016-10-24 11:36:39 1600587 L.Makalintal 1 PACKING
+2016-10-24 11:36:40 Login Denied
+2016-10-24 11:36:43 Login Successful
+2016-10-24 11:41:54 Elite Login
+2016-10-24 11:42:02 1600587 L.Makalintal 1 PACKING
+2016-10-24 11:42:04 Login Successful
+2016-10-24 11:49:20 Elite Login
+2016-10-24 11:49:32 1600587 L.Makalintal 1 PACKING
+2016-10-24 11:49:34 Login Successful
+2016-10-24 11:50:36 Elite Login
+2016-10-24 11:50:39 1600587 L.Makalintal 1 INJECTION
+2016-10-24 11:50:41 Login Denied
+2016-10-24 11:50:43 Injection Station Loaded
+2016-10-24 11:50:43 Login Successful
+2016-10-24 11:50:47 Scan: wnm03
+2016-10-24 11:50:49 Scan: AF168N012 A5A003235050
+2016-10-24 11:50:50 Scan: AF168N013 A5A003235050
+2016-10-24 11:50:51 Scan: AF168N014 A5A003235050
+2016-10-24 11:50:52 Scan: AF168N015 A5A003235050
+2016-10-24 11:50:53 Scan: AF168N016 A5A003235050
+2016-10-24 11:50:53 Scan: AF168N017 A5A003235050
+2016-10-24 11:50:58 Scan: wnm04
+2016-10-24 11:51:01 Scan: AF168N018 A5A003235050
+2016-10-24 11:51:01 Scan: AF168N019 A5A003235050
+2016-10-24 11:51:02 Scan: AF168N020 A5A003235050
+2016-10-24 11:51:03 Scan: AF168N021 A5A003235050
+2016-10-24 11:51:04 Scan: AF168N022 A5A003235050
+2016-10-24 11:51:05 Scan: AF168N023 A5A003235050
+2016-10-24 11:51:09 Scan: wnm05
+2016-10-24 11:51:14 Scan: AF168N024 A5A003235050
+2016-10-24 11:51:15 Scan: AF168N025 A5A003235050
+2016-10-24 11:51:16 Scan: AF168N026 A5A003235050
+2016-10-24 11:51:17 Scan: AF168N027 A5A003235050
+2016-10-24 11:51:18 Scan: AF168N028 A5A003235050
+2016-10-24 11:51:19 Scan: AF168N029 A5A003235050
+2016-10-24 11:51:33 Scan: wnm06
+2016-10-24 11:51:36 Scan: AF168N030 A5A003235050
+2016-10-24 11:51:37 Scan: AF168N031 A5A003235050
+2016-10-24 11:51:37 Scan: AF168N032 A5A003235050
+2016-10-24 11:51:39 Scan: AF168N033 A5A003235050
+2016-10-24 11:51:39 Scan: AF168N034 A5A003235050
+2016-10-24 11:51:40 Scan: AF168N035 A5A003235050
+2016-10-24 11:51:43 Injection Station Logout
+2016-10-24 11:51:43 Injection Station Closed
+2016-10-24 11:51:50 Elite Login
+2016-10-24 11:51:53 Elite Login
+2016-10-24 11:52:05 1600587 L.Makalintal 1 MOUNTER PANASONIC
+2016-10-24 11:52:07 Mounter Station Loaded
+2016-10-24 11:52:07 Login Successful
+2016-10-24 11:52:16 Scan: wnm04
+2016-10-24 11:52:19 Scan: wnm03
+2016-10-24 11:52:21 Scan: wnm05
+2016-10-24 11:52:23 Scan: wnm06
+2016-10-24 11:52:27 Mounter Station Logout
+2016-10-24 11:52:35 1600587 L.Makalintal 1 AOI
+2016-10-24 11:52:36 AOI Station Loaded
+2016-10-24 11:52:37 Good Mode Selected
+2016-10-24 11:52:37 Login Successful
+2016-10-24 11:52:39 Model Select: MW1500KSXP105-S
+2016-10-24 11:52:41 PETname Select: FKN92B
+2016-10-24 11:52:42 PCB type Select: A5A003235090
+2016-10-24 11:52:49 Scan: wnm03
+2016-10-24 11:52:53 Model Mismatch
+2016-10-24 11:53:02 AOI Station Logout
+2016-10-24 11:53:09 1600587 L.Makalintal 1 AOI
+2016-10-24 11:53:10 Login Successful
+2016-10-24 11:53:17 AOI Station Logout
+2016-10-24 11:53:19 Mounter Station Closed
+2016-10-24 11:53:19 AOI Station Closed
+2016-10-24 11:53:26 Elite Login
+2016-10-24 11:53:31 1600587 L.Makalintal 1 AOI
+2016-10-24 11:53:33 AOI Station Loaded
+2016-10-24 11:53:33 Good Mode Selected
+2016-10-24 11:53:34 Login Successful
+2016-10-24 11:53:36 Model Select: MW1500KSXP105-S
+2016-10-24 11:53:38 PETname Select: FKN92B
+2016-10-24 11:53:40 PCB type Select: A5A003448270
+2016-10-24 11:53:49 Scan: wnm03
+2016-10-24 11:53:50 Scan: wnm04
+2016-10-24 11:53:52 Scan: wnm05
+2016-10-24 11:53:54 Scan: wnm06
+2016-10-24 11:53:57 AOI Station Logout
+2016-10-24 11:54:06 1600587 L.Makalintal 1 FT
+2016-10-24 11:54:08 FT Station Loaded
+2016-10-24 11:54:08 Login Successful
+2016-10-24 11:54:11 Model Select: MW1500KSXP105-S
+2016-10-24 11:54:14 PETname Select: FKN92B
+2016-10-24 11:54:15 PCB type Select: A5A003448270
+2016-10-24 11:54:22 Scan: AF168N012 A5A003235050
+2016-10-24 11:54:24 Scan: AF168N013 A5A003235050
+2016-10-24 11:54:24 Scan: AF168N014 A5A003235050
+2016-10-24 11:54:25 Scan: AF168N015 A5A003235050
+2016-10-24 11:54:26 Scan: AF168N016 A5A003235050
+2016-10-24 11:54:27 Scan: AF168N017 A5A003235050
+2016-10-24 11:54:33 Scan: AF168N018 A5A003235050
+2016-10-24 11:54:33 Scan: AF168N019 A5A003235050
+2016-10-24 11:54:34 Scan: AF168N020 A5A003235050
+2016-10-24 11:54:35 Scan: AF168N021 A5A003235050
+2016-10-24 11:54:36 Scan: AF168N022 A5A003235050
+2016-10-24 11:54:36 Scan: AF168N023 A5A003235050
+2016-10-24 11:54:38 Scan: AF168N024 A5A003235050
+2016-10-24 11:54:39 Scan: AF168N025 A5A003235050
+2016-10-24 11:54:40 Scan: AF168N026 A5A003235050
+2016-10-24 11:54:40 Scan: AF168N027 A5A003235050
+2016-10-24 11:54:41 Scan: AF168N028 A5A003235050
+2016-10-24 11:54:42 Scan: AF168N029 A5A003235050
+2016-10-24 11:54:44 Scan: AF168N030 A5A003235050
+2016-10-24 11:54:44 Scan: AF168N031 A5A003235050
+2016-10-24 11:54:45 Scan: AF168N032 A5A003235050
+2016-10-24 11:54:46 Scan: AF168N033 A5A003235050
+2016-10-24 11:54:47 Scan: AF168N034 A5A003235050
+2016-10-24 11:54:48 Scan: AF168N035 A5A003235050
+2016-10-24 11:54:51 FT Station Logout
+2016-10-24 11:54:57 1600587 L.Makalintal 1 AOI
+2016-10-24 11:54:59 Login Denied
+2016-10-24 11:55:01 Login Denied
+2016-10-24 11:55:04 Login Successful
+2016-10-24 11:55:10 New Lot Number
+2016-10-24 11:55:24 Scan: AF168N012 A5A003235050
+2016-10-24 11:55:24 Invalid Pallet/PCB ID
+2016-10-24 11:55:24 Scan: A5A003235050
+2016-10-24 11:55:28 Invalid Pallet/PCB ID
+2016-10-24 11:55:36 Scan: AF168N012 A5A003235050
+2016-10-24 11:55:41 Invalid Pallet/PCB ID
+2016-10-24 11:55:44 AOI Station Logout
+2016-10-24 11:55:51 1600587 L.Makalintal 1 FVI
+2016-10-24 11:55:52 FVI Station Loaded
+2016-10-24 11:55:52 Good Mode Selected
+2016-10-24 11:55:52 FVI Station Login Loaded
+2016-10-24 11:55:53 Login Successful
+2016-10-24 11:55:56 Login VI1: 1600586
+2016-10-24 11:56:01 Login VI2: 1600637
+2016-10-24 11:56:04 Login VI3: 0000000
+2016-10-24 11:56:09 VI Station Login Successful
+2016-10-24 11:56:12 Model Select: MW1500KSXP105-S
+2016-10-24 11:56:14 PETname Select: FKN92B
+2016-10-24 11:56:16 PCB type Select: A5A003235090
+2016-10-24 11:56:29 New Lot Number
+2016-10-24 11:56:34 Scan: AF168N012 A5A003235050
+2016-10-24 11:56:35 Model Mismatch
+2016-10-24 11:56:35 Scan: AF168N012 A5A003235050A5A003235050
+2016-10-24 11:56:37 Model Mismatch
+2016-10-24 11:56:43 New Lot Number
+2016-10-24 11:56:45 PCB type Select: A5A003235090
+2016-10-24 11:56:48 Model Select: MW1500KSXP105-S
+2016-10-24 11:56:50 PETname Select: FKN92B
+2016-10-24 11:56:51 PCB type Select: A5A003448270
+2016-10-24 11:56:58 New Lot Number
+2016-10-24 11:57:03 Scan: AF168N012 A5A003235050
+2016-10-24 11:57:05 Scan: AF168N013 A5A003235050
+2016-10-24 11:57:06 Scan: AF168N014 A5A003235050
+2016-10-24 11:57:07 Scan: AF168N015 A5A003235050
+2016-10-24 11:57:08 Scan: AF168N016 A5A003235050
+2016-10-24 11:57:09 Scan: AF168N017 A5A003235050
+2016-10-24 11:57:12 New Lot Number
+2016-10-24 11:57:20 Scan: AF168N018 A5A003235050
+2016-10-24 11:57:20 Scan: AF168N019 A5A003235050
+2016-10-24 11:57:21 Scan: AF168N020 A5A003235050
+2016-10-24 11:57:22 Scan: AF168N021 A5A003235050
+2016-10-24 11:57:22 Scan: AF168N022 A5A003235050
+2016-10-24 11:57:23 Scan: AF168N023 A5A003235050
+2016-10-24 11:57:26 New Lot Number
+2016-10-24 11:57:31 Scan: AF168N024 A5A003235050
+2016-10-24 11:57:31 Scan: AF168N025 A5A003235050
+2016-10-24 11:57:32 Scan: AF168N026 A5A003235050
+2016-10-24 11:57:33 Scan: AF168N027 A5A003235050
+2016-10-24 11:57:34 Scan: AF168N028 A5A003235050
+2016-10-24 11:57:34 Scan: AF168N029 A5A003235050
+2016-10-24 11:57:35 Scan: AF168N030 A5A003235050
+2016-10-24 11:57:36 Scan: AF168N031 A5A003235050
+2016-10-24 11:57:36 Scan: AF168N032 A5A003235050
+2016-10-24 11:57:37 Scan: AF168N033 A5A003235050
+2016-10-24 11:57:38 Scan: AF168N034 A5A003235050
+2016-10-24 11:57:38 Scan: AF168N035 A5A003235050
+2016-10-24 11:57:41 FVI Station Logout
+2016-10-24 11:57:48 1600587 L.Makalintal 1 PACKING
+2016-10-24 11:57:50 Login Successful
+2016-10-24 13:08:15 Elite Login
+2016-10-24 13:08:22 1600587 L.Makalintal 1 PACKING
+2016-10-24 13:08:24 Login Successful
+2016-10-24 13:10:22 Elite Login
+2016-10-24 13:10:27 1600587 L.Makalintal 1 PACKING
+2016-10-24 13:10:29 Login Successful
+2016-10-24 13:11:52 Elite Login
+2016-10-24 13:19:16 Elite Login
+2016-10-24 13:19:22 1600587 L.Makalintal 1 PACKING
+2016-10-24 13:19:24 Login Successful
+2016-10-24 13:30:43 Elite Login
+2016-10-24 13:46:21 Elite Login
+2016-10-24 13:46:37 1600587 L.Makalintal 1 PACKING
+2016-10-24 13:46:39 Login Successful
+2016-10-24 13:50:54 Elite Login
+2016-10-24 13:51:00 1600587 L.Makalintal 1 PACKING
+2016-10-24 13:51:02 Login Successful
+2016-10-24 17:19:23 Elite Login
+2016-10-24 17:19:31 1600587 L.Makalintal 1 PACKING
+2016-10-24 17:19:33 Login Successful
+2016-10-24 17:24:12 Elite Login
+2016-10-24 17:24:18 1600587 L.Makalintal 1 PACKING
+2016-10-24 17:24:19 Login Successful
+2016-10-24 17:25:23 Elite Login
+2016-10-24 17:25:30 1600587 L.Makalintal 1 PACKING
+2016-10-24 17:25:32 Login Successful
+2016-10-24 17:45:43 Elite Login
+2016-10-24 17:45:49 1600587 L.Makalintal 1 PACKING
+2016-10-24 17:45:51 Login Successful
+2016-10-24 17:47:47 Elite Login
+2016-10-24 17:47:53 1600587 L.Makalintal 1 PACKING
+2016-10-24 17:47:56 Login Successful
+2016-10-24 17:49:33 Elite Login
+2016-10-24 17:49:39 1600587 L.Makalintal 1 PACKING
+2016-10-24 17:49:42 Login Successful
+2016-10-24 17:51:03 Elite Login
+2016-10-24 17:51:08 1600587 L.Makalintal 1 PACKING
+2016-10-24 17:51:10 Login Successful
+2016-10-24 17:52:08 Elite Login
+2016-10-24 17:52:16 1600587 L.Makalintal 1 PACKING
+2016-10-24 17:52:19 Login Denied
+2016-10-24 17:52:22 Login Successful
+2016-10-25 08:50:05 Elite Login
+2016-10-25 08:50:14 1600587 L.Makalintal 1 PACKING
+2016-10-25 08:50:16 Login Denied
+2016-10-25 08:50:20 Login Successful
+2016-10-25 09:16:56 Elite Login
+2016-10-25 09:17:00 1600587 L.Makalintal 1 INJECTION
+2016-10-25 09:17:03 Injection Station Loaded
+2016-10-25 09:17:04 Login Successful
+2016-10-25 09:17:08 PCB details menu
+2016-10-25 09:17:20 Injection Station Closed
+2016-10-25 09:17:37 Elite Login
+2016-10-25 09:17:40 1600587 L.Makalintal 1 INJECTION
+2016-10-25 09:17:42 Injection Station Loaded
+2016-10-25 09:17:43 Login Successful
+2016-10-25 09:17:45 PCB details menu
+2016-10-25 09:18:01 Injection Station Closed
+2016-10-25 09:18:59 Elite Login
+2016-10-25 09:19:02 1600587 L.Makalintal 1 INJECTION
+2016-10-25 09:19:04 Injection Station Loaded
+2016-10-25 09:19:04 Login Successful
+2016-10-25 09:19:06 PCB details menu
+2016-10-25 09:19:14 Injection Station Logout
+2016-10-25 09:19:14 Injection Station Closed
+2016-10-25 09:19:22 Elite Login
+2016-10-25 10:29:18 Elite Login
+2016-10-25 10:29:22 1600587 L.Makalintal 1 INJECTION
+2016-10-25 10:29:27 Injection Station Loaded
+2016-10-25 10:29:28 Login Successful
+2016-10-25 10:29:32 PCB details menu
+2016-10-25 10:30:17 Elite Login
+2016-10-25 10:30:23 1600587 L.Makalintal 1 INJECTION
+2016-10-25 10:30:27 Injection Station Loaded
+2016-10-25 10:30:27 Login Successful
+2016-10-25 10:30:29 PCB details menu
+2016-10-25 10:32:31 Elite Login
+2016-10-25 10:32:35 1600587 L.Makalintal 1 INJECTION
+2016-10-25 10:32:37 Injection Station Loaded
+2016-10-25 10:32:38 Login Successful
+2016-10-25 10:32:39 PCB details menu
+2016-10-25 10:33:23 Injection Station Logout
+2016-10-25 10:33:24 Injection Station Closed
+2016-10-25 10:33:29 Elite Login
+2016-10-25 10:34:18 Elite Login
+2016-10-25 10:34:24 1600587 L.Makalintal 1 INJECTION
+2016-10-25 10:34:26 Injection Station Loaded
+2016-10-25 10:34:27 Login Successful
+2016-10-25 10:34:28 PCB details menu
+2016-10-25 10:34:41 Injection Station Logout
+2016-10-25 10:34:41 Injection Station Closed
+2016-10-25 10:34:47 Elite Login
+2016-10-25 10:35:47 Elite Login
+2016-10-25 10:35:53 Injection Station Loaded
+2016-10-25 10:35:54 Login Successful
+2016-10-25 10:35:55 PCB details menu
+2016-10-25 10:37:39 Elite Login
+2016-10-25 10:37:53 Injection Station Loaded
+2016-10-25 10:37:54 Login Successful
+2016-10-25 10:38:02 PCB details menu
+2016-10-25 10:38:35 Injection Station Logout
+2016-10-25 10:38:35 Injection Station Closed
+2016-10-25 10:38:41 Elite Login
+2016-10-25 10:39:10 Elite Login
+2016-10-25 10:39:13 1600587 L.Makalintal 1 INJECTION
+2016-10-25 10:39:15 Injection Station Loaded
+2016-10-25 10:39:15 Login Successful
+2016-10-25 10:39:17 PCB details menu
+2016-10-25 10:41:32 Injection Station Logout
+2016-10-25 10:41:32 Injection Station Closed
+2016-10-25 10:41:37 Elite Login
+2016-10-25 10:46:37 1600587 L.Makalintal 1 INJECTION
+2016-10-25 10:46:38 Injection Station Loaded
+2016-10-25 10:46:38 Login Successful
+2016-10-25 10:47:39 Injection Station Logout
+2016-10-25 10:47:39 Injection Station Closed
+2016-10-25 10:47:43 Elite Login
+2016-10-25 10:50:29 Elite Login
+2016-10-25 10:50:32 1600587 L.Makalintal 1 INJECTION
+2016-10-25 10:50:36 Injection Station Loaded
+2016-10-25 10:50:37 Login Successful
+2016-10-25 10:50:38 PCB details menu
+2016-10-25 10:51:46 Injection Station Logout
+2016-10-25 10:51:46 Injection Station Closed
+2016-10-25 10:51:52 Elite Login
+2016-10-25 13:38:55 Elite Login
+2016-10-25 13:39:49 1600587 L.Makalintal 1 INJECTION
+2016-10-25 13:40:32 Elite Login
+2016-10-25 13:40:35 1600587 L.Makalintal 1 INJECTION
+2016-10-25 13:47:25 Elite Login
+2016-10-25 13:47:31 1600587 L.Makalintal 1 INJECTION
+2016-10-25 13:48:35 Elite Login
+2016-10-25 13:48:39 1600587 L.Makalintal 1 INJECTION
+2016-10-25 13:48:41 Injection Station Loaded
+2016-10-25 13:48:42 Login Successful
+2016-10-25 13:49:01 PCB details menu
+2016-10-25 13:50:27 Injection Station Closed
+2016-10-25 14:13:28 Elite Login
+2016-10-25 14:13:32 1600587 L.Makalintal 1 INJECTION
+2016-10-25 14:13:34 Injection Station Loaded
+2016-10-25 14:13:34 Login Successful
+2016-10-25 14:13:49 PCB details menu
+2016-10-25 14:14:42 Injection Station Logout
+2016-10-25 14:14:42 Injection Station Closed
+2016-10-25 14:14:48 Elite Login
+2016-10-25 14:22:18 Elite Login
+2016-10-25 14:22:23 1600587 L.Makalintal 1 INJECTION
+2016-10-25 14:22:25 Injection Station Loaded
+2016-10-25 14:22:25 Login Successful
+2016-10-25 14:22:32 Cream Solder Menu
+2016-10-25 14:24:25 Injection Station Closed
+2016-10-25 15:48:16 Elite Login
+2016-10-25 15:48:59 1600587 L.Makalintal 1 OQC
+2016-10-25 15:49:01 OQC Station Loaded
+2016-10-25 15:49:02 Login Successful
+2016-10-25 15:49:09 OQC Station Closed
+2016-10-25 15:49:41 Elite Login
+2016-10-25 15:49:48 1600587 L.Makalintal 1 OQC
+2016-10-25 15:49:50 OQC Station Loaded
+2016-10-25 15:49:50 Login Successful
+2016-10-25 15:49:53 Model Select: MW1500KSXP105-S
+2016-10-25 15:49:57 PETname Select: FKN92B
+2016-10-25 15:50:02 PCB type Select: A5A003448270
+2016-10-25 15:50:04 PCB type Select: A5A003448270
+2016-10-25 15:50:10 Message: Please complete all fields
+2016-10-25 15:50:17 OQC Station Closed
+2016-10-25 15:51:57 Elite Login
+2016-10-25 15:52:03 1600587 L.Makalintal 1 OQC
+2016-10-25 15:52:05 OQC Station Loaded
+2016-10-25 15:52:05 Login Successful
+2016-10-25 15:52:08 Model Select: MW1500KSXP105-S
+2016-10-25 15:52:10 PETname Select: FKN92B
+2016-10-25 15:52:11 PCB type Select: A5A003235090
+2016-10-25 15:52:16 PETname Select: FKN92B
+2016-10-25 15:52:17 PCB type Select: A5A003235090
+2016-10-25 15:52:19 Model Select: MW1500KSXP105-S
+2016-10-25 15:52:21 PETname Select: FKN92B
+2016-10-25 15:52:22 PCB type Select: A5A003448270
+2016-10-25 15:52:26 Message: Please complete all fields
+2016-10-25 15:53:44 OQC Station Closed
+2016-10-25 15:58:25 Elite Login
+2016-10-25 15:58:30 1600587 L.Makalintal 1 OQC
+2016-10-25 15:58:32 OQC Station Loaded
+2016-10-25 15:58:32 Login Successful
+2016-10-25 15:58:35 Model Select: MW1500KSXP105-S
+2016-10-25 15:58:37 PETname Select: FKN92B
+2016-10-25 15:58:38 PCB type Select: A5A003448270
+2016-10-25 15:58:48 User: L.Makalintal admin
+2016-10-25 15:58:59 OQC Station Closed
+2016-10-25 16:00:43 Elite Login
+2016-10-25 16:00:53 1600587 L.Makalintal 1 OQC
+2016-10-25 16:00:54 OQC Station Loaded
+2016-10-25 16:00:55 Login Successful
+2016-10-25 16:01:09 User: L.Makalintal admin
+2016-10-25 16:01:54 OQC Station Closed
+2016-10-25 16:02:50 Elite Login
+2016-10-25 16:02:55 1600587 L.Makalintal 1 OQC
+2016-10-25 16:02:56 OQC Station Loaded
+2016-10-25 16:02:56 Login Successful
+2016-10-25 16:03:04 User:  
+2016-10-25 16:03:04 Message: User is not Registered
+2016-10-25 16:03:07 User: L.Makalintal admin
+2016-10-25 16:03:27 User: L.Makalintal admin
+2016-10-25 16:03:36 OQC Station Closed
+2016-10-25 16:05:14 Elite Login
+2016-10-25 16:05:21 1600587 L.Makalintal 1 OQC
+2016-10-25 16:05:23 OQC Station Loaded
+2016-10-25 16:05:23 Login Successful
+2016-10-25 16:05:29 User: L.Makalintal admin
+2016-10-25 16:05:42 OQC Station Closed
+2016-10-25 16:06:18 Elite Login
+2016-10-25 16:06:23 1600587 L.Makalintal 1 OQC
+2016-10-25 16:06:24 OQC Station Loaded
+2016-10-25 16:06:25 Login Successful
+2016-10-25 16:06:30 User: L.Makalintal admin
+2016-10-25 16:06:44 User: L.Makalintal admin
+2016-10-25 16:07:05 User: L.Makalintal admin
+2016-10-25 16:07:23 OQC Station Closed
+2016-10-25 16:08:15 Elite Login
+2016-10-25 16:08:24 1600587 L.Makalintal 1 OQC
+2016-10-25 16:08:25 OQC Station Loaded
+2016-10-25 16:08:25 Login Successful
+2016-10-25 16:08:30 User: L.Makalintal admin
+2016-10-25 16:08:39 OQC Station Closed
+2016-10-25 16:10:04 Elite Login
+2016-10-25 16:10:09 1600587 L.Makalintal 1 OQC
+2016-10-25 16:10:10 OQC Station Loaded
+2016-10-25 16:10:10 Login Successful
+2016-10-25 16:10:17 User: L.Makalintal admin
+2016-10-25 16:10:28 User: L.Makalintal admin
+2016-10-25 16:10:46 OQC Station Closed
+2016-10-28 07:29:20 Elite Login
+2016-10-28 07:29:25 1600587 L.Makalintal 1 INJECTION
+2016-10-28 07:29:29 Injection Station Loaded
+2016-10-28 07:29:33 Login Successful
+2016-10-28 07:29:41 Injection Station Logout
+2016-10-28 07:29:41 Injection Station Closed
+2016-10-28 07:29:47 Elite Login
+2016-10-28 08:56:34 Elite Login
+2016-10-28 09:01:32 Elite Login
+2016-10-28 09:01:35 1600587 L.Makalintal 1 INJECTION
+2016-10-28 09:01:38 Wrong Stencil Assigned
+2016-10-28 09:01:39 Injection Station Loaded
+2016-10-28 09:01:39 Login Successful
+2016-10-28 09:01:43 Stencil Selection
+2016-10-28 09:02:51 Squeegee Blade Menu
+2016-10-28 09:04:19 Injection Station Logout
+2016-10-28 09:04:19 Injection Station Closed
+2016-10-28 09:04:23 Elite Login
+2016-10-28 15:24:11 Elite Login
+2016-10-28 15:24:22 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-28 15:24:28 Login Successful
+2016-10-28 15:47:03 Elite Login
+2016-10-28 15:47:08 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-28 15:47:10 Login Successful
+2016-10-28 15:52:33 Elite Login
+2016-10-28 15:52:39 1600587 L.Makalintal 1 CREAM SOLDER
+2016-10-28 15:52:40 Login Successful
+2016-11-02 08:34:25 Elite Login
+2016-11-02 08:34:45 1600587 L.Makalintal 1 CREAM SOLDER
+2016-11-02 08:34:49 Login Successful
+2016-11-02 08:36:53 Elite Login
+2016-11-02 08:36:59 1600587 L.Makalintal 1 CREAM SOLDER
+2016-11-02 08:37:01 Login Successful
+2016-11-02 08:44:46 Elite Login
+2016-11-02 08:45:11 1600587 L.Makalintal 1 CREAM SOLDER
+2016-11-02 08:45:14 Login Successful
+2016-11-02 08:47:17 Elite Login
+2016-11-02 08:47:22 1600587 L.Makalintal 1 CREAM SOLDER
+2016-11-02 08:47:25 Login Successful
+2016-11-02 08:48:24 Elite Login
+2016-11-02 08:48:31 1600587 L.Makalintal 1 CREAM SOLDER
+2016-11-02 08:48:33 Login Successful
+2016-11-02 08:49:48 Elite Login
+2016-11-02 08:49:56 1600587 L.Makalintal 1 CREAM SOLDER
+2016-11-02 08:49:58 Login Successful
+2016-11-02 08:50:36 Elite Login
+2016-11-02 08:50:42 1600587 L.Makalintal 1 CREAM SOLDER
+2016-11-02 08:50:44 Login Successful
+2016-11-02 08:52:47 Elite Login
+2016-11-02 08:52:53 1600587 L.Makalintal 1 CREAM SOLDER
+2016-11-02 08:52:56 Login Successful
+2016-11-02 08:56:41 Elite Login
+2016-11-02 08:57:02 1600587 L.Makalintal 1 CREAM SOLDER
+2016-11-02 08:57:04 Login Successful
+2016-11-02 10:34:21 Elite Login
+2016-11-02 10:35:56 1600587 L.Makalintal 1 CREAM SOLDER
+2016-11-02 10:35:58 Login Successful
+2016-11-02 10:58:23 Elite Login
+2016-11-02 10:58:32 1600587 L.Makalintal 1 CREAM SOLDER
+2016-11-02 10:58:34 Login Successful
+2016-11-02 11:02:56 Elite Login
+2016-11-02 11:03:03 1600587 L.Makalintal 1 CREAM SOLDER
+2016-11-02 11:03:05 Login Successful
+2016-11-02 11:08:52 Elite Login
+2016-11-02 11:09:00 1600587 L.Makalintal 1 CREAM SOLDER
+2016-11-02 11:09:02 Login Successful
+2016-11-02 11:11:56 Elite Login
+2016-11-02 11:12:13 Login Denied
+2016-11-02 11:12:18 1600587 L.Makalintal 1 CREAM SOLDER
+2016-11-02 11:12:22 Login Successful
+2016-11-02 11:13:58 Elite Login
+2016-11-02 11:14:07 1600587 L.Makalintal 1 CREAM SOLDER
+2016-11-02 11:14:09 Login Successful
+2016-11-02 11:19:56 Elite Login
+2016-11-02 11:20:14 Elite Login
+2016-11-02 11:20:23 1600587 L.Makalintal 1 CREAM SOLDER
+2016-11-02 11:20:25 Login Successful
+2016-11-02 11:21:45 Elite Login
+2016-11-02 11:21:52 16005867  1 CREAM SOLDER
+2016-11-02 11:21:52 User is not Registered
+2016-11-02 11:21:56 1600587 L.Makalintal 1 CREAM SOLDER
+2016-11-02 11:21:59 Login Successful
+2016-11-02 11:23:57 Elite Login
+2016-11-02 11:24:04 1600587 L.Makalintal 1 CREAM SOLDER
+2016-11-02 11:24:06 Login Successful
+2016-11-02 11:24:57 Elite Login
+2016-11-02 11:25:03 1600587 L.Makalintal 1 CREAM SOLDER
+2016-11-02 11:25:09 Login Successful
+2016-11-03 11:39:27 Elite Login
+2016-11-03 11:39:45 1600587 L.Makalintal 1 OQC
+2016-11-03 11:39:47 OQC Station Loaded
+2016-11-03 11:39:48 Login Successful
+2016-11-03 11:39:51 AQL Selection
+2016-11-03 11:39:53 User: L.Makalintal admin
+2016-11-03 11:39:55 OQC authorization successful
+2016-11-03 11:39:58 OQC Station Closed
+2016-11-03 11:40:06 Elite Login
+2016-11-03 14:18:52 Elite Login
+2016-11-03 14:19:01 1600587 L.Makalintal 1 OQC
+2016-11-03 14:19:03 OQC Station Loaded
+2016-11-03 14:19:03 Login Successful
+2016-11-03 14:19:07 AQL Selection
+2016-11-03 14:19:11 User: L.Makalintal admin
+2016-11-03 14:19:22 OQC Station Closed
+2016-11-03 14:52:39 Elite Login
+2016-11-03 14:59:24 Elite Login
+2016-11-03 15:00:05 1600587 L.Makalintal 1 INJECTION
+2016-11-03 15:00:18 Injection Station Loaded
+2016-11-03 15:00:19 Login Successful
+2016-11-03 15:00:30 Injection Station Logout
+2016-11-03 15:00:31 Injection Station Closed
+2016-11-03 15:00:38 Elite Login
+2016-11-03 15:07:46 Elite Login
+2016-11-03 15:08:20 1600587 L.Makalintal 1 INJECTION
+2016-11-03 15:08:22 Injection Station Loaded
+2016-11-03 15:08:22 Login Successful
+2016-11-03 15:08:31 Injection Station Logout
+2016-11-03 15:08:31 Injection Station Closed
+2016-11-03 15:08:36 Elite Login
+2016-11-04 08:57:58 Elite Login
+2016-11-04 08:58:13 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-04 08:58:15 Login Successful
+2016-11-04 11:22:53 Elite Login
+2016-11-04 12:34:47 Elite Login
+2016-11-04 12:34:53 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-04 12:34:56 Login Successful
+2016-11-07 09:03:29 Elite Login
+2016-11-07 09:03:37 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 09:03:42 Login Successful
+2016-11-07 09:09:56 Elite Login
+2016-11-07 09:10:02 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 09:10:07 Login Successful
+2016-11-07 09:16:54 Elite Login
+2016-11-07 09:17:00 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 09:17:02 Login Successful
+2016-11-07 09:21:13 Elite Login
+2016-11-07 09:21:19 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 09:21:23 Login Successful
+2016-11-07 09:23:04 Elite Login
+2016-11-07 09:23:10 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 09:23:14 Login Successful
+2016-11-07 09:34:11 Elite Login
+2016-11-07 09:34:17 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 09:34:19 Login Successful
+2016-11-07 09:35:12 Elite Login
+2016-11-07 09:35:17 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 09:35:19 Login Successful
+2016-11-07 09:36:10 Elite Login
+2016-11-07 09:36:19 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 09:36:21 Login Successful
+2016-11-07 09:38:07 Elite Login
+2016-11-07 09:38:12 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 09:38:13 Login Successful
+2016-11-07 09:39:08 Elite Login
+2016-11-07 09:39:14 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 09:39:16 Login Successful
+2016-11-07 09:40:07 Elite Login
+2016-11-07 09:40:13 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 09:40:16 Login Denied
+2016-11-07 09:40:20 Login Successful
+2016-11-07 09:52:20 Elite Login
+2016-11-07 10:01:32 Elite Login
+2016-11-07 10:01:40 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 10:01:44 Login Successful
+2016-11-07 10:43:57 Elite Login
+2016-11-07 10:46:08 1600587 L.Makalintal 1 INJECTION
+2016-11-07 10:46:12 Injection Station Loaded
+2016-11-07 10:46:13 Login Successful
+2016-11-07 10:46:18 Injection Station Logout
+2016-11-07 10:46:18 Injection Station Closed
+2016-11-07 10:46:25 Elite Login
+2016-11-07 10:56:40 Elite Login
+2016-11-07 10:56:46 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 10:56:48 Login Successful
+2016-11-07 11:01:26 Elite Login
+2016-11-07 11:01:33 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 11:01:34 Login Successful
+2016-11-07 11:06:46 Elite Login
+2016-11-07 11:06:49 1600587 L.Makalintal 1 INJECTION
+2016-11-07 11:06:51 Injection Station Loaded
+2016-11-07 11:06:51 Login Successful
+2016-11-07 11:06:53 Injection Station Logout
+2016-11-07 11:06:53 Injection Station Closed
+2016-11-07 11:06:59 Elite Login
+2016-11-07 11:07:04 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 11:07:06 Login Successful
+2016-11-07 11:13:45 Elite Login
+2016-11-07 11:13:52 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 11:13:56 Login Successful
+2016-11-07 11:21:31 Elite Login
+2016-11-07 11:21:37 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 11:21:39 Login Successful
+2016-11-07 11:35:10 Elite Login
+2016-11-07 11:35:15 1600587 L.Makalintal 1 INJECTION
+2016-11-07 11:35:17 Injection Station Loaded
+2016-11-07 11:35:18 Login Successful
+2016-11-07 11:35:19 Injection Station Logout
+2016-11-07 11:35:19 Injection Station Closed
+2016-11-07 11:35:24 Elite Login
+2016-11-07 11:35:29 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 11:35:31 Login Successful
+2016-11-07 11:36:41 Elite Login
+2016-11-07 11:36:48 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 11:36:50 Login Successful
+2016-11-07 11:40:51 Elite Login
+2016-11-07 11:41:16 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 11:41:18 Login Successful
+2016-11-07 11:52:59 Elite Login
+2016-11-07 11:54:28 Elite Login
+2016-11-07 11:54:40 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 11:54:42 Login Successful
+2016-11-07 11:56:09 Elite Login
+2016-11-07 11:56:15 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 11:56:18 Login Denied
+2016-11-07 11:56:21 Login Successful
+2016-11-07 12:00:48 Elite Login
+2016-11-07 12:00:54 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 12:00:56 Login Successful
+2016-11-07 12:04:14 Elite Login
+2016-11-07 12:04:20 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 12:04:22 Login Successful
+2016-11-07 13:35:52 Elite Login
+2016-11-07 13:36:08 1600587 L.Makalintal 1 INJECTION
+2016-11-07 13:36:13 Injection Station Loaded
+2016-11-07 13:36:13 Login Successful
+2016-11-07 13:36:15 Injection Station Logout
+2016-11-07 13:36:16 Injection Station Closed
+2016-11-07 13:36:22 Elite Login
+2016-11-07 13:36:48 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 13:36:51 Login Successful
+2016-11-07 13:47:32 Elite Login
+2016-11-07 13:48:11 1600587 L.Makalintal 1 INJECTION
+2016-11-07 13:48:14 Injection Station Loaded
+2016-11-07 13:48:14 Login Successful
+2016-11-07 13:48:16 Injection Station Logout
+2016-11-07 13:48:16 Injection Station Closed
+2016-11-07 13:48:25 Elite Login
+2016-11-07 13:48:36 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 13:48:38 Login Successful
+2016-11-07 13:51:52 Elite Login
+2016-11-07 13:52:02 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 13:52:04 Login Successful
+2016-11-07 14:40:33 Elite Login
+2016-11-07 14:41:37 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 14:41:39 Login Successful
+2016-11-07 14:43:48 Elite Login
+2016-11-07 14:54:52 Elite Login
+2016-11-07 14:54:59 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 14:55:01 Login Successful
+2016-11-07 15:01:18 Elite Login
+2016-11-07 15:01:23 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 15:01:25 Login Successful
+2016-11-07 15:03:28 Elite Login
+2016-11-07 15:03:33 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 15:03:35 Login Successful
+2016-11-07 15:04:59 Elite Login
+2016-11-07 15:05:05 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 15:05:07 Login Successful
+2016-11-07 15:10:26 Elite Login
+2016-11-07 15:11:23 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 15:11:26 Login Successful
+2016-11-07 15:12:27 Elite Login
+2016-11-07 15:12:32 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 15:12:35 Login Successful
+2016-11-07 15:14:13 Elite Login
+2016-11-07 15:14:19 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 15:14:21 Login Successful
+2016-11-07 15:17:31 Elite Login
+2016-11-07 15:17:37 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 15:17:40 Login Successful
+2016-11-07 15:22:41 Elite Login
+2016-11-07 15:22:47 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 15:22:49 Login Successful
+2016-11-07 15:27:24 Elite Login
+2016-11-07 15:27:30 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 15:27:33 Login Successful
+2016-11-07 15:30:36 Elite Login
+2016-11-07 15:30:42 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 15:30:44 Login Successful
+2016-11-07 15:33:49 Elite Login
+2016-11-07 15:33:56 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 15:33:58 Login Successful
+2016-11-07 15:37:39 Elite Login
+2016-11-07 15:37:45 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 15:37:47 Login Successful
+2016-11-07 15:41:35 Elite Login
+2016-11-07 15:41:40 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 15:41:43 Login Successful
+2016-11-07 15:48:16 Elite Login
+2016-11-07 15:48:24 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 15:48:27 Login Successful
+2016-11-07 16:03:25 Elite Login
+2016-11-07 16:03:35 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 16:03:37 Login Successful
+2016-11-07 16:04:42 Elite Login
+2016-11-07 16:04:48 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 16:04:51 Login Successful
+2016-11-07 16:09:09 Elite Login
+2016-11-07 16:09:15 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 16:09:17 Login Successful
+2016-11-07 16:09:54 Elite Login
+2016-11-07 16:09:59 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 16:10:02 Login Successful
+2016-11-07 16:10:32 Elite Login
+2016-11-07 16:10:38 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 16:10:40 Login Successful
+2016-11-07 16:11:29 Elite Login
+2016-11-07 16:11:35 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 16:11:37 Login Successful
+2016-11-07 16:32:02 Elite Login
+2016-11-07 16:32:08 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 16:32:12 Login Successful
+2016-11-07 16:34:32 Elite Login
+2016-11-07 16:34:37 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 16:34:39 Login Successful
+2016-11-07 16:38:50 Elite Login
+2016-11-07 16:38:56 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 16:38:59 Login Successful
+2016-11-07 16:44:47 Elite Login
+2016-11-07 16:44:53 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 16:44:55 Login Successful
+2016-11-07 16:49:30 Elite Login
+2016-11-07 16:49:35 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 16:49:37 Login Successful
+2016-11-07 16:51:39 Elite Login
+2016-11-07 16:51:46 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 16:51:48 Login Successful
+2016-11-07 17:36:19 Elite Login
+2016-11-07 17:36:24 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-07 17:36:27 Login Successful
+2016-11-09 07:47:08 Elite Login
+2016-11-09 07:47:17 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-09 07:47:20 Login Successful
+2016-11-09 08:41:48 Elite Login
+2016-11-09 08:41:57 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-09 08:41:59 Login Successful
+2016-11-09 09:13:35 Elite Login
+2016-11-09 09:13:41 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-09 09:13:44 Login Successful
+2016-11-09 09:19:37 Elite Login
+2016-11-09 09:19:59 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-09 09:20:03 Login Successful
+2016-11-09 09:23:53 Elite Login
+2016-11-09 09:24:00 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-09 09:24:02 Login Successful
+2016-11-09 09:25:22 Elite Login
+2016-11-09 09:25:29 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-09 09:26:42 Elite Login
+2016-11-09 09:26:48 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-09 09:26:50 Login Successful
+2016-11-09 09:28:49 Elite Login
+2016-11-09 09:28:55 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-09 09:30:49 Elite Login
+2016-11-09 09:30:54 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-09 09:30:56 Login Successful
+2016-11-09 09:31:56 Elite Login
+2016-11-09 09:32:02 1600587 L.Makalintal 1 PWB WASH
+2016-11-09 09:32:04 PCB Wash Station Load
+2016-11-09 09:32:05 Login Successful
+2016-11-09 09:32:07 PCB Wash Station Logout
+2016-11-09 09:32:12 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-09 09:32:16 Login Successful
+2016-11-09 09:33:07 PCB Wash Station Close
+2016-11-09 10:48:21 Elite Login
+2016-11-09 10:48:26 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-09 10:48:29 Login Successful
+2016-11-09 10:54:43 Elite Login
+2016-11-09 10:54:51 12345  1 
+2016-11-09 10:54:51 User is not Registered
+2016-11-09 10:54:58 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-09 10:55:00 Login Successful
+2016-11-09 11:27:31 Elite Login
+2016-11-09 11:27:39 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-09 11:27:41 Login Successful
+2016-11-09 11:32:15 Elite Login
+2016-11-09 11:32:38 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-09 11:32:40 Login Successful
+2016-11-09 13:33:22 Elite Login
+2016-11-09 14:20:20 Elite Login
+2016-11-09 14:20:33 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-09 14:20:39 Login Successful
+2016-11-09 16:45:06 Elite Login
+2016-11-09 16:45:21 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-09 16:45:29 Login Successful
+2016-11-10 08:35:58 Elite Login
+2016-11-10 08:36:22 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-10 08:36:26 Login Successful
+2016-11-10 11:30:00 Elite Login
+2016-11-10 11:30:21 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-10 11:30:24 Login Successful
+2016-11-10 11:34:44 Elite Login
+2016-11-10 11:34:50 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-10 11:34:52 Login Successful
+2016-11-10 11:36:06 Elite Login
+2016-11-10 11:36:14 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-10 11:36:16 Login Successful
+2016-11-10 11:36:57 Elite Login
+2016-11-10 11:37:02 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-10 11:37:04 Login Successful
+2016-11-10 11:38:40 Elite Login
+2016-11-10 11:38:46 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-10 11:38:48 Login Successful
+2016-11-10 11:40:19 Elite Login
+2016-11-10 11:40:24 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-10 11:40:26 Login Successful
+2016-11-10 11:43:04 Elite Login
+2016-11-10 11:43:13 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-10 11:43:15 Login Successful
+2016-11-10 11:45:16 Elite Login
+2016-11-10 11:45:32 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-10 11:45:33 Login Successful
+2016-11-10 11:47:16 Elite Login
+2016-11-10 11:47:21 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-10 11:47:23 Login Successful
+2016-11-10 11:48:30 Elite Login
+2016-11-10 11:48:37 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-10 11:48:39 Login Successful
+2016-11-10 11:52:02 Elite Login
+2016-11-10 11:52:09 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-10 11:52:12 Login Successful
+2016-11-10 11:53:52 Elite Login
+2016-11-10 11:53:57 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-10 11:54:00 Login Successful
+2016-11-10 13:08:10 Elite Login
+2016-11-10 13:08:19 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-10 13:08:22 Login Successful
+2016-11-10 13:11:36 Elite Login
+2016-11-10 13:11:41 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-10 13:11:43 Login Successful
+2016-11-10 16:12:15 Elite Login
+2016-11-10 16:12:23 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-10 16:12:26 Login Successful
+2016-11-10 16:29:26 Elite Login
+2016-11-10 16:32:25 Elite Login
+2016-11-10 16:32:41 1600587 L.Makalintal FA FAILURE ANALYSIS
+2016-11-10 16:32:42 Login Successful
+2016-11-10 16:33:19 Elite Login
+2016-11-10 16:33:26 1600587 L.Makalintal FA FAILURE ANALYSIS
+2016-11-10 16:33:27 Login Successful
+2016-11-10 16:34:42 1600587 L.Makalintal REPAIR REPAIR_STATION
+2016-11-10 16:34:44 Login Successful
+2016-11-10 16:34:53 Scan: AF168N023 A5A003235050
+2016-11-10 16:34:57 Message: PCB did not undergo Failure Analysis
+2016-11-10 16:35:10 Repair Station Logout
+2016-11-10 16:35:19 1600587 L.Makalintal FA FAILURE ANALYSIS
+2016-11-10 16:35:21 Login Successful
+2016-11-10 16:36:24 1600587 L.Makalintal FA FAILURE ANALYSIS
+2016-11-10 16:36:25 Login Successful
+2016-11-10 16:37:04 Repair Station Closed
+2016-11-10 16:43:13 Elite Login
+2016-11-10 16:43:18 1600587 L.Makalintal OFFLINE SPARE PARTS
+2016-11-10 16:43:21 Login Successful
+2016-11-10 16:43:55 Elite Login
+2016-11-10 16:44:48 1600587 L.Makalintal FA FAILURE ANALYSIS
+2016-11-10 16:44:49 Login Successful
+2016-11-10 16:47:07 Elite Login
+2016-11-10 16:47:15 1600587 L.Makalintal FA FAILURE ANALYSIS
+2016-11-10 16:47:16 Login Successful
+2016-11-10 16:48:37 Elite Login
+2016-11-10 16:48:45 1600587 L.Makalintal FA FAILURE ANALYSIS
+2016-11-10 16:48:46 Login Successful
+2016-11-10 16:50:39 Elite Login
+2016-11-10 16:50:55 1600587 L.Makalintal REPAIR REPAIR_STATION
+2016-11-10 16:50:57 Login Successful
+2016-11-10 16:51:01 Scan: AF168N023 A5A003235050
+2016-11-10 16:51:05 Message: PCB did not undergo Failure Analysis
+2016-11-10 16:51:19 Repair Station Logout
+2016-11-10 16:51:21 Repair Station Closed
+2016-11-10 16:57:21 Elite Login
+2016-11-10 16:57:42 1600587 L.Makalintal FA FAILURE ANALYSIS
+2016-11-10 16:57:44 Login Successful
+2016-11-10 17:51:52 Elite Login
+2016-11-10 17:52:00 1600587 L.Makalintal FA FAILURE ANALYSIS
+2016-11-10 17:52:02 Login Successful
+2016-11-10 17:52:38 1600587 L.Makalintal REPAIR REPAIR_STATION
+2016-11-10 17:52:41 Login Successful
+2016-11-10 17:52:43 Scan: AF168N022 A5A003235050
+2016-11-10 17:52:47 Message: PCB did not undergo Failure Analysis
+2016-11-10 17:52:51 Repair Station Logout
+2016-11-10 17:52:53 Repair Station Closed
+2016-11-10 17:57:33 Elite Login
+2016-11-10 17:57:40 1600587 L.Makalintal FA FAILURE ANALYSIS
+2016-11-10 17:57:42 Login Successful
+2016-11-10 17:58:47 1600587 L.Makalintal REPAIR REPAIR_STATION
+2016-11-10 17:58:49 Login Successful
+2016-11-10 17:59:18 Scan: AF168N023 A5A003235050
+2016-11-10 17:59:21 Repair Station Logout
+2016-11-10 17:59:22 Repair Station Closed
+2016-11-11 08:29:54 Elite Login
+2016-11-11 08:30:25 1600587 L.Makalintal 1 INJECTION
+2016-11-11 08:30:27 Injection Station Loaded
+2016-11-11 08:30:28 Login Successful
+2016-11-11 08:30:42 Injection Station Closed
+2016-11-11 11:49:47 Elite Login
+2016-11-11 11:49:55 1600587 L.Makalintal OFFLINE X-RAY
+2016-11-11 11:49:58 Login Successful
+2016-11-11 11:51:32 Elite Login
+2016-11-11 11:51:40 1600587 L.Makalintal OFFLINE X-RAY
+2016-11-11 11:51:41 Login Successful
+2016-11-11 11:52:41 Elite Login
+2016-11-11 11:52:48 1600587 L.Makalintal OFFLINE X-RAY
+2016-11-11 11:52:50 Login Successful
+2016-11-11 11:56:01 Elite Login
+2016-11-11 11:56:09 1600587 L.Makalintal OFFLINE X-RAY
+2016-11-11 11:56:11 Login Successful
+2016-11-13 11:22:28 Elite Login
+2016-11-13 11:23:33 Elite Login
+2016-11-13 11:23:41 1600587 L.Makalintal 1 AOI
+2016-11-13 11:23:43 AOI Station Loaded
+2016-11-13 11:23:43 Good Mode Selected
+2016-11-13 11:23:44 Login Successful
+2016-11-13 11:23:51 User: L.Makalintal admin
+2016-11-13 11:24:03 AOI Station Closed
+2016-11-13 11:25:10 Elite Login
+2016-11-13 11:25:17 1600587 L.Makalintal 1 AOI
+2016-11-13 11:25:19 AOI Station Loaded
+2016-11-13 11:25:19 Good Mode Selected
+2016-11-13 11:25:19 Login Successful
+2016-11-13 11:25:42 AOI Station Closed
+2016-11-13 11:27:22 Elite Login
+2016-11-13 11:27:33 1600587 L.Makalintal 1 AOI
+2016-11-13 11:27:35 AOI Station Loaded
+2016-11-13 11:27:35 Good Mode Selected
+2016-11-13 11:27:35 Login Successful
+2016-11-13 11:27:40 User: L.Makalintal admin
+2016-11-13 11:27:43 AOI authorization successful
+2016-11-13 11:27:52 AOI Station Closed
+2016-11-13 11:28:32 Elite Login
+2016-11-13 11:28:41 1600587 L.Makalintal 1 AOI
+2016-11-13 11:28:42 AOI Station Loaded
+2016-11-13 11:28:42 Good Mode Selected
+2016-11-13 11:28:43 Login Successful
+2016-11-13 11:28:48 AOI Station Closed
+2016-11-13 11:31:03 Elite Login
+2016-11-13 11:31:10 1600587 L.Makalintal 1 AOI
+2016-11-13 11:31:11 AOI Station Loaded
+2016-11-13 11:31:11 Good Mode Selected
+2016-11-13 11:31:12 Login Successful
+2016-11-13 11:31:22 New Lot Number
+2016-11-13 11:31:25 Lot number generated: -1-1
+2016-11-13 11:31:27 Model Select: MW1500KSXP105-S
+2016-11-13 11:31:29 PETname Select: FKN92B
+2016-11-13 11:31:31 PCB type Select: A5A003448270
+2016-11-13 11:31:47 Good Mode Selected
+2016-11-13 11:31:48 NG Mode Selected
+2016-11-13 11:31:57 Remarks: IC12
+2016-11-13 11:32:01 Good Mode Selected
+2016-11-13 11:33:04 AOI Station Logout
+2016-11-13 11:33:07 AOI Station Closed
+2016-11-13 11:41:13 Elite Login
+2016-11-13 11:41:19 1600587 L.Makalintal 1 AOI
+2016-11-13 11:41:20 AOI Station Loaded
+2016-11-13 11:41:20 Good Mode Selected
+2016-11-13 11:41:21 Login Successful
+2016-11-13 11:41:23 Model Select: MW1500KSXP105-S
+2016-11-13 11:41:32 User: L.Makalintal admin
+2016-11-13 11:41:33 AOI authorization successful
+2016-11-13 11:41:41 AOI Station Logout
+2016-11-13 11:41:43 AOI Station Closed
+2016-11-13 11:48:41 Elite Login
+2016-11-13 11:48:49 1600587 L.Makalintal 1 FVI
+2016-11-13 11:48:51 FVI Station Loaded
+2016-11-13 11:48:51 Good Mode Selected
+2016-11-13 11:48:51 FVI Station Login Loaded
+2016-11-13 11:48:52 Login Successful
+2016-11-13 11:48:55 Login VI1: 1600586
+2016-11-13 11:48:58 Login VI2: 1600637
+2016-11-13 11:49:01 Login VI3: 0000000
+2016-11-13 11:49:02 VI Station Login Successful
+2016-11-13 11:49:04 NG Mode Selected
+2016-11-13 11:49:12 User: L.Makalintal admin
+2016-11-13 11:49:13 FVI authorization successful
+2016-11-13 11:49:21 Good Mode Selected
+2016-11-13 11:49:23 NG Mode Selected
+2016-11-13 11:49:25 Good Mode Selected
+2016-11-13 11:49:33 FVI Station Closed
+2016-11-13 16:34:28 Elite Login
+2016-11-13 16:34:34 192  1 INJECTION
+2016-11-13 16:34:34 User is not Registered
+2016-11-13 16:34:39 1600587 L.Makalintal 1 INJECTION
+2016-11-13 16:34:54 Wrong Stencil Assigned
+2016-11-13 16:34:55 Injection Station Loaded
+2016-11-13 16:34:56 Login Successful
+2016-11-13 16:34:59 PCB details menu
+2016-11-13 16:43:39 Elite Login
+2016-11-13 16:43:57 16000587  1 INJECTION
+2016-11-13 16:43:57 User is not Registered
+2016-11-13 16:44:00 1600587 L.Makalintal 1 INJECTION
+2016-11-13 16:44:04 Wrong Stencil Assigned
+2016-11-13 16:44:04 Injection Station Loaded
+2016-11-13 16:44:04 Login Successful
+2016-11-13 16:44:07 PCB details menu
+2016-11-13 16:44:30 Stencil Selection
+2016-11-13 18:21:31 Elite Login
+2016-11-13 18:21:35 1600587 L.Makalintal 1 INJECTION
+2016-11-13 18:21:38 Wrong Stencil Assigned
+2016-11-13 18:21:39 Injection Station Loaded
+2016-11-13 18:21:39 Login Successful
+2016-11-13 18:21:42 Cream Solder Menu
+2016-11-13 18:21:45 Injection Station Logout
+2016-11-13 18:21:46 Injection Station Closed
+2016-11-13 18:21:52 Elite Login
+2016-11-13 18:21:59 1600587 L.Makalintal 1 CREAM SOLDER
+2016-11-13 18:22:01 Login Successful
+2016-11-13 18:28:07 Elite Login
+2016-11-13 18:28:10 1600587 L.Makalintal 1 INJECTION
+2016-11-13 18:28:15 Wrong Stencil Assigned
+2016-11-13 18:28:15 Injection Station Loaded
+2016-11-13 18:28:15 Login Successful
+2016-11-13 18:28:17 Cream Solder Menu
+2016-11-13 18:29:54 Elite Login
+2016-11-13 18:29:57 1600587 L.Makalintal 1 INJECTION
+2016-11-13 18:30:00 Wrong Stencil Assigned
+2016-11-13 18:30:00 Injection Station Loaded
+2016-11-13 18:30:00 Login Successful
+2016-11-13 18:30:02 PCB details menu
+2016-11-13 18:30:20 Cream Solder Menu
+2016-11-13 18:31:52 Elite Login
+2016-11-13 18:32:02 1600587 L.Makalintal 1 INJECTION
+2016-11-13 18:32:04 Injection Station Loaded
+2016-11-13 18:32:04 Login Successful
+2016-11-13 18:32:06 Cream Solder Menu
+2016-11-13 18:32:18 Stencil Selection
+2016-11-13 18:33:21 Squeegee Blade Menu
+2016-11-13 18:34:48 Pallet Reset
+2016-11-13 18:34:48 Injection Station Closed
+2016-11-13 18:34:52 Elite Login
+2016-11-13 18:34:55 1600587 L.Makalintal 1 INJECTION
+2016-11-13 18:34:56 Injection Station Loaded
+2016-11-13 18:34:57 Login Successful
+2016-11-13 18:35:23 Scan: FKNA8A0104
+2016-11-13 18:35:41 Scan: FKNA8A0104
+2016-11-13 18:37:54 Injection Station Closed
+2016-11-13 18:38:04 Elite Login
+2016-11-13 18:38:07 1600587 L.Makalintal 1 INJECTION
+2016-11-13 18:38:09 Injection Station Loaded
+2016-11-13 18:38:09 Login Successful
+2016-11-13 18:38:12 Scan: FKNA8A0104
+2016-11-13 18:38:27 Scan: AF168N000 A5A003235050
+2016-11-13 18:38:31 Scan: AF168N001 A5A003235050
+2016-11-13 18:38:33 Scan: AF168N002 A5A003235050
+2016-11-13 18:38:35 Scan: AF168N003 A5A003235050
+2016-11-13 18:38:50 Scan: AF168N000 A5A003235050
+2016-11-13 18:40:39 Elite Login
+2016-11-13 18:40:43 1600587 L.Makalintal 1 INJECTION
+2016-11-13 18:40:44 Injection Station Loaded
+2016-11-13 18:40:44 Login Successful
+2016-11-13 18:40:50 Scan: AF168N000 A5A003235050
+2016-11-13 18:41:51 Elite Login
+2016-11-13 18:41:55 1600587 L.Makalintal 1 INJECTION
+2016-11-13 18:41:57 Injection Station Loaded
+2016-11-13 18:41:57 Login Successful
+2016-11-13 18:42:01 Scan: AF168N012 A5A003235050
+2016-11-13 18:42:30 Scan: AF168N012 A5A003235050
+2016-11-13 18:42:35 Scan: AF168N013 A5A003235050
+2016-11-13 18:42:37 Scan: AF168N014 A5A003235050
+2016-11-13 18:42:39 Scan: AF168N015 A5A003235050
+2016-11-13 18:42:41 Scan: AF168N016 A5A003235050
+2016-11-13 18:42:43 Scan: AF168N017 A5A003235050
+2016-11-13 18:49:10 Elite Login
+2016-11-13 18:49:48 1600587 L.Makalintal 1 INJECTION
+2016-11-13 18:49:49 Injection Station Loaded
+2016-11-13 18:49:50 Login Successful
+2016-11-13 18:49:55 Scan: FKNA8A0104
+2016-11-13 18:50:01 Scan: AF168N000 A5A003235050
+2016-11-13 18:50:04 Scan: AF168N001 A5A003235050
+2016-11-13 18:50:05 Scan: AF168N002 A5A003235050
+2016-11-13 18:50:07 Scan: AF168N003 A5A003235050
+2016-11-13 18:50:09 Scan: AF168N004 A5A003235050
+2016-11-13 18:50:11 Scan: AF168N004 A5A003235050
+2016-11-13 18:50:21 Scan: AF168N005 A5A003235050
+2016-11-13 18:57:45 Injection Station Closed

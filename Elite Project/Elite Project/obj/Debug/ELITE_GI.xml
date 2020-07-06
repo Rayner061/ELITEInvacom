@@ -1,0 +1,188 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ELITE_GI
+</name>
+</assembly>
+<members>
+<member name="T:ELITE_GI.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources._1485791411_caution">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources._error">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.BLADRMF_">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.elite_background_GI_110">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.elite_background_GI_190">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.elite_background_GI_214">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.elite_background_GI_50">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.elite_background_GI_64">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.elite_background_GI_login">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.elite_banner_GI">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.elite_epson_background_fvi_1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.elite_epson_background_fvi_2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.elite_epson_background_fvi_3">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.elite_epson_background_injection_2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.elite_epson_background_injection_3">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.elite_epson_background_mounter_1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.elite_epson_background_mounter_2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.elite_epson_background_mounter_3">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.elite_gi_splash">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.emscai_logo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.Graphicloads_100_Flat_Unlock">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.scan_completed">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.Ubuntu_Bold">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.Ubuntu_BoldItalic">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.Ubuntu_Italic">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.Ubuntu_Light">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.Ubuntu_LightItalic">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.Ubuntu_Medium">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.Ubuntu_MediumItalic">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:ELITE_GI.My.Resources.Resources.Ubuntu_Regular">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="M:ELITE_GI.frminjection.refreshDetails">
+ <summary>
+ Refresh data.
+ </summary>
+</member>
+<member name="M:ELITE_GI.frminjection.ExamineScan(System.String)">
+ <summary>
+ Determine scanned qrCode.
+ </summary>
+ <param name="scanText"></param>
+ <returns>Pallet or PCB</returns>
+</member>
+</members>
+</doc>
