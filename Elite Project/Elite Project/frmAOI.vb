@@ -319,6 +319,11 @@ Public Class frmAOI
         lblCodeAllocation.Text = cmd.ExecuteScalar
     End Sub
 
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        Dim proc As New Process()
+        proc = Process.Start("C:\Program Files (x86)\EMS Group\PM DOWNTIME LOGS\PM DOWNTIME TRACE.exe")
+    End Sub
+
     Private Sub btnSet_Click(sender As Object, e As EventArgs) Handles btnSet.Click
         Dim cmd As New MySqlCommand
         cmd.Connection = conn

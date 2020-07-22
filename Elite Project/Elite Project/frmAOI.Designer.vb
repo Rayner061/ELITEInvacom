@@ -84,9 +84,9 @@ Partial Class frmAOI
         Me.btnNG.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnNG.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnNG.ForeColor = System.Drawing.Color.White
-        Me.btnNG.Location = New System.Drawing.Point(712, 13)
+        Me.btnNG.Location = New System.Drawing.Point(675, 13)
         Me.btnNG.Name = "btnNG"
-        Me.btnNG.Size = New System.Drawing.Size(684, 41)
+        Me.btnNG.Size = New System.Drawing.Size(647, 41)
         Me.btnNG.TabIndex = 56
         Me.btnNG.Text = "NG"
         Me.btnNG.UseVisualStyleBackColor = False
@@ -101,7 +101,7 @@ Partial Class frmAOI
         Me.btnGOOD.ForeColor = System.Drawing.Color.White
         Me.btnGOOD.Location = New System.Drawing.Point(13, 13)
         Me.btnGOOD.Name = "btnGOOD"
-        Me.btnGOOD.Size = New System.Drawing.Size(683, 41)
+        Me.btnGOOD.Size = New System.Drawing.Size(646, 41)
         Me.btnGOOD.TabIndex = 57
         Me.btnGOOD.Text = "GOOD"
         Me.btnGOOD.UseVisualStyleBackColor = False
@@ -118,7 +118,7 @@ Partial Class frmAOI
         Me.lblcountng.ForeColor = System.Drawing.Color.Black
         Me.lblcountng.Location = New System.Drawing.Point(3, 0)
         Me.lblcountng.Name = "lblcountng"
-        Me.lblcountng.Size = New System.Drawing.Size(678, 115)
+        Me.lblcountng.Size = New System.Drawing.Size(641, 115)
         Me.lblcountng.TabIndex = 74
         Me.lblcountng.Text = "0"
         Me.lblcountng.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -131,7 +131,7 @@ Partial Class frmAOI
         Me.lblcountgood.ForeColor = System.Drawing.Color.Black
         Me.lblcountgood.Location = New System.Drawing.Point(13, 57)
         Me.lblcountgood.Name = "lblcountgood"
-        Me.lblcountgood.Size = New System.Drawing.Size(683, 115)
+        Me.lblcountgood.Size = New System.Drawing.Size(646, 115)
         Me.lblcountgood.TabIndex = 74
         Me.lblcountgood.Text = "0"
         Me.lblcountgood.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -154,7 +154,7 @@ Partial Class frmAOI
         Me.dgpcb.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgpcb.Location = New System.Drawing.Point(13, 175)
         Me.dgpcb.Name = "dgpcb"
-        Me.dgpcb.Size = New System.Drawing.Size(1383, 94)
+        Me.dgpcb.Size = New System.Drawing.Size(1309, 94)
         Me.dgpcb.TabIndex = 87
         '
         'TableLayoutPanel1
@@ -181,7 +181,7 @@ Partial Class frmAOI
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 290.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1444, 881)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1370, 749)
         Me.TableLayoutPanel1.TabIndex = 95
         '
         'tblPnlMain
@@ -199,7 +199,7 @@ Partial Class frmAOI
         Me.tblPnlMain.Controls.Add(Me.btnGOOD, 0, 0)
         Me.tblPnlMain.Controls.Add(Me.dgpcb, 0, 2)
         Me.tblPnlMain.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tblPnlMain.Location = New System.Drawing.Point(15, 559)
+        Me.tblPnlMain.Location = New System.Drawing.Point(15, 438)
         Me.tblPnlMain.Margin = New System.Windows.Forms.Padding(0, 3, 0, 0)
         Me.tblPnlMain.Name = "tblPnlMain"
         Me.tblPnlMain.Padding = New System.Windows.Forms.Padding(10, 10, 15, 15)
@@ -207,7 +207,7 @@ Partial Class frmAOI
         Me.tblPnlMain.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.tblPnlMain.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.tblPnlMain.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100.0!))
-        Me.tblPnlMain.Size = New System.Drawing.Size(1414, 287)
+        Me.tblPnlMain.Size = New System.Drawing.Size(1340, 287)
         Me.tblPnlMain.TabIndex = 99
         '
         'TableLayoutPanel8
@@ -219,12 +219,12 @@ Partial Class frmAOI
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel8.Controls.Add(Me.lblcountng, 0, 0)
         Me.TableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel8.Location = New System.Drawing.Point(712, 57)
+        Me.TableLayoutPanel8.Location = New System.Drawing.Point(675, 57)
         Me.TableLayoutPanel8.Margin = New System.Windows.Forms.Padding(3, 0, 3, 0)
         Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
         Me.TableLayoutPanel8.RowCount = 1
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel8.Size = New System.Drawing.Size(684, 115)
+        Me.TableLayoutPanel8.Size = New System.Drawing.Size(647, 115)
         Me.TableLayoutPanel8.TabIndex = 148
         '
         'TableLayoutPanel7
@@ -238,12 +238,12 @@ Partial Class frmAOI
         Me.TableLayoutPanel7.Controls.Add(Me.txtScan, 1, 0)
         Me.TableLayoutPanel7.Controls.Add(Me.lblScan, 0, 0)
         Me.TableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel7.Location = New System.Drawing.Point(15, 484)
+        Me.TableLayoutPanel7.Location = New System.Drawing.Point(15, 365)
         Me.TableLayoutPanel7.Margin = New System.Windows.Forms.Padding(0)
         Me.TableLayoutPanel7.Name = "TableLayoutPanel7"
         Me.TableLayoutPanel7.RowCount = 1
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel7.Size = New System.Drawing.Size(1414, 70)
+        Me.TableLayoutPanel7.Size = New System.Drawing.Size(1340, 70)
         Me.TableLayoutPanel7.TabIndex = 98
         '
         'txtScan
@@ -254,7 +254,7 @@ Partial Class frmAOI
         Me.txtScan.Location = New System.Drawing.Point(186, 14)
         Me.txtScan.Margin = New System.Windows.Forms.Padding(3, 14, 20, 12)
         Me.txtScan.Name = "txtScan"
-        Me.txtScan.Size = New System.Drawing.Size(1208, 35)
+        Me.txtScan.Size = New System.Drawing.Size(1134, 35)
         Me.txtScan.TabIndex = 152
         '
         'lblScan
@@ -296,7 +296,7 @@ Partial Class frmAOI
         Me.TableLayoutPanel5.Controls.Add(Me.lblCodeAllocation, 4, 1)
         Me.TableLayoutPanel5.Controls.Add(Me.btnSet, 4, 2)
         Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel5.Location = New System.Drawing.Point(15, 206)
+        Me.TableLayoutPanel5.Location = New System.Drawing.Point(15, 193)
         Me.TableLayoutPanel5.Margin = New System.Windows.Forms.Padding(0)
         Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
         Me.TableLayoutPanel5.RowCount = 4
@@ -304,7 +304,7 @@ Partial Class frmAOI
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40.0!))
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40.0!))
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel5.Size = New System.Drawing.Size(1414, 110)
+        Me.TableLayoutPanel5.Size = New System.Drawing.Size(1340, 110)
         Me.TableLayoutPanel5.TabIndex = 97
         '
         'tblPnlDefect
@@ -319,7 +319,7 @@ Partial Class frmAOI
         Me.tblPnlDefect.Controls.Add(Me.Label5, 1, 2)
         Me.tblPnlDefect.Controls.Add(Me.txtremarks, 2, 2)
         Me.tblPnlDefect.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tblPnlDefect.Location = New System.Drawing.Point(874, 10)
+        Me.tblPnlDefect.Location = New System.Drawing.Point(810, 10)
         Me.tblPnlDefect.Margin = New System.Windows.Forms.Padding(0, 10, 0, 10)
         Me.tblPnlDefect.Name = "tblPnlDefect"
         Me.tblPnlDefect.RowCount = 4
@@ -389,7 +389,7 @@ Partial Class frmAOI
         '
         Me.btnlogout.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnlogout.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnlogout.Location = New System.Drawing.Point(1303, 57)
+        Me.btnlogout.Location = New System.Drawing.Point(1233, 57)
         Me.btnlogout.Margin = New System.Windows.Forms.Padding(3, 2, 3, 10)
         Me.btnlogout.Name = "btnlogout"
         Me.btnlogout.Size = New System.Drawing.Size(94, 28)
@@ -403,7 +403,7 @@ Partial Class frmAOI
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(40, 15)
+        Me.Label2.Location = New System.Drawing.Point(35, 15)
         Me.Label2.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(62, 40)
@@ -417,7 +417,7 @@ Partial Class frmAOI
         Me.cbxModel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbxModel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbxModel.FormattingEnabled = True
-        Me.cbxModel.Location = New System.Drawing.Point(108, 20)
+        Me.cbxModel.Location = New System.Drawing.Point(103, 20)
         Me.cbxModel.Margin = New System.Windows.Forms.Padding(3, 5, 3, 3)
         Me.cbxModel.Name = "cbxModel"
         Me.cbxModel.Size = New System.Drawing.Size(194, 28)
@@ -429,7 +429,7 @@ Partial Class frmAOI
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(325, 15)
+        Me.Label7.Location = New System.Drawing.Point(320, 15)
         Me.Label7.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(157, 40)
@@ -443,7 +443,7 @@ Partial Class frmAOI
         Me.lblCodeAllocation.BackColor = System.Drawing.Color.Transparent
         Me.lblCodeAllocation.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblCodeAllocation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCodeAllocation.Location = New System.Drawing.Point(488, 15)
+        Me.lblCodeAllocation.Location = New System.Drawing.Point(483, 15)
         Me.lblCodeAllocation.Name = "lblCodeAllocation"
         Me.lblCodeAllocation.Size = New System.Drawing.Size(144, 40)
         Me.lblCodeAllocation.TabIndex = 227
@@ -453,7 +453,7 @@ Partial Class frmAOI
         '
         Me.btnSet.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnSet.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSet.Location = New System.Drawing.Point(490, 59)
+        Me.btnSet.Location = New System.Drawing.Point(485, 59)
         Me.btnSet.Margin = New System.Windows.Forms.Padding(5, 4, 5, 5)
         Me.btnSet.Name = "btnSet"
         Me.btnSet.Size = New System.Drawing.Size(140, 31)
@@ -482,12 +482,12 @@ Partial Class frmAOI
         Me.TableLayoutPanel4.Controls.Add(Me.PictureBox3, 6, 0)
         Me.TableLayoutPanel4.Controls.Add(Me.lblline, 3, 0)
         Me.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel4.Location = New System.Drawing.Point(15, 140)
+        Me.TableLayoutPanel4.Location = New System.Drawing.Point(15, 136)
         Me.TableLayoutPanel4.Margin = New System.Windows.Forms.Padding(0)
         Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
         Me.TableLayoutPanel4.RowCount = 1
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(1414, 52)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(1340, 52)
         Me.TableLayoutPanel4.TabIndex = 96
         '
         'Label1
@@ -524,7 +524,7 @@ Partial Class frmAOI
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(409, 0)
+        Me.Label3.Location = New System.Drawing.Point(390, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(48, 52)
         Me.Label3.TabIndex = 127
@@ -537,7 +537,7 @@ Partial Class frmAOI
         Me.lblStation.BackColor = System.Drawing.Color.Transparent
         Me.lblStation.Dock = System.Windows.Forms.DockStyle.Left
         Me.lblStation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblStation.Location = New System.Drawing.Point(761, 0)
+        Me.lblStation.Location = New System.Drawing.Point(723, 0)
         Me.lblStation.Name = "lblStation"
         Me.lblStation.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.lblStation.Size = New System.Drawing.Size(67, 52)
@@ -551,7 +551,7 @@ Partial Class frmAOI
         Me.lblDT.BackColor = System.Drawing.Color.Transparent
         Me.lblDT.Dock = System.Windows.Forms.DockStyle.Left
         Me.lblDT.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDT.Location = New System.Drawing.Point(1059, 0)
+        Me.lblDT.Location = New System.Drawing.Point(1002, 0)
         Me.lblDT.Name = "lblDT"
         Me.lblDT.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.lblDT.Size = New System.Drawing.Size(24, 52)
@@ -561,7 +561,8 @@ Partial Class frmAOI
         '
         'PictureBox3
         '
-        Me.PictureBox3.Location = New System.Drawing.Point(1357, 12)
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(1281, 12)
         Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 12, 12, 12)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(44, 28)
@@ -575,7 +576,7 @@ Partial Class frmAOI
         Me.lblline.BackColor = System.Drawing.Color.Transparent
         Me.lblline.Dock = System.Windows.Forms.DockStyle.Left
         Me.lblline.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblline.Location = New System.Drawing.Point(463, 0)
+        Me.lblline.Location = New System.Drawing.Point(444, 0)
         Me.lblline.Name = "lblline"
         Me.lblline.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.lblline.Size = New System.Drawing.Size(24, 52)
@@ -597,7 +598,7 @@ Partial Class frmAOI
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1414, 119)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1340, 119)
         Me.TableLayoutPanel2.TabIndex = 0
         '
         'PictureBox2
@@ -620,7 +621,7 @@ Partial Class frmAOI
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel3.Controls.Add(Me.lblAssemblyVersion, 0, 0)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(1016, 0)
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(942, 0)
         Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(0)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 1
@@ -648,7 +649,7 @@ Partial Class frmAOI
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1444, 881)
+        Me.ClientSize = New System.Drawing.Size(1370, 749)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)

@@ -36,6 +36,7 @@ Partial Class frmICProgram
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.tblPnlMain = New System.Windows.Forms.TableLayoutPanel()
         Me.dgpcb = New System.Windows.Forms.DataGridView()
+        Me.pcbstatus = New System.Windows.Forms.Label()
         Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
         Me.txtScan = New System.Windows.Forms.TextBox()
         Me.lblScan = New System.Windows.Forms.Label()
@@ -55,7 +56,6 @@ Partial Class frmICProgram
         Me.lblDT = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.lblline = New System.Windows.Forms.Label()
-        Me.pcbstatus = New System.Windows.Forms.Label()
         Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
         Me.TableLayoutPanel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -215,6 +215,22 @@ Partial Class frmICProgram
         Me.dgpcb.Name = "dgpcb"
         Me.dgpcb.Size = New System.Drawing.Size(1309, 137)
         Me.dgpcb.TabIndex = 87
+        '
+        'pcbstatus
+        '
+        Me.pcbstatus.AutoSize = True
+        Me.pcbstatus.BackColor = System.Drawing.Color.Green
+        Me.pcbstatus.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pcbstatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pcbstatus.ForeColor = System.Drawing.Color.White
+        Me.pcbstatus.Location = New System.Drawing.Point(13, 10)
+        Me.pcbstatus.Name = "pcbstatus"
+        Me.pcbstatus.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.pcbstatus.Size = New System.Drawing.Size(1309, 119)
+        Me.pcbstatus.TabIndex = 100
+        Me.pcbstatus.Text = "status"
+        Me.pcbstatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.pcbstatus.Visible = False
         '
         'TableLayoutPanel7
         '
@@ -516,22 +532,6 @@ Partial Class frmICProgram
         Me.lblline.TabIndex = 124
         Me.lblline.Text = "..."
         Me.lblline.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'pcbstatus
-        '
-        Me.pcbstatus.AutoSize = True
-        Me.pcbstatus.BackColor = System.Drawing.Color.Green
-        Me.pcbstatus.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pcbstatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pcbstatus.ForeColor = System.Drawing.Color.White
-        Me.pcbstatus.Location = New System.Drawing.Point(13, 10)
-        Me.pcbstatus.Name = "pcbstatus"
-        Me.pcbstatus.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.pcbstatus.Size = New System.Drawing.Size(1309, 119)
-        Me.pcbstatus.TabIndex = 100
-        Me.pcbstatus.Text = "status"
-        Me.pcbstatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.pcbstatus.Visible = False
         '
         'Timer4
         '
