@@ -102,7 +102,7 @@ Partial Class frmlogin
         Me.cmbstation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbstation.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbstation.FormattingEnabled = True
-        Me.cmbstation.Items.AddRange(New Object() {"INJECTION - BOTTOM", "INJECTION - TOP", "AOI - BOTTOM", "AOI - TOP", "IC PROGRAMMING", "FVI", "OBA"})
+        Me.cmbstation.Items.AddRange(New Object() {"INJECTION - BOTTOM", "INJECTION - TOP", "AOI - BOTTOM", "AOI - TOP", "FVI", "OBA", "NO SCANNING"})
         Me.cmbstation.Location = New System.Drawing.Point(260, 113)
         Me.cmbstation.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbstation.Name = "cmbstation"

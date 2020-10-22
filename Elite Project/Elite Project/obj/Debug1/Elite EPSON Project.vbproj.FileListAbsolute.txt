@@ -1,0 +1,219 @@
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\bin\Debug\Elite_Epson.exe.config
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Interop.ShockwaveFlashObjects.dll
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite EPSON Project.vbproj.ResolveComReference.cache
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.exe
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.xml
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.pdb
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\bin\Debug\Elite_Epson.exe
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\bin\Debug\Elite_Epson.pdb
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\bin\Debug\Elite_Epson.xml
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\bin\Debug\Interop.ShockwaveFlashObjects.dll
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.authform.resources
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmAOI.resources
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmFVI.resources
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmpanasonicmounter.resources
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frminjection.resources
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frminjectionwash.resources
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmpager.resources
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmsplash.resources
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmpcbinfo.resources
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmlogin.resources
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmwash.resources
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmwash2.resources
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.Resources.resources
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.spitest.resources
+D:\ELITE Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite EPSON Project.vbproj.GenerateResource.Cache
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\bin\Debug\Elite_Epson.exe.config
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite EPSON Project.vbproj.ResolveComReference.cache
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\bin\Debug\Elite_Epson.exe
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\bin\Debug\Elite_Epson.pdb
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\bin\Debug\Elite_Epson.xml
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\bin\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.authform.resources
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmAOI.resources
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmFVI.resources
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmpanasonicmounter.resources
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frminjection.resources
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frminjectionwash.resources
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmpager.resources
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmsplash.resources
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmpcbinfo.resources
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmlogin.resources
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmwash.resources
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmwash2.resources
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.Resources.resources
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.spitest.resources
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite EPSON Project.vbproj.GenerateResource.Cache
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.exe
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.xml
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.pdb
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmICT.resources
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite EPSON Project.vbprojResolveAssemblyReference.cache
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmQPIT.resources
+D:\Shards\ELITE_EPSON\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmPanelReset.resources
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\bin\Debug\Elite_Epson.exe.config
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite EPSON Project.vbproj.ResolveComReference.cache
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.exe
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.xml
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.pdb
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\bin\Debug\Elite_Epson.exe
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\bin\Debug\Elite_Epson.pdb
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\bin\Debug\Elite_Epson.xml
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\bin\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite EPSON Project.vbprojResolveAssemblyReference.cache
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.authform.resources
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmFVI.resources
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmICT.resources
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmAOI.resources
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmpanasonicmounter.resources
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frminjection.resources
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frminjectionwash.resources
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmpager.resources
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmPanelReset.resources
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmQPIT.resources
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmsplash.resources
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmpcbinfo.resources
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmlogin.resources
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmwash.resources
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmwash2.resources
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.Resources.resources
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.spitest.resources
+D:\Shards\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite EPSON Project.vbproj.GenerateResource.Cache
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\bin\Debug\Elite_Epson.exe.config
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Interop.ShockwaveFlashObjects.dll
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite EPSON Project.vbproj.ResolveComReference.cache
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.exe
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.xml
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.pdb
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\bin\Debug\Elite_Epson.exe
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\bin\Debug\Elite_Epson.pdb
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\bin\Debug\Elite_Epson.xml
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\bin\Debug\Interop.ShockwaveFlashObjects.dll
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite EPSON Project.vbprojResolveAssemblyReference.cache
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.authform.resources
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmFVI.resources
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmICT.resources
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmAOI.resources
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmpanasonicmounter.resources
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frminjection.resources
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frminjectionwash.resources
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmpager.resources
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmPanelReset.resources
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmOBA.resources
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmsplash.resources
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmpcbinfo.resources
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmlogin.resources
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmwash.resources
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmwash2.resources
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.Resources.resources
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite_Epson.spitest.resources
+D:\ELITE_EPSON 2018_06_02\Elite Project\Elite Project\obj\Debug\Elite EPSON Project.vbproj.GenerateResource.Cache
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\bin\Debug\Elite_Epson.exe.config
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\bin\Debug\Elite_Epson.exe
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\bin\Debug\Elite_Epson.pdb
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\bin\Debug\Elite_Epson.xml
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\bin\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Elite EPSON Project.vbproj.ResolveComReference.cache
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.authform.resources
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmFVI.resources
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmICT.resources
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmAOI.resources
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmpanasonicmounter.resources
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frminjection.resources
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frminjectionwash.resources
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmpager.resources
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmPanelReset.resources
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmOBA.resources
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmsplash.resources
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmpcbinfo.resources
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmlogin.resources
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmwash.resources
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmwash2.resources
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.Resources.resources
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.spitest.resources
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Elite EPSON Project.vbproj.GenerateResource.Cache
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.exe
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.xml
+D:\Shards\ELITE EPSON 18_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.pdb
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\bin\Debug\Elite_Epson.exe.config
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\bin\Debug\Elite_Epson.exe
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\bin\Debug\Elite_Epson.pdb
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\bin\Debug\Elite_Epson.xml
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\bin\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Elite EPSON Project.vbproj.ResolveComReference.cache
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.authform.resources
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmFVI.resources
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmICT.resources
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmAOI.resources
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmpanasonicmounter.resources
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frminjection.resources
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frminjectionwash.resources
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmpager.resources
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmPanelReset.resources
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmOBA.resources
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmsplash.resources
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmpcbinfo.resources
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmlogin.resources
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmwash.resources
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmwash2.resources
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.Resources.resources
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.spitest.resources
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Elite EPSON Project.vbproj.GenerateResource.Cache
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.exe
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.xml
+D:\Shards\ELITE_EPSON 2018_07_13\Elite Project\Elite Project\obj\Debug\Elite_Epson.pdb
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\bin\Debug\Elite_Epson.exe.config
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\bin\Debug\Elite_Epson.exe
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\bin\Debug\Elite_Epson.pdb
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\bin\Debug\Elite_Epson.xml
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\bin\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite EPSON Project.vbprojResolveAssemblyReference.cache
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite EPSON Project.vbproj.ResolveComReference.cache
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite_Epson.authform.resources
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmFVI.resources
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmICT.resources
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmAOI.resources
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmpanasonicmounter.resources
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite_Epson.frminjection.resources
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite_Epson.frminjectionwash.resources
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmpager.resources
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmPanelReset.resources
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmOBA.resources
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmRepair.resources
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmsplash.resources
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmpcbinfo.resources
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmlogin.resources
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmwash.resources
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite_Epson.frmwash2.resources
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite_Epson.Resources.resources
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite_Epson.spitest.resources
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite EPSON Project.vbproj.GenerateResource.Cache
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite_Epson.exe
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite_Epson.xml
+D:\Shards\ELITE_EPSON 2018_08_14\Elite Project\Elite Project\obj\Debug\Elite_Epson.pdb
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\bin\Debug\Elite_Epson.exe.config
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\Elite EPSON Project.vbproj.ResolveComReference.cache
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\Elite_Epson.exe
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\Elite_Epson.xml
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\Elite_Epson.pdb

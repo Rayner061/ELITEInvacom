@@ -742,6 +742,11 @@ Public Class frminjection
         cbxPartNumber.SelectedItem = Nothing
     End Sub
 
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        Dim proc As New Process()
+        proc = Process.Start("C:\Program Files (x86)\EMS Group\PM DOWNTIME LOGS\PM DOWNTIME TRACE.exe")
+    End Sub
+
     Private Sub cbxPartNumber_Click(sender As Object, e As EventArgs) Handles cbxPartNumber.Click
         Dim cmd As New MySqlCommand
         Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)

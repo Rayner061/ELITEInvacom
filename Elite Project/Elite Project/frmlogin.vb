@@ -217,6 +217,19 @@ Public Class frmlogin
                         lbllevel.Text = ""
                         cmbstation.Text = ""
                         Hide()
+                    ElseIf cmbstation.Text = "NO SCANNING" Then
+                        cmd.CommandText = "SELECT empname FROM tbluser WHERE userid = '" + txtid.Text + "'"
+                        lblname.Text = cmd.ExecuteScalar
+                        frmnoscanning.lblname.Text = lblname.Text
+                        frmnoscanning.lblline.Text = cmbline.Text
+                        frmnoscanning.lblstation.Text = cmbstation.Text
+                        frmnoscanning.Show()
+                        txtpass.Text = ""
+                        lblname.Text = ""
+                        cmbline.Text = ""
+                        lbllevel.Text = ""
+                        cmbstation.Text = ""
+                        Hide()
                     End If
 
                     writeLogs("Login Successful: " & txtid.Text)

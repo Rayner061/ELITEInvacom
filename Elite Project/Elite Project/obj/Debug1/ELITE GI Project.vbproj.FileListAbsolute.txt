@@ -1,0 +1,221 @@
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\bin\Debug\ELITE_GI.exe.config
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbproj.ResolveComReference.cache
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\bin\Debug\ELITE_GI.exe
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\bin\Debug\ELITE_GI.pdb
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\bin\Debug\ELITE_GI.xml
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\bin\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbprojResolveAssemblyReference.cache
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmAOI.resources
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmFVI.resources
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmOBA.resources
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpanasonicmounter.resources
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE_GI.frminjection.resources
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE_GI.frminjectionwash.resources
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpager.resources
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmPanelReset.resources
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmRepair.resources
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmSMTVI.resources
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmsplash.resources
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpcbinfo.resources
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmlogin.resources
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmwash.resources
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmwash2.resources
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE_GI.Resources.resources
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE_GI.spitest.resources
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbproj.GenerateResource.Cache
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE_GI.exe
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE_GI.xml
+D:\Shards\ELITE_GI_18_11_15\Elite Project\Elite Project\obj\Debug\ELITE_GI.pdb
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\bin\Debug\ELITE_GI.exe.config
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbproj.ResolveComReference.cache
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.exe
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.xml
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.pdb
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\bin\Debug\ELITE_GI.exe
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\bin\Debug\ELITE_GI.pdb
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\bin\Debug\ELITE_GI.xml
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\bin\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmAOI.resources
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmFVI.resources
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmOBA.resources
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpanasonicmounter.resources
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frminjection.resources
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frminjectionwash.resources
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpager.resources
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmPanelReset.resources
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmRepair.resources
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmSMTVI.resources
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmsplash.resources
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpcbinfo.resources
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmlogin.resources
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmwash.resources
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmwash2.resources
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.Resources.resources
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.spitest.resources
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbproj.GenerateResource.Cache
+D:\Shards\ELITE_GI_19_09_22\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbprojResolveAssemblyReference.cache
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\bin\Debug\ELITE_GI.exe.config
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\bin\Debug\ELITE_GI.exe
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\bin\Debug\ELITE_GI.pdb
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\bin\Debug\ELITE_GI.xml
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\bin\Debug\Oracle.DataAccess.dll
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\bin\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbprojResolveAssemblyReference.cache
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbproj.ResolveComReference.cache
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmAOI.resources
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmfujimounter.resources
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmFVI.resources
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmOBA.resources
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpanasonicmounter.resources
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frminjection.resources
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frminjectionwash.resources
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpager.resources
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmPanelReset.resources
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmRepair.resources
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmSMTVI.resources
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmsplash.resources
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpcbinfo.resources
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmlogin.resources
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmwash.resources
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmwash2.resources
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.Resources.resources
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.spitest.resources
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbproj.GenerateResource.Cache
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.exe
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.xml
+D:\Shards\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.pdb
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\bin\Debug\ELITE_GI.exe.config
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\bin\Debug\ELITE_GI.exe
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\bin\Debug\ELITE_GI.pdb
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\bin\Debug\ELITE_GI.xml
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\bin\Debug\MySql.Data.dll
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmAOI.resources
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmfujimounter.resources
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmFVI.resources
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmOBA.resources
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpanasonicmounter.resources
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frminjection.resources
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frminjectionwash.resources
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpager.resources
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmPanelReset.resources
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmRepair.resources
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmSMTVI.resources
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmsplash.resources
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpcbinfo.resources
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmlogin.resources
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmwash.resources
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmwash2.resources
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.Resources.resources
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.spitest.resources
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbproj.GenerateResource.cache
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbproj.CopyComplete
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.exe
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.xml
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\obj\Debug\ELITE_GI.pdb
+C:\Users\Nikko Gagala\Desktop\For Sorting\For transfer to nikko\ELITE_GI_19_11_22\Elite Project\Elite Project\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\bin\Debug\ELITE_GI.exe.config
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\bin\Debug\ELITE_GI.exe
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\bin\Debug\ELITE_GI.pdb
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\bin\Debug\ELITE_GI.xml
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\bin\Debug\MySql.Data.dll
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmAOI.resources
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmfujimounter.resources
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmFVI.resources
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmOBA.resources
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpanasonicmounter.resources
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frminjection.resources
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frminjectionwash.resources
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpager.resources
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmPanelReset.resources
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmRepair.resources
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmSMTVI.resources
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmsplash.resources
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpcbinfo.resources
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmlogin.resources
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmwash.resources
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmwash2.resources
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.Resources.resources
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.spitest.resources
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbproj.GenerateResource.cache
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbproj.CopyComplete
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.exe
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.xml
+C:\Users\Nikko Gagala\Documents\Visual Studio 2019\Projects\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.pdb
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\bin\Debug\ELITE_GI.exe.config
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\bin\Debug\ELITE_GI.exe
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\bin\Debug\ELITE_GI.pdb
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\bin\Debug\ELITE_GI.xml
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmAOI.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmfujimounter.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmFVI.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmOBA.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpanasonicmounter.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frminjection.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frminjectionwash.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpager.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmPanelReset.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmRepair.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmSMTVI.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmsplash.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpcbinfo.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmlogin.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmwash.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmwash2.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.Resources.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.spitest.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbproj.GenerateResource.cache
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbproj.CopyComplete
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.exe
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.xml
+C:\Users\Rayner Pangan\source\repos\ELITE_GI_20_02_27\Elite Project\Elite Project\obj\Debug\ELITE_GI.pdb
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\bin\Debug\ELITE_GI.exe
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\bin\Debug\ELITE_GI.exe.config
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\bin\Debug\ELITE_GI.exe.manifest
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\bin\Debug\ELITE_GI.application
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmAOI.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmfujimounter.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmFVI.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmICProgram.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmnoscanning.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmOBA.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpanasonicmounter.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frminjection.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frminjectionwash.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpager.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmPanelReset.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmRepair.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmSMTVI.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmsplash.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpcbinfo.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmlogin.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmwash.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmwash2.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.Resources.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.spitest.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbproj.GenerateResource.cache
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.TrustInfo.xml
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.exe.manifest
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.application
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbproj.CopyComplete
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.exe
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.xml
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.pdb
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbprojAssemblyReference.cache

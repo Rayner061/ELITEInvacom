@@ -192,6 +192,10 @@ Public Class frmAOI
             writeLogs(lblScan.Text.Replace(":", "") & "SCAN: " & txtScan.Text)
             Try
                 If lblScan.Text = "SCAN PANEL:" Then
+                    cmd.CommandText = "call eliteprototype.proc_downtime_logger_gi('" & lblline.Text & "', '" & side & "')"
+                    cmd.ExecuteNonQuery()
+
+
                     cmd.CommandText = "UPDATE gi_pcbtrace SET processtoken = 'aoi_" & side & "', aoitimestamp_" & side & " = NOW(), aoioperator_" & side & " = '" & lblname.Text & "', aoistatus_" & side & " = 'GOOD' 
                                         WHERE panel_" & side & " = '" & txtScan.Text & "' AND line_" & side & " = '" & lblline.Text & "' AND processtoken = 'mounter_" & side & "' AND `modelmatrixid` = '" & modelMatrixID & "'"
                     If cmd.ExecuteNonQuery <> upp Then

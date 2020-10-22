@@ -160,6 +160,12 @@
     <Compile Include="frmICProgram.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmnoscanning.Designer.vb">
+      <DependentUpon>frmnoscanning.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmnoscanning.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmOBA.designer.vb">
       <DependentUpon>frmOBA.vb</DependentUpon>
     </Compile>
@@ -277,6 +283,9 @@
     <EmbeddedResource Include="frmICProgram.resx">
       <DependentUpon>frmICProgram.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmnoscanning.resx">
+      <DependentUpon>frmnoscanning.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmOBA.resx">
       <DependentUpon>frmOBA.vb</DependentUpon>
     </EmbeddedResource>
@@ -354,6 +363,8 @@
     <Content Include="ELITE Icon GI.ico" />
     <Content Include="eliteicon.ico" />
     <Content Include="header-logo2.ico" />
+    <None Include="Resources\elite-background-GI-511.png" />
+    <None Include="Resources\elite-background-GI-51.png" />
     <None Include="packages.config" />
     <None Include="Resources\elite-background-GI-214.png" />
     <None Include="Resources\elite-background-GI-190.png" />
@@ -405,6 +416,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="StencilSubForms\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
