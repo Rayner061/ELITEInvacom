@@ -363,6 +363,7 @@
     <Content Include="ELITE Icon GI.ico" />
     <Content Include="eliteicon.ico" />
     <Content Include="header-logo2.ico" />
+    <None Include="Resources\elite-background-GI-111.png" />
     <None Include="Resources\elite-background-GI-511.png" />
     <None Include="Resources\elite-background-GI-51.png" />
     <None Include="packages.config" />

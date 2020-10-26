@@ -465,7 +465,9 @@ Public Class frminjection
         lblAssemblyVersion.Text = "Version " & frmlogin.assemblyVersion & " (General-Release)"
 
         cbxModel.Focus()
-
+        stencilIssuance()
+        stencilMinute()
+        stencilLifespan()
 
     End Sub
 
@@ -513,7 +515,6 @@ Public Class frminjection
                 lblpcbcounter.Text = cmd.ExecuteScalar.ToString
             End If
 
-            cmd.CommandText =
             lblpalletcounter.Text = Val(lblpcbcounter.Text) / upp
         Catch ex As Exception
             MsgBox(ex.ToString())
@@ -850,6 +851,26 @@ Public Class frminjection
         txtscan.Focus()
     End Sub
 
+    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+        csmin()
+        stencilMinute()
+        refreshDetails()
+
+        If lblCSMin.BackColor = Color.ForestGreen And lblCodeAllocation.Text <> "" And lblStencil.Text <> "" And Val(lblStencilLifespan.Text) > 0 And Val(lblStencilCleaning.Text) > 0 Then
+            txtscan.Enabled = True
+        Else
+            txtscan.Enabled = False
+        End If
+    End Sub
+
+    Private Sub Timer3_Tick_1(sender As Object, e As EventArgs) Handles Timer3.Tick
+        stencilLifespan()
+    End Sub
+
+    Private Sub btnStencil_Click(sender As Object, e As EventArgs) Handles btnStencil.Click
+
+    End Sub
+
     Private Sub connectTimer_Tick(sender As Object, e As EventArgs) Handles connectTimer.Tick
         dbConnect()
     End Sub
@@ -857,5 +878,124 @@ Public Class frminjection
     Private Sub notif(warning As String)
         lblWarning.Text = warning
         lblWarning.Visible = True
+    End Sub
+
+    Private Sub stencilLifespan()
+        Try
+
+            Dim cmd As New MySqlCommand
+            cmd.Connection = conn
+
+            cmd.CommandText = "UPDATE `gi_stencil_lifespan` SET `lifespan`= (SELECT FLOOR(90000 - (SUM(`count`) / " & upp & ")) AS `lifespan` FROM (SELECT COUNT(`pcbid`) AS `count` FROM `epson_pcbtrace` WHERE `stencilid_bottom` = '" & lblStencil.Text & "' UNION ALL
+                                SELECT COUNT(`pcbid`) AS `count` FROM `epson_pcbtrace` WHERE `stencilid_top` = '" & lblStencil.Text & "') `a`) WHERE `stencilid` = '" & lblStencil.Text & "'"
+            cmd.ExecuteNonQuery()
+
+            cmd.CommandText = "SELECT `lifespan` FROM `epson_stencil_lifespan` WHERE `stencilid` = '" & lblStencil.Text & "'"
+            lblStencilLifespan.Text = cmd.ExecuteScalar
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+    End Sub
+
+    Private Sub stencilMinute()
+        Try
+            Dim cmd As New MySqlCommand
+            cmd.Connection = conn
+            cmd.CommandText = "SELECT FLOOR(480 - (time_to_sec(timediff(NOW(), (SELECT `timestamp` FROM `gi_stencil` WHERE `stencilid` = '" & lblStencil.Text & "'))) / 60))"
+
+            If IsDBNull(cmd.ExecuteScalar()) Then
+                lblStencilCleaning.Text = "N/A"
+            Else
+                lblStencilCleaning.Text = cmd.ExecuteScalar.ToString()
+            End If
+            If Val(lblStencilCleaning.Text) > 90 Then
+                lblStencilCleaning.BackColor = Color.ForestGreen
+                lblStencilCleaning.ForeColor = Color.White
+            ElseIf Val(lblStencilCleaning.Text) < 91 And Val(lblStencilCleaning.Text) > 30 Then
+                lblStencilCleaning.BackColor = Color.Yellow
+                lblStencilCleaning.ForeColor = Color.Black
+            ElseIf Val(lblStencilCleaning.Text) < 31 Then
+                lblStencilCleaning.BackColor = Color.Red
+                lblStencilCleaning.ForeColor = Color.White
+                txtscan.Enabled = False
+            Else
+                lblStencilCleaning.BackColor = Color.Gray
+                lblStencilCleaning.ForeColor = Color.Black
+                txtscan.Enabled = False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+    End Sub
+
+    Private Sub stencilIssuance()
+        Try
+            Dim cmd As New MySqlCommand
+            cmd.Connection = conn
+
+            cmd.CommandText = "SELECT `stencilid` FROM `gi_stencil` WHERE `location` = 'Line " & lblline.Text & "'"
+            If cmd.ExecuteScalar Is Nothing Then
+            Else
+                lblStencil.Text = cmd.ExecuteScalar.ToString
+            End If
+        Catch ex As Exception
+            lblStencil.Text = ""
+            lblStencilCleaning.Text = ""
+            lblStencilCleaning.BackColor = Color.White
+            writeLogs(ex.ToString)
+            MsgBox(ex.ToString)
+        End Try
+    End Sub
+
+    Public Sub csmin()
+        creamissuance()
+        Dim cmd As New MySqlCommand
+        cmd.Connection = conn
+        Dim datTim1 As DateTime = Now().ToString()
+        Dim wD As Integer
+        Try
+            If lblCSMin.Text <> "" Then
+                cmd.CommandText = "SELECT TIMESTAMPDIFF(MINUTE, `opendatetime`, NOW()) FROM gi_creamsolder WHERE creamid = '" & lblCreamSolder.Text & "'"
+                wD = cmd.ExecuteScalar.ToString()
+
+                lblCSMin.Text = 480 - wD
+
+                If Val(lblCSMin.Text) < 0 Then
+                    lblCSMin.BackColor = Color.Red
+                    lblCSMin.ForeColor = Color.White
+                    MsgBox("Cream Solder reached floor life limit. Please dispose immediately")
+                    txtscan.Enabled = False
+                ElseIf lblCSMin.Text = "N/A" Then
+                    lblCSMin.ForeColor = Color.Black
+                    lblCSMin.BackColor = Color.White
+                    txtscan.Enabled = False
+                Else
+                    lblCSMin.BackColor = Color.ForestGreen
+                    lblCSMin.ForeColor = Color.White
+                End If
+            Else
+                txtscan.Enabled = False
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.ToString())
+        End Try
+    End Sub
+    Public Sub creamissuance()
+        Try
+            Dim cmd As New MySqlCommand
+            cmd.Connection = conn
+            cmd.CommandText = "SELECT IFNULL(creamsolderid, 'none') FROM gi_injectioninfo WHERE line = '" & lblline.Text & "'"
+            If cmd.ExecuteScalar() = "none" Or cmd.ExecuteScalar() Is Nothing Then
+                lblCSMin.BackColor = Color.White
+                lblCSMin.Text = "N/A"
+                lblCSMin.Text = ""
+            Else
+                lblCreamSolder.Text = cmd.ExecuteScalar.ToString()
+            End If
+        Catch ex As Exception
+            MsgBox(ex.ToString())
+            writeLogs(ex.ToString)
+        End Try
     End Sub
 End Class
