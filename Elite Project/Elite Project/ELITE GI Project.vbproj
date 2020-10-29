@@ -142,6 +142,12 @@
     <Compile Include="frmAOI.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmcreamsolder.Designer.vb">
+      <DependentUpon>frmcreamsolder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcreamsolder.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmfujimounter.Designer.vb">
       <DependentUpon>frmfujimounter.vb</DependentUpon>
     </Compile>
@@ -233,6 +239,18 @@
       <DependentUpon>frmlogin.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmsqueegeemanager.Designer.vb">
+      <DependentUpon>frmsqueegeemanager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmsqueegeemanager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStencilManager.Designer.vb">
+      <DependentUpon>frmStencilManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStencilManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmwash.Designer.vb">
       <DependentUpon>frmwash.vb</DependentUpon>
     </Compile>
@@ -266,6 +284,36 @@
       <DependentUpon>spitest.vb</DependentUpon>
     </Compile>
     <Compile Include="spitest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SqueegeeSubForms\frmissuesqueegee.Designer.vb">
+      <DependentUpon>frmissuesqueegee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SqueegeeSubForms\frmissuesqueegee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SqueegeeSubForms\frmremovesqueegee.Designer.vb">
+      <DependentUpon>frmremovesqueegee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SqueegeeSubForms\frmremovesqueegee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SqueegeeSubForms\frmreplacesqueegee.Designer.vb">
+      <DependentUpon>frmreplacesqueegee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SqueegeeSubForms\frmreplacesqueegee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SqueegeeSubForms\frmSqueegeeEOLRemarks.Designer.vb">
+      <DependentUpon>frmSqueegeeEOLRemarks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SqueegeeSubForms\frmSqueegeeEOLRemarks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SqueegeeSubForms\frmSqueegeeLogs.Designer.vb">
+      <DependentUpon>frmSqueegeeLogs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SqueegeeSubForms\frmSqueegeeLogs.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -320,6 +368,12 @@
       <DependentUpon>frmlogin.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmsqueegeemanager.resx">
+      <DependentUpon>frmsqueegeemanager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStencilManager.resx">
+      <DependentUpon>frmStencilManager.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmwash.resx">
       <DependentUpon>frmwash.vb</DependentUpon>
     </EmbeddedResource>
@@ -334,6 +388,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="spitest.resx">
       <DependentUpon>spitest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SqueegeeSubForms\frmissuesqueegee.resx">
+      <DependentUpon>frmissuesqueegee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SqueegeeSubForms\frmremovesqueegee.resx">
+      <DependentUpon>frmremovesqueegee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SqueegeeSubForms\frmreplacesqueegee.resx">
+      <DependentUpon>frmreplacesqueegee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SqueegeeSubForms\frmSqueegeeEOLRemarks.resx">
+      <DependentUpon>frmSqueegeeEOLRemarks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SqueegeeSubForms\frmSqueegeeLogs.resx">
+      <DependentUpon>frmSqueegeeLogs.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

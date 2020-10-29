@@ -8,8 +8,8 @@ Imports System.Threading
 
 Public Class frminjection
     Dim pcblist, panelList As New List(Of String)
-    Dim customer, side, panel, codeAllocation, modelMatrixID, sideRequirement, palletRequirement As String
-    Dim upp As Integer = 0
+    Public customer, side, panel, codeAllocation, modelMatrixID, sideRequirement, palletRequirement As String
+    Public upp As Integer = 0
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         lbldt.Text = Now.ToString("yyyy-MM-dd HH:mm:ss")
@@ -17,7 +17,9 @@ Public Class frminjection
         cmd.Connection = conn
         cmd.CommandText = "SELECT DATE_FORMAT(NOW(),'%Y-%m-%d %H:%i:%s')"
         lbldt.Text = cmd.ExecuteScalar
+
     End Sub
+
     Private Sub frminjection_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
         writeLogs("Injection Station Closed")
         Application.Exit()
@@ -459,16 +461,17 @@ Public Class frminjection
         cmd.CommandText = "SELECT DATE_FORMAT(NOW(),'%Y-%m-%d %H:%i:%s')"
         lbldt.Text = cmd.ExecuteScalar
 
+        csmin()
         refreshDetails()
         writeLogs("Injection Station Loaded")
 
         lblAssemblyVersion.Text = "Version " & frmlogin.assemblyVersion & " (General-Release)"
 
-        cbxModel.Focus()
         stencilIssuance()
         stencilMinute()
         stencilLifespan()
 
+        squeegeemin()
     End Sub
 
     ''' <summary>
@@ -476,8 +479,63 @@ Public Class frminjection
     ''' </summary>
     Public Sub refreshDetails()
         Dim cmd As New MySqlCommand
+        Dim reader As MySqlDataReader
+        Dim matrixid As String = ""
         cmd.Connection = conn
         Try
+            cmd.CommandText = "SELECT `modelmatrixid`, IFNULL(`creamsolderid`, '') FROM `gi_injectioninfo` WHERE `line` = '" & lblline.Text & "' and pcbside = '" & side & "'"
+            reader = cmd.ExecuteReader
+            While reader.Read
+                matrixid = reader.Item(0).ToString
+                lblCreamSolder.Text = reader.Item(1).ToString
+            End While
+            reader.Close()
+            modelMatrixID = matrixid
+
+            cmd.CommandText = "SELECT model,code_allocation,upp,`modelmatrixid`, `pcb_side`, `carrier` FROM `gi_modelmatrix` WHERE `modelmatrixid` = '" & matrixid & "'"
+            reader = cmd.ExecuteReader
+            While reader.Read()
+                lblModel.Text = reader.Item(0).ToString
+                lblCodeAllocation.Text = reader.Item(1).ToString
+                upp = reader.Item(2)
+                codeAllocation = lblCodeAllocation.Text
+
+                modelMatrixID = reader.Item(3).ToString
+                sideRequirement = reader.Item(4).ToString
+                palletRequirement = reader.Item(5).ToString
+
+
+                lblCodeAllocation.Text = codeAllocation
+
+                'If reader.Item(0).ToString = "gi" Then
+                '    cbxModel.Items.Add(reader.Item(4).ToString)
+                '    cbxModel.Text = reader.Item(4).ToString
+                '    cbxModel.Enabled = False
+
+                '    lblCodeAllocation.Text = reader.Item(5).ToString
+                'ElseIf reader.Item(0).ToString = "gs" Then
+                '    cbxModel.Items.Add(reader.Item(4).ToString)
+                '    cbxFamily.Items.Add(reader.Item(1).ToString)
+                '    cbxProductNumber.Items.Add(reader.Item(2).ToString)
+                '    cbxPartNumber.Items.Add(reader.Item(3).ToString)
+                '    lblCodeAllocation.Text = reader.Item(5).ToString
+
+                '    cbxModel.Text = reader.Item(4).ToString
+                '    cbxFamily.Text = reader.Item(1).ToString
+                '    cbxProductNumber.Text = reader.Item(2).ToString
+                '    cbxPartNumber.Text = reader.Item(3).ToString
+                '    lblCodeAllocation.Text = reader.Item(5).ToString
+
+                '    cbxModel.Enabled = False
+                '    cbxFamily.Enabled = False
+                '    cbxProductNumber.Enabled = False
+                '    cbxPartNumber.Enabled = False
+
+                'End If
+            End While
+            reader.Close()
+
+
             If upp = 4 Then
                 TableLayoutPanel7.RowStyles(1).Height = 90
                 TableLayoutPanel7.RowStyles(2).Height = 0
@@ -501,7 +559,15 @@ Public Class frminjection
                 TableLayoutPanel7.RowStyles(2).Height = 45
             End If
 
-            Dim h As Integer
+            cmd.CommandText = "SELECT ifnull(`stencilid`,'') FROM `gi_stencil` WHERE `location` = 'Line " & lblline.Text & "'"
+            reader = cmd.ExecuteReader
+            While reader.Read()
+                lblStencil.Text = reader.Item(0).ToString
+            End While
+            reader.Close()
+
+
+                Dim h As Integer
             h = Date.Now.Hour
             If h >= 7 And h <= 18 Then
                 cmd.CommandText = "SELECT `a`.`count` + `b`.`count`
@@ -516,6 +582,10 @@ Public Class frminjection
             End If
 
             lblpalletcounter.Text = Val(lblpcbcounter.Text) / upp
+
+            bladeissuance()
+            stencilIssuance()
+            stencilMinute()
         Catch ex As Exception
             MsgBox(ex.ToString())
             notif(ex.ToString())
@@ -611,6 +681,7 @@ Public Class frminjection
         End Try
         Return res
     End Function
+
     Private Sub SetPCB(ByVal leadpcb As String, Optional ByVal pcb2 As String = "", Optional ByVal pcb3 As String = "", Optional ByVal pcb4 As String = "", Optional ByVal pcb5 As String = "", Optional ByVal pcb6 As String = "")
         Try
             Dim cmd As New MySqlCommand
@@ -708,167 +779,270 @@ Public Class frminjection
         Application.Restart()
     End Sub
 
-    Private Sub cbxFamily_Click(sender As Object, e As EventArgs) Handles cbxFamily.Click
-        Dim cmd As New MySqlCommand
-        Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
-        Dim myDT As New DataTable
-        cmd.Connection = conn
+    'Private Sub cbxFamily_Click(sender As Object, e As EventArgs)
+    '    Dim cmd As New MySqlCommand
+    '    Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+    '    Dim myDT As New DataTable
+    '    cmd.Connection = conn
 
-        cmd.CommandText = "SELECT DISTINCT `gs_family` FROM gi_modelmatrix WHERE `model` = '" & cbxModel.Text & "'"
-        myDA.Fill(myDT)
+    '    cmd.CommandText = "SELECT DISTINCT `gs_family` FROM gi_modelmatrix WHERE `model` = '" & cbxModel.Text & "'"
+    '    myDA.Fill(myDT)
 
-        cbxFamily.DataSource = myDT
-        cbxFamily.DisplayMember = "gs_family"
-        cbxFamily.ValueMember = "gs_family"
+    '    cbxFamily.DataSource = myDT
+    '    cbxFamily.DisplayMember = "gs_family"
+    '    cbxFamily.ValueMember = "gs_family"
 
-        lblCodeAllocation.Text = ""
-        cbxProductNumber.SelectedItem = Nothing
-        cbxPartNumber.SelectedItem = Nothing
-    End Sub
+    '    lblCodeAllocation.Text = ""
+    '    cbxProductNumber.SelectedItem = Nothing
+    '    cbxPartNumber.SelectedItem = Nothing
+    'End Sub
 
-    Private Sub cbxProductNumber_Click(sender As Object, e As EventArgs) Handles cbxProductNumber.Click
-        Dim cmd As New MySqlCommand
-        Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
-        Dim myDT As New DataTable
-        cmd.Connection = conn
+    'Private Sub cbxProductNumber_Click(sender As Object, e As EventArgs)
+    '    Dim cmd As New MySqlCommand
+    '    Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+    '    Dim myDT As New DataTable
+    '    cmd.Connection = conn
 
-        cmd.CommandText = "SELECT DISTINCT `gs_product_number` FROM gi_modelmatrix WHERE `model` = '" & cbxModel.Text & "' AND `gs_family` = '" & cbxFamily.Text & "'"
-        myDA.Fill(myDT)
+    '    cmd.CommandText = "SELECT DISTINCT `gs_product_number` FROM gi_modelmatrix WHERE `model` = '" & cbxModel.Text & "' AND `gs_family` = '" & cbxFamily.Text & "'"
+    '    myDA.Fill(myDT)
 
-        cbxProductNumber.DataSource = myDT
-        cbxProductNumber.DisplayMember = "gs_product_number"
-        cbxProductNumber.ValueMember = "gs_product_number"
+    '    cbxProductNumber.DataSource = myDT
+    '    cbxProductNumber.DisplayMember = "gs_product_number"
+    '    cbxProductNumber.ValueMember = "gs_product_number"
 
-        lblCodeAllocation.Text = ""
-        cbxPartNumber.SelectedItem = Nothing
-    End Sub
+    '    lblCodeAllocation.Text = ""
+    '    cbxPartNumber.SelectedItem = Nothing
+    'End Sub
 
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
         Dim proc As New Process()
         proc = Process.Start("C:\Program Files (x86)\EMS Group\PM DOWNTIME LOGS\PM DOWNTIME TRACE.exe")
     End Sub
 
-    Private Sub cbxPartNumber_Click(sender As Object, e As EventArgs) Handles cbxPartNumber.Click
-        Dim cmd As New MySqlCommand
-        Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
-        Dim myDT As New DataTable
-        cmd.Connection = conn
+    'Private Sub cbxPartNumber_Click(sender As Object, e As EventArgs)
+    '    Dim cmd As New MySqlCommand
+    '    Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+    '    Dim myDT As New DataTable
+    '    cmd.Connection = conn
 
-        cmd.CommandText = "SELECT DISTINCT `gs_part_number` FROM gi_modelmatrix WHERE `model` = '" & cbxModel.Text & "' AND `gs_family` = '" & cbxFamily.Text & "' AND `gs_product_number` = '" & cbxProductNumber.Text & "'"
-        myDA.Fill(myDT)
+    '    cmd.CommandText = "SELECT DISTINCT `gs_part_number` FROM gi_modelmatrix WHERE `model` = '" & cbxModel.Text & "' AND `gs_family` = '" & cbxFamily.Text & "' AND `gs_product_number` = '" & cbxProductNumber.Text & "'"
+    '    myDA.Fill(myDT)
 
-        cbxPartNumber.DataSource = myDT
-        cbxPartNumber.DisplayMember = "gs_part_number"
-        cbxPartNumber.ValueMember = "gs_part_number"
+    '    cbxPartNumber.DataSource = myDT
+    '    cbxPartNumber.DisplayMember = "gs_part_number"
+    '    cbxPartNumber.ValueMember = "gs_part_number"
 
-        lblCodeAllocation.Text = ""
-    End Sub
+    '    lblCodeAllocation.Text = ""
+    'End Sub
 
-    Private Sub cbxModel_Click(sender As Object, e As EventArgs) Handles cbxModel.Click
-        Dim cmd As New MySqlCommand
-        Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
-        Dim myDT As New DataTable
-        cmd.Connection = conn
+    'Private Sub cbxModel_Click(sender As Object, e As EventArgs)
+    '    Dim cmd As New MySqlCommand
+    '    Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+    '    Dim myDT As New DataTable
+    '    cmd.Connection = conn
 
-        cmd.CommandText = "SELECT DISTINCT model FROM gi_modelmatrix"
-        myDA.Fill(myDT)
+    '    cmd.CommandText = "SELECT DISTINCT model FROM gi_modelmatrix"
+    '    myDA.Fill(myDT)
 
-        cbxModel.DataSource = myDT
-        cbxModel.DisplayMember = "model"
-        cbxModel.ValueMember = "model"
+    '    cbxModel.DataSource = myDT
+    '    cbxModel.DisplayMember = "model"
+    '    cbxModel.ValueMember = "model"
 
-        lblCodeAllocation.Text = ""
-        cbxFamily.SelectedItem = Nothing
-        cbxProductNumber.SelectedItem = Nothing
-        cbxPartNumber.SelectedItem = Nothing
-    End Sub
+    '    lblCodeAllocation.Text = ""
+    '    'cbxFamily.SelectedItem = Nothing
+    '    'cbxProductNumber.SelectedItem = Nothing
+    '    'cbxPartNumber.SelectedItem = Nothing
+    'End Sub
 
-    Private Sub cbxModel_DropDownClosed(sender As Object, e As EventArgs) Handles cbxModel.DropDownClosed
-        Dim cmd As New MySqlCommand
-        cmd.Connection = conn
+    'Private Sub cbxModel_DropDownClosed(sender As Object, e As EventArgs)
+    '    Dim reader As MySqlDataReader
+    '    Dim cmd As New MySqlCommand
+    '    cmd.Connection = conn
 
-        cmd.CommandText = "SELECT DISTINCT `customer` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
-        customer = cmd.ExecuteScalar
+    '    cmd.CommandText = "SELECT DISTINCT `customer` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
+    '    customer = cmd.ExecuteScalar
 
-        If customer = "gs" Then
-            lblFamily.Visible = True
-            cbxFamily.Visible = True
-            lblProductNumber.Visible = True
-            cbxProductNumber.Visible = True
-            lblPartNumber.Visible = True
-            cbxPartNumber.Visible = True
-            lblCodeDesignation.Text = "Product Type:"
-            cbxFamily.Width = 194
-            cbxProductNumber.Width = 194
-        Else
-            lblFamily.Visible = False
-            cbxFamily.Visible = False
-            lblProductNumber.Visible = False
-            cbxProductNumber.Visible = False
-            lblPartNumber.Visible = False
-            cbxPartNumber.Visible = False
-            lblCodeDesignation.Text = "Code Designation:"
+    'If customer = "gs" Then
+    '    lblFamily.Visible = True
+    '    cbxFamily.Visible = True
+    '    lblProductNumber.Visible = True
+    '    cbxProductNumber.Visible = True
+    '    lblPartNumber.Visible = True
+    '    cbxPartNumber.Visible = True
+    '    lblCodeDesignation.Text = "Product Type:"
+    '    cbxFamily.Width = 194
+    '    cbxProductNumber.Width = 194
+    'Else
+    '    lblFamily.Visible = False
+    '    cbxFamily.Visible = False
+    '    lblProductNumber.Visible = False
+    '    cbxProductNumber.Visible = False
+    '    lblPartNumber.Visible = False
+    'cbxPartNumber.Visible = False
+    'lblCodeDesignation.Text = "Code Designation:"
 
-        End If
-    End Sub
+    'End If
+    '    cmd.CommandText = "SELECT `modelmatrixid`, `code_allocation`, `upp`, `pcb_side`, `code_allocation`, `carrier` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
+    '    reader = cmd.ExecuteReader
+    '    While reader.Read()
+    '        modelMatrixID = reader.Item(0).ToString
+    '        codeAllocation = reader.Item(1).ToString
+    '        lblCodeAllocation.Text = reader.Item(1).ToString
+    '        upp = reader.Item(2).ToString
+    '        sideRequirement = reader.Item(3).ToString
+    '        codeAllocation = reader.Item(4).ToString
+    '        palletRequirement = reader.Item(5).ToString()
+    '    End While
+    '    reader.Close()
+
+    '    cmd.CommandText = "UPDATE `eliteprototype`.`gi_injectioninfo` SET `modelmatrixid` = '" & modelMatrixID & "', `pcbside` = '" & side & "' WHERE `line` = '" & lblline.Text & "'"
+    '    cmd.ExecuteNonQuery()
+
+    '    refreshDetails()
+    '    stencilLifespan()
+    'End Sub
 
     Private Sub btnSet_Click(sender As Object, e As EventArgs) Handles btnSet.Click
-        Dim cmd As New MySqlCommand
-        Dim reader As MySqlDataReader
-        cmd.Connection = conn
+        'Dim cmd As New MySqlCommand
+        'Dim reader As MySqlDataReader
+        'cmd.Connection = conn
 
-        If cbxPartNumber.Text <> "" And cbxProductNumber.Text <> "" And cbxFamily.Text <> "" Then
-            cmd.CommandText = "SELECT `modelmatrixid`, `code_allocation`, `upp`, `pcb_side`, `code_allocation`, `carrier` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "' AND `gs_family` = '" & cbxFamily.Text & "' AND `gs_product_number` = '" & cbxProductNumber.Text & "' 
-                            AND `gs_part_number` = '" & cbxPartNumber.Text & "'"
-        Else
-            cmd.CommandText = "SELECT `modelmatrixid`, `code_allocation`, `upp`, `pcb_side`, `code_allocation`, `carrier` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
-        End If
-        reader = cmd.ExecuteReader
+        'If cbxPartNumber.Text <> "" And cbxProductNumber.Text <> "" And cbxFamily.Text <> "" Then
+        '    cmd.CommandText = "SELECT `modelmatrixid`, `code_allocation`, `upp`, `pcb_side`, `code_allocation`, `carrier` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "' AND `gs_family` = '" & cbxFamily.Text & "' AND `gs_product_number` = '" & cbxProductNumber.Text & "' 
+        '                    AND `gs_part_number` = '" & cbxPartNumber.Text & "'"
+        'Else
+        '    cmd.CommandText = "SELECT `modelmatrixid`, `code_allocation`, `upp`, `pcb_side`, `code_allocation`, `carrier` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
+        'End If
+        'reader = cmd.ExecuteReader
 
-        While reader.Read()
-            modelMatrixID = reader.Item(0).ToString
-            codeAllocation = reader.Item(1).ToString
-            lblCodeAllocation.Text = reader.Item(1).ToString
-            upp = reader.Item(2).ToString
-            sideRequirement = reader.Item(3).ToString
-            codeAllocation = reader.Item(4).ToString
-            palletRequirement = reader.Item(5).ToString()
-        End While
-        reader.Close()
-        cmd.CommandText = "UPDATE `eliteprototype`.`gi_injectioninfo` SET `modelmatrixid` = '" & modelMatrixID & "', `pcbside` = '" & side & "' WHERE `line` = '" & lblline.Text & "'"
-        cmd.ExecuteNonQuery()
+        'While reader.Read()
+        '    modelMatrixID = reader.Item(0).ToString
+        '    codeAllocation = reader.Item(1).ToString
+        '    lblCodeAllocation.Text = reader.Item(1).ToString
+        '    upp = reader.Item(2).ToString
+        '    sideRequirement = reader.Item(3).ToString
+        '    codeAllocation = reader.Item(4).ToString
+        '    palletRequirement = reader.Item(5).ToString()
+        'End While
+        'reader.Close()
+        'cmd.CommandText = "UPDATE `eliteprototype`.`gi_injectioninfo` SET `modelmatrixid` = '" & modelMatrixID & "', `pcbside` = '" & side & "' WHERE `line` = '" & lblline.Text & "'"
+        'cmd.ExecuteNonQuery()
 
-        cbxFamily.Enabled = False
-        cbxProductNumber.Enabled = False
-        cbxPartNumber.Enabled = False
-        cbxModel.Enabled = False
-        txtscan.Enabled = True
+        'cbxFamily.Enabled = False
+        'cbxProductNumber.Enabled = False
+        'cbxPartNumber.Enabled = False
+        'cbxModel.Enabled = False
+        ''txtscan.Enabled = True
+        ''txtscan.Focus()
+        'refreshDetails()
+        'stencilLifespan()
+    End Sub
+
+    Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
         txtscan.Focus()
-        refreshDetails()
-    End Sub
 
-    Private Sub Timer3_Tick(sender As Object, e As EventArgs)
-        txtscan.Focus()
-    End Sub
-
-    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
-        csmin()
-        stencilMinute()
-        refreshDetails()
-
-        If lblCSMin.BackColor = Color.ForestGreen And lblCodeAllocation.Text <> "" And lblStencil.Text <> "" And Val(lblStencilLifespan.Text) > 0 And Val(lblStencilCleaning.Text) > 0 Then
-            txtscan.Enabled = True
-        Else
-            txtscan.Enabled = False
-        End If
-    End Sub
-
-    Private Sub Timer3_Tick_1(sender As Object, e As EventArgs) Handles Timer3.Tick
         stencilLifespan()
     End Sub
 
-    Private Sub btnStencil_Click(sender As Object, e As EventArgs) Handles btnStencil.Click
+    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+        stencilIssuance()
+        csmin()
+        stencilMinute()
+        refreshDetails()
+        stencilLifespan()
+        scanCheck()
+        squeegeemin()
+        'If lblCSMin.BackColor = Color.ForestGreen And lblCodeAllocation.Text <> "" And lblStencil.Text <> "" And Val(lblStencilLifespan.Text) > 0 And Val(lblStencilCleaning.Text) > 0 Then
+        '    txtscan.Enabled = True
+        'Else
+        '    txtscan.Enabled = False
+        'End If
+    End Sub
 
+    Private Sub scanCheck()
+        Try
+            If Val(lblStencilLifespan.Text) >= 5000 Then
+                lblStencilLifespan.BackColor = Color.ForestGreen
+                lblStencilLifespan.ForeColor = Color.White
+            ElseIf Val(lblStencilLifespan.Text) < 5000 And Val(lblStencilLifespan.Text) > 0 Then
+                lblStencilLifespan.BackColor = Color.Yellow
+                lblStencilLifespan.ForeColor = Color.Black
+            ElseIf Val(lblStencilLifespan.Text) < 1 Then
+                lblStencilLifespan.BackColor = Color.Red
+                lblStencilLifespan.ForeColor = Color.White
+                txtscan.Enabled = False
+            Else
+                lblStencilLifespan.BackColor = Color.Gray
+                txtscan.Enabled = False
+            End If
+
+            If Val(lblSqueegeeLifespan.Text) >= 5000 Then
+                lblSqueegeeLifespan.BackColor = Color.ForestGreen
+                lblSqueegeeLifespan.ForeColor = Color.White
+            ElseIf Val(lblSqueegeeLifespan.Text) < 5000 And Val(lblSqueegeeLifespan.Text) > 0 Then
+                lblSqueegeeLifespan.BackColor = Color.Yellow
+                lblSqueegeeLifespan.ForeColor = Color.Black
+            ElseIf Val(lblSqueegeeLifespan.Text) < 1 Then
+                lblSqueegeeLifespan.BackColor = Color.Red
+                lblSqueegeeLifespan.ForeColor = Color.White
+                txtscan.Enabled = False
+            Else
+                lblSqueegeeLifespan.BackColor = Color.Gray
+                txtscan.Enabled = False
+            End If
+
+            If lblModel.Text = "" Or lblCodeAllocation.Text = "" Or lblStencil.Text = "" Or lblSqueegeeFront.Text = "" Or lblSqueegeeRear.Text = "" Or lblSqueegeeFront.Text = "" Or lblSqueegeeRear.Text = "" Then
+                txtscan.Enabled = False
+            Else
+                Dim stencilCODE As String
+                Dim commonPET As String
+                Dim cmd As New MySqlCommand
+                cmd.Connection = conn
+                Dim countS, countsF, countsR As Integer
+
+                cmd.CommandText = "SELECT (90000 - (COUNT(stencilid_" & side & ")/" & upp & ")) FROM gi_pcbtrace WHERE stencilid_" & side & " = '" & lblStencil.Text & "'"
+                countS = cmd.ExecuteScalar
+                lblStencilLifespan.Text = countS
+                cmd.CommandText = "SELECT (60000 - (COUNT(pcbid)/" & Val(upp * 2) & ")) FROM gi_pcbtrace WHERE squeegeeidfront_bottom = '" & lblSqueegeeFront.Text & "' or squeegeeidfront_top = '" & lblSqueegeeFront.Text & "'"
+                countsF = cmd.ExecuteScalar
+                'MsgBox(cmd.CommandText)
+                lblSqueegeeLifespan.Text = countsF
+                cmd.CommandText = "SELECT (60000 - (COUNT(pcbid)/" & Val(upp * 2) & ")) FROM gi_pcbtrace WHERE squeegeeidfront_bottom = '" & lblSqueegeeRear.Text & "' or squeegeeidfront_top = '" & lblSqueegeeRear.Text & "'"
+                countsR = cmd.ExecuteScalar
+
+
+                stencilCODE = lblStencil.Text.Substring(3).Substring(0, lblStencil.Text.Substring(3).IndexOf("-"))
+                cmd.CommandText = "SELECT model FROM gi_modelmatrix WHERE model = '" & stencilCODE & "'"
+                commonPET = cmd.ExecuteScalar.ToString()
+
+
+                If (countS > 0) And (countsF > 0) And (countsR > 0) And (lblModel.Text = commonPET) Then
+                    txtscan.Enabled = True
+                Else
+                    If countS < 1 Then
+                        MsgBox("Stencil no remaining lifespan. Please replace immediately.")
+                    ElseIf countsF < 1 Or countsR < 1 Then
+                        MsgBox("Squeegee blades no remaining lifespan. Please replace immediately.")
+                    ElseIf lblModel.Text <> commonPET Then
+                        MsgBox("Wrong Stencil Assigned")
+                    End If
+                    txtscan.Enabled = False
+                End If
+            End If
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+
+    End Sub
+
+    Private Sub btnStencil_Click(sender As Object, e As EventArgs) Handles btnStencil.Click
+        frmStencilManager.Show()
+        Me.Enabled = False
+    End Sub
+
+    Private Sub btnDetails_Click(sender As Object, e As EventArgs) Handles btnDetails.Click
+        frmpcbinfo.Show()
+        Me.Enabled = False
     End Sub
 
     Private Sub connectTimer_Tick(sender As Object, e As EventArgs) Handles connectTimer.Tick
@@ -880,17 +1054,30 @@ Public Class frminjection
         lblWarning.Visible = True
     End Sub
 
+    Private Sub btnSqueegee_Click(sender As Object, e As EventArgs) Handles btnSqueegee.Click
+        Dim cmd As New MySqlCommand
+        cmd.Connection = conn
+        'logLogs("Squeegee Blade Menu")
+
+        frmsqueegeemanager.lblName.Text = lblname.Text
+        frmsqueegeemanager.txtprevprocess.Text = "INJECTION"
+        frmsqueegeemanager.Show()
+
+        frmpcbinfo.Hide()
+        frmcreamsolder.Hide()
+        frmStencilManager.Hide()
+    End Sub
+
     Private Sub stencilLifespan()
         Try
-
             Dim cmd As New MySqlCommand
             cmd.Connection = conn
 
-            cmd.CommandText = "UPDATE `gi_stencil_lifespan` SET `lifespan`= (SELECT FLOOR(90000 - (SUM(`count`) / " & upp & ")) AS `lifespan` FROM (SELECT COUNT(`pcbid`) AS `count` FROM `epson_pcbtrace` WHERE `stencilid_bottom` = '" & lblStencil.Text & "' UNION ALL
-                                SELECT COUNT(`pcbid`) AS `count` FROM `epson_pcbtrace` WHERE `stencilid_top` = '" & lblStencil.Text & "') `a`) WHERE `stencilid` = '" & lblStencil.Text & "'"
+            cmd.CommandText = "UPDATE `gi_stencil_lifespan` SET `lifespan`= (SELECT FLOOR(90000 - (SUM(`count`) / " & upp & ")) AS `lifespan` FROM (SELECT COUNT(`pcbid`) AS `count` FROM `gi_pcbtrace` WHERE `stencilid_bottom` = '" & lblStencil.Text & "' UNION ALL
+                                SELECT COUNT(`pcbid`) AS `count` FROM `gi_pcbtrace` WHERE `stencilid_top` = '" & lblStencil.Text & "') `a`) WHERE `stencilid` = '" & lblStencil.Text & "'"
             cmd.ExecuteNonQuery()
 
-            cmd.CommandText = "SELECT `lifespan` FROM `epson_stencil_lifespan` WHERE `stencilid` = '" & lblStencil.Text & "'"
+            cmd.CommandText = "SELECT `lifespan` FROM `gi_stencil_lifespan` WHERE `stencilid` = '" & lblStencil.Text & "'"
             lblStencilLifespan.Text = cmd.ExecuteScalar
         Catch ex As Exception
             MsgBox(ex.ToString)
@@ -917,11 +1104,11 @@ Public Class frminjection
             ElseIf Val(lblStencilCleaning.Text) < 31 Then
                 lblStencilCleaning.BackColor = Color.Red
                 lblStencilCleaning.ForeColor = Color.White
-                txtscan.Enabled = False
+                'txtscan.Enabled = False
             Else
                 lblStencilCleaning.BackColor = Color.Gray
                 lblStencilCleaning.ForeColor = Color.Black
-                txtscan.Enabled = False
+                'txtscan.Enabled = False
             End If
         Catch ex As Exception
             MsgBox(ex.ToString)
@@ -935,6 +1122,9 @@ Public Class frminjection
 
             cmd.CommandText = "SELECT `stencilid` FROM `gi_stencil` WHERE `location` = 'Line " & lblline.Text & "'"
             If cmd.ExecuteScalar Is Nothing Then
+                lblStencil.Text = ""
+                lblStencilCleaning.Text = ""
+                lblStencilCleaning.BackColor = Color.White
             Else
                 lblStencil.Text = cmd.ExecuteScalar.ToString
             End If
@@ -947,6 +1137,36 @@ Public Class frminjection
         End Try
     End Sub
 
+    Public Sub squeegeemin()
+        Dim cmd As New MySqlCommand
+        cmd.Connection = conn
+        Try
+            cmd.CommandText = "SELECT FLOOR(4320 - (time_to_sec(timediff(NOW(), (SELECT timestamp FROM gi_squeegee WHERE squeegeeid = '" & lblSqueegeeFront.Text & "'))) / 60))"
+            If IsDBNull(cmd.ExecuteScalar()) Then
+                lblSqueegeeMin.Text = "N/A"
+            Else
+                lblSqueegeeMin.Text = cmd.ExecuteScalar.ToString()
+            End If
+            If Val(lblSqueegeeMin.Text) > 180 Then
+                lblSqueegeeMin.BackColor = Color.ForestGreen
+                lblSqueegeeMin.ForeColor = Color.White
+            ElseIf Val(lblSqueegeeMin.Text) < 181 And Val(lblSqueegeeMin.Text) > 0 Then
+                lblSqueegeeMin.BackColor = Color.Yellow
+                lblSqueegeeMin.ForeColor = Color.Black
+            ElseIf Val(lblSqueegeeMin.Text) < 1 Then
+                lblSqueegeeMin.BackColor = Color.Red
+                lblSqueegeeMin.ForeColor = Color.White
+                txtscan.Enabled = False
+            Else
+                lblSqueegeeMin.BackColor = Color.Gray
+                txtscan.Enabled = False
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+    End Sub
+
     Public Sub csmin()
         creamissuance()
         Dim cmd As New MySqlCommand
@@ -954,7 +1174,7 @@ Public Class frminjection
         Dim datTim1 As DateTime = Now().ToString()
         Dim wD As Integer
         Try
-            If lblCSMin.Text <> "" Then
+            If lblCSMin.Text <> "" And lblCSMin.Text <> "N/A" Then
                 cmd.CommandText = "SELECT TIMESTAMPDIFF(MINUTE, `opendatetime`, NOW()) FROM gi_creamsolder WHERE creamid = '" & lblCreamSolder.Text & "'"
                 wD = cmd.ExecuteScalar.ToString()
 
@@ -964,38 +1184,66 @@ Public Class frminjection
                     lblCSMin.BackColor = Color.Red
                     lblCSMin.ForeColor = Color.White
                     MsgBox("Cream Solder reached floor life limit. Please dispose immediately")
-                    txtscan.Enabled = False
+                    'txtscan.Enabled = False
                 ElseIf lblCSMin.Text = "N/A" Then
                     lblCSMin.ForeColor = Color.Black
                     lblCSMin.BackColor = Color.White
-                    txtscan.Enabled = False
+                    'txtscan.Enabled = False
                 Else
                     lblCSMin.BackColor = Color.ForestGreen
                     lblCSMin.ForeColor = Color.White
                 End If
             Else
-                txtscan.Enabled = False
+                'txtscan.Enabled = False
             End If
 
         Catch ex As Exception
             MsgBox(ex.ToString())
         End Try
     End Sub
+
     Public Sub creamissuance()
         Try
             Dim cmd As New MySqlCommand
             cmd.Connection = conn
             cmd.CommandText = "SELECT IFNULL(creamsolderid, 'none') FROM gi_injectioninfo WHERE line = '" & lblline.Text & "'"
             If cmd.ExecuteScalar() = "none" Or cmd.ExecuteScalar() Is Nothing Then
-                lblCSMin.BackColor = Color.White
+                lblCSMin.BackColor = Color.Red
+                lblCSMin.ForeColor = Color.White
                 lblCSMin.Text = "N/A"
-                lblCSMin.Text = ""
             Else
                 lblCreamSolder.Text = cmd.ExecuteScalar.ToString()
             End If
         Catch ex As Exception
             MsgBox(ex.ToString())
             writeLogs(ex.ToString)
+        End Try
+    End Sub
+
+
+    Public Sub bladeissuance()
+        Try
+            Dim cmd As New MySqlCommand
+            cmd.Connection = conn
+            Dim myDA As New MySqlDataAdapter(cmd)
+            Dim myDT As New DataTable
+
+            cmd.CommandText = "SELECT squeegeeid FROM gi_squeegee WHERE location = 'Line " + lblline.Text & "'"
+            myDA.Fill(myDT)
+            If myDT.Rows.Count > 0 Then
+                lblSqueegeeFront.Text = myDT.Rows(0).Item(0).ToString()
+                lblSqueegeeRear.Text = myDT.Rows(1).Item(0).ToString()
+
+
+            Else
+                lblSqueegeeFront.Text = ""
+                lblSqueegeeRear.Text = ""
+                'lblSqueegeeMin.Text = ""
+                'lblSqueegeeMin.BackColor = Color.White
+            End If
+        Catch ex As Exception
+
+            MsgBox(ex.ToString())
         End Try
     End Sub
 End Class

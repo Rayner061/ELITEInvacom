@@ -28,38 +28,56 @@ Partial Class frminjection
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.connectTimer = New System.Windows.Forms.Timer(Me.components)
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.lblWarning = New System.Windows.Forms.Label()
+        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.LineShape4 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape3 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.RectangleShape6 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
+        Me.RectangleShape5 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
+        Me.RectangleShape4 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
+        Me.RectangleShape3 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
+        Me.RectangleShape2 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
+        Me.RectangleShape1 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
+        Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblModel = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.lblCreamSolder = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.lblSqueegeeRear = New System.Windows.Forms.TextBox()
+        Me.lblSqueegeeFront = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.cbxFamily = New System.Windows.Forms.ComboBox()
-        Me.btnpalletreset = New System.Windows.Forms.Button()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblStencil = New System.Windows.Forms.TextBox()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.lblpcbcounter = New System.Windows.Forms.Label()
         Me.lblpalletcounter = New System.Windows.Forms.Label()
-        Me.btnSet = New System.Windows.Forms.Button()
-        Me.lblFamily = New System.Windows.Forms.Label()
-        Me.cbxModel = New System.Windows.Forms.ComboBox()
-        Me.lblModel = New System.Windows.Forms.Label()
-        Me.cbxProductNumber = New System.Windows.Forms.ComboBox()
-        Me.lblPartNumber = New System.Windows.Forms.Label()
-        Me.cbxPartNumber = New System.Windows.Forms.ComboBox()
-        Me.btnStencil = New System.Windows.Forms.Button()
-        Me.Label26 = New System.Windows.Forms.Label()
-        Me.lblProductNumber = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.lblPanelTop = New System.Windows.Forms.Label()
-        Me.lblStencil = New System.Windows.Forms.TextBox()
-        Me.lblCodeAllocation = New System.Windows.Forms.Label()
-        Me.lblPanel = New System.Windows.Forms.Label()
+        Me.lblStencilLifespan = New System.Windows.Forms.Label()
+        Me.lblCSMin = New System.Windows.Forms.Label()
+        Me.lblStencilCleaning = New System.Windows.Forms.Label()
+        Me.lblCodeDesignation = New System.Windows.Forms.Label()
+        Me.lblCodeAllocation = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.lblPanelBottomLabel = New System.Windows.Forms.Label()
         Me.lblPanelTopLabel = New System.Windows.Forms.Label()
-        Me.lblCodeDesignation = New System.Windows.Forms.Label()
-        Me.lblPanelBottom = New System.Windows.Forms.Label()
-        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.lblPanel = New System.Windows.Forms.TextBox()
+        Me.lblPanelBottom = New System.Windows.Forms.TextBox()
+        Me.lblPanelTop = New System.Windows.Forms.TextBox()
+        Me.btnSet = New System.Windows.Forms.Button()
+        Me.btnDetails = New System.Windows.Forms.Button()
+        Me.btnpalletreset = New System.Windows.Forms.Button()
+        Me.btnStencil = New System.Windows.Forms.Button()
+        Me.btnSqueegee = New System.Windows.Forms.Button()
+        Me.lblSqueegeeLifespan = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
         Me.lblAssemblyVersion = New System.Windows.Forms.Label()
@@ -94,30 +112,12 @@ Partial Class frminjection
         Me.pnlPCB1 = New System.Windows.Forms.TableLayoutPanel()
         Me.lblPCBholder1 = New System.Windows.Forms.Label()
         Me.lblpcb1 = New System.Windows.Forms.Label()
-        Me.lblWarning = New System.Windows.Forms.Label()
-        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
-        Me.LineShape4 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.LineShape3 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.RectangleShape6 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
-        Me.RectangleShape5 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
-        Me.RectangleShape4 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
-        Me.RectangleShape3 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
-        Me.RectangleShape2 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
-        Me.RectangleShape1 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.btnSqueegee = New System.Windows.Forms.Button()
-        Me.lblStencilLifespan = New System.Windows.Forms.Label()
-        Me.lblCSMin = New System.Windows.Forms.Label()
-        Me.lblStencilCleaning = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
+        Me.lblSqueegeeMin = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
-        Me.TableLayoutPanel5.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
+        Me.TableLayoutPanel5.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel6.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
@@ -141,7 +141,7 @@ Partial Class frminjection
         'Timer2
         '
         Me.Timer2.Enabled = True
-        Me.Timer2.Interval = 30000
+        Me.Timer2.Interval = 5000
         '
         'connectTimer
         '
@@ -178,484 +178,6 @@ Partial Class frminjection
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1370, 749)
         Me.TableLayoutPanel1.TabIndex = 85
         '
-        'TableLayoutPanel5
-        '
-        Me.TableLayoutPanel5.BackColor = System.Drawing.Color.Transparent
-        Me.TableLayoutPanel5.BackgroundImage = Global.ELITE_GI.My.Resources.Resources.elite_background_GI_111
-        Me.TableLayoutPanel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.TableLayoutPanel5.ColumnCount = 13
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5050071!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.1194!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.0!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5054054!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.38806!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.1791!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5970149!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.597015!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.37313!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5023773!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.29851!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.059702!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.508361!))
-        Me.TableLayoutPanel5.Controls.Add(Me.Label9, 8, 3)
-        Me.TableLayoutPanel5.Controls.Add(Me.Label8, 8, 2)
-        Me.TableLayoutPanel5.Controls.Add(Me.Label7, 8, 1)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblCreamSolder, 5, 4)
-        Me.TableLayoutPanel5.Controls.Add(Me.TextBox3, 5, 3)
-        Me.TableLayoutPanel5.Controls.Add(Me.TextBox2, 5, 2)
-        Me.TableLayoutPanel5.Controls.Add(Me.Label6, 4, 4)
-        Me.TableLayoutPanel5.Controls.Add(Me.Label5, 4, 3)
-        Me.TableLayoutPanel5.Controls.Add(Me.Label1, 4, 2)
-        Me.TableLayoutPanel5.Controls.Add(Me.cbxFamily, 2, 2)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblFamily, 1, 2)
-        Me.TableLayoutPanel5.Controls.Add(Me.cbxModel, 2, 1)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblModel, 1, 1)
-        Me.TableLayoutPanel5.Controls.Add(Me.cbxProductNumber, 2, 3)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblPartNumber, 1, 4)
-        Me.TableLayoutPanel5.Controls.Add(Me.cbxPartNumber, 2, 4)
-        Me.TableLayoutPanel5.Controls.Add(Me.Label26, 10, 1)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblProductNumber, 1, 3)
-        Me.TableLayoutPanel5.Controls.Add(Me.Label4, 4, 1)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblStencil, 5, 1)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblPanelBottomLabel, 1, 5)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblPanelTopLabel, 1, 6)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblCodeDesignation, 4, 5)
-        Me.TableLayoutPanel5.Controls.Add(Me.btnSet, 11, 2)
-        Me.TableLayoutPanel5.Controls.Add(Me.btnpalletreset, 11, 3)
-        Me.TableLayoutPanel5.Controls.Add(Me.btnStencil, 11, 4)
-        Me.TableLayoutPanel5.Controls.Add(Me.btnSqueegee, 11, 5)
-        Me.TableLayoutPanel5.Controls.Add(Me.Label25, 10, 3)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblpcbcounter, 10, 2)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblpalletcounter, 10, 4)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblStencilLifespan, 7, 1)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblCSMin, 7, 2)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblPanelTop, 0, 0)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblStencilCleaning, 7, 3)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblPanelBottom, 2, 5)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblCodeAllocation, 5, 5)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblPanel, 2, 6)
-        Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel5.Location = New System.Drawing.Point(15, 189)
-        Me.TableLayoutPanel5.Margin = New System.Windows.Forms.Padding(0)
-        Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
-        Me.TableLayoutPanel5.RowCount = 8
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.198347!))
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.04959!))
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.04959!))
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.04959!))
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.28926!))
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.70248!))
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.63636!))
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.61157!))
-        Me.TableLayoutPanel5.Size = New System.Drawing.Size(1340, 242)
-        Me.TableLayoutPanel5.TabIndex = 0
-        '
-        'lblCreamSolder
-        '
-        Me.lblCreamSolder.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblCreamSolder.Enabled = False
-        Me.lblCreamSolder.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.lblCreamSolder.Location = New System.Drawing.Point(531, 120)
-        Me.lblCreamSolder.Name = "lblCreamSolder"
-        Me.lblCreamSolder.Size = New System.Drawing.Size(251, 26)
-        Me.lblCreamSolder.TabIndex = 119
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox3.Enabled = False
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.TextBox3.Location = New System.Drawing.Point(531, 86)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(251, 26)
-        Me.TextBox3.TabIndex = 118
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox2.Enabled = False
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.TextBox2.Location = New System.Drawing.Point(531, 52)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(251, 26)
-        Me.TextBox2.TabIndex = 117
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(365, 117)
-        Me.Label6.Name = "Label6"
-        Me.Label6.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label6.Size = New System.Drawing.Size(160, 37)
-        Me.Label6.TabIndex = 116
-        Me.Label6.Text = "Cream ID:"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(365, 83)
-        Me.Label5.Name = "Label5"
-        Me.Label5.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label5.Size = New System.Drawing.Size(160, 34)
-        Me.Label5.TabIndex = 115
-        Me.Label5.Text = "Squeegee Rear:"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(365, 49)
-        Me.Label1.Name = "Label1"
-        Me.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label1.Size = New System.Drawing.Size(160, 34)
-        Me.Label1.TabIndex = 114
-        Me.Label1.Text = "Squeegee Front:"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'cbxFamily
-        '
-        Me.cbxFamily.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.cbxFamily.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbxFamily.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbxFamily.FormattingEnabled = True
-        Me.cbxFamily.Location = New System.Drawing.Point(158, 54)
-        Me.cbxFamily.Margin = New System.Windows.Forms.Padding(3, 5, 3, 3)
-        Me.cbxFamily.Name = "cbxFamily"
-        Me.cbxFamily.Size = New System.Drawing.Size(195, 28)
-        Me.cbxFamily.TabIndex = 100
-        Me.cbxFamily.Visible = False
-        '
-        'btnpalletreset
-        '
-        Me.btnpalletreset.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnpalletreset.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnpalletreset.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnpalletreset.Location = New System.Drawing.Point(1223, 87)
-        Me.btnpalletreset.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.btnpalletreset.Name = "btnpalletreset"
-        Me.btnpalletreset.Size = New System.Drawing.Size(98, 26)
-        Me.btnpalletreset.TabIndex = 60
-        Me.btnpalletreset.Text = "Reset"
-        Me.btnpalletreset.UseVisualStyleBackColor = True
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.BackColor = System.Drawing.Color.Transparent
-        Me.Label25.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Label25.Location = New System.Drawing.Point(1083, 83)
-        Me.Label25.Name = "Label25"
-        Me.Label25.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label25.Size = New System.Drawing.Size(132, 34)
-        Me.Label25.TabIndex = 82
-        Me.Label25.Text = "Panel Count:"
-        Me.Label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lblpcbcounter
-        '
-        Me.lblpcbcounter.AutoSize = True
-        Me.lblpcbcounter.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lblpcbcounter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblpcbcounter.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblpcbcounter.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblpcbcounter.ForeColor = System.Drawing.Color.White
-        Me.lblpcbcounter.Location = New System.Drawing.Point(1083, 50)
-        Me.lblpcbcounter.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
-        Me.lblpcbcounter.Name = "lblpcbcounter"
-        Me.lblpcbcounter.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
-        Me.lblpcbcounter.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblpcbcounter.Size = New System.Drawing.Size(132, 32)
-        Me.lblpcbcounter.TabIndex = 81
-        Me.lblpcbcounter.Text = "00000"
-        Me.lblpcbcounter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblpalletcounter
-        '
-        Me.lblpalletcounter.AutoSize = True
-        Me.lblpalletcounter.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lblpalletcounter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblpalletcounter.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblpalletcounter.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblpalletcounter.ForeColor = System.Drawing.Color.White
-        Me.lblpalletcounter.Location = New System.Drawing.Point(1083, 118)
-        Me.lblpalletcounter.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
-        Me.lblpalletcounter.Name = "lblpalletcounter"
-        Me.lblpalletcounter.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
-        Me.lblpalletcounter.Size = New System.Drawing.Size(132, 35)
-        Me.lblpalletcounter.TabIndex = 83
-        Me.lblpalletcounter.Text = "00000"
-        Me.lblpalletcounter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'btnSet
-        '
-        Me.btnSet.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnSet.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnSet.Location = New System.Drawing.Point(1223, 53)
-        Me.btnSet.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.btnSet.Name = "btnSet"
-        Me.btnSet.Size = New System.Drawing.Size(98, 26)
-        Me.btnSet.TabIndex = 93
-        Me.btnSet.Text = "Set"
-        Me.btnSet.UseVisualStyleBackColor = True
-        '
-        'lblFamily
-        '
-        Me.lblFamily.AutoSize = True
-        Me.lblFamily.BackColor = System.Drawing.Color.Transparent
-        Me.lblFamily.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblFamily.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFamily.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lblFamily.Location = New System.Drawing.Point(9, 49)
-        Me.lblFamily.Name = "lblFamily"
-        Me.lblFamily.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblFamily.Size = New System.Drawing.Size(143, 34)
-        Me.lblFamily.TabIndex = 94
-        Me.lblFamily.Text = "Family:"
-        Me.lblFamily.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.lblFamily.Visible = False
-        '
-        'cbxModel
-        '
-        Me.cbxModel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.cbxModel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbxModel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbxModel.FormattingEnabled = True
-        Me.cbxModel.Location = New System.Drawing.Point(158, 20)
-        Me.cbxModel.Margin = New System.Windows.Forms.Padding(3, 5, 3, 3)
-        Me.cbxModel.Name = "cbxModel"
-        Me.cbxModel.Size = New System.Drawing.Size(195, 28)
-        Me.cbxModel.TabIndex = 90
-        '
-        'lblModel
-        '
-        Me.lblModel.AutoSize = True
-        Me.lblModel.BackColor = System.Drawing.Color.Transparent
-        Me.lblModel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblModel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblModel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lblModel.Location = New System.Drawing.Point(9, 15)
-        Me.lblModel.Name = "lblModel"
-        Me.lblModel.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblModel.Size = New System.Drawing.Size(143, 34)
-        Me.lblModel.TabIndex = 88
-        Me.lblModel.Text = "Model:"
-        Me.lblModel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'cbxProductNumber
-        '
-        Me.cbxProductNumber.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.cbxProductNumber.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbxProductNumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbxProductNumber.FormattingEnabled = True
-        Me.cbxProductNumber.Location = New System.Drawing.Point(158, 88)
-        Me.cbxProductNumber.Margin = New System.Windows.Forms.Padding(3, 5, 3, 3)
-        Me.cbxProductNumber.Name = "cbxProductNumber"
-        Me.cbxProductNumber.Size = New System.Drawing.Size(195, 28)
-        Me.cbxProductNumber.TabIndex = 101
-        Me.cbxProductNumber.Visible = False
-        '
-        'lblPartNumber
-        '
-        Me.lblPartNumber.AutoSize = True
-        Me.lblPartNumber.BackColor = System.Drawing.Color.Transparent
-        Me.lblPartNumber.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblPartNumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPartNumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lblPartNumber.Location = New System.Drawing.Point(9, 117)
-        Me.lblPartNumber.Name = "lblPartNumber"
-        Me.lblPartNumber.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblPartNumber.Size = New System.Drawing.Size(143, 37)
-        Me.lblPartNumber.TabIndex = 98
-        Me.lblPartNumber.Text = "Part Number:"
-        Me.lblPartNumber.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.lblPartNumber.Visible = False
-        '
-        'cbxPartNumber
-        '
-        Me.cbxPartNumber.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.cbxPartNumber.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbxPartNumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbxPartNumber.FormattingEnabled = True
-        Me.cbxPartNumber.Location = New System.Drawing.Point(158, 122)
-        Me.cbxPartNumber.Margin = New System.Windows.Forms.Padding(3, 5, 3, 3)
-        Me.cbxPartNumber.Name = "cbxPartNumber"
-        Me.cbxPartNumber.Size = New System.Drawing.Size(195, 28)
-        Me.cbxPartNumber.TabIndex = 102
-        Me.cbxPartNumber.Visible = False
-        '
-        'btnStencil
-        '
-        Me.btnStencil.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnStencil.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnStencil.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnStencil.Location = New System.Drawing.Point(1223, 121)
-        Me.btnStencil.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.btnStencil.Name = "btnStencil"
-        Me.btnStencil.Size = New System.Drawing.Size(98, 29)
-        Me.btnStencil.TabIndex = 61
-        Me.btnStencil.Text = "Stencil"
-        Me.btnStencil.UseVisualStyleBackColor = True
-        '
-        'Label26
-        '
-        Me.Label26.AutoSize = True
-        Me.Label26.BackColor = System.Drawing.Color.Transparent
-        Me.Label26.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Label26.Location = New System.Drawing.Point(1083, 15)
-        Me.Label26.Name = "Label26"
-        Me.Label26.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label26.Size = New System.Drawing.Size(132, 34)
-        Me.Label26.TabIndex = 80
-        Me.Label26.Text = "PCB Count:"
-        Me.Label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lblProductNumber
-        '
-        Me.lblProductNumber.AutoSize = True
-        Me.lblProductNumber.BackColor = System.Drawing.Color.Transparent
-        Me.lblProductNumber.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblProductNumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblProductNumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lblProductNumber.Location = New System.Drawing.Point(9, 83)
-        Me.lblProductNumber.Name = "lblProductNumber"
-        Me.lblProductNumber.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblProductNumber.Size = New System.Drawing.Size(143, 34)
-        Me.lblProductNumber.TabIndex = 108
-        Me.lblProductNumber.Text = "Product:"
-        Me.lblProductNumber.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.lblProductNumber.Visible = False
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(365, 15)
-        Me.Label4.Name = "Label4"
-        Me.Label4.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label4.Size = New System.Drawing.Size(160, 34)
-        Me.Label4.TabIndex = 109
-        Me.Label4.Text = "Stencil ID:"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblPanelTop
-        '
-        Me.lblPanelTop.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lblPanelTop.Location = New System.Drawing.Point(3, 0)
-        Me.lblPanelTop.Name = "lblPanelTop"
-        Me.lblPanelTop.Size = New System.Drawing.Size(1, 15)
-        Me.lblPanelTop.TabIndex = 112
-        Me.lblPanelTop.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lblStencil
-        '
-        Me.lblStencil.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblStencil.Enabled = False
-        Me.lblStencil.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.lblStencil.Location = New System.Drawing.Point(531, 18)
-        Me.lblStencil.Name = "lblStencil"
-        Me.lblStencil.Size = New System.Drawing.Size(251, 26)
-        Me.lblStencil.TabIndex = 113
-        '
-        'lblCodeAllocation
-        '
-        Me.lblCodeAllocation.AutoSize = True
-        Me.lblCodeAllocation.BackColor = System.Drawing.Color.Transparent
-        Me.lblCodeAllocation.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblCodeAllocation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lblCodeAllocation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lblCodeAllocation.Location = New System.Drawing.Point(531, 154)
-        Me.lblCodeAllocation.Name = "lblCodeAllocation"
-        Me.lblCodeAllocation.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblCodeAllocation.Size = New System.Drawing.Size(251, 38)
-        Me.lblCodeAllocation.TabIndex = 92
-        Me.lblCodeAllocation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lblPanel
-        '
-        Me.lblPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblPanel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lblPanel.Location = New System.Drawing.Point(158, 192)
-        Me.lblPanel.Name = "lblPanel"
-        Me.lblPanel.Size = New System.Drawing.Size(195, 33)
-        Me.lblPanel.TabIndex = 84
-        Me.lblPanel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lblPanelBottomLabel
-        '
-        Me.lblPanelBottomLabel.AutoSize = True
-        Me.lblPanelBottomLabel.BackColor = System.Drawing.Color.Transparent
-        Me.lblPanelBottomLabel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblPanelBottomLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPanelBottomLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lblPanelBottomLabel.Location = New System.Drawing.Point(9, 154)
-        Me.lblPanelBottomLabel.Name = "lblPanelBottomLabel"
-        Me.lblPanelBottomLabel.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblPanelBottomLabel.Size = New System.Drawing.Size(143, 38)
-        Me.lblPanelBottomLabel.TabIndex = 87
-        Me.lblPanelBottomLabel.Text = "Panel Bottom:"
-        Me.lblPanelBottomLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblPanelTopLabel
-        '
-        Me.lblPanelTopLabel.AutoSize = True
-        Me.lblPanelTopLabel.BackColor = System.Drawing.Color.Transparent
-        Me.lblPanelTopLabel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblPanelTopLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPanelTopLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lblPanelTopLabel.Location = New System.Drawing.Point(9, 192)
-        Me.lblPanelTopLabel.Name = "lblPanelTopLabel"
-        Me.lblPanelTopLabel.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblPanelTopLabel.Size = New System.Drawing.Size(143, 33)
-        Me.lblPanelTopLabel.TabIndex = 111
-        Me.lblPanelTopLabel.Text = "Panel Top:"
-        Me.lblPanelTopLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblCodeDesignation
-        '
-        Me.lblCodeDesignation.AutoSize = True
-        Me.lblCodeDesignation.BackColor = System.Drawing.Color.Transparent
-        Me.lblCodeDesignation.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblCodeDesignation.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCodeDesignation.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lblCodeDesignation.Location = New System.Drawing.Point(365, 154)
-        Me.lblCodeDesignation.Name = "lblCodeDesignation"
-        Me.lblCodeDesignation.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblCodeDesignation.Size = New System.Drawing.Size(160, 38)
-        Me.lblCodeDesignation.TabIndex = 89
-        Me.lblCodeDesignation.Text = "Code Designation:"
-        Me.lblCodeDesignation.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblPanelBottom
-        '
-        Me.lblPanelBottom.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblPanelBottom.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lblPanelBottom.Location = New System.Drawing.Point(158, 154)
-        Me.lblPanelBottom.Name = "lblPanelBottom"
-        Me.lblPanelBottom.Size = New System.Drawing.Size(195, 38)
-        Me.lblPanelBottom.TabIndex = 110
-        Me.lblPanelBottom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
         'TableLayoutPanel2
         '
         Me.TableLayoutPanel2.ColumnCount = 3
@@ -672,6 +194,662 @@ Partial Class frminjection
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(1340, 119)
         Me.TableLayoutPanel2.TabIndex = 0
+        '
+        'lblWarning
+        '
+        Me.lblWarning.AutoSize = True
+        Me.lblWarning.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblWarning.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWarning.ForeColor = System.Drawing.Color.Red
+        Me.lblWarning.Location = New System.Drawing.Point(18, 431)
+        Me.lblWarning.Name = "lblWarning"
+        Me.lblWarning.Size = New System.Drawing.Size(1334, 28)
+        Me.lblWarning.TabIndex = 88
+        Me.lblWarning.Text = "Warning: "
+        Me.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblWarning.Visible = False
+        '
+        'ShapeContainer1
+        '
+        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
+        Me.ShapeContainer1.Name = "ShapeContainer1"
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape4, Me.LineShape3, Me.LineShape2, Me.LineShape1, Me.RectangleShape6, Me.RectangleShape5, Me.RectangleShape4, Me.RectangleShape3, Me.RectangleShape2, Me.RectangleShape1})
+        Me.ShapeContainer1.Size = New System.Drawing.Size(1370, 749)
+        Me.ShapeContainer1.TabIndex = 41
+        Me.ShapeContainer1.TabStop = False
+        '
+        'LineShape4
+        '
+        Me.LineShape4.BorderColor = System.Drawing.Color.Silver
+        Me.LineShape4.Name = "LineShape4"
+        Me.LineShape4.X1 = 744
+        Me.LineShape4.X2 = 770
+        Me.LineShape4.Y1 = 283
+        Me.LineShape4.Y2 = 283
+        '
+        'LineShape3
+        '
+        Me.LineShape3.BorderColor = System.Drawing.Color.Silver
+        Me.LineShape3.Name = "LineShape3"
+        Me.LineShape3.X1 = 744
+        Me.LineShape3.X2 = 770
+        Me.LineShape3.Y1 = 240
+        Me.LineShape3.Y2 = 240
+        '
+        'LineShape2
+        '
+        Me.LineShape2.BorderColor = System.Drawing.Color.Silver
+        Me.LineShape2.Name = "LineShape2"
+        Me.LineShape2.X1 = 771
+        Me.LineShape2.X2 = 771
+        Me.LineShape2.Y1 = 275
+        Me.LineShape2.Y2 = 283
+        '
+        'LineShape1
+        '
+        Me.LineShape1.BorderColor = System.Drawing.Color.Silver
+        Me.LineShape1.Name = "LineShape1"
+        Me.LineShape1.X1 = 771
+        Me.LineShape1.X2 = 771
+        Me.LineShape1.Y1 = 240
+        Me.LineShape1.Y2 = 248
+        '
+        'RectangleShape6
+        '
+        Me.RectangleShape6.BackColor = System.Drawing.Color.Black
+        Me.RectangleShape6.Location = New System.Drawing.Point(79, 547)
+        Me.RectangleShape6.Name = "RectangleShape6"
+        Me.RectangleShape6.Size = New System.Drawing.Size(369, 106)
+        '
+        'RectangleShape5
+        '
+        Me.RectangleShape5.BackColor = System.Drawing.Color.Black
+        Me.RectangleShape5.Location = New System.Drawing.Point(487, 547)
+        Me.RectangleShape5.Name = "RectangleShape5"
+        Me.RectangleShape5.Size = New System.Drawing.Size(369, 106)
+        '
+        'RectangleShape4
+        '
+        Me.RectangleShape4.BackColor = System.Drawing.Color.Black
+        Me.RectangleShape4.Location = New System.Drawing.Point(895, 547)
+        Me.RectangleShape4.Name = "RectangleShape4"
+        Me.RectangleShape4.Size = New System.Drawing.Size(369, 106)
+        '
+        'RectangleShape3
+        '
+        Me.RectangleShape3.BackColor = System.Drawing.Color.Black
+        Me.RectangleShape3.Location = New System.Drawing.Point(895, 435)
+        Me.RectangleShape3.Name = "RectangleShape3"
+        Me.RectangleShape3.Size = New System.Drawing.Size(369, 106)
+        '
+        'RectangleShape2
+        '
+        Me.RectangleShape2.BackColor = System.Drawing.Color.Black
+        Me.RectangleShape2.Location = New System.Drawing.Point(487, 435)
+        Me.RectangleShape2.Name = "RectangleShape2"
+        Me.RectangleShape2.Size = New System.Drawing.Size(369, 106)
+        '
+        'RectangleShape1
+        '
+        Me.RectangleShape1.BackColor = System.Drawing.Color.Black
+        Me.RectangleShape1.BorderColor = System.Drawing.Color.Black
+        Me.RectangleShape1.Location = New System.Drawing.Point(79, 10)
+        Me.RectangleShape1.Name = "RectangleShape1"
+        Me.RectangleShape1.Size = New System.Drawing.Size(369, 300)
+        Me.RectangleShape1.Tag = ""
+        '
+        'Timer3
+        '
+        Me.Timer3.Enabled = True
+        Me.Timer3.Interval = 7200000
+        '
+        'TableLayoutPanel5
+        '
+        Me.TableLayoutPanel5.BackColor = System.Drawing.Color.Transparent
+        Me.TableLayoutPanel5.BackgroundImage = Global.ELITE_GI.My.Resources.Resources.elite_background_GI_111
+        Me.TableLayoutPanel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TableLayoutPanel5.ColumnCount = 13
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5050071!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.79105!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.32836!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5054054!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.01493!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.55224!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5970149!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.597015!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.22388!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5023773!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.626865!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.880597!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.508361!))
+        Me.TableLayoutPanel5.Controls.Add(Me.Label3, 1, 1)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblModel, 2, 1)
+        Me.TableLayoutPanel5.Controls.Add(Me.Label9, 8, 3)
+        Me.TableLayoutPanel5.Controls.Add(Me.Label8, 8, 2)
+        Me.TableLayoutPanel5.Controls.Add(Me.Label7, 8, 1)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblCreamSolder, 5, 4)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblSqueegeeRear, 5, 3)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblSqueegeeFront, 5, 2)
+        Me.TableLayoutPanel5.Controls.Add(Me.Label6, 4, 4)
+        Me.TableLayoutPanel5.Controls.Add(Me.Label5, 4, 3)
+        Me.TableLayoutPanel5.Controls.Add(Me.Label1, 4, 2)
+        Me.TableLayoutPanel5.Controls.Add(Me.Label26, 10, 1)
+        Me.TableLayoutPanel5.Controls.Add(Me.Label4, 4, 1)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblStencil, 5, 1)
+        Me.TableLayoutPanel5.Controls.Add(Me.Label25, 10, 3)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblpcbcounter, 10, 2)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblpalletcounter, 10, 4)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblStencilLifespan, 7, 1)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblCSMin, 7, 2)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblStencilCleaning, 7, 3)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblCodeDesignation, 1, 2)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblCodeAllocation, 2, 2)
+        Me.TableLayoutPanel5.Controls.Add(Me.Label2, 1, 3)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblPanelBottomLabel, 1, 4)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblPanelTopLabel, 1, 5)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblPanel, 2, 3)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblPanelBottom, 2, 4)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblPanelTop, 2, 5)
+        Me.TableLayoutPanel5.Controls.Add(Me.btnSet, 11, 6)
+        Me.TableLayoutPanel5.Controls.Add(Me.btnDetails, 11, 2)
+        Me.TableLayoutPanel5.Controls.Add(Me.btnpalletreset, 7, 6)
+        Me.TableLayoutPanel5.Controls.Add(Me.btnStencil, 11, 3)
+        Me.TableLayoutPanel5.Controls.Add(Me.btnSqueegee, 11, 4)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblSqueegeeLifespan, 7, 4)
+        Me.TableLayoutPanel5.Controls.Add(Me.Label11, 8, 4)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblSqueegeeMin, 7, 5)
+        Me.TableLayoutPanel5.Controls.Add(Me.Label10, 8, 5)
+        Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel5.Location = New System.Drawing.Point(15, 189)
+        Me.TableLayoutPanel5.Margin = New System.Windows.Forms.Padding(0)
+        Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
+        Me.TableLayoutPanel5.RowCount = 8
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.198347!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.70248!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.04959!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.63636!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.28926!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.46281!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.63636!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.61157!))
+        Me.TableLayoutPanel5.Size = New System.Drawing.Size(1340, 242)
+        Me.TableLayoutPanel5.TabIndex = 0
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(9, 15)
+        Me.Label3.Name = "Label3"
+        Me.Label3.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label3.Size = New System.Drawing.Size(152, 38)
+        Me.Label3.TabIndex = 90
+        Me.Label3.Text = "Model:"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblModel
+        '
+        Me.lblModel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblModel.Enabled = False
+        Me.lblModel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblModel.Location = New System.Drawing.Point(167, 18)
+        Me.lblModel.Name = "lblModel"
+        Me.lblModel.Size = New System.Drawing.Size(186, 26)
+        Me.lblModel.TabIndex = 114
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Label9.Location = New System.Drawing.Point(871, 87)
+        Me.Label9.Name = "Label9"
+        Me.Label9.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label9.Size = New System.Drawing.Size(198, 33)
+        Me.Label9.TabIndex = 91
+        Me.Label9.Text = "mins. before cleaning"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Label8.Location = New System.Drawing.Point(871, 53)
+        Me.Label8.Name = "Label8"
+        Me.Label8.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label8.Size = New System.Drawing.Size(198, 34)
+        Me.Label8.TabIndex = 91
+        Me.Label8.Text = "mins. before expiration"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Label7.Location = New System.Drawing.Point(871, 15)
+        Me.Label7.Name = "Label7"
+        Me.Label7.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label7.Size = New System.Drawing.Size(198, 38)
+        Me.Label7.TabIndex = 90
+        Me.Label7.Text = "Stencil Lifespan"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblCreamSolder
+        '
+        Me.lblCreamSolder.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblCreamSolder.Enabled = False
+        Me.lblCreamSolder.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblCreamSolder.Location = New System.Drawing.Point(526, 123)
+        Me.lblCreamSolder.Name = "lblCreamSolder"
+        Me.lblCreamSolder.Size = New System.Drawing.Size(256, 26)
+        Me.lblCreamSolder.TabIndex = 119
+        '
+        'lblSqueegeeRear
+        '
+        Me.lblSqueegeeRear.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblSqueegeeRear.Enabled = False
+        Me.lblSqueegeeRear.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblSqueegeeRear.Location = New System.Drawing.Point(526, 90)
+        Me.lblSqueegeeRear.Name = "lblSqueegeeRear"
+        Me.lblSqueegeeRear.Size = New System.Drawing.Size(256, 26)
+        Me.lblSqueegeeRear.TabIndex = 118
+        '
+        'lblSqueegeeFront
+        '
+        Me.lblSqueegeeFront.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblSqueegeeFront.Enabled = False
+        Me.lblSqueegeeFront.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblSqueegeeFront.Location = New System.Drawing.Point(526, 56)
+        Me.lblSqueegeeFront.Name = "lblSqueegeeFront"
+        Me.lblSqueegeeFront.Size = New System.Drawing.Size(256, 26)
+        Me.lblSqueegeeFront.TabIndex = 117
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Label6.Location = New System.Drawing.Point(365, 120)
+        Me.Label6.Name = "Label6"
+        Me.Label6.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label6.Size = New System.Drawing.Size(155, 37)
+        Me.Label6.TabIndex = 116
+        Me.Label6.Text = "Cream ID:"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Label5.Location = New System.Drawing.Point(365, 87)
+        Me.Label5.Name = "Label5"
+        Me.Label5.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label5.Size = New System.Drawing.Size(155, 33)
+        Me.Label5.TabIndex = 115
+        Me.Label5.Text = "Rear Blade:"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(365, 53)
+        Me.Label1.Name = "Label1"
+        Me.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label1.Size = New System.Drawing.Size(155, 34)
+        Me.Label1.TabIndex = 114
+        Me.Label1.Text = "Front Blade:"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.BackColor = System.Drawing.Color.Transparent
+        Me.Label26.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Label26.Location = New System.Drawing.Point(1081, 15)
+        Me.Label26.Name = "Label26"
+        Me.Label26.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label26.Size = New System.Drawing.Size(123, 38)
+        Me.Label26.TabIndex = 80
+        Me.Label26.Text = "PCB Count:"
+        Me.Label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Label4.Location = New System.Drawing.Point(365, 15)
+        Me.Label4.Name = "Label4"
+        Me.Label4.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label4.Size = New System.Drawing.Size(155, 38)
+        Me.Label4.TabIndex = 109
+        Me.Label4.Text = "Stencil ID:"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblStencil
+        '
+        Me.lblStencil.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblStencil.Enabled = False
+        Me.lblStencil.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblStencil.Location = New System.Drawing.Point(526, 18)
+        Me.lblStencil.Name = "lblStencil"
+        Me.lblStencil.Size = New System.Drawing.Size(256, 26)
+        Me.lblStencil.TabIndex = 113
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.BackColor = System.Drawing.Color.Transparent
+        Me.Label25.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Label25.Location = New System.Drawing.Point(1081, 87)
+        Me.Label25.Name = "Label25"
+        Me.Label25.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label25.Size = New System.Drawing.Size(123, 33)
+        Me.Label25.TabIndex = 82
+        Me.Label25.Text = "Panel Count:"
+        Me.Label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblpcbcounter
+        '
+        Me.lblpcbcounter.AutoSize = True
+        Me.lblpcbcounter.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.lblpcbcounter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblpcbcounter.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblpcbcounter.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblpcbcounter.ForeColor = System.Drawing.Color.White
+        Me.lblpcbcounter.Location = New System.Drawing.Point(1081, 54)
+        Me.lblpcbcounter.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
+        Me.lblpcbcounter.Name = "lblpcbcounter"
+        Me.lblpcbcounter.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
+        Me.lblpcbcounter.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.lblpcbcounter.Size = New System.Drawing.Size(123, 32)
+        Me.lblpcbcounter.TabIndex = 81
+        Me.lblpcbcounter.Text = "00000"
+        Me.lblpcbcounter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblpalletcounter
+        '
+        Me.lblpalletcounter.AutoSize = True
+        Me.lblpalletcounter.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.lblpalletcounter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblpalletcounter.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblpalletcounter.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblpalletcounter.ForeColor = System.Drawing.Color.White
+        Me.lblpalletcounter.Location = New System.Drawing.Point(1081, 121)
+        Me.lblpalletcounter.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
+        Me.lblpalletcounter.Name = "lblpalletcounter"
+        Me.lblpalletcounter.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
+        Me.lblpalletcounter.Size = New System.Drawing.Size(123, 35)
+        Me.lblpalletcounter.TabIndex = 83
+        Me.lblpalletcounter.Text = "00000"
+        Me.lblpalletcounter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblStencilLifespan
+        '
+        Me.lblStencilLifespan.AutoSize = True
+        Me.lblStencilLifespan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblStencilLifespan.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblStencilLifespan.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblStencilLifespan.Location = New System.Drawing.Point(796, 18)
+        Me.lblStencilLifespan.Margin = New System.Windows.Forms.Padding(3)
+        Me.lblStencilLifespan.Name = "lblStencilLifespan"
+        Me.lblStencilLifespan.Padding = New System.Windows.Forms.Padding(2)
+        Me.lblStencilLifespan.Size = New System.Drawing.Size(69, 32)
+        Me.lblStencilLifespan.TabIndex = 111
+        Me.lblStencilLifespan.Text = "00000"
+        Me.lblStencilLifespan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblCSMin
+        '
+        Me.lblCSMin.AutoSize = True
+        Me.lblCSMin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblCSMin.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblCSMin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCSMin.Location = New System.Drawing.Point(796, 56)
+        Me.lblCSMin.Margin = New System.Windows.Forms.Padding(3)
+        Me.lblCSMin.Name = "lblCSMin"
+        Me.lblCSMin.Padding = New System.Windows.Forms.Padding(2)
+        Me.lblCSMin.Size = New System.Drawing.Size(69, 28)
+        Me.lblCSMin.TabIndex = 121
+        Me.lblCSMin.Text = "00000"
+        Me.lblCSMin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblStencilCleaning
+        '
+        Me.lblStencilCleaning.AutoSize = True
+        Me.lblStencilCleaning.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblStencilCleaning.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblStencilCleaning.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblStencilCleaning.Location = New System.Drawing.Point(796, 90)
+        Me.lblStencilCleaning.Margin = New System.Windows.Forms.Padding(3)
+        Me.lblStencilCleaning.Name = "lblStencilCleaning"
+        Me.lblStencilCleaning.Padding = New System.Windows.Forms.Padding(2)
+        Me.lblStencilCleaning.Size = New System.Drawing.Size(69, 27)
+        Me.lblStencilCleaning.TabIndex = 122
+        Me.lblStencilCleaning.Text = "00000"
+        Me.lblStencilCleaning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblCodeDesignation
+        '
+        Me.lblCodeDesignation.AutoSize = True
+        Me.lblCodeDesignation.BackColor = System.Drawing.Color.Transparent
+        Me.lblCodeDesignation.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblCodeDesignation.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCodeDesignation.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.lblCodeDesignation.Location = New System.Drawing.Point(9, 53)
+        Me.lblCodeDesignation.Name = "lblCodeDesignation"
+        Me.lblCodeDesignation.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.lblCodeDesignation.Size = New System.Drawing.Size(152, 34)
+        Me.lblCodeDesignation.TabIndex = 89
+        Me.lblCodeDesignation.Text = "Code Designation:"
+        Me.lblCodeDesignation.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblCodeAllocation
+        '
+        Me.lblCodeAllocation.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblCodeAllocation.Enabled = False
+        Me.lblCodeAllocation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblCodeAllocation.Location = New System.Drawing.Point(167, 56)
+        Me.lblCodeAllocation.Name = "lblCodeAllocation"
+        Me.lblCodeAllocation.Size = New System.Drawing.Size(186, 26)
+        Me.lblCodeAllocation.TabIndex = 124
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(9, 87)
+        Me.Label2.Name = "Label2"
+        Me.Label2.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label2.Size = New System.Drawing.Size(152, 33)
+        Me.Label2.TabIndex = 88
+        Me.Label2.Text = "Panel :"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblPanelBottomLabel
+        '
+        Me.lblPanelBottomLabel.AutoSize = True
+        Me.lblPanelBottomLabel.BackColor = System.Drawing.Color.Transparent
+        Me.lblPanelBottomLabel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblPanelBottomLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPanelBottomLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.lblPanelBottomLabel.Location = New System.Drawing.Point(9, 120)
+        Me.lblPanelBottomLabel.Name = "lblPanelBottomLabel"
+        Me.lblPanelBottomLabel.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.lblPanelBottomLabel.Size = New System.Drawing.Size(152, 37)
+        Me.lblPanelBottomLabel.TabIndex = 87
+        Me.lblPanelBottomLabel.Text = "Panel Bottom:"
+        Me.lblPanelBottomLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblPanelTopLabel
+        '
+        Me.lblPanelTopLabel.AutoSize = True
+        Me.lblPanelTopLabel.BackColor = System.Drawing.Color.Transparent
+        Me.lblPanelTopLabel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblPanelTopLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPanelTopLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.lblPanelTopLabel.Location = New System.Drawing.Point(9, 157)
+        Me.lblPanelTopLabel.Name = "lblPanelTopLabel"
+        Me.lblPanelTopLabel.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.lblPanelTopLabel.Size = New System.Drawing.Size(152, 35)
+        Me.lblPanelTopLabel.TabIndex = 111
+        Me.lblPanelTopLabel.Text = "Panel Top:"
+        Me.lblPanelTopLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblPanel
+        '
+        Me.lblPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblPanel.Enabled = False
+        Me.lblPanel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblPanel.Location = New System.Drawing.Point(167, 90)
+        Me.lblPanel.Name = "lblPanel"
+        Me.lblPanel.Size = New System.Drawing.Size(186, 26)
+        Me.lblPanel.TabIndex = 125
+        '
+        'lblPanelBottom
+        '
+        Me.lblPanelBottom.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblPanelBottom.Enabled = False
+        Me.lblPanelBottom.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblPanelBottom.Location = New System.Drawing.Point(167, 123)
+        Me.lblPanelBottom.Name = "lblPanelBottom"
+        Me.lblPanelBottom.Size = New System.Drawing.Size(186, 26)
+        Me.lblPanelBottom.TabIndex = 126
+        '
+        'lblPanelTop
+        '
+        Me.lblPanelTop.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblPanelTop.Enabled = False
+        Me.lblPanelTop.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblPanelTop.Location = New System.Drawing.Point(167, 160)
+        Me.lblPanelTop.Name = "lblPanelTop"
+        Me.lblPanelTop.Size = New System.Drawing.Size(186, 26)
+        Me.lblPanelTop.TabIndex = 127
+        '
+        'btnSet
+        '
+        Me.btnSet.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnSet.Location = New System.Drawing.Point(1212, 196)
+        Me.btnSet.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.btnSet.Name = "btnSet"
+        Me.btnSet.Size = New System.Drawing.Size(109, 25)
+        Me.btnSet.TabIndex = 93
+        Me.btnSet.Text = "Set"
+        Me.btnSet.UseVisualStyleBackColor = True
+        Me.btnSet.Visible = False
+        '
+        'btnDetails
+        '
+        Me.btnDetails.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnDetails.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDetails.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnDetails.Location = New System.Drawing.Point(1212, 57)
+        Me.btnDetails.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.btnDetails.Name = "btnDetails"
+        Me.btnDetails.Size = New System.Drawing.Size(109, 26)
+        Me.btnDetails.TabIndex = 123
+        Me.btnDetails.Text = "PBC Details"
+        Me.btnDetails.UseVisualStyleBackColor = True
+        '
+        'btnpalletreset
+        '
+        Me.btnpalletreset.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnpalletreset.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnpalletreset.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnpalletreset.Location = New System.Drawing.Point(798, 196)
+        Me.btnpalletreset.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.btnpalletreset.Name = "btnpalletreset"
+        Me.btnpalletreset.Size = New System.Drawing.Size(65, 25)
+        Me.btnpalletreset.TabIndex = 60
+        Me.btnpalletreset.Text = "Reset"
+        Me.btnpalletreset.UseVisualStyleBackColor = True
+        '
+        'btnStencil
+        '
+        Me.btnStencil.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnStencil.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStencil.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnStencil.Location = New System.Drawing.Point(1212, 91)
+        Me.btnStencil.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.btnStencil.Name = "btnStencil"
+        Me.btnStencil.Size = New System.Drawing.Size(109, 25)
+        Me.btnStencil.TabIndex = 61
+        Me.btnStencil.Text = "Stencil"
+        Me.btnStencil.UseVisualStyleBackColor = True
+        '
+        'btnSqueegee
+        '
+        Me.btnSqueegee.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnSqueegee.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSqueegee.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnSqueegee.Location = New System.Drawing.Point(1212, 124)
+        Me.btnSqueegee.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.btnSqueegee.Name = "btnSqueegee"
+        Me.btnSqueegee.Size = New System.Drawing.Size(109, 29)
+        Me.btnSqueegee.TabIndex = 120
+        Me.btnSqueegee.Text = "Squeegee"
+        Me.btnSqueegee.UseVisualStyleBackColor = True
+        '
+        'lblSqueegeeLifespan
+        '
+        Me.lblSqueegeeLifespan.AutoSize = True
+        Me.lblSqueegeeLifespan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblSqueegeeLifespan.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblSqueegeeLifespan.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSqueegeeLifespan.Location = New System.Drawing.Point(796, 123)
+        Me.lblSqueegeeLifespan.Margin = New System.Windows.Forms.Padding(3)
+        Me.lblSqueegeeLifespan.Name = "lblSqueegeeLifespan"
+        Me.lblSqueegeeLifespan.Padding = New System.Windows.Forms.Padding(2)
+        Me.lblSqueegeeLifespan.Size = New System.Drawing.Size(69, 31)
+        Me.lblSqueegeeLifespan.TabIndex = 123
+        Me.lblSqueegeeLifespan.Text = "00000"
+        Me.lblSqueegeeLifespan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Label11.Location = New System.Drawing.Point(871, 120)
+        Me.Label11.Name = "Label11"
+        Me.Label11.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label11.Size = New System.Drawing.Size(198, 37)
+        Me.Label11.TabIndex = 92
+        Me.Label11.Text = "Squeegee Lifespan"
+        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'PictureBox2
         '
@@ -721,14 +899,14 @@ Partial Class frminjection
         Me.TableLayoutPanel3.BackgroundImage = CType(resources.GetObject("TableLayoutPanel3.BackgroundImage"), System.Drawing.Image)
         Me.TableLayoutPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.TableLayoutPanel3.ColumnCount = 8
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.42285!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.23247!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.911824!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.13627!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.93387!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.43086!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.32064!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.310621!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.50746!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.0597!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.328358!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.71642!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.86567!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.52239!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.89552!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.955224!))
         Me.TableLayoutPanel3.Controls.Add(Me.PictureBox3, 7, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.lbldt, 5, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.Label12, 0, 0)
@@ -749,10 +927,10 @@ Partial Class frminjection
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(1268, 12)
+        Me.PictureBox3.Location = New System.Drawing.Point(1288, 12)
         Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 12, 12, 12)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(41, 28)
+        Me.PictureBox3.Size = New System.Drawing.Size(40, 28)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 207
         Me.PictureBox3.TabStop = False
@@ -764,7 +942,7 @@ Partial Class frminjection
         Me.lbldt.Dock = System.Windows.Forms.DockStyle.Left
         Me.lbldt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbldt.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lbldt.Location = New System.Drawing.Point(923, 0)
+        Me.lbldt.Location = New System.Drawing.Point(934, 0)
         Me.lbldt.Name = "lbldt"
         Me.lbldt.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.lbldt.Size = New System.Drawing.Size(24, 52)
@@ -776,15 +954,15 @@ Partial Class frminjection
         '
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.Transparent
-        Me.Label12.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label12.Dock = System.Windows.Forms.DockStyle.Right
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Label12.Location = New System.Drawing.Point(20, 0)
+        Me.Label12.Location = New System.Drawing.Point(135, 0)
         Me.Label12.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(85, 52)
+        Me.Label12.Size = New System.Drawing.Size(43, 52)
         Me.Label12.TabIndex = 34
-        Me.Label12.Text = "Operator:"
+        Me.Label12.Text = "PIC:"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblname
@@ -794,7 +972,7 @@ Partial Class frminjection
         Me.lblname.Dock = System.Windows.Forms.DockStyle.Left
         Me.lblname.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblname.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lblname.Location = New System.Drawing.Point(156, 0)
+        Me.lblname.Location = New System.Drawing.Point(184, 0)
         Me.lblname.Name = "lblname"
         Me.lblname.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.lblname.Size = New System.Drawing.Size(24, 52)
@@ -809,7 +987,7 @@ Partial Class frminjection
         Me.Label19.Dock = System.Windows.Forms.DockStyle.Left
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Label19.Location = New System.Drawing.Point(374, 0)
+        Me.Label19.Location = New System.Drawing.Point(426, 0)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(48, 52)
         Me.Label19.TabIndex = 49
@@ -823,7 +1001,7 @@ Partial Class frminjection
         Me.lblline.Dock = System.Windows.Forms.DockStyle.Left
         Me.lblline.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblline.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lblline.Location = New System.Drawing.Point(453, 0)
+        Me.lblline.Location = New System.Drawing.Point(484, 0)
         Me.lblline.Name = "lblline"
         Me.lblline.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.lblline.Size = New System.Drawing.Size(24, 52)
@@ -838,7 +1016,7 @@ Partial Class frminjection
         Me.lblstation.Dock = System.Windows.Forms.DockStyle.Left
         Me.lblstation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblstation.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lblstation.Location = New System.Drawing.Point(696, 0)
+        Me.lblstation.Location = New System.Drawing.Point(708, 0)
         Me.lblstation.Name = "lblstation"
         Me.lblstation.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.lblstation.Size = New System.Drawing.Size(24, 52)
@@ -851,10 +1029,10 @@ Partial Class frminjection
         Me.btnlogout.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnlogout.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnlogout.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnlogout.Location = New System.Drawing.Point(1139, 12)
+        Me.btnlogout.Location = New System.Drawing.Point(1151, 12)
         Me.btnlogout.Margin = New System.Windows.Forms.Padding(12, 12, 15, 12)
         Me.btnlogout.Name = "btnlogout"
-        Me.btnlogout.Size = New System.Drawing.Size(111, 28)
+        Me.btnlogout.Size = New System.Drawing.Size(119, 28)
         Me.btnlogout.TabIndex = 2
         Me.btnlogout.Text = "&Log Out"
         Me.btnlogout.UseVisualStyleBackColor = True
@@ -882,7 +1060,6 @@ Partial Class frminjection
         'txtscan
         '
         Me.txtscan.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.txtscan.Enabled = False
         Me.txtscan.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtscan.Location = New System.Drawing.Point(317, 12)
         Me.txtscan.Margin = New System.Windows.Forms.Padding(0, 12, 20, 12)
@@ -1250,217 +1427,35 @@ Partial Class frminjection
         Me.lblpcb1.Text = " "
         Me.lblpcb1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'lblWarning
+        'lblSqueegeeMin
         '
-        Me.lblWarning.AutoSize = True
-        Me.lblWarning.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblWarning.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWarning.ForeColor = System.Drawing.Color.Red
-        Me.lblWarning.Location = New System.Drawing.Point(18, 431)
-        Me.lblWarning.Name = "lblWarning"
-        Me.lblWarning.Size = New System.Drawing.Size(1334, 28)
-        Me.lblWarning.TabIndex = 88
-        Me.lblWarning.Text = "Warning: "
-        Me.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lblWarning.Visible = False
+        Me.lblSqueegeeMin.AutoSize = True
+        Me.lblSqueegeeMin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblSqueegeeMin.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblSqueegeeMin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSqueegeeMin.Location = New System.Drawing.Point(796, 160)
+        Me.lblSqueegeeMin.Margin = New System.Windows.Forms.Padding(3)
+        Me.lblSqueegeeMin.Name = "lblSqueegeeMin"
+        Me.lblSqueegeeMin.Padding = New System.Windows.Forms.Padding(2)
+        Me.lblSqueegeeMin.Size = New System.Drawing.Size(69, 29)
+        Me.lblSqueegeeMin.TabIndex = 124
+        Me.lblSqueegeeMin.Text = "00000"
+        Me.lblSqueegeeMin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ShapeContainer1
+        'Label10
         '
-        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
-        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
-        Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape4, Me.LineShape3, Me.LineShape2, Me.LineShape1, Me.RectangleShape6, Me.RectangleShape5, Me.RectangleShape4, Me.RectangleShape3, Me.RectangleShape2, Me.RectangleShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(1370, 749)
-        Me.ShapeContainer1.TabIndex = 41
-        Me.ShapeContainer1.TabStop = False
-        '
-        'LineShape4
-        '
-        Me.LineShape4.BorderColor = System.Drawing.Color.Silver
-        Me.LineShape4.Name = "LineShape4"
-        Me.LineShape4.X1 = 744
-        Me.LineShape4.X2 = 770
-        Me.LineShape4.Y1 = 283
-        Me.LineShape4.Y2 = 283
-        '
-        'LineShape3
-        '
-        Me.LineShape3.BorderColor = System.Drawing.Color.Silver
-        Me.LineShape3.Name = "LineShape3"
-        Me.LineShape3.X1 = 744
-        Me.LineShape3.X2 = 770
-        Me.LineShape3.Y1 = 240
-        Me.LineShape3.Y2 = 240
-        '
-        'LineShape2
-        '
-        Me.LineShape2.BorderColor = System.Drawing.Color.Silver
-        Me.LineShape2.Name = "LineShape2"
-        Me.LineShape2.X1 = 771
-        Me.LineShape2.X2 = 771
-        Me.LineShape2.Y1 = 275
-        Me.LineShape2.Y2 = 283
-        '
-        'LineShape1
-        '
-        Me.LineShape1.BorderColor = System.Drawing.Color.Silver
-        Me.LineShape1.Name = "LineShape1"
-        Me.LineShape1.X1 = 771
-        Me.LineShape1.X2 = 771
-        Me.LineShape1.Y1 = 240
-        Me.LineShape1.Y2 = 248
-        '
-        'RectangleShape6
-        '
-        Me.RectangleShape6.BackColor = System.Drawing.Color.Black
-        Me.RectangleShape6.Location = New System.Drawing.Point(79, 547)
-        Me.RectangleShape6.Name = "RectangleShape6"
-        Me.RectangleShape6.Size = New System.Drawing.Size(369, 106)
-        '
-        'RectangleShape5
-        '
-        Me.RectangleShape5.BackColor = System.Drawing.Color.Black
-        Me.RectangleShape5.Location = New System.Drawing.Point(487, 547)
-        Me.RectangleShape5.Name = "RectangleShape5"
-        Me.RectangleShape5.Size = New System.Drawing.Size(369, 106)
-        '
-        'RectangleShape4
-        '
-        Me.RectangleShape4.BackColor = System.Drawing.Color.Black
-        Me.RectangleShape4.Location = New System.Drawing.Point(895, 547)
-        Me.RectangleShape4.Name = "RectangleShape4"
-        Me.RectangleShape4.Size = New System.Drawing.Size(369, 106)
-        '
-        'RectangleShape3
-        '
-        Me.RectangleShape3.BackColor = System.Drawing.Color.Black
-        Me.RectangleShape3.Location = New System.Drawing.Point(895, 435)
-        Me.RectangleShape3.Name = "RectangleShape3"
-        Me.RectangleShape3.Size = New System.Drawing.Size(369, 106)
-        '
-        'RectangleShape2
-        '
-        Me.RectangleShape2.BackColor = System.Drawing.Color.Black
-        Me.RectangleShape2.Location = New System.Drawing.Point(487, 435)
-        Me.RectangleShape2.Name = "RectangleShape2"
-        Me.RectangleShape2.Size = New System.Drawing.Size(369, 106)
-        '
-        'RectangleShape1
-        '
-        Me.RectangleShape1.BackColor = System.Drawing.Color.Black
-        Me.RectangleShape1.BorderColor = System.Drawing.Color.Black
-        Me.RectangleShape1.Location = New System.Drawing.Point(79, 10)
-        Me.RectangleShape1.Name = "RectangleShape1"
-        Me.RectangleShape1.Size = New System.Drawing.Size(369, 300)
-        Me.RectangleShape1.Tag = ""
-        '
-        'btnSqueegee
-        '
-        Me.btnSqueegee.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnSqueegee.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSqueegee.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnSqueegee.Location = New System.Drawing.Point(1223, 158)
-        Me.btnSqueegee.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.btnSqueegee.Name = "btnSqueegee"
-        Me.btnSqueegee.Size = New System.Drawing.Size(98, 30)
-        Me.btnSqueegee.TabIndex = 120
-        Me.btnSqueegee.Text = "Squeegee"
-        Me.btnSqueegee.UseVisualStyleBackColor = True
-        '
-        'lblStencilLifespan
-        '
-        Me.lblStencilLifespan.AutoSize = True
-        Me.lblStencilLifespan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblStencilLifespan.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblStencilLifespan.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblStencilLifespan.Location = New System.Drawing.Point(796, 18)
-        Me.lblStencilLifespan.Margin = New System.Windows.Forms.Padding(3)
-        Me.lblStencilLifespan.Name = "lblStencilLifespan"
-        Me.lblStencilLifespan.Padding = New System.Windows.Forms.Padding(2)
-        Me.lblStencilLifespan.Size = New System.Drawing.Size(69, 28)
-        Me.lblStencilLifespan.TabIndex = 111
-        Me.lblStencilLifespan.Text = "00000"
-        Me.lblStencilLifespan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblCSMin
-        '
-        Me.lblCSMin.AutoSize = True
-        Me.lblCSMin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblCSMin.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblCSMin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCSMin.Location = New System.Drawing.Point(796, 52)
-        Me.lblCSMin.Margin = New System.Windows.Forms.Padding(3)
-        Me.lblCSMin.Name = "lblCSMin"
-        Me.lblCSMin.Padding = New System.Windows.Forms.Padding(2)
-        Me.lblCSMin.Size = New System.Drawing.Size(69, 28)
-        Me.lblCSMin.TabIndex = 121
-        Me.lblCSMin.Text = "00000"
-        Me.lblCSMin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblStencilCleaning
-        '
-        Me.lblStencilCleaning.AutoSize = True
-        Me.lblStencilCleaning.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblStencilCleaning.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblStencilCleaning.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblStencilCleaning.Location = New System.Drawing.Point(796, 86)
-        Me.lblStencilCleaning.Margin = New System.Windows.Forms.Padding(3)
-        Me.lblStencilCleaning.Name = "lblStencilCleaning"
-        Me.lblStencilCleaning.Padding = New System.Windows.Forms.Padding(2)
-        Me.lblStencilCleaning.Size = New System.Drawing.Size(69, 28)
-        Me.lblStencilCleaning.TabIndex = 122
-        Me.lblStencilCleaning.Text = "00000"
-        Me.lblStencilCleaning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(871, 15)
-        Me.Label7.Name = "Label7"
-        Me.Label7.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label7.Size = New System.Drawing.Size(200, 34)
-        Me.Label7.TabIndex = 90
-        Me.Label7.Text = "Stencil Lifespan"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(871, 49)
-        Me.Label8.Name = "Label8"
-        Me.Label8.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label8.Size = New System.Drawing.Size(200, 34)
-        Me.Label8.TabIndex = 91
-        Me.Label8.Text = "mins. before expiration"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(871, 83)
-        Me.Label9.Name = "Label9"
-        Me.Label9.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label9.Size = New System.Drawing.Size(200, 34)
-        Me.Label9.TabIndex = 91
-        Me.Label9.Text = "mins. before cleaning"
-        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Timer3
-        '
-        Me.Timer3.Enabled = True
-        Me.Timer3.Interval = 7200000
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Label10.Location = New System.Drawing.Point(871, 157)
+        Me.Label10.Name = "Label10"
+        Me.Label10.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label10.Size = New System.Drawing.Size(198, 35)
+        Me.Label10.TabIndex = 92
+        Me.Label10.Text = "mins. before cleaning"
+        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'frminjection
         '
@@ -1481,9 +1476,9 @@ Partial Class frminjection
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
+        Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel5.ResumeLayout(False)
         Me.TableLayoutPanel5.PerformLayout()
-        Me.TableLayoutPanel2.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel6.ResumeLayout(False)
         Me.TableLayoutPanel6.PerformLayout()
@@ -1544,14 +1539,10 @@ Partial Class frminjection
     Friend WithEvents pnlPCB3 As TableLayoutPanel
     Friend WithEvents pnlPCB2 As TableLayoutPanel
     Friend WithEvents BindingSource1 As BindingSource
-    Friend WithEvents lblPanel As Label
     Friend WithEvents TableLayoutPanel6 As TableLayoutPanel
     Friend WithEvents lblPanelBottomLabel As Label
     Friend WithEvents lblpcbcounter As Label
-    Friend WithEvents lblModel As Label
-    Friend WithEvents cbxModel As ComboBox
     Friend WithEvents lblCodeDesignation As Label
-    Friend WithEvents lblCodeAllocation As Label
     Friend WithEvents btnSet As Button
     Friend WithEvents lblAssemblyVersion As Label
     Friend WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
@@ -1571,18 +1562,10 @@ Partial Class frminjection
     Friend WithEvents pnlPCB5 As TableLayoutPanel
     Friend WithEvents lblPCBholder5 As Label
     Friend WithEvents lblpcb5 As Label
-    Friend WithEvents lblFamily As Label
-    Friend WithEvents lblPartNumber As Label
-    Friend WithEvents cbxPartNumber As ComboBox
-    Friend WithEvents cbxProductNumber As ComboBox
-    Friend WithEvents cbxFamily As ComboBox
     Friend WithEvents lblWarning As Label
     Friend WithEvents btnStencil As Button
-    Friend WithEvents lblProductNumber As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents lblPanelBottom As Label
     Friend WithEvents lblPanelTopLabel As Label
-    Friend WithEvents lblPanelTop As Label
     Friend WithEvents Label25 As Label
     Friend WithEvents lblpalletcounter As Label
     Friend WithEvents lblStencil As TextBox
@@ -1590,8 +1573,8 @@ Partial Class frminjection
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents lblCreamSolder As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents lblSqueegeeRear As TextBox
+    Friend WithEvents lblSqueegeeFront As TextBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents btnSqueegee As Button
     Friend WithEvents lblStencilLifespan As Label
@@ -1601,4 +1584,16 @@ Partial Class frminjection
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Timer3 As Timer
+    Friend WithEvents btnDetails As Button
+    Friend WithEvents lblModel As TextBox
+    Friend WithEvents lblCodeAllocation As TextBox
+    Friend WithEvents lblPanel As TextBox
+    Friend WithEvents lblPanelBottom As TextBox
+    Friend WithEvents lblPanelTop As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents lblSqueegeeLifespan As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents lblSqueegeeMin As Label
+    Friend WithEvents Label10 As Label
 End Class
