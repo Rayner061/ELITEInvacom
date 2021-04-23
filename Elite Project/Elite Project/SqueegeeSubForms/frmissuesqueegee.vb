@@ -131,4 +131,15 @@ Public Class frmissuesqueegee
         '    cboLine.Items.Add("Line " & i)
         'Next
     End Sub
+
+    Private Sub cboLine_Click(sender As Object, e As EventArgs) Handles cboLine.Click
+        Dim cmd As New MySqlCommand
+        cmd.Connection = conn
+        cmd.CommandText = "SELECT `value` FROM `settings` WHERE `name` = 'e_gi_line'"
+        lineString = cmd.ExecuteScalar.ToString.Split(",")
+        cboLine.Items.Clear()
+        For i = 0 To lineString.Length - 1
+            cboLine.Items.Add("Line " & lineString(i).ToUpper)
+        Next
+    End Sub
 End Class

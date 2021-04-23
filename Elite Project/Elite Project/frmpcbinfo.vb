@@ -1,6 +1,10 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.IO
+Imports MySql.Data.MySqlClient
 
 Public Class frmpcbinfo
+
+    Dim Type As String = "PRIME"
+    Dim PN As String = ""
 
     Private Sub frmpcbinfo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         dbConnect()
@@ -21,7 +25,10 @@ Public Class frmpcbinfo
         If cbxModel.Text = "" Then
             MsgBox("Invalid Action. Information might contain an invalid value")
         Else
-            Dim reader As MySqlDataReader
+            If cbxPO.Enabled = True And cbxPO.Text = "" Then
+                MsgBox("Invalid Action. Information might contain an invalid value")
+            Else
+                Dim reader As MySqlDataReader
             Dim cmd As New MySqlCommand
             cmd.Connection = conn
 
@@ -61,23 +68,105 @@ Public Class frmpcbinfo
             cmd.CommandText = "UPDATE `eliteprototype`.`gi_injectioninfo` SET `modelmatrixid` = '" & frminjection.modelMatrixID & "', `pcbside` = '" & frminjection.side & "' WHERE `line` = '" & frminjection.lblline.Text & "'"
             cmd.ExecuteNonQuery()
 
+            frminjection.lblPO.Text = cbxPO.Text
             frminjection.refreshDetails()
             Me.Close()
-            frminjection.Enabled = True
+                frminjection.Enabled = True
+
+
+            End If
         End If
     End Sub
 
     Private Sub cbxModel_Click(sender As Object, e As EventArgs) Handles cbxModel.Click
+
         Dim cmd As New MySqlCommand
         Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
         Dim myDT As New DataTable
+        Dim customer As String
+
         cmd.Connection = conn
 
-        cmd.CommandText = "SELECT DISTINCT model FROM gi_modelmatrix"
-        myDA.Fill(myDT)
+        If cbxPO.Enabled = True Then
 
-        cbxModel.DataSource = myDT
-        cbxModel.DisplayMember = "model"
-        cbxModel.ValueMember = "model"
+            cmd.CommandText = "SELECT DISTINCT model FROM gi_modelmatrix WHERE ems_fg_partnumber = '" & PN & "'"
+            myDA.Fill(myDT)
+
+        Else
+
+
+            customer = ""
+            If cbxProduct.Text = "GLOBAL_SKYWARE" Then
+                customer = "gs"
+            Else
+                customer = "gi"
+            End If
+
+            cmd.CommandText = "SELECT DISTINCT model FROM gi_modelmatrix WHERE active_status = 'yes' and customer = '" & customer & "'"
+            myDA.Fill(myDT)
+        End If
+
+        cbxModel.Items.Clear()
+        For Each i As DataRow In myDT.Rows
+            cbxModel.Items.Add(i.Item(0).ToString)
+        Next
+    End Sub
+
+
+
+    Private Sub cbxPO_DropDown(sender As Object, e As EventArgs) Handles cbxPO.DropDown
+        Dim cmd As New MySqlCommand
+        cmd.Connection = conn
+        Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+        Dim myDT As New DataTable
+        cmd.CommandText = "SELECT DISTINCT `order_id` FROM `sap_prodorder` `A` INNER JOIN `sap_workcenter` `B` ON `A`.`workcenter` = `B`.`workcenter` WHERE `B`.`product` = '" & cbxProduct.Text & "' AND `B`.`type` = '" & Type & "' AND `B`.`line` = '" & frminjection.lblline.Text & "'"
+        myDA.Fill(myDT)
+        cbxPO.Items.Clear()
+        For Each dr As DataRow In myDT.Rows
+            cbxPO.Items.Add(dr(0).ToString)
+        Next
+
+        cbxModel.SelectedIndex = -1
+    End Sub
+
+
+    Private Sub cbxProduct_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbxProduct.SelectedIndexChanged
+        Dim cmd As New MySqlCommand
+        cmd.Connection = conn
+
+        If cbxProduct.Text = "GLOBAL_INVACOM" Then
+            cmd.CommandText = "SELECT count(*) as `status` FROM `settings` where `name`='elite_gi_sap_enable' and `value`='yes'"
+            If cmd.ExecuteScalar = "1" Then
+                cbxPO.Enabled = True
+            Else
+                cbxPO.Enabled = False
+            End If
+        Else
+            cmd.CommandText = "SELECT count(*) as `status` FROM `settings` where `name`='elite_gs_sap_enable' and `value`='yes'"
+            If cmd.ExecuteScalar = "1" Then
+                cbxPO.Enabled = True
+            Else
+                cbxPO.Enabled = False
+            End If
+        End If
+
+        cbxPO.SelectedIndex = -1
+        cbxModel.SelectedIndex = -1
+    End Sub
+
+    Private Sub cbxPO_DropDownClosed(sender As Object, e As EventArgs) Handles cbxPO.DropDownClosed
+        Dim cmd As New MySqlCommand
+        cmd.Connection = conn
+        Dim rd As MySqlDataReader
+        If cbxPO.SelectedIndex <> -1 Then
+            cmd.CommandText = "SELECT `partnumber`, `description` FROM `sap_prodorder` WHERE `order_id` = '" & cbxPO.Text & "'"
+            rd = cmd.ExecuteReader
+            While rd.Read
+                PN = rd.Item(0).ToString
+                lblDesc.Text = rd.Item(1).ToString
+            End While
+            rd.Close()
+            cbxModel.Enabled = True
+        End If
     End Sub
 End Class

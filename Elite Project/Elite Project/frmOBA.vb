@@ -253,19 +253,7 @@ Public Class frmOBA
     End Sub
 
     Private Sub cbxModel_Click(sender As Object, e As EventArgs) Handles cbxModel.Click
-        Dim cmd As New MySqlCommand
-        Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
-        Dim myDT As New DataTable
-        cmd.Connection = conn
 
-        cmd.CommandText = "SELECT DISTINCT model FROM gi_modelmatrix"
-        myDA.Fill(myDT)
-
-        cbxModel.DataSource = myDT
-        cbxModel.DisplayMember = "model"
-        cbxModel.ValueMember = "model"
-
-        lblCodeAllocation.Text = ""
     End Sub
 
     Private Sub cbxModel_DropDownClosed(sender As Object, e As EventArgs) Handles cbxModel.DropDownClosed
@@ -276,14 +264,48 @@ Public Class frmOBA
         lblCodeAllocation.Text = cmd.ExecuteScalar
     End Sub
 
+    Private Sub cbxBU_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbxBU.SelectedIndexChanged
+        cbxModel.SelectedIndex = -1
+
+    End Sub
+
+    Private Sub cbxModel_DropDown(sender As Object, e As EventArgs) Handles cbxModel.DropDown
+        Dim cmd As New MySqlCommand
+        Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+        Dim myDT As New DataTable
+        Dim customer As String = ""
+        cmd.Connection = conn
+
+        If cbxBU.Text = "GLOBAL_SKYWARE" Then
+            customer = "gs"
+        ElseIf cbxBU.Text = "GLOBAL_INVACOM" Then
+            customer = "gi"
+        End If
+
+        cmd.CommandText = "SELECT DISTINCT model FROM gi_modelmatrix WHERE active_status = 'yes' AND customer ='" & customer & "'"
+        myDA.Fill(myDT)
+        cbxModel.Items.Clear()
+
+        For Each i As DataRow In myDT.Rows
+            cbxModel.Items.Add(i.Item(0).ToString)
+        Next
+
+        'cbxModel.DataSource = myDT
+        'cbxModel.DisplayMember = "model"
+        'cbxModel.ValueMember = "model"
+
+        lblCodeAllocation.Text = ""
+    End Sub
+
     Private Sub btnSet_Click(sender As Object, e As EventArgs) Handles btnSet.Click
         Dim cmd As New MySqlCommand
         cmd.Connection = conn
 
-        cmd.CommandText = "SELECT DISTINCT `modelmatrixid` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
+        cmd.CommandText = "SELECT DISTINCT `modelmatrixid` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "' WHERE active_status = 'yes'"
         modelMatrixID = cmd.ExecuteScalar
 
         cbxModel.Enabled = False
+        cbxBU.Enabled = False
         txtScan.Enabled = True
         txtScan.Focus()
     End Sub

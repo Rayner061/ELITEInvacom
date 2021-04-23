@@ -17,49 +17,62 @@ Public Class frmStencilManager
     Private Sub txtScan_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtScan.KeyPress
         If Asc(e.KeyChar) = 13 Then
             Dim cmd As New MySqlCommand
+            Dim stencilCODE As String
             cmd.Connection = conn
             Try
-                If txtScan.Text.Substring(0, 3) = "GI-" Then
+                If txtScan.Text.Substring(0, 3) = "GI-" Or txtScan.Text.Substring(0, 3) = "GS-" Then
                     txtScan.Enabled = False
                     lblID.Text = txtScan.Text
-                    cmd.CommandText = "SELECT COUNT(stencilid) FROM `gi_stencil` WHERE `stencilid` = '" & txtScan.Text & "'"
+                    stencilCODE = txtScan.Text.Substring(3).Substring(0, txtScan.Text.Substring(3).IndexOf("-"))
+                    cmd.CommandText = "SELECT COUNT(model) FROM `gi_modelmatrix` WHERE `family_name` = '" & stencilCODE & "'"
                     If cmd.ExecuteScalar > 0 Then
-                        cbxAction.Enabled = True
-                        Dim reader As MySqlDataReader
-                        txtScan.Enabled = False
-                        txtScan.Text = ""
-                        cmd.CommandText = "SELECT DISTINCT `model` FROM `gi_modelmatrix` WHERE `model` LIKE '" & lblID.Text.Substring(3).Substring(0, lblID.Text.Substring(3).IndexOf("-")) & "%'"
-                        lblModel.Text = cmd.ExecuteScalar
-                        cmd.CommandText = "SELECT `location`, `registrationdate` FROM `gi_stencil` WHERE `stencilid` = '" & lblID.Text & "'"
-                        reader = cmd.ExecuteReader
-                        While reader.Read
-                            lblStatus.Text = reader.Item(0).ToString
-                            lblDR.Text = reader.Item(1).ToString
-                        End While
-                        reader.Close()
-                        If lblStatus.Text = "storage" Then
-                            cbxAction.Items.Add("Issue to Line")
-                            cbxAction.Items.Add("Scrap")
-                        ElseIf lblStatus.Text.Substring(0, 4) = "Line" Then
-                            cbxAction.Items.Add("Remove")
-                        ElseIf lblStatus.Text = "scrap" Then
-                            cbxAction.Enabled = False
-                            txtScan.Enabled = True
-                            txtScan.Focus()
+                        cmd.CommandText = "SELECT COUNT(stencilid) FROM `gi_stencil` WHERE `stencilid` = '" & txtScan.Text & "'"
+                        If cmd.ExecuteScalar > 0 Then
+                            cbxAction.Enabled = True
+                            Dim reader As MySqlDataReader
+                            txtScan.Enabled = False
+                            txtScan.Text = ""
+                            cmd.CommandText = "SELECT DISTINCT `model` FROM `gi_modelmatrix` WHERE `model` LIKE '" & lblID.Text.Substring(3).Substring(0, lblID.Text.Substring(3).IndexOf("-")) & "%'"
+                            lblModel.Text = cmd.ExecuteScalar
+                            cmd.CommandText = "SELECT `location`, `registrationdate` FROM `gi_stencil` WHERE `stencilid` = '" & lblID.Text & "'"
+                            reader = cmd.ExecuteReader
+                            While reader.Read
+                                lblStatus.Text = reader.Item(0).ToString
+                                lblDR.Text = reader.Item(1).ToString
+                            End While
+                            reader.Close()
+                            If lblStatus.Text = "storage" Then
+                                cbxAction.Items.Add("Issue to Line")
+                                cbxAction.Items.Add("Scrap")
+                            ElseIf lblStatus.Text.Substring(0, 4) = "Line" Then
+                                cbxAction.Items.Add("Remove")
+                            ElseIf lblStatus.Text = "scrap" Then
+                                cbxAction.Enabled = False
+                                txtScan.Enabled = True
+                                txtScan.Focus()
+                            End If
+                            cbxAction.Focus()
+                            cbxAction.DroppedDown = True
+                        Else
+                            txtScan.Enabled = False
+                            cbxAction.Enabled = True
+                            cbxAction.Items.Clear()
+                            cbxAction.Items.Add("Register")
+                            cbxAction.Focus()
                         End If
-                        cbxAction.Focus()
-                        cbxAction.DroppedDown = True
                     Else
-                        txtScan.Enabled = False
-                        cbxAction.Enabled = True
-                        cbxAction.Items.Clear()
-                        cbxAction.Items.Add("Register")
-                        cbxAction.Focus()
+                        MsgBox("Error: Invalid Stencil Code.")
+                        txtScan.Enabled = True
+                        lblID.Text = ""
+                        btnSubmit.Enabled = False
                     End If
                 Else
                     MsgBox("Error: Invalid Stencil Format.")
-
+                    txtScan.Enabled = True
+                    lblID.Text = ""
+                    btnSubmit.Enabled = False
                 End If
+
                 displayInventory()
                 'txtScan.Enabled = True
             Catch ex As Exception
@@ -78,11 +91,11 @@ Public Class frmStencilManager
                 Case "Issue to Line"
                     Dim cmd As New MySqlCommand
                     cmd.Connection = conn
-                    For Each line As String In lineString
-                        cmd.CommandText = "SELECT COUNT(`location`) FROM `gi_stencil` WHERE (SUBSTR(`location`, POSITION(' ' IN `location`) + 1, LENGTH(`location`) - 5)) = '" & line & "'"
-                        If cmd.ExecuteScalar = 0 Then
-                            lblline.Items.Add(line)
-                        End If
+                    cmd.CommandText = "SELECT `value` FROM `settings` WHERE `name` = 'e_gi_line'"
+                    lineString = cmd.ExecuteScalar.ToString.Split(",")
+                    lblline.Items.Clear()
+                    For i = 0 To lineString.Length - 1
+                        lblline.Items.Add(lineString(i).ToUpper)
                     Next
                     lblline.Visible = True
                 Case "Remove"
@@ -107,6 +120,10 @@ Public Class frmStencilManager
                 Case "Register"
                     cmd.CommandText = "INSERT INTO `gi_stencil`(`stencilid`, `registrationdate`, `location`, `timestamp`) VALUES('" & txtScan.Text & "', NOW(), 'storage', NOW())"
                     cmd.ExecuteNonQuery()
+
+                    cmd.CommandText = "INSERT INTO `gi_stencil_lifespan`(`stencilid`, `lifespan`) VALUES('" & txtScan.Text & "','90000')"
+                    cmd.ExecuteNonQuery()
+
                     addToLogs("Registration", "storage")
                     MsgBox("Registration Successful!")
                 Case "Issue to Line"
@@ -173,6 +190,7 @@ Public Class frmStencilManager
 
             cmd.CommandText = "SELECT SUM(`count`) FROM (SELECT COUNT(`pcbid`) AS `count` FROM `gi_pcbtrace` WHERE `stencilid_bottom` = '" & stencilid & "' UNION ALL
                                 SELECT COUNT(`pcbid`) AS `count` FROM `gi_pcbtrace` WHERE `stencilid_top` = '" & stencilid & "') `a`"
+
             If (cmd.ExecuteScalar / upp) < 90000 Then
                 isLifespanValid = True
             Else
@@ -192,10 +210,9 @@ Public Class frmStencilManager
         cmd.Connection = conn
 
         modelCode = stencilid.Substring(3).Substring(0, stencilid.Substring(3).IndexOf("-"))
-
-        cmd.CommandText = "SELECT `upp` FROM `gi_modelmatrix` WHERE model = '" & modelCode & "'"
+        'MsgBox(modelCode)
+        cmd.CommandText = "SELECT `upp` FROM `gi_modelmatrix` WHERE family_name = '" & modelCode & "' LIMIT 1"
         upp = cmd.ExecuteScalar
-
         cmd.CommandText = "UPDATE `gi_stencil_lifespan` SET `lifespan`= (SELECT FLOOR(90000 - (SUM(`count`) / " & upp & ")) AS `lifespan` FROM (SELECT COUNT(`pcbid`) AS `count` FROM `gi_pcbtrace` WHERE `stencilid_bottom` = '" & stencilid & "' UNION ALL
                                 SELECT COUNT(`pcbid`) AS `count` FROM `gi_pcbtrace` WHERE `stencilid_top` = '" & stencilid & "') `a`) WHERE `stencilid` = '" & stencilid & "'"
         cmd.ExecuteNonQuery()
@@ -222,12 +239,22 @@ Public Class frmStencilManager
 
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
         frminjection.Enabled = True
+        frminjection.refreshDetails()
+        frminjection.Timer1.Enabled = True
+        frminjection.Timer2.Enabled = True
+        frminjection.connectTimer.Enabled = True
         Me.Hide()
     End Sub
 
     Private Sub frmStencilManager_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
         frminjection.Enabled = True
         frminjection.refreshDetails()
+        frminjection.Timer1.Enabled = True
+        frminjection.Timer2.Enabled = True
+        frminjection.connectTimer.Enabled = True
     End Sub
 
+    Private Sub lblline_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lblline.SelectedIndexChanged
+        btnSubmit.Enabled = True
+    End Sub
 End Class

@@ -8,6 +8,7 @@ Imports System.Threading
 
 Public Class frminjection
     Dim pcblist, panelList As New List(Of String)
+    Dim MSGs As String
     Public customer, side, panel, codeAllocation, modelMatrixID, sideRequirement, palletRequirement As String
     Public upp As Integer = 0
 
@@ -17,7 +18,6 @@ Public Class frminjection
         cmd.Connection = conn
         cmd.CommandText = "SELECT DATE_FORMAT(NOW(),'%Y-%m-%d %H:%i:%s')"
         lbldt.Text = cmd.ExecuteScalar
-
     End Sub
 
     Private Sub frminjection_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
@@ -50,11 +50,24 @@ Public Class frminjection
                         Case (scan = "panel" And label <> "SCAN PCB:")
                             Select Case ExaminePanel(txtscan.Text)
                                 Case "valid", "valid_bottom", "valid_top"
-                                    If palletRequirement = "none" Then
+                                    'If palletRequirement = "none" Then
+
+                                    '    Select Case True
+                                    '        Case label.Contains("TOP")
+                                    '            lblPanelTop.Text = txtscan.Text
+                                    '        Case label.Contains("BOTTOM")
+                                    '            lblPanelBottom.Text = txtscan.Text
+                                    '    End Select
+                                    'Else
+                                    If sideRequirement = "dual" Then
 
                                         Select Case True
                                             Case label.Contains("TOP")
-                                                lblPanelTop.Text = txtscan.Text
+                                                If lblPanelBottom.Text = txtscan.Text Then
+                                                    MsgBox("Already Scanned as Bottom Panel")
+                                                Else
+                                                    lblPanelTop.Text = txtscan.Text
+                                                End If
                                             Case label.Contains("BOTTOM")
                                                 lblPanelBottom.Text = txtscan.Text
                                         End Select
@@ -66,6 +79,7 @@ Public Class frminjection
                                                 label = "SCAN PCB:"
                                         End Select
                                     End If
+                                    'End If
                                 Case "invalid"
                                     notif("Invalid panel! Panel serial already used.")
                             End Select
@@ -121,6 +135,8 @@ Public Class frminjection
                             lblPCBholder4.BackColor = Color.Transparent
                             lblPCBholder5.BackColor = Color.Transparent
                             lblPCBholder6.BackColor = Color.Transparent
+                            lblPCBholder7.BackColor = Color.Transparent
+                            lblPCBholder8.BackColor = Color.Transparent
 
                             lblPCBholder1.ForeColor = Color.White
                             lblPCBholder2.ForeColor = Color.White
@@ -128,6 +144,8 @@ Public Class frminjection
                             lblPCBholder4.ForeColor = Color.White
                             lblPCBholder5.ForeColor = Color.White
                             lblPCBholder6.ForeColor = Color.White
+                            lblPCBholder7.ForeColor = Color.White
+                            lblPCBholder8.ForeColor = Color.White
 
                             lblpcb1.BackColor = Color.Transparent
                             lblpcb2.BackColor = Color.Transparent
@@ -135,6 +153,8 @@ Public Class frminjection
                             lblpcb4.BackColor = Color.Transparent
                             lblpcb5.BackColor = Color.Transparent
                             lblpcb6.BackColor = Color.Transparent
+                            lblpcb7.BackColor = Color.Transparent
+                            lblpcb8.BackColor = Color.Transparent
 
                             lblpcb1.Text = " "
                             lblpcb2.Text = " "
@@ -142,6 +162,9 @@ Public Class frminjection
                             lblpcb4.Text = " "
                             lblpcb5.Text = " "
                             lblpcb6.Text = " "
+                            lblpcb7.Text = " "
+                            lblpcb8.Text = " "
+
                             txtscan.Text = ""
                         Case 1
                             pcblist.Sort()
@@ -309,6 +332,100 @@ Public Class frminjection
                                 lblscan.ForeColor = Color.FromArgb(37, 68, 65)
                             End If
                             txtscan.Text = ""
+
+                        Case 7
+                            pcblist.Sort()
+                            lblscan.Text = "SCAN PCB:"
+                            lblPCBholder1.BackColor = Color.Yellow
+                            lblPCBholder2.BackColor = Color.Yellow
+                            lblPCBholder3.BackColor = Color.Yellow
+                            lblPCBholder4.BackColor = Color.Yellow
+                            lblPCBholder5.BackColor = Color.Yellow
+                            lblPCBholder6.BackColor = Color.Yellow
+                            lblPCBholder7.BackColor = Color.Yellow
+
+                            lblPCBholder1.ForeColor = Color.Black
+                            lblPCBholder2.ForeColor = Color.Black
+                            lblPCBholder3.ForeColor = Color.Black
+                            lblPCBholder4.ForeColor = Color.Black
+                            lblPCBholder5.ForeColor = Color.Black
+                            lblPCBholder6.ForeColor = Color.Black
+                            lblPCBholder7.ForeColor = Color.Black
+
+                            lblpcb1.BackColor = Color.Yellow
+                            lblpcb2.BackColor = Color.Yellow
+                            lblpcb3.BackColor = Color.Yellow
+                            lblpcb4.BackColor = Color.Yellow
+                            lblpcb5.BackColor = Color.Yellow
+                            lblpcb6.BackColor = Color.Yellow
+                            lblpcb7.BackColor = Color.Yellow
+
+                            lblpcb1.Text = pcblist(0)
+                            lblpcb2.Text = pcblist(1)
+                            lblpcb3.Text = pcblist(2)
+                            lblpcb4.Text = pcblist(3)
+                            lblpcb5.Text = pcblist(4)
+                            lblpcb6.Text = pcblist(5)
+                            lblpcb7.Text = pcblist(6)
+
+                            If upp = 7 Then
+                                SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5), pcblist(6))
+                                pcblist.Clear()
+                                lblPanelBottom.Text = ""
+                                lblPanelTop.Text = ""
+                                lblscan.Text = "SCAN PANEL (BOTTOM):"
+                                lblscan.ForeColor = Color.FromArgb(37, 68, 65)
+                            End If
+                            txtscan.Text = ""
+
+                        Case 8
+                            pcblist.Sort()
+                            lblscan.Text = "SCAN PCB:"
+                            lblPCBholder1.BackColor = Color.Yellow
+                            lblPCBholder2.BackColor = Color.Yellow
+                            lblPCBholder3.BackColor = Color.Yellow
+                            lblPCBholder4.BackColor = Color.Yellow
+                            lblPCBholder5.BackColor = Color.Yellow
+                            lblPCBholder6.BackColor = Color.Yellow
+                            lblPCBholder7.BackColor = Color.Yellow
+                            lblPCBholder8.BackColor = Color.Yellow
+
+                            lblPCBholder1.ForeColor = Color.Black
+                            lblPCBholder2.ForeColor = Color.Black
+                            lblPCBholder3.ForeColor = Color.Black
+                            lblPCBholder4.ForeColor = Color.Black
+                            lblPCBholder5.ForeColor = Color.Black
+                            lblPCBholder6.ForeColor = Color.Black
+                            lblPCBholder7.ForeColor = Color.Black
+                            lblPCBholder8.ForeColor = Color.Black
+
+                            lblpcb1.BackColor = Color.Yellow
+                            lblpcb2.BackColor = Color.Yellow
+                            lblpcb3.BackColor = Color.Yellow
+                            lblpcb4.BackColor = Color.Yellow
+                            lblpcb5.BackColor = Color.Yellow
+                            lblpcb6.BackColor = Color.Yellow
+                            lblpcb7.BackColor = Color.Yellow
+                            lblpcb8.BackColor = Color.Yellow
+
+                            lblpcb1.Text = pcblist(0)
+                            lblpcb2.Text = pcblist(1)
+                            lblpcb3.Text = pcblist(2)
+                            lblpcb4.Text = pcblist(3)
+                            lblpcb5.Text = pcblist(4)
+                            lblpcb6.Text = pcblist(5)
+                            lblpcb7.Text = pcblist(6)
+                            lblpcb8.Text = pcblist(7)
+
+                            If upp = 8 Then
+                                SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5), pcblist(6), pcblist(7))
+                                pcblist.Clear()
+                                lblPanelBottom.Text = ""
+                                lblPanelTop.Text = ""
+                                lblscan.Text = "SCAN PANEL (BOTTOM):"
+                                lblscan.ForeColor = Color.FromArgb(37, 68, 65)
+                            End If
+                            txtscan.Text = ""
                     End Select
 
                 ElseIf side = "top" And sideRequirement = "dual" Then
@@ -374,20 +491,37 @@ Public Class frminjection
                                             lblpcb4.Text = pcblist(3)
                                         End If
 
-                                        If upp >= 6 Then
+                                        If upp >= 5 Then
                                             lblPCBholder5.BackColor = Color.Yellow
-                                            lblPCBholder6.BackColor = Color.Yellow
-
                                             lblPCBholder5.ForeColor = Color.Black
-                                            lblPCBholder6.ForeColor = Color.Black
-
                                             lblpcb5.BackColor = Color.Yellow
-                                            lblpcb6.BackColor = Color.Yellow
-
                                             lblpcb5.Text = pcblist(4)
+                                        End If
+
+                                        If upp >= 6 Then
+                                            lblPCBholder6.BackColor = Color.Yellow
+                                            lblPCBholder6.ForeColor = Color.Black
+                                            lblpcb6.BackColor = Color.Yellow
                                             lblpcb6.Text = pcblist(5)
                                         End If
+
+                                        If upp >= 7 Then
+                                            lblPCBholder7.BackColor = Color.Yellow
+                                            lblPCBholder7.ForeColor = Color.Black
+                                            lblpcb7.BackColor = Color.Yellow
+                                            lblpcb7.Text = pcblist(6)
+                                        End If
+
+                                        If upp >= 8 Then
+                                            lblPCBholder8.BackColor = Color.Yellow
+                                            lblPCBholder8.ForeColor = Color.Black
+                                            lblpcb8.BackColor = Color.Yellow
+                                            lblpcb8.Text = pcblist(7)
+                                        End If
+
                                         Select Case upp
+                                            Case 1
+                                                SetPCB(pcblist(0))
                                             Case 2
                                                 SetPCB(pcblist(0), pcblist(1))
                                             Case 3
@@ -396,6 +530,10 @@ Public Class frminjection
                                                 SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3))
                                             Case 6
                                                 SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5))
+                                            Case 7
+                                                SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5), pcblist(6))
+                                            Case 8
+                                                SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5), pcblist(6), pcblist(7))
                                         End Select
                                     Else
                                         notif("PCB and panel mismatch. Please verify.")
@@ -452,9 +590,11 @@ Public Class frminjection
         If lblstation.Text = "INJECTION - BOTTOM" Then
             side = "bottom"
             lblscan.Text = "SCAN PANEL (BOTTOM):"
+            MSGs = "_SB"
         Else
             side = "top"
             lblscan.Text = "SCAN PANEL (TOP):"
+            MSGs = "_ST"
         End If
         Dim cmd As New MySqlCommand
         cmd.Connection = conn
@@ -472,6 +612,7 @@ Public Class frminjection
         stencilLifespan()
 
         squeegeemin()
+        scanCheck()
     End Sub
 
     ''' <summary>
@@ -599,7 +740,7 @@ Public Class frminjection
     Private Function ExamineScan(ByVal scanText As String) As String
         Dim res As String = ""
         Select Case txtscan.Text.Length
-            Case 7, 11, 12, 13, 14, 15
+            Case 7, 11, 12, 13, 14, 15, 16
                 res = "pcb"
             Case = 9
                 res = "panel"
@@ -682,7 +823,7 @@ Public Class frminjection
         Return res
     End Function
 
-    Private Sub SetPCB(ByVal leadpcb As String, Optional ByVal pcb2 As String = "", Optional ByVal pcb3 As String = "", Optional ByVal pcb4 As String = "", Optional ByVal pcb5 As String = "", Optional ByVal pcb6 As String = "")
+    Private Sub SetPCB(ByVal leadpcb As String, Optional ByVal pcb2 As String = "", Optional ByVal pcb3 As String = "", Optional ByVal pcb4 As String = "", Optional ByVal pcb5 As String = "", Optional ByVal pcb6 As String = "", Optional ByVal pcb7 As String = "", Optional ByVal pcb8 As String = "")
         Try
             Dim cmd As New MySqlCommand
             cmd.Connection = conn
@@ -690,65 +831,106 @@ Public Class frminjection
                 If sideRequirement = "single" Then
 
                     cmd.CommandText = "INSERT 
-                    INTO gi_pcbtrace(pcbid, modelmatrixid, panel_bottom, panelpcbid_bottom, line_bottom, processtoken, injectiontimestamp_bottom, injectionoperator_bottom) 
+                    INTO gi_pcbtrace(pcbid, modelmatrixid,creamid_bottom,stencilid_bottom,squeegeeidfront_bottom,squeegeeidrear_bottom, panel_bottom, panelpcbid_bottom, line_bottom, processtoken, injectiontimestamp_bottom, injectionoperator_bottom) 
                     VALUES
-                        ('" & leadpcb & "', '" & modelMatrixID & "' , '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                        ('" & leadpcb & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
                     If upp >= 2 Then
-                        cmd.CommandText = cmd.CommandText & ", ('" & pcb2 & "', '" & modelMatrixID & "' , '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                        cmd.CommandText = cmd.CommandText & ", ('" & pcb2 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "' , '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
                     End If
 
                     If upp >= 3 Then
-                        cmd.CommandText = cmd.CommandText & ", ('" & pcb3 & "', '" & modelMatrixID & "' , '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                        cmd.CommandText = cmd.CommandText & ", ('" & pcb3 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "' , '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
                     End If
 
                     If upp >= 4 Then
 
-                        cmd.CommandText = cmd.CommandText & ", ('" & pcb4 & "', '" & modelMatrixID & "', '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                        cmd.CommandText = cmd.CommandText & ", ('" & pcb4 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
                     End If
                     If upp >= 5 Then
-                        cmd.CommandText = cmd.CommandText & ",('" & pcb5 & "', '" & modelMatrixID & "', '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                        cmd.CommandText = cmd.CommandText & ",('" & pcb5 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
                     End If
 
                     If upp >= 6 Then
-                        cmd.CommandText = cmd.CommandText & ", ('" & pcb6 & "', '" & modelMatrixID & "', '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                        cmd.CommandText = cmd.CommandText & ", ('" & pcb6 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
                     End If
+
+                    If upp >= 7 Then
+                        cmd.CommandText = cmd.CommandText & ", ('" & pcb7 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                    End If
+
+                    If upp >= 8 Then
+                        cmd.CommandText = cmd.CommandText & ", ('" & pcb8 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                    End If
+
+
                 Else
                     cmd.CommandText = "INSERT 
-                    INTO gi_pcbtrace(pcbid, modelmatrixid, panel_bottom,panel_top, panelpcbid_bottom,panelpcbid_top, line_bottom, processtoken, injectiontimestamp_bottom, injectionoperator_bottom) 
+                    INTO gi_pcbtrace(pcbid, modelmatrixid,creamid_bottom,stencilid_bottom,squeegeeidfront_bottom,squeegeeidrear_bottom, panel_bottom,panel_top, panelpcbid_bottom,panelpcbid_top, line_bottom, processtoken, injectiontimestamp_bottom, injectionoperator_bottom) 
                     VALUES
-                        ('" & leadpcb & "', '" & modelMatrixID & "' , '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'),'" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                        ('" & leadpcb & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "' , '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'),'" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
 
                     If upp >= 2 Then
-                        cmd.CommandText = cmd.CommandText & ", ('" & pcb2 & "', '" & modelMatrixID & "' , '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'),CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                        cmd.CommandText = cmd.CommandText & ", ('" & pcb2 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "' , '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'),CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
                     End If
 
                     If upp >= 3 Then
-                        cmd.CommandText = cmd.CommandText & ", ('" & pcb3 & "', '" & modelMatrixID & "' , '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'),CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                        cmd.CommandText = cmd.CommandText & ", ('" & pcb3 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "' , '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'),CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
                     End If
 
                     If upp >= 4 Then
 
-                        cmd.CommandText = cmd.CommandText & ",('" & pcb4 & "', '" & modelMatrixID & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                        cmd.CommandText = cmd.CommandText & ",('" & pcb4 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
                     End If
 
                     If upp >= 5 Then
 
-                        cmd.CommandText = cmd.CommandText & ",('" & pcb5 & "', '" & modelMatrixID & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                        cmd.CommandText = cmd.CommandText & ",('" & pcb5 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
                     End If
 
                     If upp >= 6 Then
-                        cmd.CommandText = cmd.CommandText & ",('" & pcb6 & "', '" & modelMatrixID & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                        cmd.CommandText = cmd.CommandText & ",('" & pcb6 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                    End If
+
+                    If upp >= 7 Then
+                        cmd.CommandText = cmd.CommandText & ",('" & pcb7 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                    End If
+
+                    If upp >= 8 Then
+                        cmd.CommandText = cmd.CommandText & ",('" & pcb8 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
                     End If
                 End If
 
             Else
                 cmd.CommandText = "UPDATE gi_pcbtrace SET panel_top = '" & lblPanelTop.Text & "' , panelpcbid_top = CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "') ,line_top = '" & lblline.Text & "', processtoken = 'injection_top',
-                                    injectiontimestamp_top = NOW(), injectionoperator_top = '" & lblname.Text & "' WHERE pcbid = '" & leadpcb & "' OR pcbid = '" & pcb2 & "' OR pcbid = '" & pcb3 & "' OR pcbid = '" & pcb4 & "' OR pcbid = '" & pcb5 & "' OR pcbid = '" & pcb6 & "'"
+                                    injectiontimestamp_top = NOW(), injectionoperator_top = '" & lblname.Text & "',stencilid_top = '" & lblStencil.Text & "',squeegeeidfront_top = '" & lblSqueegeeFront.Text & "',squeegeeidrear_top = '" & lblSqueegeeRear.Text & "',creamid_top = '" & lblCreamSolder.Text & "' WHERE pcbid = '" & leadpcb & "' OR pcbid = '" & pcb2 & "' OR pcbid = '" & pcb3 & "' OR pcbid = '" & pcb4 & "' OR pcbid = '" & pcb5 & "' OR pcbid = '" & pcb6 & "'  OR pcbid = '" & pcb7 & "'  OR pcbid = '" & pcb8 & "'"
             End If
             cmd.ExecuteNonQuery()
 
+            If lblPO.Text <> "" Then
+                If upp = 1 Then
+                    cmd.CommandText = "INSERT INTO `sap_pcb_prod_order` (`pcbid`, `prod_order`)VALUES ('" & leadpcb + MSGs & "','" & lblPO.Text & "') ON DUPLICATE KEY UPDATE `pcbid` = `pcbid`"
+                ElseIf upp = 2 Then
+                    cmd.CommandText = "INSERT INTO `sap_pcb_prod_order` (`pcbid`, `prod_order`)VALUES ('" & leadpcb + MSGs & "','" & lblPO.Text & "'),('" & pcb2 + MSGs & "','" & lblPO.Text & "') ON DUPLICATE KEY UPDATE `pcbid` = `pcbid`"
+                ElseIf upp = 3 Then
+                    cmd.CommandText = "INSERT INTO `sap_pcb_prod_order` (`pcbid`, `prod_order`)VALUES ('" & leadpcb + MSGs & "','" & lblPO.Text & "'),('" & pcb2 + MSGs & "','" & lblPO.Text & "'),('" & pcb3 + MSGs & "','" & lblPO.Text & "') ON DUPLICATE KEY UPDATE `pcbid` = `pcbid`"
+                ElseIf upp = 4 Then
+                    cmd.CommandText = "INSERT INTO `sap_pcb_prod_order` (`pcbid`, `prod_order`)VALUES ('" & leadpcb + MSGs & "','" & lblPO.Text & "'),('" & pcb2 + MSGs & "','" & lblPO.Text & "'),('" & pcb3 + MSGs & "','" & lblPO.Text & "'),('" & pcb4 + MSGs & "','" & lblPO.Text & "') ON DUPLICATE KEY UPDATE `pcbid` = `pcbid`"
+                ElseIf upp = 5 Then
+                    cmd.CommandText = "INSERT INTO `sap_pcb_prod_order` (`pcbid`, `prod_order`)VALUES ('" & leadpcb + MSGs & "','" & lblPO.Text & "'),('" & pcb2 + MSGs & "','" & lblPO.Text & "'),('" & pcb3 + MSGs & "','" & lblPO.Text & "'),('" & pcb4 + MSGs & "','" & lblPO.Text & "'),('" & pcb5 + MSGs & "','" & lblPO.Text & "') ON DUPLICATE KEY UPDATE `pcbid` = `pcbid`"
+                ElseIf upp = 6 Then
+                    cmd.CommandText = "INSERT INTO `sap_pcb_prod_order` (`pcbid`, `prod_order`)VALUES ('" & leadpcb + MSGs & "','" & lblPO.Text & "'),('" & pcb2 + MSGs & "','" & lblPO.Text & "'),('" & pcb3 + MSGs & "','" & lblPO.Text & "'),('" & pcb4 + MSGs & "','" & lblPO.Text & "'),('" & pcb5 + MSGs & "','" & lblPO.Text & "'),('" & pcb6 + MSGs & "','" & lblPO.Text & "') ON DUPLICATE KEY UPDATE `pcbid` = `pcbid`"
+                ElseIf upp = 7 Then
+                    cmd.CommandText = "INSERT INTO `sap_pcb_prod_order` (`pcbid`, `prod_order`)VALUES ('" & leadpcb + MSGs & "','" & lblPO.Text & "'),('" & pcb2 + MSGs & "','" & lblPO.Text & "'),('" & pcb3 + MSGs & "','" & lblPO.Text & "'),('" & pcb4 + MSGs & "','" & lblPO.Text & "'),('" & pcb5 + MSGs & "','" & lblPO.Text & "'),('" & pcb6 + MSGs & "','" & lblPO.Text & "'),('" & pcb7 + MSGs & "','" & lblPO.Text & "') ON DUPLICATE KEY UPDATE `pcbid` = `pcbid`"
+                ElseIf upp = 8 Then
+                    cmd.CommandText = "INSERT INTO `sap_pcb_prod_order` (`pcbid`, `prod_order`)VALUES ('" & leadpcb + MSGs & "','" & lblPO.Text & "'),('" & pcb2 + MSGs & "','" & lblPO.Text & "'),('" & pcb3 + MSGs & "','" & lblPO.Text & "'),('" & pcb4 + MSGs & "','" & lblPO.Text & "'),('" & pcb5 + MSGs & "','" & lblPO.Text & "'),('" & pcb6 + MSGs & "','" & lblPO.Text & "'),('" & pcb7 + MSGs & "','" & lblPO.Text & "'),('" & pcb8 + MSGs & "','" & lblPO.Text & "') ON DUPLICATE KEY UPDATE `pcbid` = `pcbid`"
+                End If
+                cmd.ExecuteNonQuery()
+            End If
+
+
+
             If palletRequirement = "pallet" Then
-                cmd.CommandText = "UPDATE gi_palletinfo set leadpcbid = '" & leadpcb & "',pcb2 = '" & pcb2 & "',pcb3 = '" & pcb3 & "',pcb4= '" & pcb4 & "',pcb5= '" & pcb5 & "',pcb6= '" & pcb6 & "',scantoken = 'injection_" & side & "'  WHERE palletid = '" & lblPanel.Text & "'"
+                cmd.CommandText = "UPDATE gi_palletinfo set leadpcbid = '" & leadpcb & "',pcb2 = '" & pcb2 & "',pcb3 = '" & pcb3 & "',pcb4= '" & pcb4 & "',pcb5= '" & pcb5 & "',pcb6= '" & pcb6 & "',pcb7= '" & pcb7 & "',pcb8= '" & pcb8 & "',scantoken = 'injection_" & side & "'  WHERE palletid = '" & lblPanel.Text & "'"
                 cmd.ExecuteNonQuery()
             End If
         Catch ex As Exception
@@ -940,8 +1122,6 @@ Public Class frminjection
 
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
         txtscan.Focus()
-
-        stencilLifespan()
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
@@ -976,55 +1156,61 @@ Public Class frminjection
                 txtscan.Enabled = False
             End If
 
-            If Val(lblSqueegeeLifespan.Text) >= 5000 Then
-                lblSqueegeeLifespan.BackColor = Color.ForestGreen
-                lblSqueegeeLifespan.ForeColor = Color.White
-            ElseIf Val(lblSqueegeeLifespan.Text) < 5000 And Val(lblSqueegeeLifespan.Text) > 0 Then
-                lblSqueegeeLifespan.BackColor = Color.Yellow
-                lblSqueegeeLifespan.ForeColor = Color.Black
-            ElseIf Val(lblSqueegeeLifespan.Text) < 1 Then
-                lblSqueegeeLifespan.BackColor = Color.Red
-                lblSqueegeeLifespan.ForeColor = Color.White
-                txtscan.Enabled = False
-            Else
-                lblSqueegeeLifespan.BackColor = Color.Gray
-                txtscan.Enabled = False
-            End If
-
-            If lblModel.Text = "" Or lblCodeAllocation.Text = "" Or lblStencil.Text = "" Or lblSqueegeeFront.Text = "" Or lblSqueegeeRear.Text = "" Or lblSqueegeeFront.Text = "" Or lblSqueegeeRear.Text = "" Then
+            If lblModel.Text = "" Or lblCodeAllocation.Text = "" Or lblStencilLifespan.Text = "" Or lblCreamSolder.Text = "" Or lblStencil.Text = "" Or lblSqueegeeFront.Text = "" Or lblSqueegeeRear.Text = "" Or Val(lblCSMin.Text) < 1 Or Val(lblStencilCleaning.Text) < 1 Or Val(lblSqueegeeMin.Text) < 1 Then
                 txtscan.Enabled = False
             Else
                 Dim stencilCODE As String
                 Dim commonPET As String
+                Dim StencilSide As String
                 Dim cmd As New MySqlCommand
                 cmd.Connection = conn
                 Dim countS, countsF, countsR As Integer
 
-                cmd.CommandText = "SELECT (90000 - (COUNT(stencilid_" & side & ")/" & upp & ")) FROM gi_pcbtrace WHERE stencilid_" & side & " = '" & lblStencil.Text & "'"
-                countS = cmd.ExecuteScalar
-                lblStencilLifespan.Text = countS
-                cmd.CommandText = "SELECT (60000 - (COUNT(pcbid)/" & Val(upp * 2) & ")) FROM gi_pcbtrace WHERE squeegeeidfront_bottom = '" & lblSqueegeeFront.Text & "' or squeegeeidfront_top = '" & lblSqueegeeFront.Text & "'"
+                StencilSide = lblStencil.Text.Substring(lblStencil.Text.LastIndexOf("-") - 1, 1)
+
+                'cmd.CommandText = "SELECT (90000 - (COUNT(stencilid_" & side & ")/" & upp & ")) FROM gi_pcbtrace WHERE stencilid_" & side & " = '" & lblStencil.Text & "'"
+                'countS = cmd.ExecuteScalar
+                'lblStencilLifespan.Text = countS
+                cmd.CommandText = "SELECT IFNULL(ROUND((60000 - SUM(`total`)),0),'60000') FROM (SELECT (COUNT(*) / upp) AS `total` FROM gi_pcbtrace a LEFT JOIN gi_modelmatrix b ON a.modelmatrixid = b.modelmatrixid WHERE squeegeeidfront_bottom = '" & lblSqueegeeFront.Text & "' OR squeegeeidfront_top = '" & lblSqueegeeFront.Text & "' group by model) t"
                 countsF = cmd.ExecuteScalar
                 'MsgBox(cmd.CommandText)
                 lblSqueegeeLifespan.Text = countsF
-                cmd.CommandText = "SELECT (60000 - (COUNT(pcbid)/" & Val(upp * 2) & ")) FROM gi_pcbtrace WHERE squeegeeidfront_bottom = '" & lblSqueegeeRear.Text & "' or squeegeeidfront_top = '" & lblSqueegeeRear.Text & "'"
+                cmd.CommandText = "SELECT IFNULL(ROUND((60000 - SUM(`total`)),0),'60000') FROM (SELECT (COUNT(*) / upp) AS `total` FROM gi_pcbtrace a LEFT JOIN gi_modelmatrix b ON a.modelmatrixid = b.modelmatrixid WHERE squeegeeidrear_bottom = '" & lblSqueegeeRear.Text & "' OR squeegeeidrear_top = '" & lblSqueegeeRear.Text & "' group by model) t"
                 countsR = cmd.ExecuteScalar
 
 
                 stencilCODE = lblStencil.Text.Substring(3).Substring(0, lblStencil.Text.Substring(3).IndexOf("-"))
-                cmd.CommandText = "SELECT model FROM gi_modelmatrix WHERE model = '" & stencilCODE & "'"
+                cmd.CommandText = "SELECT family_name FROM gi_modelmatrix WHERE modelmatrixid = '" & modelMatrixID & "'"
                 commonPET = cmd.ExecuteScalar.ToString()
 
-
-                If (countS > 0) And (countsF > 0) And (countsR > 0) And (lblModel.Text = commonPET) Then
-                    txtscan.Enabled = True
+                If Val(lblSqueegeeLifespan.Text) >= 5000 Then
+                    lblSqueegeeLifespan.BackColor = Color.ForestGreen
+                    lblSqueegeeLifespan.ForeColor = Color.White
+                ElseIf Val(lblSqueegeeLifespan.Text) < 5000 And Val(lblSqueegeeLifespan.Text) > 0 Then
+                    lblSqueegeeLifespan.BackColor = Color.Yellow
+                    lblSqueegeeLifespan.ForeColor = Color.Black
+                ElseIf Val(lblSqueegeeLifespan.Text) < 1 Then
+                    lblSqueegeeLifespan.BackColor = Color.Red
+                    lblSqueegeeLifespan.ForeColor = Color.White
+                    txtscan.Enabled = False
                 Else
-                    If countS < 1 Then
+                    lblSqueegeeLifespan.BackColor = Color.Gray
+                    txtscan.Enabled = False
+                End If
+                'MsgBox(stencilCODE & "<>" & commonPET)
+                If (Val(lblStencilLifespan.Text) > 0) And (countsF > 0) And (countsR > 0) And (stencilCODE = commonPET) And (StencilSide = side.Substring(0, 1).ToUpper) Then
+                    txtscan.Enabled = True
+                    txtscan.Focus()
+                Else
+                    If Val(lblStencilLifespan.Text) < 1 Then
                         MsgBox("Stencil no remaining lifespan. Please replace immediately.")
                     ElseIf countsF < 1 Or countsR < 1 Then
                         MsgBox("Squeegee blades no remaining lifespan. Please replace immediately.")
-                    ElseIf lblModel.Text <> commonPET Then
+                    ElseIf stencilCODE <> commonPET Then
                         MsgBox("Wrong Stencil Assigned")
+                    ElseIf StencilSide <> side.Substring(0, 1).ToUpper Then
+                        'MsgBox(StencilSide + " <> " + side.Substring(0, 1))
+                        MsgBox("Wrong Side of Stencil Assigned")
                     End If
                     txtscan.Enabled = False
                 End If
@@ -1068,17 +1254,36 @@ Public Class frminjection
         frmStencilManager.Hide()
     End Sub
 
+    Private Sub btnCreamSolder_Click(sender As Object, e As EventArgs) Handles btnCreamSolder.Click
+        frmcreamsolder.Show()
+        frmcreamsolder.txtline.Text = lblline.Text
+        Me.Enabled = False
+    End Sub
+
     Private Sub stencilLifespan()
         Try
             Dim cmd As New MySqlCommand
+            Dim ModelCode, pcbupp As String
             cmd.Connection = conn
+            If lblStencil.Text <> "" Then
+                ModelCode = ""
+                ModelCode = lblStencil.Text.Substring(3).Substring(0, lblStencil.Text.Substring(3).IndexOf("-"))
 
-            cmd.CommandText = "UPDATE `gi_stencil_lifespan` SET `lifespan`= (SELECT FLOOR(90000 - (SUM(`count`) / " & upp & ")) AS `lifespan` FROM (SELECT COUNT(`pcbid`) AS `count` FROM `gi_pcbtrace` WHERE `stencilid_bottom` = '" & lblStencil.Text & "' UNION ALL
+                If ModelCode <> "" Then
+                    cmd.CommandText = "SELECT `upp` FROM gi_modelmatrix WHERE family_name = '" & ModelCode & "'"
+                    pcbupp = cmd.ExecuteScalar
+
+                    cmd.CommandText = "UPDATE `gi_stencil_lifespan` SET `lifespan`= (SELECT FLOOR(90000 - (SUM(`count`) / " & pcbupp & ")) AS `lifespan` FROM (SELECT COUNT(`pcbid`) AS `count` FROM `gi_pcbtrace` WHERE `stencilid_bottom` = '" & lblStencil.Text & "' UNION ALL
                                 SELECT COUNT(`pcbid`) AS `count` FROM `gi_pcbtrace` WHERE `stencilid_top` = '" & lblStencil.Text & "') `a`) WHERE `stencilid` = '" & lblStencil.Text & "'"
-            cmd.ExecuteNonQuery()
+                    cmd.ExecuteNonQuery()
 
-            cmd.CommandText = "SELECT `lifespan` FROM `gi_stencil_lifespan` WHERE `stencilid` = '" & lblStencil.Text & "'"
-            lblStencilLifespan.Text = cmd.ExecuteScalar
+                    cmd.CommandText = "SELECT `lifespan` FROM `gi_stencil_lifespan` WHERE `stencilid` = '" & lblStencil.Text & "'"
+
+                    lblStencilLifespan.Text = cmd.ExecuteScalar
+                End If
+            Else
+                lblStencilLifespan.Text = ""
+            End If
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try
@@ -1104,11 +1309,11 @@ Public Class frminjection
             ElseIf Val(lblStencilCleaning.Text) < 31 Then
                 lblStencilCleaning.BackColor = Color.Red
                 lblStencilCleaning.ForeColor = Color.White
-                'txtscan.Enabled = False
+                txtscan.Enabled = False
             Else
                 lblStencilCleaning.BackColor = Color.Gray
                 lblStencilCleaning.ForeColor = Color.Black
-                'txtscan.Enabled = False
+                txtscan.Enabled = False
             End If
         Catch ex As Exception
             MsgBox(ex.ToString)
@@ -1175,7 +1380,7 @@ Public Class frminjection
         Dim wD As Integer
         Try
             If lblCSMin.Text <> "" And lblCSMin.Text <> "N/A" Then
-                cmd.CommandText = "SELECT TIMESTAMPDIFF(MINUTE, `opendatetime`, NOW()) FROM gi_creamsolder WHERE creamid = '" & lblCreamSolder.Text & "'"
+                cmd.CommandText = "SELECT IFNULL(TIMESTAMPDIFF(MINUTE, `opendatetime`, NOW()),480) FROM gi_creamsolder WHERE creamid = '" & lblCreamSolder.Text & "'"
                 wD = cmd.ExecuteScalar.ToString()
 
                 lblCSMin.Text = 480 - wD
@@ -1184,17 +1389,17 @@ Public Class frminjection
                     lblCSMin.BackColor = Color.Red
                     lblCSMin.ForeColor = Color.White
                     MsgBox("Cream Solder reached floor life limit. Please dispose immediately")
-                    'txtscan.Enabled = False
+                    txtscan.Enabled = False
                 ElseIf lblCSMin.Text = "N/A" Then
                     lblCSMin.ForeColor = Color.Black
                     lblCSMin.BackColor = Color.White
-                    'txtscan.Enabled = False
+                    txtscan.Enabled = False
                 Else
                     lblCSMin.BackColor = Color.ForestGreen
                     lblCSMin.ForeColor = Color.White
                 End If
             Else
-                'txtscan.Enabled = False
+                txtscan.Enabled = False
             End If
 
         Catch ex As Exception
@@ -1219,7 +1424,6 @@ Public Class frminjection
             writeLogs(ex.ToString)
         End Try
     End Sub
-
 
     Public Sub bladeissuance()
         Try

@@ -30,7 +30,6 @@ Partial Class frmFVI
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.tblPnlMain = New System.Windows.Forms.TableLayoutPanel()
         Me.lblcountgood = New System.Windows.Forms.Label()
         Me.TableLayoutPanel8 = New System.Windows.Forms.TableLayoutPanel()
@@ -42,9 +41,8 @@ Partial Class frmFVI
         Me.txtScan = New System.Windows.Forms.TextBox()
         Me.lblScan = New System.Windows.Forms.Label()
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
-        Me.cbxPartNumber = New System.Windows.Forms.ComboBox()
-        Me.lblPartNumber = New System.Windows.Forms.Label()
-        Me.cbxFamily = New System.Windows.Forms.ComboBox()
+        Me.cbxBU = New System.Windows.Forms.ComboBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.tblPnlDefect = New System.Windows.Forms.TableLayoutPanel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cmbdefectname = New System.Windows.Forms.ComboBox()
@@ -56,9 +54,6 @@ Partial Class frmFVI
         Me.btnSet = New System.Windows.Forms.Button()
         Me.cbxModel = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.cbxProductNumber = New System.Windows.Forms.ComboBox()
-        Me.lblProductNumber = New System.Windows.Forms.Label()
-        Me.lblFamily = New System.Windows.Forms.Label()
         Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblname = New System.Windows.Forms.Label()
@@ -67,11 +62,11 @@ Partial Class frmFVI
         Me.lblDT = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.lblline = New System.Windows.Forms.Label()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.lblAssemblyVersion = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
-        Me.TableLayoutPanel2.SuspendLayout()
         Me.tblPnlMain.SuspendLayout()
         Me.TableLayoutPanel8.SuspendLayout()
         CType(Me.dgpcb, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -80,6 +75,7 @@ Partial Class frmFVI
         Me.tblPnlDefect.SuspendLayout()
         Me.TableLayoutPanel4.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel3.SuspendLayout()
         Me.SuspendLayout()
@@ -123,23 +119,6 @@ Partial Class frmFVI
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1370, 749)
         Me.TableLayoutPanel1.TabIndex = 95
-        '
-        'TableLayoutPanel2
-        '
-        Me.TableLayoutPanel2.ColumnCount = 3
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 470.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 398.0!))
-        Me.TableLayoutPanel2.Controls.Add(Me.PictureBox2, 0, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel3, 2, 0)
-        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(15, 15)
-        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(0)
-        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
-        Me.TableLayoutPanel2.RowCount = 1
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1340, 119)
-        Me.TableLayoutPanel2.TabIndex = 0
         '
         'tblPnlMain
         '
@@ -332,20 +311,16 @@ Partial Class frmFVI
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.0!))
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109.0!))
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.0!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 11.0!))
-        Me.TableLayoutPanel5.Controls.Add(Me.cbxPartNumber, 4, 2)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblPartNumber, 3, 2)
-        Me.TableLayoutPanel5.Controls.Add(Me.cbxFamily, 2, 2)
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 14.0!))
+        Me.TableLayoutPanel5.Controls.Add(Me.cbxBU, 1, 1)
+        Me.TableLayoutPanel5.Controls.Add(Me.Label6, 1, 1)
         Me.TableLayoutPanel5.Controls.Add(Me.tblPnlDefect, 8, 0)
         Me.TableLayoutPanel5.Controls.Add(Me.btnlogout, 10, 2)
         Me.TableLayoutPanel5.Controls.Add(Me.lblCodeDesignation, 5, 1)
         Me.TableLayoutPanel5.Controls.Add(Me.lblCodeAllocation, 6, 1)
         Me.TableLayoutPanel5.Controls.Add(Me.btnSet, 6, 2)
-        Me.TableLayoutPanel5.Controls.Add(Me.cbxModel, 2, 1)
-        Me.TableLayoutPanel5.Controls.Add(Me.Label2, 1, 1)
-        Me.TableLayoutPanel5.Controls.Add(Me.cbxProductNumber, 4, 1)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblProductNumber, 3, 1)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblFamily, 1, 2)
+        Me.TableLayoutPanel5.Controls.Add(Me.cbxModel, 2, 2)
+        Me.TableLayoutPanel5.Controls.Add(Me.Label2, 1, 2)
         Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel5.Location = New System.Drawing.Point(15, 193)
         Me.TableLayoutPanel5.Margin = New System.Windows.Forms.Padding(0)
@@ -358,47 +333,34 @@ Partial Class frmFVI
         Me.TableLayoutPanel5.Size = New System.Drawing.Size(1340, 110)
         Me.TableLayoutPanel5.TabIndex = 97
         '
-        'cbxPartNumber
+        'cbxBU
         '
-        Me.cbxPartNumber.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.cbxPartNumber.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbxPartNumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbxPartNumber.FormattingEnabled = True
-        Me.cbxPartNumber.Location = New System.Drawing.Point(427, 60)
-        Me.cbxPartNumber.Margin = New System.Windows.Forms.Padding(3, 5, 3, 3)
-        Me.cbxPartNumber.Name = "cbxPartNumber"
-        Me.cbxPartNumber.Size = New System.Drawing.Size(146, 28)
-        Me.cbxPartNumber.TabIndex = 228
-        Me.cbxPartNumber.Visible = False
+        Me.cbxBU.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.cbxBU.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbxBU.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.cbxBU.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.cbxBU.FormattingEnabled = True
+        Me.cbxBU.Items.AddRange(New Object() {"GLOBAL_SKYWARE", "GLOBAL_INVACOM"})
+        Me.cbxBU.Location = New System.Drawing.Point(88, 20)
+        Me.cbxBU.Margin = New System.Windows.Forms.Padding(3, 5, 3, 3)
+        Me.cbxBU.Name = "cbxBU"
+        Me.cbxBU.Size = New System.Drawing.Size(194, 28)
+        Me.cbxBU.TabIndex = 224
         '
-        'lblPartNumber
+        'Label6
         '
-        Me.lblPartNumber.AutoSize = True
-        Me.lblPartNumber.BackColor = System.Drawing.Color.Transparent
-        Me.lblPartNumber.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblPartNumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPartNumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lblPartNumber.Location = New System.Drawing.Point(278, 55)
-        Me.lblPartNumber.Name = "lblPartNumber"
-        Me.lblPartNumber.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblPartNumber.Size = New System.Drawing.Size(143, 40)
-        Me.lblPartNumber.TabIndex = 227
-        Me.lblPartNumber.Text = "Part Number:"
-        Me.lblPartNumber.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.lblPartNumber.Visible = False
-        '
-        'cbxFamily
-        '
-        Me.cbxFamily.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.cbxFamily.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbxFamily.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbxFamily.FormattingEnabled = True
-        Me.cbxFamily.Location = New System.Drawing.Point(78, 60)
-        Me.cbxFamily.Margin = New System.Windows.Forms.Padding(3, 5, 3, 3)
-        Me.cbxFamily.Name = "cbxFamily"
-        Me.cbxFamily.Size = New System.Drawing.Size(194, 28)
-        Me.cbxFamily.TabIndex = 225
-        Me.cbxFamily.Visible = False
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Label6.Location = New System.Drawing.Point(20, 15)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(62, 40)
+        Me.Label6.TabIndex = 223
+        Me.Label6.Text = "BU: "
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'tblPnlDefect
         '
@@ -412,7 +374,7 @@ Partial Class frmFVI
         Me.tblPnlDefect.Controls.Add(Me.Label5, 1, 2)
         Me.tblPnlDefect.Controls.Add(Me.txtremarks, 2, 2)
         Me.tblPnlDefect.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tblPnlDefect.Location = New System.Drawing.Point(839, 10)
+        Me.tblPnlDefect.Location = New System.Drawing.Point(816, 10)
         Me.tblPnlDefect.Margin = New System.Windows.Forms.Padding(0, 10, 0, 10)
         Me.tblPnlDefect.Name = "tblPnlDefect"
         Me.tblPnlDefect.RowCount = 4
@@ -487,7 +449,7 @@ Partial Class frmFVI
         Me.btnlogout.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnlogout.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnlogout.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnlogout.Location = New System.Drawing.Point(1230, 57)
+        Me.btnlogout.Location = New System.Drawing.Point(1219, 57)
         Me.btnlogout.Margin = New System.Windows.Forms.Padding(3, 2, 3, 10)
         Me.btnlogout.Name = "btnlogout"
         Me.btnlogout.Size = New System.Drawing.Size(103, 28)
@@ -502,7 +464,7 @@ Partial Class frmFVI
         Me.lblCodeDesignation.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblCodeDesignation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCodeDesignation.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lblCodeDesignation.Location = New System.Drawing.Point(596, 15)
+        Me.lblCodeDesignation.Location = New System.Drawing.Point(457, 15)
         Me.lblCodeDesignation.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
         Me.lblCodeDesignation.Name = "lblCodeDesignation"
         Me.lblCodeDesignation.Size = New System.Drawing.Size(157, 40)
@@ -517,7 +479,7 @@ Partial Class frmFVI
         Me.lblCodeAllocation.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblCodeAllocation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.lblCodeAllocation.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lblCodeAllocation.Location = New System.Drawing.Point(759, 15)
+        Me.lblCodeAllocation.Location = New System.Drawing.Point(620, 15)
         Me.lblCodeAllocation.Name = "lblCodeAllocation"
         Me.lblCodeAllocation.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.lblCodeAllocation.Size = New System.Drawing.Size(192, 40)
@@ -528,7 +490,7 @@ Partial Class frmFVI
         '
         Me.btnSet.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnSet.Location = New System.Drawing.Point(761, 59)
+        Me.btnSet.Location = New System.Drawing.Point(622, 59)
         Me.btnSet.Margin = New System.Windows.Forms.Padding(5, 4, 5, 5)
         Me.btnSet.Name = "btnSet"
         Me.btnSet.Size = New System.Drawing.Size(140, 31)
@@ -543,7 +505,7 @@ Partial Class frmFVI
         Me.cbxModel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.cbxModel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.cbxModel.FormattingEnabled = True
-        Me.cbxModel.Location = New System.Drawing.Point(78, 20)
+        Me.cbxModel.Location = New System.Drawing.Point(88, 60)
         Me.cbxModel.Margin = New System.Windows.Forms.Padding(3, 5, 3, 3)
         Me.cbxModel.Name = "cbxModel"
         Me.cbxModel.Size = New System.Drawing.Size(194, 28)
@@ -556,58 +518,13 @@ Partial Class frmFVI
         Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(10, 15)
+        Me.Label2.Location = New System.Drawing.Point(20, 55)
         Me.Label2.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(62, 40)
         Me.Label2.TabIndex = 214
         Me.Label2.Text = "Model:"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'cbxProductNumber
-        '
-        Me.cbxProductNumber.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.cbxProductNumber.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbxProductNumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbxProductNumber.FormattingEnabled = True
-        Me.cbxProductNumber.Location = New System.Drawing.Point(427, 20)
-        Me.cbxProductNumber.Margin = New System.Windows.Forms.Padding(3, 5, 3, 3)
-        Me.cbxProductNumber.Name = "cbxProductNumber"
-        Me.cbxProductNumber.Size = New System.Drawing.Size(146, 28)
-        Me.cbxProductNumber.TabIndex = 226
-        Me.cbxProductNumber.Visible = False
-        '
-        'lblProductNumber
-        '
-        Me.lblProductNumber.AutoSize = True
-        Me.lblProductNumber.BackColor = System.Drawing.Color.Transparent
-        Me.lblProductNumber.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblProductNumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblProductNumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lblProductNumber.Location = New System.Drawing.Point(278, 15)
-        Me.lblProductNumber.Name = "lblProductNumber"
-        Me.lblProductNumber.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblProductNumber.Size = New System.Drawing.Size(143, 40)
-        Me.lblProductNumber.TabIndex = 224
-        Me.lblProductNumber.Text = "Product Number:"
-        Me.lblProductNumber.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.lblProductNumber.Visible = False
-        '
-        'lblFamily
-        '
-        Me.lblFamily.AutoSize = True
-        Me.lblFamily.BackColor = System.Drawing.Color.Transparent
-        Me.lblFamily.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblFamily.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFamily.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lblFamily.Location = New System.Drawing.Point(-7, 55)
-        Me.lblFamily.Name = "lblFamily"
-        Me.lblFamily.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblFamily.Size = New System.Drawing.Size(79, 40)
-        Me.lblFamily.TabIndex = 223
-        Me.lblFamily.Text = "Family:"
-        Me.lblFamily.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.lblFamily.Visible = False
         '
         'TableLayoutPanel4
         '
@@ -737,6 +654,23 @@ Partial Class frmFVI
         Me.lblline.Text = "..."
         Me.lblline.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'TableLayoutPanel2
+        '
+        Me.TableLayoutPanel2.ColumnCount = 3
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 470.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 398.0!))
+        Me.TableLayoutPanel2.Controls.Add(Me.PictureBox2, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel3, 2, 0)
+        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(15, 15)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(0)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 1
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1340, 119)
+        Me.TableLayoutPanel2.TabIndex = 0
+        '
         'PictureBox2
         '
         Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
@@ -791,7 +725,6 @@ Partial Class frmFVI
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FVI"
         Me.TableLayoutPanel1.ResumeLayout(False)
-        Me.TableLayoutPanel2.ResumeLayout(False)
         Me.tblPnlMain.ResumeLayout(False)
         Me.TableLayoutPanel8.ResumeLayout(False)
         CType(Me.dgpcb, System.ComponentModel.ISupportInitialize).EndInit()
@@ -804,6 +737,7 @@ Partial Class frmFVI
         Me.TableLayoutPanel4.ResumeLayout(False)
         Me.TableLayoutPanel4.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel2.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel3.PerformLayout()
@@ -848,10 +782,6 @@ Partial Class frmFVI
     Friend WithEvents lblCodeDesignation As Label
     Friend WithEvents lblCodeAllocation As Label
     Friend WithEvents btnSet As Button
-    Friend WithEvents lblFamily As Label
-    Friend WithEvents lblProductNumber As Label
-    Friend WithEvents cbxFamily As ComboBox
-    Friend WithEvents cbxProductNumber As ComboBox
-    Friend WithEvents lblPartNumber As Label
-    Friend WithEvents cbxPartNumber As ComboBox
+    Friend WithEvents cbxBU As ComboBox
+    Friend WithEvents Label6 As Label
 End Class

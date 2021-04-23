@@ -6,7 +6,53 @@ Imports System.Reflection
 
 Public Class frmlogin
     Public startMonth, startYear, assemblyVersion As String
+    Dim strIP As String
+
+    Private Sub GenerateEpsonShipment()
+        Try
+            Dim cmd As New MySqlCommand
+            Dim boxIDList As New DataTable
+            Dim myDA As New MySqlDataAdapter(cmd)
+            Dim myDT As New DataTable
+            cmd.Connection = conn
+
+            Dim logFileName As String
+
+            'cmd.CommandText = "INSERT INTO `epson_shipment_fvilot_list`(`fvi_packinglotnum`, `oba_good_count`, `timestamp`) SELECT `fvi_packinglotnum`, COUNT(`pcbid`), NOW() FROM `epson_pcbtrace` WHERE (`fvitimestamp` BETWEEN (NOW() - INTERVAL 1 MONTH) AND NOW()) AND (`obatimestamp` BETWEEN (NOW() - INTERVAL 2 WEEK) AND NOW()) AND `obastatus` = 'GOOD' GROUP BY `fvi_packinglotnum` HAVING `fvi_packinglotnum` <> '' ON DUPLICATE KEY UPDATE `fvi_packinglotnum` = `fvi_packinglotnum`"
+            'cmd.ExecuteNonQuery()
+
+            cmd.CommandText = "SELECT `fvi_packinglotnum` FROM `epson_shipment_fvilot_list` WHERE `generated` = 'NO'"
+
+            myDA.Fill(myDT)
+            For Each r As DataRow In myDT.Rows
+                Dim sourceDT As New DataTable
+                Dim model As String = ""
+
+                cmd.CommandText = "CALL eliteprototype.proc_shipment_lot_generate('" & r("fvi_packinglotnum").ToString() & "')"
+                myDA.Fill(sourceDT)
+
+                cmd.CommandText = "SELECT `b`.`model` FROM `epson_pcbtrace` `a` LEFT JOIN `epson_modelmatrix` `b` ON `a`.`modelmatrixid` = `b`.`modelmatrixid` WHERE `a`.`fvi_packinglotnum` = '" & r("fvi_packinglotnum").ToString() & "' GROUP BY `b`.`model`"
+                model = cmd.ExecuteScalar().ToString()
+
+                logFileName = model + "_" + r("fvi_packinglotnum").ToString() + "_" + Now.ToString("yyyyMMddHHmmss")
+
+                Using writer As StreamWriter = New StreamWriter("D:\epsonlogs\" & logFileName & ".csv")
+                    Rfc4180Writer.WriteDataTable(sourceDT, writer, True, False, True)
+                End Using
+
+                'File.Copy("E:\epsonlogs\TEMP TEST For Approval\" & logFileName, "E:\epsonlogs\TEST For Approval\" & logFileName & ".csv")
+                'writeLogs("EPSON Shipment outbound - " & logFileName & ".csv")
+
+                'cmd.CommandText = "UPDATE `epson_shipment_fvilot_list` SET `generated` = 'YES' WHERE `fvi_packinglotnum` = '" & r("fvi_packinglotnum").ToString() & "'"
+                'cmd.ExecuteNonQuery()
+            Next
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString())
+        End Try
+    End Sub
+
     Private Sub frmlogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         Try
             assemblyVersion = Assembly.GetExecutingAssembly.GetName.Version.ToString
             dbConnect()
@@ -25,19 +71,10 @@ Public Class frmlogin
             MsgBox(ex.ToString)
         End Try
 
-        Dim strIP As String
+
         strIP = GetIPAddress()
 
-        If strIP = "137.105.2.4" Then
-            cmbstation.Items.Add("MOUNTER FUJI - BOTTOM")
-            cmbstation.Items.Add("MOUNTER FUJI - TOP")
-        Else
-            cmbstation.Items.Add("MOUNTER PANASONIC - BOTTOM")
-            cmbstation.Items.Add("MOUNTER PANASONIC - TOP")
-            cmbstation.Items.Add("MOUNTER FUJI - BOTTOM")
-            cmbstation.Items.Add("MOUNTER FUJI - TOP")
-        End If
-
+        ' GenerateEpsonShipment()
         'writeLogs("ELITE Login", cmd.ExecuteScalar().ToString())
     End Sub
 
@@ -230,6 +267,17 @@ Public Class frmlogin
                         lbllevel.Text = ""
                         cmbstation.Text = ""
                         Hide()
+                    ElseIf cmbstation.Text = "CREAM SOLDER" Then
+                        cmd.CommandText = "SELECT empname FROM tbluser WHERE userid = '" & txtid.Text & "'"
+                        lblname.Text = cmd.ExecuteScalar
+                        frmcsmanager.txtuser.Text = lblname.Text
+                        frmcsmanager.Show()
+                        txtpass.Text = ""
+                        lblname.Text = ""
+                        cmbline.Text = ""
+                        cmbstation.Text = ""
+                        lbllevel.Text = ""
+                        Hide()
                     End If
 
                     writeLogs("Login Successful: " & txtid.Text)
@@ -289,7 +337,39 @@ Public Class frmlogin
     End Function
 
     Private Sub cmbstation_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbstation.SelectedIndexChanged
+        If cmbstation.Text = "CREAM SOLDER" Then
+            cmbline.Text = "OFFLINE"
+        End If
+        txtid.Text = ""
+        txtpass.Text = ""
+        lblname.Text = ""
+        lbllevel.Text = ""
         txtid.Focus()
+    End Sub
+
+    Private Sub cmbline_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbline.SelectedIndexChanged
+        cmbstation.Items.Clear()
+
+        If cmbline.Text = "OFFLINE" Then
+            cmbstation.Items.Add("CREAM SOLDER")
+        Else
+            cmbstation.Items.Add("INJECTION - BOTTOM")
+            cmbstation.Items.Add("INJECTION - TOP")
+            cmbstation.Items.Add("AOI - BOTTOM")
+            cmbstation.Items.Add("AOI - TOP")
+            cmbstation.Items.Add("FVI")
+            cmbstation.Items.Add("OBA")
+
+            If strIP = "137.105.2.4" Then
+                cmbstation.Items.Add("MOUNTER FUJI - BOTTOM")
+                cmbstation.Items.Add("MOUNTER FUJI - TOP")
+            Else
+                cmbstation.Items.Add("MOUNTER PANASONIC - BOTTOM")
+                cmbstation.Items.Add("MOUNTER PANASONIC - TOP")
+                cmbstation.Items.Add("MOUNTER FUJI - BOTTOM")
+                cmbstation.Items.Add("MOUNTER FUJI - TOP")
+            End If
+        End If
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick

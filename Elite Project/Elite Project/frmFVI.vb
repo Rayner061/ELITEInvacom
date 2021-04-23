@@ -5,6 +5,7 @@ Imports System.Linq
 
 Public Class frmFVI
     Dim side, modelMatrixID, customer As String
+    Dim SAPStatus As Boolean = False
     Private Sub Timer1_Tick_1(sender As Object, e As EventArgs) Handles Timer1.Tick
         If tblPnlDefect.BackColor = Color.Red Then
             tblPnlDefect.BackColor = Color.White
@@ -128,6 +129,13 @@ Public Class frmFVI
 
         cmd.CommandText = "INSERT INTO gi_fving(`pcbid`, `timestamp`, `judgement`, `defectname`, `remarks`, `operator`, `line`) VALUES ('" & txtScan.Text & "', NOW(), 'ng', '" & cmbdefectname.Text & "','" & txtremarks.Text & "', '" & lblname.Text & "', '" & lblline.Text & "')"
         cmd.ExecuteNonQuery()
+
+
+        If SAPStatus = True Then
+            cmd.CommandText = "UPDATE `sap_pcb_prod_order` SET `timestamp` = NOW() , `status` ='NG' WHERE `pcbid` = '" & txtScan.Text + "_ST" & "'"
+            cmd.ExecuteNonQuery()
+        End If
+
     End Sub
 
     Public Sub gridout()
@@ -206,18 +214,18 @@ Public Class frmFVI
                 writeLogs("SCAN: " & txtScan.Text)
                 Dim status As String = ""
                 If lblScan.Text = "SCAN PCB:" Then
-                    If customer = "gs" Then
-                        If side = "dual" Then
-                            cmd.CommandText = "SELECT COUNT(pcbid) FROM gi_pcbtrace WHERE pcbid = '" & txtScan.Text & "' AND processtoken = 'aoi_top' AND aoistatus_top = 'good'"
-                            status = "aoi_top"
-                        Else
-                            cmd.CommandText = "SELECT COUNT(pcbid) FROM gi_pcbtrace WHERE pcbid = '" & txtScan.Text & "' AND processtoken = 'aoi_bottom' AND aoistatus_bottom = 'good'"
-                            status = "aoi_bottom"
-                        End If
+                    'If customer = "gs" Then
+                    If side = "dual" Then
+                        cmd.CommandText = "SELECT COUNT(pcbid) FROM gi_pcbtrace WHERE pcbid = '" & txtScan.Text & "' AND processtoken = 'aoi_top' AND aoistatus_top = 'good'"
+                        status = "aoi_top"
                     Else
-                        cmd.CommandText = "SELECT COUNT(pcbid) FROM gi_pcbtrace WHERE pcbid = '" & txtScan.Text & "' AND processtoken = 'ic_programming' AND aoistatus_bottom = 'good'"
-                        status = "ic_programming"
+                        cmd.CommandText = "SELECT COUNT(pcbid) FROM gi_pcbtrace WHERE pcbid = '" & txtScan.Text & "' AND processtoken = 'aoi_bottom' AND aoistatus_bottom = 'good'"
+                        status = "aoi_bottom"
                     End If
+                    'Else
+                    '    cmd.CommandText = "SELECT COUNT(pcbid) FROM gi_pcbtrace WHERE pcbid = '" & txtScan.Text & "' AND processtoken = 'ic_programming' AND aoistatus_bottom = 'good'"
+                    '    status = "ic_programming"
+                    'End If
 
                     If cmd.ExecuteScalar = 1 Then
 
@@ -226,6 +234,13 @@ Public Class frmFVI
                                 cmd.CommandText = "UPDATE gi_pcbtrace SET processtoken = 'fvi', fvitimestamp = NOW(), fvioperator = '" & lblname.Text & "', fvistatus = 'good' 
                                         WHERE pcbid = '" & txtScan.Text & "' AND processtoken = '" & status & "'"
                                 cmd.ExecuteNonQuery()
+
+
+                                If SAPStatus = True Then
+                                    cmd.CommandText = "UPDATE `sap_pcb_prod_order` SET `timestamp` = NOW() , `status` ='GOOD' WHERE `pcbid` = '" & txtScan.Text + "_ST" & "'"
+                                    cmd.ExecuteNonQuery()
+                                End If
+
                             Case "wrongmodel"
                                 writeLogs("ERROR: Wrong model.")
                                 MsgBox("Wrong model!")
@@ -281,101 +296,148 @@ Public Class frmFVI
         txtScan.Enabled = True
     End Sub
 
-    Private Sub cbxModel_Click(sender As Object, e As EventArgs) Handles cbxModel.Click
-        Dim cmd As New MySqlCommand
-        Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
-        Dim myDT As New DataTable
-        cmd.Connection = conn
+    'Private Sub cbxModel_Click(sender As Object, e As EventArgs) Handles cbxModel.Click
+    '    Dim cmd As New MySqlCommand
+    '    Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+    '    Dim myDT As New DataTable
+    '    cmd.Connection = conn
 
-        cmd.CommandText = "SELECT DISTINCT model FROM gi_modelmatrix"
-        myDA.Fill(myDT)
+    '    cmd.CommandText = "SELECT DISTINCT model FROM gi_modelmatrix WHERE active_status = 'yes'"
+    '    myDA.Fill(myDT)
 
-        cbxModel.DataSource = myDT
-        cbxModel.DisplayMember = "model"
-        cbxModel.ValueMember = "model"
+    '    cbxModel.DataSource = myDT
+    '    cbxModel.DisplayMember = "model"
+    '    cbxModel.ValueMember = "model"
 
-        lblCodeAllocation.Text = ""
+    '    lblCodeAllocation.Text = ""
+    'End Sub
+
+    'Private Sub cbxFamily_Click(sender As Object, e As EventArgs)
+    '    Dim cmd As New MySqlCommand
+    '    Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+    '    Dim myDT As New DataTable
+    '    cmd.Connection = conn
+
+    '    cmd.CommandText = "SELECT DISTINCT `gs_family` FROM gi_modelmatrix WHERE `model` = '" & cbxModel.Text & "'"
+    '    myDA.Fill(myDT)
+
+    '    cbxFamily.DataSource = myDT
+    '    cbxFamily.DisplayMember = "gs_family"
+    '    cbxFamily.ValueMember = "gs_family"
+
+    '    lblCodeAllocation.Text = ""
+    '    cbxProductNumber.SelectedItem = Nothing
+    '    cbxPartNumber.SelectedItem = Nothing
+    'End Sub
+
+    'Private Sub cbxProductNumber_Click(sender As Object, e As EventArgs)
+    '    Dim cmd As New MySqlCommand
+    '    Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+    '    Dim myDT As New DataTable
+    '    cmd.Connection = conn
+
+    '    cmd.CommandText = "SELECT DISTINCT `gs_product_number` FROM gi_modelmatrix WHERE `model` = '" & cbxModel.Text & "' AND `gs_family` = '" & cbxFamily.Text & "'"
+    '    myDA.Fill(myDT)
+
+    '    cbxProductNumber.DataSource = myDT
+    '    cbxProductNumber.DisplayMember = "gs_product_number"
+    '    cbxProductNumber.ValueMember = "gs_product_number"
+
+    '    lblCodeAllocation.Text = ""
+    '    cbxPartNumber.SelectedItem = Nothing
+    'End Sub
+
+    'Private Sub cbxPartNumber_Click(sender As Object, e As EventArgs)
+    '    Dim cmd As New MySqlCommand
+    '    Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+    '    Dim myDT As New DataTable
+    '    cmd.Connection = conn
+
+    '    cmd.CommandText = "SELECT DISTINCT `gs_part_number` FROM gi_modelmatrix WHERE `model` = '" & cbxModel.Text & "' AND `gs_family` = '" & cbxFamily.Text & "' AND `gs_product_number` = '" & cbxProductNumber.Text & "'"
+    '    myDA.Fill(myDT)
+
+    '    cbxPartNumber.DataSource = myDT
+    '    cbxPartNumber.DisplayMember = "gs_part_number"
+    '    cbxPartNumber.ValueMember = "gs_part_number"
+
+    '    lblCodeAllocation.Text = ""
+    'End Sub
+
+    Private Sub cbxBU_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbxBU.SelectedIndexChanged
+        cbxModel.SelectedIndex = -1
     End Sub
 
-    Private Sub cbxFamily_Click(sender As Object, e As EventArgs) Handles cbxFamily.Click
+    Private Sub cbxModel_DropDown(sender As Object, e As EventArgs) Handles cbxModel.DropDown
         Dim cmd As New MySqlCommand
         Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
         Dim myDT As New DataTable
+        Dim customer As String = ""
         cmd.Connection = conn
 
-        cmd.CommandText = "SELECT DISTINCT `gs_family` FROM gi_modelmatrix WHERE `model` = '" & cbxModel.Text & "'"
+        If cbxBU.Text = "GLOBAL_SKYWARE" Then
+            customer = "gs"
+            cmd.CommandText = "SELECT count(*) as `status` FROM `settings` where `name`='elite_gs_sap_enable' and `value`='yes'"
+            If cmd.ExecuteScalar = "1" Then
+                SAPStatus = True
+            End If
+        ElseIf cbxBU.Text = "GLOBAL_INVACOM" Then
+            customer = "gi"
+            cmd.CommandText = "SELECT count(*) as `status` FROM `settings` where `name`='elite_gi_sap_enable' and `value`='yes'"
+            If cmd.ExecuteScalar = "1" Then
+                SAPStatus = True
+            End If
+        End If
+
+        cmd.CommandText = "SELECT DISTINCT model FROM gi_modelmatrix WHERE active_status = 'yes' AND customer ='" & customer & "'"
         myDA.Fill(myDT)
+        cbxModel.Items.Clear()
 
-        cbxFamily.DataSource = myDT
-        cbxFamily.DisplayMember = "gs_family"
-        cbxFamily.ValueMember = "gs_family"
+        For Each i As DataRow In myDT.Rows
+            cbxModel.Items.Add(i.Item(0).ToString)
+        Next
 
-        lblCodeAllocation.Text = ""
-        cbxProductNumber.SelectedItem = Nothing
-        cbxPartNumber.SelectedItem = Nothing
-    End Sub
-
-    Private Sub cbxProductNumber_Click(sender As Object, e As EventArgs) Handles cbxProductNumber.Click
-        Dim cmd As New MySqlCommand
-        Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
-        Dim myDT As New DataTable
-        cmd.Connection = conn
-
-        cmd.CommandText = "SELECT DISTINCT `gs_product_number` FROM gi_modelmatrix WHERE `model` = '" & cbxModel.Text & "' AND `gs_family` = '" & cbxFamily.Text & "'"
-        myDA.Fill(myDT)
-
-        cbxProductNumber.DataSource = myDT
-        cbxProductNumber.DisplayMember = "gs_product_number"
-        cbxProductNumber.ValueMember = "gs_product_number"
-
-        lblCodeAllocation.Text = ""
-        cbxPartNumber.SelectedItem = Nothing
-    End Sub
-
-    Private Sub cbxPartNumber_Click(sender As Object, e As EventArgs) Handles cbxPartNumber.Click
-        Dim cmd As New MySqlCommand
-        Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
-        Dim myDT As New DataTable
-        cmd.Connection = conn
-
-        cmd.CommandText = "SELECT DISTINCT `gs_part_number` FROM gi_modelmatrix WHERE `model` = '" & cbxModel.Text & "' AND `gs_family` = '" & cbxFamily.Text & "' AND `gs_product_number` = '" & cbxProductNumber.Text & "'"
-        myDA.Fill(myDT)
-
-        cbxPartNumber.DataSource = myDT
-        cbxPartNumber.DisplayMember = "gs_part_number"
-        cbxPartNumber.ValueMember = "gs_part_number"
+        'cbxModel.DataSource = myDT
+        'cbxModel.DisplayMember = "model"
+        'cbxModel.ValueMember = "model"
 
         lblCodeAllocation.Text = ""
     End Sub
 
     Private Sub cbxModel_DropDownClosed(sender As Object, e As EventArgs) Handles cbxModel.DropDownClosed
+
         Dim cmd As New MySqlCommand
         cmd.Connection = conn
 
-        cmd.CommandText = "SELECT DISTINCT `customer` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
-        customer = cmd.ExecuteScalar
+        cmd.CommandText = "SELECT DISTINCT `code_allocation` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
+        lblCodeAllocation.Text = cmd.ExecuteScalar
 
-        If customer = "gs" Then
-            lblFamily.Visible = True
-            cbxFamily.Visible = True
-            lblProductNumber.Visible = True
-            cbxProductNumber.Visible = True
-            lblPartNumber.Visible = True
-            cbxPartNumber.Visible = True
-            lblCodeDesignation.Text = "Product Type:"
-            cbxFamily.Width = 194
-            cbxProductNumber.Width = 194
-        Else
-            lblFamily.Visible = False
-            cbxFamily.Visible = False
-            lblProductNumber.Visible = False
-            cbxProductNumber.Visible = False
-            lblPartNumber.Visible = False
-            cbxPartNumber.Visible = False
-            lblCodeDesignation.Text = "Code Designation:"
-            cmd.CommandText = "SELECT DISTINCT `code_allocation` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
-            lblCodeAllocation.Text = cmd.ExecuteScalar
-        End If
+        'Dim cmd As New MySqlCommand
+        'cmd.Connection = conn
+
+        'cmd.CommandText = "SELECT DISTINCT `customer` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
+        'customer = cmd.ExecuteScalar
+
+        'If customer = "gs" Then
+        '    lblFamily.Visible = True
+        '    cbxFamily.Visible = True
+        '    lblProductNumber.Visible = True
+        '    cbxProductNumber.Visible = True
+        '    lblPartNumber.Visible = True
+        '    cbxPartNumber.Visible = True
+        '    lblCodeDesignation.Text = "Product Type:"
+        '    cbxFamily.Width = 194
+        '    cbxProductNumber.Width = 194
+        'Else
+        '    lblFamily.Visible = False
+        '    cbxFamily.Visible = False
+        '    lblProductNumber.Visible = False
+        '    cbxProductNumber.Visible = False
+        '    lblPartNumber.Visible = False
+        '    cbxPartNumber.Visible = False
+        '    lblCodeDesignation.Text = "Code Designation:"
+        '    cmd.CommandText = "SELECT DISTINCT `code_allocation` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
+        '    lblCodeAllocation.Text = cmd.ExecuteScalar
+        'End If
     End Sub
 
     Private Sub btnSet_Click(sender As Object, e As EventArgs) Handles btnSet.Click
@@ -388,10 +450,11 @@ Public Class frmFVI
         cmd.CommandText = "SELECT DISTINCT `pcb_side` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
         side = cmd.ExecuteScalar
 
-        cbxFamily.Enabled = False
-        cbxProductNumber.Enabled = False
-        cbxPartNumber.Enabled = False
+        'cbxFamily.Enabled = False
+        'cbxProductNumber.Enabled = False
+        'cbxPartNumber.Enabled = False
         cbxModel.Enabled = False
+        cbxBU.Enabled = False
         txtScan.Enabled = True
         txtScan.Focus()
     End Sub

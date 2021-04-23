@@ -8,6 +8,8 @@ Public Class frmAOI
     Dim palletrequirement As String = ""
     Dim upp As String = ""
     Dim modelmatrix As String = ""
+    Dim MSGs As String = ""
+    Dim SAPStatus As Boolean = False
     Private Sub Timer1_Tick_1(sender As Object, e As EventArgs) Handles Timer1.Tick
         If tblPnlDefect.BackColor = Color.Red Then
             tblPnlDefect.BackColor = Color.White
@@ -40,8 +42,10 @@ Public Class frmAOI
     Private Sub frmAOI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If lblStation.Text = "AOI - BOTTOM" Then
             side = "bottom"
+            MSGs = "_SB"
         Else
             side = "top"
+            MSGs = "_ST"
         End If
         dbConnect()
         txtScan.Focus()
@@ -138,6 +142,11 @@ Public Class frmAOI
 
         cmd.CommandText = "INSERT INTO gi_aoing_" & side & "(`pcbid`, `aoingtimestamp`, `judgement`, `defectname`, `remarks`, `aoioperator`, `line`) VALUES ('" & txtScan.Text & "', NOW(), 'ng', '" & cmbdefectname.Text & "','" & txtremarks.Text & "', '" & lblname.Text & "', '" & lblline.Text & "')"
         cmd.ExecuteNonQuery()
+
+        If SAPStatus = True Then
+            cmd.CommandText = "UPDATE `sap_pcb_prod_order` SET `timestamp` = NOW() , `status` ='NG' WHERE `pcbid` = '" & txtScan.Text + MSGs & "'"
+            cmd.ExecuteNonQuery()
+        End If
     End Sub
 
     Public Sub gridout()
@@ -186,7 +195,6 @@ Public Class frmAOI
 
     Private Sub txtScan_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtScan.KeyPress
         Dim cmd As New MySqlCommand
-
         cmd.Connection = conn
         If Asc(e.KeyChar) = 13 Then
             writeLogs(lblScan.Text.Replace(":", "") & "SCAN: " & txtScan.Text)
@@ -299,22 +307,6 @@ Public Class frmAOI
         txtScan.Enabled = True
     End Sub
 
-    Private Sub cbxModel_Click(sender As Object, e As EventArgs) Handles cbxModel.Click
-        Dim cmd As New MySqlCommand
-        Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
-        Dim myDT As New DataTable
-        cmd.Connection = conn
-
-        cmd.CommandText = "SELECT DISTINCT model FROM gi_modelmatrix"
-        myDA.Fill(myDT)
-
-        cbxModel.DataSource = myDT
-        cbxModel.DisplayMember = "model"
-        cbxModel.ValueMember = "model"
-
-        lblCodeAllocation.Text = ""
-    End Sub
-
     Private Sub cbxModel_DropDownClosed(sender As Object, e As EventArgs) Handles cbxModel.DropDownClosed
         Dim cmd As New MySqlCommand
         cmd.Connection = conn
@@ -326,6 +318,46 @@ Public Class frmAOI
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
         Dim proc As New Process()
         proc = Process.Start("C:\Program Files (x86)\EMS Group\PM DOWNTIME LOGS\PM DOWNTIME TRACE.exe")
+    End Sub
+
+    Private Sub cbxBU_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbxBU.SelectedIndexChanged
+        cbxModel.SelectedIndex = -1
+    End Sub
+
+    Private Sub cbxModel_DropDown(sender As Object, e As EventArgs) Handles cbxModel.DropDown
+        Dim cmd As New MySqlCommand
+        Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+        Dim myDT As New DataTable
+        Dim customer As String = ""
+        cmd.Connection = conn
+
+        If cbxBU.Text = "GLOBAL_SKYWARE" Then
+            customer = "gs"
+            cmd.CommandText = "SELECT count(*) as `status` FROM `settings` where `name`='elite_gs_sap_enable' and `value`='yes'"
+            If cmd.ExecuteScalar = "1" Then
+                SAPStatus = True
+            End If
+        ElseIf cbxBU.Text = "GLOBAL_INVACOM" Then
+            customer = "gi"
+            cmd.CommandText = "SELECT count(*) as `status` FROM `settings` where `name`='elite_gi_sap_enable' and `value`='yes'"
+            If cmd.ExecuteScalar = "1" Then
+                SAPStatus = True
+            End If
+        End If
+
+        cmd.CommandText = "SELECT DISTINCT model FROM gi_modelmatrix WHERE active_status = 'yes' AND customer ='" & customer & "'"
+        myDA.Fill(myDT)
+        cbxModel.Items.Clear()
+
+        For Each i As DataRow In myDT.Rows
+            cbxModel.Items.Add(i.Item(0).ToString)
+        Next
+
+        'cbxModel.DataSource = myDT
+        'cbxModel.DisplayMember = "model"
+        'cbxModel.ValueMember = "model"
+
+        lblCodeAllocation.Text = ""
     End Sub
 
     Private Sub btnSet_Click(sender As Object, e As EventArgs) Handles btnSet.Click
@@ -342,6 +374,7 @@ Public Class frmAOI
         palletrequirement = cmd.ExecuteScalar
 
         cbxModel.Enabled = False
+        cbxBU.Enabled = False
         txtScan.Enabled = True
         txtScan.Focus()
 

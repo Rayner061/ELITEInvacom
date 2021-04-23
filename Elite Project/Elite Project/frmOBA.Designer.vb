@@ -23,25 +23,26 @@ Partial Class frmOBA
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmOBA))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.tblPnlMain = New System.Windows.Forms.TableLayoutPanel()
-        Me.dgpcb = New System.Windows.Forms.DataGridView()
         Me.lblcountgood = New System.Windows.Forms.Label()
         Me.TableLayoutPanel8 = New System.Windows.Forms.TableLayoutPanel()
         Me.lblcountng = New System.Windows.Forms.Label()
         Me.btnNG = New System.Windows.Forms.Button()
         Me.btnGOOD = New System.Windows.Forms.Button()
+        Me.dgpcb = New System.Windows.Forms.DataGridView()
         Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
         Me.txtScan = New System.Windows.Forms.TextBox()
         Me.lblScan = New System.Windows.Forms.Label()
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.cbxBU = New System.Windows.Forms.ComboBox()
         Me.tblPnlDefect = New System.Windows.Forms.TableLayoutPanel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cmbdefectname = New System.Windows.Forms.ComboBox()
@@ -61,19 +62,20 @@ Partial Class frmOBA
         Me.lblDT = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.lblline = New System.Windows.Forms.Label()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.lblAssemblyVersion = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
-        Me.TableLayoutPanel2.SuspendLayout()
         Me.tblPnlMain.SuspendLayout()
-        CType(Me.dgpcb, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel8.SuspendLayout()
+        CType(Me.dgpcb, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel7.SuspendLayout()
         Me.TableLayoutPanel5.SuspendLayout()
         Me.tblPnlDefect.SuspendLayout()
         Me.TableLayoutPanel4.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel3.SuspendLayout()
         Me.SuspendLayout()
@@ -118,23 +120,6 @@ Partial Class frmOBA
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1370, 749)
         Me.TableLayoutPanel1.TabIndex = 95
         '
-        'TableLayoutPanel2
-        '
-        Me.TableLayoutPanel2.ColumnCount = 3
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 470.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 398.0!))
-        Me.TableLayoutPanel2.Controls.Add(Me.PictureBox2, 0, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel3, 2, 0)
-        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(15, 15)
-        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(0)
-        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
-        Me.TableLayoutPanel2.RowCount = 1
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1340, 119)
-        Me.TableLayoutPanel2.TabIndex = 0
-        '
         'tblPnlMain
         '
         Me.tblPnlMain.BackColor = System.Drawing.Color.Transparent
@@ -160,34 +145,6 @@ Partial Class frmOBA
         Me.tblPnlMain.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100.0!))
         Me.tblPnlMain.Size = New System.Drawing.Size(1340, 287)
         Me.tblPnlMain.TabIndex = 99
-        '
-        'dgpcb
-        '
-        Me.dgpcb.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgpcb.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgpcb.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.dgpcb.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.tblPnlMain.SetColumnSpan(Me.dgpcb, 3)
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgpcb.DefaultCellStyle = DataGridViewCellStyle2
-        Me.dgpcb.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgpcb.Location = New System.Drawing.Point(13, 175)
-        Me.dgpcb.Name = "dgpcb"
-        Me.dgpcb.Size = New System.Drawing.Size(1309, 94)
-        Me.dgpcb.TabIndex = 87
         '
         'lblcountgood
         '
@@ -263,6 +220,34 @@ Partial Class frmOBA
         Me.btnGOOD.Text = "GOOD"
         Me.btnGOOD.UseVisualStyleBackColor = False
         '
+        'dgpcb
+        '
+        Me.dgpcb.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgpcb.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgpcb.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+        Me.dgpcb.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.tblPnlMain.SetColumnSpan(Me.dgpcb, 3)
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgpcb.DefaultCellStyle = DataGridViewCellStyle8
+        Me.dgpcb.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgpcb.Location = New System.Drawing.Point(13, 175)
+        Me.dgpcb.Name = "dgpcb"
+        Me.dgpcb.Size = New System.Drawing.Size(1309, 94)
+        Me.dgpcb.TabIndex = 87
+        '
         'TableLayoutPanel7
         '
         Me.TableLayoutPanel7.BackgroundImage = Global.ELITE_GI.My.Resources.Resources.elite_background_GI_64
@@ -323,11 +308,13 @@ Partial Class frmOBA
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.0!))
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100.0!))
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.0!))
+        Me.TableLayoutPanel5.Controls.Add(Me.Label6, 1, 1)
+        Me.TableLayoutPanel5.Controls.Add(Me.cbxBU, 1, 1)
         Me.TableLayoutPanel5.Controls.Add(Me.tblPnlDefect, 6, 0)
         Me.TableLayoutPanel5.Controls.Add(Me.btnlogout, 8, 2)
-        Me.TableLayoutPanel5.Controls.Add(Me.Label2, 1, 1)
+        Me.TableLayoutPanel5.Controls.Add(Me.Label2, 1, 2)
         Me.TableLayoutPanel5.Controls.Add(Me.Label7, 3, 1)
-        Me.TableLayoutPanel5.Controls.Add(Me.cbxModel, 2, 1)
+        Me.TableLayoutPanel5.Controls.Add(Me.cbxModel, 2, 2)
         Me.TableLayoutPanel5.Controls.Add(Me.lblCodeAllocation, 4, 1)
         Me.TableLayoutPanel5.Controls.Add(Me.btnSet, 4, 2)
         Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill
@@ -343,6 +330,33 @@ Partial Class frmOBA
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel5.Size = New System.Drawing.Size(1340, 110)
         Me.TableLayoutPanel5.TabIndex = 97
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(35, 15)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(62, 40)
+        Me.Label6.TabIndex = 228
+        Me.Label6.Text = "BU :"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'cbxBU
+        '
+        Me.cbxBU.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.cbxBU.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbxBU.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxBU.FormattingEnabled = True
+        Me.cbxBU.Items.AddRange(New Object() {"GLOBAL_SKYWARE", "GLOBAL_INVACOM"})
+        Me.cbxBU.Location = New System.Drawing.Point(103, 20)
+        Me.cbxBU.Margin = New System.Windows.Forms.Padding(3, 5, 3, 3)
+        Me.cbxBU.Name = "cbxBU"
+        Me.cbxBU.Size = New System.Drawing.Size(194, 28)
+        Me.cbxBU.TabIndex = 229
         '
         'tblPnlDefect
         '
@@ -440,7 +454,7 @@ Partial Class frmOBA
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(35, 15)
+        Me.Label2.Location = New System.Drawing.Point(35, 55)
         Me.Label2.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(62, 40)
@@ -468,7 +482,7 @@ Partial Class frmOBA
         Me.cbxModel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbxModel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbxModel.FormattingEnabled = True
-        Me.cbxModel.Location = New System.Drawing.Point(103, 20)
+        Me.cbxModel.Location = New System.Drawing.Point(103, 60)
         Me.cbxModel.Margin = New System.Windows.Forms.Padding(3, 5, 3, 3)
         Me.cbxModel.Name = "cbxModel"
         Me.cbxModel.Size = New System.Drawing.Size(194, 28)
@@ -619,6 +633,23 @@ Partial Class frmOBA
         Me.lblline.Text = "..."
         Me.lblline.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'TableLayoutPanel2
+        '
+        Me.TableLayoutPanel2.ColumnCount = 3
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 470.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 398.0!))
+        Me.TableLayoutPanel2.Controls.Add(Me.PictureBox2, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel3, 2, 0)
+        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(15, 15)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(0)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 1
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1340, 119)
+        Me.TableLayoutPanel2.TabIndex = 0
+        '
         'PictureBox2
         '
         Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
@@ -676,10 +707,9 @@ Partial Class frmOBA
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "OBA Scanning Station"
         Me.TableLayoutPanel1.ResumeLayout(False)
-        Me.TableLayoutPanel2.ResumeLayout(False)
         Me.tblPnlMain.ResumeLayout(False)
-        CType(Me.dgpcb, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel8.ResumeLayout(False)
+        CType(Me.dgpcb, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel7.ResumeLayout(False)
         Me.TableLayoutPanel7.PerformLayout()
         Me.TableLayoutPanel5.ResumeLayout(False)
@@ -689,6 +719,7 @@ Partial Class frmOBA
         Me.TableLayoutPanel4.ResumeLayout(False)
         Me.TableLayoutPanel4.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel2.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel3.PerformLayout()
@@ -733,4 +764,6 @@ Partial Class frmOBA
     Friend WithEvents cbxModel As ComboBox
     Friend WithEvents lblCodeAllocation As Label
     Friend WithEvents btnSet As Button
+    Friend WithEvents Label6 As Label
+    Friend WithEvents cbxBU As ComboBox
 End Class

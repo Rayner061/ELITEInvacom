@@ -121,7 +121,7 @@ Public Class frmpanasonicmounter
 
         cmd.CommandText = "SELECT COUNT(pcbid) FROM gi_pcbtrace WHERE (panel_bottom = '" & scantext & "' OR panel_top = '" & scantext & "') AND line_" & side & " = '" & lblline.Text & "'"
         If cmd.ExecuteScalar > 0 Then
-            cmd.CommandText = "SELECT processtoken FROM gi_pcbtrace WHERE panel_" & side & " = '" & scantext & "' LIMIT 1"
+            cmd.CommandText = "SELECT processtoken FROM gi_pcbtrace WHERE panel_" & side & " = '" & scantext & "' ORDER by mountertimestamp_" & side & " LIMIT 1"
             If Not cmd.ExecuteScalar.ToString.Contains(side) Then
                 examinePanel = "Wrong side"
             ElseIf cmd.ExecuteScalar.ToString.Contains("mounter") Or cmd.ExecuteScalar.ToString.Contains("aoi") Then

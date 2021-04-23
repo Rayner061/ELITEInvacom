@@ -48,7 +48,6 @@ Partial Class frmissuesqueegee
         Me.cboLine.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cboLine.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboLine.FormattingEnabled = True
-        Me.cboLine.Items.AddRange(New Object() {"Line 1", "Line 2", "Line 6", "Line 12", "Line 14", "Line 15", "Line 17"})
         Me.cboLine.Location = New System.Drawing.Point(100, 82)
         Me.cboLine.Name = "cboLine"
         Me.cboLine.Size = New System.Drawing.Size(188, 29)

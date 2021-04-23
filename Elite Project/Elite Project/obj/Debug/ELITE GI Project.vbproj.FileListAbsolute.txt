@@ -8,7 +8,6 @@ C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\bin\Deb
 C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\bin\Debug\ELITE_GI.pdb
 C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\bin\Debug\ELITE_GI.xml
 C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\bin\Debug\Oracle.ManagedDataAccess.dll
-C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbprojAssemblyReference.cache
 C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmfujimounter.resources
 C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmFVI.resources
 C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmICProgram.resources
@@ -41,3 +40,5 @@ C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Deb
 C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.xml
 C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.pdb
 C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmreplacesqueegee.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmcsmanager.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmcreamsolder.resources
