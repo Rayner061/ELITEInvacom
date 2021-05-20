@@ -311,7 +311,7 @@ Partial Class frmFVI
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.0!))
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109.0!))
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.0!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 14.0!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15.0!))
         Me.TableLayoutPanel5.Controls.Add(Me.cbxBU, 1, 1)
         Me.TableLayoutPanel5.Controls.Add(Me.Label6, 1, 1)
         Me.TableLayoutPanel5.Controls.Add(Me.tblPnlDefect, 8, 0)
@@ -374,7 +374,7 @@ Partial Class frmFVI
         Me.tblPnlDefect.Controls.Add(Me.Label5, 1, 2)
         Me.tblPnlDefect.Controls.Add(Me.txtremarks, 2, 2)
         Me.tblPnlDefect.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tblPnlDefect.Location = New System.Drawing.Point(816, 10)
+        Me.tblPnlDefect.Location = New System.Drawing.Point(815, 10)
         Me.tblPnlDefect.Margin = New System.Windows.Forms.Padding(0, 10, 0, 10)
         Me.tblPnlDefect.Name = "tblPnlDefect"
         Me.tblPnlDefect.RowCount = 4
@@ -449,7 +449,7 @@ Partial Class frmFVI
         Me.btnlogout.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnlogout.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnlogout.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnlogout.Location = New System.Drawing.Point(1219, 57)
+        Me.btnlogout.Location = New System.Drawing.Point(1218, 57)
         Me.btnlogout.Margin = New System.Windows.Forms.Padding(3, 2, 3, 10)
         Me.btnlogout.Name = "btnlogout"
         Me.btnlogout.Size = New System.Drawing.Size(103, 28)

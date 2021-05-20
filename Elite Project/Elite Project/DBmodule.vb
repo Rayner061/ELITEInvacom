@@ -9,6 +9,7 @@ Imports System.Net.Sockets
 Module DBmodule
     Public conn As New MySqlConnection
     Public sqlconn As New SqlConnection
+    Public giconn As New MySqlConnection
     Public lineString() As String
 
     Public Sub dbConnect()
@@ -59,6 +60,17 @@ Module DBmodule
             End If
         Catch ex As Exception
             MsgBox(ex.ToString())
+        End Try
+    End Sub
+
+    Public Sub GIConnect(schema As String)
+        Try
+            If giconn.State = ConnectionState.Closed Then                'Invacom Connection
+                giconn.ConnectionString = "server=SERVER-PHL-PROD;port=3306;userid=EMS_IT;database=" & schema
+                giconn.Open()
+            End If
+        Catch ex As Exception
+            MsgBox(ex.ToString)
         End Try
     End Sub
 

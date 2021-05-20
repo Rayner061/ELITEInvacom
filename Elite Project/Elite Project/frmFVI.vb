@@ -37,6 +37,7 @@ Public Class frmFVI
 
     Private Sub frmFVI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         dbConnect()
+
         txtScan.Focus()
         Timer1.Enabled = False
         tblPnlMain.BackColor = Color.White
@@ -231,15 +232,30 @@ Public Class frmFVI
 
                         Select Case ExaminePCB(txtScan.Text)
                             Case "valid"
-                                cmd.CommandText = "UPDATE gi_pcbtrace SET processtoken = 'fvi', fvitimestamp = NOW(), fvioperator = '" & lblname.Text & "', fvistatus = 'good' 
+                                Select Case ExamineProgramming(txtScan.Text)
+                                    Case "good"
+
+                                        cmd.CommandText = "UPDATE gi_pcbtrace SET processtoken = 'fvi', fvitimestamp = NOW(), fvioperator = '" & lblname.Text & "', fvistatus = 'good' 
                                         WHERE pcbid = '" & txtScan.Text & "' AND processtoken = '" & status & "'"
-                                cmd.ExecuteNonQuery()
+                                        cmd.ExecuteNonQuery()
 
 
-                                If SAPStatus = True Then
-                                    cmd.CommandText = "UPDATE `sap_pcb_prod_order` SET `timestamp` = NOW() , `status` ='GOOD' WHERE `pcbid` = '" & txtScan.Text + "_ST" & "'"
-                                    cmd.ExecuteNonQuery()
-                                End If
+                                        If SAPStatus = True Then
+                                            cmd.CommandText = "UPDATE `sap_pcb_prod_order` SET `timestamp` = NOW() , `status` ='GOOD' WHERE `pcbid` = '" & txtScan.Text + "_ST" & "'"
+                                            cmd.ExecuteNonQuery()
+                                        End If
+
+                                    Case "duplicate"
+
+                                        writeLogs("ERROR: Duplicate Serial")
+                                        MsgBox("ERROR: Duplicate Serial!")
+
+                                    Case "nodata"
+
+                                        writeLogs("ERROR: No PCBA Program!")
+                                        MsgBox("ERROR: No PCBA Program!")
+                                End Select
+
 
                             Case "wrongmodel"
                                 writeLogs("ERROR: Wrong model.")
@@ -290,6 +306,25 @@ Public Class frmFVI
             End Try
         End If
     End Sub
+
+    Private Function ExamineProgramming(ByVal scanText As String) As String
+        Dim cmd As MySqlCommand
+        cmd.Connection = giconn
+        Dim res As String
+        Dim count As Integer
+        res = ""
+        cmd.CommandText = "SELECT COUNT(*) FROM `prog` WHERE `FAILCODE` = 'NONE' AND SERIAL_NO = '" & scanText & "'"
+        count = cmd.ExecuteScalar
+        If count = 1 Then
+            res = "good"
+        ElseIf count > 1 Then
+            res = "duplicate"
+        ElseIf count = 0 Then
+            res = "nodata"
+        End If
+
+        ExamineProgramming = res
+    End Function
 
     Private Sub cmbdefectname_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbdefectname.SelectedIndexChanged
         txtremarks.Focus()
@@ -449,6 +484,9 @@ Public Class frmFVI
 
         cmd.CommandText = "SELECT DISTINCT `pcb_side` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
         side = cmd.ExecuteScalar
+
+        cmd.CommandText = "SELECT DISTINCT `database` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
+        GIConnect(cmd.ExecuteScalar)
 
         'cbxFamily.Enabled = False
         'cbxProductNumber.Enabled = False
