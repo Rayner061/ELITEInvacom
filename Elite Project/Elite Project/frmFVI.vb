@@ -5,7 +5,8 @@ Imports System.Linq
 
 Public Class frmFVI
     Dim side, modelMatrixID, customer As String
-    Dim SAPStatus As Boolean = False
+    Dim SAPStatus, icprog As Boolean
+
     Private Sub Timer1_Tick_1(sender As Object, e As EventArgs) Handles Timer1.Tick
         If tblPnlDefect.BackColor = Color.Red Then
             tblPnlDefect.BackColor = Color.White
@@ -37,7 +38,7 @@ Public Class frmFVI
 
     Private Sub frmFVI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         dbConnect()
-
+        SAPStatus = False
         txtScan.Focus()
         Timer1.Enabled = False
         tblPnlMain.BackColor = Color.White
@@ -256,7 +257,6 @@ Public Class frmFVI
                                         MsgBox("ERROR: No PCBA Program!")
                                 End Select
 
-
                             Case "wrongmodel"
                                 writeLogs("ERROR: Wrong model.")
                                 MsgBox("Wrong model!")
@@ -308,21 +308,24 @@ Public Class frmFVI
     End Sub
 
     Private Function ExamineProgramming(ByVal scanText As String) As String
-        Dim cmd As MySqlCommand
+        Dim cmd As New MySqlCommand
         cmd.Connection = giconn
         Dim res As String
         Dim count As Integer
         res = ""
-        cmd.CommandText = "SELECT COUNT(*) FROM `prog` WHERE `FAILCODE` = 'NONE' AND SERIAL_NO = '" & scanText & "'"
-        count = cmd.ExecuteScalar
-        If count = 1 Then
+        If icprog = True Then
+            cmd.CommandText = "SELECT COUNT(*) FROM `prog` WHERE `FAILCODE` = 'NONE' AND SERIAL_NO = '" & scanText & "'"
+            count = cmd.ExecuteScalar
+            If count = 1 Then
+                res = "good"
+            ElseIf count > 1 Then
+                res = "duplicate"
+            ElseIf count = 0 Then
+                res = "nodata"
+            End If
+        Else
             res = "good"
-        ElseIf count > 1 Then
-            res = "duplicate"
-        ElseIf count = 0 Then
-            res = "nodata"
         End If
-
         ExamineProgramming = res
     End Function
 
@@ -478,7 +481,7 @@ Public Class frmFVI
     Private Sub btnSet_Click(sender As Object, e As EventArgs) Handles btnSet.Click
         Dim cmd As New MySqlCommand
         cmd.Connection = conn
-
+        Dim db As String
         cmd.CommandText = "SELECT DISTINCT `modelmatrixid` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
         modelMatrixID = cmd.ExecuteScalar
 
@@ -486,7 +489,14 @@ Public Class frmFVI
         side = cmd.ExecuteScalar
 
         cmd.CommandText = "SELECT DISTINCT `database` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
-        GIConnect(cmd.ExecuteScalar)
+        db = cmd.ExecuteScalar
+        If db <> "" Then
+            icprog = True
+            GIConnect(db)
+        Else
+            icprog = False
+        End If
+
 
         'cbxFamily.Enabled = False
         'cbxProductNumber.Enabled = False
