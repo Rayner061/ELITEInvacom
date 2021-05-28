@@ -245,16 +245,16 @@ Public Class frmFVI
                                             cmd.CommandText = "UPDATE `sap_pcb_prod_order` SET `timestamp` = NOW() , `status` ='GOOD' WHERE `pcbid` = '" & txtScan.Text + "_ST" & "'"
                                             cmd.ExecuteNonQuery()
                                         End If
-
+                                        lblerror.Text = ""
                                     Case "duplicate"
 
                                         writeLogs("ERROR: Duplicate Serial")
-                                        MsgBox("ERROR: Duplicate Serial!")
+                                        lblerror.Text = "ERROR: Duplicate Serial"
 
                                     Case "nodata"
 
                                         writeLogs("ERROR: No PCBA Program!")
-                                        MsgBox("ERROR: No PCBA Program!")
+                                        lblerror.Text = "ERROR: No PCBA Program!"
                                 End Select
 
                             Case "wrongmodel"
