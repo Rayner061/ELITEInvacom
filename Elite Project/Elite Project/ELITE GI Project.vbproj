@@ -154,6 +154,12 @@
     <Compile Include="frmcsmanager.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmerror.Designer.vb">
+      <DependentUpon>frmerror.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmerror.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmfujimounter.Designer.vb">
       <DependentUpon>frmfujimounter.vb</DependentUpon>
     </Compile>
@@ -164,6 +170,12 @@
       <DependentUpon>frmFVI.vb</DependentUpon>
     </Compile>
     <Compile Include="frmFVI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmfvioutput.Designer.vb">
+      <DependentUpon>frmfvioutput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmfvioutput.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmICProgram.Designer.vb">
@@ -335,11 +347,17 @@
     <EmbeddedResource Include="frmcsmanager.resx">
       <DependentUpon>frmcsmanager.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmerror.resx">
+      <DependentUpon>frmerror.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmfujimounter.resx">
       <DependentUpon>frmfujimounter.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFVI.resx">
       <DependentUpon>frmFVI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmfvioutput.resx">
+      <DependentUpon>frmfvioutput.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmICProgram.resx">
       <DependentUpon>frmICProgram.vb</DependentUpon>
@@ -445,6 +463,8 @@
     <Content Include="ELITE Icon GI.ico" />
     <Content Include="eliteicon.ico" />
     <Content Include="header-logo2.ico" />
+    <None Include="Resources\pngegg1.png" />
+    <None Include="Resources\pngegg.png" />
     <None Include="Resources\elite-background-GI-111.png" />
     <None Include="Resources\elite-background-GI-511.png" />
     <None Include="Resources\elite-background-GI-51.png" />

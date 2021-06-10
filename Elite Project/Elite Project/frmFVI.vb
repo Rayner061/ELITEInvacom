@@ -123,6 +123,11 @@ Public Class frmFVI
 
         lblcountgood.Text = good
         lblcountng.Text = ng
+
+        If cbxModel.Text <> "" Then
+            cmd.CommandText = "SELECT IF(total='',0,total) FROM gi_view_fvi_input_model_" + shift + "_" + lblline.Text + " WHERE model = '" + cbxModel.Text + "'"
+            lblgoodpermodel.Text = cmd.ExecuteScalar
+        End If
     End Sub
 
     Public Sub InsertNG()
@@ -245,16 +250,24 @@ Public Class frmFVI
                                             cmd.CommandText = "UPDATE `sap_pcb_prod_order` SET `timestamp` = NOW() , `status` ='GOOD' WHERE `pcbid` = '" & txtScan.Text + "_ST" & "'"
                                             cmd.ExecuteNonQuery()
                                         End If
-                                        lblerror.Text = ""
+                                        frmerror.lblerror.Text = ""
                                     Case "duplicate"
 
                                         writeLogs("ERROR: Duplicate Serial")
-                                        lblerror.Text = "ERROR: Duplicate Serial"
+                                        frmerror.lblerror.Text = "ERROR: Duplicate Serial"
+                                        frmerror.ShowDialog()
 
                                     Case "nodata"
 
                                         writeLogs("ERROR: No PCBA Program!")
-                                        lblerror.Text = "ERROR: No PCBA Program!"
+                                        frmerror.lblerror.Text = "ERROR: No PCBA Program!"
+                                        frmerror.ShowDialog()
+                                    Case "failedprogram"
+
+                                        writeLogs("ERROR: Failed Program!")
+                                        frmerror.lblerror.Text = "ERROR: Failed Program!"
+                                        frmerror.ShowDialog()
+
                                 End Select
 
                             Case "wrongmodel"
@@ -312,16 +325,25 @@ Public Class frmFVI
         cmd.Connection = giconn
         Dim res As String
         Dim count As Integer
+        Dim Latest As String
         res = ""
         If icprog = True Then
             cmd.CommandText = "SELECT COUNT(*) FROM `prog` WHERE `FAILCODE` = 'NONE' AND SERIAL_NO = '" & scanText & "'"
             count = cmd.ExecuteScalar
-            If count = 1 Then
-                res = "good"
-            ElseIf count > 1 Then
-                res = "duplicate"
-            ElseIf count = 0 Then
-                res = "nodata"
+
+            cmd.CommandText = "SELECT FAILCODE FROM `prog` WHERE SERIAL_NO = '" & scanText & "' ORDER BY FIRST_TIME DESC LIMIT 1"
+            Latest = cmd.ExecuteScalar
+
+            If Latest <> "NONE" Then
+                res = "failedprogram"
+            Else
+                If count > 1 Then
+                    res = "duplicate"
+                ElseIf count = 0 Then
+                    res = "nodata"
+                ElseIf count = 1 Then
+                    res = "good"
+                End If
             End If
         Else
             res = "good"
@@ -403,6 +425,11 @@ Public Class frmFVI
 
     Private Sub cbxBU_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbxBU.SelectedIndexChanged
         cbxModel.SelectedIndex = -1
+    End Sub
+
+    Private Sub btnOutput_Click(sender As Object, e As EventArgs) Handles btnOutput.Click
+        frmfvioutput.lblline.Text = lblline.Text
+        frmfvioutput.ShowDialog()
     End Sub
 
     Private Sub cbxModel_DropDown(sender As Object, e As EventArgs) Handles cbxModel.DropDown
@@ -488,7 +515,7 @@ Public Class frmFVI
         cmd.CommandText = "SELECT DISTINCT `pcb_side` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
         side = cmd.ExecuteScalar
 
-        cmd.CommandText = "SELECT DISTINCT `database` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
+        cmd.CommandText = "SELECT DISTINCT IFNULL(`database`,'') FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
         db = cmd.ExecuteScalar
         If db <> "" Then
             icprog = True

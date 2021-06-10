@@ -42,4 +42,5 @@ C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Deb
 C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmreplacesqueegee.resources
 C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmcsmanager.resources
 C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmcreamsolder.resources
-C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbprojAssemblyReference.cache
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmfvioutput.resources
+C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmerror.resources

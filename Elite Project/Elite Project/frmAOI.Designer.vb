@@ -23,18 +23,20 @@ Partial Class frmAOI
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAOI))
-        Me.btnNG = New System.Windows.Forms.Button()
-        Me.btnGOOD = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.lblcountng = New System.Windows.Forms.Label()
-        Me.lblcountgood = New System.Windows.Forms.Label()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
-        Me.dgpcb = New System.Windows.Forms.DataGridView()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.tblPnlMain = New System.Windows.Forms.TableLayoutPanel()
+        Me.lblcountgood = New System.Windows.Forms.Label()
         Me.TableLayoutPanel8 = New System.Windows.Forms.TableLayoutPanel()
+        Me.lblcountng = New System.Windows.Forms.Label()
+        Me.btnNG = New System.Windows.Forms.Button()
+        Me.btnGOOD = New System.Windows.Forms.Button()
+        Me.dgpcb = New System.Windows.Forms.DataGridView()
         Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
         Me.txtScan = New System.Windows.Forms.TextBox()
         Me.lblScan = New System.Windows.Forms.Label()
@@ -64,10 +66,10 @@ Partial Class frmAOI
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.lblAssemblyVersion = New System.Windows.Forms.Label()
-        CType(Me.dgpcb, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.tblPnlMain.SuspendLayout()
         Me.TableLayoutPanel8.SuspendLayout()
+        CType(Me.dgpcb, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel7.SuspendLayout()
         Me.TableLayoutPanel5.SuspendLayout()
         Me.tblPnlDefect.SuspendLayout()
@@ -78,65 +80,9 @@ Partial Class frmAOI
         Me.TableLayoutPanel3.SuspendLayout()
         Me.SuspendLayout()
         '
-        'btnNG
-        '
-        Me.btnNG.BackColor = System.Drawing.Color.Red
-        Me.btnNG.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnNG.FlatAppearance.BorderSize = 2
-        Me.btnNG.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnNG.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNG.ForeColor = System.Drawing.Color.White
-        Me.btnNG.Location = New System.Drawing.Point(675, 13)
-        Me.btnNG.Name = "btnNG"
-        Me.btnNG.Size = New System.Drawing.Size(647, 41)
-        Me.btnNG.TabIndex = 56
-        Me.btnNG.Text = "NG"
-        Me.btnNG.UseVisualStyleBackColor = False
-        '
-        'btnGOOD
-        '
-        Me.btnGOOD.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnGOOD.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnGOOD.FlatAppearance.BorderSize = 2
-        Me.btnGOOD.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnGOOD.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGOOD.ForeColor = System.Drawing.Color.White
-        Me.btnGOOD.Location = New System.Drawing.Point(13, 13)
-        Me.btnGOOD.Name = "btnGOOD"
-        Me.btnGOOD.Size = New System.Drawing.Size(646, 41)
-        Me.btnGOOD.TabIndex = 57
-        Me.btnGOOD.Text = "GOOD"
-        Me.btnGOOD.UseVisualStyleBackColor = False
-        '
         'Timer1
         '
         Me.Timer1.Interval = 1000
-        '
-        'lblcountng
-        '
-        Me.lblcountng.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblcountng.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblcountng.Font = New System.Drawing.Font("Microsoft Sans Serif", 71.99999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblcountng.ForeColor = System.Drawing.Color.Black
-        Me.lblcountng.Location = New System.Drawing.Point(3, 0)
-        Me.lblcountng.Name = "lblcountng"
-        Me.lblcountng.Size = New System.Drawing.Size(641, 115)
-        Me.lblcountng.TabIndex = 74
-        Me.lblcountng.Text = "0"
-        Me.lblcountng.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblcountgood
-        '
-        Me.lblcountgood.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblcountgood.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblcountgood.Font = New System.Drawing.Font("Microsoft Sans Serif", 71.99999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblcountgood.ForeColor = System.Drawing.Color.Black
-        Me.lblcountgood.Location = New System.Drawing.Point(13, 57)
-        Me.lblcountgood.Name = "lblcountgood"
-        Me.lblcountgood.Size = New System.Drawing.Size(646, 115)
-        Me.lblcountgood.TabIndex = 74
-        Me.lblcountgood.Text = "0"
-        Me.lblcountgood.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Timer2
         '
@@ -146,18 +92,6 @@ Partial Class frmAOI
         '
         Me.Timer3.Enabled = True
         Me.Timer3.Interval = 1000
-        '
-        'dgpcb
-        '
-        Me.dgpcb.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgpcb.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.dgpcb.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.tblPnlMain.SetColumnSpan(Me.dgpcb, 3)
-        Me.dgpcb.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgpcb.Location = New System.Drawing.Point(13, 175)
-        Me.dgpcb.Name = "dgpcb"
-        Me.dgpcb.Size = New System.Drawing.Size(1309, 94)
-        Me.dgpcb.TabIndex = 87
         '
         'TableLayoutPanel1
         '
@@ -212,6 +146,19 @@ Partial Class frmAOI
         Me.tblPnlMain.Size = New System.Drawing.Size(1340, 287)
         Me.tblPnlMain.TabIndex = 99
         '
+        'lblcountgood
+        '
+        Me.lblcountgood.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblcountgood.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblcountgood.Font = New System.Drawing.Font("Microsoft Sans Serif", 71.99999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblcountgood.ForeColor = System.Drawing.Color.Black
+        Me.lblcountgood.Location = New System.Drawing.Point(13, 57)
+        Me.lblcountgood.Name = "lblcountgood"
+        Me.lblcountgood.Size = New System.Drawing.Size(646, 115)
+        Me.lblcountgood.TabIndex = 74
+        Me.lblcountgood.Text = "0"
+        Me.lblcountgood.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'TableLayoutPanel8
         '
         Me.TableLayoutPanel8.ColumnCount = 1
@@ -228,6 +175,77 @@ Partial Class frmAOI
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel8.Size = New System.Drawing.Size(647, 115)
         Me.TableLayoutPanel8.TabIndex = 148
+        '
+        'lblcountng
+        '
+        Me.lblcountng.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblcountng.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblcountng.Font = New System.Drawing.Font("Microsoft Sans Serif", 71.99999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblcountng.ForeColor = System.Drawing.Color.Black
+        Me.lblcountng.Location = New System.Drawing.Point(3, 0)
+        Me.lblcountng.Name = "lblcountng"
+        Me.lblcountng.Size = New System.Drawing.Size(641, 115)
+        Me.lblcountng.TabIndex = 74
+        Me.lblcountng.Text = "0"
+        Me.lblcountng.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'btnNG
+        '
+        Me.btnNG.BackColor = System.Drawing.Color.Red
+        Me.btnNG.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnNG.FlatAppearance.BorderSize = 2
+        Me.btnNG.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnNG.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNG.ForeColor = System.Drawing.Color.White
+        Me.btnNG.Location = New System.Drawing.Point(675, 13)
+        Me.btnNG.Name = "btnNG"
+        Me.btnNG.Size = New System.Drawing.Size(647, 41)
+        Me.btnNG.TabIndex = 56
+        Me.btnNG.Text = "NG"
+        Me.btnNG.UseVisualStyleBackColor = False
+        '
+        'btnGOOD
+        '
+        Me.btnGOOD.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnGOOD.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnGOOD.FlatAppearance.BorderSize = 2
+        Me.btnGOOD.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnGOOD.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGOOD.ForeColor = System.Drawing.Color.White
+        Me.btnGOOD.Location = New System.Drawing.Point(13, 13)
+        Me.btnGOOD.Name = "btnGOOD"
+        Me.btnGOOD.Size = New System.Drawing.Size(646, 41)
+        Me.btnGOOD.TabIndex = 57
+        Me.btnGOOD.Text = "GOOD"
+        Me.btnGOOD.UseVisualStyleBackColor = False
+        '
+        'dgpcb
+        '
+        Me.dgpcb.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgpcb.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgpcb.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgpcb.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.tblPnlMain.SetColumnSpan(Me.dgpcb, 3)
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgpcb.DefaultCellStyle = DataGridViewCellStyle2
+        Me.dgpcb.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgpcb.Location = New System.Drawing.Point(13, 175)
+        Me.dgpcb.Name = "dgpcb"
+        Me.dgpcb.Size = New System.Drawing.Size(1309, 94)
+        Me.dgpcb.TabIndex = 87
         '
         'TableLayoutPanel7
         '
@@ -687,10 +705,10 @@ Partial Class frmAOI
         Me.Name = "frmAOI"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AOI Scanning Station"
-        CType(Me.dgpcb, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.tblPnlMain.ResumeLayout(False)
         Me.TableLayoutPanel8.ResumeLayout(False)
+        CType(Me.dgpcb, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel7.ResumeLayout(False)
         Me.TableLayoutPanel7.PerformLayout()
         Me.TableLayoutPanel5.ResumeLayout(False)

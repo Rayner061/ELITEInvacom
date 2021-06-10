@@ -3329,6 +3329,9 @@
         MjTsAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="pngegg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngegg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_1485791411_caution" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -11997,19 +12000,22 @@
         M6/uK1RWAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="Ubuntu_Bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ubuntu-Bold.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Ubuntu_Light" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ubuntu-Light.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Ubuntu_LightItalic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ubuntu-LightItalic.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Ubuntu_Bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ubuntu-Bold.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="elite-background-GI-111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elite-background-GI-111.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BLADRMF_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BLADRMF_.TTF;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="elite-background-GI-111" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\elite-background-GI-111.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pngegg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngegg1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

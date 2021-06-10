@@ -301,7 +301,7 @@ Public Class frmOBA
         Dim cmd As New MySqlCommand
         cmd.Connection = conn
 
-        cmd.CommandText = "SELECT DISTINCT `modelmatrixid` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "' WHERE active_status = 'yes'"
+        cmd.CommandText = "SELECT DISTINCT `modelmatrixid` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "' AND active_status = 'yes'"
         modelMatrixID = cmd.ExecuteScalar
 
         cbxModel.Enabled = False

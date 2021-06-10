@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ELITE_GI.exe" size="11964416">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ELITE_GI.exe" size="12028928">
       <assemblyIdentity name="ELITE_GI" version="1.2101.6.1" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ug7ODpR7KN+NN5THPwePyDJ6SdEa1ZlHhd8Ry8Xo0Dw=</dsig:DigestValue>
+        <dsig:DigestValue>fJ0Epn6LAQGvj2n8+FPhdS+j8rSxjJhiD/sHnaOxTz4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

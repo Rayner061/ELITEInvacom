@@ -292,6 +292,14 @@ Public Class frminjection
                             lblpcb4.Text = pcblist(3)
                             lblpcb5.Text = pcblist(4)
 
+                            If upp = 5 Then
+                                SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4))
+                                pcblist.Clear()
+                                lblPanelBottom.Text = ""
+                                lblPanelTop.Text = ""
+                                lblscan.Text = "SCAN PANEL (BOTTOM):"
+                                lblscan.ForeColor = Color.FromArgb(37, 68, 65)
+                            End If
                             txtscan.Text = ""
                         Case 6
                             pcblist.Sort()
@@ -426,6 +434,537 @@ Public Class frminjection
                                 lblscan.ForeColor = Color.FromArgb(37, 68, 65)
                             End If
                             txtscan.Text = ""
+
+                        Case 9
+
+                            pcblist.Sort()
+                            lblscan.Text = "SCAN PCB:"
+                            lblPCBholder1.BackColor = Color.Yellow
+                            lblPCBholder2.BackColor = Color.Yellow
+                            lblPCBholder3.BackColor = Color.Yellow
+                            lblPCBholder4.BackColor = Color.Yellow
+                            lblPCBholder5.BackColor = Color.Yellow
+                            lblPCBholder6.BackColor = Color.Yellow
+                            lblPCBholder7.BackColor = Color.Yellow
+                            lblPCBholder8.BackColor = Color.Yellow
+                            lblPCBholder9.BackColor = Color.Yellow
+
+                            lblPCBholder1.ForeColor = Color.Black
+                            lblPCBholder2.ForeColor = Color.Black
+                            lblPCBholder3.ForeColor = Color.Black
+                            lblPCBholder4.ForeColor = Color.Black
+                            lblPCBholder5.ForeColor = Color.Black
+                            lblPCBholder6.ForeColor = Color.Black
+                            lblPCBholder7.ForeColor = Color.Black
+                            lblPCBholder8.ForeColor = Color.Black
+                            lblPCBholder9.ForeColor = Color.Black
+
+                            lblpcb1.BackColor = Color.Yellow
+                            lblpcb2.BackColor = Color.Yellow
+                            lblpcb3.BackColor = Color.Yellow
+                            lblpcb4.BackColor = Color.Yellow
+                            lblpcb5.BackColor = Color.Yellow
+                            lblpcb6.BackColor = Color.Yellow
+                            lblpcb7.BackColor = Color.Yellow
+                            lblpcb8.BackColor = Color.Yellow
+                            lblpcb9.BackColor = Color.Yellow
+
+                            lblpcb1.Text = pcblist(0)
+                            lblpcb2.Text = pcblist(1)
+                            lblpcb3.Text = pcblist(2)
+                            lblpcb4.Text = pcblist(3)
+                            lblpcb5.Text = pcblist(4)
+                            lblpcb6.Text = pcblist(5)
+                            lblpcb7.Text = pcblist(6)
+                            lblpcb8.Text = pcblist(7)
+                            lblpcb9.Text = pcblist(8)
+
+                            If upp = 9 Then
+                                SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5), pcblist(6), pcblist(7), pcblist(8))
+                                pcblist.Clear()
+                                lblPanelBottom.Text = ""
+                                lblPanelTop.Text = ""
+                                lblscan.Text = "SCAN PANEL (BOTTOM):"
+                                lblscan.ForeColor = Color.FromArgb(37, 68, 65)
+                            End If
+                            txtscan.Text = ""
+
+                        Case 10
+                            pcblist.Sort()
+                            lblscan.Text = "SCAN PCB:"
+                            lblPCBholder1.BackColor = Color.Yellow
+                            lblPCBholder2.BackColor = Color.Yellow
+                            lblPCBholder3.BackColor = Color.Yellow
+                            lblPCBholder4.BackColor = Color.Yellow
+                            lblPCBholder5.BackColor = Color.Yellow
+                            lblPCBholder6.BackColor = Color.Yellow
+                            lblPCBholder7.BackColor = Color.Yellow
+                            lblPCBholder8.BackColor = Color.Yellow
+                            lblPCBholder9.BackColor = Color.Yellow
+                            lblPCBholder10.BackColor = Color.Yellow
+
+                            lblPCBholder1.ForeColor = Color.Black
+                            lblPCBholder2.ForeColor = Color.Black
+                            lblPCBholder3.ForeColor = Color.Black
+                            lblPCBholder4.ForeColor = Color.Black
+                            lblPCBholder5.ForeColor = Color.Black
+                            lblPCBholder6.ForeColor = Color.Black
+                            lblPCBholder7.ForeColor = Color.Black
+                            lblPCBholder8.ForeColor = Color.Black
+                            lblPCBholder9.ForeColor = Color.Black
+                            lblPCBholder10.ForeColor = Color.Black
+
+                            lblpcb1.BackColor = Color.Yellow
+                            lblpcb2.BackColor = Color.Yellow
+                            lblpcb3.BackColor = Color.Yellow
+                            lblpcb4.BackColor = Color.Yellow
+                            lblpcb5.BackColor = Color.Yellow
+                            lblpcb6.BackColor = Color.Yellow
+                            lblpcb7.BackColor = Color.Yellow
+                            lblpcb8.BackColor = Color.Yellow
+                            lblpcb9.BackColor = Color.Yellow
+                            lblpcb10.BackColor = Color.Yellow
+
+                            lblpcb1.Text = pcblist(0)
+                            lblpcb2.Text = pcblist(1)
+                            lblpcb3.Text = pcblist(2)
+                            lblpcb4.Text = pcblist(3)
+                            lblpcb5.Text = pcblist(4)
+                            lblpcb6.Text = pcblist(5)
+                            lblpcb7.Text = pcblist(6)
+                            lblpcb8.Text = pcblist(7)
+                            lblpcb9.Text = pcblist(8)
+                            lblpcb10.Text = pcblist(9)
+
+                            If upp = 10 Then
+                                SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5), pcblist(6), pcblist(7), pcblist(8), pcblist(9))
+                                pcblist.Clear()
+                                lblPanelBottom.Text = ""
+                                lblPanelTop.Text = ""
+                                lblscan.Text = "SCAN PANEL (BOTTOM):"
+                                lblscan.ForeColor = Color.FromArgb(37, 68, 65)
+                            End If
+                            txtscan.Text = ""
+                        Case 11
+                            pcblist.Sort()
+                            lblscan.Text = "SCAN PCB:"
+                            lblPCBholder1.BackColor = Color.Yellow
+                            lblPCBholder2.BackColor = Color.Yellow
+                            lblPCBholder3.BackColor = Color.Yellow
+                            lblPCBholder4.BackColor = Color.Yellow
+                            lblPCBholder5.BackColor = Color.Yellow
+                            lblPCBholder6.BackColor = Color.Yellow
+                            lblPCBholder7.BackColor = Color.Yellow
+                            lblPCBholder8.BackColor = Color.Yellow
+                            lblPCBholder9.BackColor = Color.Yellow
+                            lblPCBholder10.BackColor = Color.Yellow
+                            lblPCBholder11.BackColor = Color.Yellow
+
+                            lblPCBholder1.ForeColor = Color.Black
+                            lblPCBholder2.ForeColor = Color.Black
+                            lblPCBholder3.ForeColor = Color.Black
+                            lblPCBholder4.ForeColor = Color.Black
+                            lblPCBholder5.ForeColor = Color.Black
+                            lblPCBholder6.ForeColor = Color.Black
+                            lblPCBholder7.ForeColor = Color.Black
+                            lblPCBholder8.ForeColor = Color.Black
+                            lblPCBholder9.ForeColor = Color.Black
+                            lblPCBholder10.ForeColor = Color.Black
+                            lblPCBholder11.ForeColor = Color.Black
+
+                            lblpcb1.BackColor = Color.Yellow
+                            lblpcb2.BackColor = Color.Yellow
+                            lblpcb3.BackColor = Color.Yellow
+                            lblpcb4.BackColor = Color.Yellow
+                            lblpcb5.BackColor = Color.Yellow
+                            lblpcb6.BackColor = Color.Yellow
+                            lblpcb7.BackColor = Color.Yellow
+                            lblpcb8.BackColor = Color.Yellow
+                            lblpcb9.BackColor = Color.Yellow
+                            lblpcb10.BackColor = Color.Yellow
+                            lblpcb11.BackColor = Color.Yellow
+
+                            lblpcb1.Text = pcblist(0)
+                            lblpcb2.Text = pcblist(1)
+                            lblpcb3.Text = pcblist(2)
+                            lblpcb4.Text = pcblist(3)
+                            lblpcb5.Text = pcblist(4)
+                            lblpcb6.Text = pcblist(5)
+                            lblpcb7.Text = pcblist(6)
+                            lblpcb8.Text = pcblist(7)
+                            lblpcb9.Text = pcblist(8)
+                            lblpcb10.Text = pcblist(9)
+                            lblpcb11.Text = pcblist(10)
+
+                            If upp = 11 Then
+                                SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5), pcblist(6), pcblist(7), pcblist(8), pcblist(9), pcblist(10))
+                                pcblist.Clear()
+                                lblPanelBottom.Text = ""
+                                lblPanelTop.Text = ""
+                                lblscan.Text = "SCAN PANEL (BOTTOM):"
+                                lblscan.ForeColor = Color.FromArgb(37, 68, 65)
+                            End If
+                            txtscan.Text = ""
+                        Case 12
+                            pcblist.Sort()
+                            lblscan.Text = "SCAN PCB:"
+                            lblPCBholder1.BackColor = Color.Yellow
+                            lblPCBholder2.BackColor = Color.Yellow
+                            lblPCBholder3.BackColor = Color.Yellow
+                            lblPCBholder4.BackColor = Color.Yellow
+                            lblPCBholder5.BackColor = Color.Yellow
+                            lblPCBholder6.BackColor = Color.Yellow
+                            lblPCBholder7.BackColor = Color.Yellow
+                            lblPCBholder8.BackColor = Color.Yellow
+                            lblPCBholder9.BackColor = Color.Yellow
+                            lblPCBholder10.BackColor = Color.Yellow
+                            lblPCBholder11.BackColor = Color.Yellow
+                            lblPCBholder12.BackColor = Color.Yellow
+
+                            lblPCBholder1.ForeColor = Color.Black
+                            lblPCBholder2.ForeColor = Color.Black
+                            lblPCBholder3.ForeColor = Color.Black
+                            lblPCBholder4.ForeColor = Color.Black
+                            lblPCBholder5.ForeColor = Color.Black
+                            lblPCBholder6.ForeColor = Color.Black
+                            lblPCBholder7.ForeColor = Color.Black
+                            lblPCBholder8.ForeColor = Color.Black
+                            lblPCBholder9.ForeColor = Color.Black
+                            lblPCBholder10.ForeColor = Color.Black
+                            lblPCBholder11.ForeColor = Color.Black
+                            lblPCBholder12.ForeColor = Color.Black
+
+                            lblpcb1.BackColor = Color.Yellow
+                            lblpcb2.BackColor = Color.Yellow
+                            lblpcb3.BackColor = Color.Yellow
+                            lblpcb4.BackColor = Color.Yellow
+                            lblpcb5.BackColor = Color.Yellow
+                            lblpcb6.BackColor = Color.Yellow
+                            lblpcb7.BackColor = Color.Yellow
+                            lblpcb8.BackColor = Color.Yellow
+                            lblpcb9.BackColor = Color.Yellow
+                            lblpcb10.BackColor = Color.Yellow
+                            lblpcb11.BackColor = Color.Yellow
+                            lblpcb12.BackColor = Color.Yellow
+
+                            lblpcb1.Text = pcblist(0)
+                            lblpcb2.Text = pcblist(1)
+                            lblpcb3.Text = pcblist(2)
+                            lblpcb4.Text = pcblist(3)
+                            lblpcb5.Text = pcblist(4)
+                            lblpcb6.Text = pcblist(5)
+                            lblpcb7.Text = pcblist(6)
+                            lblpcb8.Text = pcblist(7)
+                            lblpcb9.Text = pcblist(8)
+                            lblpcb10.Text = pcblist(9)
+                            lblpcb11.Text = pcblist(10)
+                            lblpcb12.Text = pcblist(11)
+
+                            If upp = 12 Then
+                                SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5), pcblist(6), pcblist(7), pcblist(8), pcblist(9), pcblist(10), pcblist(11))
+                                pcblist.Clear()
+                                lblPanelBottom.Text = ""
+                                lblPanelTop.Text = ""
+                                lblscan.Text = "SCAN PANEL (BOTTOM):"
+                                lblscan.ForeColor = Color.FromArgb(37, 68, 65)
+                            End If
+                            txtscan.Text = ""
+                        Case 13
+                            pcblist.Sort()
+                            lblscan.Text = "SCAN PCB:"
+                            lblPCBholder1.BackColor = Color.Yellow
+                            lblPCBholder2.BackColor = Color.Yellow
+                            lblPCBholder3.BackColor = Color.Yellow
+                            lblPCBholder4.BackColor = Color.Yellow
+                            lblPCBholder5.BackColor = Color.Yellow
+                            lblPCBholder6.BackColor = Color.Yellow
+                            lblPCBholder7.BackColor = Color.Yellow
+                            lblPCBholder8.BackColor = Color.Yellow
+                            lblPCBholder9.BackColor = Color.Yellow
+                            lblPCBholder10.BackColor = Color.Yellow
+                            lblPCBholder11.BackColor = Color.Yellow
+                            lblPCBholder12.BackColor = Color.Yellow
+                            lblPCBholder13.BackColor = Color.Yellow
+
+                            lblPCBholder1.ForeColor = Color.Black
+                            lblPCBholder2.ForeColor = Color.Black
+                            lblPCBholder3.ForeColor = Color.Black
+                            lblPCBholder4.ForeColor = Color.Black
+                            lblPCBholder5.ForeColor = Color.Black
+                            lblPCBholder6.ForeColor = Color.Black
+                            lblPCBholder7.ForeColor = Color.Black
+                            lblPCBholder8.ForeColor = Color.Black
+                            lblPCBholder9.ForeColor = Color.Black
+                            lblPCBholder10.ForeColor = Color.Black
+                            lblPCBholder11.ForeColor = Color.Black
+                            lblPCBholder12.ForeColor = Color.Black
+                            lblPCBholder13.ForeColor = Color.Black
+
+                            lblpcb1.BackColor = Color.Yellow
+                            lblpcb2.BackColor = Color.Yellow
+                            lblpcb3.BackColor = Color.Yellow
+                            lblpcb4.BackColor = Color.Yellow
+                            lblpcb5.BackColor = Color.Yellow
+                            lblpcb6.BackColor = Color.Yellow
+                            lblpcb7.BackColor = Color.Yellow
+                            lblpcb8.BackColor = Color.Yellow
+                            lblpcb9.BackColor = Color.Yellow
+                            lblpcb10.BackColor = Color.Yellow
+                            lblpcb11.BackColor = Color.Yellow
+                            lblpcb12.BackColor = Color.Yellow
+                            lblpcb13.BackColor = Color.Yellow
+
+                            lblpcb1.Text = pcblist(0)
+                            lblpcb2.Text = pcblist(1)
+                            lblpcb3.Text = pcblist(2)
+                            lblpcb4.Text = pcblist(3)
+                            lblpcb5.Text = pcblist(4)
+                            lblpcb6.Text = pcblist(5)
+                            lblpcb7.Text = pcblist(6)
+                            lblpcb8.Text = pcblist(7)
+                            lblpcb9.Text = pcblist(8)
+                            lblpcb10.Text = pcblist(9)
+                            lblpcb11.Text = pcblist(10)
+                            lblpcb12.Text = pcblist(11)
+                            lblpcb13.Text = pcblist(12)
+
+                            If upp = 13 Then
+                                SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5), pcblist(6), pcblist(7), pcblist(8), pcblist(9), pcblist(10), pcblist(11), pcblist(12))
+                                pcblist.Clear()
+                                lblPanelBottom.Text = ""
+                                lblPanelTop.Text = ""
+                                lblscan.Text = "SCAN PANEL (BOTTOM):"
+                                lblscan.ForeColor = Color.FromArgb(37, 68, 65)
+                            End If
+                            txtscan.Text = ""
+                        Case 14
+                            pcblist.Sort()
+                            lblscan.Text = "SCAN PCB:"
+                            lblPCBholder1.BackColor = Color.Yellow
+                            lblPCBholder2.BackColor = Color.Yellow
+                            lblPCBholder3.BackColor = Color.Yellow
+                            lblPCBholder4.BackColor = Color.Yellow
+                            lblPCBholder5.BackColor = Color.Yellow
+                            lblPCBholder6.BackColor = Color.Yellow
+                            lblPCBholder7.BackColor = Color.Yellow
+                            lblPCBholder8.BackColor = Color.Yellow
+                            lblPCBholder9.BackColor = Color.Yellow
+                            lblPCBholder10.BackColor = Color.Yellow
+                            lblPCBholder11.BackColor = Color.Yellow
+                            lblPCBholder12.BackColor = Color.Yellow
+                            lblPCBholder13.BackColor = Color.Yellow
+                            lblPCBholder14.BackColor = Color.Yellow
+
+                            lblPCBholder1.ForeColor = Color.Black
+                            lblPCBholder2.ForeColor = Color.Black
+                            lblPCBholder3.ForeColor = Color.Black
+                            lblPCBholder4.ForeColor = Color.Black
+                            lblPCBholder5.ForeColor = Color.Black
+                            lblPCBholder6.ForeColor = Color.Black
+                            lblPCBholder7.ForeColor = Color.Black
+                            lblPCBholder8.ForeColor = Color.Black
+                            lblPCBholder9.ForeColor = Color.Black
+                            lblPCBholder10.ForeColor = Color.Black
+                            lblPCBholder11.ForeColor = Color.Black
+                            lblPCBholder12.ForeColor = Color.Black
+                            lblPCBholder13.ForeColor = Color.Black
+                            lblPCBholder14.ForeColor = Color.Black
+
+                            lblpcb1.BackColor = Color.Yellow
+                            lblpcb2.BackColor = Color.Yellow
+                            lblpcb3.BackColor = Color.Yellow
+                            lblpcb4.BackColor = Color.Yellow
+                            lblpcb5.BackColor = Color.Yellow
+                            lblpcb6.BackColor = Color.Yellow
+                            lblpcb7.BackColor = Color.Yellow
+                            lblpcb8.BackColor = Color.Yellow
+                            lblpcb9.BackColor = Color.Yellow
+                            lblpcb10.BackColor = Color.Yellow
+                            lblpcb11.BackColor = Color.Yellow
+                            lblpcb12.BackColor = Color.Yellow
+                            lblpcb13.BackColor = Color.Yellow
+                            lblpcb14.BackColor = Color.Yellow
+
+                            lblpcb1.Text = pcblist(0)
+                            lblpcb2.Text = pcblist(1)
+                            lblpcb3.Text = pcblist(2)
+                            lblpcb4.Text = pcblist(3)
+                            lblpcb5.Text = pcblist(4)
+                            lblpcb6.Text = pcblist(5)
+                            lblpcb7.Text = pcblist(6)
+                            lblpcb8.Text = pcblist(7)
+                            lblpcb9.Text = pcblist(8)
+                            lblpcb10.Text = pcblist(9)
+                            lblpcb11.Text = pcblist(10)
+                            lblpcb12.Text = pcblist(11)
+                            lblpcb13.Text = pcblist(12)
+                            lblpcb14.Text = pcblist(13)
+
+                            If upp = 14 Then
+                                SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5), pcblist(6), pcblist(7), pcblist(8), pcblist(9), pcblist(10), pcblist(11), pcblist(12), pcblist(13))
+                                pcblist.Clear()
+                                lblPanelBottom.Text = ""
+                                lblPanelTop.Text = ""
+                                lblscan.Text = "SCAN PANEL (BOTTOM):"
+                                lblscan.ForeColor = Color.FromArgb(37, 68, 65)
+                            End If
+                            txtscan.Text = ""
+                        Case 15
+                            pcblist.Sort()
+                            lblscan.Text = "SCAN PCB:"
+                            lblPCBholder1.BackColor = Color.Yellow
+                            lblPCBholder2.BackColor = Color.Yellow
+                            lblPCBholder3.BackColor = Color.Yellow
+                            lblPCBholder4.BackColor = Color.Yellow
+                            lblPCBholder5.BackColor = Color.Yellow
+                            lblPCBholder6.BackColor = Color.Yellow
+                            lblPCBholder7.BackColor = Color.Yellow
+                            lblPCBholder8.BackColor = Color.Yellow
+                            lblPCBholder9.BackColor = Color.Yellow
+                            lblPCBholder10.BackColor = Color.Yellow
+                            lblPCBholder11.BackColor = Color.Yellow
+                            lblPCBholder12.BackColor = Color.Yellow
+                            lblPCBholder13.BackColor = Color.Yellow
+                            lblPCBholder14.BackColor = Color.Yellow
+                            lblPCBholder15.BackColor = Color.Yellow
+
+                            lblPCBholder1.ForeColor = Color.Black
+                            lblPCBholder2.ForeColor = Color.Black
+                            lblPCBholder3.ForeColor = Color.Black
+                            lblPCBholder4.ForeColor = Color.Black
+                            lblPCBholder5.ForeColor = Color.Black
+                            lblPCBholder6.ForeColor = Color.Black
+                            lblPCBholder7.ForeColor = Color.Black
+                            lblPCBholder8.ForeColor = Color.Black
+                            lblPCBholder9.ForeColor = Color.Black
+                            lblPCBholder10.ForeColor = Color.Black
+                            lblPCBholder11.ForeColor = Color.Black
+                            lblPCBholder12.ForeColor = Color.Black
+                            lblPCBholder13.ForeColor = Color.Black
+                            lblPCBholder14.ForeColor = Color.Black
+                            lblPCBholder15.ForeColor = Color.Black
+
+                            lblpcb1.BackColor = Color.Yellow
+                            lblpcb2.BackColor = Color.Yellow
+                            lblpcb3.BackColor = Color.Yellow
+                            lblpcb4.BackColor = Color.Yellow
+                            lblpcb5.BackColor = Color.Yellow
+                            lblpcb6.BackColor = Color.Yellow
+                            lblpcb7.BackColor = Color.Yellow
+                            lblpcb8.BackColor = Color.Yellow
+                            lblpcb9.BackColor = Color.Yellow
+                            lblpcb10.BackColor = Color.Yellow
+                            lblpcb11.BackColor = Color.Yellow
+                            lblpcb12.BackColor = Color.Yellow
+                            lblpcb13.BackColor = Color.Yellow
+                            lblpcb14.BackColor = Color.Yellow
+                            lblpcb15.BackColor = Color.Yellow
+
+                            lblpcb1.Text = pcblist(0)
+                            lblpcb2.Text = pcblist(1)
+                            lblpcb3.Text = pcblist(2)
+                            lblpcb4.Text = pcblist(3)
+                            lblpcb5.Text = pcblist(4)
+                            lblpcb6.Text = pcblist(5)
+                            lblpcb7.Text = pcblist(6)
+                            lblpcb8.Text = pcblist(7)
+                            lblpcb9.Text = pcblist(8)
+                            lblpcb10.Text = pcblist(9)
+                            lblpcb11.Text = pcblist(10)
+                            lblpcb12.Text = pcblist(11)
+                            lblpcb13.Text = pcblist(12)
+                            lblpcb14.Text = pcblist(13)
+                            lblpcb15.Text = pcblist(14)
+
+                            If upp = 15 Then
+                                SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5), pcblist(6), pcblist(7), pcblist(8), pcblist(9), pcblist(10), pcblist(11), pcblist(12), pcblist(13), pcblist(14))
+                                pcblist.Clear()
+                                lblPanelBottom.Text = ""
+                                lblPanelTop.Text = ""
+                                lblscan.Text = "SCAN PANEL (BOTTOM):"
+                                lblscan.ForeColor = Color.FromArgb(37, 68, 65)
+                            End If
+                            txtscan.Text = ""
+                        Case 16
+                            pcblist.Sort()
+                            lblscan.Text = "SCAN PCB:"
+                            lblPCBholder1.BackColor = Color.Yellow
+                            lblPCBholder2.BackColor = Color.Yellow
+                            lblPCBholder3.BackColor = Color.Yellow
+                            lblPCBholder4.BackColor = Color.Yellow
+                            lblPCBholder5.BackColor = Color.Yellow
+                            lblPCBholder6.BackColor = Color.Yellow
+                            lblPCBholder7.BackColor = Color.Yellow
+                            lblPCBholder8.BackColor = Color.Yellow
+                            lblPCBholder9.BackColor = Color.Yellow
+                            lblPCBholder10.BackColor = Color.Yellow
+                            lblPCBholder11.BackColor = Color.Yellow
+                            lblPCBholder12.BackColor = Color.Yellow
+                            lblPCBholder13.BackColor = Color.Yellow
+                            lblPCBholder14.BackColor = Color.Yellow
+                            lblPCBholder15.BackColor = Color.Yellow
+                            lblPCBholder16.BackColor = Color.Yellow
+
+                            lblPCBholder1.ForeColor = Color.Black
+                            lblPCBholder2.ForeColor = Color.Black
+                            lblPCBholder3.ForeColor = Color.Black
+                            lblPCBholder4.ForeColor = Color.Black
+                            lblPCBholder5.ForeColor = Color.Black
+                            lblPCBholder6.ForeColor = Color.Black
+                            lblPCBholder7.ForeColor = Color.Black
+                            lblPCBholder8.ForeColor = Color.Black
+                            lblPCBholder9.ForeColor = Color.Black
+                            lblPCBholder10.ForeColor = Color.Black
+                            lblPCBholder11.ForeColor = Color.Black
+                            lblPCBholder12.ForeColor = Color.Black
+                            lblPCBholder13.ForeColor = Color.Black
+                            lblPCBholder14.ForeColor = Color.Black
+                            lblPCBholder15.ForeColor = Color.Black
+                            lblPCBholder16.ForeColor = Color.Black
+
+                            lblpcb1.BackColor = Color.Yellow
+                            lblpcb2.BackColor = Color.Yellow
+                            lblpcb3.BackColor = Color.Yellow
+                            lblpcb4.BackColor = Color.Yellow
+                            lblpcb5.BackColor = Color.Yellow
+                            lblpcb6.BackColor = Color.Yellow
+                            lblpcb7.BackColor = Color.Yellow
+                            lblpcb8.BackColor = Color.Yellow
+                            lblpcb9.BackColor = Color.Yellow
+                            lblpcb10.BackColor = Color.Yellow
+                            lblpcb11.BackColor = Color.Yellow
+                            lblpcb12.BackColor = Color.Yellow
+                            lblpcb13.BackColor = Color.Yellow
+                            lblpcb14.BackColor = Color.Yellow
+                            lblpcb15.BackColor = Color.Yellow
+                            lblpcb16.BackColor = Color.Yellow
+
+                            lblpcb1.Text = pcblist(0)
+                            lblpcb2.Text = pcblist(1)
+                            lblpcb3.Text = pcblist(2)
+                            lblpcb4.Text = pcblist(3)
+                            lblpcb5.Text = pcblist(4)
+                            lblpcb6.Text = pcblist(5)
+                            lblpcb7.Text = pcblist(6)
+                            lblpcb8.Text = pcblist(7)
+                            lblpcb9.Text = pcblist(8)
+                            lblpcb10.Text = pcblist(9)
+                            lblpcb11.Text = pcblist(10)
+                            lblpcb12.Text = pcblist(11)
+                            lblpcb13.Text = pcblist(12)
+                            lblpcb14.Text = pcblist(13)
+                            lblpcb15.Text = pcblist(14)
+                            lblpcb16.Text = pcblist(15)
+
+                            If upp = 16 Then
+                                SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5), pcblist(6), pcblist(7), pcblist(8), pcblist(9), pcblist(10), pcblist(11), pcblist(12), pcblist(13), pcblist(14), pcblist(15))
+                                pcblist.Clear()
+                                lblPanelBottom.Text = ""
+                                lblPanelTop.Text = ""
+                                lblscan.Text = "SCAN PANEL (BOTTOM):"
+                                lblscan.ForeColor = Color.FromArgb(37, 68, 65)
+                            End If
+                            txtscan.Text = ""
                     End Select
 
                 ElseIf side = "top" And sideRequirement = "dual" Then
@@ -519,6 +1058,62 @@ Public Class frminjection
                                             lblpcb8.Text = pcblist(7)
                                         End If
 
+                                        If upp >= 9 Then
+                                            lblPCBholder9.BackColor = Color.Yellow
+                                            lblPCBholder9.ForeColor = Color.Black
+                                            lblpcb9.BackColor = Color.Yellow
+                                            lblpcb9.Text = pcblist(8)
+                                        End If
+
+                                        If upp >= 10 Then
+                                            lblPCBholder10.BackColor = Color.Yellow
+                                            lblPCBholder10.ForeColor = Color.Black
+                                            lblpcb10.BackColor = Color.Yellow
+                                            lblpcb10.Text = pcblist(9)
+                                        End If
+
+                                        If upp >= 11 Then
+                                            lblPCBholder11.BackColor = Color.Yellow
+                                            lblPCBholder11.ForeColor = Color.Black
+                                            lblpcb11.BackColor = Color.Yellow
+                                            lblpcb11.Text = pcblist(10)
+                                        End If
+
+                                        If upp >= 12 Then
+                                            lblPCBholder12.BackColor = Color.Yellow
+                                            lblPCBholder12.ForeColor = Color.Black
+                                            lblpcb12.BackColor = Color.Yellow
+                                            lblpcb12.Text = pcblist(11)
+                                        End If
+
+                                        If upp >= 13 Then
+                                            lblPCBholder13.BackColor = Color.Yellow
+                                            lblPCBholder13.ForeColor = Color.Black
+                                            lblpcb13.BackColor = Color.Yellow
+                                            lblpcb13.Text = pcblist(12)
+                                        End If
+
+                                        If upp >= 14 Then
+                                            lblPCBholder14.BackColor = Color.Yellow
+                                            lblPCBholder14.ForeColor = Color.Black
+                                            lblpcb14.BackColor = Color.Yellow
+                                            lblpcb14.Text = pcblist(13)
+                                        End If
+
+                                        If upp >= 15 Then
+                                            lblPCBholder15.BackColor = Color.Yellow
+                                            lblPCBholder15.ForeColor = Color.Black
+                                            lblpcb15.BackColor = Color.Yellow
+                                            lblpcb15.Text = pcblist(14)
+                                        End If
+
+                                        If upp >= 16 Then
+                                            lblPCBholder16.BackColor = Color.Yellow
+                                            lblPCBholder16.ForeColor = Color.Black
+                                            lblpcb16.BackColor = Color.Yellow
+                                            lblpcb16.Text = pcblist(15)
+                                        End If
+
                                         Select Case upp
                                             Case 1
                                                 SetPCB(pcblist(0))
@@ -528,12 +1123,30 @@ Public Class frminjection
                                                 SetPCB(pcblist(0), pcblist(1), pcblist(2))
                                             Case 4
                                                 SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3))
+                                            Case 5
+                                                SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4))
                                             Case 6
                                                 SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5))
                                             Case 7
                                                 SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5), pcblist(6))
                                             Case 8
                                                 SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5), pcblist(6), pcblist(7))
+                                            Case 9
+                                                SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5), pcblist(6), pcblist(7), pcblist(8))
+                                            Case 10
+                                                SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5), pcblist(6), pcblist(7), pcblist(8), pcblist(9))
+                                            Case 11
+                                                SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5), pcblist(6), pcblist(7), pcblist(8), pcblist(9), pcblist(10))
+                                            Case 12
+                                                SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5), pcblist(6), pcblist(7), pcblist(8), pcblist(9), pcblist(10), pcblist(11))
+                                            Case 13
+                                                SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5), pcblist(6), pcblist(7), pcblist(8), pcblist(9), pcblist(10), pcblist(11), pcblist(12))
+                                            Case 14
+                                                SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5), pcblist(6), pcblist(7), pcblist(8), pcblist(9), pcblist(10), pcblist(11), pcblist(12), pcblist(13))
+                                            Case 15
+                                                SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5), pcblist(6), pcblist(7), pcblist(8), pcblist(9), pcblist(10), pcblist(11), pcblist(12), pcblist(13), pcblist(14))
+                                            Case 16
+                                                SetPCB(pcblist(0), pcblist(1), pcblist(2), pcblist(3), pcblist(4), pcblist(5), pcblist(6), pcblist(7), pcblist(8), pcblist(9), pcblist(10), pcblist(11), pcblist(12), pcblist(13), pcblist(14), pcblist(15))
                                         End Select
                                     Else
                                         notif("PCB and panel mismatch. Please verify.")
@@ -602,6 +1215,7 @@ Public Class frminjection
         lbldt.Text = cmd.ExecuteScalar
 
         csmin()
+
         refreshDetails()
         writeLogs("Injection Station Loaded")
 
@@ -677,28 +1291,91 @@ Public Class frminjection
             reader.Close()
 
 
-            If upp = 4 Then
-                TableLayoutPanel7.RowStyles(1).Height = 90
-                TableLayoutPanel7.RowStyles(2).Height = 0
-            ElseIf upp = 3 Then
-                TableLayoutPanel7.RowStyles(1).Height = 90
-                TableLayoutPanel7.RowStyles(2).Height = 0
-                TableLayoutPanel7.ColumnStyles(4).Width = 0
-            ElseIf upp = 2 Then
-                TableLayoutPanel7.RowStyles(1).Height = 90
-                TableLayoutPanel7.RowStyles(2).Height = 0
-                TableLayoutPanel7.ColumnStyles(3).Width = 0
-                TableLayoutPanel7.ColumnStyles(4).Width = 0
-            ElseIf upp = 1 Then
-                TableLayoutPanel7.RowStyles(1).Height = 90
-                TableLayoutPanel7.RowStyles(2).Height = 0
-                TableLayoutPanel7.ColumnStyles(2).Width = 0
-                TableLayoutPanel7.ColumnStyles(3).Width = 0
-                TableLayoutPanel7.ColumnStyles(4).Width = 0
-            Else
-                TableLayoutPanel7.RowStyles(1).Height = 45
-                TableLayoutPanel7.RowStyles(2).Height = 45
-            End If
+            'If upp = 16 Then
+
+            'ElseIf upp = 15 Then
+
+            'ElseIf upp = 14 Then
+
+            'ElseIf upp = 13 Then
+
+            'ElseIf upp = 12 Then
+
+            'ElseIf upp = 11 Then
+
+            'ElseIf upp = 10 Then
+
+            'ElseIf upp = 9 Then
+
+            'ElseIf upp = 8 Then
+
+            'ElseIf upp = 7 Then
+
+            'ElseIf upp = 6 Then
+            '    Dim cellPos5 As TableLayoutPanelCellPosition = TableLayoutPanel7.GetCellPosition(pnlPCB5)
+            '    Dim cellPos6 As TableLayoutPanelCellPosition = TableLayoutPanel7.GetCellPosition(pnlPCB6)
+            '    Dim cellPos7 As TableLayoutPanelCellPosition = TableLayoutPanel7.GetCellPosition(pnlPCB7)
+
+            '    TableLayoutPanel7.SetCellPosition(pnlPCB4, cellPos5)
+            '    TableLayoutPanel7.SetCellPosition(pnlPCB5, cellPos6)
+            '    TableLayoutPanel7.SetCellPosition(pnlPCB6, cellPos7)
+
+            '    TableLayoutPanel7.ColumnStyles(4).Width = 0
+
+            '    pnlPCB7.Visible = False
+            '    pnlPCB8.Visible = False
+            'ElseIf upp = 5 Then
+            '    Dim cellPos5 As TableLayoutPanelCellPosition = TableLayoutPanel7.GetCellPosition(pnlPCB5)
+            '    Dim cellPos6 As TableLayoutPanelCellPosition = TableLayoutPanel7.GetCellPosition(pnlPCB6)
+
+            '    TableLayoutPanel7.SetCellPosition(pnlPCB4, cellPos5)
+            '    TableLayoutPanel7.SetCellPosition(pnlPCB5, cellPos6)
+
+            '    TableLayoutPanel7.ColumnStyles(4).Width = 0
+            '    pnlPCB6.Visible = False
+            '    pnlPCB7.Visible = False
+            '    pnlPCB8.Visible = False
+            'ElseIf upp = 4 Then
+            '    TableLayoutPanel7.SetRowSpan(pnlPCB1, 2)
+            '    TableLayoutPanel7.SetRowSpan(pnlPCB2, 2)
+            '    TableLayoutPanel7.SetRowSpan(pnlPCB3, 2)
+            '    TableLayoutPanel7.SetRowSpan(pnlPCB4, 2)
+            '    pnlPCB5.Visible = False
+            '    pnlPCB6.Visible = False
+            '    pnlPCB7.Visible = False
+            '    pnlPCB8.Visible = False
+            'ElseIf upp = 3 Then
+            '    TableLayoutPanel7.SetRowSpan(pnlPCB1, 2)
+            '    TableLayoutPanel7.SetRowSpan(pnlPCB2, 2)
+            '    TableLayoutPanel7.SetRowSpan(pnlPCB3, 2)
+            '    TableLayoutPanel7.ColumnStyles(4).Width = 0
+            '    pnlPCB4.Visible = False
+            '    pnlPCB5.Visible = False
+            '    pnlPCB6.Visible = False
+            '    pnlPCB7.Visible = False
+            '    pnlPCB8.Visible = False
+            'ElseIf upp = 2 Then
+            '    TableLayoutPanel7.SetColumnSpan(pnlPCB1, 2)
+            '    TableLayoutPanel7.SetColumnSpan(pnlPCB2, 2)
+            '    TableLayoutPanel7.SetRowSpan(pnlPCB1, 2)
+            '    TableLayoutPanel7.SetRowSpan(pnlPCB2, 2)
+            '    pnlPCB3.Visible = False
+            '    pnlPCB4.Visible = False
+            '    pnlPCB5.Visible = False
+            '    pnlPCB6.Visible = False
+            '    pnlPCB7.Visible = False
+            '    pnlPCB8.Visible = False
+            'ElseIf upp = 1 Then
+            '    TableLayoutPanel7.SetColumnSpan(pnlPCB1, 4)
+            '    TableLayoutPanel7.SetRowSpan(pnlPCB1, 2)
+            '    pnlPCB2.Visible = False
+            '    pnlPCB3.Visible = False
+            '    pnlPCB4.Visible = False
+            '    pnlPCB5.Visible = False
+            '    pnlPCB6.Visible = False
+            '    pnlPCB7.Visible = False
+            '    pnlPCB8.Visible = False
+            'End If
 
             cmd.CommandText = "SELECT ifnull(`stencilid`,'') FROM `gi_stencil` WHERE `location` = 'Line " & lblline.Text & "'"
             reader = cmd.ExecuteReader
@@ -740,14 +1417,14 @@ Public Class frminjection
     Private Function ExamineScan(ByVal scanText As String) As String
         Dim res As String = ""
         Select Case txtscan.Text.Length
-            Case 7, 11, 12, 13, 14, 15, 16
+            Case 7, 8, 11, 12, 13, 14, 15, 16
                 res = "pcb"
             Case = 9
                 res = "panel"
             Case > 15
                 notif("UNKNOWN!")
                 res = "Unknown"
-            Case 8, 9, 10, 11
+            Case 9, 10, 11
                 notif("UNKNOWN!")
                 res = "Unknown"
         End Select
@@ -823,7 +1500,7 @@ Public Class frminjection
         Return res
     End Function
 
-    Private Sub SetPCB(ByVal leadpcb As String, Optional ByVal pcb2 As String = "", Optional ByVal pcb3 As String = "", Optional ByVal pcb4 As String = "", Optional ByVal pcb5 As String = "", Optional ByVal pcb6 As String = "", Optional ByVal pcb7 As String = "", Optional ByVal pcb8 As String = "")
+    Private Sub SetPCB(ByVal leadpcb As String, Optional ByVal pcb2 As String = "", Optional ByVal pcb3 As String = "", Optional ByVal pcb4 As String = "", Optional ByVal pcb5 As String = "", Optional ByVal pcb6 As String = "", Optional ByVal pcb7 As String = "", Optional ByVal pcb8 As String = "", Optional ByVal pcb9 As String = "", Optional ByVal pcb10 As String = "", Optional ByVal pcb11 As String = "", Optional ByVal pcb12 As String = "", Optional ByVal pcb13 As String = "", Optional ByVal pcb14 As String = "", Optional ByVal pcb15 As String = "", Optional ByVal pcb16 As String = "")
         Try
             Dim cmd As New MySqlCommand
             cmd.Connection = conn
@@ -862,6 +1539,41 @@ Public Class frminjection
                         cmd.CommandText = cmd.CommandText & ", ('" & pcb8 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
                     End If
 
+                    If upp >= 8 Then
+                        cmd.CommandText = cmd.CommandText & ", ('" & pcb8 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                    End If
+
+                    If upp >= 9 Then
+                        cmd.CommandText = cmd.CommandText & ", ('" & pcb9 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                    End If
+
+                    If upp >= 10 Then
+                        cmd.CommandText = cmd.CommandText & ", ('" & pcb10 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                    End If
+
+                    If upp >= 11 Then
+                        cmd.CommandText = cmd.CommandText & ", ('" & pcb11 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                    End If
+
+                    If upp >= 12 Then
+                        cmd.CommandText = cmd.CommandText & ", ('" & pcb12 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                    End If
+
+                    If upp >= 13 Then
+                        cmd.CommandText = cmd.CommandText & ", ('" & pcb13 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                    End If
+
+                    If upp >= 14 Then
+                        cmd.CommandText = cmd.CommandText & ", ('" & pcb14 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                    End If
+
+                    If upp >= 15 Then
+                        cmd.CommandText = cmd.CommandText & ", ('" & pcb15 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                    End If
+
+                    If upp >= 16 Then
+                        cmd.CommandText = cmd.CommandText & ", ('" & pcb16 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanel.Text & "', CONCAT('" & lblPanel.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                    End If
 
                 Else
                     cmd.CommandText = "INSERT 
@@ -898,6 +1610,40 @@ Public Class frminjection
                     If upp >= 8 Then
                         cmd.CommandText = cmd.CommandText & ",('" & pcb8 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
                     End If
+
+                    If upp >= 9 Then
+                        cmd.CommandText = cmd.CommandText & ",('" & pcb8 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                    End If
+
+                    If upp >= 10 Then
+                        cmd.CommandText = cmd.CommandText & ",('" & pcb8 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                    End If
+
+                    If upp >= 11 Then
+                        cmd.CommandText = cmd.CommandText & ",('" & pcb8 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                    End If
+
+                    If upp >= 12 Then
+                        cmd.CommandText = cmd.CommandText & ",('" & pcb8 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                    End If
+
+                    If upp >= 13 Then
+                        cmd.CommandText = cmd.CommandText & ",('" & pcb8 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                    End If
+
+                    If upp >= 14 Then
+                        cmd.CommandText = cmd.CommandText & ",('" & pcb8 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                    End If
+
+                    If upp >= 15 Then
+                        cmd.CommandText = cmd.CommandText & ",('" & pcb8 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                    End If
+
+                    If upp >= 16 Then
+                        cmd.CommandText = cmd.CommandText & ",('" & pcb8 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                    End If
+
+
                 End If
 
             Else
@@ -930,7 +1676,7 @@ Public Class frminjection
 
 
             If palletRequirement = "pallet" Then
-                cmd.CommandText = "UPDATE gi_palletinfo set leadpcbid = '" & leadpcb & "',pcb2 = '" & pcb2 & "',pcb3 = '" & pcb3 & "',pcb4= '" & pcb4 & "',pcb5= '" & pcb5 & "',pcb6= '" & pcb6 & "',pcb7= '" & pcb7 & "',pcb8= '" & pcb8 & "',scantoken = 'injection_" & side & "'  WHERE palletid = '" & lblPanel.Text & "'"
+                cmd.CommandText = "UPDATE gi_palletinfo set leadpcbid = '" & leadpcb & "',pcb2 = '" & pcb2 & "',pcb3 = '" & pcb3 & "',pcb4= '" & pcb4 & "',pcb5= '" & pcb5 & "',pcb6= '" & pcb6 & "',pcb7= '" & pcb7 & "',pcb8= '" & pcb8 & "',pcb9= '" & pcb9 & "',pcb10= '" & pcb10 & "',pcb11= '" & pcb11 & "',pcb12 = '" & pcb12 & "',pcb13= '" & pcb13 & "',pcb14= '" & pcb14 & "',pcb15= '" & pcb15 & "',pcb16= '" & pcb16 & "',scantoken = 'injection_" & side & "'  WHERE palletid = '" & lblPanel.Text & "'"
                 cmd.ExecuteNonQuery()
             End If
         Catch ex As Exception
