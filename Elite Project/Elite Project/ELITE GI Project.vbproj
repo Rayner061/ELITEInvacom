@@ -6,11 +6,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{BF903281-8A2F-4F77-9F30-FDDF83B976D9}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>ELITE_GI.My.MyApplication</StartupObject>
+    <StartupObject>ELITE_GI.frmlogin</StartupObject>
     <RootNamespace>ELITE_GI</RootNamespace>
     <AssemblyName>ELITE_GI</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>WindowsForms</MyType>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <TargetFrameworkProfile />

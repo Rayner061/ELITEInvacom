@@ -126,6 +126,7 @@ Public Class frmFVI
 
         If cbxModel.Text <> "" Then
             cmd.CommandText = "SELECT IF(total='',0,total) FROM gi_view_fvi_input_model_" + shift + "_" + lblline.Text + " WHERE model = '" + cbxModel.Text + "'"
+            'MsgBox(cmd.CommandText)
             lblgoodpermodel.Text = cmd.ExecuteScalar
         End If
     End Sub
@@ -151,12 +152,12 @@ Public Class frmFVI
         Dim myDT As New DataTable
         cmd.Connection = conn
         If lblScan.Text = "SCAN PCB:" Then
-            cmd.CommandText = "SELECT pcbid, fvitimestamp, fvioperator, fvistatus FROM gi_pcbtrace WHERE line_top = '" & lblline.Text & "' AND fvitimestamp > (NOW() - INTERVAL 15 MINUTE)"
+            cmd.CommandText = "SELECT pcbid, fvitimestamp, fvioperator, fvistatus FROM gi_pcbtrace WHERE line_top = '" & lblline.Text & "' AND fvitimestamp > (NOW() - INTERVAL 15 MINUTE) ORDER BY `fvitimestamp` DESC"
 
             myDA.Fill(myDT)
             dgpcb.DataSource = myDT
         Else
-            cmd.CommandText = "SELECT pcbid, fvitimestamp, fvioperator, fvistatus FROM gi_pcbtrace WHERE line_top = '" & lblline.Text & "' AND fvitimestamp > (NOW() - INTERVAL 15 MINUTE) AND fvistatus = 'ng'"
+            cmd.CommandText = "SELECT pcbid, fvitimestamp, fvioperator, fvistatus FROM gi_pcbtrace WHERE line_top = '" & lblline.Text & "' AND fvitimestamp > (NOW() - INTERVAL 15 MINUTE) AND fvistatus = 'ng'  ORDER BY `fvitimestamp` DESC"
             myDA.Fill(myDT)
             dgpcb.DataSource = myDT
         End If
@@ -195,13 +196,13 @@ Public Class frmFVI
 
         cmd.Connection = conn
         cmd.CommandText = "SELECT modelmatrixid FROM gi_pcbtrace WHERE pcbid = '" & scanText & "'"
-        If cmd.ExecuteScalar = modelMatrixID Then
+        If cmd.ExecuteScalar.ToString() = modelMatrixID Then
             If side = "dual" Then
                 cmd.CommandText = "SELECT line_top FROM gi_pcbtrace WHERE pcbid = '" & scanText & "'"
             Else
                 cmd.CommandText = "SELECT line_bottom FROM gi_pcbtrace WHERE pcbid = '" & scanText & "'"
             End If
-            If lblline.Text = cmd.ExecuteScalar Then
+            If lblline.Text = cmd.ExecuteScalar.ToString() Then
                 res = "valid"
             Else
                 res = "wrongline"
@@ -328,11 +329,11 @@ Public Class frmFVI
         Dim Latest As String
         res = ""
         If icprog = True Then
-            cmd.CommandText = "SELECT COUNT(*) FROM `prog` WHERE `FAILCODE` = 'NONE' AND SERIAL_NO = '" & scanText & "'"
-            count = cmd.ExecuteScalar
+            cmd.CommandText = "SELECT COUNT(*) FROM `prog` WHERE `FAILCODE` = 'NONE' AND (SERIAL_NO = '" & scanText & "' or SERIAL_NO = '" & scanText.Substring(scanText.IndexOf("-") + 1) & "')"
+            count = cmd.ExecuteScalar.ToString()
 
-            cmd.CommandText = "SELECT FAILCODE FROM `prog` WHERE SERIAL_NO = '" & scanText & "' ORDER BY FIRST_TIME DESC LIMIT 1"
-            Latest = cmd.ExecuteScalar
+            cmd.CommandText = "SELECT FAILCODE FROM `prog` WHERE (SERIAL_NO = '" & scanText & "' or SERIAL_NO = '" & scanText.Substring(scanText.IndexOf("-") + 1) & "') ORDER BY FIRST_TIME DESC LIMIT 1"
+            Latest = cmd.ExecuteScalar.ToString()
 
             If Latest <> "NONE" Then
                 res = "failedprogram"
@@ -453,6 +454,8 @@ Public Class frmFVI
             End If
         End If
 
+        'SAPStatus = True
+
         cmd.CommandText = "SELECT DISTINCT model FROM gi_modelmatrix WHERE active_status = 'yes' AND customer ='" & customer & "'"
         myDA.Fill(myDT)
         cbxModel.Items.Clear()
@@ -509,28 +512,32 @@ Public Class frmFVI
         Dim cmd As New MySqlCommand
         cmd.Connection = conn
         Dim db As String
-        cmd.CommandText = "SELECT DISTINCT `modelmatrixid` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
-        modelMatrixID = cmd.ExecuteScalar
+        If cbxModel.Text <> "" Then
+            cmd.CommandText = "SELECT DISTINCT `modelmatrixid` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
+            modelMatrixID = cmd.ExecuteScalar
 
-        cmd.CommandText = "SELECT DISTINCT `pcb_side` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
-        side = cmd.ExecuteScalar
+            cmd.CommandText = "SELECT DISTINCT `pcb_side` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
+            side = cmd.ExecuteScalar
 
-        cmd.CommandText = "SELECT DISTINCT IFNULL(`database`,'') FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
-        db = cmd.ExecuteScalar
-        If db <> "" Then
-            icprog = True
-            GIConnect(db)
+            cmd.CommandText = "SELECT DISTINCT IFNULL(`database`,'') FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
+            db = cmd.ExecuteScalar
+            If db <> "" Then
+                icprog = True
+                GIConnect(db)
+            Else
+                icprog = False
+            End If
+
+            CountGood()
+            'cbxFamily.Enabled = False
+            'cbxProductNumber.Enabled = False
+            'cbxPartNumber.Enabled = False
+            cbxModel.Enabled = False
+            cbxBU.Enabled = False
+            txtScan.Enabled = True
+            txtScan.Focus()
         Else
-            icprog = False
+            MsgBox("Complete Details")
         End If
-
-
-        'cbxFamily.Enabled = False
-        'cbxProductNumber.Enabled = False
-        'cbxPartNumber.Enabled = False
-        cbxModel.Enabled = False
-        cbxBU.Enabled = False
-        txtScan.Enabled = True
-        txtScan.Focus()
     End Sub
 End Class

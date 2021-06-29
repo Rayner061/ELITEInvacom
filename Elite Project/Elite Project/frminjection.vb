@@ -1217,7 +1217,7 @@ Public Class frminjection
         csmin()
 
         refreshDetails()
-        writeLogs("Injection Station Loaded")
+        'writeLogs("Injection Station Loaded")
 
         lblAssemblyVersion.Text = "Version " & frmlogin.assemblyVersion & " (General-Release)"
 
@@ -1290,92 +1290,296 @@ Public Class frminjection
             End While
             reader.Close()
 
+            Dim cellPos9 As TableLayoutPanelCellPosition = TableLayoutPanel7.GetCellPosition(pnlPCB9)
+            Dim cellPos10 As TableLayoutPanelCellPosition = TableLayoutPanel7.GetCellPosition(pnlPCB10)
+            Dim cellPos11 As TableLayoutPanelCellPosition = TableLayoutPanel7.GetCellPosition(pnlPCB11)
+            Dim cellPos12 As TableLayoutPanelCellPosition = TableLayoutPanel7.GetCellPosition(pnlPCB12)
+            Dim cellPos13 As TableLayoutPanelCellPosition = TableLayoutPanel7.GetCellPosition(pnlPCB13)
+            Dim cellPos14 As TableLayoutPanelCellPosition = TableLayoutPanel7.GetCellPosition(pnlPCB14)
+            Dim cellPos15 As TableLayoutPanelCellPosition = TableLayoutPanel7.GetCellPosition(pnlPCB15)
 
-            'If upp = 16 Then
+            If upp = 15 Then
+                pnlPCB16.Visible = False
+            ElseIf upp = 14 Then
+                TableLayoutPanel7.SetCellPosition(pnlPCB8, cellPos9)
+                TableLayoutPanel7.SetCellPosition(pnlPCB9, cellPos10)
+                TableLayoutPanel7.SetCellPosition(pnlPCB10, cellPos11)
+                TableLayoutPanel7.SetCellPosition(pnlPCB11, cellPos12)
+                TableLayoutPanel7.SetCellPosition(pnlPCB12, cellPos13)
+                TableLayoutPanel7.SetCellPosition(pnlPCB13, cellPos14)
+                TableLayoutPanel7.SetCellPosition(pnlPCB14, cellPos15)
 
-            'ElseIf upp = 15 Then
+                TableLayoutPanel7.ColumnStyles(8).Width = 0
 
-            'ElseIf upp = 14 Then
+                pnlPCB15.Visible = False
+                pnlPCB16.Visible = False
+            ElseIf upp = 13 Then
+                TableLayoutPanel7.SetCellPosition(pnlPCB8, cellPos9)
+                TableLayoutPanel7.SetCellPosition(pnlPCB9, cellPos10)
+                TableLayoutPanel7.SetCellPosition(pnlPCB10, cellPos11)
+                TableLayoutPanel7.SetCellPosition(pnlPCB11, cellPos12)
+                TableLayoutPanel7.SetCellPosition(pnlPCB12, cellPos13)
+                TableLayoutPanel7.SetCellPosition(pnlPCB13, cellPos14)
 
-            'ElseIf upp = 13 Then
+                TableLayoutPanel7.ColumnStyles(8).Width = 0
 
-            'ElseIf upp = 12 Then
+                pnlPCB14.Visible = False
+                pnlPCB15.Visible = False
+                pnlPCB16.Visible = False
+            ElseIf upp = 12 Then
+                TableLayoutPanel7.SetCellPosition(pnlPCB7, cellPos9)
+                TableLayoutPanel7.SetCellPosition(pnlPCB8, cellPos10)
+                TableLayoutPanel7.SetCellPosition(pnlPCB9, cellPos11)
+                TableLayoutPanel7.SetCellPosition(pnlPCB10, cellPos12)
+                TableLayoutPanel7.SetCellPosition(pnlPCB11, cellPos13)
+                TableLayoutPanel7.SetCellPosition(pnlPCB12, cellPos14)
 
-            'ElseIf upp = 11 Then
+                TableLayoutPanel7.ColumnStyles(7).Width = 0
+                TableLayoutPanel7.ColumnStyles(8).Width = 0
 
-            'ElseIf upp = 10 Then
+                pnlPCB13.Visible = False
+                pnlPCB14.Visible = False
+                pnlPCB15.Visible = False
+                pnlPCB16.Visible = False
+            ElseIf upp = 11 Then
+                TableLayoutPanel7.SetCellPosition(pnlPCB7, cellPos9)
+                TableLayoutPanel7.SetCellPosition(pnlPCB8, cellPos10)
+                TableLayoutPanel7.SetCellPosition(pnlPCB9, cellPos11)
+                TableLayoutPanel7.SetCellPosition(pnlPCB10, cellPos12)
+                TableLayoutPanel7.SetCellPosition(pnlPCB11, cellPos13)
 
-            'ElseIf upp = 9 Then
+                TableLayoutPanel7.ColumnStyles(7).Width = 0
+                TableLayoutPanel7.ColumnStyles(8).Width = 0
 
-            'ElseIf upp = 8 Then
+                pnlPCB12.Visible = False
+                pnlPCB13.Visible = False
+                pnlPCB14.Visible = False
+                pnlPCB15.Visible = False
+                pnlPCB16.Visible = False
+            ElseIf upp = 10 Then
 
-            'ElseIf upp = 7 Then
+                TableLayoutPanel7.SetCellPosition(pnlPCB6, cellPos9)
+                TableLayoutPanel7.SetCellPosition(pnlPCB7, cellPos10)
+                TableLayoutPanel7.SetCellPosition(pnlPCB8, cellPos11)
+                TableLayoutPanel7.SetCellPosition(pnlPCB9, cellPos12)
+                TableLayoutPanel7.SetCellPosition(pnlPCB10, cellPos13)
 
-            'ElseIf upp = 6 Then
-            '    Dim cellPos5 As TableLayoutPanelCellPosition = TableLayoutPanel7.GetCellPosition(pnlPCB5)
-            '    Dim cellPos6 As TableLayoutPanelCellPosition = TableLayoutPanel7.GetCellPosition(pnlPCB6)
-            '    Dim cellPos7 As TableLayoutPanelCellPosition = TableLayoutPanel7.GetCellPosition(pnlPCB7)
+                TableLayoutPanel7.ColumnStyles(6).Width = 0
+                TableLayoutPanel7.ColumnStyles(7).Width = 0
+                TableLayoutPanel7.ColumnStyles(8).Width = 0
 
-            '    TableLayoutPanel7.SetCellPosition(pnlPCB4, cellPos5)
-            '    TableLayoutPanel7.SetCellPosition(pnlPCB5, cellPos6)
-            '    TableLayoutPanel7.SetCellPosition(pnlPCB6, cellPos7)
+                pnlPCB11.Visible = False
+                pnlPCB12.Visible = False
+                pnlPCB13.Visible = False
+                pnlPCB14.Visible = False
+                pnlPCB15.Visible = False
+                pnlPCB16.Visible = False
+            ElseIf upp = 9 Then
 
-            '    TableLayoutPanel7.ColumnStyles(4).Width = 0
+                TableLayoutPanel7.SetCellPosition(pnlPCB6, cellPos9)
+                TableLayoutPanel7.SetCellPosition(pnlPCB7, cellPos10)
+                TableLayoutPanel7.SetCellPosition(pnlPCB8, cellPos11)
+                TableLayoutPanel7.SetCellPosition(pnlPCB9, cellPos12)
 
-            '    pnlPCB7.Visible = False
-            '    pnlPCB8.Visible = False
-            'ElseIf upp = 5 Then
-            '    Dim cellPos5 As TableLayoutPanelCellPosition = TableLayoutPanel7.GetCellPosition(pnlPCB5)
-            '    Dim cellPos6 As TableLayoutPanelCellPosition = TableLayoutPanel7.GetCellPosition(pnlPCB6)
+                TableLayoutPanel7.ColumnStyles(6).Width = 0
+                TableLayoutPanel7.ColumnStyles(7).Width = 0
+                TableLayoutPanel7.ColumnStyles(8).Width = 0
 
-            '    TableLayoutPanel7.SetCellPosition(pnlPCB4, cellPos5)
-            '    TableLayoutPanel7.SetCellPosition(pnlPCB5, cellPos6)
+                pnlPCB10.Visible = False
+                pnlPCB11.Visible = False
+                pnlPCB12.Visible = False
+                pnlPCB13.Visible = False
+                pnlPCB14.Visible = False
+                pnlPCB15.Visible = False
+                pnlPCB16.Visible = False
+            ElseIf upp = 8 Then
 
-            '    TableLayoutPanel7.ColumnStyles(4).Width = 0
-            '    pnlPCB6.Visible = False
-            '    pnlPCB7.Visible = False
-            '    pnlPCB8.Visible = False
-            'ElseIf upp = 4 Then
-            '    TableLayoutPanel7.SetRowSpan(pnlPCB1, 2)
-            '    TableLayoutPanel7.SetRowSpan(pnlPCB2, 2)
-            '    TableLayoutPanel7.SetRowSpan(pnlPCB3, 2)
-            '    TableLayoutPanel7.SetRowSpan(pnlPCB4, 2)
-            '    pnlPCB5.Visible = False
-            '    pnlPCB6.Visible = False
-            '    pnlPCB7.Visible = False
-            '    pnlPCB8.Visible = False
-            'ElseIf upp = 3 Then
-            '    TableLayoutPanel7.SetRowSpan(pnlPCB1, 2)
-            '    TableLayoutPanel7.SetRowSpan(pnlPCB2, 2)
-            '    TableLayoutPanel7.SetRowSpan(pnlPCB3, 2)
-            '    TableLayoutPanel7.ColumnStyles(4).Width = 0
-            '    pnlPCB4.Visible = False
-            '    pnlPCB5.Visible = False
-            '    pnlPCB6.Visible = False
-            '    pnlPCB7.Visible = False
-            '    pnlPCB8.Visible = False
-            'ElseIf upp = 2 Then
-            '    TableLayoutPanel7.SetColumnSpan(pnlPCB1, 2)
-            '    TableLayoutPanel7.SetColumnSpan(pnlPCB2, 2)
-            '    TableLayoutPanel7.SetRowSpan(pnlPCB1, 2)
-            '    TableLayoutPanel7.SetRowSpan(pnlPCB2, 2)
-            '    pnlPCB3.Visible = False
-            '    pnlPCB4.Visible = False
-            '    pnlPCB5.Visible = False
-            '    pnlPCB6.Visible = False
-            '    pnlPCB7.Visible = False
-            '    pnlPCB8.Visible = False
-            'ElseIf upp = 1 Then
-            '    TableLayoutPanel7.SetColumnSpan(pnlPCB1, 4)
-            '    TableLayoutPanel7.SetRowSpan(pnlPCB1, 2)
-            '    pnlPCB2.Visible = False
-            '    pnlPCB3.Visible = False
-            '    pnlPCB4.Visible = False
-            '    pnlPCB5.Visible = False
-            '    pnlPCB6.Visible = False
-            '    pnlPCB7.Visible = False
-            '    pnlPCB8.Visible = False
-            'End If
+
+                TableLayoutPanel7.SetCellPosition(pnlPCB5, cellPos9)
+                TableLayoutPanel7.SetCellPosition(pnlPCB6, cellPos10)
+                TableLayoutPanel7.SetCellPosition(pnlPCB7, cellPos11)
+                TableLayoutPanel7.SetCellPosition(pnlPCB8, cellPos12)
+
+                TableLayoutPanel7.SetColumnSpan(pnlPCB1, 2)
+                TableLayoutPanel7.SetColumnSpan(pnlPCB2, 2)
+                TableLayoutPanel7.SetColumnSpan(pnlPCB3, 2)
+                TableLayoutPanel7.SetColumnSpan(pnlPCB4, 2)
+                TableLayoutPanel7.SetColumnSpan(pnlPCB5, 2)
+                TableLayoutPanel7.SetColumnSpan(pnlPCB6, 2)
+                TableLayoutPanel7.SetColumnSpan(pnlPCB7, 2)
+                TableLayoutPanel7.SetColumnSpan(pnlPCB8, 2)
+
+                pnlPCB9.Visible = False
+                pnlPCB10.Visible = False
+                pnlPCB11.Visible = False
+                pnlPCB12.Visible = False
+                pnlPCB13.Visible = False
+                pnlPCB14.Visible = False
+                pnlPCB15.Visible = False
+                pnlPCB16.Visible = False
+            ElseIf upp = 7 Then
+
+                TableLayoutPanel7.SetCellPosition(pnlPCB5, cellPos9)
+                TableLayoutPanel7.SetCellPosition(pnlPCB6, cellPos10)
+                TableLayoutPanel7.SetCellPosition(pnlPCB7, cellPos11)
+
+                TableLayoutPanel7.SetColumnSpan(pnlPCB1, 2)
+                TableLayoutPanel7.SetColumnSpan(pnlPCB2, 2)
+                TableLayoutPanel7.SetColumnSpan(pnlPCB3, 2)
+                TableLayoutPanel7.SetColumnSpan(pnlPCB4, 2)
+                TableLayoutPanel7.SetColumnSpan(pnlPCB5, 2)
+                TableLayoutPanel7.SetColumnSpan(pnlPCB6, 2)
+                TableLayoutPanel7.SetColumnSpan(pnlPCB7, 2)
+
+                pnlPCB8.Visible = False
+                pnlPCB9.Visible = False
+                pnlPCB10.Visible = False
+                pnlPCB11.Visible = False
+                pnlPCB12.Visible = False
+                pnlPCB13.Visible = False
+                pnlPCB14.Visible = False
+                pnlPCB15.Visible = False
+                pnlPCB16.Visible = False
+
+            ElseIf upp = 6 Then
+
+                TableLayoutPanel7.SetRowSpan(pnlPCB1, 2)
+                TableLayoutPanel7.SetRowSpan(pnlPCB2, 2)
+                TableLayoutPanel7.SetRowSpan(pnlPCB3, 2)
+                TableLayoutPanel7.SetRowSpan(pnlPCB4, 2)
+                TableLayoutPanel7.SetRowSpan(pnlPCB5, 2)
+                TableLayoutPanel7.SetRowSpan(pnlPCB6, 2)
+
+                TableLayoutPanel7.ColumnStyles(7).Width = 0
+                TableLayoutPanel7.ColumnStyles(8).Width = 0
+
+                pnlPCB7.Visible = False
+                pnlPCB8.Visible = False
+                pnlPCB9.Visible = False
+                pnlPCB10.Visible = False
+                pnlPCB11.Visible = False
+                pnlPCB12.Visible = False
+                pnlPCB13.Visible = False
+                pnlPCB14.Visible = False
+                pnlPCB15.Visible = False
+                pnlPCB16.Visible = False
+
+            ElseIf upp = 5 Then
+
+                TableLayoutPanel7.SetRowSpan(pnlPCB1, 2)
+                TableLayoutPanel7.SetRowSpan(pnlPCB2, 2)
+                TableLayoutPanel7.SetRowSpan(pnlPCB3, 2)
+                TableLayoutPanel7.SetRowSpan(pnlPCB4, 2)
+                TableLayoutPanel7.SetRowSpan(pnlPCB5, 2)
+
+                TableLayoutPanel7.ColumnStyles(6).Width = 0
+                TableLayoutPanel7.ColumnStyles(7).Width = 0
+                TableLayoutPanel7.ColumnStyles(8).Width = 0
+
+                pnlPCB6.Visible = False
+                pnlPCB7.Visible = False
+                pnlPCB8.Visible = False
+                pnlPCB9.Visible = False
+                pnlPCB10.Visible = False
+                pnlPCB11.Visible = False
+                pnlPCB12.Visible = False
+                pnlPCB13.Visible = False
+                pnlPCB14.Visible = False
+                pnlPCB15.Visible = False
+                pnlPCB16.Visible = False
+            ElseIf upp = 4 Then
+
+                TableLayoutPanel7.SetRowSpan(pnlPCB1, 2)
+                TableLayoutPanel7.SetRowSpan(pnlPCB2, 2)
+                TableLayoutPanel7.SetRowSpan(pnlPCB3, 2)
+                TableLayoutPanel7.SetRowSpan(pnlPCB4, 2)
+
+                TableLayoutPanel7.SetColumnSpan(pnlPCB1, 2)
+                TableLayoutPanel7.SetColumnSpan(pnlPCB2, 2)
+                TableLayoutPanel7.SetColumnSpan(pnlPCB3, 2)
+                TableLayoutPanel7.SetColumnSpan(pnlPCB4, 2)
+
+                pnlPCB5.Visible = False
+                pnlPCB6.Visible = False
+                pnlPCB7.Visible = False
+                pnlPCB8.Visible = False
+                pnlPCB9.Visible = False
+                pnlPCB10.Visible = False
+                pnlPCB11.Visible = False
+                pnlPCB12.Visible = False
+                pnlPCB13.Visible = False
+                pnlPCB14.Visible = False
+                pnlPCB15.Visible = False
+                pnlPCB16.Visible = False
+
+            ElseIf upp = 3 Then
+
+                TableLayoutPanel7.SetRowSpan(pnlPCB1, 2)
+                TableLayoutPanel7.SetRowSpan(pnlPCB2, 2)
+                TableLayoutPanel7.SetRowSpan(pnlPCB3, 2)
+
+                TableLayoutPanel7.SetColumnSpan(pnlPCB1, 2)
+                TableLayoutPanel7.SetColumnSpan(pnlPCB2, 2)
+                TableLayoutPanel7.SetColumnSpan(pnlPCB3, 2)
+
+                TableLayoutPanel7.ColumnStyles(7).Width = 0
+                TableLayoutPanel7.ColumnStyles(8).Width = 0
+                pnlPCB4.Visible = False
+                pnlPCB5.Visible = False
+                pnlPCB6.Visible = False
+                pnlPCB7.Visible = False
+                pnlPCB8.Visible = False
+                pnlPCB9.Visible = False
+                pnlPCB10.Visible = False
+                pnlPCB11.Visible = False
+                pnlPCB12.Visible = False
+                pnlPCB13.Visible = False
+                pnlPCB14.Visible = False
+                pnlPCB15.Visible = False
+                pnlPCB16.Visible = False
+
+            ElseIf upp = 2 Then
+
+                TableLayoutPanel7.SetColumnSpan(pnlPCB1, 4)
+                TableLayoutPanel7.SetColumnSpan(pnlPCB2, 4)
+                TableLayoutPanel7.SetRowSpan(pnlPCB1, 2)
+                TableLayoutPanel7.SetRowSpan(pnlPCB2, 2)
+                pnlPCB3.Visible = False
+                pnlPCB4.Visible = False
+                pnlPCB5.Visible = False
+                pnlPCB6.Visible = False
+                pnlPCB7.Visible = False
+                pnlPCB8.Visible = False
+                pnlPCB9.Visible = False
+                pnlPCB10.Visible = False
+                pnlPCB11.Visible = False
+                pnlPCB12.Visible = False
+                pnlPCB13.Visible = False
+                pnlPCB14.Visible = False
+                pnlPCB15.Visible = False
+                pnlPCB16.Visible = False
+
+            ElseIf upp = 1 Then
+
+                TableLayoutPanel7.SetColumnSpan(pnlPCB1, 8)
+                TableLayoutPanel7.SetRowSpan(pnlPCB1, 2)
+                pnlPCB2.Visible = False
+                pnlPCB3.Visible = False
+                pnlPCB4.Visible = False
+                pnlPCB5.Visible = False
+                pnlPCB6.Visible = False
+                pnlPCB7.Visible = False
+                pnlPCB8.Visible = False
+                pnlPCB9.Visible = False
+                pnlPCB10.Visible = False
+                pnlPCB11.Visible = False
+                pnlPCB12.Visible = False
+                pnlPCB13.Visible = False
+                pnlPCB14.Visible = False
+                pnlPCB15.Visible = False
+                pnlPCB16.Visible = False
+
+            End If
 
             cmd.CommandText = "SELECT ifnull(`stencilid`,'') FROM `gi_stencil` WHERE `location` = 'Line " & lblline.Text & "'"
             reader = cmd.ExecuteReader
@@ -1612,35 +1816,35 @@ Public Class frminjection
                     End If
 
                     If upp >= 9 Then
-                        cmd.CommandText = cmd.CommandText & ",('" & pcb8 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                        cmd.CommandText = cmd.CommandText & ",('" & pcb9 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
                     End If
 
                     If upp >= 10 Then
-                        cmd.CommandText = cmd.CommandText & ",('" & pcb8 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                        cmd.CommandText = cmd.CommandText & ",('" & pcb10 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
                     End If
 
                     If upp >= 11 Then
-                        cmd.CommandText = cmd.CommandText & ",('" & pcb8 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                        cmd.CommandText = cmd.CommandText & ",('" & pcb11 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
                     End If
 
                     If upp >= 12 Then
-                        cmd.CommandText = cmd.CommandText & ",('" & pcb8 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                        cmd.CommandText = cmd.CommandText & ",('" & pcb12 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
                     End If
 
                     If upp >= 13 Then
-                        cmd.CommandText = cmd.CommandText & ",('" & pcb8 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                        cmd.CommandText = cmd.CommandText & ",('" & pcb13 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
                     End If
 
                     If upp >= 14 Then
-                        cmd.CommandText = cmd.CommandText & ",('" & pcb8 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                        cmd.CommandText = cmd.CommandText & ",('" & pcb14 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
                     End If
 
                     If upp >= 15 Then
-                        cmd.CommandText = cmd.CommandText & ",('" & pcb8 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                        cmd.CommandText = cmd.CommandText & ",('" & pcb15 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
                     End If
 
                     If upp >= 16 Then
-                        cmd.CommandText = cmd.CommandText & ",('" & pcb8 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
+                        cmd.CommandText = cmd.CommandText & ",('" & pcb16 & "', '" & modelMatrixID & "','" & lblCreamSolder.Text & "' ,'" & lblStencil.Text & "' ,'" & lblSqueegeeFront.Text & "','" & lblSqueegeeRear.Text & "', '" & lblPanelBottom.Text & "' , '" & lblPanelTop.Text & "', CONCAT('" & lblPanelBottom.Text & "', '" & leadpcb & "'), CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "'), '" & lblline.Text & "', 'injection_bottom', NOW(), '" & lblname.Text & "')"
                     End If
 
 
@@ -1648,7 +1852,7 @@ Public Class frminjection
 
             Else
                 cmd.CommandText = "UPDATE gi_pcbtrace SET panel_top = '" & lblPanelTop.Text & "' , panelpcbid_top = CONCAT('" & lblPanelTop.Text & "', '" & leadpcb & "') ,line_top = '" & lblline.Text & "', processtoken = 'injection_top',
-                                    injectiontimestamp_top = NOW(), injectionoperator_top = '" & lblname.Text & "',stencilid_top = '" & lblStencil.Text & "',squeegeeidfront_top = '" & lblSqueegeeFront.Text & "',squeegeeidrear_top = '" & lblSqueegeeRear.Text & "',creamid_top = '" & lblCreamSolder.Text & "' WHERE pcbid = '" & leadpcb & "' OR pcbid = '" & pcb2 & "' OR pcbid = '" & pcb3 & "' OR pcbid = '" & pcb4 & "' OR pcbid = '" & pcb5 & "' OR pcbid = '" & pcb6 & "'  OR pcbid = '" & pcb7 & "'  OR pcbid = '" & pcb8 & "'"
+                                    injectiontimestamp_top = NOW(), injectionoperator_top = '" & lblname.Text & "',stencilid_top = '" & lblStencil.Text & "',squeegeeidfront_top = '" & lblSqueegeeFront.Text & "',squeegeeidrear_top = '" & lblSqueegeeRear.Text & "',creamid_top = '" & lblCreamSolder.Text & "' WHERE pcbid = '" & leadpcb & "' OR pcbid = '" & pcb2 & "' OR pcbid = '" & pcb3 & "' OR pcbid = '" & pcb4 & "' OR pcbid = '" & pcb5 & "' OR pcbid = '" & pcb6 & "'  OR pcbid = '" & pcb7 & "'  OR pcbid = '" & pcb8 & "'  OR pcbid = '" & pcb9 & "'  OR pcbid = '" & pcb10 & "'  OR pcbid = '" & pcb11 & "'  OR pcbid = '" & pcb12 & "'  OR pcbid = '" & pcb13 & "'  OR pcbid = '" & pcb14 & "'  OR pcbid = '" & pcb15 & "'  OR pcbid = '" & pcb16 & "'"
             End If
             cmd.ExecuteNonQuery()
 
@@ -1669,6 +1873,22 @@ Public Class frminjection
                     cmd.CommandText = "INSERT INTO `sap_pcb_prod_order` (`pcbid`, `prod_order`)VALUES ('" & leadpcb + MSGs & "','" & lblPO.Text & "'),('" & pcb2 + MSGs & "','" & lblPO.Text & "'),('" & pcb3 + MSGs & "','" & lblPO.Text & "'),('" & pcb4 + MSGs & "','" & lblPO.Text & "'),('" & pcb5 + MSGs & "','" & lblPO.Text & "'),('" & pcb6 + MSGs & "','" & lblPO.Text & "'),('" & pcb7 + MSGs & "','" & lblPO.Text & "') ON DUPLICATE KEY UPDATE `pcbid` = `pcbid`"
                 ElseIf upp = 8 Then
                     cmd.CommandText = "INSERT INTO `sap_pcb_prod_order` (`pcbid`, `prod_order`)VALUES ('" & leadpcb + MSGs & "','" & lblPO.Text & "'),('" & pcb2 + MSGs & "','" & lblPO.Text & "'),('" & pcb3 + MSGs & "','" & lblPO.Text & "'),('" & pcb4 + MSGs & "','" & lblPO.Text & "'),('" & pcb5 + MSGs & "','" & lblPO.Text & "'),('" & pcb6 + MSGs & "','" & lblPO.Text & "'),('" & pcb7 + MSGs & "','" & lblPO.Text & "'),('" & pcb8 + MSGs & "','" & lblPO.Text & "') ON DUPLICATE KEY UPDATE `pcbid` = `pcbid`"
+                ElseIf upp = 9 Then
+                    cmd.CommandText = "INSERT INTO `sap_pcb_prod_order` (`pcbid`, `prod_order`)VALUES ('" & leadpcb + MSGs & "','" & lblPO.Text & "'),('" & pcb2 + MSGs & "','" & lblPO.Text & "'),('" & pcb3 + MSGs & "','" & lblPO.Text & "'),('" & pcb4 + MSGs & "','" & lblPO.Text & "'),('" & pcb5 + MSGs & "','" & lblPO.Text & "'),('" & pcb6 + MSGs & "','" & lblPO.Text & "'),('" & pcb7 + MSGs & "','" & lblPO.Text & "'),('" & pcb8 + MSGs & "','" & lblPO.Text & "'),('" & pcb9 + MSGs & "','" & lblPO.Text & "') ON DUPLICATE KEY UPDATE `pcbid` = `pcbid`"
+                ElseIf upp = 10 Then
+                    cmd.CommandText = "INSERT INTO `sap_pcb_prod_order` (`pcbid`, `prod_order`)VALUES ('" & leadpcb + MSGs & "','" & lblPO.Text & "'),('" & pcb2 + MSGs & "','" & lblPO.Text & "'),('" & pcb3 + MSGs & "','" & lblPO.Text & "'),('" & pcb4 + MSGs & "','" & lblPO.Text & "'),('" & pcb5 + MSGs & "','" & lblPO.Text & "'),('" & pcb6 + MSGs & "','" & lblPO.Text & "'),('" & pcb7 + MSGs & "','" & lblPO.Text & "'),('" & pcb8 + MSGs & "','" & lblPO.Text & "'),('" & pcb9 + MSGs & "','" & lblPO.Text & "'),('" & pcb10 + MSGs & "','" & lblPO.Text & "') ON DUPLICATE KEY UPDATE `pcbid` = `pcbid`"
+                ElseIf upp = 11 Then
+                    cmd.CommandText = "INSERT INTO `sap_pcb_prod_order` (`pcbid`, `prod_order`)VALUES ('" & leadpcb + MSGs & "','" & lblPO.Text & "'),('" & pcb2 + MSGs & "','" & lblPO.Text & "'),('" & pcb3 + MSGs & "','" & lblPO.Text & "'),('" & pcb4 + MSGs & "','" & lblPO.Text & "'),('" & pcb5 + MSGs & "','" & lblPO.Text & "'),('" & pcb6 + MSGs & "','" & lblPO.Text & "'),('" & pcb7 + MSGs & "','" & lblPO.Text & "'),('" & pcb8 + MSGs & "','" & lblPO.Text & "'),('" & pcb9 + MSGs & "','" & lblPO.Text & "'),('" & pcb10 + MSGs & "','" & lblPO.Text & "'),('" & pcb11 + MSGs & "','" & lblPO.Text & "') ON DUPLICATE KEY UPDATE `pcbid` = `pcbid`"
+                ElseIf upp = 12 Then
+                    cmd.CommandText = "INSERT INTO `sap_pcb_prod_order` (`pcbid`, `prod_order`)VALUES ('" & leadpcb + MSGs & "','" & lblPO.Text & "'),('" & pcb2 + MSGs & "','" & lblPO.Text & "'),('" & pcb3 + MSGs & "','" & lblPO.Text & "'),('" & pcb4 + MSGs & "','" & lblPO.Text & "'),('" & pcb5 + MSGs & "','" & lblPO.Text & "'),('" & pcb6 + MSGs & "','" & lblPO.Text & "'),('" & pcb7 + MSGs & "','" & lblPO.Text & "'),('" & pcb8 + MSGs & "','" & lblPO.Text & "'),('" & pcb9 + MSGs & "','" & lblPO.Text & "'),('" & pcb10 + MSGs & "','" & lblPO.Text & "'),('" & pcb11 + MSGs & "','" & lblPO.Text & "'),('" & pcb12 + MSGs & "','" & lblPO.Text & "') ON DUPLICATE KEY UPDATE `pcbid` = `pcbid`"
+                ElseIf upp = 13 Then
+                    cmd.CommandText = "INSERT INTO `sap_pcb_prod_order` (`pcbid`, `prod_order`)VALUES ('" & leadpcb + MSGs & "','" & lblPO.Text & "'),('" & pcb2 + MSGs & "','" & lblPO.Text & "'),('" & pcb3 + MSGs & "','" & lblPO.Text & "'),('" & pcb4 + MSGs & "','" & lblPO.Text & "'),('" & pcb5 + MSGs & "','" & lblPO.Text & "'),('" & pcb6 + MSGs & "','" & lblPO.Text & "'),('" & pcb7 + MSGs & "','" & lblPO.Text & "'),('" & pcb8 + MSGs & "','" & lblPO.Text & "'),('" & pcb9 + MSGs & "','" & lblPO.Text & "'),('" & pcb10 + MSGs & "','" & lblPO.Text & "'),('" & pcb11 + MSGs & "','" & lblPO.Text & "'),('" & pcb12 + MSGs & "','" & lblPO.Text & "'),('" & pcb13 + MSGs & "','" & lblPO.Text & "') ON DUPLICATE KEY UPDATE `pcbid` = `pcbid`"
+                ElseIf upp = 14 Then
+                    cmd.CommandText = "INSERT INTO `sap_pcb_prod_order` (`pcbid`, `prod_order`)VALUES ('" & leadpcb + MSGs & "','" & lblPO.Text & "'),('" & pcb2 + MSGs & "','" & lblPO.Text & "'),('" & pcb3 + MSGs & "','" & lblPO.Text & "'),('" & pcb4 + MSGs & "','" & lblPO.Text & "'),('" & pcb5 + MSGs & "','" & lblPO.Text & "'),('" & pcb6 + MSGs & "','" & lblPO.Text & "'),('" & pcb7 + MSGs & "','" & lblPO.Text & "'),('" & pcb8 + MSGs & "','" & lblPO.Text & "'),('" & pcb9 + MSGs & "','" & lblPO.Text & "'),('" & pcb10 + MSGs & "','" & lblPO.Text & "'),('" & pcb11 + MSGs & "','" & lblPO.Text & "'),('" & pcb12 + MSGs & "','" & lblPO.Text & "'),('" & pcb13 + MSGs & "','" & lblPO.Text & "'),('" & pcb14 + MSGs & "','" & lblPO.Text & "') ON DUPLICATE KEY UPDATE `pcbid` = `pcbid`"
+                ElseIf upp = 15 Then
+                    cmd.CommandText = "INSERT INTO `sap_pcb_prod_order` (`pcbid`, `prod_order`)VALUES ('" & leadpcb + MSGs & "','" & lblPO.Text & "'),('" & pcb2 + MSGs & "','" & lblPO.Text & "'),('" & pcb3 + MSGs & "','" & lblPO.Text & "'),('" & pcb4 + MSGs & "','" & lblPO.Text & "'),('" & pcb5 + MSGs & "','" & lblPO.Text & "'),('" & pcb6 + MSGs & "','" & lblPO.Text & "'),('" & pcb7 + MSGs & "','" & lblPO.Text & "'),('" & pcb8 + MSGs & "','" & lblPO.Text & "'),('" & pcb9 + MSGs & "','" & lblPO.Text & "'),('" & pcb10 + MSGs & "','" & lblPO.Text & "'),('" & pcb11 + MSGs & "','" & lblPO.Text & "'),('" & pcb12 + MSGs & "','" & lblPO.Text & "'),('" & pcb13 + MSGs & "','" & lblPO.Text & "'),('" & pcb14 + MSGs & "','" & lblPO.Text & "'),('" & pcb15 + MSGs & "','" & lblPO.Text & "') ON DUPLICATE KEY UPDATE `pcbid` = `pcbid`"
+                ElseIf upp = 16 Then
+                    cmd.CommandText = "INSERT INTO `sap_pcb_prod_order` (`pcbid`, `prod_order`)VALUES ('" & leadpcb + MSGs & "','" & lblPO.Text & "'),('" & pcb2 + MSGs & "','" & lblPO.Text & "'),('" & pcb3 + MSGs & "','" & lblPO.Text & "'),('" & pcb4 + MSGs & "','" & lblPO.Text & "'),('" & pcb5 + MSGs & "','" & lblPO.Text & "'),('" & pcb6 + MSGs & "','" & lblPO.Text & "'),('" & pcb7 + MSGs & "','" & lblPO.Text & "'),('" & pcb8 + MSGs & "','" & lblPO.Text & "'),('" & pcb9 + MSGs & "','" & lblPO.Text & "'),('" & pcb10 + MSGs & "','" & lblPO.Text & "'),('" & pcb11 + MSGs & "','" & lblPO.Text & "'),('" & pcb12 + MSGs & "','" & lblPO.Text & "'),('" & pcb13 + MSGs & "','" & lblPO.Text & "'),('" & pcb14 + MSGs & "','" & lblPO.Text & "'),('" & pcb15 + MSGs & "','" & lblPO.Text & "'),('" & pcb16 + MSGs & "','" & lblPO.Text & "') ON DUPLICATE KEY UPDATE `pcbid` = `pcbid`"
                 End If
                 cmd.ExecuteNonQuery()
             End If

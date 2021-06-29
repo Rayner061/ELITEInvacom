@@ -86,15 +86,9 @@ Partial Class frminjection
         Me.txtscan = New System.Windows.Forms.TextBox()
         Me.lblscan = New System.Windows.Forms.Label()
         Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
-        Me.pnlPCB8 = New System.Windows.Forms.TableLayoutPanel()
-        Me.lblPCBholder8 = New System.Windows.Forms.Label()
-        Me.lblpcb8 = New System.Windows.Forms.Label()
-        Me.pnlPCB6 = New System.Windows.Forms.TableLayoutPanel()
-        Me.lblPCBholder6 = New System.Windows.Forms.Label()
-        Me.lblpcb6 = New System.Windows.Forms.Label()
-        Me.pnlPCB5 = New System.Windows.Forms.TableLayoutPanel()
-        Me.lblPCBholder5 = New System.Windows.Forms.Label()
-        Me.lblpcb5 = New System.Windows.Forms.Label()
+        Me.pnlPCB15 = New System.Windows.Forms.TableLayoutPanel()
+        Me.lblPCBholder15 = New System.Windows.Forms.Label()
+        Me.lblpcb15 = New System.Windows.Forms.Label()
         Me.pnlPCB4 = New System.Windows.Forms.TableLayoutPanel()
         Me.lblPCBholder4 = New System.Windows.Forms.Label()
         Me.lblpcb4 = New System.Windows.Forms.Label()
@@ -107,23 +101,18 @@ Partial Class frminjection
         Me.pnlPCB1 = New System.Windows.Forms.TableLayoutPanel()
         Me.lblPCBholder1 = New System.Windows.Forms.Label()
         Me.lblpcb1 = New System.Windows.Forms.Label()
+        Me.pnlPCB5 = New System.Windows.Forms.TableLayoutPanel()
+        Me.lblPCBholder5 = New System.Windows.Forms.Label()
+        Me.lblpcb5 = New System.Windows.Forms.Label()
+        Me.pnlPCB6 = New System.Windows.Forms.TableLayoutPanel()
+        Me.lblPCBholder6 = New System.Windows.Forms.Label()
+        Me.lblpcb6 = New System.Windows.Forms.Label()
         Me.pnlPCB7 = New System.Windows.Forms.TableLayoutPanel()
         Me.lblPCBholder7 = New System.Windows.Forms.Label()
         Me.lblpcb7 = New System.Windows.Forms.Label()
-        Me.lblWarning = New System.Windows.Forms.Label()
-        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
-        Me.LineShape4 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.LineShape3 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.RectangleShape6 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
-        Me.RectangleShape5 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
-        Me.RectangleShape4 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
-        Me.RectangleShape3 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
-        Me.RectangleShape2 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
-        Me.RectangleShape1 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
-        Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
-        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.pnlPCB8 = New System.Windows.Forms.TableLayoutPanel()
+        Me.lblPCBholder8 = New System.Windows.Forms.Label()
+        Me.lblpcb8 = New System.Windows.Forms.Label()
         Me.pnlPCB9 = New System.Windows.Forms.TableLayoutPanel()
         Me.lblPCBholder9 = New System.Windows.Forms.Label()
         Me.lblpcb9 = New System.Windows.Forms.Label()
@@ -142,12 +131,23 @@ Partial Class frminjection
         Me.pnlPCB14 = New System.Windows.Forms.TableLayoutPanel()
         Me.lblPCBholder14 = New System.Windows.Forms.Label()
         Me.lblpcb14 = New System.Windows.Forms.Label()
-        Me.pnlPCB15 = New System.Windows.Forms.TableLayoutPanel()
-        Me.lblPCBholder15 = New System.Windows.Forms.Label()
-        Me.lblpcb15 = New System.Windows.Forms.Label()
         Me.pnlPCB16 = New System.Windows.Forms.TableLayoutPanel()
         Me.lblPCBholder16 = New System.Windows.Forms.Label()
         Me.lblpcb16 = New System.Windows.Forms.Label()
+        Me.lblWarning = New System.Windows.Forms.Label()
+        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.LineShape4 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape3 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.RectangleShape6 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
+        Me.RectangleShape5 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
+        Me.RectangleShape4 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
+        Me.RectangleShape3 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
+        Me.RectangleShape2 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
+        Me.RectangleShape1 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
+        Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
+        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel5.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
@@ -157,23 +157,23 @@ Partial Class frminjection
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel4.SuspendLayout()
         Me.TableLayoutPanel7.SuspendLayout()
-        Me.pnlPCB8.SuspendLayout()
-        Me.pnlPCB6.SuspendLayout()
-        Me.pnlPCB5.SuspendLayout()
+        Me.pnlPCB15.SuspendLayout()
         Me.pnlPCB4.SuspendLayout()
         Me.pnlPCB3.SuspendLayout()
         Me.pnlPCB2.SuspendLayout()
         Me.pnlPCB1.SuspendLayout()
+        Me.pnlPCB5.SuspendLayout()
+        Me.pnlPCB6.SuspendLayout()
         Me.pnlPCB7.SuspendLayout()
-        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlPCB8.SuspendLayout()
         Me.pnlPCB9.SuspendLayout()
         Me.pnlPCB10.SuspendLayout()
         Me.pnlPCB11.SuspendLayout()
         Me.pnlPCB12.SuspendLayout()
         Me.pnlPCB13.SuspendLayout()
         Me.pnlPCB14.SuspendLayout()
-        Me.pnlPCB15.SuspendLayout()
         Me.pnlPCB16.SuspendLayout()
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Timer1
@@ -1134,159 +1134,57 @@ Partial Class frminjection
         Me.TableLayoutPanel7.Size = New System.Drawing.Size(1340, 202)
         Me.TableLayoutPanel7.TabIndex = 86
         '
-        'pnlPCB8
+        'pnlPCB15
         '
-        Me.pnlPCB8.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.pnlPCB8.ColumnCount = 3
-        Me.pnlPCB8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
-        Me.pnlPCB8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90.0!))
-        Me.pnlPCB8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
-        Me.pnlPCB8.Controls.Add(Me.lblPCBholder8, 1, 2)
-        Me.pnlPCB8.Controls.Add(Me.lblpcb8, 1, 1)
-        Me.pnlPCB8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlPCB8.Location = New System.Drawing.Point(1162, 15)
-        Me.pnlPCB8.Margin = New System.Windows.Forms.Padding(5)
-        Me.pnlPCB8.Name = "pnlPCB8"
-        Me.pnlPCB8.RowCount = 4
-        Me.pnlPCB8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
-        Me.pnlPCB8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
-        Me.pnlPCB8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.pnlPCB8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
-        Me.pnlPCB8.Size = New System.Drawing.Size(153, 80)
-        Me.pnlPCB8.TabIndex = 47
+        Me.pnlPCB15.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.pnlPCB15.ColumnCount = 3
+        Me.pnlPCB15.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
+        Me.pnlPCB15.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90.0!))
+        Me.pnlPCB15.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
+        Me.pnlPCB15.Controls.Add(Me.lblPCBholder15, 1, 2)
+        Me.pnlPCB15.Controls.Add(Me.lblpcb15, 1, 1)
+        Me.pnlPCB15.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlPCB15.Location = New System.Drawing.Point(999, 105)
+        Me.pnlPCB15.Margin = New System.Windows.Forms.Padding(5)
+        Me.pnlPCB15.Name = "pnlPCB15"
+        Me.pnlPCB15.RowCount = 4
+        Me.pnlPCB15.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
+        Me.pnlPCB15.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
+        Me.pnlPCB15.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.pnlPCB15.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
+        Me.pnlPCB15.Size = New System.Drawing.Size(153, 80)
+        Me.pnlPCB15.TabIndex = 89
         '
-        'lblPCBholder8
+        'lblPCBholder15
         '
-        Me.lblPCBholder8.AutoSize = True
-        Me.lblPCBholder8.BackColor = System.Drawing.Color.Transparent
-        Me.lblPCBholder8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblPCBholder8.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPCBholder8.ForeColor = System.Drawing.Color.White
-        Me.lblPCBholder8.Location = New System.Drawing.Point(7, 32)
-        Me.lblPCBholder8.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPCBholder8.Name = "lblPCBholder8"
-        Me.lblPCBholder8.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblPCBholder8.Size = New System.Drawing.Size(137, 40)
-        Me.lblPCBholder8.TabIndex = 45
-        Me.lblPCBholder8.Text = "PCB8"
-        Me.lblPCBholder8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblPCBholder15.AutoSize = True
+        Me.lblPCBholder15.BackColor = System.Drawing.Color.Transparent
+        Me.lblPCBholder15.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblPCBholder15.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPCBholder15.ForeColor = System.Drawing.Color.White
+        Me.lblPCBholder15.Location = New System.Drawing.Point(7, 32)
+        Me.lblPCBholder15.Margin = New System.Windows.Forms.Padding(0)
+        Me.lblPCBholder15.Name = "lblPCBholder15"
+        Me.lblPCBholder15.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.lblPCBholder15.Size = New System.Drawing.Size(137, 40)
+        Me.lblPCBholder15.TabIndex = 45
+        Me.lblPCBholder15.Text = "PCB15"
+        Me.lblPCBholder15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'lblpcb8
+        'lblpcb15
         '
-        Me.lblpcb8.BackColor = System.Drawing.Color.Transparent
-        Me.lblpcb8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblpcb8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblpcb8.ForeColor = System.Drawing.Color.Black
-        Me.lblpcb8.Location = New System.Drawing.Point(7, 8)
-        Me.lblpcb8.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblpcb8.Name = "lblpcb8"
-        Me.lblpcb8.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblpcb8.Size = New System.Drawing.Size(137, 24)
-        Me.lblpcb8.TabIndex = 38
-        Me.lblpcb8.Text = " "
-        Me.lblpcb8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'pnlPCB6
-        '
-        Me.pnlPCB6.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.pnlPCB6.ColumnCount = 3
-        Me.pnlPCB6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
-        Me.pnlPCB6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90.0!))
-        Me.pnlPCB6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
-        Me.pnlPCB6.Controls.Add(Me.lblPCBholder6, 1, 2)
-        Me.pnlPCB6.Controls.Add(Me.lblpcb6, 1, 1)
-        Me.pnlPCB6.Location = New System.Drawing.Point(836, 15)
-        Me.pnlPCB6.Margin = New System.Windows.Forms.Padding(5)
-        Me.pnlPCB6.Name = "pnlPCB6"
-        Me.pnlPCB6.RowCount = 4
-        Me.pnlPCB6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
-        Me.pnlPCB6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
-        Me.pnlPCB6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.pnlPCB6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
-        Me.pnlPCB6.Size = New System.Drawing.Size(153, 80)
-        Me.pnlPCB6.TabIndex = 46
-        '
-        'lblPCBholder6
-        '
-        Me.lblPCBholder6.AutoSize = True
-        Me.lblPCBholder6.BackColor = System.Drawing.Color.Transparent
-        Me.lblPCBholder6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblPCBholder6.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPCBholder6.ForeColor = System.Drawing.Color.White
-        Me.lblPCBholder6.Location = New System.Drawing.Point(7, 32)
-        Me.lblPCBholder6.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPCBholder6.Name = "lblPCBholder6"
-        Me.lblPCBholder6.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblPCBholder6.Size = New System.Drawing.Size(137, 40)
-        Me.lblPCBholder6.TabIndex = 45
-        Me.lblPCBholder6.Text = "PCB6"
-        Me.lblPCBholder6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblpcb6
-        '
-        Me.lblpcb6.BackColor = System.Drawing.Color.Transparent
-        Me.lblpcb6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblpcb6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblpcb6.ForeColor = System.Drawing.Color.Black
-        Me.lblpcb6.Location = New System.Drawing.Point(7, 8)
-        Me.lblpcb6.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblpcb6.Name = "lblpcb6"
-        Me.lblpcb6.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblpcb6.Size = New System.Drawing.Size(137, 24)
-        Me.lblpcb6.TabIndex = 38
-        Me.lblpcb6.Text = " "
-        Me.lblpcb6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'pnlPCB5
-        '
-        Me.pnlPCB5.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.pnlPCB5.ColumnCount = 3
-        Me.pnlPCB5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
-        Me.pnlPCB5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90.0!))
-        Me.pnlPCB5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
-        Me.pnlPCB5.Controls.Add(Me.lblPCBholder5, 1, 2)
-        Me.pnlPCB5.Controls.Add(Me.lblpcb5, 1, 1)
-        Me.pnlPCB5.Location = New System.Drawing.Point(673, 15)
-        Me.pnlPCB5.Margin = New System.Windows.Forms.Padding(5)
-        Me.pnlPCB5.Name = "pnlPCB5"
-        Me.pnlPCB5.RowCount = 4
-        Me.pnlPCB5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
-        Me.pnlPCB5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
-        Me.pnlPCB5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.pnlPCB5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
-        Me.pnlPCB5.Size = New System.Drawing.Size(153, 80)
-        Me.pnlPCB5.TabIndex = 45
-        '
-        'lblPCBholder5
-        '
-        Me.lblPCBholder5.AutoSize = True
-        Me.lblPCBholder5.BackColor = System.Drawing.Color.Transparent
-        Me.lblPCBholder5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblPCBholder5.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPCBholder5.ForeColor = System.Drawing.Color.White
-        Me.lblPCBholder5.Location = New System.Drawing.Point(7, 32)
-        Me.lblPCBholder5.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPCBholder5.Name = "lblPCBholder5"
-        Me.lblPCBholder5.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblPCBholder5.Size = New System.Drawing.Size(137, 40)
-        Me.lblPCBholder5.TabIndex = 45
-        Me.lblPCBholder5.Text = "PCB5"
-        Me.lblPCBholder5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblpcb5
-        '
-        Me.lblpcb5.BackColor = System.Drawing.Color.Transparent
-        Me.lblpcb5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblpcb5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblpcb5.ForeColor = System.Drawing.Color.Black
-        Me.lblpcb5.Location = New System.Drawing.Point(7, 8)
-        Me.lblpcb5.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblpcb5.Name = "lblpcb5"
-        Me.lblpcb5.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblpcb5.Size = New System.Drawing.Size(137, 24)
-        Me.lblpcb5.TabIndex = 38
-        Me.lblpcb5.Text = " "
-        Me.lblpcb5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblpcb15.BackColor = System.Drawing.Color.Transparent
+        Me.lblpcb15.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblpcb15.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblpcb15.ForeColor = System.Drawing.Color.Black
+        Me.lblpcb15.Location = New System.Drawing.Point(7, 8)
+        Me.lblpcb15.Margin = New System.Windows.Forms.Padding(0)
+        Me.lblpcb15.Name = "lblpcb15"
+        Me.lblpcb15.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.lblpcb15.Size = New System.Drawing.Size(137, 24)
+        Me.lblpcb15.TabIndex = 38
+        Me.lblpcb15.Text = " "
+        Me.lblpcb15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'pnlPCB4
         '
@@ -1498,6 +1396,110 @@ Partial Class frminjection
         Me.lblpcb1.Text = " "
         Me.lblpcb1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'pnlPCB5
+        '
+        Me.pnlPCB5.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.pnlPCB5.ColumnCount = 3
+        Me.pnlPCB5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
+        Me.pnlPCB5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90.0!))
+        Me.pnlPCB5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
+        Me.pnlPCB5.Controls.Add(Me.lblPCBholder5, 1, 2)
+        Me.pnlPCB5.Controls.Add(Me.lblpcb5, 1, 1)
+        Me.pnlPCB5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlPCB5.Location = New System.Drawing.Point(673, 15)
+        Me.pnlPCB5.Margin = New System.Windows.Forms.Padding(5)
+        Me.pnlPCB5.Name = "pnlPCB5"
+        Me.pnlPCB5.RowCount = 4
+        Me.pnlPCB5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
+        Me.pnlPCB5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
+        Me.pnlPCB5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.pnlPCB5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
+        Me.pnlPCB5.Size = New System.Drawing.Size(153, 80)
+        Me.pnlPCB5.TabIndex = 45
+        '
+        'lblPCBholder5
+        '
+        Me.lblPCBholder5.AutoSize = True
+        Me.lblPCBholder5.BackColor = System.Drawing.Color.Transparent
+        Me.lblPCBholder5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblPCBholder5.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPCBholder5.ForeColor = System.Drawing.Color.White
+        Me.lblPCBholder5.Location = New System.Drawing.Point(7, 32)
+        Me.lblPCBholder5.Margin = New System.Windows.Forms.Padding(0)
+        Me.lblPCBholder5.Name = "lblPCBholder5"
+        Me.lblPCBholder5.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.lblPCBholder5.Size = New System.Drawing.Size(137, 40)
+        Me.lblPCBholder5.TabIndex = 45
+        Me.lblPCBholder5.Text = "PCB5"
+        Me.lblPCBholder5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblpcb5
+        '
+        Me.lblpcb5.BackColor = System.Drawing.Color.Transparent
+        Me.lblpcb5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblpcb5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblpcb5.ForeColor = System.Drawing.Color.Black
+        Me.lblpcb5.Location = New System.Drawing.Point(7, 8)
+        Me.lblpcb5.Margin = New System.Windows.Forms.Padding(0)
+        Me.lblpcb5.Name = "lblpcb5"
+        Me.lblpcb5.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.lblpcb5.Size = New System.Drawing.Size(137, 24)
+        Me.lblpcb5.TabIndex = 38
+        Me.lblpcb5.Text = " "
+        Me.lblpcb5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'pnlPCB6
+        '
+        Me.pnlPCB6.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.pnlPCB6.ColumnCount = 3
+        Me.pnlPCB6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
+        Me.pnlPCB6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90.0!))
+        Me.pnlPCB6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
+        Me.pnlPCB6.Controls.Add(Me.lblPCBholder6, 1, 2)
+        Me.pnlPCB6.Controls.Add(Me.lblpcb6, 1, 1)
+        Me.pnlPCB6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlPCB6.Location = New System.Drawing.Point(836, 15)
+        Me.pnlPCB6.Margin = New System.Windows.Forms.Padding(5)
+        Me.pnlPCB6.Name = "pnlPCB6"
+        Me.pnlPCB6.RowCount = 4
+        Me.pnlPCB6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
+        Me.pnlPCB6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
+        Me.pnlPCB6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.pnlPCB6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
+        Me.pnlPCB6.Size = New System.Drawing.Size(153, 80)
+        Me.pnlPCB6.TabIndex = 46
+        '
+        'lblPCBholder6
+        '
+        Me.lblPCBholder6.AutoSize = True
+        Me.lblPCBholder6.BackColor = System.Drawing.Color.Transparent
+        Me.lblPCBholder6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblPCBholder6.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPCBholder6.ForeColor = System.Drawing.Color.White
+        Me.lblPCBholder6.Location = New System.Drawing.Point(7, 32)
+        Me.lblPCBholder6.Margin = New System.Windows.Forms.Padding(0)
+        Me.lblPCBholder6.Name = "lblPCBholder6"
+        Me.lblPCBholder6.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.lblPCBholder6.Size = New System.Drawing.Size(137, 40)
+        Me.lblPCBholder6.TabIndex = 45
+        Me.lblPCBholder6.Text = "PCB6"
+        Me.lblPCBholder6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblpcb6
+        '
+        Me.lblpcb6.BackColor = System.Drawing.Color.Transparent
+        Me.lblpcb6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblpcb6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblpcb6.ForeColor = System.Drawing.Color.Black
+        Me.lblpcb6.Location = New System.Drawing.Point(7, 8)
+        Me.lblpcb6.Margin = New System.Windows.Forms.Padding(0)
+        Me.lblpcb6.Name = "lblpcb6"
+        Me.lblpcb6.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.lblpcb6.Size = New System.Drawing.Size(137, 24)
+        Me.lblpcb6.TabIndex = 38
+        Me.lblpcb6.Text = " "
+        Me.lblpcb6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'pnlPCB7
         '
         Me.pnlPCB7.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
@@ -1507,6 +1509,7 @@ Partial Class frminjection
         Me.pnlPCB7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
         Me.pnlPCB7.Controls.Add(Me.lblPCBholder7, 1, 2)
         Me.pnlPCB7.Controls.Add(Me.lblpcb7, 1, 1)
+        Me.pnlPCB7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlPCB7.Location = New System.Drawing.Point(999, 15)
         Me.pnlPCB7.Margin = New System.Windows.Forms.Padding(5)
         Me.pnlPCB7.Name = "pnlPCB7"
@@ -1549,114 +1552,57 @@ Partial Class frminjection
         Me.lblpcb7.Text = " "
         Me.lblpcb7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'lblWarning
+        'pnlPCB8
         '
-        Me.lblWarning.AutoSize = True
-        Me.lblWarning.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblWarning.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWarning.ForeColor = System.Drawing.Color.Red
-        Me.lblWarning.Location = New System.Drawing.Point(18, 431)
-        Me.lblWarning.Name = "lblWarning"
-        Me.lblWarning.Size = New System.Drawing.Size(1334, 28)
-        Me.lblWarning.TabIndex = 88
-        Me.lblWarning.Text = "Warning: "
-        Me.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lblWarning.Visible = False
+        Me.pnlPCB8.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.pnlPCB8.ColumnCount = 3
+        Me.pnlPCB8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
+        Me.pnlPCB8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90.0!))
+        Me.pnlPCB8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
+        Me.pnlPCB8.Controls.Add(Me.lblPCBholder8, 1, 2)
+        Me.pnlPCB8.Controls.Add(Me.lblpcb8, 1, 1)
+        Me.pnlPCB8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlPCB8.Location = New System.Drawing.Point(1162, 15)
+        Me.pnlPCB8.Margin = New System.Windows.Forms.Padding(5)
+        Me.pnlPCB8.Name = "pnlPCB8"
+        Me.pnlPCB8.RowCount = 4
+        Me.pnlPCB8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
+        Me.pnlPCB8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
+        Me.pnlPCB8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.pnlPCB8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
+        Me.pnlPCB8.Size = New System.Drawing.Size(153, 80)
+        Me.pnlPCB8.TabIndex = 47
         '
-        'ShapeContainer1
+        'lblPCBholder8
         '
-        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
-        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
-        Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape4, Me.LineShape3, Me.LineShape2, Me.LineShape1, Me.RectangleShape6, Me.RectangleShape5, Me.RectangleShape4, Me.RectangleShape3, Me.RectangleShape2, Me.RectangleShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(1370, 749)
-        Me.ShapeContainer1.TabIndex = 41
-        Me.ShapeContainer1.TabStop = False
+        Me.lblPCBholder8.AutoSize = True
+        Me.lblPCBholder8.BackColor = System.Drawing.Color.Transparent
+        Me.lblPCBholder8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblPCBholder8.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPCBholder8.ForeColor = System.Drawing.Color.White
+        Me.lblPCBholder8.Location = New System.Drawing.Point(7, 32)
+        Me.lblPCBholder8.Margin = New System.Windows.Forms.Padding(0)
+        Me.lblPCBholder8.Name = "lblPCBholder8"
+        Me.lblPCBholder8.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.lblPCBholder8.Size = New System.Drawing.Size(137, 40)
+        Me.lblPCBholder8.TabIndex = 45
+        Me.lblPCBholder8.Text = "PCB8"
+        Me.lblPCBholder8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'LineShape4
+        'lblpcb8
         '
-        Me.LineShape4.BorderColor = System.Drawing.Color.Silver
-        Me.LineShape4.Name = "LineShape4"
-        Me.LineShape4.X1 = 744
-        Me.LineShape4.X2 = 770
-        Me.LineShape4.Y1 = 283
-        Me.LineShape4.Y2 = 283
-        '
-        'LineShape3
-        '
-        Me.LineShape3.BorderColor = System.Drawing.Color.Silver
-        Me.LineShape3.Name = "LineShape3"
-        Me.LineShape3.X1 = 744
-        Me.LineShape3.X2 = 770
-        Me.LineShape3.Y1 = 240
-        Me.LineShape3.Y2 = 240
-        '
-        'LineShape2
-        '
-        Me.LineShape2.BorderColor = System.Drawing.Color.Silver
-        Me.LineShape2.Name = "LineShape2"
-        Me.LineShape2.X1 = 771
-        Me.LineShape2.X2 = 771
-        Me.LineShape2.Y1 = 275
-        Me.LineShape2.Y2 = 283
-        '
-        'LineShape1
-        '
-        Me.LineShape1.BorderColor = System.Drawing.Color.Silver
-        Me.LineShape1.Name = "LineShape1"
-        Me.LineShape1.X1 = 771
-        Me.LineShape1.X2 = 771
-        Me.LineShape1.Y1 = 240
-        Me.LineShape1.Y2 = 248
-        '
-        'RectangleShape6
-        '
-        Me.RectangleShape6.BackColor = System.Drawing.Color.Black
-        Me.RectangleShape6.Location = New System.Drawing.Point(79, 547)
-        Me.RectangleShape6.Name = "RectangleShape6"
-        Me.RectangleShape6.Size = New System.Drawing.Size(369, 106)
-        '
-        'RectangleShape5
-        '
-        Me.RectangleShape5.BackColor = System.Drawing.Color.Black
-        Me.RectangleShape5.Location = New System.Drawing.Point(487, 547)
-        Me.RectangleShape5.Name = "RectangleShape5"
-        Me.RectangleShape5.Size = New System.Drawing.Size(369, 106)
-        '
-        'RectangleShape4
-        '
-        Me.RectangleShape4.BackColor = System.Drawing.Color.Black
-        Me.RectangleShape4.Location = New System.Drawing.Point(895, 547)
-        Me.RectangleShape4.Name = "RectangleShape4"
-        Me.RectangleShape4.Size = New System.Drawing.Size(369, 106)
-        '
-        'RectangleShape3
-        '
-        Me.RectangleShape3.BackColor = System.Drawing.Color.Black
-        Me.RectangleShape3.Location = New System.Drawing.Point(895, 435)
-        Me.RectangleShape3.Name = "RectangleShape3"
-        Me.RectangleShape3.Size = New System.Drawing.Size(369, 106)
-        '
-        'RectangleShape2
-        '
-        Me.RectangleShape2.BackColor = System.Drawing.Color.Black
-        Me.RectangleShape2.Location = New System.Drawing.Point(487, 435)
-        Me.RectangleShape2.Name = "RectangleShape2"
-        Me.RectangleShape2.Size = New System.Drawing.Size(369, 106)
-        '
-        'RectangleShape1
-        '
-        Me.RectangleShape1.BackColor = System.Drawing.Color.Black
-        Me.RectangleShape1.BorderColor = System.Drawing.Color.Black
-        Me.RectangleShape1.Location = New System.Drawing.Point(79, 10)
-        Me.RectangleShape1.Name = "RectangleShape1"
-        Me.RectangleShape1.Size = New System.Drawing.Size(369, 300)
-        Me.RectangleShape1.Tag = ""
-        '
-        'Timer3
-        '
-        Me.Timer3.Enabled = True
-        Me.Timer3.Interval = 7200000
+        Me.lblpcb8.BackColor = System.Drawing.Color.Transparent
+        Me.lblpcb8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblpcb8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblpcb8.ForeColor = System.Drawing.Color.Black
+        Me.lblpcb8.Location = New System.Drawing.Point(7, 8)
+        Me.lblpcb8.Margin = New System.Windows.Forms.Padding(0)
+        Me.lblpcb8.Name = "lblpcb8"
+        Me.lblpcb8.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.lblpcb8.Size = New System.Drawing.Size(137, 24)
+        Me.lblpcb8.TabIndex = 38
+        Me.lblpcb8.Text = " "
+        Me.lblpcb8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'pnlPCB9
         '
@@ -1970,58 +1916,6 @@ Partial Class frminjection
         Me.lblpcb14.Text = " "
         Me.lblpcb14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'pnlPCB15
-        '
-        Me.pnlPCB15.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.pnlPCB15.ColumnCount = 3
-        Me.pnlPCB15.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
-        Me.pnlPCB15.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90.0!))
-        Me.pnlPCB15.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
-        Me.pnlPCB15.Controls.Add(Me.lblPCBholder15, 1, 2)
-        Me.pnlPCB15.Controls.Add(Me.lblpcb15, 1, 1)
-        Me.pnlPCB15.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlPCB15.Location = New System.Drawing.Point(999, 105)
-        Me.pnlPCB15.Margin = New System.Windows.Forms.Padding(5)
-        Me.pnlPCB15.Name = "pnlPCB15"
-        Me.pnlPCB15.RowCount = 4
-        Me.pnlPCB15.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
-        Me.pnlPCB15.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
-        Me.pnlPCB15.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.pnlPCB15.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
-        Me.pnlPCB15.Size = New System.Drawing.Size(153, 80)
-        Me.pnlPCB15.TabIndex = 89
-        '
-        'lblPCBholder15
-        '
-        Me.lblPCBholder15.AutoSize = True
-        Me.lblPCBholder15.BackColor = System.Drawing.Color.Transparent
-        Me.lblPCBholder15.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblPCBholder15.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPCBholder15.ForeColor = System.Drawing.Color.White
-        Me.lblPCBholder15.Location = New System.Drawing.Point(7, 32)
-        Me.lblPCBholder15.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPCBholder15.Name = "lblPCBholder15"
-        Me.lblPCBholder15.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblPCBholder15.Size = New System.Drawing.Size(137, 40)
-        Me.lblPCBholder15.TabIndex = 45
-        Me.lblPCBholder15.Text = "PCB15"
-        Me.lblPCBholder15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblpcb15
-        '
-        Me.lblpcb15.BackColor = System.Drawing.Color.Transparent
-        Me.lblpcb15.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblpcb15.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblpcb15.ForeColor = System.Drawing.Color.Black
-        Me.lblpcb15.Location = New System.Drawing.Point(7, 8)
-        Me.lblpcb15.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblpcb15.Name = "lblpcb15"
-        Me.lblpcb15.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblpcb15.Size = New System.Drawing.Size(137, 24)
-        Me.lblpcb15.TabIndex = 38
-        Me.lblpcb15.Text = " "
-        Me.lblpcb15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'pnlPCB16
         '
         Me.pnlPCB16.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
@@ -2074,6 +1968,115 @@ Partial Class frminjection
         Me.lblpcb16.Text = " "
         Me.lblpcb16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'lblWarning
+        '
+        Me.lblWarning.AutoSize = True
+        Me.lblWarning.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblWarning.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWarning.ForeColor = System.Drawing.Color.Red
+        Me.lblWarning.Location = New System.Drawing.Point(18, 431)
+        Me.lblWarning.Name = "lblWarning"
+        Me.lblWarning.Size = New System.Drawing.Size(1334, 28)
+        Me.lblWarning.TabIndex = 88
+        Me.lblWarning.Text = "Warning: "
+        Me.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblWarning.Visible = False
+        '
+        'ShapeContainer1
+        '
+        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
+        Me.ShapeContainer1.Name = "ShapeContainer1"
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape4, Me.LineShape3, Me.LineShape2, Me.LineShape1, Me.RectangleShape6, Me.RectangleShape5, Me.RectangleShape4, Me.RectangleShape3, Me.RectangleShape2, Me.RectangleShape1})
+        Me.ShapeContainer1.Size = New System.Drawing.Size(1370, 749)
+        Me.ShapeContainer1.TabIndex = 41
+        Me.ShapeContainer1.TabStop = False
+        '
+        'LineShape4
+        '
+        Me.LineShape4.BorderColor = System.Drawing.Color.Silver
+        Me.LineShape4.Name = "LineShape4"
+        Me.LineShape4.X1 = 744
+        Me.LineShape4.X2 = 770
+        Me.LineShape4.Y1 = 283
+        Me.LineShape4.Y2 = 283
+        '
+        'LineShape3
+        '
+        Me.LineShape3.BorderColor = System.Drawing.Color.Silver
+        Me.LineShape3.Name = "LineShape3"
+        Me.LineShape3.X1 = 744
+        Me.LineShape3.X2 = 770
+        Me.LineShape3.Y1 = 240
+        Me.LineShape3.Y2 = 240
+        '
+        'LineShape2
+        '
+        Me.LineShape2.BorderColor = System.Drawing.Color.Silver
+        Me.LineShape2.Name = "LineShape2"
+        Me.LineShape2.X1 = 771
+        Me.LineShape2.X2 = 771
+        Me.LineShape2.Y1 = 275
+        Me.LineShape2.Y2 = 283
+        '
+        'LineShape1
+        '
+        Me.LineShape1.BorderColor = System.Drawing.Color.Silver
+        Me.LineShape1.Name = "LineShape1"
+        Me.LineShape1.X1 = 771
+        Me.LineShape1.X2 = 771
+        Me.LineShape1.Y1 = 240
+        Me.LineShape1.Y2 = 248
+        '
+        'RectangleShape6
+        '
+        Me.RectangleShape6.BackColor = System.Drawing.Color.Black
+        Me.RectangleShape6.Location = New System.Drawing.Point(79, 547)
+        Me.RectangleShape6.Name = "RectangleShape6"
+        Me.RectangleShape6.Size = New System.Drawing.Size(369, 106)
+        '
+        'RectangleShape5
+        '
+        Me.RectangleShape5.BackColor = System.Drawing.Color.Black
+        Me.RectangleShape5.Location = New System.Drawing.Point(487, 547)
+        Me.RectangleShape5.Name = "RectangleShape5"
+        Me.RectangleShape5.Size = New System.Drawing.Size(369, 106)
+        '
+        'RectangleShape4
+        '
+        Me.RectangleShape4.BackColor = System.Drawing.Color.Black
+        Me.RectangleShape4.Location = New System.Drawing.Point(895, 547)
+        Me.RectangleShape4.Name = "RectangleShape4"
+        Me.RectangleShape4.Size = New System.Drawing.Size(369, 106)
+        '
+        'RectangleShape3
+        '
+        Me.RectangleShape3.BackColor = System.Drawing.Color.Black
+        Me.RectangleShape3.Location = New System.Drawing.Point(895, 435)
+        Me.RectangleShape3.Name = "RectangleShape3"
+        Me.RectangleShape3.Size = New System.Drawing.Size(369, 106)
+        '
+        'RectangleShape2
+        '
+        Me.RectangleShape2.BackColor = System.Drawing.Color.Black
+        Me.RectangleShape2.Location = New System.Drawing.Point(487, 435)
+        Me.RectangleShape2.Name = "RectangleShape2"
+        Me.RectangleShape2.Size = New System.Drawing.Size(369, 106)
+        '
+        'RectangleShape1
+        '
+        Me.RectangleShape1.BackColor = System.Drawing.Color.Black
+        Me.RectangleShape1.BorderColor = System.Drawing.Color.Black
+        Me.RectangleShape1.Location = New System.Drawing.Point(79, 10)
+        Me.RectangleShape1.Name = "RectangleShape1"
+        Me.RectangleShape1.Size = New System.Drawing.Size(369, 300)
+        Me.RectangleShape1.Tag = ""
+        '
+        'Timer3
+        '
+        Me.Timer3.Enabled = True
+        Me.Timer3.Interval = 7200000
+        '
         'frminjection
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2105,12 +2108,8 @@ Partial Class frminjection
         Me.TableLayoutPanel4.ResumeLayout(False)
         Me.TableLayoutPanel4.PerformLayout()
         Me.TableLayoutPanel7.ResumeLayout(False)
-        Me.pnlPCB8.ResumeLayout(False)
-        Me.pnlPCB8.PerformLayout()
-        Me.pnlPCB6.ResumeLayout(False)
-        Me.pnlPCB6.PerformLayout()
-        Me.pnlPCB5.ResumeLayout(False)
-        Me.pnlPCB5.PerformLayout()
+        Me.pnlPCB15.ResumeLayout(False)
+        Me.pnlPCB15.PerformLayout()
         Me.pnlPCB4.ResumeLayout(False)
         Me.pnlPCB4.PerformLayout()
         Me.pnlPCB3.ResumeLayout(False)
@@ -2119,9 +2118,14 @@ Partial Class frminjection
         Me.pnlPCB2.PerformLayout()
         Me.pnlPCB1.ResumeLayout(False)
         Me.pnlPCB1.PerformLayout()
+        Me.pnlPCB5.ResumeLayout(False)
+        Me.pnlPCB5.PerformLayout()
+        Me.pnlPCB6.ResumeLayout(False)
+        Me.pnlPCB6.PerformLayout()
         Me.pnlPCB7.ResumeLayout(False)
         Me.pnlPCB7.PerformLayout()
-        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlPCB8.ResumeLayout(False)
+        Me.pnlPCB8.PerformLayout()
         Me.pnlPCB9.ResumeLayout(False)
         Me.pnlPCB9.PerformLayout()
         Me.pnlPCB10.ResumeLayout(False)
@@ -2134,10 +2138,9 @@ Partial Class frminjection
         Me.pnlPCB13.PerformLayout()
         Me.pnlPCB14.ResumeLayout(False)
         Me.pnlPCB14.PerformLayout()
-        Me.pnlPCB15.ResumeLayout(False)
-        Me.pnlPCB15.PerformLayout()
         Me.pnlPCB16.ResumeLayout(False)
         Me.pnlPCB16.PerformLayout()
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

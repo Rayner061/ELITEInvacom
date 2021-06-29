@@ -133,9 +133,9 @@ Partial Class frmFVI
         Me.tblPnlMain.BackgroundImage = Global.ELITE_GI.My.Resources.Resources.elite_background_GI_214
         Me.tblPnlMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.tblPnlMain.ColumnCount = 3
-        Me.tblPnlMain.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.tblPnlMain.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 447.0!))
-        Me.tblPnlMain.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.tblPnlMain.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.tblPnlMain.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.tblPnlMain.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.tblPnlMain.Controls.Add(Me.Button1, 2, 0)
         Me.tblPnlMain.Controls.Add(Me.lblcountng, 1, 1)
         Me.tblPnlMain.Controls.Add(Me.lblcountgood, 0, 1)
@@ -152,7 +152,6 @@ Partial Class frmFVI
         Me.tblPnlMain.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.tblPnlMain.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.tblPnlMain.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100.0!))
-        Me.tblPnlMain.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.tblPnlMain.Size = New System.Drawing.Size(1340, 287)
         Me.tblPnlMain.TabIndex = 99
         '
@@ -164,9 +163,9 @@ Partial Class frmFVI
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(894, 13)
+        Me.Button1.Location = New System.Drawing.Point(889, 13)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(428, 41)
+        Me.Button1.Size = New System.Drawing.Size(433, 41)
         Me.Button1.TabIndex = 149
         Me.Button1.Text = "GOOD PER MODEL"
         Me.Button1.UseVisualStyleBackColor = False
@@ -177,10 +176,10 @@ Partial Class frmFVI
         Me.lblcountng.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblcountng.Font = New System.Drawing.Font("Microsoft Sans Serif", 71.99999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblcountng.ForeColor = System.Drawing.Color.Black
-        Me.lblcountng.Location = New System.Drawing.Point(444, 57)
+        Me.lblcountng.Location = New System.Drawing.Point(448, 57)
         Me.lblcountng.Margin = New System.Windows.Forms.Padding(0)
         Me.lblcountng.Name = "lblcountng"
-        Me.lblcountng.Size = New System.Drawing.Size(447, 115)
+        Me.lblcountng.Size = New System.Drawing.Size(438, 115)
         Me.lblcountng.TabIndex = 74
         Me.lblcountng.Text = "0"
         Me.lblcountng.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -193,7 +192,7 @@ Partial Class frmFVI
         Me.lblcountgood.ForeColor = System.Drawing.Color.Black
         Me.lblcountgood.Location = New System.Drawing.Point(13, 57)
         Me.lblcountgood.Name = "lblcountgood"
-        Me.lblcountgood.Size = New System.Drawing.Size(428, 115)
+        Me.lblcountgood.Size = New System.Drawing.Size(432, 115)
         Me.lblcountgood.TabIndex = 74
         Me.lblcountgood.Text = "0"
         Me.lblcountgood.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -207,12 +206,12 @@ Partial Class frmFVI
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel8.Controls.Add(Me.lblgoodpermodel, 0, 0)
         Me.TableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel8.Location = New System.Drawing.Point(894, 57)
+        Me.TableLayoutPanel8.Location = New System.Drawing.Point(889, 57)
         Me.TableLayoutPanel8.Margin = New System.Windows.Forms.Padding(3, 0, 3, 0)
         Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
         Me.TableLayoutPanel8.RowCount = 1
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel8.Size = New System.Drawing.Size(428, 115)
+        Me.TableLayoutPanel8.Size = New System.Drawing.Size(433, 115)
         Me.TableLayoutPanel8.TabIndex = 148
         '
         'lblgoodpermodel
@@ -224,7 +223,7 @@ Partial Class frmFVI
         Me.lblgoodpermodel.Location = New System.Drawing.Point(0, 0)
         Me.lblgoodpermodel.Margin = New System.Windows.Forms.Padding(0)
         Me.lblgoodpermodel.Name = "lblgoodpermodel"
-        Me.lblgoodpermodel.Size = New System.Drawing.Size(428, 115)
+        Me.lblgoodpermodel.Size = New System.Drawing.Size(433, 115)
         Me.lblgoodpermodel.TabIndex = 75
         Me.lblgoodpermodel.Text = "0"
         Me.lblgoodpermodel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -239,7 +238,7 @@ Partial Class frmFVI
         Me.btnGOOD.ForeColor = System.Drawing.Color.White
         Me.btnGOOD.Location = New System.Drawing.Point(13, 13)
         Me.btnGOOD.Name = "btnGOOD"
-        Me.btnGOOD.Size = New System.Drawing.Size(428, 41)
+        Me.btnGOOD.Size = New System.Drawing.Size(432, 41)
         Me.btnGOOD.TabIndex = 57
         Me.btnGOOD.Text = "GOOD"
         Me.btnGOOD.UseVisualStyleBackColor = False
@@ -280,9 +279,9 @@ Partial Class frmFVI
         Me.btnNG.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnNG.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnNG.ForeColor = System.Drawing.Color.White
-        Me.btnNG.Location = New System.Drawing.Point(447, 13)
+        Me.btnNG.Location = New System.Drawing.Point(451, 13)
         Me.btnNG.Name = "btnNG"
-        Me.btnNG.Size = New System.Drawing.Size(441, 41)
+        Me.btnNG.Size = New System.Drawing.Size(432, 41)
         Me.btnNG.TabIndex = 56
         Me.btnNG.Text = "NG"
         Me.btnNG.UseVisualStyleBackColor = False
@@ -337,20 +336,19 @@ Partial Class frmFVI
         '
         Me.TableLayoutPanel5.BackgroundImage = Global.ELITE_GI.My.Resources.Resources.elite_background_GI_110
         Me.TableLayoutPanel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.TableLayoutPanel5.ColumnCount = 13
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.0!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 152.0!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 198.0!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.0!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.0!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109.0!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.0!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 16.0!))
+        Me.TableLayoutPanel5.ColumnCount = 12
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.6716418!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.940299!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.95522!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5970149!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.537313!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.55224!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.835821!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.298508!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.89552!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.313433!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.761194!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.567164!))
         Me.TableLayoutPanel5.Controls.Add(Me.cbxBU, 2, 1)
         Me.TableLayoutPanel5.Controls.Add(Me.Label6, 1, 1)
         Me.TableLayoutPanel5.Controls.Add(Me.btnOutput, 10, 1)
@@ -381,10 +379,10 @@ Partial Class frmFVI
         Me.cbxBU.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.cbxBU.FormattingEnabled = True
         Me.cbxBU.Items.AddRange(New Object() {"GLOBAL_SKYWARE", "GLOBAL_INVACOM"})
-        Me.cbxBU.Location = New System.Drawing.Point(88, 20)
+        Me.cbxBU.Location = New System.Drawing.Point(105, 20)
         Me.cbxBU.Margin = New System.Windows.Forms.Padding(3, 5, 3, 3)
         Me.cbxBU.Name = "cbxBU"
-        Me.cbxBU.Size = New System.Drawing.Size(194, 28)
+        Me.cbxBU.Size = New System.Drawing.Size(248, 28)
         Me.cbxBU.TabIndex = 224
         '
         'Label6
@@ -394,22 +392,23 @@ Partial Class frmFVI
         Me.Label6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(20, 15)
+        Me.Label6.Location = New System.Drawing.Point(29, 15)
         Me.Label6.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(62, 40)
+        Me.Label6.Size = New System.Drawing.Size(70, 40)
         Me.Label6.TabIndex = 223
         Me.Label6.Text = "BU: "
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'btnOutput
         '
+        Me.btnOutput.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnOutput.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnOutput.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnOutput.Location = New System.Drawing.Point(1220, 19)
+        Me.btnOutput.Location = New System.Drawing.Point(1219, 19)
         Me.btnOutput.Margin = New System.Windows.Forms.Padding(5, 4, 5, 5)
         Me.btnOutput.Name = "btnOutput"
-        Me.btnOutput.Size = New System.Drawing.Size(99, 31)
+        Me.btnOutput.Size = New System.Drawing.Size(94, 31)
         Me.btnOutput.TabIndex = 225
         Me.btnOutput.Text = "Output"
         Me.btnOutput.UseVisualStyleBackColor = True
@@ -426,7 +425,7 @@ Partial Class frmFVI
         Me.tblPnlDefect.Controls.Add(Me.Label5, 1, 2)
         Me.tblPnlDefect.Controls.Add(Me.txtremarks, 2, 2)
         Me.tblPnlDefect.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tblPnlDefect.Location = New System.Drawing.Point(815, 10)
+        Me.tblPnlDefect.Location = New System.Drawing.Point(769, 10)
         Me.tblPnlDefect.Margin = New System.Windows.Forms.Padding(0, 10, 0, 10)
         Me.tblPnlDefect.Name = "tblPnlDefect"
         Me.tblPnlDefect.RowCount = 4
@@ -436,7 +435,7 @@ Partial Class frmFVI
         Me.tblPnlDefect.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40.0!))
         Me.tblPnlDefect.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.tblPnlDefect.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.tblPnlDefect.Size = New System.Drawing.Size(400, 90)
+        Me.tblPnlDefect.Size = New System.Drawing.Size(414, 90)
         Me.tblPnlDefect.TabIndex = 212
         '
         'Label4
@@ -465,7 +464,7 @@ Partial Class frmFVI
         Me.cmbdefectname.FormattingEnabled = True
         Me.cmbdefectname.Location = New System.Drawing.Point(151, 8)
         Me.cmbdefectname.Name = "cmbdefectname"
-        Me.cmbdefectname.Size = New System.Drawing.Size(232, 28)
+        Me.cmbdefectname.Size = New System.Drawing.Size(245, 28)
         Me.cmbdefectname.TabIndex = 80
         Me.cmbdefectname.ValueMember = "model"
         '
@@ -493,7 +492,7 @@ Partial Class frmFVI
         Me.txtremarks.Location = New System.Drawing.Point(151, 52)
         Me.txtremarks.Margin = New System.Windows.Forms.Padding(3, 7, 3, 3)
         Me.txtremarks.Name = "txtremarks"
-        Me.txtremarks.Size = New System.Drawing.Size(232, 26)
+        Me.txtremarks.Size = New System.Drawing.Size(245, 26)
         Me.txtremarks.TabIndex = 81
         '
         'btnlogout
@@ -501,10 +500,10 @@ Partial Class frmFVI
         Me.btnlogout.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnlogout.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnlogout.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnlogout.Location = New System.Drawing.Point(1218, 57)
+        Me.btnlogout.Location = New System.Drawing.Point(1217, 57)
         Me.btnlogout.Margin = New System.Windows.Forms.Padding(3, 2, 3, 10)
         Me.btnlogout.Name = "btnlogout"
-        Me.btnlogout.Size = New System.Drawing.Size(103, 28)
+        Me.btnlogout.Size = New System.Drawing.Size(98, 28)
         Me.btnlogout.TabIndex = 90
         Me.btnlogout.Text = "&Log Out"
         Me.btnlogout.UseVisualStyleBackColor = True
@@ -516,10 +515,10 @@ Partial Class frmFVI
         Me.lblCodeDesignation.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblCodeDesignation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCodeDesignation.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lblCodeDesignation.Location = New System.Drawing.Point(457, 15)
+        Me.lblCodeDesignation.Location = New System.Drawing.Point(418, 15)
         Me.lblCodeDesignation.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
         Me.lblCodeDesignation.Name = "lblCodeDesignation"
-        Me.lblCodeDesignation.Size = New System.Drawing.Size(157, 40)
+        Me.lblCodeDesignation.Size = New System.Drawing.Size(172, 40)
         Me.lblCodeDesignation.TabIndex = 220
         Me.lblCodeDesignation.Text = "Code Designation:"
         Me.lblCodeDesignation.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -531,10 +530,10 @@ Partial Class frmFVI
         Me.lblCodeAllocation.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblCodeAllocation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.lblCodeAllocation.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lblCodeAllocation.Location = New System.Drawing.Point(620, 15)
+        Me.lblCodeAllocation.Location = New System.Drawing.Point(596, 15)
         Me.lblCodeAllocation.Name = "lblCodeAllocation"
         Me.lblCodeAllocation.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblCodeAllocation.Size = New System.Drawing.Size(192, 40)
+        Me.lblCodeAllocation.Size = New System.Drawing.Size(99, 40)
         Me.lblCodeAllocation.TabIndex = 221
         Me.lblCodeAllocation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -542,10 +541,10 @@ Partial Class frmFVI
         '
         Me.btnSet.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnSet.Location = New System.Drawing.Point(622, 59)
+        Me.btnSet.Location = New System.Drawing.Point(598, 59)
         Me.btnSet.Margin = New System.Windows.Forms.Padding(5, 4, 5, 5)
         Me.btnSet.Name = "btnSet"
-        Me.btnSet.Size = New System.Drawing.Size(140, 31)
+        Me.btnSet.Size = New System.Drawing.Size(95, 31)
         Me.btnSet.TabIndex = 222
         Me.btnSet.Text = "Set"
         Me.btnSet.UseVisualStyleBackColor = True
@@ -557,10 +556,10 @@ Partial Class frmFVI
         Me.cbxModel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.cbxModel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.cbxModel.FormattingEnabled = True
-        Me.cbxModel.Location = New System.Drawing.Point(88, 60)
+        Me.cbxModel.Location = New System.Drawing.Point(105, 60)
         Me.cbxModel.Margin = New System.Windows.Forms.Padding(3, 5, 3, 3)
         Me.cbxModel.Name = "cbxModel"
-        Me.cbxModel.Size = New System.Drawing.Size(194, 28)
+        Me.cbxModel.Size = New System.Drawing.Size(248, 28)
         Me.cbxModel.TabIndex = 218
         '
         'Label2
@@ -570,10 +569,10 @@ Partial Class frmFVI
         Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(20, 55)
+        Me.Label2.Location = New System.Drawing.Point(29, 55)
         Me.Label2.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(62, 40)
+        Me.Label2.Size = New System.Drawing.Size(70, 40)
         Me.Label2.TabIndex = 214
         Me.Label2.Text = "Model:"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -855,7 +854,6 @@ Partial Class frmFVI
     Friend WithEvents txtScan As TextBox
     Friend WithEvents lblScan As Label
     Friend WithEvents tblPnlMain As TableLayoutPanel
-    Friend WithEvents TableLayoutPanel8 As TableLayoutPanel
     Friend WithEvents Label2 As Label
     Friend WithEvents cbxModel As ComboBox
     Friend WithEvents lblCodeDesignation As Label
@@ -867,5 +865,6 @@ Partial Class frmFVI
     Friend WithEvents lblerror As Label
     Friend WithEvents btnOutput As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents TableLayoutPanel8 As TableLayoutPanel
     Friend WithEvents lblgoodpermodel As Label
 End Class
