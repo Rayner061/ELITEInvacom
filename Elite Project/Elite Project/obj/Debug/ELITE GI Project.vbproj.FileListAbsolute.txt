@@ -45,3 +45,51 @@ C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Deb
 C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmfvioutput.resources
 C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmerror.resources
 C:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbprojAssemblyReference.cache
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\bin\Debug\ELITE_GI.exe.config
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\bin\Debug\ELITE_GI.exe.manifest
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\bin\Debug\ELITE_GI.application
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\bin\Debug\ELITE_GI.exe
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\bin\Debug\ELITE_GI.pdb
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\bin\Debug\ELITE_GI.xml
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\bin\Debug\Oracle.ManagedDataAccess.dll
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmAOI.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmcreamsolder.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmcsmanager.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmerror.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmfujimounter.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmFVI.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmfvioutput.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmICProgram.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmnoscanning.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmOBA.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpanasonicmounter.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frminjection.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frminjectionwash.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpager.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmPanelReset.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmRepair.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmSMTVI.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmsplash.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmpcbinfo.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmlogin.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmsqueegeemanager.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmStencilManager.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmwash.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmwash2.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.Resources.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.spitest.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmissuesqueegee.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmremovesqueegee.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmreplacesqueegee.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmSqueegeeEOLRemarks.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmSqueegeeLogs.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbproj.GenerateResource.cache
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbproj.CoreCompileInputs.cache
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.TrustInfo.xml
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.exe.manifest
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.application
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbproj.CopyComplete
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.exe
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.xml
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.pdb
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE GI Project.vbproj.AssemblyReference.cache

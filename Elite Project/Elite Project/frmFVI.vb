@@ -273,18 +273,48 @@ Public Class frmFVI
 
                             Case "wrongmodel"
                                 writeLogs("ERROR: Wrong model.")
-                                MsgBox("Wrong model!")
+                                frmerror.lblerror.Text = "ERROR: Wrong model!"
+                                frmerror.ShowDialog()
 
                             Case "wrongline"
-                                writeLogs("ERROR: Wrong model.")
-                                MsgBox("Wrong line!")
+                                writeLogs("ERROR: Wrong Line.")
+                                frmerror.lblerror.Text = "ERROR: Wrong Line!"
+                                frmerror.ShowDialog()
                         End Select
                     Else
-                        cmd.CommandText = "SELECT COUNT(pcbid) FROM gi_pcbtrace WHERE pcbid = '" & txtScan.Text & "' AND processtoken = 'fvi'"
+                        cmd.CommandText = "SELECT COUNT(pcbid) FROM gi_pcbtrace WHERE pcbid = '" & txtScan.Text & "' AND processtoken = 'fvi''"
                         If cmd.ExecuteScalar = 1 Then
+                            Select Case ExamineProgramming(txtScan.Text)
+                                Case "good"
+
+                                    cmd.CommandText = "UPDATE gi_pcbtrace SET processtoken = 'fvi', fvitimestamp = NOW(), fvioperator = '" & lblname.Text & "', fvistatus = 'good' 
+                                        WHERE pcbid = '" & txtScan.Text & "' AND processtoken = 'fvi'"
+                                    cmd.ExecuteNonQuery()
+
+
+                                    If SAPStatus = True Then
+                                        cmd.CommandText = "UPDATE `sap_pcb_prod_order` SET `timestamp` = NOW() , `status` ='GOOD' WHERE `pcbid` = '" & txtScan.Text + "_ST" & "'"
+                                        cmd.ExecuteNonQuery()
+                                    End If
+                                    frmerror.lblerror.Text = ""
+                                Case "failedprogram"
+
+                                    writeLogs("ERROR: Failed Program!")
+                                    frmerror.lblerror.Text = "ERROR: Failed Program!"
+                                    frmerror.ShowDialog()
+
+                                    If side = "dual" Then
+                                        cmd.CommandText = "UPDATE gi_pcbtrace SET processtoken = 'aoi_top',fvitimestamp = null,fvistatus = 'na',fvioperator = null WHERE pcbid = '" & txtScan.Text & "'"
+                                    Else
+                                        cmd.CommandText = "UPDATE gi_pcbtrace SET processtoken = 'aoi_bottom',fvitimestamp = null,fvistatus = 'na',fvioperator = null WHERE pcbid = '" & txtScan.Text & "'"
+                                    End If
+                                    cmd.ExecuteNonQuery()
+
+                            End Select
                         Else
                             writeLogs("PCB did not pass previous process!")
-                            MsgBox("PCB did not pass previous process!")
+                            frmerror.lblerror.Text = "PCB did not pass previous process!"
+                            frmerror.ShowDialog()
                         End If
                     End If
 
@@ -300,7 +330,8 @@ Public Class frmFVI
                         cmd.ExecuteNonQuery()
                         If cmd.ExecuteNonQuery() = 0 Then
                             writeLogs("Either the PCB did not pass previous process or PCB already passed the next process")
-                            MsgBox("Either the PCB did not pass previous process or PCB already passed the next process")
+                            frmerror.lblerror.Text = "Either the PCB did not pass previous process or PCB already passed the next process!"
+                            frmerror.ShowDialog()
                         Else
                             InsertNG()
                         End If
@@ -313,6 +344,8 @@ Public Class frmFVI
                 End If
             Catch ex As Exception
                 MsgBox("Invalid PCBID")
+                frmerror.lblerror.Text = "Invalid PCBID"
+                frmerror.ShowDialog()
                 MsgBox(ex.ToString)
                 writeLogs(ex.ToString)
                 txtScan.Text = ""
@@ -329,23 +362,32 @@ Public Class frmFVI
         Dim Latest As String
         res = ""
         If icprog = True Then
-            cmd.CommandText = "SELECT COUNT(*) FROM `prog` WHERE `FAILCODE` = 'NONE' AND (SERIAL_NO = '" & scanText & "' or SERIAL_NO = '" & scanText.Substring(scanText.IndexOf("-") + 1) & "')"
+            cmd.CommandText = "SELECT COUNT(*) FROM `prog` WHERE (SERIAL_NO = '" & scanText & "' or SERIAL_NO = '" & scanText.Substring(scanText.IndexOf("-") + 1) & "')"
             count = cmd.ExecuteScalar.ToString()
 
-            cmd.CommandText = "SELECT FAILCODE FROM `prog` WHERE (SERIAL_NO = '" & scanText & "' or SERIAL_NO = '" & scanText.Substring(scanText.IndexOf("-") + 1) & "') ORDER BY FIRST_TIME DESC LIMIT 1"
-            Latest = cmd.ExecuteScalar.ToString()
 
-            If Latest <> "NONE" Then
-                res = "failedprogram"
+            If count = 0 Then
+                res = "nodata"
             Else
-                If count > 1 Then
-                    res = "duplicate"
-                ElseIf count = 0 Then
-                    res = "nodata"
-                ElseIf count = 1 Then
+
+                cmd.CommandText = "SELECT FAILCODE FROM `prog` WHERE (SERIAL_NO = '" & scanText & "' or SERIAL_NO = '" & scanText.Substring(scanText.IndexOf("-") + 1) & "') ORDER BY FIRST_TIME DESC LIMIT 1"
+                Latest = cmd.ExecuteScalar.ToString()
+
+                If Latest <> "NONE" Then
+                    res = "failedprogram"
+                Else
                     res = "good"
                 End If
             End If
+            'If Latest <> "NONE" Then
+            '    res = "failedprogram"
+            'Else
+            '    If count = 0 Then
+            '        res = "nodata"
+            '    ElseIf count > 0 Then
+            '        res = "good"
+            '    End If
+            'End If
         Else
             res = "good"
         End If
