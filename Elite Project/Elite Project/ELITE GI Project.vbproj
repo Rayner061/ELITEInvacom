@@ -142,6 +142,12 @@
     <Compile Include="frmAOI.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmbarcodereplace.Designer.vb">
+      <DependentUpon>frmbarcodereplace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmbarcodereplace.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmcreamsolder.Designer.vb">
       <DependentUpon>frmcreamsolder.vb</DependentUpon>
     </Compile>
@@ -341,6 +347,9 @@
       <DependentUpon>frmAOI.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmbarcodereplace.resx">
+      <DependentUpon>frmbarcodereplace.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmcreamsolder.resx">
       <DependentUpon>frmcreamsolder.vb</DependentUpon>
     </EmbeddedResource>
@@ -463,6 +472,7 @@
     <Content Include="ELITE Icon GI.ico" />
     <Content Include="eliteicon.ico" />
     <Content Include="header-logo2.ico" />
+    <None Include="Resources\replac.jpg" />
     <None Include="Resources\pngegg1.png" />
     <None Include="Resources\pngegg.png" />
     <None Include="Resources\elite-background-GI-111.png" />

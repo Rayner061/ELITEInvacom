@@ -8,49 +8,6 @@ Public Class frmlogin
     Public startMonth, startYear, assemblyVersion As String
     Dim strIP As String
 
-    Private Sub GenerateEpsonShipment()
-        Try
-            Dim cmd As New MySqlCommand
-            Dim boxIDList As New DataTable
-            Dim myDA As New MySqlDataAdapter(cmd)
-            Dim myDT As New DataTable
-            cmd.Connection = conn
-
-            Dim logFileName As String
-
-            'cmd.CommandText = "INSERT INTO `epson_shipment_fvilot_list`(`fvi_packinglotnum`, `oba_good_count`, `timestamp`) SELECT `fvi_packinglotnum`, COUNT(`pcbid`), NOW() FROM `epson_pcbtrace` WHERE (`fvitimestamp` BETWEEN (NOW() - INTERVAL 1 MONTH) AND NOW()) AND (`obatimestamp` BETWEEN (NOW() - INTERVAL 2 WEEK) AND NOW()) AND `obastatus` = 'GOOD' GROUP BY `fvi_packinglotnum` HAVING `fvi_packinglotnum` <> '' ON DUPLICATE KEY UPDATE `fvi_packinglotnum` = `fvi_packinglotnum`"
-            'cmd.ExecuteNonQuery()
-
-            cmd.CommandText = "SELECT `fvi_packinglotnum` FROM `epson_shipment_fvilot_list` WHERE `generated` = 'NO'"
-
-            myDA.Fill(myDT)
-            For Each r As DataRow In myDT.Rows
-                Dim sourceDT As New DataTable
-                Dim model As String = ""
-
-                cmd.CommandText = "CALL eliteprototype.proc_shipment_lot_generate('" & r("fvi_packinglotnum").ToString() & "')"
-                myDA.Fill(sourceDT)
-
-                cmd.CommandText = "SELECT `b`.`model` FROM `epson_pcbtrace` `a` LEFT JOIN `epson_modelmatrix` `b` ON `a`.`modelmatrixid` = `b`.`modelmatrixid` WHERE `a`.`fvi_packinglotnum` = '" & r("fvi_packinglotnum").ToString() & "' GROUP BY `b`.`model`"
-                model = cmd.ExecuteScalar().ToString()
-
-                logFileName = model + "_" + r("fvi_packinglotnum").ToString() + "_" + Now.ToString("yyyyMMddHHmmss")
-
-                Using writer As StreamWriter = New StreamWriter("D:\epsonlogs\" & logFileName & ".csv")
-                    Rfc4180Writer.WriteDataTable(sourceDT, writer, True, False, True)
-                End Using
-
-                'File.Copy("E:\epsonlogs\TEMP TEST For Approval\" & logFileName, "E:\epsonlogs\TEST For Approval\" & logFileName & ".csv")
-                'writeLogs("EPSON Shipment outbound - " & logFileName & ".csv")
-
-                'cmd.CommandText = "UPDATE `epson_shipment_fvilot_list` SET `generated` = 'YES' WHERE `fvi_packinglotnum` = '" & r("fvi_packinglotnum").ToString() & "'"
-                'cmd.ExecuteNonQuery()
-            Next
-        Catch ex As Exception
-            MessageBox.Show(ex.ToString())
-        End Try
-    End Sub
-
     Private Sub frmlogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Try
@@ -74,8 +31,6 @@ Public Class frmlogin
 
         strIP = GetIPAddress()
 
-        ' GenerateEpsonShipment()
-        'writeLogs("ELITE Login", cmd.ExecuteScalar().ToString())
     End Sub
 
     Private Sub txtid_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtid.KeyPress
@@ -278,6 +233,22 @@ Public Class frmlogin
                         cmbstation.Text = ""
                         lbllevel.Text = ""
                         Hide()
+
+                    ElseIf cmbstation.Text = "BARCODE REPLACE" Then
+                        cmd.CommandText = "SELECT empname FROM tbluser WHERE userid = '" & txtid.Text & "'"
+                        lblname.Text = cmd.ExecuteScalar
+                        frmbarcodereplace.lblname.Text = lblname.Text
+
+                        cmd.CommandText = "SELECT accounttype FROM tbluser WHERE userid = '" & txtid.Text & "'"
+                        frmbarcodereplace.lblaccount.Text = cmd.ExecuteScalar
+
+                        frmbarcodereplace.Show()
+                        txtpass.Text = ""
+                        lblname.Text = ""
+                        cmbline.Text = ""
+                        cmbstation.Text = ""
+                        lbllevel.Text = ""
+                        Hide()
                     End If
 
                     writeLogs("Login Successful: " & txtid.Text)
@@ -352,6 +323,8 @@ Public Class frmlogin
 
         If cmbline.Text = "OFFLINE" Then
             cmbstation.Items.Add("CREAM SOLDER")
+        ElseIf cmbline.Text = "REPAIR" Then
+            cmbstation.Items.Add("BARCODE REPLACE")
         Else
             cmbstation.Items.Add("INJECTION - BOTTOM")
             cmbstation.Items.Add("INJECTION - TOP")
