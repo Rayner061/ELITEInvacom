@@ -238,6 +238,30 @@
     <Compile Include="frmRepair.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmrepairaoi.Designer.vb">
+      <DependentUpon>frmrepairaoi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmrepairaoi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmrepairendorsement.Designer.vb">
+      <DependentUpon>frmrepairendorsement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmrepairendorsement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmrepairfvi.Designer.vb">
+      <DependentUpon>frmrepairfvi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmrepairfvi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmrepairoba.Designer.vb">
+      <DependentUpon>frmrepairoba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmrepairoba.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmSMTVI.designer.vb">
       <DependentUpon>frmSMTVI.vb</DependentUpon>
     </Compile>
@@ -394,6 +418,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRepair.resx">
       <DependentUpon>frmRepair.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmrepairendorsement.resx">
+      <DependentUpon>frmrepairendorsement.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSMTVI.resx">
       <DependentUpon>frmSMTVI.vb</DependentUpon>

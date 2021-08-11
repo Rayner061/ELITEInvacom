@@ -282,7 +282,7 @@ Public Class frmFVI
                                 frmerror.ShowDialog()
                         End Select
                     Else
-                        cmd.CommandText = "SELECT COUNT(pcbid) FROM gi_pcbtrace WHERE pcbid = '" & txtScan.Text & "' AND processtoken = 'fvi''"
+                        cmd.CommandText = "SELECT COUNT(pcbid) FROM gi_pcbtrace WHERE pcbid = '" & txtScan.Text & "' AND processtoken = 'fvi' AND fvistatus= 'good'"
                         If cmd.ExecuteScalar = 1 Then
                             Select Case ExamineProgramming(txtScan.Text)
                                 Case "good"
