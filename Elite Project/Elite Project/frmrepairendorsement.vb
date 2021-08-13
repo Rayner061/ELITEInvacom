@@ -50,7 +50,7 @@ Public Class frmrepairendorsement
                         MsgBox("Invalid Action. Please verify PCB declaration if Good or NG.")
                     Else
                         cmd.CommandText = "INSERT IGNORE INTO `gi_repairfifo` (`pcbid`, `model`, `defect_date_time`, `defect_name`, `location`, `station`, `line_bot`, `line_top`, `endorse_date_time`, `pic`, `status`, `category`) VALUES ('" + lblpcb.Text.ToUpper.ToString + "', '" + lblmodel.Text + "', '" & lblngdatetime.Text & "', '" + lbldefect.Text + "', '" & lbllocation.Text & "', '" & lblastation.Text & "', '" + lblline_bot.Text + "', '" + lblline_top.Text + "', NOW() ,'" + lblname.Text + "', 'received','" + cmbcategory.Text + "')"
-                        'cmd.ExecuteNonQuery()
+                        cmd.ExecuteNonQuery()
                         gridout()
                         TextBox1.Text = ""
                         TextBox1.Focus()
@@ -128,4 +128,8 @@ Public Class frmrepairendorsement
         btnpending.BackColor = Color.FromArgb(238, 238, 238)
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        frmlogin.Show()
+        Hide()
+    End Sub
 End Class

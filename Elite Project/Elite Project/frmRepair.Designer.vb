@@ -32,7 +32,6 @@ Partial Class frmRepair
         Me.RA_cmbloc = New System.Windows.Forms.ComboBox()
         Me.RA_lbllotnum = New System.Windows.Forms.Label()
         Me.RA_lblmaker = New System.Windows.Forms.Label()
-        Me.lblictrem = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TableLayoutPanel10 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel28 = New System.Windows.Forms.TableLayoutPanel()
@@ -44,46 +43,26 @@ Partial Class frmRepair
         Me.Label74 = New System.Windows.Forms.Label()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.TableLayoutPanel26 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Label85 = New System.Windows.Forms.Label()
-        Me.lblictdt = New System.Windows.Forms.Label()
         Me.Label53 = New System.Windows.Forms.Label()
         Me.Label101 = New System.Windows.Forms.Label()
-        Me.lblictdef = New System.Windows.Forms.Label()
         Me.Label55 = New System.Windows.Forms.Label()
         Me.Label83 = New System.Windows.Forms.Label()
         Me.Label84 = New System.Windows.Forms.Label()
-        Me.lblictre = New System.Windows.Forms.Label()
-        Me.lblictop = New System.Windows.Forms.Label()
         Me.lbloqcdt = New System.Windows.Forms.Label()
         Me.lbloqcop = New System.Windows.Forms.Label()
         Me.lbloqcre = New System.Windows.Forms.Label()
         Me.lbloqcdef = New System.Windows.Forms.Label()
         Me.lbloqcrem = New System.Windows.Forms.Label()
-        Me.Label87 = New System.Windows.Forms.Label()
-        Me.Label86 = New System.Windows.Forms.Label()
         Me.lblfvidt = New System.Windows.Forms.Label()
         Me.lblfviop = New System.Windows.Forms.Label()
         Me.lblfvire = New System.Windows.Forms.Label()
         Me.lblfvidef = New System.Windows.Forms.Label()
         Me.lblfvirem = New System.Windows.Forms.Label()
-        Me.Label100 = New System.Windows.Forms.Label()
-        Me.lblbeaoitopdt = New System.Windows.Forms.Label()
-        Me.lblbeaoitopoperator = New System.Windows.Forms.Label()
-        Me.lblbeaoitopresult = New System.Windows.Forms.Label()
-        Me.lblbeaoitopdefectname = New System.Windows.Forms.Label()
-        Me.lblbeaoitopremarks = New System.Windows.Forms.Label()
-        Me.lblbeaoibottomremarks = New System.Windows.Forms.Label()
-        Me.lblbeaoibottomdefectname = New System.Windows.Forms.Label()
-        Me.lblbeaoibottomresult = New System.Windows.Forms.Label()
-        Me.lblbeaoibottomoperator = New System.Windows.Forms.Label()
-        Me.lblbeaoibottomdt = New System.Windows.Forms.Label()
-        Me.Label99 = New System.Windows.Forms.Label()
-        Me.Label56 = New System.Windows.Forms.Label()
-        Me.lblqpitdt = New System.Windows.Forms.Label()
-        Me.lblqpitop = New System.Windows.Forms.Label()
-        Me.lblqpitre = New System.Windows.Forms.Label()
-        Me.lblqpitdef = New System.Windows.Forms.Label()
-        Me.lblqpitrem = New System.Windows.Forms.Label()
+        Me.lblaoitopdt = New System.Windows.Forms.Label()
+        Me.lblaoitopoperator = New System.Windows.Forms.Label()
+        Me.lblaoitopresult = New System.Windows.Forms.Label()
+        Me.lblaoitopdefectname = New System.Windows.Forms.Label()
+        Me.lblaoitopremarks = New System.Windows.Forms.Label()
         Me.TableLayoutPanel27 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel30 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel31 = New System.Windows.Forms.TableLayoutPanel()
@@ -117,27 +96,6 @@ Partial Class frmRepair
         Me.RC_lbllocation = New System.Windows.Forms.Label()
         Me.RC_tblotnum = New System.Windows.Forms.TextBox()
         Me.RC_tbmaker = New System.Windows.Forms.TextBox()
-        Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
-        Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
-        Me.TableLayoutPanel35 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Label88 = New System.Windows.Forms.Label()
-        Me.TableLayoutPanel36 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Label75 = New System.Windows.Forms.Label()
-        Me.Label76 = New System.Windows.Forms.Label()
-        Me.Label77 = New System.Windows.Forms.Label()
-        Me.Label82 = New System.Windows.Forms.Label()
-        Me.Label80 = New System.Windows.Forms.Label()
-        Me.Label79 = New System.Windows.Forms.Label()
-        Me.lbldefect = New System.Windows.Forms.Label()
-        Me.lbldispo = New System.Windows.Forms.Label()
-        Me.lbldefectlocation = New System.Windows.Forms.Label()
-        Me.lblactiontake = New System.Windows.Forms.Label()
-        Me.lblremarks = New System.Windows.Forms.Label()
-        Me.lblanalysis = New System.Windows.Forms.Label()
-        Me.TableLayoutPanel8 = New System.Windows.Forms.TableLayoutPanel()
-        Me.TableLayoutPanel21 = New System.Windows.Forms.TableLayoutPanel()
-        Me.VA_dgv = New System.Windows.Forms.DataGridView()
-        Me.Label52 = New System.Windows.Forms.Label()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.TR_dgv = New System.Windows.Forms.DataGridView()
@@ -197,6 +155,7 @@ Partial Class frmRepair
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
+        Me.lblAssemblyVersion = New System.Windows.Forms.Label()
         Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblname = New System.Windows.Forms.Label()
@@ -228,9 +187,7 @@ Partial Class frmRepair
         Me.Label50 = New System.Windows.Forms.Label()
         Me.Label51 = New System.Windows.Forms.Label()
         Me.Label41 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.lblcoderev = New System.Windows.Forms.Label()
         Me.lblcodeallo = New System.Windows.Forms.Label()
         Me.btnlogout = New System.Windows.Forms.Button()
         Me.lblpcb = New System.Windows.Forms.Label()
@@ -243,7 +200,14 @@ Partial Class frmRepair
         Me.TableLayoutPanel24 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel25 = New System.Windows.Forms.TableLayoutPanel()
-        Me.lblAssemblyVersion = New System.Windows.Forms.Label()
+        Me.Label54 = New System.Windows.Forms.Label()
+        Me.Label56 = New System.Windows.Forms.Label()
+        Me.Label85 = New System.Windows.Forms.Label()
+        Me.TableLayoutPanel8 = New System.Windows.Forms.TableLayoutPanel()
+        Me.TableLayoutPanel21 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label52 = New System.Windows.Forms.Label()
+        Me.VA_dgv = New System.Windows.Forms.DataGridView()
+        Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
         Me.TabPage2.SuspendLayout()
         Me.TableLayoutPanel10.SuspendLayout()
         Me.TableLayoutPanel28.SuspendLayout()
@@ -257,13 +221,6 @@ Partial Class frmRepair
         Me.TableLayoutPanel32.SuspendLayout()
         Me.TableLayoutPanel33.SuspendLayout()
         Me.TabPage3.SuspendLayout()
-        Me.TableLayoutPanel6.SuspendLayout()
-        Me.TableLayoutPanel7.SuspendLayout()
-        Me.TableLayoutPanel35.SuspendLayout()
-        Me.TableLayoutPanel36.SuspendLayout()
-        Me.TableLayoutPanel8.SuspendLayout()
-        Me.TableLayoutPanel21.SuspendLayout()
-        CType(Me.VA_dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage5.SuspendLayout()
         Me.Panel7.SuspendLayout()
         CType(Me.TR_dgv, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -296,6 +253,10 @@ Partial Class frmRepair
         Me.TableLayoutPanel24.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.TableLayoutPanel25.SuspendLayout()
+        Me.TableLayoutPanel8.SuspendLayout()
+        Me.TableLayoutPanel21.SuspendLayout()
+        CType(Me.VA_dgv, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel6.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label64
@@ -393,18 +354,6 @@ Partial Class frmRepair
         Me.RA_lblmaker.Size = New System.Drawing.Size(198, 24)
         Me.RA_lblmaker.TabIndex = 6
         Me.RA_lblmaker.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblictrem
-        '
-        Me.lblictrem.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblictrem.BackColor = System.Drawing.Color.White
-        Me.lblictrem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblictrem.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblictrem.Location = New System.Drawing.Point(168, 207)
-        Me.lblictrem.Name = "lblictrem"
-        Me.lblictrem.Size = New System.Drawing.Size(152, 27)
-        Me.lblictrem.TabIndex = 236
-        Me.lblictrem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TabPage2
         '
@@ -554,47 +503,29 @@ Partial Class frmRepair
         Me.TableLayoutPanel26.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.50167!))
         Me.TableLayoutPanel26.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 168.0!))
         Me.TableLayoutPanel26.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.50328!))
-        Me.TableLayoutPanel26.Controls.Add(Me.Label85, 3, 0)
-        Me.TableLayoutPanel26.Controls.Add(Me.lblictdt, 3, 1)
         Me.TableLayoutPanel26.Controls.Add(Me.Label53, 1, 1)
         Me.TableLayoutPanel26.Controls.Add(Me.Label101, 1, 5)
-        Me.TableLayoutPanel26.Controls.Add(Me.lblictrem, 3, 5)
-        Me.TableLayoutPanel26.Controls.Add(Me.lblictdef, 3, 4)
         Me.TableLayoutPanel26.Controls.Add(Me.Label55, 1, 4)
         Me.TableLayoutPanel26.Controls.Add(Me.Label83, 1, 3)
         Me.TableLayoutPanel26.Controls.Add(Me.Label84, 1, 2)
-        Me.TableLayoutPanel26.Controls.Add(Me.lblictre, 3, 3)
-        Me.TableLayoutPanel26.Controls.Add(Me.lblictop, 3, 2)
         Me.TableLayoutPanel26.Controls.Add(Me.lbloqcdt, 13, 1)
         Me.TableLayoutPanel26.Controls.Add(Me.lbloqcop, 13, 2)
         Me.TableLayoutPanel26.Controls.Add(Me.lbloqcre, 13, 3)
         Me.TableLayoutPanel26.Controls.Add(Me.lbloqcdef, 13, 4)
         Me.TableLayoutPanel26.Controls.Add(Me.lbloqcrem, 13, 5)
-        Me.TableLayoutPanel26.Controls.Add(Me.Label87, 13, 0)
-        Me.TableLayoutPanel26.Controls.Add(Me.Label86, 11, 0)
         Me.TableLayoutPanel26.Controls.Add(Me.lblfvidt, 11, 1)
         Me.TableLayoutPanel26.Controls.Add(Me.lblfviop, 11, 2)
         Me.TableLayoutPanel26.Controls.Add(Me.lblfvire, 11, 3)
         Me.TableLayoutPanel26.Controls.Add(Me.lblfvidef, 11, 4)
         Me.TableLayoutPanel26.Controls.Add(Me.lblfvirem, 11, 5)
-        Me.TableLayoutPanel26.Controls.Add(Me.Label100, 9, 0)
-        Me.TableLayoutPanel26.Controls.Add(Me.lblbeaoitopdt, 9, 1)
-        Me.TableLayoutPanel26.Controls.Add(Me.lblbeaoitopoperator, 9, 2)
-        Me.TableLayoutPanel26.Controls.Add(Me.lblbeaoitopresult, 9, 3)
-        Me.TableLayoutPanel26.Controls.Add(Me.lblbeaoitopdefectname, 9, 4)
-        Me.TableLayoutPanel26.Controls.Add(Me.lblbeaoitopremarks, 9, 5)
-        Me.TableLayoutPanel26.Controls.Add(Me.lblbeaoibottomremarks, 7, 5)
-        Me.TableLayoutPanel26.Controls.Add(Me.lblbeaoibottomdefectname, 7, 4)
-        Me.TableLayoutPanel26.Controls.Add(Me.lblbeaoibottomresult, 7, 3)
-        Me.TableLayoutPanel26.Controls.Add(Me.lblbeaoibottomoperator, 7, 2)
-        Me.TableLayoutPanel26.Controls.Add(Me.lblbeaoibottomdt, 7, 1)
-        Me.TableLayoutPanel26.Controls.Add(Me.Label99, 7, 0)
-        Me.TableLayoutPanel26.Controls.Add(Me.Label56, 5, 0)
-        Me.TableLayoutPanel26.Controls.Add(Me.lblqpitdt, 5, 1)
-        Me.TableLayoutPanel26.Controls.Add(Me.lblqpitop, 5, 2)
-        Me.TableLayoutPanel26.Controls.Add(Me.lblqpitre, 5, 3)
-        Me.TableLayoutPanel26.Controls.Add(Me.lblqpitdef, 5, 4)
-        Me.TableLayoutPanel26.Controls.Add(Me.lblqpitrem, 5, 5)
+        Me.TableLayoutPanel26.Controls.Add(Me.lblaoitopdt, 9, 1)
+        Me.TableLayoutPanel26.Controls.Add(Me.lblaoitopoperator, 9, 2)
+        Me.TableLayoutPanel26.Controls.Add(Me.lblaoitopresult, 9, 3)
+        Me.TableLayoutPanel26.Controls.Add(Me.lblaoitopdefectname, 9, 4)
+        Me.TableLayoutPanel26.Controls.Add(Me.lblaoitopremarks, 9, 5)
+        Me.TableLayoutPanel26.Controls.Add(Me.Label54, 9, 0)
+        Me.TableLayoutPanel26.Controls.Add(Me.Label56, 11, 0)
+        Me.TableLayoutPanel26.Controls.Add(Me.Label85, 13, 0)
         Me.TableLayoutPanel26.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel26.Location = New System.Drawing.Point(3, 3)
         Me.TableLayoutPanel26.Name = "TableLayoutPanel26"
@@ -609,40 +540,13 @@ Partial Class frmRepair
         Me.TableLayoutPanel26.Size = New System.Drawing.Size(1314, 268)
         Me.TableLayoutPanel26.TabIndex = 0
         '
-        'Label85
-        '
-        Me.Label85.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.Label85.AutoSize = True
-        Me.Label85.BackColor = System.Drawing.Color.Transparent
-        Me.Label85.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label85.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label85.Location = New System.Drawing.Point(229, 24)
-        Me.Label85.Name = "Label85"
-        Me.Label85.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label85.Size = New System.Drawing.Size(30, 20)
-        Me.Label85.TabIndex = 120
-        Me.Label85.Text = "ICT"
-        Me.Label85.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblictdt
-        '
-        Me.lblictdt.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblictdt.BackColor = System.Drawing.Color.White
-        Me.lblictdt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblictdt.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblictdt.Location = New System.Drawing.Point(168, 50)
-        Me.lblictdt.Name = "lblictdt"
-        Me.lblictdt.Size = New System.Drawing.Size(152, 27)
-        Me.lblictdt.TabIndex = 233
-        Me.lblictdt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'Label53
         '
         Me.Label53.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label53.AutoSize = True
         Me.Label53.BackColor = System.Drawing.Color.Transparent
         Me.Label53.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label53.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label53.ForeColor = System.Drawing.Color.Black
         Me.Label53.Location = New System.Drawing.Point(34, 54)
         Me.Label53.Name = "Label53"
         Me.Label53.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -657,7 +561,7 @@ Partial Class frmRepair
         Me.Label101.AutoSize = True
         Me.Label101.BackColor = System.Drawing.Color.Transparent
         Me.Label101.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label101.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label101.ForeColor = System.Drawing.Color.Black
         Me.Label101.Location = New System.Drawing.Point(44, 210)
         Me.Label101.Name = "Label101"
         Me.Label101.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -666,25 +570,13 @@ Partial Class frmRepair
         Me.Label101.Text = "Remarks:"
         Me.Label101.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'lblictdef
-        '
-        Me.lblictdef.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblictdef.BackColor = System.Drawing.Color.White
-        Me.lblictdef.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblictdef.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblictdef.Location = New System.Drawing.Point(168, 169)
-        Me.lblictdef.Name = "lblictdef"
-        Me.lblictdef.Size = New System.Drawing.Size(152, 27)
-        Me.lblictdef.TabIndex = 235
-        Me.lblictdef.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'Label55
         '
         Me.Label55.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label55.AutoSize = True
         Me.Label55.BackColor = System.Drawing.Color.Transparent
         Me.Label55.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label55.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label55.ForeColor = System.Drawing.Color.Black
         Me.Label55.Location = New System.Drawing.Point(32, 173)
         Me.Label55.Name = "Label55"
         Me.Label55.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -699,7 +591,7 @@ Partial Class frmRepair
         Me.Label83.AutoSize = True
         Me.Label83.BackColor = System.Drawing.Color.Transparent
         Me.Label83.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label83.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label83.ForeColor = System.Drawing.Color.Black
         Me.Label83.Location = New System.Drawing.Point(53, 133)
         Me.Label83.Name = "Label83"
         Me.Label83.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -714,7 +606,7 @@ Partial Class frmRepair
         Me.Label84.AutoSize = True
         Me.Label84.BackColor = System.Drawing.Color.Transparent
         Me.Label84.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label84.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label84.ForeColor = System.Drawing.Color.Black
         Me.Label84.Location = New System.Drawing.Point(42, 93)
         Me.Label84.Name = "Label84"
         Me.Label84.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -722,30 +614,6 @@ Partial Class frmRepair
         Me.Label84.TabIndex = 119
         Me.Label84.Text = "Operator:"
         Me.Label84.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblictre
-        '
-        Me.lblictre.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblictre.BackColor = System.Drawing.Color.White
-        Me.lblictre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblictre.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblictre.Location = New System.Drawing.Point(168, 130)
-        Me.lblictre.Name = "lblictre"
-        Me.lblictre.Size = New System.Drawing.Size(152, 27)
-        Me.lblictre.TabIndex = 234
-        Me.lblictre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblictop
-        '
-        Me.lblictop.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblictop.BackColor = System.Drawing.Color.White
-        Me.lblictop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblictop.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblictop.Location = New System.Drawing.Point(168, 90)
-        Me.lblictop.Name = "lblictop"
-        Me.lblictop.Size = New System.Drawing.Size(152, 27)
-        Me.lblictop.TabIndex = 246
-        Me.lblictop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lbloqcdt
         '
@@ -807,36 +675,6 @@ Partial Class frmRepair
         Me.lbloqcrem.TabIndex = 244
         Me.lbloqcrem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label87
-        '
-        Me.Label87.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.Label87.AutoSize = True
-        Me.Label87.BackColor = System.Drawing.Color.Transparent
-        Me.Label87.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label87.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label87.Location = New System.Drawing.Point(1180, 24)
-        Me.Label87.Name = "Label87"
-        Me.Label87.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label87.Size = New System.Drawing.Size(40, 20)
-        Me.Label87.TabIndex = 122
-        Me.Label87.Text = "OQC"
-        Me.Label87.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label86
-        '
-        Me.Label86.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.Label86.AutoSize = True
-        Me.Label86.BackColor = System.Drawing.Color.Transparent
-        Me.Label86.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label86.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label86.Location = New System.Drawing.Point(992, 24)
-        Me.Label86.Name = "Label86"
-        Me.Label86.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label86.Size = New System.Drawing.Size(31, 20)
-        Me.Label86.TabIndex = 121
-        Me.Label86.Text = "FVI"
-        Me.Label86.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'lblfvidt
         '
         Me.lblfvidt.Anchor = System.Windows.Forms.AnchorStyles.None
@@ -897,230 +735,65 @@ Partial Class frmRepair
         Me.lblfvirem.TabIndex = 240
         Me.lblfvirem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label100
+        'lblaoitopdt
         '
-        Me.Label100.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.Label100.AutoSize = True
-        Me.Label100.BackColor = System.Drawing.Color.Transparent
-        Me.Label100.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label100.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label100.Location = New System.Drawing.Point(774, 24)
-        Me.Label100.Name = "Label100"
-        Me.Label100.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label100.Size = New System.Drawing.Size(86, 20)
-        Me.Label100.TabIndex = 260
-        Me.Label100.Text = "BE AOI TOP"
-        Me.Label100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblaoitopdt.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblaoitopdt.BackColor = System.Drawing.Color.White
+        Me.lblaoitopdt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblaoitopdt.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblaoitopdt.Location = New System.Drawing.Point(741, 50)
+        Me.lblaoitopdt.Name = "lblaoitopdt"
+        Me.lblaoitopdt.Size = New System.Drawing.Size(152, 27)
+        Me.lblaoitopdt.TabIndex = 254
+        Me.lblaoitopdt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'lblbeaoitopdt
+        'lblaoitopoperator
         '
-        Me.lblbeaoitopdt.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblbeaoitopdt.BackColor = System.Drawing.Color.White
-        Me.lblbeaoitopdt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblbeaoitopdt.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblbeaoitopdt.Location = New System.Drawing.Point(741, 50)
-        Me.lblbeaoitopdt.Name = "lblbeaoitopdt"
-        Me.lblbeaoitopdt.Size = New System.Drawing.Size(152, 27)
-        Me.lblbeaoitopdt.TabIndex = 254
-        Me.lblbeaoitopdt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblaoitopoperator.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblaoitopoperator.BackColor = System.Drawing.Color.White
+        Me.lblaoitopoperator.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblaoitopoperator.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblaoitopoperator.Location = New System.Drawing.Point(741, 90)
+        Me.lblaoitopoperator.Name = "lblaoitopoperator"
+        Me.lblaoitopoperator.Size = New System.Drawing.Size(152, 27)
+        Me.lblaoitopoperator.TabIndex = 255
+        Me.lblaoitopoperator.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'lblbeaoitopoperator
+        'lblaoitopresult
         '
-        Me.lblbeaoitopoperator.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblbeaoitopoperator.BackColor = System.Drawing.Color.White
-        Me.lblbeaoitopoperator.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblbeaoitopoperator.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblbeaoitopoperator.Location = New System.Drawing.Point(741, 90)
-        Me.lblbeaoitopoperator.Name = "lblbeaoitopoperator"
-        Me.lblbeaoitopoperator.Size = New System.Drawing.Size(152, 27)
-        Me.lblbeaoitopoperator.TabIndex = 255
-        Me.lblbeaoitopoperator.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblaoitopresult.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblaoitopresult.BackColor = System.Drawing.Color.White
+        Me.lblaoitopresult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblaoitopresult.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblaoitopresult.Location = New System.Drawing.Point(741, 130)
+        Me.lblaoitopresult.Name = "lblaoitopresult"
+        Me.lblaoitopresult.Size = New System.Drawing.Size(152, 27)
+        Me.lblaoitopresult.TabIndex = 256
+        Me.lblaoitopresult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'lblbeaoitopresult
+        'lblaoitopdefectname
         '
-        Me.lblbeaoitopresult.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblbeaoitopresult.BackColor = System.Drawing.Color.White
-        Me.lblbeaoitopresult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblbeaoitopresult.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblbeaoitopresult.Location = New System.Drawing.Point(741, 130)
-        Me.lblbeaoitopresult.Name = "lblbeaoitopresult"
-        Me.lblbeaoitopresult.Size = New System.Drawing.Size(152, 27)
-        Me.lblbeaoitopresult.TabIndex = 256
-        Me.lblbeaoitopresult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblaoitopdefectname.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblaoitopdefectname.BackColor = System.Drawing.Color.White
+        Me.lblaoitopdefectname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblaoitopdefectname.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblaoitopdefectname.Location = New System.Drawing.Point(741, 169)
+        Me.lblaoitopdefectname.Name = "lblaoitopdefectname"
+        Me.lblaoitopdefectname.Size = New System.Drawing.Size(152, 27)
+        Me.lblaoitopdefectname.TabIndex = 257
+        Me.lblaoitopdefectname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'lblbeaoitopdefectname
+        'lblaoitopremarks
         '
-        Me.lblbeaoitopdefectname.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblbeaoitopdefectname.BackColor = System.Drawing.Color.White
-        Me.lblbeaoitopdefectname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblbeaoitopdefectname.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblbeaoitopdefectname.Location = New System.Drawing.Point(741, 169)
-        Me.lblbeaoitopdefectname.Name = "lblbeaoitopdefectname"
-        Me.lblbeaoitopdefectname.Size = New System.Drawing.Size(152, 27)
-        Me.lblbeaoitopdefectname.TabIndex = 257
-        Me.lblbeaoitopdefectname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblbeaoitopremarks
-        '
-        Me.lblbeaoitopremarks.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblbeaoitopremarks.BackColor = System.Drawing.Color.White
-        Me.lblbeaoitopremarks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblbeaoitopremarks.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblbeaoitopremarks.Location = New System.Drawing.Point(741, 207)
-        Me.lblbeaoitopremarks.Name = "lblbeaoitopremarks"
-        Me.lblbeaoitopremarks.Size = New System.Drawing.Size(152, 27)
-        Me.lblbeaoitopremarks.TabIndex = 258
-        Me.lblbeaoitopremarks.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblbeaoibottomremarks
-        '
-        Me.lblbeaoibottomremarks.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblbeaoibottomremarks.BackColor = System.Drawing.Color.White
-        Me.lblbeaoibottomremarks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblbeaoibottomremarks.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblbeaoibottomremarks.Location = New System.Drawing.Point(550, 207)
-        Me.lblbeaoibottomremarks.Name = "lblbeaoibottomremarks"
-        Me.lblbeaoibottomremarks.Size = New System.Drawing.Size(152, 27)
-        Me.lblbeaoibottomremarks.TabIndex = 253
-        Me.lblbeaoibottomremarks.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblbeaoibottomdefectname
-        '
-        Me.lblbeaoibottomdefectname.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblbeaoibottomdefectname.BackColor = System.Drawing.Color.White
-        Me.lblbeaoibottomdefectname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblbeaoibottomdefectname.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblbeaoibottomdefectname.Location = New System.Drawing.Point(550, 169)
-        Me.lblbeaoibottomdefectname.Name = "lblbeaoibottomdefectname"
-        Me.lblbeaoibottomdefectname.Size = New System.Drawing.Size(152, 27)
-        Me.lblbeaoibottomdefectname.TabIndex = 252
-        Me.lblbeaoibottomdefectname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblbeaoibottomresult
-        '
-        Me.lblbeaoibottomresult.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblbeaoibottomresult.BackColor = System.Drawing.Color.White
-        Me.lblbeaoibottomresult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblbeaoibottomresult.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblbeaoibottomresult.Location = New System.Drawing.Point(550, 130)
-        Me.lblbeaoibottomresult.Name = "lblbeaoibottomresult"
-        Me.lblbeaoibottomresult.Size = New System.Drawing.Size(152, 27)
-        Me.lblbeaoibottomresult.TabIndex = 251
-        Me.lblbeaoibottomresult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblbeaoibottomoperator
-        '
-        Me.lblbeaoibottomoperator.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblbeaoibottomoperator.BackColor = System.Drawing.Color.White
-        Me.lblbeaoibottomoperator.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblbeaoibottomoperator.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblbeaoibottomoperator.Location = New System.Drawing.Point(550, 90)
-        Me.lblbeaoibottomoperator.Name = "lblbeaoibottomoperator"
-        Me.lblbeaoibottomoperator.Size = New System.Drawing.Size(152, 27)
-        Me.lblbeaoibottomoperator.TabIndex = 250
-        Me.lblbeaoibottomoperator.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblbeaoibottomdt
-        '
-        Me.lblbeaoibottomdt.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblbeaoibottomdt.BackColor = System.Drawing.Color.White
-        Me.lblbeaoibottomdt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblbeaoibottomdt.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblbeaoibottomdt.Location = New System.Drawing.Point(550, 50)
-        Me.lblbeaoibottomdt.Name = "lblbeaoibottomdt"
-        Me.lblbeaoibottomdt.Size = New System.Drawing.Size(152, 27)
-        Me.lblbeaoibottomdt.TabIndex = 249
-        Me.lblbeaoibottomdt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label99
-        '
-        Me.Label99.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.Label99.AutoSize = True
-        Me.Label99.BackColor = System.Drawing.Color.Transparent
-        Me.Label99.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label99.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label99.Location = New System.Drawing.Point(567, 24)
-        Me.Label99.Name = "Label99"
-        Me.Label99.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label99.Size = New System.Drawing.Size(118, 20)
-        Me.Label99.TabIndex = 259
-        Me.Label99.Text = "BE AOI BOTTOM"
-        Me.Label99.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label56
-        '
-        Me.Label56.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.Label56.AutoSize = True
-        Me.Label56.BackColor = System.Drawing.Color.Transparent
-        Me.Label56.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label56.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label56.Location = New System.Drawing.Point(414, 24)
-        Me.Label56.Name = "Label56"
-        Me.Label56.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label56.Size = New System.Drawing.Size(41, 20)
-        Me.Label56.TabIndex = 120
-        Me.Label56.Text = "QPIT"
-        Me.Label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblqpitdt
-        '
-        Me.lblqpitdt.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblqpitdt.BackColor = System.Drawing.Color.White
-        Me.lblqpitdt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblqpitdt.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblqpitdt.Location = New System.Drawing.Point(359, 50)
-        Me.lblqpitdt.Name = "lblqpitdt"
-        Me.lblqpitdt.Size = New System.Drawing.Size(152, 27)
-        Me.lblqpitdt.TabIndex = 233
-        Me.lblqpitdt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblqpitop
-        '
-        Me.lblqpitop.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblqpitop.BackColor = System.Drawing.Color.White
-        Me.lblqpitop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblqpitop.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblqpitop.Location = New System.Drawing.Point(359, 90)
-        Me.lblqpitop.Name = "lblqpitop"
-        Me.lblqpitop.Size = New System.Drawing.Size(152, 27)
-        Me.lblqpitop.TabIndex = 246
-        Me.lblqpitop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblqpitre
-        '
-        Me.lblqpitre.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblqpitre.BackColor = System.Drawing.Color.White
-        Me.lblqpitre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblqpitre.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblqpitre.Location = New System.Drawing.Point(359, 130)
-        Me.lblqpitre.Name = "lblqpitre"
-        Me.lblqpitre.Size = New System.Drawing.Size(152, 27)
-        Me.lblqpitre.TabIndex = 246
-        Me.lblqpitre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblqpitdef
-        '
-        Me.lblqpitdef.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblqpitdef.BackColor = System.Drawing.Color.White
-        Me.lblqpitdef.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblqpitdef.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblqpitdef.Location = New System.Drawing.Point(359, 169)
-        Me.lblqpitdef.Name = "lblqpitdef"
-        Me.lblqpitdef.Size = New System.Drawing.Size(152, 27)
-        Me.lblqpitdef.TabIndex = 246
-        Me.lblqpitdef.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblqpitrem
-        '
-        Me.lblqpitrem.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblqpitrem.BackColor = System.Drawing.Color.White
-        Me.lblqpitrem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblqpitrem.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblqpitrem.Location = New System.Drawing.Point(359, 207)
-        Me.lblqpitrem.Name = "lblqpitrem"
-        Me.lblqpitrem.Size = New System.Drawing.Size(152, 27)
-        Me.lblqpitrem.TabIndex = 246
-        Me.lblqpitrem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblaoitopremarks.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblaoitopremarks.BackColor = System.Drawing.Color.White
+        Me.lblaoitopremarks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblaoitopremarks.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblaoitopremarks.Location = New System.Drawing.Point(741, 207)
+        Me.lblaoitopremarks.Name = "lblaoitopremarks"
+        Me.lblaoitopremarks.Size = New System.Drawing.Size(152, 27)
+        Me.lblaoitopremarks.TabIndex = 258
+        Me.lblaoitopremarks.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TableLayoutPanel27
         '
@@ -1556,298 +1229,6 @@ Partial Class frmRepair
         Me.RC_tbmaker.Size = New System.Drawing.Size(198, 24)
         Me.RC_tbmaker.TabIndex = 11
         Me.RC_tbmaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'TableLayoutPanel6
-        '
-        Me.TableLayoutPanel6.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel6.BackgroundImage = Global.ELITE_GI.My.Resources.Resources.elite_background_GI_190
-        Me.TableLayoutPanel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.TableLayoutPanel6.ColumnCount = 4
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 5.0!))
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.45073!))
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.54927!))
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 5.0!))
-        Me.TableLayoutPanel6.Controls.Add(Me.TableLayoutPanel7, 1, 1)
-        Me.TableLayoutPanel6.Controls.Add(Me.TableLayoutPanel8, 2, 1)
-        Me.TableLayoutPanel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TableLayoutPanel6.Location = New System.Drawing.Point(18, 227)
-        Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
-        Me.TableLayoutPanel6.RowCount = 3
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.380952!))
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 97.61905!))
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12.0!))
-        Me.TableLayoutPanel6.Size = New System.Drawing.Size(1334, 204)
-        Me.TableLayoutPanel6.TabIndex = 100
-        '
-        'TableLayoutPanel7
-        '
-        Me.TableLayoutPanel7.ColumnCount = 1
-        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.15827!))
-        Me.TableLayoutPanel7.Controls.Add(Me.TableLayoutPanel35, 0, 0)
-        Me.TableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel7.Location = New System.Drawing.Point(8, 7)
-        Me.TableLayoutPanel7.Name = "TableLayoutPanel7"
-        Me.TableLayoutPanel7.RowCount = 1
-        Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel7.Size = New System.Drawing.Size(781, 181)
-        Me.TableLayoutPanel7.TabIndex = 0
-        '
-        'TableLayoutPanel35
-        '
-        Me.TableLayoutPanel35.ColumnCount = 1
-        Me.TableLayoutPanel35.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel35.Controls.Add(Me.Label88, 0, 0)
-        Me.TableLayoutPanel35.Controls.Add(Me.TableLayoutPanel36, 0, 1)
-        Me.TableLayoutPanel35.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel35.Location = New System.Drawing.Point(3, 3)
-        Me.TableLayoutPanel35.Name = "TableLayoutPanel35"
-        Me.TableLayoutPanel35.RowCount = 2
-        Me.TableLayoutPanel35.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21.0!))
-        Me.TableLayoutPanel35.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 137.0!))
-        Me.TableLayoutPanel35.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel35.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel35.Size = New System.Drawing.Size(775, 175)
-        Me.TableLayoutPanel35.TabIndex = 0
-        '
-        'Label88
-        '
-        Me.Label88.AutoSize = True
-        Me.Label88.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label88.Location = New System.Drawing.Point(3, 0)
-        Me.Label88.Name = "Label88"
-        Me.Label88.Size = New System.Drawing.Size(135, 20)
-        Me.Label88.TabIndex = 238
-        Me.Label88.Text = "Failure Analysis"
-        Me.Label88.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'TableLayoutPanel36
-        '
-        Me.TableLayoutPanel36.ColumnCount = 4
-        Me.TableLayoutPanel36.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 119.0!))
-        Me.TableLayoutPanel36.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel36.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131.0!))
-        Me.TableLayoutPanel36.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel36.Controls.Add(Me.Label75, 0, 0)
-        Me.TableLayoutPanel36.Controls.Add(Me.Label76, 0, 1)
-        Me.TableLayoutPanel36.Controls.Add(Me.Label77, 0, 2)
-        Me.TableLayoutPanel36.Controls.Add(Me.Label82, 2, 0)
-        Me.TableLayoutPanel36.Controls.Add(Me.Label80, 2, 1)
-        Me.TableLayoutPanel36.Controls.Add(Me.Label79, 2, 2)
-        Me.TableLayoutPanel36.Controls.Add(Me.lbldefect, 1, 0)
-        Me.TableLayoutPanel36.Controls.Add(Me.lbldispo, 1, 1)
-        Me.TableLayoutPanel36.Controls.Add(Me.lbldefectlocation, 3, 0)
-        Me.TableLayoutPanel36.Controls.Add(Me.lblactiontake, 3, 1)
-        Me.TableLayoutPanel36.Controls.Add(Me.lblremarks, 3, 2)
-        Me.TableLayoutPanel36.Controls.Add(Me.lblanalysis, 1, 2)
-        Me.TableLayoutPanel36.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel36.Location = New System.Drawing.Point(3, 24)
-        Me.TableLayoutPanel36.Name = "TableLayoutPanel36"
-        Me.TableLayoutPanel36.RowCount = 3
-        Me.TableLayoutPanel36.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
-        Me.TableLayoutPanel36.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49.0!))
-        Me.TableLayoutPanel36.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13.0!))
-        Me.TableLayoutPanel36.Size = New System.Drawing.Size(769, 148)
-        Me.TableLayoutPanel36.TabIndex = 4
-        '
-        'Label75
-        '
-        Me.Label75.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label75.AutoSize = True
-        Me.Label75.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label75.Location = New System.Drawing.Point(9, 16)
-        Me.Label75.Name = "Label75"
-        Me.Label75.Size = New System.Drawing.Size(101, 16)
-        Me.Label75.TabIndex = 2
-        Me.Label75.Text = "Defect Type :"
-        Me.Label75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label76
-        '
-        Me.Label76.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label76.AutoSize = True
-        Me.Label76.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label76.Location = New System.Drawing.Point(12, 64)
-        Me.Label76.Name = "Label76"
-        Me.Label76.Size = New System.Drawing.Size(94, 16)
-        Me.Label76.TabIndex = 3
-        Me.Label76.Text = "Disposition :"
-        Me.Label76.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label77
-        '
-        Me.Label77.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label77.AutoSize = True
-        Me.Label77.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label77.Location = New System.Drawing.Point(22, 114)
-        Me.Label77.Name = "Label77"
-        Me.Label77.Size = New System.Drawing.Size(75, 16)
-        Me.Label77.TabIndex = 4
-        Me.Label77.Text = "Analysis :"
-        Me.Label77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label82
-        '
-        Me.Label82.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label82.AutoSize = True
-        Me.Label82.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label82.Location = New System.Drawing.Point(381, 16)
-        Me.Label82.Name = "Label82"
-        Me.Label82.Size = New System.Drawing.Size(124, 16)
-        Me.Label82.TabIndex = 7
-        Me.Label82.Text = "Defect Location :"
-        Me.Label82.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label80
-        '
-        Me.Label80.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label80.AutoSize = True
-        Me.Label80.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label80.Location = New System.Drawing.Point(390, 64)
-        Me.Label80.Name = "Label80"
-        Me.Label80.Size = New System.Drawing.Size(107, 16)
-        Me.Label80.TabIndex = 6
-        Me.Label80.Text = "Action Taken :"
-        Me.Label80.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label79
-        '
-        Me.Label79.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label79.AutoSize = True
-        Me.Label79.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label79.Location = New System.Drawing.Point(404, 114)
-        Me.Label79.Name = "Label79"
-        Me.Label79.Size = New System.Drawing.Size(78, 16)
-        Me.Label79.TabIndex = 5
-        Me.Label79.Text = "Remarks :"
-        Me.Label79.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lbldefect
-        '
-        Me.lbldefect.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.lbldefect.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lbldefect.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbldefect.Location = New System.Drawing.Point(122, 10)
-        Me.lbldefect.Name = "lbldefect"
-        Me.lbldefect.Size = New System.Drawing.Size(220, 27)
-        Me.lbldefect.TabIndex = 231
-        Me.lbldefect.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lbldispo
-        '
-        Me.lbldispo.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.lbldispo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lbldispo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbldispo.Location = New System.Drawing.Point(122, 59)
-        Me.lbldispo.Name = "lbldispo"
-        Me.lbldispo.Size = New System.Drawing.Size(220, 27)
-        Me.lbldispo.TabIndex = 232
-        Me.lbldispo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lbldefectlocation
-        '
-        Me.lbldefectlocation.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.lbldefectlocation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lbldefectlocation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbldefectlocation.Location = New System.Drawing.Point(512, 10)
-        Me.lbldefectlocation.Name = "lbldefectlocation"
-        Me.lbldefectlocation.Size = New System.Drawing.Size(220, 27)
-        Me.lbldefectlocation.TabIndex = 235
-        Me.lbldefectlocation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblactiontake
-        '
-        Me.lblactiontake.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.lblactiontake.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblactiontake.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblactiontake.Location = New System.Drawing.Point(512, 51)
-        Me.lblactiontake.Name = "lblactiontake"
-        Me.lblactiontake.Size = New System.Drawing.Size(254, 42)
-        Me.lblactiontake.TabIndex = 237
-        Me.lblactiontake.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblremarks
-        '
-        Me.lblremarks.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.lblremarks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblremarks.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblremarks.Location = New System.Drawing.Point(512, 101)
-        Me.lblremarks.Name = "lblremarks"
-        Me.lblremarks.Size = New System.Drawing.Size(254, 42)
-        Me.lblremarks.TabIndex = 238
-        Me.lblremarks.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblanalysis
-        '
-        Me.lblanalysis.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.lblanalysis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblanalysis.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblanalysis.Location = New System.Drawing.Point(122, 101)
-        Me.lblanalysis.Name = "lblanalysis"
-        Me.lblanalysis.Size = New System.Drawing.Size(253, 42)
-        Me.lblanalysis.TabIndex = 236
-        Me.lblanalysis.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TableLayoutPanel8
-        '
-        Me.TableLayoutPanel8.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel8.ColumnCount = 3
-        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.003764!))
-        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.99624!))
-        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 9.0!))
-        Me.TableLayoutPanel8.Controls.Add(Me.TableLayoutPanel21, 1, 1)
-        Me.TableLayoutPanel8.Location = New System.Drawing.Point(795, 7)
-        Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
-        Me.TableLayoutPanel8.RowCount = 3
-        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.339181!))
-        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 97.66082!))
-        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8.0!))
-        Me.TableLayoutPanel8.Size = New System.Drawing.Size(530, 181)
-        Me.TableLayoutPanel8.TabIndex = 1
-        '
-        'TableLayoutPanel21
-        '
-        Me.TableLayoutPanel21.ColumnCount = 1
-        Me.TableLayoutPanel21.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel21.Controls.Add(Me.VA_dgv, 0, 1)
-        Me.TableLayoutPanel21.Controls.Add(Me.Label52, 0, 0)
-        Me.TableLayoutPanel21.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel21.Location = New System.Drawing.Point(8, 7)
-        Me.TableLayoutPanel21.Name = "TableLayoutPanel21"
-        Me.TableLayoutPanel21.RowCount = 2
-        Me.TableLayoutPanel21.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel21.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 138.0!))
-        Me.TableLayoutPanel21.Size = New System.Drawing.Size(509, 162)
-        Me.TableLayoutPanel21.TabIndex = 0
-        '
-        'VA_dgv
-        '
-        Me.VA_dgv.AllowUserToAddRows = False
-        Me.VA_dgv.AllowUserToDeleteRows = False
-        Me.VA_dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.VA_dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells
-        Me.VA_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.VA_dgv.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.VA_dgv.Location = New System.Drawing.Point(3, 23)
-        Me.VA_dgv.Name = "VA_dgv"
-        Me.VA_dgv.ReadOnly = True
-        Me.VA_dgv.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        Me.VA_dgv.Size = New System.Drawing.Size(503, 136)
-        Me.VA_dgv.TabIndex = 3
-        '
-        'Label52
-        '
-        Me.Label52.AutoSize = True
-        Me.Label52.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label52.Location = New System.Drawing.Point(3, 0)
-        Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(122, 20)
-        Me.Label52.TabIndex = 0
-        Me.Label52.Text = "DEFECT LIST"
-        Me.Label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'TabPage5
         '
@@ -2678,6 +2059,19 @@ Partial Class frmRepair
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(398, 100)
         Me.TableLayoutPanel3.TabIndex = 1
         '
+        'lblAssemblyVersion
+        '
+        Me.lblAssemblyVersion.AutoSize = True
+        Me.lblAssemblyVersion.BackColor = System.Drawing.Color.Transparent
+        Me.lblAssemblyVersion.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblAssemblyVersion.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAssemblyVersion.Location = New System.Drawing.Point(13, 0)
+        Me.lblAssemblyVersion.Name = "lblAssemblyVersion"
+        Me.lblAssemblyVersion.Size = New System.Drawing.Size(382, 100)
+        Me.lblAssemblyVersion.TabIndex = 1
+        Me.lblAssemblyVersion.Text = "2.1802.44.2"
+        Me.lblAssemblyVersion.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        '
         'TableLayoutPanel4
         '
         Me.TableLayoutPanel4.BackColor = System.Drawing.Color.Transparent
@@ -2816,20 +2210,18 @@ Partial Class frmRepair
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 189.0!))
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.89147!))
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.55039!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 142.0!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 146.0!))
         Me.TableLayoutPanel5.Controls.Add(Me.lblmatrix, 0, 3)
         Me.TableLayoutPanel5.Controls.Add(Me.Label2, 1, 1)
-        Me.TableLayoutPanel5.Controls.Add(Me.Label6, 1, 2)
         Me.TableLayoutPanel5.Controls.Add(Me.tbpcb, 2, 1)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblmodel, 2, 2)
         Me.TableLayoutPanel5.Controls.Add(Me.TableLayoutPanel12, 0, 2)
-        Me.TableLayoutPanel5.Controls.Add(Me.Label8, 4, 1)
         Me.TableLayoutPanel5.Controls.Add(Me.Label7, 4, 2)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblcoderev, 5, 1)
         Me.TableLayoutPanel5.Controls.Add(Me.lblcodeallo, 5, 2)
         Me.TableLayoutPanel5.Controls.Add(Me.btnlogout, 11, 1)
-        Me.TableLayoutPanel5.Controls.Add(Me.lblpcb, 8, 1)
-        Me.TableLayoutPanel5.Controls.Add(Me.Label57, 7, 1)
+        Me.TableLayoutPanel5.Controls.Add(Me.Label57, 1, 2)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblmodel, 5, 1)
+        Me.TableLayoutPanel5.Controls.Add(Me.Label6, 4, 1)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblpcb, 2, 2)
         Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel5.Location = New System.Drawing.Point(15, 147)
         Me.TableLayoutPanel5.Margin = New System.Windows.Forms.Padding(0)
@@ -2839,6 +2231,7 @@ Partial Class frmRepair
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36.0!))
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34.0!))
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel5.Size = New System.Drawing.Size(1340, 90)
         Me.TableLayoutPanel5.TabIndex = 97
         '
@@ -2861,7 +2254,7 @@ Partial Class frmRepair
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(23, 10)
+        Me.Label2.Location = New System.Drawing.Point(24, 10)
         Me.Label2.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(100, 36)
@@ -2875,10 +2268,10 @@ Partial Class frmRepair
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(23, 46)
+        Me.Label6.Location = New System.Drawing.Point(424, 10)
         Me.Label6.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(100, 34)
+        Me.Label6.Size = New System.Drawing.Size(145, 36)
         Me.Label6.TabIndex = 222
         Me.Label6.Text = "Model:"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2887,7 +2280,7 @@ Partial Class frmRepair
         '
         Me.tbpcb.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tbpcb.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbpcb.Location = New System.Drawing.Point(129, 13)
+        Me.tbpcb.Location = New System.Drawing.Point(130, 13)
         Me.tbpcb.Multiline = True
         Me.tbpcb.Name = "tbpcb"
         Me.tbpcb.Size = New System.Drawing.Size(236, 30)
@@ -2898,9 +2291,9 @@ Partial Class frmRepair
         Me.lblmodel.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblmodel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblmodel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblmodel.Location = New System.Drawing.Point(129, 48)
+        Me.lblmodel.Location = New System.Drawing.Point(575, 13)
         Me.lblmodel.Name = "lblmodel"
-        Me.lblmodel.Size = New System.Drawing.Size(236, 30)
+        Me.lblmodel.Size = New System.Drawing.Size(221, 30)
         Me.lblmodel.TabIndex = 230
         Me.lblmodel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -3151,27 +2544,13 @@ Partial Class frmRepair
         Me.Label41.Text = "OQC"
         Me.Label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(412, 10)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(145, 36)
-        Me.Label8.TabIndex = 228
-        Me.Label8.Text = "Code / Revision :"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(412, 46)
+        Me.Label7.Location = New System.Drawing.Point(424, 46)
         Me.Label7.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(145, 34)
@@ -3179,32 +2558,21 @@ Partial Class frmRepair
         Me.Label7.Text = "Code Allocation :"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'lblcoderev
-        '
-        Me.lblcoderev.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.lblcoderev.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblcoderev.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblcoderev.Location = New System.Drawing.Point(563, 13)
-        Me.lblcoderev.Name = "lblcoderev"
-        Me.lblcoderev.Size = New System.Drawing.Size(170, 30)
-        Me.lblcoderev.TabIndex = 231
-        Me.lblcoderev.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'lblcodeallo
         '
         Me.lblcodeallo.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblcodeallo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblcodeallo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblcodeallo.Location = New System.Drawing.Point(563, 48)
+        Me.lblcodeallo.Location = New System.Drawing.Point(575, 48)
         Me.lblcodeallo.Name = "lblcodeallo"
-        Me.lblcodeallo.Size = New System.Drawing.Size(170, 30)
+        Me.lblcodeallo.Size = New System.Drawing.Size(221, 30)
         Me.lblcodeallo.TabIndex = 232
         Me.lblcodeallo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnlogout
         '
         Me.btnlogout.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnlogout.Location = New System.Drawing.Point(1199, 13)
+        Me.btnlogout.Location = New System.Drawing.Point(1194, 13)
         Me.btnlogout.Name = "btnlogout"
         Me.btnlogout.Size = New System.Drawing.Size(102, 25)
         Me.btnlogout.TabIndex = 129
@@ -3216,9 +2584,9 @@ Partial Class frmRepair
         Me.lblpcb.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblpcb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblpcb.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblpcb.Location = New System.Drawing.Point(900, 13)
+        Me.lblpcb.Location = New System.Drawing.Point(130, 48)
         Me.lblpcb.Name = "lblpcb"
-        Me.lblpcb.Size = New System.Drawing.Size(168, 30)
+        Me.lblpcb.Size = New System.Drawing.Size(236, 30)
         Me.lblpcb.TabIndex = 236
         Me.lblpcb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -3227,9 +2595,9 @@ Partial Class frmRepair
         Me.Label57.AutoSize = True
         Me.Label57.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label57.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label57.Location = New System.Drawing.Point(816, 10)
+        Me.Label57.Location = New System.Drawing.Point(7, 46)
         Me.Label57.Name = "Label57"
-        Me.Label57.Size = New System.Drawing.Size(78, 36)
+        Me.Label57.Size = New System.Drawing.Size(117, 34)
         Me.Label57.TabIndex = 235
         Me.Label57.Text = "PCB ID :"
         Me.Label57.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -3361,18 +2729,133 @@ Partial Class frmRepair
         Me.TableLayoutPanel25.Size = New System.Drawing.Size(1280, 234)
         Me.TableLayoutPanel25.TabIndex = 0
         '
-        'lblAssemblyVersion
+        'Label54
         '
-        Me.lblAssemblyVersion.AutoSize = True
-        Me.lblAssemblyVersion.BackColor = System.Drawing.Color.Transparent
-        Me.lblAssemblyVersion.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblAssemblyVersion.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAssemblyVersion.Location = New System.Drawing.Point(13, 0)
-        Me.lblAssemblyVersion.Name = "lblAssemblyVersion"
-        Me.lblAssemblyVersion.Size = New System.Drawing.Size(382, 100)
-        Me.lblAssemblyVersion.TabIndex = 1
-        Me.lblAssemblyVersion.Text = "2.1802.44.2"
-        Me.lblAssemblyVersion.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.Label54.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label54.AutoSize = True
+        Me.Label54.BackColor = System.Drawing.Color.Transparent
+        Me.Label54.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label54.ForeColor = System.Drawing.Color.Black
+        Me.Label54.Location = New System.Drawing.Point(784, 12)
+        Me.Label54.Name = "Label54"
+        Me.Label54.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label54.Size = New System.Drawing.Size(65, 20)
+        Me.Label54.TabIndex = 259
+        Me.Label54.Text = "AOI TOP"
+        Me.Label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label56
+        '
+        Me.Label56.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label56.AutoSize = True
+        Me.Label56.BackColor = System.Drawing.Color.Transparent
+        Me.Label56.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label56.ForeColor = System.Drawing.Color.Black
+        Me.Label56.Location = New System.Drawing.Point(992, 12)
+        Me.Label56.Name = "Label56"
+        Me.Label56.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label56.Size = New System.Drawing.Size(31, 20)
+        Me.Label56.TabIndex = 260
+        Me.Label56.Text = "FVI"
+        Me.Label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label85
+        '
+        Me.Label85.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label85.AutoSize = True
+        Me.Label85.BackColor = System.Drawing.Color.Transparent
+        Me.Label85.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label85.ForeColor = System.Drawing.Color.Black
+        Me.Label85.Location = New System.Drawing.Point(1180, 12)
+        Me.Label85.Name = "Label85"
+        Me.Label85.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label85.Size = New System.Drawing.Size(39, 20)
+        Me.Label85.TabIndex = 261
+        Me.Label85.Text = "OBA"
+        Me.Label85.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TableLayoutPanel8
+        '
+        Me.TableLayoutPanel8.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel8.ColumnCount = 3
+        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.003764!))
+        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.99624!))
+        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 11.0!))
+        Me.TableLayoutPanel8.Controls.Add(Me.TableLayoutPanel21, 1, 1)
+        Me.TableLayoutPanel8.Location = New System.Drawing.Point(793, 7)
+        Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
+        Me.TableLayoutPanel8.RowCount = 3
+        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.339181!))
+        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 97.66082!))
+        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8.0!))
+        Me.TableLayoutPanel8.Size = New System.Drawing.Size(530, 181)
+        Me.TableLayoutPanel8.TabIndex = 1
+        '
+        'TableLayoutPanel21
+        '
+        Me.TableLayoutPanel21.ColumnCount = 1
+        Me.TableLayoutPanel21.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel21.Controls.Add(Me.VA_dgv, 0, 1)
+        Me.TableLayoutPanel21.Controls.Add(Me.Label52, 0, 0)
+        Me.TableLayoutPanel21.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel21.Location = New System.Drawing.Point(8, 7)
+        Me.TableLayoutPanel21.Name = "TableLayoutPanel21"
+        Me.TableLayoutPanel21.RowCount = 2
+        Me.TableLayoutPanel21.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel21.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 138.0!))
+        Me.TableLayoutPanel21.Size = New System.Drawing.Size(507, 162)
+        Me.TableLayoutPanel21.TabIndex = 0
+        '
+        'Label52
+        '
+        Me.Label52.AutoSize = True
+        Me.Label52.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label52.Location = New System.Drawing.Point(3, 0)
+        Me.Label52.Name = "Label52"
+        Me.Label52.Size = New System.Drawing.Size(122, 20)
+        Me.Label52.TabIndex = 0
+        Me.Label52.Text = "DEFECT LIST"
+        Me.Label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'VA_dgv
+        '
+        Me.VA_dgv.AllowUserToAddRows = False
+        Me.VA_dgv.AllowUserToDeleteRows = False
+        Me.VA_dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.VA_dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells
+        Me.VA_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.VA_dgv.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.VA_dgv.Location = New System.Drawing.Point(3, 23)
+        Me.VA_dgv.Name = "VA_dgv"
+        Me.VA_dgv.ReadOnly = True
+        Me.VA_dgv.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.VA_dgv.Size = New System.Drawing.Size(501, 136)
+        Me.VA_dgv.TabIndex = 3
+        '
+        'TableLayoutPanel6
+        '
+        Me.TableLayoutPanel6.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel6.BackgroundImage = Global.ELITE_GI.My.Resources.Resources.elite_background_GI_190
+        Me.TableLayoutPanel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TableLayoutPanel6.ColumnCount = 4
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 5.0!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.45073!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.54927!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 7.0!))
+        Me.TableLayoutPanel6.Controls.Add(Me.TableLayoutPanel8, 2, 1)
+        Me.TableLayoutPanel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TableLayoutPanel6.Location = New System.Drawing.Point(18, 227)
+        Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
+        Me.TableLayoutPanel6.RowCount = 3
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.380952!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 97.61905!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12.0!))
+        Me.TableLayoutPanel6.Size = New System.Drawing.Size(1334, 204)
+        Me.TableLayoutPanel6.TabIndex = 100
         '
         'frmRepair
         '
@@ -3400,16 +2883,6 @@ Partial Class frmRepair
         Me.TableLayoutPanel33.ResumeLayout(False)
         Me.TableLayoutPanel33.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
-        Me.TableLayoutPanel6.ResumeLayout(False)
-        Me.TableLayoutPanel7.ResumeLayout(False)
-        Me.TableLayoutPanel35.ResumeLayout(False)
-        Me.TableLayoutPanel35.PerformLayout()
-        Me.TableLayoutPanel36.ResumeLayout(False)
-        Me.TableLayoutPanel36.PerformLayout()
-        Me.TableLayoutPanel8.ResumeLayout(False)
-        Me.TableLayoutPanel21.ResumeLayout(False)
-        Me.TableLayoutPanel21.PerformLayout()
-        CType(Me.VA_dgv, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage5.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
         CType(Me.TR_dgv, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3455,6 +2928,11 @@ Partial Class frmRepair
         Me.TableLayoutPanel24.ResumeLayout(False)
         Me.Panel6.ResumeLayout(False)
         Me.TableLayoutPanel25.ResumeLayout(False)
+        Me.TableLayoutPanel8.ResumeLayout(False)
+        Me.TableLayoutPanel21.ResumeLayout(False)
+        Me.TableLayoutPanel21.PerformLayout()
+        CType(Me.VA_dgv, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel6.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -3467,7 +2945,6 @@ Partial Class frmRepair
     Friend WithEvents RA_cmbloc As ComboBox
     Friend WithEvents RA_lbllotnum As Label
     Friend WithEvents RA_lblmaker As Label
-    Friend WithEvents lblictrem As Label
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents TableLayoutPanel10 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel28 As TableLayoutPanel
@@ -3479,46 +2956,25 @@ Partial Class frmRepair
     Friend WithEvents Label74 As Label
     Friend WithEvents TabPage4 As TabPage
     Friend WithEvents TableLayoutPanel26 As TableLayoutPanel
-    Friend WithEvents Label85 As Label
-    Friend WithEvents lblictdt As Label
-    Friend WithEvents Label53 As Label
     Friend WithEvents Label101 As Label
-    Friend WithEvents lblictdef As Label
     Friend WithEvents Label55 As Label
     Friend WithEvents Label83 As Label
     Friend WithEvents Label84 As Label
-    Friend WithEvents lblictre As Label
-    Friend WithEvents lblictop As Label
     Friend WithEvents lbloqcdt As Label
     Friend WithEvents lbloqcop As Label
     Friend WithEvents lbloqcre As Label
     Friend WithEvents lbloqcdef As Label
     Friend WithEvents lbloqcrem As Label
-    Friend WithEvents Label87 As Label
-    Friend WithEvents Label86 As Label
     Friend WithEvents lblfvidt As Label
     Friend WithEvents lblfviop As Label
     Friend WithEvents lblfvire As Label
     Friend WithEvents lblfvidef As Label
     Friend WithEvents lblfvirem As Label
-    Friend WithEvents Label100 As Label
-    Friend WithEvents lblbeaoitopdt As Label
-    Friend WithEvents lblbeaoitopoperator As Label
-    Friend WithEvents lblbeaoitopresult As Label
-    Friend WithEvents lblbeaoitopdefectname As Label
-    Friend WithEvents lblbeaoitopremarks As Label
-    Friend WithEvents lblbeaoibottomremarks As Label
-    Friend WithEvents lblbeaoibottomdefectname As Label
-    Friend WithEvents lblbeaoibottomresult As Label
-    Friend WithEvents lblbeaoibottomoperator As Label
-    Friend WithEvents lblbeaoibottomdt As Label
-    Friend WithEvents Label99 As Label
-    Friend WithEvents Label56 As Label
-    Friend WithEvents lblqpitdt As Label
-    Friend WithEvents lblqpitop As Label
-    Friend WithEvents lblqpitre As Label
-    Friend WithEvents lblqpitdef As Label
-    Friend WithEvents lblqpitrem As Label
+    Friend WithEvents lblaoitopdt As Label
+    Friend WithEvents lblaoitopoperator As Label
+    Friend WithEvents lblaoitopresult As Label
+    Friend WithEvents lblaoitopdefectname As Label
+    Friend WithEvents lblaoitopremarks As Label
     Friend WithEvents TableLayoutPanel27 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel30 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel31 As TableLayoutPanel
@@ -3552,27 +3008,6 @@ Partial Class frmRepair
     Friend WithEvents RC_lbllocation As Label
     Friend WithEvents RC_tblotnum As TextBox
     Friend WithEvents RC_tbmaker As TextBox
-    Friend WithEvents TableLayoutPanel6 As TableLayoutPanel
-    Friend WithEvents TableLayoutPanel7 As TableLayoutPanel
-    Friend WithEvents TableLayoutPanel35 As TableLayoutPanel
-    Friend WithEvents Label88 As Label
-    Friend WithEvents TableLayoutPanel36 As TableLayoutPanel
-    Friend WithEvents Label75 As Label
-    Friend WithEvents Label76 As Label
-    Friend WithEvents Label77 As Label
-    Friend WithEvents Label82 As Label
-    Friend WithEvents Label80 As Label
-    Friend WithEvents Label79 As Label
-    Friend WithEvents lbldefect As Label
-    Friend WithEvents lbldispo As Label
-    Friend WithEvents lbldefectlocation As Label
-    Friend WithEvents lblactiontake As Label
-    Friend WithEvents lblremarks As Label
-    Friend WithEvents lblanalysis As Label
-    Friend WithEvents TableLayoutPanel8 As TableLayoutPanel
-    Friend WithEvents TableLayoutPanel21 As TableLayoutPanel
-    Friend WithEvents VA_dgv As DataGridView
-    Friend WithEvents Label52 As Label
     Friend WithEvents TabPage5 As TabPage
     Friend WithEvents Panel7 As Panel
     Friend WithEvents TR_dgv As DataGridView
@@ -3663,9 +3098,7 @@ Partial Class frmRepair
     Friend WithEvents Label50 As Label
     Friend WithEvents Label51 As Label
     Friend WithEvents Label41 As Label
-    Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents lblcoderev As Label
     Friend WithEvents lblcodeallo As Label
     Friend WithEvents btnlogout As Button
     Friend WithEvents lblpcb As Label
@@ -3679,4 +3112,13 @@ Partial Class frmRepair
     Friend WithEvents Panel6 As Panel
     Friend WithEvents TableLayoutPanel25 As TableLayoutPanel
     Friend WithEvents lblAssemblyVersion As Label
+    Friend WithEvents Label53 As Label
+    Friend WithEvents Label54 As Label
+    Friend WithEvents Label56 As Label
+    Friend WithEvents Label85 As Label
+    Friend WithEvents TableLayoutPanel6 As TableLayoutPanel
+    Friend WithEvents TableLayoutPanel8 As TableLayoutPanel
+    Friend WithEvents TableLayoutPanel21 As TableLayoutPanel
+    Friend WithEvents VA_dgv As DataGridView
+    Friend WithEvents Label52 As Label
 End Class
