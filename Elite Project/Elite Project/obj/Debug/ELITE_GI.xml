@@ -37,6 +37,11 @@ ELITE_GI
   Looks up a localized resource of type System.Byte[].
 </summary>
 </member>
+<member name="P:ELITE_GI.My.Resources.Resources.convert">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ELITE_GI.My.Resources.Resources.elite_background_GI_110">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

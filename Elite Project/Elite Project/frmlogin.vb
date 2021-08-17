@@ -274,6 +274,21 @@ Public Class frmlogin
                         cmbstation.Text = ""
                         lbllevel.Text = ""
                         Hide()
+                    ElseIf cmbstation.Text = "CONVERT PCB SERIAL" Then
+                        cmd.CommandText = "SELECT empname FROM tbluser WHERE userid = '" & txtid.Text & "'"
+                        lblname.Text = cmd.ExecuteScalar
+                        frmconvertpcbserial.lblname.Text = lblname.Text
+
+                        cmd.CommandText = "SELECT accounttype FROM tbluser WHERE userid = '" & txtid.Text & "'"
+                        frmconvertpcbserial.lblaccount.Text = cmd.ExecuteScalar
+
+                        frmconvertpcbserial.Show()
+                        txtpass.Text = ""
+                        lblname.Text = ""
+                        cmbline.Text = ""
+                        cmbstation.Text = ""
+                        lbllevel.Text = ""
+                        Hide()
                     End If
 
                     writeLogs("Login Successful: " & txtid.Text)
@@ -355,6 +370,7 @@ Public Class frmlogin
             cmbstation.Items.Add("REPAIR FVI")
             cmbstation.Items.Add("REPAIR OBA")
             cmbstation.Items.Add("BARCODE REPLACE")
+            cmbstation.Items.Add("CONVERT PCB SERIAL")
         Else
             cmbstation.Items.Add("INJECTION - BOTTOM")
             cmbstation.Items.Add("INJECTION - TOP")

@@ -158,10 +158,10 @@ Public Class frmbarcodereplace
             cmd.CommandText = "gi_replace_pcb"
             cmd.CommandType = CommandType.StoredProcedure
 
-            cmd.Parameters.AddWithValue("@oldPCBID", txtoriginal.Text.ToString().Substring(0, 9))
+            cmd.Parameters.AddWithValue("@oldPCBID", txtoriginal.Text.ToString())
             cmd.Parameters("@oldPCBID").Direction = ParameterDirection.Input
 
-            cmd.Parameters.AddWithValue("@newPCBID", txtnew.Text.ToString().Substring(0, 9))
+            cmd.Parameters.AddWithValue("@newPCBID", txtnew.Text.ToString())
             cmd.Parameters("@newPCBID").Direction = ParameterDirection.Input
 
             cmd.Parameters.AddWithValue("@affected", MySqlDbType.Int32)

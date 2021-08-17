@@ -148,6 +148,12 @@
     <Compile Include="frmbarcodereplace.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmconvertpcbserial.Designer.vb">
+      <DependentUpon>frmconvertpcbserial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmconvertpcbserial.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmcreamsolder.Designer.vb">
       <DependentUpon>frmcreamsolder.vb</DependentUpon>
     </Compile>
@@ -374,6 +380,9 @@
     <EmbeddedResource Include="frmbarcodereplace.resx">
       <DependentUpon>frmbarcodereplace.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmconvertpcbserial.resx">
+      <DependentUpon>frmconvertpcbserial.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmcreamsolder.resx">
       <DependentUpon>frmcreamsolder.vb</DependentUpon>
     </EmbeddedResource>
@@ -499,6 +508,7 @@
     <Content Include="ELITE Icon GI.ico" />
     <Content Include="eliteicon.ico" />
     <Content Include="header-logo2.ico" />
+    <None Include="Resources\convert.jpg" />
     <None Include="Resources\replac.jpg" />
     <None Include="Resources\pngegg1.png" />
     <None Include="Resources\pngegg.png" />
