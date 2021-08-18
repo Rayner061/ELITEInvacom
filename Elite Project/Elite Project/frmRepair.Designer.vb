@@ -26,6 +26,9 @@ Partial Class frmRepair
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRepair))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
+        Me.lblAssemblyVersion = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
         Me.lblmatrix = New System.Windows.Forms.Label()
@@ -104,9 +107,6 @@ Partial Class frmRepair
         Me.lblDT = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.lblline = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
-        Me.lblAssemblyVersion = New System.Windows.Forms.Label()
         Me.TableLayoutPanel34 = New System.Windows.Forms.TableLayoutPanel()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
@@ -209,6 +209,8 @@ Partial Class frmRepair
         Me.VA_dgv = New System.Windows.Forms.DataGridView()
         Me.Label52 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel2.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel3.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel5.SuspendLayout()
         Me.TableLayoutPanel12.SuspendLayout()
@@ -226,8 +228,6 @@ Partial Class frmRepair
         Me.TableLayoutPanel20.SuspendLayout()
         Me.TableLayoutPanel4.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TableLayoutPanel3.SuspendLayout()
         Me.TableLayoutPanel34.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -281,6 +281,48 @@ Partial Class frmRepair
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(1340, 100)
         Me.TableLayoutPanel2.TabIndex = 0
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox2.Image = Global.ELITE_GI.My.Resources.Resources.emscai_logo
+        Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(470, 100)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 0
+        Me.PictureBox2.TabStop = False
+        '
+        'TableLayoutPanel3
+        '
+        Me.TableLayoutPanel3.BackgroundImage = Global.ELITE_GI.My.Resources.Resources.elite_banner_GI
+        Me.TableLayoutPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.TableLayoutPanel3.ColumnCount = 1
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel3.Controls.Add(Me.lblAssemblyVersion, 0, 0)
+        Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(942, 0)
+        Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(0)
+        Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
+        Me.TableLayoutPanel3.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.TableLayoutPanel3.RowCount = 1
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(398, 100)
+        Me.TableLayoutPanel3.TabIndex = 1
+        '
+        'lblAssemblyVersion
+        '
+        Me.lblAssemblyVersion.AutoSize = True
+        Me.lblAssemblyVersion.BackColor = System.Drawing.Color.Transparent
+        Me.lblAssemblyVersion.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblAssemblyVersion.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAssemblyVersion.Location = New System.Drawing.Point(13, 0)
+        Me.lblAssemblyVersion.Name = "lblAssemblyVersion"
+        Me.lblAssemblyVersion.Size = New System.Drawing.Size(382, 100)
+        Me.lblAssemblyVersion.TabIndex = 1
+        Me.lblAssemblyVersion.Text = "2.1802.44.2"
+        Me.lblAssemblyVersion.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        '
         'TableLayoutPanel1
         '
         Me.TableLayoutPanel1.ColumnCount = 1
@@ -323,7 +365,7 @@ Partial Class frmRepair
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 189.0!))
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.89147!))
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.55039!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 155.0!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 159.0!))
         Me.TableLayoutPanel5.Controls.Add(Me.lblmatrix, 0, 3)
         Me.TableLayoutPanel5.Controls.Add(Me.Label2, 1, 1)
         Me.TableLayoutPanel5.Controls.Add(Me.tbpcb, 2, 1)
@@ -1216,7 +1258,7 @@ Partial Class frmRepair
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(423, 46)
+        Me.Label7.Location = New System.Drawing.Point(422, 46)
         Me.Label7.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(145, 34)
@@ -1229,7 +1271,7 @@ Partial Class frmRepair
         Me.lblcodeallo.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblcodeallo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblcodeallo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblcodeallo.Location = New System.Drawing.Point(574, 48)
+        Me.lblcodeallo.Location = New System.Drawing.Point(573, 48)
         Me.lblcodeallo.Name = "lblcodeallo"
         Me.lblcodeallo.Size = New System.Drawing.Size(221, 30)
         Me.lblcodeallo.TabIndex = 232
@@ -1238,7 +1280,7 @@ Partial Class frmRepair
         'btnlogout
         '
         Me.btnlogout.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnlogout.Location = New System.Drawing.Point(1186, 13)
+        Me.btnlogout.Location = New System.Drawing.Point(1181, 13)
         Me.btnlogout.Name = "btnlogout"
         Me.btnlogout.Size = New System.Drawing.Size(102, 25)
         Me.btnlogout.TabIndex = 129
@@ -1262,7 +1304,7 @@ Partial Class frmRepair
         Me.lblmodel.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblmodel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblmodel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblmodel.Location = New System.Drawing.Point(574, 13)
+        Me.lblmodel.Location = New System.Drawing.Point(573, 13)
         Me.lblmodel.Name = "lblmodel"
         Me.lblmodel.Size = New System.Drawing.Size(221, 30)
         Me.lblmodel.TabIndex = 230
@@ -1274,7 +1316,7 @@ Partial Class frmRepair
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(423, 10)
+        Me.Label6.Location = New System.Drawing.Point(422, 10)
         Me.Label6.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(145, 36)
@@ -1414,48 +1456,6 @@ Partial Class frmRepair
         Me.lblline.TabIndex = 124
         Me.lblline.Text = "..."
         Me.lblline.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox2.Image = Global.ELITE_GI.My.Resources.Resources.emscai_logo
-        Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(470, 100)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 0
-        Me.PictureBox2.TabStop = False
-        '
-        'TableLayoutPanel3
-        '
-        Me.TableLayoutPanel3.BackgroundImage = Global.ELITE_GI.My.Resources.Resources.elite_banner_GI
-        Me.TableLayoutPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.TableLayoutPanel3.ColumnCount = 1
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.Controls.Add(Me.lblAssemblyVersion, 0, 0)
-        Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(942, 0)
-        Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(0)
-        Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
-        Me.TableLayoutPanel3.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.TableLayoutPanel3.RowCount = 1
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(398, 100)
-        Me.TableLayoutPanel3.TabIndex = 1
-        '
-        'lblAssemblyVersion
-        '
-        Me.lblAssemblyVersion.AutoSize = True
-        Me.lblAssemblyVersion.BackColor = System.Drawing.Color.Transparent
-        Me.lblAssemblyVersion.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblAssemblyVersion.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAssemblyVersion.Location = New System.Drawing.Point(13, 0)
-        Me.lblAssemblyVersion.Name = "lblAssemblyVersion"
-        Me.lblAssemblyVersion.Size = New System.Drawing.Size(382, 100)
-        Me.lblAssemblyVersion.TabIndex = 1
-        Me.lblAssemblyVersion.Text = "2.1802.44.2"
-        Me.lblAssemblyVersion.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'TableLayoutPanel34
         '
@@ -2785,7 +2785,7 @@ Partial Class frmRepair
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 5.0!))
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.45073!))
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.54927!))
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8.0!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 9.0!))
         Me.TableLayoutPanel6.Controls.Add(Me.TableLayoutPanel8, 2, 1)
         Me.TableLayoutPanel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TableLayoutPanel6.Location = New System.Drawing.Point(18, 227)
@@ -2805,9 +2805,9 @@ Partial Class frmRepair
         Me.TableLayoutPanel8.ColumnCount = 3
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.003764!))
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.99624!))
-        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 14.0!))
+        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 16.0!))
         Me.TableLayoutPanel8.Controls.Add(Me.TableLayoutPanel21, 1, 1)
-        Me.TableLayoutPanel8.Location = New System.Drawing.Point(793, 7)
+        Me.TableLayoutPanel8.Location = New System.Drawing.Point(792, 7)
         Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
         Me.TableLayoutPanel8.RowCount = 3
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.339181!))
@@ -2828,7 +2828,7 @@ Partial Class frmRepair
         Me.TableLayoutPanel21.RowCount = 2
         Me.TableLayoutPanel21.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel21.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 138.0!))
-        Me.TableLayoutPanel21.Size = New System.Drawing.Size(503, 162)
+        Me.TableLayoutPanel21.Size = New System.Drawing.Size(501, 162)
         Me.TableLayoutPanel21.TabIndex = 0
         '
         'VA_dgv
@@ -2843,7 +2843,7 @@ Partial Class frmRepair
         Me.VA_dgv.Name = "VA_dgv"
         Me.VA_dgv.ReadOnly = True
         Me.VA_dgv.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        Me.VA_dgv.Size = New System.Drawing.Size(497, 136)
+        Me.VA_dgv.Size = New System.Drawing.Size(495, 136)
         Me.VA_dgv.TabIndex = 3
         '
         'Label52
@@ -2868,6 +2868,9 @@ Partial Class frmRepair
         Me.Name = "frmRepair"
         Me.Text = "REPAIR STATION"
         Me.TableLayoutPanel2.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel3.ResumeLayout(False)
+        Me.TableLayoutPanel3.PerformLayout()
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel5.ResumeLayout(False)
         Me.TableLayoutPanel5.PerformLayout()
@@ -2896,9 +2899,6 @@ Partial Class frmRepair
         Me.TableLayoutPanel4.ResumeLayout(False)
         Me.TableLayoutPanel4.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TableLayoutPanel3.ResumeLayout(False)
-        Me.TableLayoutPanel3.PerformLayout()
         Me.TableLayoutPanel34.ResumeLayout(False)
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)

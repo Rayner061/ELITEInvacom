@@ -296,9 +296,6 @@ Public Class frmRepair
 
                 checkrepairtracedata(lblpcb.Text, "repair_rc")
 
-                'checkaoing()
-                'checksmtving_top()
-                'checksmtving_bottom()
                 cmd.CommandText = "INSERT INTO gi_replacecomponent (	pcbid,	location,	materialcode,	partnumber,	lotnumber,	vendor,	repairdatetime,	repairman,	repairsequence	)
  VALUES ('" + lblpcb.Text + "', '" + RC_lbllocation.Text + "', '" + RC_tbdid.Text + "','" + RC_lblpartcoder.Text + "' , '" + RC_tblotnum.Text + "', '" + RC_tbmaker.Text + "', NOW(), '" + lblname.Text + "', '" + rccount + "' )"
                 cmd.ExecuteNonQuery()
@@ -395,6 +392,117 @@ Public Class frmRepair
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try
+    End Sub
+
+    Private Sub btnlogout_Click(sender As Object, e As EventArgs) Handles btnlogout.Click
+        frmlogin.Show()
+        Close()
+    End Sub
+
+    Private Sub TR_save_Click(sender As Object, e As EventArgs) Handles TR_save.Click
+        Dim cmd As New MySqlCommand
+        cmd.Connection = conn
+
+        If TR_tbremarks.Text = "" Then
+            MessageBox.Show("Invalid Entry. Please input remarks.", "Error")
+        Else
+
+            cmd.CommandText = "INSERT INTO `epson_touchuprepair` (`pcbid`, `remarks`, `repairdatetime`, `repairman`, `repairsequence`) VALUES ('" + lblpcb.Text + "', '" + TR_tbremarks.Text + "', NOW(), '" + lblname.Text + "', '" + turcount + "' )"
+            cmd.ExecuteNonQuery()
+
+            checkrepairtracedata(lblpcb.Text, "repair_tr")
+            MessageBox.Show("Succesfully Saved", "Success")
+            TR_tbremarks.Text = ""
+            lblcharcount.Text = TR_tbremarks.Text.Length & "/300 characters (max)"
+            turcounting()
+            CheckTR()
+            CheckRARC()
+            CHE()
+        End If
+    End Sub
+
+    Private Sub RA_cmbloc_initial_MouseClick(sender As Object, e As MouseEventArgs) Handles RA_cmbloc_initial.MouseClick
+        RA_cmbloc.DataSource = Nothing
+        deleter()
+    End Sub
+
+    Private Sub RA_cmbloc_MouseClick(sender As Object, e As MouseEventArgs) Handles RA_cmbloc.MouseClick
+        If RA_cmbloc_initial.SelectedIndex = -1 Then
+            MsgBox("Please choose location initial before you proceed.")
+        Else
+            checkbottop()
+            checksub1()
+            RA_cmbloc.DataSource = Nothing
+            Dim sqlString As String
+
+            sqlString = "SELECT location FROM gi_mountertrace_" & linebottom & " where pcbid = '" + lblpcb.Text + "' and " + subs + " union all SELECT location FROM gi_mountertrace_" & linetop & " where pcbid = '" + lblpcb.Text + "' AND " + subs + " order by location asc "
+            Dim cmd As New MySqlCommand(sqlString, conn)
+            Dim myDA As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+            Dim myDT As New DataTable
+
+            myDA.Fill(myDT)
+
+            RA_cmbloc.DataSource = myDT
+            RA_cmbloc.DisplayMember = "location"
+            RA_cmbloc.ValueMember = "location"
+
+            deleter1()
+        End If
+    End Sub
+
+    Public Sub checksub1()
+        If RA_cmbloc_initial.Text = "B" Then
+            subs = "(SUBSTR(location, 1, 1) = 'B')"
+
+        ElseIf RA_cmbloc_initial.Text = "C" Then
+            subs = "(SUBSTR(location, 1, 1) = 'C')"
+
+        ElseIf RA_cmbloc_initial.Text = "CN" Then
+            subs = "(SUBSTR(location, 1, 2) = 'CN')"
+
+        ElseIf RA_cmbloc_initial.Text = "CR" Then
+            subs = "(SUBSTR(location, 1, 2) = 'CR')"
+
+        ElseIf RA_cmbloc_initial.Text = "D" Then
+            subs = "(SUBSTR(location, 1, 1) = 'D')"
+
+        ElseIf RA_cmbloc_initial.Text = "DM" Then
+            subs = "(SUBSTR(location, 1, 2) = 'DM')"
+
+        ElseIf RA_cmbloc_initial.Text = "F" Then
+            subs = "(SUBSTR(location, 1, 1) = 'F')"
+
+        ElseIf RA_cmbloc_initial.Text = "FL" Then
+            subs = "(SUBSTR(location, 1, 2) = 'FL')"
+
+        ElseIf RA_cmbloc_initial.Text = "IC" Then
+            subs = "(SUBSTR(location, 1, 2) = 'IC')"
+
+        ElseIf RA_cmbloc_initial.Text = "L" Then
+            subs = "(SUBSTR(location, 1, 1) = 'L')"
+
+        ElseIf RA_cmbloc_initial.Text = "PC" Then
+            subs = "(SUBSTR(location, 1, 2) = 'PC')"
+
+        ElseIf RA_cmbloc_initial.Text = "Q" Then
+            subs = "(SUBSTR(location, 1, 1) = 'Q')"
+
+        ElseIf RA_cmbloc_initial.Text = "QF" Then
+            subs = "(SUBSTR(location, 1, 2) = 'QF')"
+
+        ElseIf RA_cmbloc_initial.Text = "QM" Then
+            subs = "(SUBSTR(location, 1, 2) = 'QM')"
+
+        ElseIf RA_cmbloc_initial.Text = "R" Then
+            subs = "(SUBSTR(location, 1, 1) = 'R')"
+
+        ElseIf RA_cmbloc_initial.Text = "TH" Then
+            subs = "(SUBSTR(location, 1, 2) = 'TH')"
+
+        ElseIf RA_cmbloc_initial.Text = "ZD" Then
+            subs = "(SUBSTR(location, 1, 2) = 'ZD')"
+
+        End If
     End Sub
 
     Public Sub modelchecker()
