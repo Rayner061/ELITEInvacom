@@ -505,6 +505,111 @@ Public Class frmRepair
         End If
     End Sub
 
+    Private Sub RA_cmbloc_DropDownClosed(sender As Object, e As EventArgs) Handles RA_cmbloc.DropDownClosed
+        If RA_cmbloc.Text = "" Then
+
+        Else
+            Dim cmd As New MySqlCommand
+            Dim reader As MySqlDataReader
+
+            cmd.Connection = conn
+
+            cmd.CommandText = "SELECT * FROM gi_mountertrace_" & linebottom & " WHERE pcbid = '" + lblpcb.Text + "' AND location like '%" + RA_cmbloc.Text + "%'
+							union all SELECT * FROM gi_mountertrace_" & linetop & " WHERE pcbid = '" + lblpcb.Text + "' AND location like '%" + RA_cmbloc.Text + "%' "
+            reader = cmd.ExecuteReader()
+
+            While reader.Read()
+                RA_lblpartcode.Text = reader.Item(5).ToString()
+                RA_lbldid.Text = reader.Item(10).ToString()
+                RA_lbllotnum.Text = reader.Item(7).ToString()
+                RA_lblmaker.Text = reader.Item(8).ToString()
+
+            End While
+            reader.Close()
+
+
+            RA_loc.Text = RA_cmbloc.Text
+            enabler1()
+            RA_tbscanqr.Enabled = True
+            RA_tbscanqr.Focus()
+
+            RA_tbdid.Text = ""
+            RA_tblotnum.Text = ""
+            RA_tbmaker.Text = ""
+        End If
+    End Sub
+
+    Public Sub enabler1()
+        RA_tbdid.Enabled = True
+        RA_tblotnum.Enabled = True
+        RA_tbmaker.Enabled = True
+    End Sub
+
+    Private Sub RA_tbscanqr_KeyPress(sender As Object, e As KeyPressEventArgs) Handles RA_tbscanqr.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            If RA_tbscanqr.Text = "" Then
+                MessageBox.Show("Please scan qr label", "Error")
+            Else
+                Dim did As String = RC_tbscanqr.Text.Substring(0, 15)
+                Dim cmd As New MySqlCommand With {
+                    .Connection = conn
+                }
+                cmd.CommandText = "SELECT did,gcode,vendor,lotnum from gi_whissuance Where did = '" & did & "'"
+                Dim rd As MySqlDataReader
+                rd = cmd.ExecuteReader
+                If rd.Read Then
+                    RA_tbdid.Text = rd.Item(0).ToString
+                    RA_tblotnum.Text = rd.Item(3).ToString
+                    RA_tbmaker.Text = rd.Item(2).ToString
+                    RA_partcode.Text = rd.Item(1).ToString
+                End If
+                rd.Close()
+                If RA_tbdid.Text <> "" Then
+                    RA_save.Enabled = True
+                    RA_tbscanqr.Text = ""
+                Else
+                    RA_save.Enabled = False
+                    RA_tbscanqr.Text = ""
+                End If
+            End If
+        End If
+    End Sub
+
+    Private Sub RA_save_Click(sender As Object, e As EventArgs) Handles RA_save.Click
+
+        Dim cmd As New MySqlCommand
+        cmd.Connection = conn
+        If RA_tbdid.Text = "" Or RA_tblotnum.Text = "" Or RA_tbmaker.Text = "" Then
+            MessageBox.Show("Please completely fill up parts replacement details", "Error")
+        Else
+            If RA_partcode.Text <> RA_lblpartcode.Text Then
+
+            Else
+                cmd.CommandText = "INSERT INTO `gi_reattached` (	`pcbid`, `location`, `materialcode`, `partnumber`, `lotnumber`,	`vendor`,	`repairdatetime`,``repairman`, `repairsequence`)
+ VALUES ('" + lblpcb.Text + "', '" + RA_loc.Text + "', '" + RA_tbdid.Text + "','" + RA_partcode.Text + "' , '" + RA_tblotnum.Text + "', '" + RA_tbmaker.Text + "', NOW(), '" + lblname.Text + "', '" + racount + "' )"
+                cmd.ExecuteNonQuery()
+
+                checkrepairtracedata(lblpcb.Text, "repair_ra")
+                'checkaoing
+                'checksmtving
+                MessageBox.Show("Succesfully Saved", "Success")
+                deleter1()
+
+                RA_loc.Text = ""
+                RA_partcode.Text = ""
+                RA_tbdid.Text = ""
+                RA_tblotnum.Text = ""
+                RA_tbmaker.Text = ""
+                RA_cmbloc_initial.SelectedIndex = -1
+
+                racounting()
+                CheckTR()
+                CheckRARC()
+                CHE()
+            End If
+        End If
+    End Sub
+
     Public Sub modelchecker()
         Dim cmd As New MySqlCommand
         cmd.Connection = conn

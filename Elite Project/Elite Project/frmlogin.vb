@@ -289,6 +289,20 @@ Public Class frmlogin
                         cmbstation.Text = ""
                         lbllevel.Text = ""
                         Hide()
+                    ElseIf cmbstation.Text = "REPAIR AOI - TOP" Then
+                        cmd.CommandText = "SELECT empname FROM tbluser WHERE userid = '" & txtid.Text & "'"
+                        lblname.Text = cmd.ExecuteScalar
+                        frmrepairaoi.lblname.Text = lblname.Text
+                        frmrepairaoi.lblline.Text = cmbline.Text
+                        frmrepairaoi.lblStation.Text = cmbstation.Text
+
+                        frmrepairaoi.Show()
+                        txtpass.Text = ""
+                        lblname.Text = ""
+                        cmbline.Text = ""
+                        cmbstation.Text = ""
+                        lbllevel.Text = ""
+                        Hide()
                     End If
 
                     writeLogs("Login Successful: " & txtid.Text)

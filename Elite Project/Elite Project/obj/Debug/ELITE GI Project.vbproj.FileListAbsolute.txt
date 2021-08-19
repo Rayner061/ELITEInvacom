@@ -96,3 +96,4 @@ F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Deb
 F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmbarcodereplace.resources
 F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmrepairendorsement.resources
 F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmconvertpcbserial.resources
+F:\Users\Rayner Pangan\source\repos\ELITE_GI\Elite Project\Elite Project\obj\Debug\ELITE_GI.frmrepairaoi.resources

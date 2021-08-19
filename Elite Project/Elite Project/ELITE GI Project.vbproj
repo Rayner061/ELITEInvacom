@@ -428,6 +428,9 @@
     <EmbeddedResource Include="frmRepair.resx">
       <DependentUpon>frmRepair.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmrepairaoi.resx">
+      <DependentUpon>frmrepairaoi.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmrepairendorsement.resx">
       <DependentUpon>frmrepairendorsement.vb</DependentUpon>
     </EmbeddedResource>
