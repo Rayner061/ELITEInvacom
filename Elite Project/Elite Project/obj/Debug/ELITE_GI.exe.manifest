@@ -4,7 +4,7 @@
   <description asmv2:iconFile="ELITE Icon GI.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="ELITE_GI" version="1.2108.229.1" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="ELITE_GI" version="1.2108.232.2" language="neutral" processorArchitecture="x86" />
     <commandLine file="ELITE_GI.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ELITE_GI.exe" size="14135296">
-      <assemblyIdentity name="ELITE_GI" version="1.2108.229.1" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ELITE_GI.exe" size="14319616">
+      <assemblyIdentity name="ELITE_GI" version="1.2108.232.2" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>JHb7CHxSVMGEbVmwq6YJf+Fxe18NSo8OmXAy3KEETGA=</dsig:DigestValue>
+        <dsig:DigestValue>hdHdd0DPCctvx2++vXHz3Y6npgRQovj/VKQUemN1UE0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

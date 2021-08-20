@@ -116,7 +116,7 @@ Public Class frmrepairaoi
 
             Timer1.Enabled = False
             tblPnlMain.BackColor = Color.White
-            tblPnlDefect.BackColor = Color.White
+            tblPnlDefect.BackColor = Color.Transparent
             tblPnlMain.BackgroundImage = ELITE_GI.My.Resources.Resources.elite_background_GI_214
             Timer2.Enabled = False
             lblScan.Text = "SCAN PANEL:"
@@ -138,7 +138,7 @@ Public Class frmrepairaoi
         txtScan.Focus()
         Timer1.Enabled = False
         tblPnlMain.BackColor = Color.White
-        tblPnlDefect.BackColor = Color.White
+        tblPnlDefect.BackColor = Color.Transparent
         Timer2.Enabled = False
         CountGood()
         txtScan.Focus()
@@ -158,7 +158,6 @@ Public Class frmrepairaoi
         h = Date.Now.Hour
         If h >= 7 And h <= 18 Then
             cmd.CommandText = "SELECT SUM(count) FROM gi_view_aoi_input_day_" + lblline.Text + ""
-            MsgBox(cmd.CommandText)
             input = cmd.ExecuteScalar
 
             cmd.CommandText = "SELECT SUM(count) FROM gi_view_aoi_ng_day_" + lblline.Text + ""

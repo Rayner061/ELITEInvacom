@@ -221,15 +221,18 @@ Public Class frmFVI
             Try
                 writeLogs("SCAN: " & txtScan.Text)
                 Dim status As String = ""
+
+                If side = "dual" Then
+                    cmd.CommandText = "SELECT COUNT(pcbid) FROM gi_pcbtrace WHERE pcbid = '" & txtScan.Text & "' AND processtoken = 'aoi_top' AND aoistatus_top = 'good'"
+                    status = "aoi_top"
+                Else
+                    cmd.CommandText = "SELECT COUNT(pcbid) FROM gi_pcbtrace WHERE pcbid = '" & txtScan.Text & "' AND processtoken = 'aoi_bottom' AND aoistatus_bottom = 'good'"
+                    status = "aoi_bottom"
+                End If
+
                 If lblScan.Text = "SCAN PCB:" Then
                     'If customer = "gs" Then
-                    If side = "dual" Then
-                        cmd.CommandText = "SELECT COUNT(pcbid) FROM gi_pcbtrace WHERE pcbid = '" & txtScan.Text & "' AND processtoken = 'aoi_top' AND aoistatus_top = 'good'"
-                        status = "aoi_top"
-                    Else
-                        cmd.CommandText = "SELECT COUNT(pcbid) FROM gi_pcbtrace WHERE pcbid = '" & txtScan.Text & "' AND processtoken = 'aoi_bottom' AND aoistatus_bottom = 'good'"
-                        status = "aoi_bottom"
-                    End If
+
                     'Else
                     '    cmd.CommandText = "SELECT COUNT(pcbid) FROM gi_pcbtrace WHERE pcbid = '" & txtScan.Text & "' AND processtoken = 'ic_programming' AND aoistatus_bottom = 'good'"
                     '    status = "ic_programming"
@@ -326,7 +329,7 @@ Public Class frmFVI
                     If txtremarks.Text = "" Or cmbdefectname.Text = "" Then
                         MsgBox("Please complete all necessary information")
                     Else
-                        cmd.CommandText = "UPDATE gi_pcbtrace SET `fvistatus` = 'ng', `fvitimestamp` = NOW(), `fviremarks` = '" & txtremarks.Text & "', `processtoken` = 'fvi', `fvioperator` = '" & lblname.Text & "' WHERE pcbid = '" & txtScan.Text & "' AND (processtoken = '" & status & "' OR processtoken = 'fvi') AND line_top = '" & lblline.Text & "'"
+                        cmd.CommandText = "UPDATE gi_pcbtrace SET `fvistatus` = 'ng', `fvitimestamp` = NOW(), `fviremarks` = '" & txtremarks.Text & "', `processtoken` = 'fvi', `fvioperator` = '" & lblname.Text & "' WHERE pcbid = '" & txtScan.Text & "' AND (processtoken = '" & status & "' OR processtoken = 'fvi') AND (line_top = '" & lblline.Text & "' or line_bottom = '" & lblline.Text & "') AND (aoistatus_bottom = 'GOOD' or aoistatus_top = 'GOOD')"
                         cmd.ExecuteNonQuery()
                         If cmd.ExecuteNonQuery() = 0 Then
                             writeLogs("Either the PCB did not pass previous process or PCB already passed the next process")

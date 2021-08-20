@@ -351,6 +351,7 @@ Partial Class frmRepair
         '
         'TableLayoutPanel5
         '
+        Me.TableLayoutPanel5.BackColor = System.Drawing.Color.PeachPuff
         Me.TableLayoutPanel5.BackgroundImage = Global.ELITE_GI.My.Resources.Resources.elite_background_GI_110
         Me.TableLayoutPanel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.TableLayoutPanel5.ColumnCount = 12
@@ -365,7 +366,7 @@ Partial Class frmRepair
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 189.0!))
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.89147!))
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.55039!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 159.0!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 162.0!))
         Me.TableLayoutPanel5.Controls.Add(Me.lblmatrix, 0, 3)
         Me.TableLayoutPanel5.Controls.Add(Me.Label2, 1, 1)
         Me.TableLayoutPanel5.Controls.Add(Me.tbpcb, 2, 1)
@@ -1280,7 +1281,7 @@ Partial Class frmRepair
         'btnlogout
         '
         Me.btnlogout.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnlogout.Location = New System.Drawing.Point(1181, 13)
+        Me.btnlogout.Location = New System.Drawing.Point(1178, 13)
         Me.btnlogout.Name = "btnlogout"
         Me.btnlogout.Size = New System.Drawing.Size(102, 25)
         Me.btnlogout.TabIndex = 129
@@ -1337,7 +1338,7 @@ Partial Class frmRepair
         '
         'TableLayoutPanel4
         '
-        Me.TableLayoutPanel4.BackColor = System.Drawing.Color.Transparent
+        Me.TableLayoutPanel4.BackColor = System.Drawing.Color.PeachPuff
         Me.TableLayoutPanel4.BackgroundImage = Global.ELITE_GI.My.Resources.Resources.elite_background_GI_50
         Me.TableLayoutPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.TableLayoutPanel4.ColumnCount = 7
@@ -1502,6 +1503,7 @@ Partial Class frmRepair
         '
         'TableLayoutPanel9
         '
+        Me.TableLayoutPanel9.BackColor = System.Drawing.Color.PeachPuff
         Me.TableLayoutPanel9.ColumnCount = 1
         Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel9.Controls.Add(Me.TableLayoutPanel24, 0, 0)
@@ -1869,6 +1871,7 @@ Partial Class frmRepair
         '
         'TableLayoutPanel27
         '
+        Me.TableLayoutPanel27.BackColor = System.Drawing.Color.PeachPuff
         Me.TableLayoutPanel27.ColumnCount = 1
         Me.TableLayoutPanel27.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel27.Controls.Add(Me.TableLayoutPanel30, 0, 0)
@@ -2261,6 +2264,7 @@ Partial Class frmRepair
         '
         'TableLayoutPanel10
         '
+        Me.TableLayoutPanel10.BackColor = System.Drawing.Color.PeachPuff
         Me.TableLayoutPanel10.ColumnCount = 1
         Me.TableLayoutPanel10.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.62914!))
         Me.TableLayoutPanel10.Controls.Add(Me.TableLayoutPanel28, 0, 0)
@@ -2805,7 +2809,7 @@ Partial Class frmRepair
         Me.TableLayoutPanel8.ColumnCount = 3
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.003764!))
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.99624!))
-        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 16.0!))
+        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 17.0!))
         Me.TableLayoutPanel8.Controls.Add(Me.TableLayoutPanel21, 1, 1)
         Me.TableLayoutPanel8.Location = New System.Drawing.Point(792, 7)
         Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
@@ -2828,7 +2832,7 @@ Partial Class frmRepair
         Me.TableLayoutPanel21.RowCount = 2
         Me.TableLayoutPanel21.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel21.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 138.0!))
-        Me.TableLayoutPanel21.Size = New System.Drawing.Size(501, 162)
+        Me.TableLayoutPanel21.Size = New System.Drawing.Size(500, 162)
         Me.TableLayoutPanel21.TabIndex = 0
         '
         'VA_dgv
@@ -2843,7 +2847,7 @@ Partial Class frmRepair
         Me.VA_dgv.Name = "VA_dgv"
         Me.VA_dgv.ReadOnly = True
         Me.VA_dgv.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        Me.VA_dgv.Size = New System.Drawing.Size(495, 136)
+        Me.VA_dgv.Size = New System.Drawing.Size(494, 136)
         Me.VA_dgv.TabIndex = 3
         '
         'Label52

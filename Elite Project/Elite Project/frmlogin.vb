@@ -303,6 +303,20 @@ Public Class frmlogin
                         cmbstation.Text = ""
                         lbllevel.Text = ""
                         Hide()
+                    ElseIf cmbstation.Text = "REPAIR FVI" Then
+                        cmd.CommandText = "SELECT empname FROM tbluser WHERE userid = '" & txtid.Text & "'"
+                        lblname.Text = cmd.ExecuteScalar
+                        frmrepairfvi.lblname.Text = lblname.Text
+                        frmrepairfvi.lblline.Text = cmbline.Text
+                        frmrepairfvi.lblStation.Text = cmbstation.Text
+
+                        frmrepairfvi.Show()
+                        txtpass.Text = ""
+                        lblname.Text = ""
+                        cmbline.Text = ""
+                        cmbstation.Text = ""
+                        lbllevel.Text = ""
+                        Hide()
                     End If
 
                     writeLogs("Login Successful: " & txtid.Text)

@@ -82,6 +82,7 @@ Partial Class frmrepairaoi
         '
         'tblPnlDefect
         '
+        Me.tblPnlDefect.BackColor = System.Drawing.Color.Transparent
         Me.tblPnlDefect.ColumnCount = 4
         Me.tblPnlDefect.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
         Me.tblPnlDefect.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
@@ -236,7 +237,7 @@ Partial Class frmrepairaoi
         '
         'TableLayoutPanel4
         '
-        Me.TableLayoutPanel4.BackColor = System.Drawing.Color.Transparent
+        Me.TableLayoutPanel4.BackColor = System.Drawing.Color.PeachPuff
         Me.TableLayoutPanel4.BackgroundImage = Global.ELITE_GI.My.Resources.Resources.elite_background_GI_50
         Me.TableLayoutPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.TableLayoutPanel4.ColumnCount = 7
@@ -431,6 +432,7 @@ Partial Class frmrepairaoi
         '
         'TableLayoutPanel1
         '
+        Me.TableLayoutPanel1.BackColor = System.Drawing.Color.White
         Me.TableLayoutPanel1.ColumnCount = 1
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.tblPnlMain, 0, 8)
@@ -585,6 +587,7 @@ Partial Class frmrepairaoi
         '
         'TableLayoutPanel7
         '
+        Me.TableLayoutPanel7.BackColor = System.Drawing.Color.PeachPuff
         Me.TableLayoutPanel7.BackgroundImage = Global.ELITE_GI.My.Resources.Resources.elite_background_GI_64
         Me.TableLayoutPanel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.TableLayoutPanel7.ColumnCount = 2
@@ -631,6 +634,7 @@ Partial Class frmrepairaoi
         '
         'TableLayoutPanel5
         '
+        Me.TableLayoutPanel5.BackColor = System.Drawing.Color.PeachPuff
         Me.TableLayoutPanel5.BackgroundImage = Global.ELITE_GI.My.Resources.Resources.elite_background_GI_110
         Me.TableLayoutPanel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.TableLayoutPanel5.ColumnCount = 10
