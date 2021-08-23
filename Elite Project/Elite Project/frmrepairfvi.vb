@@ -6,6 +6,10 @@ Public Class frmrepairfvi
     Dim modelMatrixID, customer As String
     Dim icprog As Boolean
 
+    Private Sub txtScan_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtScan.KeyPress
+
+    End Sub
+
     Private Sub Timer1_Tick_1(sender As Object, e As EventArgs) Handles Timer1.Tick
         If tblPnlDefect.BackColor = Color.Red Then
             tblPnlDefect.BackColor = Color.White

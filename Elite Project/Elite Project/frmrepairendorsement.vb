@@ -30,7 +30,7 @@ Public Class frmrepairendorsement
 	 AS a1 ) b ON a.`pcbid` = b.`pcbid` WHERE a.`pcbid` = '" & TextBox1.Text & "' ORDER BY b.`timestamp` DESC"
                     reader = cmd.ExecuteReader()
                     While reader.Read()
-                        lblngdatetime.Text = reader.Item(0)
+                        lblngdatetime.Text = reader.Item(0).ToString()
                         lbldefect.Text = reader.Item(1).ToString()
                         lbllocation.Text = reader.Item(2).ToString()
                         lblastation.Text = reader.Item(3).ToString()
@@ -61,7 +61,7 @@ Public Class frmrepairendorsement
                 End If
             End If
         Catch ex As Exception
-            'MsgBox(ex.ToString)
+            MsgBox(ex.ToString)
             MsgBox("Invalid Action.")
             writeLogs(ex.ToString + cmd.CommandText)
         End Try
@@ -73,7 +73,7 @@ Public Class frmrepairendorsement
         Dim myDA As New MySqlDataAdapter(cmd)
         Dim myDT As New DataTable
         cmd.Connection = conn
-        cmd.CommandText = "SELECT `pcbid`, `model`, `defect_date_time`, `defect_name`, `line_bot`, `line_top`, `endorse_date_time`, `pic` FROM `gi_repairfifo` WHERE `status` = 'received' ORDER BY `endorse_date_time` DESC LIMIT 100"
+        cmd.CommandText = "SELECT `pcbid`, `model`, DATE_FORMAT(`defect_date_time`,'%Y-%m-%d %H:%i:%s') as `defect_date_time`,`defect_name`, `line_bot`, `line_top`, `endorse_date_time`, `pic` FROM `gi_repairfifo` WHERE `status` = 'received' ORDER BY `endorse_date_time` DESC LIMIT 100"
         myDA.Fill(myDT)
         DataGridView1.DataSource = myDT
         cmd.CommandText = "SELECT COUNT(`pcbid`) FROM `gi_repairfifo` WHERE `status` = 'received'"

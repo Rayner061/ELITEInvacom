@@ -140,7 +140,7 @@ Public Class frmAOI
         Dim cmd As New MySqlCommand
         cmd.Connection = conn
 
-        cmd.CommandText = "INSERT INTO gi_aoing_" & side & "(`pcbid`, `aoingtimestamp`, `judgement`, `defectname`, `remarks`, `aoioperator`, `line`) VALUES ('" & txtScan.Text & "', NOW(), 'ng', '" & cmbdefectname.Text & "','" & txtremarks.Text & "', '" & lblname.Text & "', '" & lblline.Text & "')"
+        cmd.CommandText = "INSERT INTO gi_aoing_" & side & " (`pcbid`, `aoingtimestamp`, `judgement`, `defectname`, `remarks`, `aoioperator`, `line`) VALUES ('" & txtScan.Text & "', NOW(), 'ng', '" & cmbdefectname.Text & "','" & txtremarks.Text & "', '" & lblname.Text & "', '" & lblline.Text & "')"
         cmd.ExecuteNonQuery()
 
         If SAPStatus = True Then
@@ -160,7 +160,7 @@ Public Class frmAOI
             myDA.Fill(myDT)
             dgpcb.DataSource = myDT
         Else
-            cmd.CommandText = "SELECT pcbid, aoingtimestamp, judgement, defectname, remarks FROM gi_aoing WHERE pcbid = '" & txtScan.Text & "'"
+            cmd.CommandText = "SELECT pcbid, aoingtimestamp, judgement, defectname, remarks FROM gi_aoing_" & side & " WHERE pcbid = '" & txtScan.Text & "'"
             myDA.Fill(myDT)
             dgpcb.DataSource = myDT
         End If
