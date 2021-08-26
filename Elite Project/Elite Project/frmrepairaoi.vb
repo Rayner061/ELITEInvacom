@@ -3,7 +3,7 @@ Imports MySql.Data.MySqlClient
 
 Public Class frmrepairaoi
 
-    Dim modelMatrixID As String
+    Dim modelMatrixID, Side, sideRequirement As String
 
     Private Sub txtScan_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtScan.KeyPress
         Dim cmd As New MySqlCommand
@@ -12,35 +12,43 @@ Public Class frmrepairaoi
             writeLogs(lblScan.Text.Replace(":", "") & "SCAN: " & txtScan.Text)
             Try
                 If lblScan.Text = "SCAN PANEL:" Then
-                    cmd.CommandText = "UPDATE gi_repairtrace SET aoistatus_top = 'good', aoitimestamp_top = NOW(), aoiremarks_top = '" & txtremarks.Text & "',processtoken = 'aoi_top'  WHERE pcbid = '" & txtScan.Text & "' AND (processtoken = 'repair_tr' or processtoken = 'repair_ra' processtoken = 'repair_rc')"
-                    If cmd.ExecuteNonQuery <> 1 Then
-                        Select Case examinePCB(txtScan.Text)
-                            Case "Wrong model"
-                                MessageBox.Show("Wrong model. Please verify.")
-                                writeLogs("ERROR: Wrong model. Please verify.")
-                            Case "Wrong token"
-                                MessageBox.Show("PCB did not pass previous process.")
-                                writeLogs("ERROR: PCB did not pass previous process.")
-                            Case "No Repair"
-                                MessageBox.Show("No Repair Data.")
-                                writeLogs("ERROR: No Repair Data.")
-                            Case "unknown"
-                                MessageBox.Show("Unknown PCB. Maybe not registered at injection station. Please call systems support for verification.")
-                                writeLogs("ERROR: Unknown PCB. Maybe not registered at injection station. Please call systems support for verification.")
-                        End Select
+                    If Side = "Bottom" Then
+                        cmd.CommandText = "UPDATE gi_repairtrace SET aoistatus_bottom = 'good', aoitimestamp_bottom = NOW(), aoiremarks_bottom = '" & txtremarks.Text & "',processtoken = 'aoi_bottom',aoioperator_bottom = '" & lblname.Text & "'  WHERE pcbid = '" & txtScan.Text & "' AND (processtoken = 'repair_tr' or processtoken = 'repair_ra' processtoken = 'repair_rc')"
+                    Else Side = "Top" And sideRequirement = "Dual"
+                        cmd.CommandText = "UPDATE gi_repairtrace SET aoistatus_top = 'good', aoitimestamp_top = NOW(), aoiremarks_top = '" & txtremarks.Text & "',processtoken = 'aoi_top',aoioperator_top = '" & lblname.Text & "'  WHERE pcbid = '" & txtScan.Text & "' AND processtoken = 'aoi_bottom'"
                     End If
+                    If cmd.ExecuteNonQuery <> 1 Then
+                            Select Case examinePCB(txtScan.Text)
+                                Case "Wrong model"
+                                    MessageBox.Show("Wrong model. Please verify.")
+                                    writeLogs("ERROR: Wrong model. Please verify.")
+                                Case "Wrong token"
+                                    MessageBox.Show("PCB did not pass previous process.")
+                                    writeLogs("ERROR: PCB did not pass previous process.")
+                                Case "No Repair"
+                                    MessageBox.Show("No Repair Data.")
+                                    writeLogs("ERROR: No Repair Data.")
+                                Case "unknown"
+                                    MessageBox.Show("Unknown PCB. Maybe not registered at injection station. Please call systems support for verification.")
+                                    writeLogs("ERROR: Unknown PCB. Maybe not registered at injection station. Please call systems support for verification.")
+                            End Select
+                        End If
 
 
-                    CountGood()
-                    gridout()
-                    txtScan.Text = ""
-                    txtScan.Focus()
-                Else
+                        CountGood()
+                        gridout()
+                        txtScan.Text = ""
+                        txtScan.Focus()
+                    Else
                     If txtremarks.Text = "" Or cmbdefectname.Text = "" Then
                         MsgBox("Please complete all necessary information")
                         writeLogs("ERROR: Please complete all necessary information")
                     Else
-                        cmd.CommandText = "UPDATE gi_repairtrace SET aoistatus_top = 'ng', aoitimestamp_top = NOW(), aoiremarks_top = '" & txtremarks.Text & "',processtoken = 'aoi_top'  WHERE pcbid = '" & txtScan.Text & "' AND (processtoken = 'repair_tr' or processtoken = 'repair_ra' processtoken = 'repair_rc')"
+                        If Side = "Bottom" Then
+                            cmd.CommandText = "UPDATE gi_repairtrace SET aoistatus_top = 'ng', aoitimestamp_top = NOW(), aoiremarks_top = '" & txtremarks.Text & "',processtoken = 'aoi_top',aoioperator_top = '" & lblname.Text & "'  WHERE pcbid = '" & txtScan.Text & "' AND (processtoken = 'repair_tr' or processtoken = 'repair_ra' processtoken = 'repair_rc')"
+                        Else Side = "Top" And sideRequirement = "Dual"
+                            cmd.CommandText = "UPDATE gi_repairtrace SET aoistatus_top = 'ng', aoitimestamp_top = NOW(), aoiremarks_top = '" & txtremarks.Text & "',processtoken = 'aoi_top',aoioperator_top = '" & lblname.Text & "'  WHERE pcbid = '" & txtScan.Text & "' AND processtoken = 'aoi_bottom'"
+                        End If
                         cmd.ExecuteNonQuery()
                         If cmd.ExecuteNonQuery() = 0 Then
                             MsgBox("Either the Panel was not scanned or PCB already passed the next process")
@@ -95,12 +103,15 @@ Public Class frmrepairaoi
     End Function
 
     Public Sub InsertNG()
-
         Dim cmd As New MySqlCommand
         cmd.Connection = conn
-
-        cmd.CommandText = "INSERT INTO gi_repairaoing_top (`pcbid`, `aoingtimestamp`, `judgement`, `defectname`, `remarks`, `aoioperator`, `line`) VALUES ('" & txtScan.Text & "', NOW(), 'ng', '" & cmbdefectname.Text & "','" & txtremarks.Text & "', '" & lblname.Text & "', '" & lblline.Text & "')"
-        cmd.ExecuteNonQuery()
+        If Side = "Top" Then
+            cmd.CommandText = "INSERT INTO gi_repairaoing_top (`pcbid`, `aoingtimestamp`, `judgement`, `defectname`, `remarks`, `aoioperator`, `line`) VALUES ('" & txtScan.Text & "', NOW(), 'ng', '" & cmbdefectname.Text & "','" & txtremarks.Text & "', '" & lblname.Text & "', '" & lblline.Text & "')"
+            cmd.ExecuteNonQuery()
+        Else
+            cmd.CommandText = "INSERT INTO gi_repairaoing_bottom (`pcbid`, `aoingtimestamp`, `judgement`, `defectname`, `remarks`, `aoioperator`, `line`) VALUES ('" & txtScan.Text & "', NOW(), 'ng', '" & cmbdefectname.Text & "','" & txtremarks.Text & "', '" & lblname.Text & "', '" & lblline.Text & "')"
+            cmd.ExecuteNonQuery()
+        End If
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -142,6 +153,11 @@ Public Class frmrepairaoi
         Timer2.Enabled = False
         CountGood()
         txtScan.Focus()
+        If lblStation.Text = "REPAIR AOI - BOTTOM" Then
+            Side = "bottom"
+        Else
+            Side = "top"
+        End If
 
         lblAssemblyVersion.Text = "Version " & frmlogin.assemblyVersion & " (Pre-Release)"
     End Sub
@@ -268,6 +284,9 @@ Public Class frmrepairaoi
 
         cmd.CommandText = "SELECT DISTINCT `modelmatrixid` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
         modelMatrixID = cmd.ExecuteScalar
+
+        cmd.CommandText = "SELECT DISTINCT `side` FROM `gi_modelmatrix` WHERE `model` = '" & cbxModel.Text & "'"
+        sideRequirement = cmd.ExecuteScalar
 
         cbxModel.Enabled = False
         cbxBU.Enabled = False

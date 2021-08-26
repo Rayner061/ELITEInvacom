@@ -224,8 +224,6 @@ Public Class frmRepair
 
                 cmd.CommandText = "SELECT * FROM gi_mountertrace_" & linebottom & " WHERE pcbid = '" + lblpcb.Text + "' AND location like '%" + RC_cmbloc.Text + "%'
 							union all SELECT * FROM gi_mountertrace_" & linetop & " WHERE pcbid = '" + lblpcb.Text + "' AND location like '%" + RC_cmbloc.Text + "%' "
-                ' MsgBox("SELECT * FROM epson_mountertrace_" & linebottom & " WHERE pcbid = '" + lblpcb.Text + "' AND location like '%" + RC_cmbloc.Text + "%'
-                '  union all SELECT * FROM epson_mountertrace_" & linetop & " WHERE pcbid = '" + lblpcb.Text + "' AND location like '%" + RC_cmbloc.Text + "%' ")
                 reader = cmd.ExecuteReader()
 
                 While reader.Read()
@@ -377,14 +375,14 @@ Public Class frmRepair
             cmd.CommandText = "SELECT count(*) FROM gi_repairtrace where pcbid = '" + pcb + "' "
             If Val(cmd.ExecuteScalar) = Val(0) Then
                 '#Disable Warning BC42104 ' Variable is used before it has been assigned a value
-                cmd.CommandText = "INSERT INTO epson_repairtrace (pcbid, modelmatrix, processtoken, timestamp) VALUES ('" + pcb + "', '" + modelamatrix + "', '" + rep + "', NOW())"
+                cmd.CommandText = "INSERT INTO gi_repairtrace (pcbid, modelmatrix, processtoken, timestamp) VALUES ('" + pcb + "', '" + modelamatrix + "', '" + rep + "', NOW())"
                 '#Enable Warning BC42104 ' Variable is used before it has been assigned a value
                 cmd.ExecuteNonQuery()
             Else
 
-                cmd.CommandText = "delete from epson_repairtrace  WHERE pcbid = '" + pcb + "' "
+                cmd.CommandText = "delete from gi_repairtrace  WHERE pcbid = '" + pcb + "' "
                 cmd.ExecuteNonQuery()
-                cmd.CommandText = "INSERT INTO epson_repairtrace (pcbid, modelmatrix, processtoken, timestamp, aoilotnum) VALUES ('" + pcb + "', '" + modelamatrix + "', '" + rep + "', NOW())"
+                cmd.CommandText = "INSERT INTO gi_repairtrace (pcbid, modelmatrix, processtoken, timestamp) VALUES ('" + pcb + "', '" + modelamatrix + "', '" + rep + "', NOW())"
                 '#Enable Warning BC42104 ' Variable is used before it has been assigned a value
                 cmd.ExecuteNonQuery()
             End If
@@ -407,7 +405,7 @@ Public Class frmRepair
             MessageBox.Show("Invalid Entry. Please input remarks.", "Error")
         Else
 
-            cmd.CommandText = "INSERT INTO `epson_touchuprepair` (`pcbid`, `remarks`, `repairdatetime`, `repairman`, `repairsequence`) VALUES ('" + lblpcb.Text + "', '" + TR_tbremarks.Text + "', NOW(), '" + lblname.Text + "', '" + turcount + "' )"
+            cmd.CommandText = "INSERT INTO `gi_touchuprepair` (`pcbid`, `remarks`, `repairdatetime`, `repairman`, `repairsequence`) VALUES ('" + lblpcb.Text + "', '" + TR_tbremarks.Text + "', NOW(), '" + lblname.Text + "', '" + turcount + "' )"
             cmd.ExecuteNonQuery()
 
             checkrepairtracedata(lblpcb.Text, "repair_tr")

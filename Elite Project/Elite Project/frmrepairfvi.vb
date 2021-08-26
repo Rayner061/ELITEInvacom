@@ -3,12 +3,206 @@ Imports MySql.Data.MySqlClient
 
 Public Class frmrepairfvi
 
-    Dim modelMatrixID, customer As String
+    Dim modelMatrixID, customer, Side, SideRequirement As String
     Dim icprog As Boolean
 
     Private Sub txtScan_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtScan.KeyPress
+        Dim cmd As New MySqlCommand
 
+        cmd.Connection = conn
+        If Asc(e.KeyChar) = 13 Then
+            Try
+                writeLogs("SCAN: " & txtScan.Text)
+                Dim status As String = ""
+
+                If Side = "dual" Then
+                    cmd.CommandText = "SELECT COUNT(pcbid) FROM gi_repairtrace WHERE pcbid = '" & txtScan.Text & "' AND processtoken = 'aoi_top' AND aoistatus_top = 'good'"
+                    status = "aoi_top"
+                Else
+                    cmd.CommandText = "SELECT COUNT(pcbid) FROM gi_repairtrace WHERE pcbid = '" & txtScan.Text & "' AND processtoken = 'aoi_bottom' AND aoistatus_bottom = 'good'"
+                    status = "aoi_bottom"
+                End If
+
+                If lblScan.Text = "SCAN PCB:" Then
+                    'If customer = "gs" Then
+
+                    'Else
+                    '    cmd.CommandText = "SELECT COUNT(pcbid) FROM gi_repairtrace WHERE pcbid = '" & txtScan.Text & "' AND processtoken = 'ic_programming' AND aoistatus_bottom = 'good'"
+                    '    status = "ic_programming"
+                    'End If
+
+                    If cmd.ExecuteScalar = 1 Then
+
+                        Select Case ExaminePCB(txtScan.Text)
+                            Case "valid"
+                                Select Case ExamineProgramming(txtScan.Text)
+                                    Case "good"
+
+                                        cmd.CommandText = "UPDATE gi_repairtrace SET processtoken = 'fvi', fvitimestamp = NOW(), fvioperator = '" & lblname.Text & "', fvistatus = 'good' 
+                                        WHERE pcbid = '" & txtScan.Text & "' AND processtoken = '" & status & "'"
+                                        cmd.ExecuteNonQuery()
+                                        frmerror.lblerror.Text = ""
+                                    Case "duplicate"
+
+                                        writeLogs("ERROR: Duplicate Serial")
+                                        frmerror.lblerror.Text = "ERROR: Duplicate Serial"
+                                        frmerror.ShowDialog()
+
+                                    Case "nodata"
+
+                                        writeLogs("ERROR: No PCBA Program!")
+                                        frmerror.lblerror.Text = "ERROR: No PCBA Program!"
+                                        frmerror.ShowDialog()
+                                    Case "failedprogram"
+
+                                        writeLogs("ERROR: Failed Program!")
+                                        frmerror.lblerror.Text = "ERROR: Failed Program!"
+                                        frmerror.ShowDialog()
+
+                                    Case "nolatestresult"
+                                        writeLogs("ERROR: No Latest Program!")
+                                        frmerror.lblerror.Text = "ERROR:  No Latest Program!"
+                                        frmerror.ShowDialog()
+                                End Select
+
+                            Case "wrongmodel"
+                                writeLogs("ERROR: Wrong model.")
+                                frmerror.lblerror.Text = "ERROR: Wrong model!"
+                                frmerror.ShowDialog()
+
+                            Case "wrongline"
+                                writeLogs("ERROR: Wrong Line.")
+                                frmerror.lblerror.Text = "ERROR: Wrong Line!"
+                                frmerror.ShowDialog()
+                        End Select
+                    End If
+
+                    CountGood()
+                    gridout()
+                    txtScan.Text = ""
+                    txtScan.Focus()
+                Else
+                    If txtremarks.Text = "" Or cmbdefectname.Text = "" Then
+                        MsgBox("Please complete all necessary information")
+                    Else
+                        cmd.CommandText = "UPDATE gi_repairtrace Set `fvistatus` = 'ng', `fvitimestamp` = NOW(), `fviremarks` = '" & txtremarks.Text & "', `processtoken` = 'fvi', `fvioperator` = '" & lblname.Text & "' WHERE pcbid = '" & txtScan.Text & "' AND (processtoken = '" & status & "' OR processtoken = 'fvi') AND (aoistatus_bottom = 'GOOD' or aoistatus_top = 'GOOD')"
+                        cmd.ExecuteNonQuery()
+                        If cmd.ExecuteNonQuery() = 0 Then
+                            writeLogs("Either the PCB did not pass previous process or PCB already passed the next process")
+                            frmerror.lblerror.Text = "Either the PCB did not pass previous process or PCB already passed the next process!"
+                            frmerror.ShowDialog()
+                        Else
+                            InsertNG()
+                        End If
+                    End If
+                    CountGood()
+                    gridout()
+                    cmbdefectname.Text = ""
+                    txtremarks.Text = ""
+                    txtScan.Text = ""
+                End If
+            Catch ex As Exception
+                MsgBox("Invalid PCBID")
+                frmerror.lblerror.Text = "Invalid PCBID"
+                frmerror.ShowDialog()
+                MsgBox(ex.ToString)
+                writeLogs(ex.ToString)
+                txtScan.Text = ""
+                txtScan.Focus()
+            End Try
+        End If
     End Sub
+
+    Public Sub InsertNG()
+        Dim cmd As New MySqlCommand
+        cmd.Connection = conn
+
+        cmd.CommandText = "INSERT INTO gi_repairfving(`pcbid`, `timestamp`, `judgement`, `defectname`, `remarks`, `operator`, `line`) VALUES ('" & txtScan.Text & "', NOW(), 'ng', '" & cmbdefectname.Text & "','" & txtremarks.Text & "', '" & lblname.Text & "', '" & lblline.Text & "')"
+        cmd.ExecuteNonQuery()
+    End Sub
+
+    Public Sub gridout()
+        Dim cmd As New MySqlCommand
+        Dim myDA As New MySqlDataAdapter(cmd)
+        Dim myDT As New DataTable
+        cmd.Connection = conn
+        If lblScan.Text = "SCAN PCB:" Then
+            cmd.CommandText = "SELECT pcbid, fvitimestamp, fvioperator, fvistatus FROM gi_repairtrace WHERE fvitimestamp > (NOW() - INTERVAL 15 MINUTE) ORDER BY `fvitimestamp` DESC"
+
+            myDA.Fill(myDT)
+            dgpcb.DataSource = myDT
+        Else
+            cmd.CommandText = "SELECT pcbid, fvitimestamp, fvioperator, fvistatus FROM gi_repairtrace WHERE fvitimestamp > (NOW() - INTERVAL 15 MINUTE) AND fvistatus = 'ng'  ORDER BY `fvitimestamp` DESC"
+            myDA.Fill(myDT)
+            dgpcb.DataSource = myDT
+        End If
+    End Sub
+
+    Private Function ExamineProgramming(ByVal scanText As String) As String
+        Dim cmd As New MySqlCommand
+        cmd.Connection = giconn
+
+        Dim cmd1 As New MySqlCommand
+        cmd1.Connection = conn
+        Dim res As String
+        Dim count, countfvi As Integer
+        Dim Latest As String
+        Dim LatestTime As DateTime
+        Dim LatestTimeFVI As DateTime
+        res = ""
+        If icprog = True Then
+            cmd.CommandText = "SELECT COUNT(*) FROM `prog` WHERE (SERIAL_NO = '" & scanText & "' or SERIAL_NO = '" & scanText.Substring(scanText.IndexOf("-") + 1) & "')"
+            count = cmd.ExecuteScalar.ToString()
+
+
+            If count = 0 Then
+                res = "nodata"
+            Else
+
+                cmd.CommandText = "SELECT FAILCODE FROM `prog` WHERE (SERIAL_NO = '" & scanText & "' or SERIAL_NO = '" & scanText.Substring(scanText.IndexOf("-") + 1) & "') ORDER BY FIRST_TIME DESC LIMIT 1"
+                Latest = cmd.ExecuteScalar.ToString()
+
+                If Latest <> "NONE" Then
+                    res = "failedprogram"
+                Else
+                    cmd.CommandText = "SELECT DATE_FORMAT(`FIRST_TIME`,'%Y-%m-%d %h:%i:%s') as `FIRST_TIME` FROM `prog` WHERE (SERIAL_NO = '" & scanText & "' or SERIAL_NO = '" & scanText.Substring(scanText.IndexOf("-") + 1) & "') ORDER BY FIRST_TIME DESC LIMIT 1"
+                    LatestTime = cmd.ExecuteScalar.ToString()
+
+                    cmd.CommandText = "SELECT COUNT(*) FROM `gi_pcbtrace` WHERE `pcbid` = '" & scanText & "' AND `fvitimestamp` IS NOT NULL"
+                    countfvi = cmd.ExecuteScalar.ToString()
+
+                    If countfvi = 0 Then
+                        res = "good"
+                    Else
+                        cmd.CommandText = "SELECT DATE_FORMAT(`fvitimestamp`,'%Y-%m-%d %h:%i:%s') as `fvitimestamp` FROM `gi_pcbtrace` WHERE `pcbid` = '" & scanText & "'"
+                        LatestTimeFVI = cmd1.ExecuteScalar.ToString()
+                        If LatestTimeFVI < LatestTime Then
+                            res = "good"
+                        Else
+                            res = "nolatestresult"
+                        End If
+                    End If
+                End If
+            End If
+        Else
+            res = "good"
+        End If
+        ExamineProgramming = res
+    End Function
+
+    Private Function ExaminePCB(ByVal scanText As String) As String
+        Dim cmd As New MySqlCommand
+        Dim res As String = ""
+
+        cmd.Connection = conn
+        cmd.CommandText = "SELECT modelmatrixid FROM gi_repairtrace WHERE pcbid = '" & scanText & "'"
+        If cmd.ExecuteScalar.ToString() = modelMatrixID Then
+            res = "valid"
+        Else
+            res = "wrongmodel"
+        End If
+        ExaminePCB = res
+    End Function
 
     Private Sub Timer1_Tick_1(sender As Object, e As EventArgs) Handles Timer1.Tick
         If tblPnlDefect.BackColor = Color.Red Then
