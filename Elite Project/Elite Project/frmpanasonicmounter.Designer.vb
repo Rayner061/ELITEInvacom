@@ -24,11 +24,11 @@ Partial Class frmpanasonicmounter
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmpanasonicmounter))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.bgTransfer = New System.ComponentModel.BackgroundWorker()
         Me.lblElapsedlabel = New System.Windows.Forms.Label()
@@ -39,7 +39,6 @@ Partial Class frmpanasonicmounter
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.lblname = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -64,16 +63,18 @@ Partial Class frmpanasonicmounter
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
+        Me.lblAssemblyVersion = New System.Windows.Forms.Label()
+        Me.TableLayoutPanel9 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel3.SuspendLayout()
         Me.TableLayoutPanel5.SuspendLayout()
         Me.TableLayoutPanel6.SuspendLayout()
         Me.TableLayoutPanel7.SuspendLayout()
         Me.TableLayoutPanel8.SuspendLayout()
         CType(Me.dgPCB, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel9.SuspendLayout()
         Me.SuspendLayout()
         '
         'Timer1
@@ -88,7 +89,7 @@ Partial Class frmpanasonicmounter
         Me.lblElapsedlabel.ForeColor = System.Drawing.Color.White
         Me.lblElapsedlabel.Location = New System.Drawing.Point(141, 0)
         Me.lblElapsedlabel.Name = "lblElapsedlabel"
-        Me.lblElapsedlabel.Size = New System.Drawing.Size(76, 13)
+        Me.lblElapsedlabel.Size = New System.Drawing.Size(77, 13)
         Me.lblElapsedlabel.TabIndex = 64
         Me.lblElapsedlabel.Text = "Elapsed Time:"
         Me.lblElapsedlabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -167,7 +168,7 @@ Partial Class frmpanasonicmounter
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 398.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.PictureBox3, 0, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.PictureBox4, 2, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel9, 2, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(15, 15)
         Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(0)
@@ -189,18 +190,6 @@ Partial Class frmpanasonicmounter
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PictureBox3.TabIndex = 92
         Me.PictureBox3.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackgroundImage = Global.ELITE_GI.My.Resources.Resources.elite_banner_GI
-        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox4.Location = New System.Drawing.Point(856, 0)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(398, 119)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox4.TabIndex = 93
-        Me.PictureBox4.TabStop = False
         '
         'TableLayoutPanel3
         '
@@ -457,7 +446,7 @@ Partial Class frmpanasonicmounter
         Me.lblElapsed.BackColor = System.Drawing.Color.Transparent
         Me.lblElapsed.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblElapsed.ForeColor = System.Drawing.Color.White
-        Me.lblElapsed.Location = New System.Drawing.Point(223, 0)
+        Me.lblElapsed.Location = New System.Drawing.Point(224, 0)
         Me.lblElapsed.Name = "lblElapsed"
         Me.lblElapsed.Size = New System.Drawing.Size(10, 13)
         Me.lblElapsed.TabIndex = 65
@@ -488,51 +477,51 @@ Partial Class frmpanasonicmounter
         Me.dgPCB.AllowUserToDeleteRows = False
         Me.dgPCB.AllowUserToResizeColumns = False
         Me.dgPCB.AllowUserToResizeRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.Silver
-        Me.dgPCB.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle11.BackColor = System.Drawing.Color.Silver
+        Me.dgPCB.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle11
         Me.dgPCB.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgPCB.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells
         Me.dgPCB.BackgroundColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgPCB.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgPCB.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle12
         Me.dgPCB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgPCB.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5})
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgPCB.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgPCB.DefaultCellStyle = DataGridViewCellStyle14
         Me.dgPCB.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgPCB.GridColor = System.Drawing.Color.White
         Me.dgPCB.Location = New System.Drawing.Point(15, 15)
         Me.dgPCB.Margin = New System.Windows.Forms.Padding(15)
         Me.dgPCB.Name = "dgPCB"
         Me.dgPCB.ReadOnly = True
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgPCB.RowHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgPCB.RowHeadersDefaultCellStyle = DataGridViewCellStyle15
         Me.dgPCB.Size = New System.Drawing.Size(1224, 160)
         Me.dgPCB.TabIndex = 56
         '
         'Column1
         '
         Me.Column1.DataPropertyName = "pcbid"
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Column1.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle13.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Column1.DefaultCellStyle = DataGridViewCellStyle13
         Me.Column1.HeaderText = "PCB ID"
         Me.Column1.Name = "Column1"
         Me.Column1.ReadOnly = True
@@ -590,6 +579,34 @@ Partial Class frmpanasonicmounter
         Me.TableLayoutPanel4.TabIndex = 94
         Me.TableLayoutPanel4.Visible = False
         '
+        'lblAssemblyVersion
+        '
+        Me.lblAssemblyVersion.AutoSize = True
+        Me.lblAssemblyVersion.BackColor = System.Drawing.Color.Transparent
+        Me.lblAssemblyVersion.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblAssemblyVersion.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAssemblyVersion.Location = New System.Drawing.Point(3, 0)
+        Me.lblAssemblyVersion.Name = "lblAssemblyVersion"
+        Me.lblAssemblyVersion.Size = New System.Drawing.Size(386, 113)
+        Me.lblAssemblyVersion.TabIndex = 94
+        Me.lblAssemblyVersion.Text = "2.1802.44.2"
+        Me.lblAssemblyVersion.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        '
+        'TableLayoutPanel9
+        '
+        Me.TableLayoutPanel9.BackgroundImage = Global.ELITE_GI.My.Resources.Resources.elite_banner_GI
+        Me.TableLayoutPanel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.TableLayoutPanel9.ColumnCount = 1
+        Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel9.Controls.Add(Me.lblAssemblyVersion, 0, 0)
+        Me.TableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel9.Location = New System.Drawing.Point(859, 3)
+        Me.TableLayoutPanel9.Name = "TableLayoutPanel9"
+        Me.TableLayoutPanel9.RowCount = 1
+        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel9.Size = New System.Drawing.Size(392, 113)
+        Me.TableLayoutPanel9.TabIndex = 95
+        '
         'frmpanasonicmounter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -608,7 +625,6 @@ Partial Class frmpanasonicmounter
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel3.PerformLayout()
         Me.TableLayoutPanel5.ResumeLayout(False)
@@ -618,6 +634,8 @@ Partial Class frmpanasonicmounter
         Me.TableLayoutPanel7.PerformLayout()
         Me.TableLayoutPanel8.ResumeLayout(False)
         CType(Me.dgPCB, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel9.ResumeLayout(False)
+        Me.TableLayoutPanel9.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -649,7 +667,6 @@ Partial Class frmpanasonicmounter
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
-    Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel5 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel6 As TableLayoutPanel
@@ -657,4 +674,6 @@ Partial Class frmpanasonicmounter
     Friend WithEvents lblElapsed As Label
     Friend WithEvents TableLayoutPanel8 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
+    Friend WithEvents lblAssemblyVersion As Label
+    Friend WithEvents TableLayoutPanel9 As TableLayoutPanel
 End Class

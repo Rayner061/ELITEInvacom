@@ -366,7 +366,7 @@ Partial Class frmRepair
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 189.0!))
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.89147!))
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.55039!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 162.0!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 170.0!))
         Me.TableLayoutPanel5.Controls.Add(Me.lblmatrix, 0, 3)
         Me.TableLayoutPanel5.Controls.Add(Me.Label2, 1, 1)
         Me.TableLayoutPanel5.Controls.Add(Me.tbpcb, 2, 1)
@@ -1259,7 +1259,7 @@ Partial Class frmRepair
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(422, 46)
+        Me.Label7.Location = New System.Drawing.Point(421, 46)
         Me.Label7.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(145, 34)
@@ -1272,7 +1272,7 @@ Partial Class frmRepair
         Me.lblcodeallo.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblcodeallo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblcodeallo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblcodeallo.Location = New System.Drawing.Point(573, 48)
+        Me.lblcodeallo.Location = New System.Drawing.Point(572, 48)
         Me.lblcodeallo.Name = "lblcodeallo"
         Me.lblcodeallo.Size = New System.Drawing.Size(221, 30)
         Me.lblcodeallo.TabIndex = 232
@@ -1281,7 +1281,7 @@ Partial Class frmRepair
         'btnlogout
         '
         Me.btnlogout.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnlogout.Location = New System.Drawing.Point(1178, 13)
+        Me.btnlogout.Location = New System.Drawing.Point(1171, 13)
         Me.btnlogout.Name = "btnlogout"
         Me.btnlogout.Size = New System.Drawing.Size(102, 25)
         Me.btnlogout.TabIndex = 129
@@ -1305,7 +1305,7 @@ Partial Class frmRepair
         Me.lblmodel.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblmodel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblmodel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblmodel.Location = New System.Drawing.Point(573, 13)
+        Me.lblmodel.Location = New System.Drawing.Point(572, 13)
         Me.lblmodel.Name = "lblmodel"
         Me.lblmodel.Size = New System.Drawing.Size(221, 30)
         Me.lblmodel.TabIndex = 230
@@ -1317,7 +1317,7 @@ Partial Class frmRepair
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(422, 10)
+        Me.Label6.Location = New System.Drawing.Point(421, 10)
         Me.Label6.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(145, 36)
@@ -2809,7 +2809,7 @@ Partial Class frmRepair
         Me.TableLayoutPanel8.ColumnCount = 3
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.003764!))
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.99624!))
-        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 17.0!))
+        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel8.Controls.Add(Me.TableLayoutPanel21, 1, 1)
         Me.TableLayoutPanel8.Location = New System.Drawing.Point(792, 7)
         Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
@@ -2832,7 +2832,7 @@ Partial Class frmRepair
         Me.TableLayoutPanel21.RowCount = 2
         Me.TableLayoutPanel21.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel21.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 138.0!))
-        Me.TableLayoutPanel21.Size = New System.Drawing.Size(500, 162)
+        Me.TableLayoutPanel21.Size = New System.Drawing.Size(497, 162)
         Me.TableLayoutPanel21.TabIndex = 0
         '
         'VA_dgv
@@ -2847,7 +2847,7 @@ Partial Class frmRepair
         Me.VA_dgv.Name = "VA_dgv"
         Me.VA_dgv.ReadOnly = True
         Me.VA_dgv.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        Me.VA_dgv.Size = New System.Drawing.Size(494, 136)
+        Me.VA_dgv.Size = New System.Drawing.Size(491, 136)
         Me.VA_dgv.TabIndex = 3
         '
         'Label52

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmcreamsolder
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmcreamsolder
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
@@ -50,7 +50,7 @@ Partial Class frmcreamsolder
         '
         'btncreamcancel
         '
-        Me.btncreamcancel.Location = New System.Drawing.Point(196, 215)
+        Me.btncreamcancel.Location = New System.Drawing.Point(214, 215)
         Me.btncreamcancel.Name = "btncreamcancel"
         Me.btncreamcancel.Size = New System.Drawing.Size(112, 24)
         Me.btncreamcancel.TabIndex = 26
@@ -59,7 +59,7 @@ Partial Class frmcreamsolder
         '
         'txtline
         '
-        Me.txtline.Location = New System.Drawing.Point(270, 219)
+        Me.txtline.Location = New System.Drawing.Point(288, 219)
         Me.txtline.Name = "txtline"
         Me.txtline.Size = New System.Drawing.Size(24, 20)
         Me.txtline.TabIndex = 51
@@ -69,7 +69,7 @@ Partial Class frmcreamsolder
         Me.lblissuancetime.AutoSize = True
         Me.lblissuancetime.BackColor = System.Drawing.Color.White
         Me.lblissuancetime.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblissuancetime.Location = New System.Drawing.Point(128, 143)
+        Me.lblissuancetime.Location = New System.Drawing.Point(146, 143)
         Me.lblissuancetime.Name = "lblissuancetime"
         Me.lblissuancetime.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.lblissuancetime.Size = New System.Drawing.Size(13, 20)
@@ -82,7 +82,7 @@ Partial Class frmcreamsolder
         Me.lblmixtime.AutoSize = True
         Me.lblmixtime.BackColor = System.Drawing.Color.White
         Me.lblmixtime.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblmixtime.Location = New System.Drawing.Point(128, 176)
+        Me.lblmixtime.Location = New System.Drawing.Point(146, 176)
         Me.lblmixtime.Name = "lblmixtime"
         Me.lblmixtime.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.lblmixtime.Size = New System.Drawing.Size(13, 20)
@@ -96,7 +96,7 @@ Partial Class frmcreamsolder
         Me.lblthawtime.AutoSize = True
         Me.lblthawtime.BackColor = System.Drawing.Color.White
         Me.lblthawtime.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblthawtime.Location = New System.Drawing.Point(128, 110)
+        Me.lblthawtime.Location = New System.Drawing.Point(146, 110)
         Me.lblthawtime.Name = "lblthawtime"
         Me.lblthawtime.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.lblthawtime.Size = New System.Drawing.Size(13, 20)
@@ -109,7 +109,7 @@ Partial Class frmcreamsolder
         Me.lblreftime.AutoSize = True
         Me.lblreftime.BackColor = System.Drawing.Color.White
         Me.lblreftime.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblreftime.Location = New System.Drawing.Point(128, 77)
+        Me.lblreftime.Location = New System.Drawing.Point(146, 77)
         Me.lblreftime.Name = "lblreftime"
         Me.lblreftime.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.lblreftime.Size = New System.Drawing.Size(13, 20)
@@ -122,7 +122,7 @@ Partial Class frmcreamsolder
         Me.Label24.AutoSize = True
         Me.Label24.BackColor = System.Drawing.SystemColors.Control
         Me.Label24.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(52, 143)
+        Me.Label24.Location = New System.Drawing.Point(70, 143)
         Me.Label24.Name = "Label24"
         Me.Label24.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label24.Size = New System.Drawing.Size(70, 20)
@@ -135,7 +135,7 @@ Partial Class frmcreamsolder
         Me.Label23.AutoSize = True
         Me.Label23.BackColor = System.Drawing.SystemColors.Control
         Me.Label23.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(61, 176)
+        Me.Label23.Location = New System.Drawing.Point(79, 176)
         Me.Label23.Name = "Label23"
         Me.Label23.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label23.Size = New System.Drawing.Size(61, 20)
@@ -149,7 +149,7 @@ Partial Class frmcreamsolder
         Me.Label22.AutoSize = True
         Me.Label22.BackColor = System.Drawing.SystemColors.Control
         Me.Label22.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(51, 110)
+        Me.Label22.Location = New System.Drawing.Point(69, 110)
         Me.Label22.Name = "Label22"
         Me.Label22.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label22.Size = New System.Drawing.Size(71, 20)
@@ -162,7 +162,7 @@ Partial Class frmcreamsolder
         Me.Label21.AutoSize = True
         Me.Label21.BackColor = System.Drawing.SystemColors.Control
         Me.Label21.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(87, 77)
+        Me.Label21.Location = New System.Drawing.Point(105, 77)
         Me.Label21.Name = "Label21"
         Me.Label21.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label21.Size = New System.Drawing.Size(36, 20)
@@ -172,7 +172,7 @@ Partial Class frmcreamsolder
         '
         'btncreamsave
         '
-        Me.btncreamsave.Location = New System.Drawing.Point(53, 215)
+        Me.btncreamsave.Location = New System.Drawing.Point(71, 215)
         Me.btncreamsave.Name = "btncreamsave"
         Me.btncreamsave.Size = New System.Drawing.Size(112, 24)
         Me.btncreamsave.TabIndex = 25
@@ -182,7 +182,7 @@ Partial Class frmcreamsolder
         'txtcsinput
         '
         Me.txtcsinput.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcsinput.Location = New System.Drawing.Point(127, 39)
+        Me.txtcsinput.Location = New System.Drawing.Point(145, 39)
         Me.txtcsinput.Name = "txtcsinput"
         Me.txtcsinput.Size = New System.Drawing.Size(206, 27)
         Me.txtcsinput.TabIndex = 16
@@ -192,7 +192,7 @@ Partial Class frmcreamsolder
         Me.Label25.AutoSize = True
         Me.Label25.BackColor = System.Drawing.SystemColors.Control
         Me.Label25.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(17, 46)
+        Me.Label25.Location = New System.Drawing.Point(35, 46)
         Me.Label25.Name = "Label25"
         Me.Label25.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label25.Size = New System.Drawing.Size(106, 20)
@@ -204,7 +204,7 @@ Partial Class frmcreamsolder
         '
         Me.txtmodelmatrix.Enabled = False
         Me.txtmodelmatrix.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtmodelmatrix.Location = New System.Drawing.Point(300, 39)
+        Me.txtmodelmatrix.Location = New System.Drawing.Point(318, 39)
         Me.txtmodelmatrix.Name = "txtmodelmatrix"
         Me.txtmodelmatrix.Size = New System.Drawing.Size(33, 27)
         Me.txtmodelmatrix.TabIndex = 49
@@ -212,7 +212,7 @@ Partial Class frmcreamsolder
         '
         'txtdt
         '
-        Me.txtdt.Location = New System.Drawing.Point(152, 46)
+        Me.txtdt.Location = New System.Drawing.Point(170, 46)
         Me.txtdt.Name = "txtdt"
         Me.txtdt.Size = New System.Drawing.Size(142, 20)
         Me.txtdt.TabIndex = 50

@@ -254,6 +254,8 @@ Public Class frmlogin
                         cmd.CommandText = "SELECT empname FROM tbluser WHERE userid = '" & txtid.Text & "'"
                         lblname.Text = cmd.ExecuteScalar
                         frmRepair.lblname.Text = lblname.Text
+                        frmRepair.lblline.Text = cmbline.Text
+                        frmRepair.lblStation.Text = cmbstation.Text
 
                         frmRepair.Show()
                         txtpass.Text = ""
@@ -266,6 +268,7 @@ Public Class frmlogin
                         cmd.CommandText = "SELECT empname FROM tbluser WHERE userid = '" & txtid.Text & "'"
                         lblname.Text = cmd.ExecuteScalar
                         frmrepairendorsement.lblname.Text = lblname.Text
+
 
                         frmrepairendorsement.Show()
                         txtpass.Text = ""
@@ -325,6 +328,20 @@ Public Class frmlogin
                         frmrepairfvi.lblStation.Text = cmbstation.Text
 
                         frmrepairfvi.Show()
+                        txtpass.Text = ""
+                        lblname.Text = ""
+                        cmbline.Text = ""
+                        cmbstation.Text = ""
+                        lbllevel.Text = ""
+                        Hide()
+                    ElseIf cmbstation.Text = "REPAIR OBA" Then
+                        cmd.CommandText = "SELECT empname FROM tbluser WHERE userid = '" & txtid.Text & "'"
+                        lblname.Text = cmd.ExecuteScalar
+                        frmrepairoba.lblname.Text = lblname.Text
+                        frmrepairoba.lblline.Text = cmbline.Text
+                        frmrepairoba.lblStation.Text = cmbstation.Text
+
+                        frmrepairoba.Show()
                         txtpass.Text = ""
                         lblname.Text = ""
                         cmbline.Text = ""

@@ -259,7 +259,7 @@ Public Class frmcsmanager
                 End If
 
                 If cmbmode.Text = "Restore" Then
-                    cmd.CommandText = "UPDATE gi_creamsolder SET reftime = '" & txtdatetime.Text & "', thawingtime = NULL, mixingtime = NULL, lineissuancetime = NULL, opendatetime = NULL WHERE creamid = '" & txtscan.Text & "'"
+                    cmd.CommandText = "UPDATE gi_creamsolder SET reftime = now(), thawingtime = NULL, mixingtime = NULL, lineissuancetime = NULL, opendatetime = NULL,status = NULL,line = NULL WHERE creamid = '" & txtscan.Text & "'"
                     cmd.ExecuteNonQuery()
                     refreshDetails2()
                     txtscan.Text = ""
@@ -292,7 +292,7 @@ Public Class frmcsmanager
         dbConnect()
         refreshDetails()
         dgexpire.Visible = False
-        lblAssemblyVersion.Text = "Version EPN-" & frmlogin.assemblyVersion & " (General Release)"
+        lblAssemblyVersion.Text = "Version " & frmlogin.assemblyVersion & " (General Release)"
     End Sub
 
     Public Sub refreshDetails()

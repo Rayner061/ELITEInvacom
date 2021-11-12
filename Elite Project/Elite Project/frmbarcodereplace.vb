@@ -14,6 +14,7 @@ Public Class frmbarcodereplace
             txtnew.Enabled = True
         End If
         btnsave.Enabled = False
+        lblAssemblyVersion.Text = "Version " & frmlogin.assemblyVersion & " (General Release)"
     End Sub
 
     Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click

@@ -46,6 +46,7 @@ Partial Class frmbarcodereplace
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.lblAssemblyVersion = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnReset
@@ -268,6 +269,16 @@ Partial Class frmbarcodereplace
         Me.Timer1.Enabled = True
         Me.Timer1.Interval = 1000
         '
+        'lblAssemblyVersion
+        '
+        Me.lblAssemblyVersion.AutoSize = True
+        Me.lblAssemblyVersion.BackColor = System.Drawing.Color.Transparent
+        Me.lblAssemblyVersion.Location = New System.Drawing.Point(553, 151)
+        Me.lblAssemblyVersion.Name = "lblAssemblyVersion"
+        Me.lblAssemblyVersion.Size = New System.Drawing.Size(193, 13)
+        Me.lblAssemblyVersion.TabIndex = 49
+        Me.lblAssemblyVersion.Text = "Version 21.06.253.1  (General Release)"
+        '
         'frmbarcodereplace
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -275,6 +286,7 @@ Partial Class frmbarcodereplace
         Me.BackgroundImage = Global.ELITE_GI.My.Resources.Resources.replac
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(767, 554)
+        Me.Controls.Add(Me.lblAssemblyVersion)
         Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.lstOrig)
         Me.Controls.Add(Me.lstNew)
@@ -326,4 +338,5 @@ Partial Class frmbarcodereplace
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents lblAssemblyVersion As Label
 End Class

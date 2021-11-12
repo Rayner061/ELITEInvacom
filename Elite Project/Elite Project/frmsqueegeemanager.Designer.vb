@@ -71,6 +71,24 @@ Partial Class frmsqueegeemanager
         Me.lblQR1B = New System.Windows.Forms.Label()
         Me.lblQR1A = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblQR17B = New System.Windows.Forms.Label()
+        Me.lblQR17A = New System.Windows.Forms.Label()
+        Me.pbSqueegee17B = New System.Windows.Forms.PictureBox()
+        Me.pbSqueegee17A = New System.Windows.Forms.PictureBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblRemainingLife17 = New System.Windows.Forms.Label()
+        Me.pbSqueegee15B = New System.Windows.Forms.PictureBox()
+        Me.pbSqueegee15A = New System.Windows.Forms.PictureBox()
+        Me.pbSqueegee6B = New System.Windows.Forms.PictureBox()
+        Me.pbSqueegee6A = New System.Windows.Forms.PictureBox()
+        Me.pbSqueegee12B = New System.Windows.Forms.PictureBox()
+        Me.pbSqueegee12A = New System.Windows.Forms.PictureBox()
+        Me.pbSqueegee14B = New System.Windows.Forms.PictureBox()
+        Me.pbSqueegee14A = New System.Windows.Forms.PictureBox()
+        Me.pbSqueegee1B = New System.Windows.Forms.PictureBox()
+        Me.pbSqueegee1A = New System.Windows.Forms.PictureBox()
+        Me.pbSqueegee2B = New System.Windows.Forms.PictureBox()
+        Me.pbSqueegee2A = New System.Windows.Forms.PictureBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.lblRemainingLife1 = New System.Windows.Forms.Label()
@@ -84,10 +102,6 @@ Partial Class frmsqueegeemanager
         Me.lblDateReceived = New System.Windows.Forms.Label()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.txtSqueegeeB = New System.Windows.Forms.TextBox()
-        Me.lblQR17B = New System.Windows.Forms.Label()
-        Me.lblQR17A = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.lblRemainingLife17 = New System.Windows.Forms.Label()
         Me.Panel15 = New System.Windows.Forms.Panel()
         Me.Panel14 = New System.Windows.Forms.Panel()
         Me.Panel13 = New System.Windows.Forms.Panel()
@@ -103,20 +117,6 @@ Partial Class frmsqueegeemanager
         Me.Panel18 = New System.Windows.Forms.Panel()
         Me.Panel17 = New System.Windows.Forms.Panel()
         Me.Panel16 = New System.Windows.Forms.Panel()
-        Me.pbSqueegee17B = New System.Windows.Forms.PictureBox()
-        Me.pbSqueegee17A = New System.Windows.Forms.PictureBox()
-        Me.pbSqueegee15B = New System.Windows.Forms.PictureBox()
-        Me.pbSqueegee15A = New System.Windows.Forms.PictureBox()
-        Me.pbSqueegee6B = New System.Windows.Forms.PictureBox()
-        Me.pbSqueegee6A = New System.Windows.Forms.PictureBox()
-        Me.pbSqueegee12B = New System.Windows.Forms.PictureBox()
-        Me.pbSqueegee12A = New System.Windows.Forms.PictureBox()
-        Me.pbSqueegee14B = New System.Windows.Forms.PictureBox()
-        Me.pbSqueegee14A = New System.Windows.Forms.PictureBox()
-        Me.pbSqueegee1B = New System.Windows.Forms.PictureBox()
-        Me.pbSqueegee1A = New System.Windows.Forms.PictureBox()
-        Me.pbSqueegee2B = New System.Windows.Forms.PictureBox()
-        Me.pbSqueegee2A = New System.Windows.Forms.PictureBox()
         Me.Panel26 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.shadowdown = New System.Windows.Forms.Panel()
@@ -126,11 +126,11 @@ Partial Class frmsqueegeemanager
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.lblAssemblyVersion = New System.Windows.Forms.Label()
         Me.ctsMenu.SuspendLayout()
         Me.Panel10.SuspendLayout()
         CType(Me.dgStore, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
-        Me.Panel9.SuspendLayout()
         CType(Me.pbSqueegee17B, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbSqueegee17A, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbSqueegee15B, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -145,6 +145,7 @@ Partial Class frmsqueegeemanager
         CType(Me.pbSqueegee1A, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbSqueegee2B, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbSqueegee2A, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel9.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblQR15B
@@ -652,6 +653,220 @@ Partial Class frmsqueegeemanager
         Me.Panel1.Size = New System.Drawing.Size(1326, 263)
         Me.Panel1.TabIndex = 69
         '
+        'lblQR17B
+        '
+        Me.lblQR17B.BackColor = System.Drawing.Color.Transparent
+        Me.lblQR17B.Font = New System.Drawing.Font("Segoe UI Semilight", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblQR17B.ForeColor = System.Drawing.Color.White
+        Me.lblQR17B.Location = New System.Drawing.Point(808, 187)
+        Me.lblQR17B.Name = "lblQR17B"
+        Me.lblQR17B.Size = New System.Drawing.Size(113, 20)
+        Me.lblQR17B.TabIndex = 90
+        Me.lblQR17B.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblQR17B.UseCompatibleTextRendering = True
+        '
+        'lblQR17A
+        '
+        Me.lblQR17A.BackColor = System.Drawing.Color.Transparent
+        Me.lblQR17A.Font = New System.Drawing.Font("Segoe UI Semilight", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblQR17A.ForeColor = System.Drawing.Color.White
+        Me.lblQR17A.Location = New System.Drawing.Point(808, 104)
+        Me.lblQR17A.Name = "lblQR17A"
+        Me.lblQR17A.Size = New System.Drawing.Size(113, 20)
+        Me.lblQR17A.TabIndex = 89
+        Me.lblQR17A.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblQR17A.UseCompatibleTextRendering = True
+        '
+        'pbSqueegee17B
+        '
+        Me.pbSqueegee17B.BackColor = System.Drawing.Color.Gray
+        Me.pbSqueegee17B.ContextMenuStrip = Me.ctsMenu
+        Me.pbSqueegee17B.Image = CType(resources.GetObject("pbSqueegee17B.Image"), System.Drawing.Image)
+        Me.pbSqueegee17B.Location = New System.Drawing.Point(806, 127)
+        Me.pbSqueegee17B.Name = "pbSqueegee17B"
+        Me.pbSqueegee17B.Size = New System.Drawing.Size(117, 57)
+        Me.pbSqueegee17B.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbSqueegee17B.TabIndex = 88
+        Me.pbSqueegee17B.TabStop = False
+        '
+        'pbSqueegee17A
+        '
+        Me.pbSqueegee17A.BackColor = System.Drawing.Color.Gray
+        Me.pbSqueegee17A.ContextMenuStrip = Me.ctsMenu
+        Me.pbSqueegee17A.Image = CType(resources.GetObject("pbSqueegee17A.Image"), System.Drawing.Image)
+        Me.pbSqueegee17A.Location = New System.Drawing.Point(806, 44)
+        Me.pbSqueegee17A.Name = "pbSqueegee17A"
+        Me.pbSqueegee17A.Size = New System.Drawing.Size(117, 57)
+        Me.pbSqueegee17A.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbSqueegee17A.TabIndex = 87
+        Me.pbSqueegee17A.TabStop = False
+        '
+        'Label4
+        '
+        Me.Label4.BackColor = System.Drawing.Color.Salmon
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Label4.Location = New System.Drawing.Point(824, 21)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(80, 15)
+        Me.Label4.TabIndex = 86
+        Me.Label4.Text = "Line 17"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblRemainingLife17
+        '
+        Me.lblRemainingLife17.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lblRemainingLife17.Location = New System.Drawing.Point(808, 224)
+        Me.lblRemainingLife17.Name = "lblRemainingLife17"
+        Me.lblRemainingLife17.Size = New System.Drawing.Size(113, 20)
+        Me.lblRemainingLife17.TabIndex = 85
+        Me.lblRemainingLife17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'pbSqueegee15B
+        '
+        Me.pbSqueegee15B.BackColor = System.Drawing.Color.Gray
+        Me.pbSqueegee15B.ContextMenuStrip = Me.ctsMenu
+        Me.pbSqueegee15B.Image = CType(resources.GetObject("pbSqueegee15B.Image"), System.Drawing.Image)
+        Me.pbSqueegee15B.Location = New System.Drawing.Point(674, 127)
+        Me.pbSqueegee15B.Name = "pbSqueegee15B"
+        Me.pbSqueegee15B.Size = New System.Drawing.Size(117, 57)
+        Me.pbSqueegee15B.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbSqueegee15B.TabIndex = 82
+        Me.pbSqueegee15B.TabStop = False
+        '
+        'pbSqueegee15A
+        '
+        Me.pbSqueegee15A.BackColor = System.Drawing.Color.Gray
+        Me.pbSqueegee15A.ContextMenuStrip = Me.ctsMenu
+        Me.pbSqueegee15A.Image = CType(resources.GetObject("pbSqueegee15A.Image"), System.Drawing.Image)
+        Me.pbSqueegee15A.Location = New System.Drawing.Point(674, 44)
+        Me.pbSqueegee15A.Name = "pbSqueegee15A"
+        Me.pbSqueegee15A.Size = New System.Drawing.Size(117, 57)
+        Me.pbSqueegee15A.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbSqueegee15A.TabIndex = 81
+        Me.pbSqueegee15A.TabStop = False
+        '
+        'pbSqueegee6B
+        '
+        Me.pbSqueegee6B.BackColor = System.Drawing.Color.Gray
+        Me.pbSqueegee6B.ContextMenuStrip = Me.ctsMenu
+        Me.pbSqueegee6B.Image = CType(resources.GetObject("pbSqueegee6B.Image"), System.Drawing.Image)
+        Me.pbSqueegee6B.Location = New System.Drawing.Point(285, 127)
+        Me.pbSqueegee6B.Name = "pbSqueegee6B"
+        Me.pbSqueegee6B.Size = New System.Drawing.Size(117, 57)
+        Me.pbSqueegee6B.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbSqueegee6B.TabIndex = 76
+        Me.pbSqueegee6B.TabStop = False
+        '
+        'pbSqueegee6A
+        '
+        Me.pbSqueegee6A.BackColor = System.Drawing.Color.Gray
+        Me.pbSqueegee6A.ContextMenuStrip = Me.ctsMenu
+        Me.pbSqueegee6A.Image = CType(resources.GetObject("pbSqueegee6A.Image"), System.Drawing.Image)
+        Me.pbSqueegee6A.Location = New System.Drawing.Point(285, 44)
+        Me.pbSqueegee6A.Name = "pbSqueegee6A"
+        Me.pbSqueegee6A.Size = New System.Drawing.Size(117, 57)
+        Me.pbSqueegee6A.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbSqueegee6A.TabIndex = 75
+        Me.pbSqueegee6A.TabStop = False
+        '
+        'pbSqueegee12B
+        '
+        Me.pbSqueegee12B.BackColor = System.Drawing.Color.Gray
+        Me.pbSqueegee12B.ContextMenuStrip = Me.ctsMenu
+        Me.pbSqueegee12B.Image = CType(resources.GetObject("pbSqueegee12B.Image"), System.Drawing.Image)
+        Me.pbSqueegee12B.Location = New System.Drawing.Point(414, 127)
+        Me.pbSqueegee12B.Name = "pbSqueegee12B"
+        Me.pbSqueegee12B.Size = New System.Drawing.Size(117, 57)
+        Me.pbSqueegee12B.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbSqueegee12B.TabIndex = 76
+        Me.pbSqueegee12B.TabStop = False
+        '
+        'pbSqueegee12A
+        '
+        Me.pbSqueegee12A.BackColor = System.Drawing.Color.Gray
+        Me.pbSqueegee12A.ContextMenuStrip = Me.ctsMenu
+        Me.pbSqueegee12A.Image = CType(resources.GetObject("pbSqueegee12A.Image"), System.Drawing.Image)
+        Me.pbSqueegee12A.Location = New System.Drawing.Point(414, 44)
+        Me.pbSqueegee12A.Name = "pbSqueegee12A"
+        Me.pbSqueegee12A.Size = New System.Drawing.Size(117, 57)
+        Me.pbSqueegee12A.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbSqueegee12A.TabIndex = 75
+        Me.pbSqueegee12A.TabStop = False
+        '
+        'pbSqueegee14B
+        '
+        Me.pbSqueegee14B.BackColor = System.Drawing.Color.Gray
+        Me.pbSqueegee14B.ContextMenuStrip = Me.ctsMenu
+        Me.pbSqueegee14B.Image = CType(resources.GetObject("pbSqueegee14B.Image"), System.Drawing.Image)
+        Me.pbSqueegee14B.Location = New System.Drawing.Point(543, 127)
+        Me.pbSqueegee14B.Margin = New System.Windows.Forms.Padding(3, 3, 21, 3)
+        Me.pbSqueegee14B.Name = "pbSqueegee14B"
+        Me.pbSqueegee14B.Size = New System.Drawing.Size(117, 57)
+        Me.pbSqueegee14B.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbSqueegee14B.TabIndex = 76
+        Me.pbSqueegee14B.TabStop = False
+        '
+        'pbSqueegee14A
+        '
+        Me.pbSqueegee14A.BackColor = System.Drawing.Color.Gray
+        Me.pbSqueegee14A.ContextMenuStrip = Me.ctsMenu
+        Me.pbSqueegee14A.Image = CType(resources.GetObject("pbSqueegee14A.Image"), System.Drawing.Image)
+        Me.pbSqueegee14A.Location = New System.Drawing.Point(543, 44)
+        Me.pbSqueegee14A.Name = "pbSqueegee14A"
+        Me.pbSqueegee14A.Size = New System.Drawing.Size(117, 57)
+        Me.pbSqueegee14A.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbSqueegee14A.TabIndex = 75
+        Me.pbSqueegee14A.TabStop = False
+        '
+        'pbSqueegee1B
+        '
+        Me.pbSqueegee1B.BackColor = System.Drawing.Color.Gray
+        Me.pbSqueegee1B.ContextMenuStrip = Me.ctsMenu
+        Me.pbSqueegee1B.Image = CType(resources.GetObject("pbSqueegee1B.Image"), System.Drawing.Image)
+        Me.pbSqueegee1B.Location = New System.Drawing.Point(24, 127)
+        Me.pbSqueegee1B.Name = "pbSqueegee1B"
+        Me.pbSqueegee1B.Size = New System.Drawing.Size(117, 57)
+        Me.pbSqueegee1B.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbSqueegee1B.TabIndex = 47
+        Me.pbSqueegee1B.TabStop = False
+        '
+        'pbSqueegee1A
+        '
+        Me.pbSqueegee1A.BackColor = System.Drawing.Color.Gray
+        Me.pbSqueegee1A.ContextMenuStrip = Me.ctsMenu
+        Me.pbSqueegee1A.Image = CType(resources.GetObject("pbSqueegee1A.Image"), System.Drawing.Image)
+        Me.pbSqueegee1A.Location = New System.Drawing.Point(24, 44)
+        Me.pbSqueegee1A.Name = "pbSqueegee1A"
+        Me.pbSqueegee1A.Size = New System.Drawing.Size(117, 57)
+        Me.pbSqueegee1A.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbSqueegee1A.TabIndex = 9
+        Me.pbSqueegee1A.TabStop = False
+        '
+        'pbSqueegee2B
+        '
+        Me.pbSqueegee2B.BackColor = System.Drawing.Color.Gray
+        Me.pbSqueegee2B.ContextMenuStrip = Me.ctsMenu
+        Me.pbSqueegee2B.Image = CType(resources.GetObject("pbSqueegee2B.Image"), System.Drawing.Image)
+        Me.pbSqueegee2B.Location = New System.Drawing.Point(153, 127)
+        Me.pbSqueegee2B.Name = "pbSqueegee2B"
+        Me.pbSqueegee2B.Size = New System.Drawing.Size(117, 57)
+        Me.pbSqueegee2B.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbSqueegee2B.TabIndex = 49
+        Me.pbSqueegee2B.TabStop = False
+        '
+        'pbSqueegee2A
+        '
+        Me.pbSqueegee2A.BackColor = System.Drawing.Color.Gray
+        Me.pbSqueegee2A.ContextMenuStrip = Me.ctsMenu
+        Me.pbSqueegee2A.Image = CType(resources.GetObject("pbSqueegee2A.Image"), System.Drawing.Image)
+        Me.pbSqueegee2A.Location = New System.Drawing.Point(153, 44)
+        Me.pbSqueegee2A.Name = "pbSqueegee2A"
+        Me.pbSqueegee2A.Size = New System.Drawing.Size(117, 57)
+        Me.pbSqueegee2A.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbSqueegee2A.TabIndex = 48
+        Me.pbSqueegee2A.TabStop = False
+        '
         'Label17
         '
         Me.Label17.BackColor = System.Drawing.Color.Salmon
@@ -804,51 +1019,6 @@ Partial Class frmsqueegeemanager
         Me.txtSqueegeeB.TabIndex = 70
         Me.txtSqueegeeB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'lblQR17B
-        '
-        Me.lblQR17B.BackColor = System.Drawing.Color.Transparent
-        Me.lblQR17B.Font = New System.Drawing.Font("Segoe UI Semilight", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblQR17B.ForeColor = System.Drawing.Color.White
-        Me.lblQR17B.Location = New System.Drawing.Point(808, 187)
-        Me.lblQR17B.Name = "lblQR17B"
-        Me.lblQR17B.Size = New System.Drawing.Size(113, 20)
-        Me.lblQR17B.TabIndex = 90
-        Me.lblQR17B.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lblQR17B.UseCompatibleTextRendering = True
-        '
-        'lblQR17A
-        '
-        Me.lblQR17A.BackColor = System.Drawing.Color.Transparent
-        Me.lblQR17A.Font = New System.Drawing.Font("Segoe UI Semilight", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblQR17A.ForeColor = System.Drawing.Color.White
-        Me.lblQR17A.Location = New System.Drawing.Point(808, 104)
-        Me.lblQR17A.Name = "lblQR17A"
-        Me.lblQR17A.Size = New System.Drawing.Size(113, 20)
-        Me.lblQR17A.TabIndex = 89
-        Me.lblQR17A.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lblQR17A.UseCompatibleTextRendering = True
-        '
-        'Label4
-        '
-        Me.Label4.BackColor = System.Drawing.Color.Salmon
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label4.Location = New System.Drawing.Point(824, 21)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(80, 15)
-        Me.Label4.TabIndex = 86
-        Me.Label4.Text = "Line 17"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblRemainingLife17
-        '
-        Me.lblRemainingLife17.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblRemainingLife17.Location = New System.Drawing.Point(808, 224)
-        Me.lblRemainingLife17.Name = "lblRemainingLife17"
-        Me.lblRemainingLife17.Size = New System.Drawing.Size(113, 20)
-        Me.lblRemainingLife17.TabIndex = 85
-        Me.lblRemainingLife17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'Panel15
         '
         Me.Panel15.BackgroundImage = CType(resources.GetObject("Panel15.BackgroundImage"), System.Drawing.Image)
@@ -969,175 +1139,6 @@ Partial Class frmsqueegeemanager
         Me.Panel16.Size = New System.Drawing.Size(5, 5)
         Me.Panel16.TabIndex = 85
         '
-        'pbSqueegee17B
-        '
-        Me.pbSqueegee17B.BackColor = System.Drawing.Color.Gray
-        Me.pbSqueegee17B.ContextMenuStrip = Me.ctsMenu
-        Me.pbSqueegee17B.Image = CType(resources.GetObject("pbSqueegee17B.Image"), System.Drawing.Image)
-        Me.pbSqueegee17B.Location = New System.Drawing.Point(806, 127)
-        Me.pbSqueegee17B.Name = "pbSqueegee17B"
-        Me.pbSqueegee17B.Size = New System.Drawing.Size(117, 57)
-        Me.pbSqueegee17B.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbSqueegee17B.TabIndex = 88
-        Me.pbSqueegee17B.TabStop = False
-        '
-        'pbSqueegee17A
-        '
-        Me.pbSqueegee17A.BackColor = System.Drawing.Color.Gray
-        Me.pbSqueegee17A.ContextMenuStrip = Me.ctsMenu
-        Me.pbSqueegee17A.Image = CType(resources.GetObject("pbSqueegee17A.Image"), System.Drawing.Image)
-        Me.pbSqueegee17A.Location = New System.Drawing.Point(806, 44)
-        Me.pbSqueegee17A.Name = "pbSqueegee17A"
-        Me.pbSqueegee17A.Size = New System.Drawing.Size(117, 57)
-        Me.pbSqueegee17A.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbSqueegee17A.TabIndex = 87
-        Me.pbSqueegee17A.TabStop = False
-        '
-        'pbSqueegee15B
-        '
-        Me.pbSqueegee15B.BackColor = System.Drawing.Color.Gray
-        Me.pbSqueegee15B.ContextMenuStrip = Me.ctsMenu
-        Me.pbSqueegee15B.Image = CType(resources.GetObject("pbSqueegee15B.Image"), System.Drawing.Image)
-        Me.pbSqueegee15B.Location = New System.Drawing.Point(674, 127)
-        Me.pbSqueegee15B.Name = "pbSqueegee15B"
-        Me.pbSqueegee15B.Size = New System.Drawing.Size(117, 57)
-        Me.pbSqueegee15B.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbSqueegee15B.TabIndex = 82
-        Me.pbSqueegee15B.TabStop = False
-        '
-        'pbSqueegee15A
-        '
-        Me.pbSqueegee15A.BackColor = System.Drawing.Color.Gray
-        Me.pbSqueegee15A.ContextMenuStrip = Me.ctsMenu
-        Me.pbSqueegee15A.Image = CType(resources.GetObject("pbSqueegee15A.Image"), System.Drawing.Image)
-        Me.pbSqueegee15A.Location = New System.Drawing.Point(674, 44)
-        Me.pbSqueegee15A.Name = "pbSqueegee15A"
-        Me.pbSqueegee15A.Size = New System.Drawing.Size(117, 57)
-        Me.pbSqueegee15A.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbSqueegee15A.TabIndex = 81
-        Me.pbSqueegee15A.TabStop = False
-        '
-        'pbSqueegee6B
-        '
-        Me.pbSqueegee6B.BackColor = System.Drawing.Color.Gray
-        Me.pbSqueegee6B.ContextMenuStrip = Me.ctsMenu
-        Me.pbSqueegee6B.Image = CType(resources.GetObject("pbSqueegee6B.Image"), System.Drawing.Image)
-        Me.pbSqueegee6B.Location = New System.Drawing.Point(285, 127)
-        Me.pbSqueegee6B.Name = "pbSqueegee6B"
-        Me.pbSqueegee6B.Size = New System.Drawing.Size(117, 57)
-        Me.pbSqueegee6B.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbSqueegee6B.TabIndex = 76
-        Me.pbSqueegee6B.TabStop = False
-        '
-        'pbSqueegee6A
-        '
-        Me.pbSqueegee6A.BackColor = System.Drawing.Color.Gray
-        Me.pbSqueegee6A.ContextMenuStrip = Me.ctsMenu
-        Me.pbSqueegee6A.Image = CType(resources.GetObject("pbSqueegee6A.Image"), System.Drawing.Image)
-        Me.pbSqueegee6A.Location = New System.Drawing.Point(285, 44)
-        Me.pbSqueegee6A.Name = "pbSqueegee6A"
-        Me.pbSqueegee6A.Size = New System.Drawing.Size(117, 57)
-        Me.pbSqueegee6A.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbSqueegee6A.TabIndex = 75
-        Me.pbSqueegee6A.TabStop = False
-        '
-        'pbSqueegee12B
-        '
-        Me.pbSqueegee12B.BackColor = System.Drawing.Color.Gray
-        Me.pbSqueegee12B.ContextMenuStrip = Me.ctsMenu
-        Me.pbSqueegee12B.Image = CType(resources.GetObject("pbSqueegee12B.Image"), System.Drawing.Image)
-        Me.pbSqueegee12B.Location = New System.Drawing.Point(414, 127)
-        Me.pbSqueegee12B.Name = "pbSqueegee12B"
-        Me.pbSqueegee12B.Size = New System.Drawing.Size(117, 57)
-        Me.pbSqueegee12B.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbSqueegee12B.TabIndex = 76
-        Me.pbSqueegee12B.TabStop = False
-        '
-        'pbSqueegee12A
-        '
-        Me.pbSqueegee12A.BackColor = System.Drawing.Color.Gray
-        Me.pbSqueegee12A.ContextMenuStrip = Me.ctsMenu
-        Me.pbSqueegee12A.Image = CType(resources.GetObject("pbSqueegee12A.Image"), System.Drawing.Image)
-        Me.pbSqueegee12A.Location = New System.Drawing.Point(414, 44)
-        Me.pbSqueegee12A.Name = "pbSqueegee12A"
-        Me.pbSqueegee12A.Size = New System.Drawing.Size(117, 57)
-        Me.pbSqueegee12A.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbSqueegee12A.TabIndex = 75
-        Me.pbSqueegee12A.TabStop = False
-        '
-        'pbSqueegee14B
-        '
-        Me.pbSqueegee14B.BackColor = System.Drawing.Color.Gray
-        Me.pbSqueegee14B.ContextMenuStrip = Me.ctsMenu
-        Me.pbSqueegee14B.Image = CType(resources.GetObject("pbSqueegee14B.Image"), System.Drawing.Image)
-        Me.pbSqueegee14B.Location = New System.Drawing.Point(543, 127)
-        Me.pbSqueegee14B.Margin = New System.Windows.Forms.Padding(3, 3, 21, 3)
-        Me.pbSqueegee14B.Name = "pbSqueegee14B"
-        Me.pbSqueegee14B.Size = New System.Drawing.Size(117, 57)
-        Me.pbSqueegee14B.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbSqueegee14B.TabIndex = 76
-        Me.pbSqueegee14B.TabStop = False
-        '
-        'pbSqueegee14A
-        '
-        Me.pbSqueegee14A.BackColor = System.Drawing.Color.Gray
-        Me.pbSqueegee14A.ContextMenuStrip = Me.ctsMenu
-        Me.pbSqueegee14A.Image = CType(resources.GetObject("pbSqueegee14A.Image"), System.Drawing.Image)
-        Me.pbSqueegee14A.Location = New System.Drawing.Point(543, 44)
-        Me.pbSqueegee14A.Name = "pbSqueegee14A"
-        Me.pbSqueegee14A.Size = New System.Drawing.Size(117, 57)
-        Me.pbSqueegee14A.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbSqueegee14A.TabIndex = 75
-        Me.pbSqueegee14A.TabStop = False
-        '
-        'pbSqueegee1B
-        '
-        Me.pbSqueegee1B.BackColor = System.Drawing.Color.Gray
-        Me.pbSqueegee1B.ContextMenuStrip = Me.ctsMenu
-        Me.pbSqueegee1B.Image = CType(resources.GetObject("pbSqueegee1B.Image"), System.Drawing.Image)
-        Me.pbSqueegee1B.Location = New System.Drawing.Point(24, 127)
-        Me.pbSqueegee1B.Name = "pbSqueegee1B"
-        Me.pbSqueegee1B.Size = New System.Drawing.Size(117, 57)
-        Me.pbSqueegee1B.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbSqueegee1B.TabIndex = 47
-        Me.pbSqueegee1B.TabStop = False
-        '
-        'pbSqueegee1A
-        '
-        Me.pbSqueegee1A.BackColor = System.Drawing.Color.Gray
-        Me.pbSqueegee1A.ContextMenuStrip = Me.ctsMenu
-        Me.pbSqueegee1A.Image = CType(resources.GetObject("pbSqueegee1A.Image"), System.Drawing.Image)
-        Me.pbSqueegee1A.Location = New System.Drawing.Point(24, 44)
-        Me.pbSqueegee1A.Name = "pbSqueegee1A"
-        Me.pbSqueegee1A.Size = New System.Drawing.Size(117, 57)
-        Me.pbSqueegee1A.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbSqueegee1A.TabIndex = 9
-        Me.pbSqueegee1A.TabStop = False
-        '
-        'pbSqueegee2B
-        '
-        Me.pbSqueegee2B.BackColor = System.Drawing.Color.Gray
-        Me.pbSqueegee2B.ContextMenuStrip = Me.ctsMenu
-        Me.pbSqueegee2B.Image = CType(resources.GetObject("pbSqueegee2B.Image"), System.Drawing.Image)
-        Me.pbSqueegee2B.Location = New System.Drawing.Point(153, 127)
-        Me.pbSqueegee2B.Name = "pbSqueegee2B"
-        Me.pbSqueegee2B.Size = New System.Drawing.Size(117, 57)
-        Me.pbSqueegee2B.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbSqueegee2B.TabIndex = 49
-        Me.pbSqueegee2B.TabStop = False
-        '
-        'pbSqueegee2A
-        '
-        Me.pbSqueegee2A.BackColor = System.Drawing.Color.Gray
-        Me.pbSqueegee2A.ContextMenuStrip = Me.ctsMenu
-        Me.pbSqueegee2A.Image = CType(resources.GetObject("pbSqueegee2A.Image"), System.Drawing.Image)
-        Me.pbSqueegee2A.Location = New System.Drawing.Point(153, 44)
-        Me.pbSqueegee2A.Name = "pbSqueegee2A"
-        Me.pbSqueegee2A.Size = New System.Drawing.Size(117, 57)
-        Me.pbSqueegee2A.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbSqueegee2A.TabIndex = 48
-        Me.pbSqueegee2A.TabStop = False
-        '
         'Panel26
         '
         Me.Panel26.BackgroundImage = CType(resources.GetObject("Panel26.BackgroundImage"), System.Drawing.Image)
@@ -1210,12 +1211,22 @@ Partial Class frmsqueegeemanager
         Me.Panel4.Size = New System.Drawing.Size(5, 263)
         Me.Panel4.TabIndex = 73
         '
+        'lblAssemblyVersion
+        '
+        Me.lblAssemblyVersion.AutoSize = True
+        Me.lblAssemblyVersion.Location = New System.Drawing.Point(1168, 37)
+        Me.lblAssemblyVersion.Name = "lblAssemblyVersion"
+        Me.lblAssemblyVersion.Size = New System.Drawing.Size(175, 13)
+        Me.lblAssemblyVersion.TabIndex = 96
+        Me.lblAssemblyVersion.Text = "Version 1.2109.259.1 (Pre-Release)"
+        '
         'frmsqueegeemanager
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1350, 689)
+        Me.Controls.Add(Me.lblAssemblyVersion)
         Me.Controls.Add(Me.Panel15)
         Me.Controls.Add(Me.Panel14)
         Me.Controls.Add(Me.Panel13)
@@ -1250,8 +1261,6 @@ Partial Class frmsqueegeemanager
         Me.Panel10.PerformLayout()
         CType(Me.dgStore, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
-        Me.Panel9.ResumeLayout(False)
-        Me.Panel9.PerformLayout()
         CType(Me.pbSqueegee17B, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbSqueegee17A, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbSqueegee15B, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1266,7 +1275,10 @@ Partial Class frmsqueegeemanager
         CType(Me.pbSqueegee1A, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbSqueegee2B, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbSqueegee2A, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel9.ResumeLayout(False)
+        Me.Panel9.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -1368,4 +1380,5 @@ Partial Class frmsqueegeemanager
     Friend WithEvents pbSqueegee17A As PictureBox
     Friend WithEvents Label4 As Label
     Friend WithEvents lblRemainingLife17 As Label
+    Friend WithEvents lblAssemblyVersion As Label
 End Class

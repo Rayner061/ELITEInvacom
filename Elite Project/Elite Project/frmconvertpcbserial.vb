@@ -17,6 +17,7 @@ Public Class frmconvertpcbserial
             txtnew.Enabled = True
         End If
         btnsave.Enabled = False
+        lblAssemblyVersion.Text = "Version " & frmlogin.assemblyVersion & " (General Release)"
     End Sub
 
     Private Sub cmbmodel_MouseClick(sender As Object, e As MouseEventArgs) Handles cmbmodel.MouseClick

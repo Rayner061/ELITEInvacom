@@ -116,7 +116,7 @@ Partial Class frmSMTVI
         '
         Me.lblcountng.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lblcountng.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblcountng.Font = New System.Drawing.Font("Ubuntu", 71.99999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblcountng.Font = New System.Drawing.Font("Microsoft Sans Serif", 71.99999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblcountng.ForeColor = System.Drawing.Color.Black
         Me.lblcountng.Location = New System.Drawing.Point(3, 0)
         Me.lblcountng.Name = "lblcountng"
@@ -129,7 +129,7 @@ Partial Class frmSMTVI
         '
         Me.lblcountgood.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lblcountgood.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblcountgood.Font = New System.Drawing.Font("Ubuntu", 71.99999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblcountgood.Font = New System.Drawing.Font("Microsoft Sans Serif", 71.99999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblcountgood.ForeColor = System.Drawing.Color.Black
         Me.lblcountgood.Location = New System.Drawing.Point(13, 57)
         Me.lblcountgood.Name = "lblcountgood"
@@ -252,7 +252,7 @@ Partial Class frmSMTVI
         '
         Me.txtScan.Dock = System.Windows.Forms.DockStyle.Fill
         Me.txtScan.Enabled = False
-        Me.txtScan.Font = New System.Drawing.Font("Ubuntu Medium", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtScan.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtScan.Location = New System.Drawing.Point(186, 14)
         Me.txtScan.Margin = New System.Windows.Forms.Padding(3, 14, 20, 12)
         Me.txtScan.Name = "txtScan"
@@ -323,7 +323,7 @@ Partial Class frmSMTVI
         Me.tblPnlDefect.Controls.Add(Me.Label5, 1, 2)
         Me.tblPnlDefect.Controls.Add(Me.txtremarks, 2, 2)
         Me.tblPnlDefect.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tblPnlDefect.Location = New System.Drawing.Point(1280, 10)
+        Me.tblPnlDefect.Location = New System.Drawing.Point(1281, 10)
         Me.tblPnlDefect.Margin = New System.Windows.Forms.Padding(0, 10, 0, 10)
         Me.tblPnlDefect.Name = "tblPnlDefect"
         Me.tblPnlDefect.RowCount = 4
@@ -341,11 +341,11 @@ Partial Class frmSMTVI
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Label4.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(24, 5)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(26, 5)
         Me.Label4.Name = "Label4"
         Me.Label4.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label4.Size = New System.Drawing.Size(114, 40)
+        Me.Label4.Size = New System.Drawing.Size(119, 40)
         Me.Label4.TabIndex = 155
         Me.Label4.Text = "Defect Name:"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -356,11 +356,11 @@ Partial Class frmSMTVI
         Me.cmbdefectname.Dock = System.Windows.Forms.DockStyle.Fill
         Me.cmbdefectname.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbdefectname.Enabled = False
-        Me.cmbdefectname.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbdefectname.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbdefectname.FormattingEnabled = True
-        Me.cmbdefectname.Location = New System.Drawing.Point(144, 8)
+        Me.cmbdefectname.Location = New System.Drawing.Point(151, 8)
         Me.cmbdefectname.Name = "cmbdefectname"
-        Me.cmbdefectname.Size = New System.Drawing.Size(238, 29)
+        Me.cmbdefectname.Size = New System.Drawing.Size(232, 28)
         Me.cmbdefectname.TabIndex = 80
         Me.cmbdefectname.ValueMember = "model"
         '
@@ -369,11 +369,11 @@ Partial Class frmSMTVI
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Label5.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(16, 45)
         Me.Label5.Name = "Label5"
         Me.Label5.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label5.Size = New System.Drawing.Size(122, 40)
+        Me.Label5.Size = New System.Drawing.Size(129, 40)
         Me.Label5.TabIndex = 158
         Me.Label5.Text = "Loc / Remarks:"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -382,17 +382,17 @@ Partial Class frmSMTVI
         '
         Me.txtremarks.Dock = System.Windows.Forms.DockStyle.Fill
         Me.txtremarks.Enabled = False
-        Me.txtremarks.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtremarks.Location = New System.Drawing.Point(144, 52)
+        Me.txtremarks.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtremarks.Location = New System.Drawing.Point(151, 52)
         Me.txtremarks.Margin = New System.Windows.Forms.Padding(3, 7, 3, 3)
         Me.txtremarks.Name = "txtremarks"
-        Me.txtremarks.Size = New System.Drawing.Size(238, 26)
+        Me.txtremarks.Size = New System.Drawing.Size(232, 26)
         Me.txtremarks.TabIndex = 81
         '
         'btnlogout
         '
         Me.btnlogout.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnlogout.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnlogout.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnlogout.Location = New System.Drawing.Point(1747, 57)
         Me.btnlogout.Margin = New System.Windows.Forms.Padding(3, 2, 3, 10)
         Me.btnlogout.Name = "btnlogout"
@@ -406,11 +406,11 @@ Partial Class frmSMTVI
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label2.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(70, 15)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(69, 15)
         Me.Label2.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(124, 40)
+        Me.Label2.Size = New System.Drawing.Size(129, 40)
         Me.Label2.TabIndex = 214
         Me.Label2.Text = "Model:"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -420,11 +420,11 @@ Partial Class frmSMTVI
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label6.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(70, 55)
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(69, 55)
         Me.Label6.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(124, 40)
+        Me.Label6.Size = New System.Drawing.Size(129, 40)
         Me.Label6.TabIndex = 215
         Me.Label6.Text = "Code/Revision:"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -433,24 +433,24 @@ Partial Class frmSMTVI
         '
         Me.cbxModel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.cbxModel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbxModel.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxModel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbxModel.FormattingEnabled = True
-        Me.cbxModel.Location = New System.Drawing.Point(200, 20)
+        Me.cbxModel.Location = New System.Drawing.Point(204, 20)
         Me.cbxModel.Margin = New System.Windows.Forms.Padding(3, 5, 3, 3)
         Me.cbxModel.Name = "cbxModel"
-        Me.cbxModel.Size = New System.Drawing.Size(194, 29)
+        Me.cbxModel.Size = New System.Drawing.Size(194, 28)
         Me.cbxModel.TabIndex = 219
         '
         'cbxCodeRev
         '
         Me.cbxCodeRev.Dock = System.Windows.Forms.DockStyle.Fill
         Me.cbxCodeRev.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbxCodeRev.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxCodeRev.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbxCodeRev.FormattingEnabled = True
-        Me.cbxCodeRev.Location = New System.Drawing.Point(200, 60)
+        Me.cbxCodeRev.Location = New System.Drawing.Point(204, 60)
         Me.cbxCodeRev.Margin = New System.Windows.Forms.Padding(3, 5, 3, 3)
         Me.cbxCodeRev.Name = "cbxCodeRev"
-        Me.cbxCodeRev.Size = New System.Drawing.Size(194, 29)
+        Me.cbxCodeRev.Size = New System.Drawing.Size(194, 28)
         Me.cbxCodeRev.TabIndex = 220
         '
         'Label7
@@ -458,11 +458,11 @@ Partial Class frmSMTVI
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label7.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(417, 15)
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(421, 15)
         Me.Label7.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(134, 40)
+        Me.Label7.Size = New System.Drawing.Size(140, 40)
         Me.Label7.TabIndex = 226
         Me.Label7.Text = "Code Allocation:"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -472,8 +472,8 @@ Partial Class frmSMTVI
         Me.lblCodeAllocation.AutoSize = True
         Me.lblCodeAllocation.BackColor = System.Drawing.Color.Transparent
         Me.lblCodeAllocation.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblCodeAllocation.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCodeAllocation.Location = New System.Drawing.Point(557, 15)
+        Me.lblCodeAllocation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCodeAllocation.Location = New System.Drawing.Point(567, 15)
         Me.lblCodeAllocation.Name = "lblCodeAllocation"
         Me.lblCodeAllocation.Size = New System.Drawing.Size(144, 40)
         Me.lblCodeAllocation.TabIndex = 227
@@ -482,8 +482,8 @@ Partial Class frmSMTVI
         'btnSet
         '
         Me.btnSet.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnSet.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSet.Location = New System.Drawing.Point(559, 59)
+        Me.btnSet.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSet.Location = New System.Drawing.Point(569, 59)
         Me.btnSet.Margin = New System.Windows.Forms.Padding(5, 4, 5, 5)
         Me.btnSet.Name = "btnSet"
         Me.btnSet.Size = New System.Drawing.Size(140, 31)
@@ -525,11 +525,11 @@ Partial Class frmSMTVI
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label1.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(20, 0)
         Me.Label1.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(84, 52)
+        Me.Label1.Size = New System.Drawing.Size(85, 52)
         Me.Label1.TabIndex = 126
         Me.Label1.Text = "Operator:"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -539,11 +539,11 @@ Partial Class frmSMTVI
         Me.lblname.AutoSize = True
         Me.lblname.BackColor = System.Drawing.Color.Transparent
         Me.lblname.Dock = System.Windows.Forms.DockStyle.Left
-        Me.lblname.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblname.Location = New System.Drawing.Point(110, 0)
+        Me.lblname.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblname.Location = New System.Drawing.Point(111, 0)
         Me.lblname.Name = "lblname"
         Me.lblname.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblname.Size = New System.Drawing.Size(25, 52)
+        Me.lblname.Size = New System.Drawing.Size(24, 52)
         Me.lblname.TabIndex = 123
         Me.lblname.Text = "..."
         Me.lblname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -553,10 +553,10 @@ Partial Class frmSMTVI
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label3.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(524, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(46, 52)
+        Me.Label3.Size = New System.Drawing.Size(48, 52)
         Me.Label3.TabIndex = 127
         Me.Label3.Text = "Line:"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -566,11 +566,11 @@ Partial Class frmSMTVI
         Me.lblStation.AutoSize = True
         Me.lblStation.BackColor = System.Drawing.Color.Transparent
         Me.lblStation.Dock = System.Windows.Forms.DockStyle.Left
-        Me.lblStation.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblStation.Location = New System.Drawing.Point(990, 0)
+        Me.lblStation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblStation.Location = New System.Drawing.Point(991, 0)
         Me.lblStation.Name = "lblStation"
         Me.lblStation.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblStation.Size = New System.Drawing.Size(65, 52)
+        Me.lblStation.Size = New System.Drawing.Size(67, 52)
         Me.lblStation.TabIndex = 125
         Me.lblStation.Text = "Station"
         Me.lblStation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -580,18 +580,18 @@ Partial Class frmSMTVI
         Me.lblDT.AutoSize = True
         Me.lblDT.BackColor = System.Drawing.Color.Transparent
         Me.lblDT.Dock = System.Windows.Forms.DockStyle.Left
-        Me.lblDT.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDT.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDT.Location = New System.Drawing.Point(1404, 0)
         Me.lblDT.Name = "lblDT"
         Me.lblDT.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblDT.Size = New System.Drawing.Size(25, 52)
+        Me.lblDT.Size = New System.Drawing.Size(24, 52)
         Me.lblDT.TabIndex = 122
         Me.lblDT.Text = "..."
         Me.lblDT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'PictureBox3
         '
-        Me.PictureBox3.Location = New System.Drawing.Point(1818, 12)
+        Me.PictureBox3.Location = New System.Drawing.Point(1817, 12)
         Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 12, 12, 12)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(44, 28)
@@ -604,11 +604,11 @@ Partial Class frmSMTVI
         Me.lblline.AutoSize = True
         Me.lblline.BackColor = System.Drawing.Color.Transparent
         Me.lblline.Dock = System.Windows.Forms.DockStyle.Left
-        Me.lblline.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblline.Location = New System.Drawing.Point(576, 0)
+        Me.lblline.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblline.Location = New System.Drawing.Point(578, 0)
         Me.lblline.Name = "lblline"
         Me.lblline.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblline.Size = New System.Drawing.Size(25, 52)
+        Me.lblline.Size = New System.Drawing.Size(24, 52)
         Me.lblline.TabIndex = 124
         Me.lblline.Text = "..."
         Me.lblline.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -664,7 +664,7 @@ Partial Class frmSMTVI
         Me.lblAssemblyVersion.AutoSize = True
         Me.lblAssemblyVersion.BackColor = System.Drawing.Color.Transparent
         Me.lblAssemblyVersion.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblAssemblyVersion.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAssemblyVersion.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAssemblyVersion.Location = New System.Drawing.Point(13, 0)
         Me.lblAssemblyVersion.Name = "lblAssemblyVersion"
         Me.lblAssemblyVersion.Size = New System.Drawing.Size(382, 119)

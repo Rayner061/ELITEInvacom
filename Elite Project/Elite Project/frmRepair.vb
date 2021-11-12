@@ -608,6 +608,26 @@ Public Class frmRepair
         End If
     End Sub
 
+    Private Sub TR_tbremarks_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TR_tbremarks.KeyPress
+        TR_save.Enabled = True
+        lblcharcount.Text = TR_tbremarks.Text.Length & "/300 characters (max)"
+        TR_tbremarks.MaxLength = 300
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        lblDT.Text = Now.ToString("yyyy-MM-dd HH:mm:ss")
+    End Sub
+
+    Private Sub frmRepair_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Application.Exit()
+    End Sub
+
+    Private Sub frmRepair_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        dbConnect()
+        tbpcb.Focus()
+        lblAssemblyVersion.Text = "Version " & frmlogin.assemblyVersion & " (General Release)"
+    End Sub
+
     Public Sub modelchecker()
         Dim cmd As New MySqlCommand
         cmd.Connection = conn
@@ -675,11 +695,15 @@ Public Class frmRepair
         Dim cmd As New MySqlCommand With {
             .Connection = conn,
             .CommandText = "Select DISTINCT b.`timestamp`, b.`station`, b.`defectname`, b.`remarks`  FROM (Select `pcbid` 'pcbid',  `defectname` 'defectname', `remarks` 'remarks', `aoingtimestamp` 'timestamp',`STATION` 'station' FROM
-	(SELECT `pcbid`,  `defectname`, `remarks`, `aoingtimestamp`, 'AOI BOTTOM' as 'station' FROM `gi_aoing_bottom` UNION ALL 
-	 Select `pcbid`,  `defectname`, `remarks`, `aoingtimestamp` , 'AOI TOP' as 'station' FROM `gi_aoing_top` UNION ALL  
-	 Select `pcbid`,  `defectname`, `remarks`, `timestamp`, 'FVI' as 'station'   FROM `gi_fving` UNION ALL 
-	 Select `pcbid`,  `defectname`, `remarks`, `timestamp` , 'OBA' as 'station'  FROM `gi_obang` ) 
-	 AS a1 ) b  WHERE b.`pcbid` = '" & tbpcb.Text & "' ORDER BY b.`timestamp` DESC"
+	                        (SELECT `pcbid`,  `defectname`, `remarks`, `aoingtimestamp`, 'AOI BOTTOM' as 'station' FROM `gi_aoing_bottom` UNION ALL 
+	                         Select `pcbid`,  `defectname`, `remarks`, `aoingtimestamp` , 'AOI TOP' as 'station' FROM `gi_aoing_top` UNION ALL  
+	                         Select `pcbid`,  `defectname`, `remarks`, `timestamp`, 'FVI' as 'station'   FROM `gi_fving` UNION ALL 
+	                         Select `pcbid`,  `defectname`, `remarks`, `timestamp` , 'OBA' as 'station'  FROM `gi_obang` UNION ALL
+                             Select `pcbid`,  `defectname`, `remarks`, `timestamp` , 'REPAIR OBA' as 'station'  FROM `gi_repairobang` UNION ALL
+                             Select `pcbid`,  `defectname`, `remarks`, `timestamp` , 'REPAIR FVI' as 'station'  FROM `gi_repairfving` UNION ALL
+                             Select `pcbid`,  `defectname`, `remarks`, `timestamp` , 'REPAIR AOI BOTTOM' as 'station'  FROM `gi_repairaoing_bottom` UNION ALL
+                             Select `pcbid`,  `defectname`, `remarks`, `timestamp` , 'REPAIR AOI TOP' as 'station'  FROM `gi_repairaoing_top` ) 
+	                         AS a1 ) b  WHERE b.`pcbid` = '" & tbpcb.Text & "' ORDER BY b.`timestamp` DESC"
         }
         Dim da As MySqlDataAdapter = New MySqlDataAdapter(cmd)
 		da.Fill(dt)

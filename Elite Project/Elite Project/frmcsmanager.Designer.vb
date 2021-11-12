@@ -112,11 +112,11 @@ Partial Class frmcsmanager
         '
         Me.lblAssemblyVersion.AutoSize = True
         Me.lblAssemblyVersion.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAssemblyVersion.Location = New System.Drawing.Point(1248, 86)
+        Me.lblAssemblyVersion.Location = New System.Drawing.Point(1116, 83)
         Me.lblAssemblyVersion.Name = "lblAssemblyVersion"
-        Me.lblAssemblyVersion.Size = New System.Drawing.Size(64, 13)
+        Me.lblAssemblyVersion.Size = New System.Drawing.Size(196, 13)
         Me.lblAssemblyVersion.TabIndex = 161
-        Me.lblAssemblyVersion.Text = "2.1802.44.2"
+        Me.lblAssemblyVersion.Text = "Version 1.2109.239.1 (General Release)"
         Me.lblAssemblyVersion.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'dgexpire

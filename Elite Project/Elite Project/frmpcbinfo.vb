@@ -148,7 +148,7 @@ Public Class frmpcbinfo
                 cbxPO.Enabled = False
             End If
         End If
-        cbxPO.Enabled = True
+
         cbxPO.SelectedIndex = -1
         cbxModel.SelectedIndex = -1
     End Sub

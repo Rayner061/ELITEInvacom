@@ -760,7 +760,7 @@ Partial Class frmFVI
         Me.lblAssemblyVersion.Name = "lblAssemblyVersion"
         Me.lblAssemblyVersion.Size = New System.Drawing.Size(392, 119)
         Me.lblAssemblyVersion.TabIndex = 1
-        Me.lblAssemblyVersion.Text = "2.1802.44.2"
+        Me.lblAssemblyVersion.Text = "Version 1.2109.239.1 (General Release)"
         Me.lblAssemblyVersion.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'TableLayoutPanel6

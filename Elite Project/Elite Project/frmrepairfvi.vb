@@ -165,8 +165,6 @@ Public Class frmrepairfvi
                 If Latest <> "NONE" Then
                     res = "failedprogram"
                 Else
-                    cmd.CommandText = "SELECT DATE_FORMAT(`FIRST_TIME`,'%Y-%m-%d %h:%i:%s') as `FIRST_TIME` FROM `prog` WHERE (SERIAL_NO = '" & scanText & "' or SERIAL_NO = '" & scanText.Substring(scanText.IndexOf("-") + 1) & "') ORDER BY FIRST_TIME DESC LIMIT 1"
-                    LatestTime = cmd.ExecuteScalar.ToString()
 
                     cmd.CommandText = "SELECT COUNT(*) FROM `gi_pcbtrace` WHERE `pcbid` = '" & scanText & "' AND `fvitimestamp` IS NOT NULL"
                     countfvi = cmd.ExecuteScalar.ToString()
@@ -174,6 +172,10 @@ Public Class frmrepairfvi
                     If countfvi = 0 Then
                         res = "good"
                     Else
+
+                        cmd.CommandText = "SELECT DATE_FORMAT(`FIRST_TIME`,'%Y-%m-%d %h:%i:%s') as `FIRST_TIME` FROM `prog` WHERE (SERIAL_NO = '" & scanText & "' or SERIAL_NO = '" & scanText.Substring(scanText.IndexOf("-") + 1) & "') ORDER BY FIRST_TIME DESC LIMIT 1"
+                        LatestTime = cmd.ExecuteScalar.ToString()
+
                         cmd.CommandText = "SELECT DATE_FORMAT(`fvitimestamp`,'%Y-%m-%d %h:%i:%s') as `fvitimestamp` FROM `gi_pcbtrace` WHERE `pcbid` = '" & scanText & "'"
                         LatestTimeFVI = cmd1.ExecuteScalar.ToString()
                         If LatestTimeFVI < LatestTime Then

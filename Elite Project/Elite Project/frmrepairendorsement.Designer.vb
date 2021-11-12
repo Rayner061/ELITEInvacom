@@ -69,6 +69,7 @@ Partial Class frmrepairendorsement
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.lblAssemblyVersion = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -529,7 +530,7 @@ Partial Class frmrepairendorsement
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.ELITE_GI.My.Resources.Resources.elite_banner_GI
-        Me.PictureBox1.Location = New System.Drawing.Point(952, 13)
+        Me.PictureBox1.Location = New System.Drawing.Point(950, 7)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(386, 56)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -546,11 +547,21 @@ Partial Class frmrepairendorsement
         Me.PictureBox4.TabIndex = 313
         Me.PictureBox4.TabStop = False
         '
+        'lblAssemblyVersion
+        '
+        Me.lblAssemblyVersion.AutoSize = True
+        Me.lblAssemblyVersion.Location = New System.Drawing.Point(1163, 66)
+        Me.lblAssemblyVersion.Name = "lblAssemblyVersion"
+        Me.lblAssemblyVersion.Size = New System.Drawing.Size(175, 13)
+        Me.lblAssemblyVersion.TabIndex = 344
+        Me.lblAssemblyVersion.Text = "Version 2.2109.239.1 (Pre-Release)"
+        '
         'frmrepairendorsement
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1350, 689)
+        Me.Controls.Add(Me.lblAssemblyVersion)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.lblastation)
         Me.Controls.Add(Me.lbllocation)
@@ -651,4 +662,5 @@ Partial Class frmrepairendorsement
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents lblmodel2 As Label
+    Friend WithEvents lblAssemblyVersion As Label
 End Class

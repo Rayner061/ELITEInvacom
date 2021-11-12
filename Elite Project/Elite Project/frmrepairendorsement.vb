@@ -100,6 +100,7 @@ Public Class frmrepairendorsement
         dtpicker1.Value = Now.ToString("yyyy-MM-dd")
         dtpicker2.Value = Now.AddDays(1).ToString("yyyy-MM-dd")
         cmbcategory.SelectedIndex = 0
+        lblAssemblyVersion.Text = "Version " & frmlogin.assemblyVersion & " (Pre-Release)"
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick

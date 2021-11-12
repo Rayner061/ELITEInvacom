@@ -48,6 +48,7 @@ Partial Class frmconvertpcbserial
         Me.Label7 = New System.Windows.Forms.Label()
         Me.cmbmodel = New System.Windows.Forms.ComboBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.lblAssemblyVersion = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lbldt
@@ -290,6 +291,16 @@ Partial Class frmconvertpcbserial
         Me.Timer1.Enabled = True
         Me.Timer1.Interval = 1000
         '
+        'lblAssemblyVersion
+        '
+        Me.lblAssemblyVersion.AutoSize = True
+        Me.lblAssemblyVersion.BackColor = System.Drawing.Color.Transparent
+        Me.lblAssemblyVersion.Location = New System.Drawing.Point(553, 151)
+        Me.lblAssemblyVersion.Name = "lblAssemblyVersion"
+        Me.lblAssemblyVersion.Size = New System.Drawing.Size(196, 13)
+        Me.lblAssemblyVersion.TabIndex = 67
+        Me.lblAssemblyVersion.Text = "Version 1.2108.239.2 (General Release)"
+        '
         'frmconvertpcbserial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -297,6 +308,7 @@ Partial Class frmconvertpcbserial
         Me.BackgroundImage = Global.ELITE_GI.My.Resources.Resources.convert
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(767, 554)
+        Me.Controls.Add(Me.lblAssemblyVersion)
         Me.Controls.Add(Me.cmbmodel)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.btnReset)
@@ -352,4 +364,5 @@ Partial Class frmconvertpcbserial
     Friend WithEvents Label7 As Label
     Friend WithEvents cmbmodel As ComboBox
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents lblAssemblyVersion As Label
 End Class

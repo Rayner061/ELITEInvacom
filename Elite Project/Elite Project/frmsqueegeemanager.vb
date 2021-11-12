@@ -127,6 +127,7 @@ Public Class frmsqueegeemanager
     Private Sub frmsqueegeemanager_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CheckForIllegalCrossThreadCalls = False
         dbConnect()
+        lblAssemblyVersion.Text = "Version " & frmlogin.assemblyVersion & " (Pre-Release)"
 
         'Dim cmd As New MySqlCommand
         'Dim myDT As New DataTable

@@ -38,7 +38,8 @@ Partial Class frmfujimounter
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.TableLayoutPanel9 = New System.Windows.Forms.TableLayoutPanel()
+        Me.lblAssemblyVersion = New System.Windows.Forms.Label()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.lblname = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -66,7 +67,7 @@ Partial Class frmfujimounter
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel9.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
         Me.TableLayoutPanel5.SuspendLayout()
         Me.TableLayoutPanel6.SuspendLayout()
@@ -87,7 +88,7 @@ Partial Class frmfujimounter
         Me.lblElapsedlabel.ForeColor = System.Drawing.Color.White
         Me.lblElapsedlabel.Location = New System.Drawing.Point(141, 0)
         Me.lblElapsedlabel.Name = "lblElapsedlabel"
-        Me.lblElapsedlabel.Size = New System.Drawing.Size(76, 13)
+        Me.lblElapsedlabel.Size = New System.Drawing.Size(77, 13)
         Me.lblElapsedlabel.TabIndex = 64
         Me.lblElapsedlabel.Text = "Elapsed Time:"
         Me.lblElapsedlabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -111,7 +112,7 @@ Partial Class frmfujimounter
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(745, 0)
+        Me.Label1.Location = New System.Drawing.Point(1067, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(244, 16)
         Me.Label1.TabIndex = 67
@@ -155,7 +156,7 @@ Partial Class frmfujimounter
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 200.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1028, 749)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1350, 749)
         Me.TableLayoutPanel1.TabIndex = 93
         '
         'TableLayoutPanel2
@@ -166,14 +167,14 @@ Partial Class frmfujimounter
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 398.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.PictureBox3, 0, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.PictureBox4, 2, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel9, 2, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(15, 15)
         Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(0)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(998, 119)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1320, 119)
         Me.TableLayoutPanel2.TabIndex = 0
         '
         'PictureBox3
@@ -189,16 +190,31 @@ Partial Class frmfujimounter
         Me.PictureBox3.TabIndex = 92
         Me.PictureBox3.TabStop = False
         '
-        'PictureBox4
+        'TableLayoutPanel9
         '
-        Me.PictureBox4.Image = Global.ELITE_GI.My.Resources.Resources.elite_banner_GI
-        Me.PictureBox4.Location = New System.Drawing.Point(600, 0)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(398, 119)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox4.TabIndex = 93
-        Me.PictureBox4.TabStop = False
+        Me.TableLayoutPanel9.BackgroundImage = Global.ELITE_GI.My.Resources.Resources.elite_banner_GI
+        Me.TableLayoutPanel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.TableLayoutPanel9.ColumnCount = 1
+        Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel9.Controls.Add(Me.lblAssemblyVersion, 0, 0)
+        Me.TableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel9.Location = New System.Drawing.Point(925, 3)
+        Me.TableLayoutPanel9.Name = "TableLayoutPanel9"
+        Me.TableLayoutPanel9.RowCount = 1
+        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel9.Size = New System.Drawing.Size(392, 113)
+        Me.TableLayoutPanel9.TabIndex = 93
+        '
+        'lblAssemblyVersion
+        '
+        Me.lblAssemblyVersion.AutoSize = True
+        Me.lblAssemblyVersion.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblAssemblyVersion.Location = New System.Drawing.Point(3, 0)
+        Me.lblAssemblyVersion.Name = "lblAssemblyVersion"
+        Me.lblAssemblyVersion.Size = New System.Drawing.Size(386, 113)
+        Me.lblAssemblyVersion.TabIndex = 0
+        Me.lblAssemblyVersion.Text = "Version 1.2109.239.1 (General Release)"
+        Me.lblAssemblyVersion.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'TableLayoutPanel3
         '
@@ -225,7 +241,7 @@ Partial Class frmfujimounter
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 1
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(998, 52)
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(1320, 52)
         Me.TableLayoutPanel3.TabIndex = 1
         '
         'lblname
@@ -259,10 +275,10 @@ Partial Class frmfujimounter
         'btnlogout
         '
         Me.btnlogout.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnlogout.Location = New System.Drawing.Point(857, 15)
+        Me.btnlogout.Location = New System.Drawing.Point(1177, 15)
         Me.btnlogout.Margin = New System.Windows.Forms.Padding(15)
         Me.btnlogout.Name = "btnlogout"
-        Me.btnlogout.Size = New System.Drawing.Size(126, 22)
+        Me.btnlogout.Size = New System.Drawing.Size(128, 22)
         Me.btnlogout.TabIndex = 28
         Me.btnlogout.Text = "&Logout"
         Me.btnlogout.UseVisualStyleBackColor = True
@@ -273,7 +289,7 @@ Partial Class frmfujimounter
         Me.lbldt.BackColor = System.Drawing.Color.Transparent
         Me.lbldt.Dock = System.Windows.Forms.DockStyle.Left
         Me.lbldt.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbldt.Location = New System.Drawing.Point(671, 0)
+        Me.lbldt.Location = New System.Drawing.Point(911, 0)
         Me.lbldt.Name = "lbldt"
         Me.lbldt.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.lbldt.Size = New System.Drawing.Size(25, 52)
@@ -287,7 +303,7 @@ Partial Class frmfujimounter
         Me.lblstation.BackColor = System.Drawing.Color.Transparent
         Me.lblstation.Dock = System.Windows.Forms.DockStyle.Left
         Me.lblstation.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblstation.Location = New System.Drawing.Point(497, 0)
+        Me.lblstation.Location = New System.Drawing.Point(657, 0)
         Me.lblstation.Name = "lblstation"
         Me.lblstation.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.lblstation.Size = New System.Drawing.Size(25, 52)
@@ -301,7 +317,7 @@ Partial Class frmfujimounter
         Me.Label19.BackColor = System.Drawing.Color.Transparent
         Me.Label19.Dock = System.Windows.Forms.DockStyle.Left
         Me.Label19.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(276, 0)
+        Me.Label19.Location = New System.Drawing.Point(356, 0)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(41, 52)
         Me.Label19.TabIndex = 55
@@ -314,7 +330,7 @@ Partial Class frmfujimounter
         Me.lblline.BackColor = System.Drawing.Color.Transparent
         Me.lblline.Dock = System.Windows.Forms.DockStyle.Left
         Me.lblline.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblline.Location = New System.Drawing.Point(323, 0)
+        Me.lblline.Location = New System.Drawing.Point(403, 0)
         Me.lblline.Name = "lblline"
         Me.lblline.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.lblline.Size = New System.Drawing.Size(25, 52)
@@ -343,7 +359,7 @@ Partial Class frmfujimounter
         Me.TableLayoutPanel5.RowCount = 2
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel5.Size = New System.Drawing.Size(998, 100)
+        Me.TableLayoutPanel5.Size = New System.Drawing.Size(1320, 100)
         Me.TableLayoutPanel5.TabIndex = 3
         '
         'lblscan
@@ -385,7 +401,7 @@ Partial Class frmfujimounter
         Me.txtscan.Location = New System.Drawing.Point(181, 43)
         Me.txtscan.Margin = New System.Windows.Forms.Padding(3, 3, 3, 15)
         Me.txtscan.Name = "txtscan"
-        Me.txtscan.Size = New System.Drawing.Size(651, 39)
+        Me.txtscan.Size = New System.Drawing.Size(973, 39)
         Me.txtscan.TabIndex = 57
         '
         'lblCount
@@ -395,7 +411,7 @@ Partial Class frmfujimounter
         Me.lblCount.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblCount.Font = New System.Drawing.Font("Segoe UI Semibold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCount.ForeColor = System.Drawing.Color.White
-        Me.lblCount.Location = New System.Drawing.Point(838, 43)
+        Me.lblCount.Location = New System.Drawing.Point(1160, 43)
         Me.lblCount.Margin = New System.Windows.Forms.Padding(3, 3, 18, 18)
         Me.lblCount.MinimumSize = New System.Drawing.Size(140, 2)
         Me.lblCount.Name = "lblCount"
@@ -418,7 +434,7 @@ Partial Class frmfujimounter
         Me.TableLayoutPanel6.RowCount = 1
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22.0!))
-        Me.TableLayoutPanel6.Size = New System.Drawing.Size(998, 22)
+        Me.TableLayoutPanel6.Size = New System.Drawing.Size(1320, 22)
         Me.TableLayoutPanel6.TabIndex = 92
         '
         'TableLayoutPanel7
@@ -439,7 +455,7 @@ Partial Class frmfujimounter
         Me.TableLayoutPanel7.Name = "TableLayoutPanel7"
         Me.TableLayoutPanel7.RowCount = 1
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel7.Size = New System.Drawing.Size(992, 16)
+        Me.TableLayoutPanel7.Size = New System.Drawing.Size(1314, 16)
         Me.TableLayoutPanel7.TabIndex = 0
         '
         'lblElapsed
@@ -448,7 +464,7 @@ Partial Class frmfujimounter
         Me.lblElapsed.BackColor = System.Drawing.Color.Transparent
         Me.lblElapsed.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblElapsed.ForeColor = System.Drawing.Color.White
-        Me.lblElapsed.Location = New System.Drawing.Point(223, 0)
+        Me.lblElapsed.Location = New System.Drawing.Point(224, 0)
         Me.lblElapsed.Name = "lblElapsed"
         Me.lblElapsed.Size = New System.Drawing.Size(10, 13)
         Me.lblElapsed.TabIndex = 65
@@ -470,7 +486,7 @@ Partial Class frmfujimounter
         Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
         Me.TableLayoutPanel8.RowCount = 1
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel8.Size = New System.Drawing.Size(998, 190)
+        Me.TableLayoutPanel8.Size = New System.Drawing.Size(1320, 190)
         Me.TableLayoutPanel8.TabIndex = 93
         '
         'dgPCB
@@ -508,7 +524,7 @@ Partial Class frmfujimounter
         Me.dgPCB.Margin = New System.Windows.Forms.Padding(15)
         Me.dgPCB.Name = "dgPCB"
         Me.dgPCB.ReadOnly = True
-        Me.dgPCB.Size = New System.Drawing.Size(968, 160)
+        Me.dgPCB.Size = New System.Drawing.Size(1290, 160)
         Me.dgPCB.TabIndex = 56
         '
         'Column1
@@ -569,7 +585,7 @@ Partial Class frmfujimounter
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40.0!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40.0!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(998, 110)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(1320, 110)
         Me.TableLayoutPanel4.TabIndex = 94
         '
         'frmfujimounter
@@ -578,7 +594,7 @@ Partial Class frmfujimounter
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1028, 749)
+        Me.ClientSize = New System.Drawing.Size(1350, 749)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -590,7 +606,8 @@ Partial Class frmfujimounter
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel9.ResumeLayout(False)
+        Me.TableLayoutPanel9.PerformLayout()
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel3.PerformLayout()
         Me.TableLayoutPanel5.ResumeLayout(False)
@@ -631,7 +648,6 @@ Partial Class frmfujimounter
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
-    Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel5 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel6 As TableLayoutPanel
@@ -639,4 +655,6 @@ Partial Class frmfujimounter
     Friend WithEvents lblElapsed As Label
     Friend WithEvents TableLayoutPanel8 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
+    Friend WithEvents TableLayoutPanel9 As TableLayoutPanel
+    Friend WithEvents lblAssemblyVersion As Label
 End Class

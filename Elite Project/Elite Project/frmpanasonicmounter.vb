@@ -36,6 +36,7 @@ Public Class frmpanasonicmounter
 
         txtscan.Focus()
         writeLogs("MOUNTER STATION LOADED.")
+        lblAssemblyVersion.Text = "Version " & frmlogin.assemblyVersion & " (General Release)"
     End Sub
 
     Private Sub txtscan_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtscan.KeyPress
